@@ -6,6 +6,7 @@ from Components.config import config, ConfigSubsection, ConfigBoolean, getConfig
 from Components.Network import iNetwork
 from Components.Ipkg import IpkgComponent
 from enigma import eDVBDB
+import os
 
 config.misc.installwizard = ConfigSubsection()
 config.misc.installwizard.hasnetwork = ConfigBoolean(default = False)
@@ -54,12 +55,12 @@ class InstallWizard(Screen, ConfigListScreen):
 				self.createMenu()
 		elif self.index == self.STATE_CHOISE_CHANNELLIST:
 			self.enabled = ConfigYesNo(default = True)
-			modes = {"default-ventonsupport": "Default Germany", "henksat-19e": "Astra 1", "henksat-23e": "Astra 3", "henksat-19e-23e": "Astra 1 Astra 3", "henksat-19e-23e-28e": "Astra 1 Astra 2 Astra 3", "henksat-13e-19e-23e-28e": "Astra 1 Astra 2 Astra 3 Hotbird"}
-			self.channellist_type = ConfigSelection(choices = modes, default = "default-ventonsupport")
+			modes = {"default-ini": "Default Germany", "henksat-19e": "Astra 1", "henksat-23e": "Astra 3", "henksat-19e-23e": "Astra 1 Astra 3", "henksat-19e-23e-28e": "Astra 1 Astra 2 Astra 3", "henksat-13e-19e-23e-28e": "Astra 1 Astra 2 Astra 3 Hotbird"}
+			self.channellist_type = ConfigSelection(choices = modes, default = "default-ini")
 			self.createMenu()
 		elif self.index == self.STATE_CHOISE_SOFTCAM:
 			self.enabled = ConfigYesNo(default = True)
-			modes = {"cccam": _("default") + " (CCcam)", "scam": "scam"}
+			modes = {"cccam": _("default") + " (CCcam)", "gbox": "GBox", "wicardd": "Wicardd"}
 			self.softcam_type = ConfigSelection(choices = modes, default = "cccam")
 			self.createMenu()
 
@@ -115,7 +116,15 @@ class InstallWizard(Screen, ConfigListScreen):
 		elif self.index == self.STATE_CHOISE_CHANNELLIST and self.enabled.value:
 			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_REMOVE, {'package': 'enigma2-plugin-settings-' + self.channellist_type.value})
 		elif self.index == self.STATE_CHOISE_SOFTCAM and self.enabled.value:
-			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading softcam)'), IpkgComponent.CMD_INSTALL, {'package': 'enigma2-plugin-softcams-' + self.softcam_type.value})
+			softcam_name = self.softcam_type.value
+			if softcam_name == "cccam":
+				cmd = (";rm /tmp/Addon.tgz;wget -q http://egami-image.com./image-feed/enigma2/softcam/cccam_230_egami_E2.tar.gz -O /tmp/Addon.tgz")
+			elif softcam_name == "wicardd":
+				cmd = (";rm /tmp/Addon.tgz;wget -q http://egami-image.com./image-feed/enigma2/softcam/wicardd_110_egami_E2.tar.gz -O /tmp/Addon.tgz")
+			elif softcam_name == "gbox":
+				cmd = (";rm /tmp/Addon.tgz;wget -q http://egami-image.com./image-feed/enigma2/softcam/gbox_804_egami_E2.tar.gz -O /tmp/Addon.tgz")			
+			cmd += (';cd /; tar -xz -f /tmp/Addon.tgz ; rm /tmp/Addon.tgz;rm /usr/sbin/nab_e2_restart.sh; chmod 755 /tmp/egami_e2_installer.sh; /tmp/egami_e2_installer.sh; rm /tmp/egami_e2_installer.sh')
+			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading softcam)'), IpkgComponent.CMD_INSTALL, {'package': cmd})
 		return
 
 
