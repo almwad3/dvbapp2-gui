@@ -235,6 +235,7 @@ data/rc_models/vu/Makefile
 data/rc_models/vu2/Makefile
 data/rc_models/xp1000/Makefile
 data/skin_default/Makefile
+data/skin_default/egami_icons/Makefile
 data/skin_default/menu/Makefile
 data/skin_default/icons/Makefile
 data/skin_default/buttons/Makefile
@@ -251,6 +252,7 @@ lib/python/Components/Converter/Makefile
 lib/python/Components/Renderer/Makefile
 lib/python/Components/Sources/Makefile
 lib/python/Screens/Makefile
+lib/python/EGAMI/Makefile
 lib/python/Plugins/Makefile
 lib/python/Plugins/DemoPlugins/Makefile
 lib/python/Plugins/DemoPlugins/TPMDemo/Makefile

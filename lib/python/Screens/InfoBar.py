@@ -33,8 +33,14 @@ from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 profile("LOAD:HelpableScreen")
 from Screens.HelpMenu import HelpableScreen
 
+profile("LOAD: EgamiBluePanel")
+from EGAMI.EGAMI_Blue import EgamiBluePanel
+
+profile("LOAD: EgamiGreenPanel")
+from EGAMI.EGAMI_Green import EgamiGreenPanel
+
 class InfoBar(InfoBarBase, InfoBarShowHide,
-	InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder,
+	InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder, EgamiBluePanel, EgamiGreenPanel,
 	InfoBarInstantRecord, InfoBarAudioSelection, InfoBarRedButton,
 	HelpableScreen, InfoBarAdditionalInfo, InfoBarNotifications, InfoBarDish, InfoBarUnhandledKey,
 	InfoBarSubserviceSelection, InfoBarTimeshift, InfoBarSeek,
@@ -68,7 +74,7 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 
 		for x in HelpableScreen, \
 				InfoBarBase, InfoBarShowHide, \
-				InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder, \
+				InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder, EgamiBluePanel, EgamiGreenPanel, \
 				InfoBarInstantRecord, InfoBarAudioSelection, InfoBarRedButton, InfoBarUnhandledKey, \
 				InfoBarAdditionalInfo, InfoBarNotifications, InfoBarDish, InfoBarSubserviceSelection, \
 				InfoBarTimeshift, InfoBarSeek, InfoBarSummarySupport, InfoBarTimeshiftState, \
