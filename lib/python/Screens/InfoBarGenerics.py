@@ -3096,6 +3096,8 @@ class InfoBarTimeshift:
 					self.ts_rewind_timer.start(100, 1)
 
 	def rewindService(self):
+		if getBoxType().startswith('gb'):
+				self.setSeekState(self.SEEK_STATE_PLAY)
 		self.setSeekState(self.makeStateBackward(int(config.seek.enter_backward.getValue())))
 
 	# same as activateTimeshiftEnd, but pauses afterwards.
@@ -3138,7 +3140,7 @@ class InfoBarExtensions:
 
 	def getCCcamInfo(self):
 		if Directories.pathExists('/usr/emu_scripts/'):
-			softcams = os_listdir('/usr/emu_scripts/')
+			softcams = os.listdir('/usr/emu_scripts/')
 		for softcam in softcams:
 			if softcam.lower().startswith('cccam') and config.cccaminfo.showInExtensions.value:
 				return [((boundFunction(self.getCCname), boundFunction(self.openCCcamInfo), lambda: True), None)] or []
@@ -3150,7 +3152,7 @@ class InfoBarExtensions:
 
 	def getOScamInfo(self):
 		if Directories.pathExists('/usr/emu_scripts/'):
-			softcams = os_listdir('/usr/emu_scripts/')
+			softcams = os.listdir('/usr/emu_scripts/')
 		for softcam in softcams:
 			if softcam.lower().startswith('oscam') and config.oscaminfo.showInExtensions.value:
 				return [((boundFunction(self.getOSname), boundFunction(self.openOScamInfo), lambda: True), None)] or []
@@ -4312,14 +4314,20 @@ class InfoBarZoom:
 		    zoomval=self.zoomrate
 		print "zoomRate:", self.zoomrate
 		print "zoomval:", zoomval
-		file = open("/proc/stb/vmpeg/0/zoomrate", "w")
-		file.write('%d' % int(zoomval))
-		file.close()
+		try:
+		  file = open("/proc/stb/vmpeg/0/zoomrate", "w")
+		  file.write('%d' % int(zoomval))
+		  file.close()
+		except:
+		  pass
 
 	def ZoomOff(self):
 		self.zoomrate = 0
 		self.zoomin = 1
-		open("/proc/stb/vmpeg/0/zoomrate", "w").write(str(0))
+		try:
+		  open("/proc/stb/vmpeg/0/zoomrate", "w").write(str(0))
+		except:
+		  pass
 
 
 
