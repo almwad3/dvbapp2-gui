@@ -1,4 +1,4 @@
 installdir = $(pkglibdir)/python/Plugins/Extensions/EGAMIBoot/bin
 
-install_PYTHON = \
+install_DATA = \
 	egamibm egamiinit fbclear nfidump

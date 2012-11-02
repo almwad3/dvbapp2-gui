@@ -51,9 +51,8 @@ def EgamiBootMainEx(source, target, installsettings):
     cmd = ('cp /etc/wpa_supplicant.conf %s/EgamiBootI/%s/etc/wpa_supplicant.conf > /dev/null 2>&1' % (egamihome,
      target))
     rc = os.system(cmd)
-    cmd = ('cp -a /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot %s/EgamiBootI/%s/usr/lib/enigma2/python/Plugins/Extensions' % (egamihome,
-     target))
-    rc = os.system(cmd)
+    #cmd = ('cp -a /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot %s/EgamiBootI/%s/usr/lib/enigma2/python/Plugins/Extensions' % (egamihome, target))
+    #rc = os.system(cmd)
     
     
     if (installsettings == 'True'):
