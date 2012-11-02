@@ -10,20 +10,18 @@ import re, string
 import os
 from socket import *
 import socket
+from Components.About import about
 
-egamiver = 'EGAMI 1.3 MultiBoot'
 
 def checkkernel():
-	egversion = '1.3'
 	mycheck = 0
-	if fileExists('/proc/egami/version'):
-		fileExists('/proc/egami/version')
-		f = open('/proc/egami/version', 'r')
-		line = f.read()
-		if line.strip() == egversion:
-			mycheck = 1
+	if (os.path.isfile("/proc/stb/info/boxtype") and os.path.isfile("/proc/stb/info/version")): 
+		if open("/proc/stb/info/boxtype").read().strip() == "ini-1000" or open("/proc/stb/info/boxtype").read().strip() == "ini-3000" or open("/proc/stb/info/boxtype").read().strip() == "ini-5000" or open("/proc/stb/info/boxtype").read().strip() == "ini-7000":
+			if (about.getKernelVersionString()=="3.6.0"):
+				mycheck = 1
 	else:
-		fileExists('/proc/egami/version')
+	  mycheck = 0
+	  
 	return mycheck
 	
 def getExpertInfo(theId):

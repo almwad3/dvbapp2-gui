@@ -186,19 +186,19 @@ class EGAMIBackupPanel(Screen):
 						check = True
 						continue
 				f.close()
-		    else:
-				fileExists('/proc/mounts')
-		    if check == False:
-				self.session.open(MessageBox, _('Sorry, there is not any connected devices in your STB.\nPlease connect HDD or USB to store/restore Your EGAMI Backup!'), MessageBox.TYPE_INFO)
-		    else:
-			backup_file = self['list'].l.getCurrentSelection()[1]
-			if backup_file != '':
-				message = (_('Do you really want to restore the EGAMI Backup:\n ')) + self.mybackupfile + ' ?'
-				self.session.openWithCallback(self.restorE_2, MessageBox, message, MessageBox.TYPE_YESNO)
 			else:
-				system('umount /media/egamibackup_location')
-				system('rmdir /media/egamibackup_location')
-				self.session.open(MessageBox, _('Sorry, EGAMI Backup not found.'), MessageBox.TYPE_INFO)
+				    fileExists('/proc/mounts')
+			if check == False:
+				    self.session.open(MessageBox, _('Sorry, there is not any connected devices in your STB.\nPlease connect HDD or USB to store/restore Your EGAMI Backup!'), MessageBox.TYPE_INFO)
+			else:
+			    backup_file = self['list'].l.getCurrentSelection()[1]
+			    if backup_file != '':
+				    message = (_('Do you really want to restore the EGAMI Backup:\n ')) + self.mybackupfile + ' ?'
+				    self.session.openWithCallback(self.restorE_2, MessageBox, message, MessageBox.TYPE_YESNO)
+			    else:
+				    system('umount /media/egamibackup_location')
+				    system('rmdir /media/egamibackup_location')
+				    self.session.open(MessageBox, _('Sorry, EGAMI Backup not found.'), MessageBox.TYPE_INFO)
 		else:
 			self.session.open(MessageBox, _('Sorry: Wrong image in flash found. You have to install in flash EGAMI Image'), MessageBox.TYPE_INFO, 3)
 		  
