@@ -1022,7 +1022,7 @@ class EGFileManager_file_permission(Screen, ConfigListScreen):
 	def Exit(self):
 		self.close()
 
-dmnapi_py = "/usr/lib/enigma2/python/EGAMI/EGAMI_dmnapi.py"
+dmnapi_py = "python /usr/lib/enigma2/python/EGAMI/EGAMI_dmnapi.pyo"
 
 class EGFileManager_InfoMenu(Screen):
     def __init__(self, session, filename, dir, targetdir, sourcedir, args = 0):
@@ -1077,7 +1077,7 @@ class EGFileManager_InfoMenu(Screen):
 	   elif returnValue is "rights":
 		self.session.open(EGFileManager_file_permission, self.dirfile, self.sourcedir)
 	   elif returnValue is "get_sub":
-		os.system("chmod 755 /usr/lib/enigma2/python/EGAMI/EGAMI_dmnapi.py")
+		os.system("chmod 755 /usr/lib/enigma2/python/EGAMI/EGAMI_dmnapi.pyo")
 		self.session.open(Console,_("Download subtitle:"),['%s get "%s"' % (dmnapi_py, self.movie )])
 		
     def exit(self):
