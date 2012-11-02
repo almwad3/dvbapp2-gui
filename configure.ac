@@ -280,6 +280,8 @@ lib/python/Plugins/Extensions/TuxboxPlugins/Makefile
 lib/python/Plugins/Extensions/TuxboxPlugins/meta/Makefile
 lib/python/Plugins/Extensions/EGAMIPermanentClock/Makefile
 lib/python/Plugins/Extensions/IniMyTube/Makefile
+lib/python/Plugins/Extensions/EGAMIBoot/Makefile
+lib/python/Plugins/Extensions/EGAMIBoot/bin/Makefile
 lib/python/Plugins/SystemPlugins/CableScan/Makefile
 lib/python/Plugins/SystemPlugins/CommonInterfaceAssignment/Makefile
 lib/python/Plugins/SystemPlugins/CommonInterfaceAssignment/meta/Makefile
