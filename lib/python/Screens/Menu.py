@@ -241,7 +241,9 @@ class Menu(Screen):
 		  menutitle_string += a 
 		else:
 		  menutitle_string += " ---> " + a
-		self["title"] = StaticText(menutitle_string)
+		
+		self["title"] = StaticText(a)
+		#self["title"] = StaticText(menutitle_string)
 
 		Screen.setTitle(self, a)
 		self.menu_title = a
