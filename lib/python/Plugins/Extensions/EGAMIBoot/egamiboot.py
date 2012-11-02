@@ -264,13 +264,13 @@ def EgamiBootExtract(source, target):
 	  
 	  if (getKernelVersionString()=="2.6.37"):
 	    print "Found Kernel 2.6.37"
-	    rc = os.system('insmod /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/nandsim_2637.ko cache_file=/media/egamiboot/image_cache first_id_byte=0x20 second_id_byte=0xaa third_id_byte=0x00 fourth_id_byte=0x15;sleep 5')
+	    rc = os.system('insmod /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/nandsim_2637 cache_file=/media/egamiboot/image_cache first_id_byte=0x20 second_id_byte=0xaa third_id_byte=0x00 fourth_id_byte=0x15;sleep 5')
 	  elif (getKernelVersionString()=="3.2.2"):
 	    print "Found Kernel 3.2.2"
-	    rc = os.system('insmod /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/nandsim_322.ko cache_file=/media/egamiboot/image_cache first_id_byte=0x20 second_id_byte=0xaa third_id_byte=0x00 fourth_id_byte=0x15;sleep 5')
+	    rc = os.system('insmod /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/nandsim_322 cache_file=/media/egamiboot/image_cache first_id_byte=0x20 second_id_byte=0xaa third_id_byte=0x00 fourth_id_byte=0x15;sleep 5')
 	  elif (getKernelVersionString()=="3.6.0"):
 	    print "Found Kernel 3.6.0"
-	    rc = os.system('insmod /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/nandsim_360.ko cache_file=/media/egamiboot/image_cache first_id_byte=0x20 second_id_byte=0xaa third_id_byte=0x00 fourth_id_byte=0x15;sleep 5')
+	    rc = os.system('insmod /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/nandsim_360 cache_file=/media/egamiboot/image_cache first_id_byte=0x20 second_id_byte=0xaa third_id_byte=0x00 fourth_id_byte=0x15;sleep 5')
 	  	  
 	  cmd = ('dd if=rootfs.bin of=/dev/mtdblock%s bs=2048' % mtd)
 	  #cmd = ('dd if=rootfs.bin of=/dev/mtdblock4 bs=2048')
