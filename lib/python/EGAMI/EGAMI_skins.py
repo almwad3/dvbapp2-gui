@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # EG Addon Menu
 EGAddonMenu_Skin = """
 		<screen name="EGAddonMenu" title="Egami Addon Management" position="center,center" size="520,460" >

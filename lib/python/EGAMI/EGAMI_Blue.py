@@ -90,7 +90,7 @@ class EGEmuInfoScript(Screen):
 	def __init__(self, session):
 		self.skin = EGEmuInfoScript_Skin
 		Screen.__init__(self, session)
-		self['statuslab'] = Label('N/A')
+		self['statuslab'] = Label(_('N/A'))
 		self.mlist = []
 		self.populateSL()
 		self['list'] = MenuList(self.mlist)
@@ -129,7 +129,7 @@ class EGEmuInfoScript(Screen):
 	def mygo(self):
 		mysel = self['list'].getCurrent()
 		mysel2 = (('/usr/scripts/' + mysel) + '_emuinfo.sh')
-		mytitle = ('EmuInfo Tool: ' + mysel)
+		mytitle = (_('EmuInfo Tool: ') + mysel)
 		self.session.open(EGExecute, _(mytitle), mysel2)
 	
 
