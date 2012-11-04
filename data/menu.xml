@@ -94,6 +94,9 @@ self.session.openWithCallback(msgClosed, EpgLoadMsg)
 			</menu>
 			<menu weight="5" level="0" text="System" entryID="system_selection">
 				<id val="system" />
+				<menu weight="4" level="0" text="A/V Setup" entryID="av_screen">
+					<id val="av" />
+				</menu>
 				<!--<item level="0" entryID="remote_setup"><setup id="remotesetup"/></item>-->
 				<item level="0" entryID="usage_setup"><setup id="usage" /></item>
 				<item requires="Display"><setup level="1" id="lcd" /></item>
