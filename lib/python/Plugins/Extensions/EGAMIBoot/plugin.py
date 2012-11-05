@@ -470,7 +470,7 @@ class EGAMIBootImageInstall(Screen, ConfigListScreen):
 			message += _('Please: DO NOT reboot your STB and turn off the power.\n')
 			message += _('The new image will be installed and auto booted in few minutes.')
 			message += "'"
-			cmd1 = pluginpath + '/ex_init.py'
+			cmd1 = "python " + pluginpath + '/ex_init.pyo'
 			cmd = '%s %s %s %s' % (cmd1, source, target.lower().replace('.', '_'), str(self.sett.value))
 			print cmd
 			self.session.open(Console, _('EgamiBoot: Install new image'), [message, cmd])
