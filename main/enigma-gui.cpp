@@ -69,7 +69,7 @@ int main()
 
 	fontRenderClass::getInstance()->AddFont(eEnv::resolve("${datadir}/fonts/arial.ttf"), "Regular", 100);
 
-	eWidgetDesktop dsk(eSize(720, 576));
+	eWidgetDesktop dsk(eSize(1280, 720));
 	dsk.setDC(my_dc);
 
 	eWidget *bla = new eWidget(0);
@@ -98,7 +98,7 @@ int main()
 	
 	eDebug("painting!");
 	
-	dsk.invalidate(gRegion(eRect(0, 0, 720, 576)));
+	dsk.invalidate(gRegion(eRect(0, 0, 1280, 720)));
 	dsk.paint();
 
 	sleep(1);
