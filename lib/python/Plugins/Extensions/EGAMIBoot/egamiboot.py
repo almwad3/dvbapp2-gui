@@ -123,7 +123,28 @@ def EgamiBootMainEx(source, target, installsettings):
     filename = (((egamihome + '/EgamiBootI/') + target) + '/etc/bhversion')
     if(os.path.exists(filename)):
       os.system("echo \"BlackHole 1.7.1\" > " + filename)
+
+    # OpenPLi based
+    filename = egamihome + '/EgamiBootI/' + target + '/etc/init.d/volatile-media.sh'
+    if(os.path.exists(filename)):
+      cmd = "rm " + filename
+      os.system(cmd)
+      # so HACK WAY !!!
+      cmd = "wget -O " + egamihome + '/EgamiBootI/' + target + "/usr/lib/enigma2/python/RecordTimer.py http://code-ini.com/RecordTimer.py"
+      os.system(cmd)
       
+    
+    cmd = "mkdir " + egamihome + '/EgamiBootI/' + target + '/media/hdd'
+    os.system(cmd)
+    cmd = "mkdir " + egamihome + '/EgamiBootI/' + target + '/media/usb'
+    os.system(cmd)    
+    cmd = "mkdir " + egamihome + '/EgamiBootI/' + target + '/media/usb2'
+    os.system(cmd)
+    cmd = "mkdir " + egamihome + '/EgamiBootI/' + target + '/media/usb3'
+    os.system(cmd)
+    cmd = "mkdir " + egamihome + '/EgamiBootI/' + target + '/media/net'
+    os.system(cmd)
+    
     mypath = (((egamihome + '/EgamiBootI/') + target) + '/usr/lib/opkg/info/')
     if not (os.path.exists(mypath)):
       mypath = (((egamihome + '/EgamiBootI/') + target) + '/var/lib/opkg/info/')
