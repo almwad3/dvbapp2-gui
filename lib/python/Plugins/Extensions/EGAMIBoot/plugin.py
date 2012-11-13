@@ -77,7 +77,7 @@ class EGAMIBootInstallation(Screen):
 		Screen.__init__(self, session)
 		self.list = []
 		self["config"] = MenuList(self.list)
-		self['key_red'] = Label(_('Install EgamiBoot'))
+		self['key_red'] = Label(_('Install'))
 		self['key_green'] = Label(_('Cancel'))
 		self['key_blue'] = Label(_('Devices Panel'))
 		self['label1'] = Label(_('Welcome to EgamiBoot 2.0 MultiBoot Plugin installation.'))
@@ -148,7 +148,7 @@ class EGAMIBootInstallation(Screen):
             from EGAMI.EGAMI_devices_menu import EGDeviceManager
 	    self.session.open(EGDeviceManager)
 	  except:
-	    self.session.open(MessageBox, "You are not running Egami Image. You must mount devices Your self.", MessageBox.TYPE_INFO)
+	    self.session.open(MessageBox, _("You are not running Egami Image. You must mount devices Your self."), MessageBox.TYPE_INFO)
 	    
 	def myclose(self):
 		self.close()

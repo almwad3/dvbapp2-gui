@@ -40,8 +40,8 @@ class EGAMIBackupPanel(Screen):
 		self['label1'] = Label(_('1. STEP - Choose option RESTORE / BACKUP'))
 		self['label2'] = Label(_('There is not any EGAMI Backup file on connected devices!'))
 		self['label3'] = Label(_(''))
-		self['key_yellow'] = Label(_('Backup Egami'))
-		self['key_blue'] = Label(_('Restore Egami'))
+		self['key_yellow'] = Label(_('Backup EGAMI'))
+		self['key_blue'] = Label(_('Restore EGAMI'))
 		self['key_green'] = Label(_('Cancel'))
 
 		self.mlist = []
@@ -755,7 +755,7 @@ class EGFullBackup(Screen, ConfigListScreen):
 			myhdd
 			self.list.append((_("HDD mounted in:               ") +myhdd, myhdd))
 		else:
-			myhdd
+			myhddHere is the list of mounted devices in Your STB\nPlease choose a device where You would like to keep Your backup:
 
 		self["config"].setList(self.list)
 		print len(self.list)

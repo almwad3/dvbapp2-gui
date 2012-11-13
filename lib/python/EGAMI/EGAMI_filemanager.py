@@ -887,8 +887,8 @@ class EGFileManager_symlink_create(Screen, ConfigListScreen):
 		config.plugins.dsfilemanager.symlink_name = ConfigText(default = file, fixed_size = False)
 		config.plugins.dsfilemanager.symlink_path = ConfigText(default = path, fixed_size = False)
 			
-		list.append(getConfigListEntry("Source:", config.plugins.dsfilemanager.symlink_name))
-		list.append(getConfigListEntry("Symlink:", config.plugins.dsfilemanager.symlink_path))
+		list.append(getConfigListEntry(_("Source:"), config.plugins.dsfilemanager.symlink_name))
+		list.append(getConfigListEntry(_("Symlink:"), config.plugins.dsfilemanager.symlink_path))
 
 		ConfigListScreen.__init__(self, list)
 		
@@ -935,17 +935,17 @@ class EGFileManager_file_permission(Screen, ConfigListScreen):
 		config.plugins.dsfilemanager.other_write = ConfigSelection(default = self.other_w, choices = [("2", _("Yes")), ("0", _("No"))])
 		config.plugins.dsfilemanager.other_execute = ConfigSelection(default = self.other_x, choices = [("1", _("Yes")), ("0", _("No"))])
 
-		list.append(getConfigListEntry("user - read", config.plugins.dsfilemanager.user_read))
-		list.append(getConfigListEntry("user - write", config.plugins.dsfilemanager.user_write))
-		list.append(getConfigListEntry("user - execute", config.plugins.dsfilemanager.user_execute))
+		list.append(getConfigListEntry(_("user-read"), config.plugins.dsfilemanager.user_read))
+		list.append(getConfigListEntry(_("user-write"), config.plugins.dsfilemanager.user_write))
+		list.append(getConfigListEntry(_("user-execute"), config.plugins.dsfilemanager.user_execute))
 		#list.append("--------------------------")
-		list.append(getConfigListEntry("group - read", config.plugins.dsfilemanager.group_read))
-		list.append(getConfigListEntry("group - write", config.plugins.dsfilemanager.group_write))
-		list.append(getConfigListEntry("group - execute", config.plugins.dsfilemanager.group_execute))
+		list.append(getConfigListEntry(_("group-read"), config.plugins.dsfilemanager.group_read))
+		list.append(getConfigListEntry(_("group-write"), config.plugins.dsfilemanager.group_write))
+		list.append(getConfigListEntry(_("group-execute"), config.plugins.dsfilemanager.group_execute))
 		#list.append("--------------------------")
-		list.append(getConfigListEntry("other - read", config.plugins.dsfilemanager.other_read))
-		list.append(getConfigListEntry("other - write", config.plugins.dsfilemanager.other_write))
-		list.append(getConfigListEntry("other - execute", config.plugins.dsfilemanager.other_execute))
+		list.append(getConfigListEntry(_("other-read"), config.plugins.dsfilemanager.other_read))
+		list.append(getConfigListEntry(_("other-write"), config.plugins.dsfilemanager.other_write))
+		list.append(getConfigListEntry(_("other-execute"), config.plugins.dsfilemanager.other_execute))
 
 		ConfigListScreen.__init__(self, list)
 		
@@ -1143,7 +1143,7 @@ class EGFileViewer(Screen):
 		Screen.__init__(self, session)
 		self.file_name = file
 		self["status"] = Label(_(file))
-		self["filedata"] = ScrollLabel("Reading file. Please wait...")
+		self["filedata"] = ScrollLabel(_("Reading file. Please wait..."))
 		self.filetext = ""
 		self["actions"] = ActionMap(["WizardActions"],
 		{
