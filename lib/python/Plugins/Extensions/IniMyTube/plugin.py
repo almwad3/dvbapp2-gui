@@ -1506,8 +1506,28 @@ class MyTubeVideoHelpScreen(Screen):
 	def pageDown(self):
 		self["detailtext"].pageDown()
 
+	def __init__(self, session, service):
+		self.session = session
+		MoviePlayer.__init__(self, session, service)
+		self.skinName = "MoviePlayer"
+		MoviePlayer.WithoutStopClose = True
 
-class MyTubePlayer(Screen, InfoBarNotifications):
+	def doEofInternal(self, playing):
+		self.leavePlayer()
+			
+	def leavePlayer(self):
+		list = ((_("Yes"), "y"), (_("No"), "n"),)
+		self.session.openWithCallback(self.cbDoExit, ChoiceBox, title=_("Stop playing this movie?"), list = list)
+
+	def cbDoExit(self, answer):
+		answer = answer and answer[1]
+		if answer == "y":
+			self.close()
+			
+			
+from Screens.InfoBar import MoviePlayer
+			
+class MyTubePlayer(MoviePlayer):
 	STATE_IDLE = 0
 	STATE_PLAYING = 1
 	STATE_PAUSED = 2
@@ -1538,7 +1558,9 @@ class MyTubePlayer(Screen, InfoBarNotifications):
 
 	def __init__(self, session, service, lastservice, infoCallback = None, nextCallback = None, prevCallback = None):
 		Screen.__init__(self, session)
-		InfoBarNotifications.__init__(self)
+		MoviePlayer.__init__(self, session, service)
+		self.skinName = "MoviePlayer"
+		MoviePlayer.WithoutStopClose = True
 		self.session = session
 		self.service = service
 		self.infoCallback = infoCallback
@@ -1555,22 +1577,10 @@ class MyTubePlayer(Screen, InfoBarNotifications):
 				iPlayableService.evEOF: self.__evEOF,
 			})
 		
-		self["actions"] = ActionMap(["OkCancelActions", "InfobarSeekActions", "MediaPlayerActions", "MovieSelectionActions"],
-		{
-				"ok": self.ok,
-				"cancel": self.leavePlayer,
-				"stop": self.leavePlayer,
-				"playpauseService": self.playpauseService,
-				"seekFwd": self.playNextFile,
-				"seekBack": self.playPrevFile,
-				"showEventInfo": self.showVideoInfo,
-			}, -2)
-
-
 		self.lastservice = lastservice
 
-		self.hidetimer = eTimer()
-		self.hidetimer.timeout.get().append(self.ok)
+		#self.hidetimer = eTimer()
+		#self.hidetimer.timeout.get().append(self.ok)
 		self.returning = False
 
 		self.state = self.STATE_PLAYING
@@ -1591,31 +1601,31 @@ class MyTubePlayer(Screen, InfoBarNotifications):
 		self.pauseService()
 		self.handleLeave(config.plugins.mytube.general.on_movie_stop.value)
 
-	def __setHideTimer(self):
-		self.hidetimer.start(self.screen_timeout)
+	#def __setHideTimer(self):
+	#	self.hidetimer.start(self.screen_timeout)
 
-	def showInfobar(self):
-		self.show()
-		if self.state == self.STATE_PLAYING:
-			self.__setHideTimer()
-		else:
-			pass
+	#def showInfobar(self):
+	#	self.show()
+	#	if self.state == self.STATE_PLAYING:
+	#		self.__setHideTimer()
+	#	else:
+	#		pass
 
-	def hideInfobar(self):
-		self.hide()
-		self.hidetimer.stop()
+	#def hideInfobar(self):
+	#	self.hide()
+	#	self.hidetimer.stop()
 
-	def ok(self):
-		if self.shown:
-			self.hideInfobar()
-		else:
-			self.showInfobar()
+	#def ok(self):
+	#	if self.shown:
+	#		self.hideInfobar()
+	#	else:
+	#		self.showInfobar()
 
-	def showVideoInfo(self):
-		if self.shown:
-			self.hideInfobar()
-		if self.infoCallback is not None:	
-			self.infoCallback()
+	#def showVideoInfo(self):
+	#	if self.shown:
+	#		self.hideInfobar()
+	#	if self.infoCallback is not None:	
+	#		self.infoCallback()
 
 	def playNextFile(self):
 		print "playNextFile"
@@ -1649,13 +1659,13 @@ class MyTubePlayer(Screen, InfoBarNotifications):
 		self.play()
 
 	def play(self):
-		if self.state == self.STATE_PAUSED:
-			if self.shown:
-				self.__setHideTimer()	
+		#if self.state == self.STATE_PAUSED:
+		#	if self.shown:
+		#		self.__setHideTimer()	
 		self.state = self.STATE_PLAYING
 		self.session.nav.playService(self.service)
-		if self.shown:
-			self.__setHideTimer()
+		#if self.shown:
+		#	self.__setHideTimer()
 
 	def stopCurrent(self):
 		print "stopCurrent"
@@ -1674,10 +1684,10 @@ class MyTubePlayer(Screen, InfoBarNotifications):
 		if self.state == self.STATE_PLAYING:
 			self.setSeekState(self.STATE_PAUSED)
 		
-	def unPauseService(self):
-		print "unPauseService"
-		if self.state == self.STATE_PAUSED:
-			self.setSeekState(self.STATE_PLAYING)
+	#def unPauseService(self):
+	#	print "unPauseService"
+	#	if self.state == self.STATE_PAUSED:
+	#		self.setSeekState(self.STATE_PLAYING)
 
 
 	def getSeek(self):
@@ -1730,14 +1740,14 @@ class MyTubePlayer(Screen, InfoBarNotifications):
 				pauseable.pause()
 				self.state = self.STATE_PAUSED
 				if not self.shown:
-					self.hidetimer.stop()
+					#self.hidetimer.stop()
 					self.show()
 			elif wantstate == self.STATE_PLAYING:
 				print "WANT TO PLAY"
 				pauseable.unpause()
 				self.state = self.STATE_PLAYING
-				if self.shown:
-					self.__setHideTimer()
+				#if self.shown:
+				#	self.__setHideTimer()
 
 		for c in self.onPlayStateChanged:
 			c(self.state)
