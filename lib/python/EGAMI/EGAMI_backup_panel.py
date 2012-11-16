@@ -755,7 +755,7 @@ class EGFullBackup(Screen, ConfigListScreen):
 			myhdd
 			self.list.append((_("HDD mounted in:               ") +myhdd, myhdd))
 		else:
-			myhddHere is the list of mounted devices in Your STB\nPlease choose a device where You would like to keep Your backup:
+			myhdd
 
 		self["config"].setList(self.list)
 		print len(self.list)
