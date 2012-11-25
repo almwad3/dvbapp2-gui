@@ -124,7 +124,7 @@ class PowerTimerEntry(timer.TimerEntry, object):
 			return True
 
 		elif next_state == self.StateRunning:
-			wasTimerWakeup = False
+			self.wasTimerWakeup = False
 			if os.path.exists("/tmp/was_timer_wakeup"):
 				self.wasTimerWakeup = int(open("/tmp/was_timer_wakeup", "r").read()) and True or False
 				os.remove("/tmp/was_timer_wakeup")
@@ -350,6 +350,28 @@ class PowerTimerEntry(timer.TimerEntry, object):
 				self.StateRunning: self.begin,
 				self.StateEnded: self.end }[next_state]
 
+	def getNextWakeup(self):
+		print 'getNextWakeup'
+		if self.state == self.StateEnded or self.state == self.StateFailed:
+			print '1'
+			return self.end
+
+		if (self.timerType != TIMERTYPE.WAKEUP and self.timerType != TIMERTYPE.WAKEUPTOSTANDBY and not self.afterEvent):
+			print '2'
+			return -1
+		elif (self.timerType != TIMERTYPE.WAKEUP and self.timerType != TIMERTYPE.WAKEUPTOSTANDBY and self.afterEvent):
+			return self.end
+
+		next_state = self.state + 1
+
+		print '3', {self.StatePrepared: self.start_prepare,
+				self.StateRunning: self.begin,
+				self.StateEnded: self.end }[next_state]
+
+		return {self.StatePrepared: self.start_prepare,
+				self.StateRunning: self.begin,
+				self.StateEnded: self.end }[next_state]
+
 	def failureCB(self, answer):
 		if answer == True:
 			self.log(13, "ok, zapped away")
@@ -550,10 +572,11 @@ class PowerTimer(timer.Timer):
 	def getNextPowerManagerTimeOld(self):
 		now = time()
 		for timer in self.timer_list:
-			next_act = timer.getNextActivation()
-			if next_act < now:
-				continue
-			return next_act
+			if timer.timerType != TIMERTYPE.AUTOSTANDBY and timer.timerType != TIMERTYPE.AUTODEEPSTANDBY:
+				next_act = timer.getNextWakeup()
+				if next_act < now:
+					continue
+				return next_act
 		return -1
 
 	def getNextPowerManagerTime(self):
