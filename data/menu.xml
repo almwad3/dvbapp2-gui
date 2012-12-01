@@ -19,12 +19,9 @@
 			<item weight="1" text="EGAMI Full Backup Panel" entryID="full_backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGFullBackup;self.session.open(EGFullBackup)</code></item>
 			<item weight="1" text="EGAMI File Manager" entryID="file_manager"><code>from EGAMI.EGAMI_filemanager import EGFileManager;self.session.open(EGFileManager)</code></item>
 		</menu>
-
-
 		<item weight="2" level="1" text="Plugins" entryID="plugin_selection"><screen module="PluginBrowser" screen="PluginBrowser" /></item>
 		<menu weight="3" level="0" text="Setup" flushConfigOnClose="1" entryID="setup_selection" >
 			<id val="setup" />
-
 			<menu weight="5" level="0" text="TV" entryID="tv_selection">
 				<id val="tv" />
 				<menu weight="7" level="0" text="Service searching" entryID="service_searching_selection">
@@ -162,7 +159,7 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 		</menu>		
 		<menu weight="5" level="0" text="Timers" entryID="timer_menu">
 			<id val="timermenu" />
-			<item weight="100" level="0" text="CronTimers" entryID="crontimer_edit"><screen module="CronTimer" screen="CronTimers" /></item>
+			<!--<item weight="100" level="0" text="CronTimers" entryID="crontimer_edit"><screen module="CronTimer" screen="CronTimers" /></item>-->
 			<item weight="100" level="0" text="Timers" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList" /></item>
 			<item weight="100" level="0" text="PowerTimers" entryID="powertimer_edit"><screen module="PowerTimerEdit" screen="PowerTimerEditList" /></item>
 		</menu>

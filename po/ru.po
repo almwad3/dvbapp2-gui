@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-14 17:59+0100\n"
-"PO-Revision-Date: 2012-11-04 23:12+0100\n"
+"PO-Revision-Date: 2012-12-01 13:01+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -387,7 +387,7 @@ msgid "<Current movielist location>"
 msgstr "<Текущее расположение записей>"
 
 msgid "<Default movie location>"
-msgstr "<Расположение записей по умолчанию>"
+msgstr "<Расположение по умолчанию>"
 
 msgid "<Last timer location>"
 msgstr "<Последнее расположение по таймеру>"
@@ -843,7 +843,7 @@ msgid "Ask user"
 msgstr "Спросить пользователя"
 
 msgid "Aspect Ratio"
-msgstr "Сотношение сторон"
+msgstr "Соотношение сторон"
 
 msgid "Attach a file"
 msgstr "Прикрепить файл"
@@ -985,7 +985,7 @@ msgid "Band"
 msgstr "Диапазон"
 
 msgid "Bandwidth"
-msgstr "Трафик"
+msgstr "Ширина полосы"
 
 msgid "Base Time"
 msgstr "Основное время"
@@ -1619,7 +1619,7 @@ msgid ""
 "Could not activate Permanent-Timeshift!\n"
 "Timeshift-Path does not exist"
 msgstr ""
-"Невозможно акивировать постоянный сдвиг времени!\n"
+"Невозможно акивировать постоянный Timeshift!\n"
 "не указано конечное расположение"
 
 msgid "Could not connect to STB_BOX .NFI Image Feed Server:"
@@ -2172,7 +2172,7 @@ msgid "Don't save"
 msgstr "Не сохранять"
 
 msgid "Don't save Timeshift as Movie"
-msgstr "Не сохранять сдвиг времени как видеозапись"
+msgstr "Не сохранять Timeshift как видеозапись"
 
 msgid "Don't stop current event but disable coming events"
 msgstr "Не останавливать текущее событие, но отключить ближайшие события"
@@ -2670,7 +2670,7 @@ msgid "Flash"
 msgstr "Флеш"
 
 msgid "Flashing"
-msgstr "Мигание"
+msgstr "Периодически"
 
 msgid "Flashing failed"
 msgstr "Прошивка неудачна!"
@@ -2718,7 +2718,7 @@ msgid "Frequency bands"
 msgstr "Частотные диапазоны"
 
 msgid "Frequency scan step size(khz)"
-msgstr "Шаг частоты сканирования (khz)"
+msgstr "Шаг частоты сканирования (кГц)"
 
 msgid "Frequency steps"
 msgstr "Шаг частоты"
@@ -3382,7 +3382,7 @@ msgid "Last Update:"
 msgstr "Последнее обновление:"
 
 msgid "Last config"
-msgstr "Послед. значен."
+msgstr "Пред."
 
 msgid "Last speed"
 msgstr "Последняя скорость"
@@ -3455,7 +3455,7 @@ msgstr "Список доступных сетей"
 msgid "List mode"
 msgstr "Режим списка"
 
-msgid "List of Storage Devices"
+msgid "List of storage devices"
 msgstr "Список устройств"
 
 #, python-format
@@ -3602,7 +3602,7 @@ msgid ""
 "Restarting Timeshift now ..."
 msgstr ""
 "Размер файла сдвига времени достиг максимального размера для текущего события!\n"
-"Сдвиг времени перезапущен..."
+"Timeshift перезапущен..."
 
 msgid "Maximum no of days:"
 msgstr "Хранить максимальное количество дней:"
@@ -3790,9 +3790,6 @@ msgstr "Тюнер"
 
 msgid "NOW"
 msgstr "Сейчас"
-
-msgid "NTP"
-msgstr "NTP"
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -4013,9 +4010,9 @@ msgid ""
 "Do you like to change the setup PIN now?\n"
 "When you say 'No' here the setup protection stay disabled!"
 msgstr ""
-"Не найден валидный PIN!\n"
-"Вы хотите изменить PIN настроек сейчас?\n"
-"Если вы ответите 'НЕТ', то защита настроек \n"
+"Не найден действующий PIN!\n"
+"Хотите изменить PIN настроек сейчас?\n"
+"Если вы ответите 'Нет', то защита настроек \n"
 "не будет включена!"
 
 msgid "No wireless networks found! Searching..."
@@ -4086,7 +4083,7 @@ msgid "Norwegian"
 msgstr "Норвежский"
 
 msgid "Not Flashing"
-msgstr "Нет мигания"
+msgstr "Нет"
 
 #, python-format
 msgid "Not enough diskspace. Please free up some diskspace and try again. (%d MB required, %d MB available)"
@@ -4372,7 +4369,7 @@ msgid "Perform an online update check in the background"
 msgstr "Выполнить онлайн-проверку обновлений в фоновом режиме"
 
 msgid "Permanent Timeshift Enable"
-msgstr "Постоянный сдвиг времени включён"
+msgstr "Постоянный Timeshift включён"
 
 msgid "Permanent Timeshift Max Events"
 msgstr "Максимально событий для постоянного сдвига времени"
@@ -4853,7 +4850,7 @@ msgid "Provider Name: "
 msgstr "Имя поставщика услуг: "
 
 msgid "Provider to scan"
-msgstr "Информация для сканирования"
+msgstr "Список провайдеров"
 
 msgid "Provider: "
 msgstr "Провайдер: "
@@ -5013,7 +5010,7 @@ msgid "Regard deep standby as standby"
 msgstr "Глубокий режим ожидания считать обычным"
 
 msgid "Release"
-msgstr "Версия"
+msgstr "Релиз"
 
 msgid "Reload"
 msgstr "Обновить"
@@ -5113,7 +5110,7 @@ msgstr "Переименование %s!"
 msgid "Repeat Display Message"
 msgstr "Повторить сообщение"
 
-msgid "Repeat Type"
+msgid "Repeat type"
 msgstr "Повторить"
 
 msgid "Repeating event currently recording... What do you want to do?"
@@ -5311,10 +5308,10 @@ msgid "Save Playlist"
 msgstr "Сохранить плейлист"
 
 msgid "Save Timeshift as Movie and continue recording"
-msgstr "Сохранить сдвиг времени как видеофайл и продолжить запись"
+msgstr "Сохранить Timeshift как видеофайл и продолжить запись"
 
 msgid "Save Timeshift as Movie and stop recording"
-msgstr "Сохранить сдвиг времени как видеофайл и остановить запись"
+msgstr "Сохранить Timeshift как видеофайл и остановить запись"
 
 msgid "Save and record"
 msgstr "Сохранить и записать"
@@ -5520,7 +5517,7 @@ msgid "Select how you want recording names to be populated."
 msgstr "Выберите, что добавить к имени записываемых файлов"
 
 msgid "Select if timeshift must continue when set to record."
-msgstr "Выберите, если сдвиг времени должен продолжаться при начале записи"
+msgstr "Выберите, если Timeshift должен продолжаться при начале записи"
 
 msgid "Select if you want the Subservice mode to be activated."
 msgstr "Выберите, если вы хотите активировать режим подсервисов."
@@ -5901,7 +5898,7 @@ msgid "Settings"
 msgstr "Установки"
 
 msgid "Settings..."
-msgstr "Установки..."
+msgstr "Настройки системы"
 
 msgid "Setup"
 msgstr "Настройка"
@@ -6399,7 +6396,7 @@ msgid "Stop"
 msgstr "Стоп"
 
 msgid "Stop Timeshift?"
-msgstr "Остановить сдвиг времени?"
+msgstr "Остановить Timeshift?"
 
 msgid "Stop current event and disable coming events"
 msgstr "Остановить текущее событие и отключить ближайшие события"
@@ -6426,7 +6423,7 @@ msgid "Stop testing plane after # successful transponders"
 msgstr "Остановить тестирование после # исправного транспондера"
 
 msgid "Stop timeshift while recording?"
-msgstr "Остановить сдвиг времени во время записи?"
+msgstr "Остановить Timeshift во время записи?"
 
 msgid "Stopped"
 msgstr "Остановка"
@@ -6713,8 +6710,20 @@ msgstr ""
 "Выполняется перезапуск пользовательского интерфейса...\n"
 "Пожалуйста, подождите..."
 
+msgid "The user interface of your STB_BOX is restarting"
+msgstr ""
+"Выполняется перезапуск пользовательского интерфейса...\n"
+"Пожалуйста, подождите..."
+
 msgid ""
 "The User Interface of your STB_BOX is restarting\n"
+"due to an error in mytest.py"
+msgstr ""
+"Выполняется перезапуск пользовательского интерфейса\n"
+"из-за ошибки в файле mytest.py"
+
+msgid ""
+"The user interface of your STB_BOX is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
 "Выполняется перезапуск пользовательского интерфейса\n"
@@ -7110,7 +7119,7 @@ msgstr "Список таймеров"
 msgid "Timer Overview"
 msgstr "Список  таймеров"
 
-msgid "Timer Type"
+msgid "Timer type"
 msgstr "Тип таймера"
 
 msgid "Timer entry"
@@ -7142,19 +7151,19 @@ msgid "Timers"
 msgstr "Таймеры"
 
 msgid "Timeshift"
-msgstr "Сдвиг времени"
+msgstr "Timeshift"
 
 msgid "Timeshift location"
-msgstr "Таймшифт"
+msgstr "Расположение Timeshift"
 
 msgid "Timeshift not possible!"
-msgstr "Сдвиг времени невозможен!"
+msgstr "Timeshift невозможен!"
 
 msgid "Timeshift save failed!"
-msgstr "Сохранение файла сдвига времени неудачно!"
+msgstr "Сохранение файла Timeshift неудачно!"
 
 msgid "Timeshift saved to your harddisk!"
-msgstr "Файл сдвига времени сохраняется на жестком диске!"
+msgstr "Файл Timeshift сохраняется на жестком диске!"
 
 msgid "Timeshift settings"
 msgstr "Настройка Timeshift"
@@ -7462,10 +7471,10 @@ msgid "Use Interface"
 msgstr "Использовать интерфейс"
 
 msgid "Use PTS seekbar while timeshifting?"
-msgstr "Использовать PTS панель поиска при работе сдвига времени?"
+msgstr "Использовать PTS панель поиска при работе Timeshift?"
 
 msgid "Use PTS seekbar while timeshifting? *"
-msgstr "Использовать PTS панель поиска при работе сдвига времени? *"
+msgstr "Использовать PTS панель поиска при работе Timeshift? *"
 
 msgid "Use Power Measurement"
 msgstr "Использовать измерение мощности"
@@ -7796,7 +7805,7 @@ msgid "W"
 msgstr "W"
 
 msgid "WARNING: feeds maybe unstable."
-msgstr "ВНИМАНИЕ: возможны нестабильные (непроверенные) обновления."
+msgstr "ВНИМАНИЕ: возможны нестабильные сборки плагинов."
 
 msgid "WEP"
 msgstr "WEP"
@@ -8030,10 +8039,10 @@ msgid "Year"
 msgstr "Год"
 
 msgid "Yellow DVB subtitles"
-msgstr "Жёлтые DVB субтитры"
+msgstr "Желтые DVB субтитры"
 
 msgid "Yellow pango subtitles"
-msgstr "Жёлтые субтитры Pango"
+msgstr "Желтые субтитры Pango"
 
 msgid "Yes"
 msgstr "Да"
@@ -8376,10 +8385,10 @@ msgid "Zoom Off..."
 msgstr "Увеличение выключено..."
 
 msgid "[TimeShift] Restarting Timeshift!"
-msgstr "[Сдвиг времени] Перезапуск сдвига времени!"
+msgstr "[Timeshift] Перезапуск сдвига времени!"
 
 msgid "[Timeshift] Merging records failed!"
-msgstr "[Сдвиг времени] Соединить записи не удалось!"
+msgstr "[Timeshift] Соединить записи не удалось!"
 
 msgid "[alternative edit]"
 msgstr "[редактирование альтернатив]"
@@ -8438,14 +8447,14 @@ msgstr "добавить закладку"
 msgid "add bouquet"
 msgstr "добавить пакет"
 
-msgid "add directory to playlist"
-msgstr "добавить каталог в список воспроизведения"
+msgid "Add directory to playlist"
+msgstr "Добавить каталог в плейлист"
 
-msgid "add file to playlist"
-msgstr "добавить файл в список воспроизведения"
+msgid "Add file to playlist"
+msgstr "Добавить файл в список воспроизведения"
 
-msgid "add files to playlist"
-msgstr "добавить файлы в список воспроизведения"
+msgid "Add files to playlist"
+msgstr "Добавить файлы в список воспроизведения"
 
 msgid "add marker"
 msgstr "добавить маркер"
@@ -8669,14 +8678,14 @@ msgstr "удалить"
 msgid "delete cut"
 msgstr "удалить вырезанное"
 
-msgid "delete file"
-msgstr "удалить файл"
+msgid "Delete file"
+msgstr "Удалить файл"
 
 msgid "delete playlist entry"
 msgstr "удалить запись из списка воспроизведения"
 
-msgid "delete saved playlist"
-msgstr "удалить сохраненный плейлист"
+msgid "Delete saved playlist"
+msgstr "Удалить сохраненный плейлист"
 
 msgid "delete..."
 msgstr "удалить..."
@@ -8913,8 +8922,8 @@ msgstr "высота"
 msgid "help..."
 msgstr "помощь..."
 
-msgid "hide player"
-msgstr "скрыть проигрыватель"
+msgid "Hide player"
+msgstr "Скрыть плеер"
 
 msgid "hops:"
 msgstr "скачки:"
@@ -8991,8 +9000,8 @@ msgstr "литература"
 msgid "live broadcast"
 msgstr "прямой эфир"
 
-msgid "load playlist"
-msgstr "загрузить плейлист"
+msgid "Load playlist"
+msgstr "Загрузить плейлист"
 
 msgid "locked"
 msgstr "захвачено"
@@ -9124,7 +9133,7 @@ msgid "no transparency"
 msgstr "без прозрачности"
 
 msgid "none"
-msgstr "никакой"
+msgstr "нет"
 
 msgid "normal"
 msgstr "нормальный"
@@ -9330,8 +9339,8 @@ msgstr "романс"
 msgid "save last directory on exit"
 msgstr "сохранить последний каталог при выходе"
 
-msgid "save playlist"
-msgstr "сохранить плейлист"
+msgid "Save playlist"
+msgstr "Сохранить плейлист"
 
 msgid "save playlist on exit"
 msgstr "сохранить плейлист при выходе"
@@ -9560,7 +9569,7 @@ msgid "stop recording"
 msgstr "остановить запись"
 
 msgid "stop timeshift"
-msgstr "остановить сдвиг времени"
+msgstr "остановить Timeshift"
 
 msgid "stop using as startup service"
 msgstr "не использовать как начальный сервис после загрузки"
@@ -9574,8 +9583,8 @@ msgstr "переключить на закладки"
 msgid "switch to filelist"
 msgstr "переключить на список файлов"
 
-msgid "switch to playlist"
-msgstr "переключить на плейлист"
+msgid "Switch to playlist"
+msgstr "Переключить на плейлист"
 
 msgid "switch to the next angle"
 msgstr "перейти в следующей угол"
@@ -10569,9 +10578,6 @@ msgstr ""
 "Плагин успешно установлен!\n"
 " Для отображения его в списке Плагинов необходимо перезапустить Меню. Сделать это сейчас?"
 
-msgid "Show 'Force reload' as plugin"
-msgstr "Показывать 'Вынужденную перезагрузку' как плагин"
-
 msgid "Drive where you save data.The drive Must be mounted in rw.If you can't see your device here probably is mounted as read only or autofs handle it only in read only mode. In case of mount it manually and try again"
 msgstr "Диск, где вы храните данные должен быть монтирован с правами RW.В противном случае вы не увидите его тут.Как вариант, смонтируйте его вручную."
 
@@ -10715,3 +10721,208 @@ msgstr "Файлы"
 
 msgid "P l a y l i s t"
 msgstr "Список"
+
+msgid "AutoTimers"
+msgstr "Автотаймер"
+
+msgid "CronTimers"
+msgstr "Кронтаймер"
+
+msgid "PowerTimers"
+msgstr "Таймер Питания"
+
+msgid "Start time"
+msgstr "Время начала"
+
+msgid "Set end time"
+msgstr "Время окончания"
+
+msgid "wakeup to standby"
+msgstr "перейти в режим ожидания"
+
+msgid "wakeup"
+msgstr "пробуждение"
+
+msgid "auto standby"
+msgstr "авто режим ожидания"
+
+msgid "Sleep delay"
+msgstr "Задержка сна"
+
+msgid "Show 'Force reload' as plugin"
+msgstr "Показать Принудительную перезагрузку, как плагин"
+
+msgid "Reload black-/white lists"
+msgstr "Перезагрузить черные-/белые списки"
+
+msgid "External"
+msgstr "Внешняя"
+
+msgid "Hard disk setup"
+msgstr "Настройка жесткого диска"
+
+msgid "Hard disk standby after"
+msgstr "Режим ожидания диска через"
+
+msgid "No standby"
+msgstr "никогда"
+
+msgid "not available"
+msgstr "нет"
+
+msgid "Circular"
+msgstr "Круговая"
+
+msgid "Only free scan"
+msgstr "Только открытые"
+
+msgid "Video fine-tuning"
+msgstr "Тонкая настройка изображения"
+
+msgid "multi"
+msgstr "несколько"
+
+msgid "Aspect ratio"
+msgstr "Соотношение сторон"
+
+msgid "Color space"
+msgstr "Цветовое пространство"
+
+msgid "Satellite configuration mode"
+msgstr "Режим"
+
+msgid "Language setup"
+msgstr "Выбор языка меню"
+
+msgid "Transponder Time"
+msgstr "Спутника"
+
+msgid "NTP"
+msgstr "Сети-NTP"
+
+msgid "Network wizard"
+msgstr "Мастер настройки сети"
+
+msgid "Use interface"
+msgstr "Использовать интерфейс"
+
+msgid "LAN adapter"
+msgstr "Сетевой адаптер"
+
+msgid "Local network"
+msgstr "Локальная сеть"
+
+msgid "IP address"
+msgstr "IP адрес"
+
+msgid "Use the networkwizard to configure your Network\n"
+msgstr "Используйте мастер для настройки сети\n"
+
+msgid "<Timer recording location>"
+msgstr "<Запись по таймеру>"
+
+msgid "<Instant recording location>"
+msgstr "<Текущая запись>"
+
+msgid "Margin after recording (minutes)"
+msgstr "Запас времени после окончания записи (мин)"
+
+msgid "Margin before recording (minutes)"
+msgstr "Запас времени перед началом записи (мин)"
+
+msgid "Small progress"
+msgstr "Небольшое движение"
+
+msgid "Single step (GOP)"
+msgstr "Один шаг"
+
+msgid "Custom skip time for '1'/'3' buttons"
+msgstr "Шаг пропуска для кнопок '1' и '3'"
+
+msgid "Custom skip time for '4'/'6' buttons"
+msgstr "Шаг пропуска для кнопок '4' и '6'"
+
+msgid "Custom skip time for '7'/'9' buttons"
+msgstr "Шаг пропуска для кнопок '7' и '9'"
+
+msgid "Permanent Timeshift enable"
+msgstr "Включить постоянный Timeshift"
+
+msgid "Permanent Timeshift max events"
+msgstr "Максимальное число программ"
+
+msgid "Permanent Timeshift max length"
+msgstr "Максимальная длинна Timeshift"
+
+msgid "Permanent Timeshift start delay"
+msgstr "Время задержки Timeshift"
+
+msgid "Timeshift-save action on zap"
+msgstr "Timeshift- сохранить действие при переключении"
+
+msgid "Show shutdown menu"
+msgstr "меню выключения"
+
+msgid "Immediate shutdown"
+msgstr "немедленное выключение"
+
+msgid "Swap PiP and main picture"
+msgstr "заменить PiP и основную картинку"
+
+msgid "Move PiP to main picture"
+msgstr "переместить PiP на основной экран"
+
+msgid "Stop PiP"
+msgstr "остановить PiP"
+
+msgid "Expert settings"
+msgstr "Эксперт настройки"
+
+msgid "Prefer AC3 track"
+msgstr "Предпочтение AC3"
+
+msgid "Prefer audio track stored by service"
+msgstr "Предпочтение выбора аудиодорожки каналом"
+
+msgid "Prefer graphical DVB subtitles"
+msgstr "Предпочтение DVB графическим субтитрам"
+
+msgid "User interface visibility"
+msgstr "Видимость"
+
+msgid "Network advanced settings"
+msgstr "Расширенные настройки сети"
+
+msgid "EPG advanced settings"
+msgstr "Расширенные настройки EPG"
+
+msgid "Mount Manager"
+msgstr "Монтирование сети"
+
+msgid "Network Browser"
+msgstr "Сетевые подключения"
+
+msgid "Setup Mount Again"
+msgstr "Монтировать снова"
+
+msgid "Add new NFS or CIFS mount point to your Receiver."
+msgstr "Добавить новые  NFS или CIFS точки монтирования."
+
+msgid "View, edit or delete mountpoints on your Receiver."
+msgstr "Просмотр, редактирование или удаление точек монтирования."
+
+msgid "Change the hostname of your Receiver."
+msgstr "Изменить имя хоста вашего ресивера."
+
+msgid "Schedule a auto remount of your network shares."
+msgstr "Переподключение списка сетевых дисков."
+
+msgid "Mount using"
+msgstr "Подключение"
+
+msgid "Schedule MountAgain"
+msgstr "Режим переподключений"
+
+msgid "Re-mount network shares every (in hours)"
+msgstr "Переподключать каждые (в часах)"
+
