@@ -1,6 +1,6 @@
 <wizard>
 		<step id="start" nextstep="introduction">
-			<text value="Welcome.\n\nThis start wizard will guide you through the basic setup of your STB_BOX.\nPress the OK button on your remote control to move to the next step." />
+			<text value="Welcome.\n\nThis start wizard will guide you through the basic setup of your linux receiver.\nPress the OK button on your remote control to move to the next step." />
 			<code>
 self.clearSelectedKeys()
 self.selectKey("OK")
@@ -125,9 +125,6 @@ self.selectKey("RIGHT")
 from Components.NimManager import nimmanager
 self.condition = nimmanager.somethingConnected() and not config.misc.installwizard.channellistdownloaded.value
 			</condition>
-			<code>
-self.hideRc()
-			</code>
 			<list>
 				<listentry caption="No" step="softcam" />
 				<listentry caption="Yes, do an automatic scan now" step="scan" />

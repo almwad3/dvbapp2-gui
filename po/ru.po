@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-14 17:59+0100\n"
-"PO-Revision-Date: 2012-12-01 13:01+0100\n"
+"PO-Revision-Date: 2012-12-04 19:56+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -732,7 +732,7 @@ msgid "Alpha"
 msgstr "Прозрачность"
 
 msgid "Alphanumeric"
-msgstr "Буквенно-цифровой"
+msgstr "Алфавит"
 
 msgid "Altern"
 msgstr "Альтер"
@@ -910,7 +910,7 @@ msgid "Automatic scan"
 msgstr "Автоскан"
 
 msgid "Automatic setting backup"
-msgstr "Установки автосохранения"
+msgstr "Автосохранение настроек"
 
 msgid "Automatically update Client/Server View?"
 msgstr "Просмотр автообновления Клиент/Сервер?"
@@ -949,7 +949,7 @@ msgid "Background"
 msgstr "Фоновый"
 
 msgid "Background check"
-msgstr "Проверка фона"
+msgstr "Фоновая проверка обновлений"
 
 msgid "Background delete option"
 msgstr "Фоновые настройки удаления"
@@ -2873,7 +2873,7 @@ msgid "HD list"
 msgstr "HD"
 
 msgid "HDMI CEC"
-msgstr "Управление HDMI"
+msgstr "Настройки HDMI CEC"
 
 msgid "HDMI CEC Setup"
 msgstr "Настройка управления HDMI"
@@ -3218,13 +3218,13 @@ msgid "Installing package content... Please wait..."
 msgstr "Установка содержимого пакета... Пожалуйста, подождите..."
 
 msgid "Instant Record..."
-msgstr "Немедленная запись..."
+msgstr "Мгновенная запись"
 
 msgid "Instant record location"
 msgstr "Расположение записей"
 
 msgid "Instant recordings location"
-msgstr "Расположение файлов записи"
+msgstr "Текущие файлы записи"
 
 msgid "Interface"
 msgstr "Интерфейс"
@@ -3236,7 +3236,7 @@ msgid "Intermediate"
 msgstr "Средний"
 
 msgid "Internal Flash"
-msgstr "Внутренняя флеш-память"
+msgstr "Внутренняя флеш"
 
 msgid "Internal hdd only"
 msgstr "Только внутренний жёсткий диск"
@@ -3629,7 +3629,7 @@ msgid "Memory"
 msgstr "Память"
 
 msgid "Memory Information"
-msgstr "Инфо о памяти"
+msgstr "Информация о памяти"
 
 msgid "Menu"
 msgstr "Меню"
@@ -4402,7 +4402,7 @@ msgid "Picon and Service Name"
 msgstr "Пикон и имя сервиса"
 
 msgid "Picon width"
-msgstr "Ширина"
+msgstr "Ширина пиконов"
 
 msgid "Picture in Graphics"
 msgstr "Картинка в графике"
@@ -4799,10 +4799,10 @@ msgid "Primary DNS"
 msgstr "Первичный DNS"
 
 msgid "Primetime hour"
-msgstr "Прайм-тайм часов"
+msgstr "Часы прайм-тайм"
 
 msgid "Primetime minute"
-msgstr "Прайм-тайм минут"
+msgstr "Минуты прайм-тайм"
 
 msgid "Priority"
 msgstr "Приоритет"
@@ -5420,6 +5420,26 @@ msgstr "Сканирование %s..."
 msgid "Scanning completed, %d channels found"
 msgstr "Сканирование выполнено, %d каналов найдено"
 
+#. TRANSLATORS: The stb is performing a channel scan, progress percentage is printed in '%d' (and '%%' will show a single '%' symbol)
+#, python-format
+msgid "Scanning - %d%% completed"
+msgid_plural "Scanning - %d%% completed"
+msgstr[0] "Сканирование - %d%% завершено"
+msgstr[1] "Сканирование - %d%% завершено"
+
+#, python-format
+msgid "Scanning completed, %d channel found"
+msgid_plural "Scanning completed, %d channels found"
+msgstr[0] "Сканирование завершено, %d каналов найдено"
+msgstr[1] "Сканирование завершено, %d каналов найдено"
+
+#. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
+#, python-format
+msgid "%d channel found"
+msgid_plural "%d channels found"
+msgstr[0] "%d каналов найдено!"
+msgstr[1] "%d каналов найдено!"
+
 msgid "Scanning failed!"
 msgstr "Сканирование неудачно!"
 
@@ -5676,7 +5696,7 @@ msgstr ""
 "Проверьте настройки тюнера!"
 
 msgid "Service width"
-msgstr "Ширина"
+msgstr "Ширина канала"
 
 msgid "Serviceinfo"
 msgstr "Информация о сервисе"
@@ -6031,7 +6051,7 @@ msgid "Show background when tuned to a radio channel."
 msgstr "Показ фона при настройке на радиостанции"
 
 msgid "Show bouquet on launch"
-msgstr "Показывать список пакетов при запуске"
+msgstr "Показывать список каналов при запуске"
 
 msgid "Show bouquet selection menu"
 msgstr "Показать меню выбора пакетов"
@@ -6711,9 +6731,7 @@ msgstr ""
 "Пожалуйста, подождите..."
 
 msgid "The user interface of your STB_BOX is restarting"
-msgstr ""
-"Выполняется перезапуск пользовательского интерфейса...\n"
-"Пожалуйста, подождите..."
+msgstr "Выполняется перезапуск пользовательского интерфейса..."
 
 msgid ""
 "The User Interface of your STB_BOX is restarting\n"
@@ -7135,9 +7153,6 @@ msgstr ""
 "Обнаружено дублирование таймера в timers.xml!\n"
 "Пожалуйста, проверьте!"
 
-msgid "Timer record location"
-msgstr "Расположение записей по таймеру"
-
 msgid "Timer sanity error"
 msgstr "Ошибка состояния таймера"
 
@@ -7175,7 +7190,7 @@ msgid "Timeshift will only start when the start delay time has passed. This prev
 msgstr "Timeshift запускается только после определенного времени задержки"
 
 msgid "Timeshift-Save Action on zap"
-msgstr "Настройка сдвига времени сохранена для переключения"
+msgstr "Сохранить функцию Timeshift при переключении"
 
 msgid "Timezone"
 msgstr "Часовой пояс"
@@ -7673,19 +7688,6 @@ msgstr "Просмотр улучшения изображения"
 
 msgid "Video enhancement setup"
 msgstr "Настройка улучшения изображения"
-
-msgid ""
-"Video input selection\n"
-"\n"
-"Please press OK if you can see this page on your TV (or select a different input port).\n"
-"\n"
-"The next input port will be automatically probed in 10 seconds."
-msgstr ""
-"Выбор видеовхода\n"
-"\n"
-"Нажмите ОК, если вы видите эту страницу на экране ТВ (или выберите другой вход).\n"
-"\n"
-"Следующий вход будет автоматически выбран через 10 сек."
 
 msgid "Video mode selection."
 msgstr "Выбор режима видео."
@@ -8242,7 +8244,7 @@ msgstr ""
 "Нажмите ОК для продолжения."
 
 msgid "Your STB_BOX is rebooting"
-msgstr "Перезагрузка ресивера"
+msgstr "Ваш ресивер перегружается"
 
 msgid "Your STB_BOX is shutting down"
 msgstr "Ваш ресивер выключается"
@@ -8642,7 +8644,7 @@ msgid "connected"
 msgstr "подключено"
 
 msgid "continue"
-msgstr "продолжить"
+msgstr "Продолжить"
 
 msgid "cooking"
 msgstr "приготовление пищи"
@@ -9097,10 +9099,10 @@ msgid "news/weather report"
 msgstr "новости/прогноз погоды"
 
 msgid "next channel"
-msgstr "следующий канал"
+msgstr "Следующий канал"
 
 msgid "next channel in history"
-msgstr "следующий канал в истории"
+msgstr "Следующий канал в истории"
 
 msgid "no"
 msgstr "нет"
@@ -9187,10 +9189,10 @@ msgid "open servicelist"
 msgstr "открыть список сервисов"
 
 msgid "open servicelist(down)"
-msgstr "открыть список сервисов (вниз)"
+msgstr "Открыть список сервисов (вниз)"
 
 msgid "open servicelist(up)"
-msgstr "открыть список сервисов (вверх)"
+msgstr "Открыть список сервисов (вверх)"
 
 msgid "original"
 msgstr "оригинальный"
@@ -9208,7 +9210,7 @@ msgid "pass"
 msgstr "передать"
 
 msgid "pause"
-msgstr "пауза"
+msgstr "Пауза"
 
 msgid "performing arts"
 msgstr "исполнительские виды искусства"
@@ -9247,10 +9249,10 @@ msgid "pre-school children's program"
 msgstr "дошкольные детские программы"
 
 msgid "previous channel"
-msgstr "предыдущий канал"
+msgstr "Предыдущий канал"
 
 msgid "previous channel in history"
-msgstr "предыдущий канал в истории"
+msgstr "Предыдущий канал в истории"
 
 msgid "provid:"
 msgstr "id провайдера:"
@@ -9500,13 +9502,13 @@ msgid "simple"
 msgstr "простой"
 
 msgid "skip backward"
-msgstr "перемотка назад"
+msgstr "Перемотка назад"
 
 msgid "skip backward (enter time)"
 msgstr "перейти назад (введите время)"
 
 msgid "skip forward"
-msgstr "перемотка вперед"
+msgstr "Перемотка вперед"
 
 msgid "skip forward (enter time)"
 msgstr "перейти вперед (введите время)"
@@ -9551,7 +9553,7 @@ msgid "start directory"
 msgstr "начальный каталог"
 
 msgid "start timeshift"
-msgstr "запуск сдвига времени"
+msgstr "Запустить Timeshift"
 
 msgid "stepsize"
 msgstr "размер шага"
@@ -9686,7 +9688,7 @@ msgid "vertical"
 msgstr "вертикальная"
 
 msgid "view extensions..."
-msgstr "просмотр расширений..."
+msgstr "Просмотр расширений..."
 
 msgid "view recordings..."
 msgstr "просмотр записей..."
@@ -10858,7 +10860,7 @@ msgid "Permanent Timeshift start delay"
 msgstr "Время задержки Timeshift"
 
 msgid "Timeshift-save action on zap"
-msgstr "Timeshift- сохранить действие при переключении"
+msgstr "Сохранить функцию Timeshift при переключении"
 
 msgid "Show shutdown menu"
 msgstr "меню выключения"
@@ -10925,4 +10927,170 @@ msgstr "Режим переподключений"
 
 msgid "Re-mount network shares every (in hours)"
 msgstr "Переподключать каждые (в часах)"
+
+msgid "Switch to filelist"
+msgstr "Перейти к списку файлов"
+
+msgid "Сlear playlist"
+msgstr "очистить плэйлист"
+
+msgid "Shuffle playlist"
+msgstr "Перемешать плейлист"
+
+msgid "Timer recording location"
+msgstr "Запись по таймеру"
+
+msgid "Instant recording location"
+msgstr "Текущие файлы записи"
+
+msgid "Instant recording..."
+msgstr "Текущая запись"
+
+msgid "Minimum send interval"
+msgstr "Мин.интервал отправки"
+
+msgid "Load/Save EPG"
+msgstr "Загрузка/Сохранение EPG"
+
+msgid "Timer record location"
+msgstr "Запись по таймеру"
+
+msgid "Swap SNR in '%' with SNR in 'db'"
+msgstr "Переключить проценты/децибелы для SNR"
+
+msgid "Zap-History Browser"
+msgstr "История просмотра каналов"
+
+msgid "MultiEPG settings"
+msgstr "Настройки мульти EPG"
+
+msgid "SingleEPG settings"
+msgstr "Настройки EPG на канал"
+
+msgid "InfobarEPG settings"
+msgstr "Настройки инфорпанели EPG"
+
+msgid "GraphicalEPG settings"
+msgstr "Настройки графического EPG"
+
+msgid "Stop timeshift"
+msgstr "Остановить Timeshift"
+
+msgid "Start timeshift"
+msgstr "Запустить Timeshift"
+
+msgid "Seek forward (enter time)"
+msgstr "Перемотка вперед (введите время)"
+
+msgid "Seek backward (enter time)"
+msgstr "Перемотка назад (введите время)"
+
+msgid "Listen to the radio…"
+msgstr "Радио"
+
+msgid "Pause playback"
+msgstr "Пауза"
+
+msgid "Seek forward"
+msgstr "Перемотка вперед"
+
+msgid "Continue playback"
+msgstr "Продолжить воспроизведение"
+
+msgid "Show Format Setup…"
+msgstr "Показать формат"
+
+msgid "List EPG functions…"
+msgstr "Список EPG Функций"
+
+msgid "show single EPG…"
+msgstr "EPG на канал"
+
+msgid "Audio options…"
+msgstr "Аудио опции"
+
+msgid ""
+"Video input selection\n"
+"\n"
+"Please press OK if you can see this page on your TV (or select a different input port).\n"
+"\n"
+"The next input port will be automatically probed in 20 seconds."
+msgstr ""
+"Выберите видеовыход\n"
+"\n"
+"Нажмите ОК, если вы видите эту страницу на экране ТВ (или выберите другой вход).\n"
+"\n"
+"Следующий вход будет автоматически выбран через 20 сек."
+
+msgid "Clear playlist"
+msgstr "Очистить плейлист"
+
+msgid "Devices Information"
+msgstr "Информация"
+
+msgid "Service info"
+msgstr "Информация"
+
+msgid "Keyboard language"
+msgstr "Сменить язык"
+
+msgid "Network Browser Neighbourhood"
+msgstr "Сетевые подключения"
+
+msgid "Skip empty services"
+msgstr "Пропуск каналов без EPG"
+
+msgid "Sort list by"
+msgstr "Сортировать по"
+
+msgid "OK button (long)"
+msgstr "Кнопка ОК (длительное)"
+
+msgid "OK button (short)"
+msgstr "Кнопка ОК (короткое)"
+
+msgid "Event font size"
+msgstr "Размер шрифта события"
+
+msgid "Picture in graphics"
+msgstr "Картинка в меню"
+
+msgid "Info button (long)"
+msgstr "Кнопка Info (длительное)"
+
+msgid "Info button (short)"
+msgstr "Кнопка Info (короткое)"
+
+msgid "Channel 1 at start"
+msgstr "Канал 1 при запуске"
+
+msgid "Base time"
+msgstr "Основное время"
+
+msgid "Service font size"
+msgstr "Размер шрифта канала"
+
+msgid "Timeline font size"
+msgstr "Размер временной шкалы"
+
+msgid "Time scale"
+msgstr "Шкала времени"
+
+msgid "Show Format Setup..."
+msgstr "Показать формат"
+
+msgid "List EPG functions..."
+msgstr "Список EPG Функций"
+
+msgid "show single EPG..."
+msgstr "EPG на канал"
+
+msgid "Audio options..."
+msgstr "Аудио опции"
+
+msgid "Seek backward"
+msgstr "Перемотка назад"
+
+msgid "Listen to the radio..."
+msgstr "Радио"
 

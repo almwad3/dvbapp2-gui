@@ -66,6 +66,8 @@ AM_CONDITIONAL(VUUNO, test "$BOXTYPE" == vuuno)
 AM_CONDITIONAL(VUULTIMO, test "$BOXTYPE" == vuultimo)
 AM_CONDITIONAL(VUSOLO, test "$BOXTYPE" == vusolo)
 AM_CONDITIONAL(VUDUO, test "$BOXTYPE" == vuduo)
+AM_CONDITIONAL(VUSOLO2, test "$BOXTYPE" == vusolo2)
+AM_CONDITIONAL(VUDUO2, test "$BOXTYPE" == vuduo2)
 AM_CONDITIONAL(ET4X00, test "$BOXTYPE" == et4x00)
 AM_CONDITIONAL(ET5X00, test "$BOXTYPE" == et5x00)
 AM_CONDITIONAL(ET6X00, test "$BOXTYPE" == et6x00)
@@ -166,7 +168,7 @@ if test x"$BOXTYPE" == "xodinm9"; then
 	AC_DEFINE(FORCE_NO_BLENDING_ACCELERATION, 1,[define when the framebuffer acceleration does not have alphablending support, though the autodetection might indicate that it does])
 fi
 
-if test x"$BOXTYPE" == "xvuduo" -o x"$BOXTYPE" == "xvusolo" -o x"$BOXTYPE" == "xvuuno" -o x"$BOXTYPE" == "xvuultimo" -o x"$BOXTYPE" == "xtmtwin" -o x"$BOXTYPE" == "xtm2t" -o x"$BOXTYPE" == "xtmsingle"; then
+if test x"$BOXTYPE" == "xvuduo" -o x"$BOXTYPE" == "xvusolo" -o x"$BOXTYPE" == "xvuduo2" -o x"$BOXTYPE" == "xvusolo2" -o x"$BOXTYPE" == "xvuuno" -o x"$BOXTYPE" == "xvuultimo" -o x"$BOXTYPE" == "xtmtwin" -o x"$BOXTYPE" == "xtm2t" -o x"$BOXTYPE" == "xtmsingle"; then
 	AC_DEFINE(FORCE_NO_BLENDING_ACCELERATION, 1,[define when the framebuffer acceleration does not have alphablending support, though the autodetection might indicate that it does])
 	AC_DEFINE(FORCE_ADVANCED_REMOTE, 1,[define to fixup the input device identification when the remote control is actually an 'advanced' remote (with play/forward/rewind keys)])
 fi
@@ -225,7 +227,7 @@ if test "$with_po" = "yes"; then
 		AC_MSG_ERROR([Could not find required gettext tools])
 	fi
 fi
-AM_CONDITIONAL(UPDATE_PO, test "$with_po" = "yes")
+AM_CONDITIONAL(UPDATE_PO, test "$with_po" = "no")
 
 ENIGMA2_CFLAGS="-fno-rtti -fno-exceptions"
 AC_SUBST(ENIGMA2_CFLAGS)
@@ -253,6 +255,7 @@ data/rc_models/et6500/Makefile
 data/rc_models/et9500/Makefile
 data/rc_models/et9x00/Makefile
 data/rc_models/gb/Makefile
+data/rc_models/ini1000/Makefile
 data/rc_models/ini3000/Makefile
 data/rc_models/ini5000/Makefile
 data/rc_models/ini5000r/Makefile
