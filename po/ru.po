@@ -7692,6 +7692,14 @@ msgstr "Просмотр улучшения изображения"
 msgid "Video enhancement setup"
 msgstr "Настройка улучшения изображения"
 
+msgctxt "Satellite configuration mode"
+msgid "Mode"
+msgstr "Режим"
+
+msgctxt "Video output mode"
+msgid "Mode"
+msgstr "Выбор режима"
+
 msgid "Video mode selection."
 msgstr "Выбор режима видео."
 
@@ -8213,6 +8221,9 @@ msgstr ""
 "\n"
 "Вы хотите установить PIN-код сейчас?"
 
+msgid "You seem to be in timeshift, Do you want to leave timeshift ?"
+msgstr "Вы используете Timeshift, остановить эту функцию ?" 
+
 msgid "You system does not support ext4"
 msgstr "Система не поддерживает Ext4"
 
@@ -8476,6 +8487,18 @@ msgstr "начать запись"
 msgid "add recording (stop after current event)"
 msgstr "начать запись (остановить по завершению события)"
 
+msgid "Add recording (enter recording duration)"
+msgstr "начать запись (введите длительность записи)"
+
+msgid "Add recording (enter recording endtime)"
+msgstr "начать запись (введите время окончания)"
+
+msgid "Add recording (indefinitely)"
+msgstr "начать запись"
+
+msgid "Add recording (stop after current event)"
+msgstr "начать запись (остановить по завершению события)"
+
 msgid "add service to bouquet"
 msgstr "добавить канал к пакету"
 
@@ -8613,6 +8636,12 @@ msgstr "изменить запись (время начала)"
 msgid "change recording (endtime)"
 msgstr "изменить запись (время окончания)"
 
+msgid "Change recording (duration)"
+msgstr "изменить запись (время начала)"
+
+msgid "Change recording (endtime)"
+msgstr "изменить запись (время окончания)"
+
 msgid "chapters"
 msgstr "разделы"
 
@@ -8718,6 +8747,9 @@ msgstr "обсуждение/интервью/дебаты"
 
 msgid "do not change"
 msgstr "не изменять"
+
+msgid "Do not record"
+msgstr "Не записывать" 
 
 msgid "do nothing"
 msgstr "ничего не делать"
@@ -10294,9 +10326,6 @@ msgstr "Установить"
 msgid "Mode"
 msgstr "Режим"
 
-msgid "Video output mode"
-msgstr "Видео разрешение"
-
 msgid "CrossEPG"
 msgstr "Настройка CrossEPG"
 
@@ -10805,9 +10834,6 @@ msgstr "Соотношение сторон"
 
 msgid "Color space"
 msgstr "Цветовое пространство"
-
-msgid "Satellite configuration mode"
-msgstr "Режим"
 
 msgid "Language setup"
 msgstr "Выбор языка меню"
