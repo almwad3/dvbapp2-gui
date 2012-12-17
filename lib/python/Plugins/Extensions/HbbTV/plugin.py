@@ -1145,7 +1145,8 @@ class OperaBrowserSetting:
 		for line in f.readlines():
 			if line.startswith('start='):
 				tmp = line[6:len(line)-1].split()
-				if tmp == "http://www2.vuplus.com/":
+				tmp.strip()
+				if str(tmp) == "http://www2.vuplus.com/":
 					tmp = "http://www.google.com/"
 				self._start = tmp[0]
 				if len(tmp) > 1:
