@@ -21,7 +21,7 @@ from Components.Label import Label, MultiColorLabel
 from Components.ConfigList import ConfigListScreen
 from Components.VolumeControl import VolumeControl
 from Components.Pixmap import Pixmap
-from Components.config import getConfigListEntry, ConfigText, ConfigSelection
+from Components.config import getConfigListEntry, ConfigText, ConfigSelection, config
 
 from enigma import eTimer, eServiceReference, iPlayableService, iServiceInformation, eRCInput, fbClass, eServiceCenter
 
@@ -1080,7 +1080,8 @@ class HbbTVHelper(Screen, InfoBarNotifications):
 		start_stop_mode = []
 		if self._is_browser_running():
 			start_stop_mode.append((_('Stop'),'Stop'))
-		else:	start_stop_mode.append((_('Start'),'Start'))
+		else:	
+			start_stop_mode.append((_('Start'),'Start'))
 		self._session.openWithCallback(self._browser_config_selected, ChoiceBox, title=_("Please choose one."), list=start_stop_mode)
 
 	def _browser_config_selected(self, selected):
@@ -1144,6 +1145,8 @@ class OperaBrowserSetting:
 		for line in f.readlines():
 			if line.startswith('start='):
 				tmp = line[6:len(line)-1].split()
+				if tmp == "http://www2.vuplus.com/":
+					tmp = "http://www.google.com/"
 				self._start = tmp[0]
 				if len(tmp) > 1:
 					self._type = int(tmp[1])
@@ -1935,7 +1938,7 @@ class OperaBrowser(Screen):
 			self.session.open(MessageBox, message, MessageBox.TYPE_INFO)
 			return
 		mode = 0
-		start = 'http://vuplus.com'
+		start = 'http://google.com'
 		try:
 			d = OperaBrowserSetting().getData()
 			start = d['start']
@@ -2078,8 +2081,11 @@ class OperaBrowser(Screen):
 
 def auto_start_main(reason, **kwargs):
 	if reason:
-		command_server = getCommandServer()
-		command_server.stop()
+		try:
+			command_server = getCommandServer()
+			command_server.stop()
+		except:
+			pass
 
 from  Screens.HelpMenu import HelpableScreen
 def session_start_main(session, reason, **kwargs):
@@ -2150,7 +2156,8 @@ def plugin_extension_browser_config(session, **kwargs):
 def Plugins(path, **kwargs):
 	l = []
 	l.append(PluginDescriptor(where=PluginDescriptor.WHERE_AUTOSTART, needsRestart=True, fnc=auto_start_main))
-	l.append(PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, needsRestart=True, fnc=session_start_main, weight=-10))
+	if not config.misc.firstrun.getValue():
+		l.append(PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, needsRestart=True, fnc=session_start_main, weight=-100))
 	l.append(PluginDescriptor(name=_("HbbTV Applications"), where=PluginDescriptor.WHERE_EXTENSIONSMENU, needsRestart=True, fnc=plugin_extension_start_application))
 	l.append(PluginDescriptor(name=_("Browser Start/Stop"), where=PluginDescriptor.WHERE_EXTENSIONSMENU, needsRestart=True, fnc=plugin_extension_browser_config))
 	l.append(PluginDescriptor(name=_("Web Browser"), description=_("start web browser"), where=PluginDescriptor.WHERE_PLUGINMENU, needsRestart=True, fnc=plugin_start_main))
