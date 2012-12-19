@@ -249,7 +249,7 @@ class UpdatePlugin(Screen):
 					message = _("Do you want to update your STB_BOX?") + "\n(" + (ngettext("%s updated package available", "%s updated packages available", self.total_packages) % self.total_packages) + ")"
 				if self.total_packages:
 					config.softwareupdate.updatefound.setValue(True)
-					choices = [(_("Upgrade and reboot system"), "cold")]
+					choices = [(_("Upgrade and reboot system"), "upgrade")]
 					#choices.append((_("View the changes"), "changes"))
 					choices.append((_("Perform a setting backup,") + '\n\t' + _("making a backup before updating") + '\n\t' +_("is strongly advised."), "backup"))
 					choices.append((_("Update channel list only"), "channels"))
@@ -309,7 +309,7 @@ class UpdatePlugin(Screen):
 				message = _("The current update maybe unstable") + "\n" + _("Are you sure you want to update your STB_BOX?") + "\n(%s " % self.total_packages + _("Packages") + ")"
 			elif config.softwareupdate.updateisunstable.getValue() == '0':
 				message = _("Do you want to update your STB_BOX?") + "\n(%s " % self.total_packages + _("Packages") + ")"
-			choices = [(_("Upgrade and reboot system"), "cold")]
+			choices = [(_("Upgrade and reboot system"), "upgrade")]
 			#choices.append((_("View the changes"), "changes"))
 			choices.append((_("Perform a setting backup, making a backup before updating is strongly advised."), "backup"))
 			choices.append((_("Update channel list only"), "channels"))
@@ -330,6 +330,9 @@ class UpdatePlugin(Screen):
 			else:
 				self.session.open(TryQuitMainloop,retvalue=42)
 				self.close()
+		elif answer[1] == "upgrade":
+			self.session.open(TryQuitMainloop,retvalue=42)
+			self.close()				
 
 	def modificationCallback(self, res):
 		self.ipkg.write(res and "N" or "Y")
