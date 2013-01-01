@@ -23,7 +23,9 @@ class GetEcmInfo:
 
 	def getText(self):
 		try:
-			ecm = open(ECM_INFO, 'rb').readlines()
+			f = open(ECM_INFO, 'rb')
+			ecm = f.readlines()
+			f.close()
 			info = {}
 			for line in ecm:
 				d = line.split(':', 1)
@@ -53,6 +55,8 @@ class GetEcmInfo:
 						address = info.get('address', '')
 					elif info.get('from', None):
 						address = info.get('from', '')
+					else:
+						address = ''
 					hops = info.get('hops', None)
 					if hops and hops != '0':
 						hops = ' @' + hops

@@ -916,6 +916,7 @@ class ChannelSelectionBase(Screen):
 		self.servicePathTV = [ ]
 		self.servicePathRadio = [ ]
 		self.servicePath = [ ]
+		self.history = [ ]
 		self.rootChanged = False
 		self.startRoot = None
 
@@ -1229,6 +1230,13 @@ class ChannelSelectionBase(Screen):
 					self.moveDown()
 				ref = self.getCurrentSelection()
 				self.enterPath(ref)
+				prev = None
+				root = self.getRoot()
+				for path in self.history:
+					if len(path) > 2 and path[1] == root:
+						prev = path[2]
+				if not prev is None:
+					self.setCurrentSelection(prev)
 
 	def inBouquet(self):
 		if self.servicePath and self.servicePath[0] == self.bouquet_root:
@@ -1494,7 +1502,7 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 	def channelSelected(self):
 		ref = self.getCurrentSelection()
 		try:
-			doClose = not config.usage.servicelistpreview_mode.getValue() or ref == self.session.nav.getCurrentlyPlayingServiceReference()
+			doClose = not config.usage.servicelistpreview_mode.getValue() or ref == self.session.nav.getCurrentlyPlayingServiceOrGroup()
 		except:
 			doClose = False
 		if self.startServiceRef is None and not doClose:

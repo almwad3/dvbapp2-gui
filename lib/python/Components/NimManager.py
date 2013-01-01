@@ -1,6 +1,7 @@
 from Tools.HardwareInfo import HardwareInfo
 from Tools.BoundFunction import boundFunction
 
+from Components.About import about
 from config import config, ConfigSubsection, ConfigSelection, ConfigFloat, \
 	ConfigSatlist, ConfigYesNo, ConfigInteger, ConfigSubList, ConfigNothing, \
 	ConfigSubDict, ConfigOnOff, ConfigDateTime
@@ -18,6 +19,7 @@ from Tools.BoundFunction import boundFunction
 
 from Tools import Directories
 import xml.etree.cElementTree
+from os import path
 
 def getConfigSatlist(orbpos, satlist):
 	default_orbpos = None
@@ -110,8 +112,12 @@ class SecConfigure:
 			nim.setInternalLink()
 
 	def linkNIMs(self, sec, nim1, nim2):
+		
 		print "link tuner", nim1, "to tuner", nim2
-		if nim2 == (nim1 - 1):
+		# for internally connect tuner A to B
+		if about.getChipSetString().find('7356') == -1 and nim2 == (nim1 - 1):
+			self.linkInternally(nim1)
+		elif about.getChipSetString().find('7356') != -1:
 			self.linkInternally(nim1)
 		sec.setTunerLinked(nim1, nim2)
 
@@ -572,12 +578,16 @@ class NIM(object):
 	def setInternalLink(self):
 		if self.internally_connectable is not None:
 			print "setting internal link on frontend id", self.frontend_id
-			open("/proc/stb/frontend/%d/rf_switch" % self.frontend_id, "w").write("internal")
+			f = open("/proc/stb/frontend/%d/rf_switch" % self.frontend_id, "w")
+			f.write("internal")
+			f.close()
 
 	def removeInternalLink(self):
 		if self.internally_connectable is not None:
 			print "removing internal link on frontend id", self.frontend_id
-			open("/proc/stb/frontend/%d/rf_switch" % self.frontend_id, "w").write("external")
+			f = open("/proc/stb/frontend/%d/rf_switch" % self.frontend_id, "w")
+			f.write("external")
+			f.close()
 
 	def isMultiType(self):
 		return (len(self.multi_type) > 0)
@@ -1118,7 +1128,9 @@ def InitNimManager(nimmgr):
 
 	unicablelnbproducts = {}
 	unicablematrixproducts = {}
-	doc = xml.etree.cElementTree.parse(eEnv.resolve("${datadir}/enigma2/unicable.xml"))
+	file = open(eEnv.resolve("${datadir}/enigma2/unicable.xml"), 'r')
+	doc = xml.etree.cElementTree.parse(file)
+	file.close()
 	root = doc.getroot()
 
 	entry = root.find("lnb")
@@ -1398,7 +1410,9 @@ def InitNimManager(nimmgr):
 		fe_id = configElement.fe_id
 		slot_id = configElement.slot_id
 		if nimmgr.nim_slots[slot_id].description == 'Alps BSBE2':
-			open("/proc/stb/frontend/%d/tone_amplitude" %(fe_id), "w").write(configElement.value)
+			f = open("/proc/stb/frontend/%d/tone_amplitude" %(fe_id), "w")
+			f.write(configElement.value)
+			f.close()
 
 	def createSatConfig(nim, x, empty_slots):
 		try:
@@ -1540,16 +1554,22 @@ def InitNimManager(nimmgr):
 
 				try:
 					oldvalue = open("/sys/module/dvb_core/parameters/dvb_shutdown_timeout", "r").readline()
-					open("/sys/module/dvb_core/parameters/dvb_shutdown_timeout", "w").write("0")
+					f = open("/sys/module/dvb_core/parameters/dvb_shutdown_timeout", "w")
+					f.write("0")
+					f.close()
 				except:
 					print "[info] no /sys/module/dvb_core/parameters/dvb_shutdown_timeout available"
 
 				frontend = eDVBResourceManager.getInstance().allocateRawChannel(fe_id).getFrontend()
 				frontend.closeFrontend()
-				open("/proc/stb/frontend/%d/mode" % (fe_id), "w").write(configElement.value)
+				f = open("/proc/stb/frontend/%d/mode" % (fe_id), "w")
+				f.write(configElement.value)
+				f.close()
 				frontend.reopenFrontend()
 				try:
-					open("/sys/module/dvb_core/parameters/dvb_shutdown_timeout", "w").write(oldvalue)
+					f = open("/sys/module/dvb_core/parameters/dvb_shutdown_timeout", "w")
+					f.write(oldvalue)
+					f.close()
 				except:
 					print "[info] no /sys/module/dvb_core/parameters/dvb_shutdown_timeout available"
 				nimmgr.enumerateNIMs()

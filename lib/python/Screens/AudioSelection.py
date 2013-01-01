@@ -1,13 +1,15 @@
 from Screen import Screen
+from Screens.Setup import getConfigMenuItem, Setup
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.ActionMap import NumberActionMap
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigSubsection, getConfigListEntry, ConfigNothing, ConfigSelection, ConfigOnOff
+from Components.Label import Label
 from Components.Sources.List import List
 from Components.Sources.Boolean import Boolean
 from Components.SystemInfo import SystemInfo
 
-from enigma import iPlayableService
+from enigma import iPlayableService, eTimer
 
 from Tools.ISO639 import LanguageCodes
 from Tools.BoundFunction import boundFunction
@@ -34,7 +36,7 @@ class AudioSelection(Screen, ConfigListScreen):
 		self.cached_subtitle_checked = False
 		self.__selected_subtitle = None
 
-		self["actions"] = NumberActionMap(["ColorActions", "OkCancelActions", "DirectionActions"],
+		self["actions"] = NumberActionMap(["ColorActions", "SetupActions", "DirectionActions", "MenuActions"],
 		{
 			"red": self.keyRed,
 			"green": self.keyGreen,
@@ -44,6 +46,7 @@ class AudioSelection(Screen, ConfigListScreen):
 			"cancel": self.cancel,
 			"up": self.keyUp,
 			"down": self.keyDown,
+			"menu": self.openAutoLanguageSetup,
 			"1": self.keyNumberGlobal,
 			"2": self.keyNumberGlobal,
 			"3": self.keyNumberGlobal,
@@ -69,6 +72,8 @@ class AudioSelection(Screen, ConfigListScreen):
 		streams = []
 		conflist = []
 		selectedidx = 0
+
+		self["key_blue"].setBoolean(False)
 
 		service = self.session.nav.getCurrentService()
 		self.audioTracks = audio = service and service.audioTracks()
@@ -137,6 +142,25 @@ class AudioSelection(Screen, ConfigListScreen):
 				self["key_yellow"].setBoolean(False)
 				conflist.append(('',))
 
+			from Components.PluginComponent import plugins
+			from Plugins.Plugin import PluginDescriptor
+
+			if hasattr(self.infobar, "runPlugin"):
+				class PluginCaller:
+					def __init__(self, fnc, *args):
+						self.fnc = fnc
+						self.args = args
+					def __call__(self, *args, **kwargs):
+						self.fnc(*self.args)
+
+				Plugins = [ (p.name, PluginCaller(self.infobar.runPlugin, p)) for p in plugins.getPlugins(where = PluginDescriptor.WHERE_AUDIOMENU) ]
+
+				if len(Plugins):
+					self["key_blue"].setBoolean(True)
+					conflist.append(getConfigListEntry(Plugins[0][0], ConfigNothing()))
+					self.plugincallfunc = Plugins[0][1]
+				if len(Plugins) > 1:
+					print "plugin(s) installed but not displayed in the dialog box:", Plugins[1:]
 
 		elif self.settings.menupage.getValue() == PAGE_SUBTITLES:
 
@@ -189,25 +213,9 @@ class AudioSelection(Screen, ConfigListScreen):
 
 			conflist.append(getConfigListEntry(_("To audio selection"), self.settings.menupage))
 
-		from Components.PluginComponent import plugins
-		from Plugins.Plugin import PluginDescriptor
-
-		if hasattr(self.infobar, "runPlugin"):
-			class PluginCaller:
-				def __init__(self, fnc, *args):
-					self.fnc = fnc
-					self.args = args
-				def __call__(self, *args, **kwargs):
-					self.fnc(*self.args)
-
-			Plugins = [ (p.name, PluginCaller(self.infobar.runPlugin, p)) for p in plugins.getPlugins(where = PluginDescriptor.WHERE_AUDIOMENU) ]
-
-			if len(Plugins):
+			if self.infobar.selected_subtitle and self.infobar.selected_subtitle != (0,0,0,0)  and not ".DVDPlayer'>" in `self.infobar`:
 				self["key_blue"].setBoolean(True)
-				conflist.append(getConfigListEntry(Plugins[0][0], ConfigNothing()))
-				self.plugincallfunc = Plugins[0][1]
-			if len(Plugins) > 1:
-				print "plugin(s) installed but not displayed in the dialog box:", Plugins[1:]
+				conflist.append(getConfigListEntry(_("Subtitle Quickmenu"), ConfigNothing()))
 
 		self["config"].list = conflist
 		self["config"].l.setList(conflist)
@@ -272,8 +280,11 @@ class AudioSelection(Screen, ConfigListScreen):
 		if config or self.focus == FOCUS_CONFIG:
 			if self["config"].getCurrentIndex() < 3:
 				ConfigListScreen.keyRight(self)
-			elif hasattr(self, "plugincallfunc"):
-				self.plugincallfunc()
+			elif self["config"].getCurrentIndex() == 3:
+				if self.settings.menupage.getValue() == PAGE_AUDIO and hasattr(self, "plugincallfunc"):
+					self.plugincallfunc()
+				elif self.settings.menupage.getValue() == PAGE_SUBTITLES and self.infobar.selected_subtitle and self.infobar.selected_subtitle != (0,0,0,0):
+					self.session.open(QuickSubtitlesConfigMenu, self.infobar)
 		if self.focus == FOCUS_STREAMS and self["streams"].count() and config == False:
 			self["streams"].setIndex(self["streams"].count()-1)
 
@@ -344,6 +355,9 @@ class AudioSelection(Screen, ConfigListScreen):
 		elif self.focus == FOCUS_CONFIG:
 			self.keyRight()
 
+	def openAutoLanguageSetup(self):
+		self.session.open(Setup, "autolanguagesetup")
+
 	def cancel(self):
 		self.close(0)
 
@@ -351,3 +365,86 @@ class SubtitleSelection(AudioSelection):
 	def __init__(self, session, infobar=None):
 		AudioSelection.__init__(self, session, infobar, page=PAGE_SUBTITLES)
 		self.skinName = ["AudioSelection"]
+
+class QuickSubtitlesConfigMenu(ConfigListScreen, Screen):
+	skin = """
+	<screen position="50,50" size="480,255" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
+		<widget name="config" position="5,5" size="470,225" font="Regular;18" zPosition="1" transparent="1" selectionPixmap="PLi-HD/buttons/sel.png" valign="center" />
+		<widget name="videofps" position="5,230" size="470,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="left" foregroundColor="blue"/>
+	</screen>"""
+
+	def __init__(self, session, infobar):
+		Screen.__init__(self, session)
+		self.skin = QuickSubtitlesConfigMenu.skin
+		self.infobar = infobar or self.session.infobar
+
+		self.wait = eTimer()
+		self.wait.timeout.get().append(self.resyncSubtitles)
+
+		self["videofps"] = Label("")
+
+		sub = self.infobar.selected_subtitle
+		if sub[0] == 0:  # dvb
+			menu = [
+				getConfigMenuItem("config.subtitles.dvb_subtitles_yellow"),
+				getConfigMenuItem("config.subtitles.dvb_subtitles_centered"),
+				getConfigMenuItem("config.subtitles.dvb_subtitles_backtrans"),
+				getConfigMenuItem("config.subtitles.dvb_subtitles_original_position"),
+				getConfigMenuItem("config.subtitles.subtitle_position"),
+				getConfigMenuItem("config.subtitles.subtitle_bad_timing_delay"),
+				getConfigMenuItem("config.subtitles.subtitle_noPTSrecordingdelay"),
+			]
+		elif sub[0] == 1: # teletext
+			menu = [
+				getConfigMenuItem("config.subtitles.ttx_subtitle_colors"),
+				getConfigMenuItem("config.subtitles.ttx_subtitle_original_position"),
+				getConfigMenuItem("config.subtitles.subtitle_fontsize"),
+				getConfigMenuItem("config.subtitles.subtitle_position"),
+				getConfigMenuItem("config.subtitles.subtitle_rewrap"),
+				getConfigMenuItem("config.subtitles.subtitle_borderwidth"),
+				getConfigMenuItem("config.subtitles.subtitle_alignment"),
+				getConfigMenuItem("config.subtitles.subtitle_bad_timing_delay"),
+				getConfigMenuItem("config.subtitles.subtitle_noPTSrecordingdelay"),
+			]
+		else: 		# pango
+			menu = [
+				getConfigMenuItem("config.subtitles.pango_subtitles_delay"),
+				getConfigMenuItem("config.subtitles.pango_subtitles_yellow"),
+				getConfigMenuItem("config.subtitles.subtitle_fontsize"),
+				getConfigMenuItem("config.subtitles.subtitle_position"),
+				getConfigMenuItem("config.subtitles.subtitle_alignment"),
+				getConfigMenuItem("config.subtitles.subtitle_rewrap"),
+				getConfigMenuItem("config.subtitles.subtitle_borderwidth"),
+				getConfigMenuItem("config.subtitles.pango_subtitles_fps"),
+			]
+			self["videofps"].setText(_("Video: %s fps") % (self.getFps().rstrip(".000")))
+
+		ConfigListScreen.__init__(self, menu, self.session, on_change = self.changedEntry)
+
+		self["actions"] = NumberActionMap(["SetupActions"],
+		{
+			"cancel": self.finish,
+			"ok": self.finish,
+		},-2)
+
+	def changedEntry(self):
+		if self["config"].getCurrent() in [getConfigMenuItem("config.subtitles.pango_subtitles_delay"),getConfigMenuItem("config.subtitles.pango_subtitles_fps")]:
+			self.wait.start(500, True)
+
+	def resyncSubtitles(self):
+		self.infobar.setSeekState(self.infobar.SEEK_STATE_PAUSE)
+		self.infobar.setSeekState(self.infobar.SEEK_STATE_PLAY)
+
+	def getFps(self):
+		from enigma import iServiceInformation
+		service = self.session.nav.getCurrentService()
+		info = service and service.info()
+		if not info:
+			return ""
+		fps = info.getInfo(iServiceInformation.sFrameRate)
+		if fps > 0:
+			return "%6.3f" % (fps/1000.)
+		return ""
+
+	def finish(self):
+		self.close()

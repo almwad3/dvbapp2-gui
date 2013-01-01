@@ -3,6 +3,7 @@ from config import config, ConfigSubsection, ConfigYesNo, ConfigSelection, Confi
 from Tools.Directories import resolveFilename, SCOPE_HDD, SCOPE_TIMESHIFT, SCOPE_SYSETC
 from enigma import setTunerTypePriorityOrder, setPreferredTuner, setSpinnerOnOff, setEnableTtCachingOnOff, Misc_Options, eEnv
 from Components.NimManager import nimmanager
+from Components.ServiceList import refreshServiceList
 from SystemInfo import SystemInfo
 import os
 import enigma
@@ -436,6 +437,7 @@ def InitUsageConfig():
 				pass
 		config.misc.zapmode = ConfigSelection(default = "mute", choices = zapoptions )
 		config.misc.zapmode.addNotifier(setZapmode, immediate_feedback = False)
+	config.usage.historymode = ConfigSelection(default = "1", choices = [("0", _("Just zap")), ("1", _("Show menu"))])
 
 	config.subtitles = ConfigSubsection()
 	config.subtitles.ttx_subtitle_colors = ConfigSelection(default = "1", choices = [
@@ -476,6 +478,20 @@ def InitUsageConfig():
 		("225", "90%"),
 		("255", _("Full transparency"))])
 	config.subtitles.pango_subtitles_yellow = ConfigYesNo(default = False)
+	choicelist = []
+	for i in range(-900000, 945000, 45000):
+		if i == 0:
+			choicelist.append(("0", _("No delay")))
+		else:
+			choicelist.append(("%d" % i, "%2.1f sec" % (i / 90000.)))
+	config.subtitles.pango_subtitles_delay = ConfigSelection(default = "0", choices = choicelist)
+	config.subtitles.pango_subtitles_fps = ConfigSelection(default = "1", choices = [
+		("1", _("Original")),
+		("23976", _("23.976")),
+		("24000", _("24")),
+		("25000", _("25")),
+		("29970", _("29.97")),
+		("30000", _("30"))])
 
 	config.autolanguage = ConfigSubsection()
 	audio_language_choices=[
@@ -693,11 +709,3 @@ def preferredInstantRecordPath():
 
 def defaultMoviePath():
 	return config.usage.default_path.getValue()
-
-def refreshServiceList(configElement = None):
-		from Screens.InfoBar import InfoBar
-		InfoBarInstance = InfoBar.instance
-		if InfoBarInstance is not None:
-			servicelist = InfoBarInstance.servicelist
-			if servicelist:
-				servicelist.setMode()

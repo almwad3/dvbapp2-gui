@@ -225,11 +225,18 @@ class PowerTimerEntry(timer.TimerEntry, object):
 				if not Screens.Standby.inStandby: # not already in standby
 					Notifications.AddNotificationWithCallback(self.sendStandbyNotification, MessageBox, _("A finished powertimer wants to set your\nSTB_BOX to standby. Do that now?"), timeout = 180)
 			elif self.afterEvent == AFTEREVENT.DEEPSTANDBY:
-				if not Screens.Standby.inTryQuitMainloop: # not a shutdown messagebox is open
-					if Screens.Standby.inStandby: # in standby
-						quitMainloop(1)
-					else:
-						Notifications.AddNotificationWithCallback(self.sendTryQuitMainloopNotification, MessageBox, _("A finished power timer wants to shut down\nyour STB_BOX. Shutdown now?"), timeout = 180)
+				if NavigationInstance.instance.RecordTimer.isRecording() or abs(NavigationInstance.instance.RecordTimer.getNextRecordingTime() - time()) <= 900 or abs(NavigationInstance.instance.RecordTimer.getNextZapTime() - time()) <= 900:
+					self.do_backoff()
+					# retry
+					self.begin = time() + self.backoff
+					if self.end <= self.begin:
+						self.end = self.begin
+					return False
+					if not Screens.Standby.inTryQuitMainloop: # not a shutdown messagebox is open
+						if Screens.Standby.inStandby: # in standby
+							quitMainloop(1)
+						else:
+							Notifications.AddNotificationWithCallback(self.sendTryQuitMainloopNotification, MessageBox, _("A finished power timer wants to shut down\nyour STB_BOX. Shutdown now?"), timeout = 180)
 			return True
 
 	def setAutoincreaseEnd(self, entry = None):
@@ -393,7 +400,9 @@ class PowerTimer(timer.Timer):
 		if not Directories.fileExists(self.Filename):
 			return
 		try:
-			doc = xml.etree.cElementTree.parse(self.Filename)
+			file = open(self.Filename, 'r')
+			doc = xml.etree.cElementTree.parse(file)
+			file.close()
 		except SyntaxError:
 			from Tools.Notifications import AddPopup
 			from Screens.MessageBox import MessageBox
@@ -517,7 +526,7 @@ class PowerTimer(timer.Timer):
 
 	def record(self, entry, ignoreTSC=False, dosave=True):		#wird von loadTimer mit dosave=False aufgerufen
 		entry.timeChanged()
-		print "[POWERTIMER] " + str(entry)
+		print "[PowerTimer]",str(entry)
 		entry.Timer = self
 		self.addTimerEntry(entry)
 		if dosave:
@@ -525,7 +534,7 @@ class PowerTimer(timer.Timer):
 		return None
 
 	def removeEntry(self, entry):
-		print "[POWERTIMER] Remove " + str(entry)
+		print "[PowerTimer] Remove",str(entry)
 
 		# avoid re-enqueuing
 		entry.repeated = False
