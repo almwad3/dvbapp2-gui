@@ -223,7 +223,7 @@ class EmuManager(Screen):
 		self["choose_cam"] = Label(_("Set Default CAM"))
 		self["key_green"] = Label(_("Info"))
 		self["key_yellow"] = Label(_("EPG Panel"))
-		self["key_blue"] = Label(_("Egami Panel"))
+		self["key_blue"] = Label(_("EGAMI Panel"))
 		
 		try:
 			service = self.session.nav.getCurrentService()
