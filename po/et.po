@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ViX-Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-23 16:08+0000\n"
+"POT-Creation-Date: 2013-01-03 20:47+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Rob van der Does <robvddoes@gmail.com>\n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas\n"
@@ -12,6 +12,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#, fuzzy
+msgid "\tRemote host:"
+msgstr "Kauge vastuvõtja"
+
+#, fuzzy
+msgid "\tRemote port:"
+msgstr "Kauge vastuvõtja"
+
+msgid ""
+"\n"
+" EgamiBoot is running image:  "
+msgstr ""
+
+msgid ""
+"\n"
+"ALL THE DATA ON THIS DEVICE WILL BE LOST!\n"
+" Are you sure to continue?"
+msgstr ""
 
 msgid ""
 "\n"
@@ -36,10 +55,10 @@ msgstr ""
 
 msgid ""
 "\n"
-"Backup your STB_BOX settings."
+"Backup your linux receiver settings."
 msgstr ""
 "\n"
-"STB_BOX seadete varundamine."
+"linux receiver seadete varundamine."
 
 msgid ""
 "\n"
@@ -50,17 +69,17 @@ msgstr ""
 
 msgid ""
 "\n"
-"Manage extensions or plugins for your STB_BOX"
+"Manage extensions or plugins for your linux receiver"
 msgstr ""
 "\n"
-"Halda STB_BOX laiendusi"
+"Halda linux receiver laiendusi"
 
 msgid ""
 "\n"
-"Online update of your STB_BOX software."
+"Online update of your linux receiver software."
 msgstr ""
 "\n"
-"STB_BOX tarkvara uuendamine."
+"linux receiver tarkvara uuendamine."
 
 msgid ""
 "\n"
@@ -71,24 +90,24 @@ msgstr ""
 
 msgid ""
 "\n"
-"Restore your STB_BOX settings."
-msgstr ""
-"\n"
-"STB_BOX seadistuste taastamine."
-
-msgid ""
-"\n"
-"Restore your STB_BOX with a new firmware."
-msgstr ""
-"\n"
-"STB_BOX taastamine uue püsivaraga."
-
-msgid ""
-"\n"
 "Restore your backups by date."
 msgstr ""
 "\n"
 "Taasta varukoopiad kuupäeva alusel."
+
+msgid ""
+"\n"
+"Restore your linux receiver settings."
+msgstr ""
+"\n"
+"linux receiver seadistuste taastamine."
+
+msgid ""
+"\n"
+"Restore your linux receiver with a new firmware."
+msgstr ""
+"\n"
+"linux receiver taastamine uue püsivaraga."
 
 msgid ""
 "\n"
@@ -113,6 +132,36 @@ msgstr ""
 "\n"
 "Vaata, paigalda ja eemalda tarkvara."
 
+msgid " "
+msgstr ""
+
+#, fuzzy
+msgid "    Directory Name:"
+msgstr "Kataloog"
+
+#, fuzzy
+msgid "    Directory:"
+msgstr "Kataloog"
+
+#, fuzzy
+msgid "    Log file name:"
+msgstr "Pikad failinimed"
+
+msgid "    Picon Type:"
+msgstr ""
+
+#, fuzzy
+msgid "    Port:"
+msgstr "Port:"
+
+#, fuzzy
+msgid "    Set clock position"
+msgstr "Lähtesta taasesituse algpunkt"
+
+#, fuzzy
+msgid "    Use system:"
+msgstr "süsteem:"
+
 msgid " (PiP)"
 msgstr " (PiP)"
 
@@ -122,8 +171,23 @@ msgstr " (Raadio)"
 msgid " (TV)"
 msgstr " (TV)"
 
+#, fuzzy
+msgid " Results"
+msgstr "Vaikeväärtused"
+
 msgid " and"
 msgstr "ja"
+
+#, fuzzy
+msgid ""
+" is already installed.\n"
+" Please try another name."
+msgstr "Uuendusi ei ole. Proovi hiljem uuesti."
+
+msgid ""
+"!!(Empty)\n"
+"Please, Input to the"
+msgstr ""
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -293,11 +357,40 @@ msgstr "* = Vajalik taaskäivitus"
 msgid "* Only available if more than one interface is active."
 msgstr "* Enam kui ühe aktiivse liidese puhul."
 
+msgid "----------------------------------"
+msgstr ""
+
+msgid "/etc/picon/"
+msgstr ""
+
+msgid "/media/cf/"
+msgstr ""
+
+msgid "/media/hdd/"
+msgstr ""
+
+msgid "/media/usb/"
+msgstr ""
+
 msgid "0"
 msgstr "0"
 
 msgid "1"
 msgstr "1"
+
+msgid "1 GB"
+msgstr ""
+
+#, fuzzy
+msgid "1 min."
+msgstr "%d min"
+
+#, fuzzy
+msgid "1. STEP - Choose backup location"
+msgstr "Varukoopia asukoht"
+
+msgid "1. STEP - Choose option RESTORE / BACKUP"
+msgstr ""
 
 msgid "1.0"
 msgstr "1.0"
@@ -308,6 +401,13 @@ msgstr "1.1"
 msgid "1.2"
 msgstr "1.2"
 
+#, fuzzy
+msgid "10 min."
+msgstr "%d min"
+
+msgid "128 MB"
+msgstr ""
+
 msgid "12V output"
 msgstr "12V väljund"
 
@@ -316,6 +416,13 @@ msgstr "12V väljund."
 
 msgid "13 V"
 msgstr "13 V"
+
+#, fuzzy
+msgid "15 min."
+msgstr "%d min"
+
+msgid "16 MB"
+msgstr ""
 
 msgid "16:10"
 msgstr "16:10"
@@ -347,11 +454,51 @@ msgstr "Inforiba näitamine"
 msgid "2"
 msgstr "2"
 
+#, fuzzy
+msgid "2. STEP - Choose backup location"
+msgstr "Varukoopia asukoht"
+
+msgid "23.976"
+msgstr ""
+
+#, fuzzy
+msgid "24"
+msgstr "2"
+
+#, fuzzy
+msgid "25"
+msgstr "2"
+
+msgid "256 MB"
+msgstr ""
+
+msgid "29.97"
+msgstr ""
+
 msgid "2X"
 msgstr "2X"
 
+#, fuzzy
+msgid "2nd Infobar timeout"
+msgstr "Inforiba näitamine"
+
+#, fuzzy
+msgid "2nd infobar"
+msgstr "Teise inforiba näitamine"
+
 msgid "3"
 msgstr "3"
+
+#, fuzzy
+msgid "30"
+msgstr "0"
+
+#, fuzzy
+msgid "30 min."
+msgstr "%d min"
+
+msgid "32 MB"
+msgstr ""
 
 msgid "3D Mode"
 msgstr "3D režiim"
@@ -383,14 +530,31 @@ msgstr "4X"
 msgid "5"
 msgstr "5"
 
+#, fuzzy
+msgid "5 min."
+msgstr "%d min"
+
+msgid "512 MB"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+#, fuzzy
+msgid "60 min."
+msgstr "%d min"
+
+msgid "64 MB"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8 MB"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -437,30 +601,30 @@ msgstr "Demo laiendus TPM kasutamiseks."
 
 msgid ""
 "A finished power timer wants to shut down\n"
-"your STB_BOX. Shutdown now?"
+"your linux receiver. Shutdown now?"
 msgstr ""
-"Salvestuse lõpetanud toitetaimer soovib STB_BOX\n"
+"Salvestuse lõpetanud toitetaimer soovib linux receiver\n"
 "välja lülitada. Kas nõustud?"
 
 msgid ""
 "A finished powertimer wants to set your\n"
-"STB_BOX to standby. Do that now?"
+"linux receiver to standby. Do that now?"
 msgstr ""
 "Lõpetanud toitetaimer soovib panna\n"
-"STB_BOX ooterežiimi. Kas nõustud?"
+"linux receiver ooterežiimi. Kas nõustud?"
 
 msgid ""
 "A finished record timer wants to set your\n"
-"STB_BOX to standby. Do that now?"
+"linux receiver to standby. Do that now?"
 msgstr ""
 "Lõpetanud salvestuse taimer soovib panna\n"
-"STB_BOX ooterežiimi. Kas nõustud?"
+"linux receiver ooterežiimi. Kas nõustud?"
 
 msgid ""
 "A finished record timer wants to shut down\n"
-"your STB_BOX. Shutdown now?"
+"your linux receiver. Shutdown now?"
 msgstr ""
-"Salvestuse lõpetanud taimer soovib STB_BOX\n"
+"Salvestuse lõpetanud taimer soovib linux receiver\n"
 "välja lülitada. Kas nõustud?"
 
 msgid "A graphical EPG for all services of an specific bouquet"
@@ -511,16 +675,16 @@ msgstr ""
 
 msgid ""
 "A sleep timer wants to set your\n"
-"STB_BOX to standby. Do that now?"
+"linux receiver to standby. Do that now?"
 msgstr ""
-"Unetaimer soovib panna STB_BOX\n"
+"Unetaimer soovib panna linux receiver\n"
 "ooterežiimi. Kas nõustud?"
 
 msgid ""
 "A sleep timer wants to shut down\n"
-"your STB_BOX. Shutdown now?"
+"your linux receiver. Shutdown now?"
 msgstr ""
-"Unetaimer soovib STB_BOX välja\n"
+"Unetaimer soovib linux receiver välja\n"
 "lülitada. Kas nõustud?"
 
 msgid "A small overview of the available icon states and actions."
@@ -532,6 +696,10 @@ msgid ""
 msgstr ""
 "Taimeriga salvestus nurjus!\n"
 "Keela TV ja proovi uuesti?\n"
+
+#, fuzzy
+msgid "A/V Setup"
+msgstr "AFP seaded"
 
 msgid "A/V settings"
 msgstr "Heli ja pildi seaded"
@@ -588,6 +756,9 @@ msgstr "Aktiveeri muudatused"
 msgid "Activate network settings"
 msgstr "Aktiveeri võrguseaded"
 
+msgid "Activate permanent clock"
+msgstr ""
+
 msgid "Activate the configured network settings."
 msgstr "Jõusta määratud võrguseaded"
 
@@ -605,6 +776,10 @@ msgstr "Lisa"
 
 msgid "Add AutoTimer"
 msgstr "Lisa autotaimer"
+
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "Lisa uus tähis"
 
 msgid "Add Timer"
 msgstr "Lisa taimer"
@@ -675,11 +850,47 @@ msgstr "Lisa/eemalda taimer käesolevale saatele"
 msgid "Add/remove timer for current event"
 msgstr "Lisa/eemalda käesolevale saatele taimer"
 
+msgid "Added: "
+msgstr ""
+
 msgid "Adding schedule..."
 msgstr "Ajakava lisamine..."
 
-msgid "Additional Info"
+#, fuzzy
+msgid "Additional ZAP informations..."
 msgstr "Lisainfo"
+
+#, fuzzy
+msgid "Additional stream informations..."
+msgstr "näita saate sisututvustust..."
+
+#, fuzzy
+msgid "Addon NOT installed!"
+msgstr "Tühista paigaldamine"
+
+msgid "Addon NOT removed!"
+msgstr ""
+
+msgid "Addon installed sucessfully !"
+msgstr ""
+
+msgid ""
+"Addon installed sucessfully !\n"
+"To get it on plugin list, You need to reload GUI. Would You like to do it right now ?"
+msgstr ""
+
+msgid "Addon installed sucessfully!"
+msgstr ""
+
+#, fuzzy
+msgid "Addon installed!"
+msgstr "Tühista paigaldamine"
+
+msgid "Addon is not compatiable!"
+msgstr ""
+
+msgid "Addon removed!"
+msgstr ""
 
 msgid "Address"
 msgstr "Aadress"
@@ -717,8 +928,16 @@ msgstr "Album"
 msgid "Alias"
 msgstr "Alias"
 
+#, fuzzy
+msgid "Alias:"
+msgstr "Alias"
+
 msgid "All"
 msgstr "Kõik"
+
+#, fuzzy
+msgid "All Time"
+msgstr "Lisa taimer"
 
 msgid "All ages"
 msgstr "Kõik vanused"
@@ -738,10 +957,10 @@ msgstr "Luba testimata uuendused"
 msgid "Allows more detailed to be in the crash log"
 msgstr "Võimaldab rohkemate üksikasjadega vealogide loomise"
 
-msgid "Allows the STB_BOX to read the stored EPG data regularly."
+msgid "Allows the linux receiver to read the stored EPG data regularly."
 msgstr "Võimaldab vastuvõtjal regulaarselt lugeda salvestatud EPG andmeid."
 
-msgid "Allows the STB_BOX to store the EPG data regularly."
+msgid "Allows the linux receiver to store the EPG data regularly."
 msgstr "Võimaldab vastuvõtjal regulaarselt salvestada EPG andmeid."
 
 msgid "Allows you setup the button to do what you choose."
@@ -798,6 +1017,10 @@ msgstr "Näita alati lemmiknimekirju"
 msgid "An empty filename is illegal."
 msgstr "Tühi failinimi ei ole lubatud."
 
+#, fuzzy
+msgid "An error occured."
+msgstr "Tundmatu viga!"
+
 msgid "An error occurred while downloading the packetlist. Please try again."
 msgstr "Paketiloendi hankimisel tekkis viga. Proovi uuesti"
 
@@ -807,8 +1030,15 @@ msgstr "Tundmatu viga!"
 msgid "Any activity"
 msgstr "Iga tegevus"
 
+msgid "April"
+msgstr ""
+
 msgid "Arabic"
 msgstr "Araabia"
+
+#, fuzzy
+msgid "Are you sure you want to Boot Image:\n"
+msgstr "Kas saadad logi:\n"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -824,11 +1054,13 @@ msgstr ""
 "Kas kustutad selle varukoopia\n"
 "\n"
 
-msgid "Are you sure you want to delete all selected logs:\n"
-msgstr "Kas kustutad kõik valitud logid:\n"
-
-msgid "Are you sure you want to delete this log:\n"
-msgstr "Kas kustutad selle logi:\n"
+#, fuzzy
+msgid ""
+"Are you sure you want to delete Image:\n"
+" "
+msgstr ""
+"Kas kustutad selle:\n"
+" "
 
 msgid ""
 "Are you sure you want to delete this:\n"
@@ -872,11 +1104,8 @@ msgstr ""
 msgid "Are you sure you want to save the EPG Cache to:\n"
 msgstr "Kas salvestad EPG andmed:\n"
 
-msgid "Are you sure you want to send this log:\n"
-msgstr "Kas saadad logi:\n"
-
-msgid "Are you sure you want to update your STB_BOX?"
-msgstr "Kas uuendad STB_BOX tarkvara?"
+msgid "Are you sure you want to update your linux receiver?"
+msgstr "Kas uuendad linux receiver tarkvara?"
 
 msgid "Artist"
 msgstr "Esitaja"
@@ -884,11 +1113,29 @@ msgstr "Esitaja"
 msgid "Arts/Culture"
 msgstr "Kunst/kultuur"
 
+msgid "Ascending"
+msgstr ""
+
+#, fuzzy
+msgid "Ask User"
+msgstr "Küsi kasutajalt"
+
 msgid "Ask before shutdown"
 msgstr "Küsi kinnitust enne väljalülitamist"
 
+msgid "Ask to load new entries"
+msgstr ""
+
 msgid "Ask user"
 msgstr "Küsi kasutajalt"
+
+#, fuzzy
+msgid "Aspect Ratio: "
+msgstr "Kuvasuhe"
+
+#, fuzzy
+msgid "Aspect Ratio: n/a"
+msgstr "Kuvasuhe"
 
 msgid "Aspect ratio"
 msgstr "Kuvasuhe"
@@ -901,9 +1148,6 @@ msgstr "Määratud kanalid/levitajad:"
 
 msgid "At End:"
 msgstr "Lõpus:"
-
-msgid "Attach a file"
-msgstr "Lisa fail"
 
 msgid "Audio"
 msgstr "Heli"
@@ -934,6 +1178,13 @@ msgstr "Heliriba (%s) vorming"
 msgid "Audio track (%s) language"
 msgstr "Heliriba (%s) keel"
 
+msgid "August"
+msgstr ""
+
+#, fuzzy
+msgid "Australia"
+msgstr "Itaalia"
+
 msgid "Author: "
 msgstr "Autor: "
 
@@ -959,6 +1210,10 @@ msgstr "Ihutooni esiletoomine"
 msgid "Auto language selection"
 msgstr "Automaatsed keele valikud"
 
+#, fuzzy
+msgid "Auto language settings"
+msgstr "Automaatsed keele valikud"
+
 msgid "Auto scart switching"
 msgstr "Autom. SCART ümberlülitus"
 
@@ -967,9 +1222,6 @@ msgstr "Automaatne"
 
 msgid "Automatic Scan"
 msgstr "Automaatotsing"
-
-msgid "Automatic image backup"
-msgstr "Automaatne tarkvarakoopia loomine"
 
 msgid "Automatic refresh"
 msgstr "Automaatne värskendamine"
@@ -985,6 +1237,10 @@ msgstr "Automaatne varukoopia loomine seadistustest"
 
 msgid "Automatically update Client/Server View?"
 msgstr "Automaatne kliendi/serveri vaate uuendamine?"
+
+#, fuzzy
+msgid "Autos & Vehicles"
+msgstr "Ihutooni esiletoomine"
 
 msgid "Autostart"
 msgstr "Autostart"
@@ -1013,6 +1269,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BZ2-package:\\n"
+msgstr ""
+
 msgid "Back"
 msgstr "Tagasi"
 
@@ -1031,7 +1290,11 @@ msgstr "Taustal kustutamise valikud"
 msgid "Background delete speed"
 msgstr "Taustal kustutamise kiirus"
 
-msgid "Backup Manager"
+msgid "Backspace Key"
+msgstr ""
+
+#, fuzzy
+msgid "Backup EGAMI"
 msgstr "Varukoopia haldur"
 
 msgid "Backup completed."
@@ -1094,6 +1357,18 @@ msgstr "Plokk müra vähendamine"
 msgid "Blue"
 msgstr "Sinine"
 
+#, fuzzy
+msgid "Bookmark"
+msgstr "Lemmikud"
+
+#, fuzzy
+msgid "Bookmark Title"
+msgstr "Lemmikud"
+
+#, fuzzy
+msgid "Bookmark URL"
+msgstr "Lemmikud"
+
 msgid "Bookmarks"
 msgstr "Lemmikud"
 
@@ -1103,8 +1378,19 @@ msgstr "Tugevda sinist"
 msgid "Boost green"
 msgstr "Tugevda rohelist"
 
+#, fuzzy
+msgid "Boot Confirmation"
+msgstr "Kustutamise kinnitus"
+
+#, fuzzy
+msgid "Boot Image"
+msgstr "Tarkvara:"
+
 msgid "Bouquet List"
 msgstr "Lemmiknimekirjad"
+
+msgid "Brazil"
+msgstr ""
 
 msgid "Brightness"
 msgstr "Heledus"
@@ -1115,12 +1401,21 @@ msgstr "Heledus (tavakasutus)"
 msgid "Brightness (Standby)"
 msgstr "Heledus (ooterežiim)"
 
-msgid "Buffers:"
+msgid "Browser Help"
+msgstr ""
+
+msgid "Browser Start/Stop"
+msgstr ""
+
+msgid "BrowserMain"
+msgstr ""
+
+#, fuzzy
+msgid "Buffer size [kB]:"
 msgstr "Puhvrid:"
 
-#, python-format
-msgid "Build: %s"
-msgstr "Järk: %s"
+msgid "Buffers:"
+msgstr "Puhvrid:"
 
 msgid "Bulgarian"
 msgstr "Bulgaaria"
@@ -1147,15 +1442,6 @@ msgstr "Nupp"
 msgid "Button setup"
 msgstr "Nuppude seadistus"
 
-msgid "By Team ViX"
-msgstr "ViX tiimilt"
-
-msgid "Bytes received:"
-msgstr "Vastu võetud baidid:"
-
-msgid "Bytes sent:"
-msgstr "Saadetud baidid:"
-
 msgid "C"
 msgstr "C"
 
@@ -1164,6 +1450,14 @@ msgstr "C-sagedusala"
 
 msgid "CAID"
 msgstr "CAID"
+
+#, fuzzy
+msgid "CAT Info"
+msgstr "CCcam Info"
+
+#, fuzzy
+msgid "CCcam"
+msgstr "CCcam Info"
 
 msgid "CCcam Client Info"
 msgstr "CCcam kliendi info"
@@ -1213,8 +1507,17 @@ msgstr ""
 msgid "CCcam info"
 msgstr "CCcam info"
 
+msgid "CCcam.cfg Basic Line Editor"
+msgstr ""
+
+msgid "CF card mounted in:        "
+msgstr ""
+
 msgid "CI assignment"
 msgstr "CI määrangud"
+
+msgid "COMPACT FLASH: "
+msgstr ""
 
 msgid "CVBS"
 msgstr "Komposiit (CVBS)"
@@ -1233,6 +1536,17 @@ msgstr "Salvesta pisipildid"
 
 msgid "Cached:"
 msgstr "Vahemälus:"
+
+msgid "Can be used for different fps between external subtitles and video."
+msgstr ""
+
+msgid ""
+"Can't open selected bookmark.\n"
+"   - URL data is empty!!"
+msgstr ""
+
+msgid "Canada"
+msgstr ""
 
 msgid "Cancel"
 msgstr "Tühista"
@@ -1261,11 +1575,18 @@ msgstr "Kaardid: 0"
 msgid "Cardserial"
 msgstr "Kaardi seerianumber"
 
+msgid "Category Name"
+msgstr ""
+
 msgid "Center DVB subtitles"
 msgstr "Tsentreeritud DVB subtiitrid"
 
 msgid "Change bouquets in quickzap"
 msgstr "Lemmiknimekirjade vahetus noolenuppudega"
+
+#, fuzzy
+msgid "Change permanent clock position"
+msgstr "Internetiühenduse kontroll"
 
 msgid "Change pin code"
 msgstr "Vaheta PIN"
@@ -1296,9 +1617,6 @@ msgstr "Muutuste logi"
 
 msgid "Channel"
 msgstr "Kanal"
-
-msgid "Channel +/- button mode"
-msgstr "+/-nuppude toime"
 
 msgid "Channel 1 at start"
 msgstr "Käivitus kanalil 1"
@@ -1369,9 +1687,6 @@ msgstr "Kontrolli uuesti internetiühendust"
 msgid "Checking Feeds"
 msgstr "Serverite kontroll"
 
-msgid "Checking Logs..."
-msgstr "Logide uurimine..."
-
 msgid "Checking filesystem..."
 msgstr "Failisüsteemi kontroll..."
 
@@ -1392,10 +1707,6 @@ msgstr ""
 msgid "Children/Youth"
 msgstr "Lapsed/noored"
 
-#, python-format
-msgid "Chipset: BCM%s"
-msgstr "Kiibistik: BCM%s"
-
 msgid "Choose Bouquet"
 msgstr "Vali lemmiknimekiri"
 
@@ -1405,14 +1716,18 @@ msgstr "Vali salvestuse lihtsaks leidmiseks märksõna."
 msgid "Choose between Daily, Weekly, Weekdays or self defined."
 msgstr "Vali kas kord päevas, kord nädalas, tööpäevadel või kasutaja määratud."
 
+#, fuzzy
+msgid "Choose target folder"
+msgstr "Vali sihtkataloog"
+
 msgid "Choose the location for crash and debuglogs."
 msgstr "Vali vea- ja silumislogide jaoks asukoht."
 
-msgid "Choose the location where the EPG data will be stored when the STB_BOX is shut down. The location must be available at boot time."
-msgstr "Vali asukoht, kuhu STB_BOX välja lülitamisel EPG andmed salvestatakse. Asukoht peab olema kättesaadav algkäivitusel."
+msgid "Choose the location where the EPG data will be stored when the linux receiver is shut down. The location must be available at boot time."
+msgstr "Vali asukoht, kuhu linux receiver välja lülitamisel EPG andmed salvestatakse. Asukoht peab olema kättesaadav algkäivitusel."
 
-msgid "Choose the name of the file that holds the EPG data when the STB_BOX is shut down. This can be handy to differentiate between several boxes."
-msgstr "Määra, mis nimega EPG fail STB_BOX välja lülitamisel salvestatakse. Nii on mugav eristada mitme eri vastuvõtja faile."
+msgid "Choose the name of the file that holds the EPG data when the linux receiver is shut down. This can be handy to differentiate between several boxes."
+msgstr "Määra, mis nimega EPG fail linux receiver välja lülitamisel salvestatakse. Nii on mugav eristada mitme eri vastuvõtja faile."
 
 msgid "Choose time interval to which the graphics will be rounded off."
 msgstr "Vali ajavahemik, mida kuvatakse graafiliselt."
@@ -1435,6 +1750,10 @@ msgstr "Vali seadistamiseks tuuner."
 msgid "Chose between record and ZAP."
 msgstr "Vali, kas salvestad või lähed kanalile."
 
+#, fuzzy
+msgid "Circular"
+msgstr "Ringpolarisatsioon vasak"
+
 msgid "Circular left"
 msgstr "Ringpolarisatsioon vasak"
 
@@ -1453,11 +1772,19 @@ msgstr "Kustuta kanalid"
 msgid "Clear fixed"
 msgstr "Eemalda püsiaadress"
 
+#, fuzzy
+msgid "Clear history on Exit:"
+msgstr "salvesta väljumisel viimane vali sihtkaust või meedia"
+
 msgid "Clear log"
 msgstr "Kustuta logi"
 
 msgid "Clear playlist"
 msgstr "Tühjenda esitusloend"
+
+#, fuzzy
+msgid "Client IP:"
+msgstr "Kliendid"
 
 msgid "Clients"
 msgstr "Kliendid"
@@ -1491,6 +1818,10 @@ msgstr "Värvi vorming"
 
 msgid "Color space"
 msgstr "Värvi ruum"
+
+#, fuzzy
+msgid "Comedy"
+msgstr "komöödia"
 
 msgid "Command To Run"
 msgstr "Täidetav käsklus"
@@ -1531,6 +1862,10 @@ msgstr "Täielik (lubab heliribade miksimist)"
 msgid "Composition of the recording filenames"
 msgstr "Salvestuse nimede koostamine"
 
+#, fuzzy
+msgid "Config default audio language..."
+msgstr "Määra heli keele neljas eelistus"
+
 #, python-format
 msgid "Configfile %s saved."
 msgstr "Seadistusfail %s salvestati."
@@ -1544,13 +1879,25 @@ msgstr "Väliste subtiitrite täpsemaks ajastamiseks määra vajadusel viiteaeg.
 msgid "Configure an additional delay to improve subtitle synchronisation."
 msgstr "Subtiitrite täpsemaks ajastamiseks määra vajadusel viiteaeg."
 
+#, fuzzy
+msgid "Configure default path for recording..."
+msgstr "Määra ekraani pildisuhe."
+
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Määra, mitu minutit lõppenud saateid veel saatekavas näidatakse. Kasulik, kui soovid midagi teada saatest, mis on kohe lõppemas, on just lõppenud või mille algamine venib."
 
 msgid "Configure how recording filenames are constructed."
 msgstr "Määra, millisel kujul salvestuste nimed luuakse"
 
+#, fuzzy
+msgid "Configure http stream..."
+msgstr "Seadista lüüs."
+
 msgid "Configure interface"
+msgstr "Seadista liides"
+
+#, fuzzy
+msgid "Configure internal epg..."
 msgstr "Seadista liides"
 
 msgid "Configure nameservers"
@@ -1561,6 +1908,10 @@ msgstr "Määra, millisel andmekandjal taustal kustutamise võimalust kasutataks
 
 msgid "Configure remote control type"
 msgstr "Määra puldi tüüp"
+
+#, fuzzy
+msgid "Configure subtitle color, size, position..."
+msgstr "Määra oma asukoha laiuskraad."
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Vali selle LNB jaoks õige DiSEqC režiim."
@@ -1736,9 +2087,6 @@ msgstr "Määra kanalinime kasutatav ruum."
 msgid "Configure to show the channel names, picons, or both in the EPG."
 msgstr "Määra, kas saatekavas näidatakse kanalinimesi, kanalilogosi või mõlemaid."
 
-msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
-msgstr "Luba teise inforiba näitamine (2 X OK). Seal võib leida käesoleva kanali kohta rohkem teavet."
-
 msgid "Configure which color format should be used on the SCART output."
 msgstr "Määra SCART väljundi poolt kasutatav värvisüsteem."
 
@@ -1820,9 +2168,6 @@ msgstr "Kontrast"
 msgid "Control of the position how finished timer are shown in the Timer List."
 msgstr "Määra, kuidas aegunud taimereid  taimerite nimekirjas näidatakse."
 
-msgid "Convert ext3 filesystem to ext4"
-msgstr "Teisenda ext3 > ext4"
-
 msgid "Convert ext3 to ext4"
 msgstr "Teisenda ext3 > ext4"
 
@@ -1838,6 +2183,13 @@ msgstr "Cool TV Guide"
 msgid "Copy"
 msgstr "Kopeeri"
 
+msgid "Copy Settings to the new Image"
+msgstr ""
+
+#, fuzzy
+msgid "Copying files"
+msgstr "Pikad failinimed"
+
 msgid ""
 "Could not activate Permanent-Timeshift!\n"
 "Timeshift-Path does not exist"
@@ -1845,8 +2197,8 @@ msgstr ""
 "Pideva ajanihke käivitamine nurjus!\n"
 "Määratud asukohta ei eksisteeri"
 
-msgid "Could not connect to STB_BOX .NFI image feed server:"
-msgstr "Ei saa ühendust STB_BOX tarkvara serveriga:"
+msgid "Could not connect to linux receiver .NFI image feed server:"
+msgstr "Ei saa ühendust linux receiver tarkvara serveriga:"
 
 msgid "Could not find installed channel list."
 msgstr "Paigaldatud kanalinimekirja ei leitud."
@@ -1873,13 +2225,15 @@ msgstr "Kehtetu kanal %s. Salvestamine nurjus."
 msgid "Could not save configfile %s!"
 msgstr "Seadistusfaili %s salvestamine nurjus!"
 
-msgid "Crash Logs"
-msgstr "Vealogid"
+#, fuzzy
+msgid "Create"
+msgstr "korduvalt"
 
 msgid "Create DVD-ISO"
 msgstr "Loo DVD-ISO"
 
-msgid "Create directory"
+#, fuzzy
+msgid "Create Directory"
 msgstr "Loo kataloog"
 
 msgid "Create more detailed crash log"
@@ -1907,8 +2261,9 @@ msgstr "Horvaadi"
 msgid "Cron Manager"
 msgstr "Cron haldur"
 
-msgid "CronTimers"
-msgstr "Cron taimerid"
+#, fuzzy
+msgid "Cron Panel"
+msgstr "Cron haldur"
 
 msgid "Current CEC address"
 msgstr "Praegune CEC aadress"
@@ -1916,11 +2271,22 @@ msgstr "Praegune CEC aadress"
 msgid "Current Event:"
 msgstr "Hetke saade:"
 
+#, fuzzy
+msgid "Current Page"
+msgstr "Praegune kellaaeg"
+
 msgid "Current Status:"
 msgstr "Praegune olek:"
 
 msgid "Current device: "
 msgstr "Praegune seade: "
+
+msgid "Current information directly"
+msgstr ""
+
+#, fuzzy
+msgid "Current page is already exist."
+msgstr "Rada %s on juba olemas."
 
 msgid "Current settings:"
 msgstr "Hetke seadistused:"
@@ -1939,6 +2305,9 @@ msgstr "Praegune versioon:"
 
 msgid "Currently installed image"
 msgstr "Hetkel paigaldatud tarkvara"
+
+msgid "Currentpage(Bookmark)"
+msgstr ""
 
 msgid "Custom"
 msgstr "Kohandamine"
@@ -1967,11 +2336,17 @@ msgstr "Määra lõikekohad..."
 msgid "Czech"
 msgstr "Tšehhi"
 
+msgid "Czech Republic"
+msgstr ""
+
 msgid "D"
 msgstr "D"
 
 msgid "DHCP"
 msgstr "DHCP"
+
+msgid "DLNA"
+msgstr ""
 
 msgid "DLNA support"
 msgstr "DLNA tugi"
@@ -1984,6 +2359,9 @@ msgstr "DMM tavaline"
 
 msgid "DUAL LAYER DVD"
 msgstr "Kahekihiline DVD"
+
+msgid "DVB Snoop Help"
+msgstr ""
 
 msgid "DVB subtitle black transparency"
 msgstr "DVB subtiitrite tausta läbipaistvus"
@@ -2033,8 +2411,19 @@ msgstr "Kuupäev"
 msgid "Date/time input"
 msgstr "Aeg/kuupäev"
 
-msgid "Debug Logs"
-msgstr "Silumislogi failid"
+msgid "Deactivate permanent clock"
+msgstr ""
+
+#, fuzzy
+msgid "Deactive"
+msgstr "Suhteline"
+
+msgid "December"
+msgstr ""
+
+#, fuzzy
+msgid "Decoding Settings"
+msgstr "Salvestamise seaded"
 
 msgid "Deep Standby"
 msgstr "Sügav ooterežiim"
@@ -2101,8 +2490,16 @@ msgstr "Kustutatud %s!"
 msgid "Deleted items"
 msgstr "Prügikast"
 
+#, fuzzy
+msgid "Deleting files"
+msgstr "Kustuta fail"
+
 msgid "Depth"
 msgstr "Sügavus"
+
+#, fuzzy
+msgid "Descending"
+msgstr "Salvestus"
 
 msgid "Descramble & record ECM' gives the option to descramble afterwards if descrambling on recording failed. 'Don't descramble, record ECM' save a scramble recording that can be descrambled on playback. 'Normal' means descramble the recording and don't record ECM."
 msgstr "'Dekodeeri ja salvesta ecm' annab võimaluse salvestuse hilisemaks dekodeerimiseks, juhul kui dekodeerimine salvestamise ajal nurjus. 'Ära dekodeeri, salvesta ecm' valimisel salvestatakse saade kodeerituna ja dekodeerimine toimub taasesitusel. Valikul 'tavaline' salvestatakse saade dekodeerituna ja ECM ei salvestata."
@@ -2116,11 +2513,16 @@ msgstr "Sisututvustus"
 msgid "Deselect"
 msgstr "Tühista valik"
 
+#, fuzzy
+msgid "Details"
+msgstr "Vaata üksikasju"
+
 msgid "Details for plugin: "
 msgstr "Laienduse üksikasjad: "
 
-msgid "Detected Devices:"
-msgstr "Leitud andmekandjad"
+#, fuzzy
+msgid "Detected HDD:"
+msgstr "Leitud tuunerid:"
 
 msgid "Detected NIMs:"
 msgstr "Leitud tuunerid:"
@@ -2128,17 +2530,35 @@ msgstr "Leitud tuunerid:"
 msgid "Device Information"
 msgstr "Seadmed"
 
-msgid "Device mounts"
-msgstr "Haakepunktid"
-
 msgid "Device setup"
 msgstr "Võrgukaardi seaded"
+
+#, fuzzy
+msgid "Device temperature info"
+msgstr "Temperatuur: %s"
+
+#, fuzzy
+msgid "Device: "
+msgstr "Seadmed"
 
 msgid "Devicename:"
 msgstr "Seadme nimi:"
 
 msgid "Devices"
 msgstr "Seadmed"
+
+#, fuzzy
+msgid "Devices Manager"
+msgstr "Seadme nimi:"
+
+#, fuzzy
+msgid "Devices Panel"
+msgstr "Seadmed"
+
+msgid ""
+"Devices changes need a system restart to take effects.\n"
+"Restart your Box now?"
+msgstr ""
 
 msgid "DiSEqC"
 msgstr "DiSEqC"
@@ -2170,6 +2590,15 @@ msgstr "Digitaalne kontuuri kõrvaldamine"
 
 msgid "Digital downmix"
 msgstr "Digitaalne heli > stereo"
+
+msgid "Direct Input"
+msgstr ""
+
+msgid "Direct Input(Bookmark)"
+msgstr ""
+
+msgid "Direct Input(Category)"
+msgstr ""
 
 msgid "Direct playback of linked titles without menu"
 msgstr "Lingitud salvestuste kohene esitus ilma menüüta"
@@ -2220,11 +2649,31 @@ msgstr "Esipaneel ja kasutajaliides"
 msgid "Display message before playing next movie"
 msgstr "Teavita enne järgmise filmi alustamist"
 
+msgid "Display search results by:"
+msgstr ""
+
 msgid "Display settings"
 msgstr "Esipaneeli seaded"
 
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "EIT nüüd/järgmine kuvatakse inforibal."
+
+msgid "DjMount Panel"
+msgstr ""
+
+#, fuzzy
+msgid "DjMount UPnP root directory:"
+msgstr "Liiguta teise kataloogi"
+
+#, fuzzy
+msgid ""
+"Do You really want to install EgamiBoot in:\n"
+" "
+msgstr "Kas paigaldad paketi:\n"
+
+#, fuzzy
+msgid "Do You want to install"
+msgstr "Kas paigaldad paketi:\n"
 
 msgid "Do not change"
 msgstr "Ära muuda"
@@ -2293,8 +2742,11 @@ msgstr "Kas eemaldad laienduse \"%s\"?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Kas kustutad lemmiku %s?"
 
-msgid "Do you want to add any additional information ?"
-msgstr "Kas soovid lisada lisateavet?"
+#, fuzzy
+msgid ""
+"Do you really want to restore the EGAMI Backup:\n"
+" "
+msgstr "Kas eemaldad laienduse \"%s\"?"
 
 msgid ""
 "Do you want to also install samba client ?\n"
@@ -2303,22 +2755,16 @@ msgstr ""
 "Kas paigaldad samba kliendi ?\n"
 "See võimaldab haakida windowsi jaod."
 
-msgid ""
-"Do you want to attach a text file to explain the log ?\n"
-"(choose 'No' to type message using virtual keyboard.)"
-msgstr ""
-"Kas soovid lisada logi selgituseks tekstifaili?\n"
-"(vali 'Ei', kui lisad sõnumi virtuaalklahvistiku abil.)"
-
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Kas soovid selle valiku DVD-le kirjutada?"
 
-msgid ""
-"Do you want to delete all selected files:\n"
-"(choose 'No' to only delete the currently selected file.)"
-msgstr ""
-"Kas kustutad kõik valitud failid:\n"
-"(valides 'EI', kustutatakse ainult hetkel valitud fail.)"
+#, fuzzy
+msgid "Do you want to delete the bookmark?"
+msgstr "Kas kustutad selle taimeri?"
+
+#, fuzzy
+msgid "Do you want to delete the category and the bookmarks?"
+msgstr "Kas kustutad selle taimeri?"
 
 msgid "Do you want to do a service scan?"
 msgstr "Kas soovid alustada kanaliotsingut?"
@@ -2330,6 +2776,14 @@ msgstr "Kas teed uue käsiotsingu?"
 msgid "Do you want to download the image to %s ?"
 msgstr "Kas soovid tarkvara alla laadida %s ?"
 
+#, fuzzy
+msgid "Do you want to execute?\\n"
+msgstr "Kas väljud?"
+
+#, fuzzy
+msgid "Do you want to install a channel list?"
+msgstr "Kas paigaldad paketi:\n"
+
 msgid "Do you want to install the package:\n"
 msgstr "Kas paigaldad paketi:\n"
 
@@ -2339,8 +2793,8 @@ msgstr "Soovid panna DVD mängima?"
 msgid "Do you want to preview this DVD before burning?"
 msgstr "Soovid plaadi eelvaadet ka, enne kirjutamise alustamist?"
 
-msgid "Do you want to reboot your STB_BOX?"
-msgstr "Soovid STB_BOX uuesti käivitada?"
+msgid "Do you want to reboot your linux receiver?"
+msgstr "Soovid linux receiver uuesti käivitada?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Kas taaskäivitad vastuvõtja?"
@@ -2354,18 +2808,29 @@ msgstr "Kas taastad seaded?"
 msgid "Do you want to resume this playback?"
 msgstr "Kas jätkad vaatamist katkestatud kohalt?"
 
-msgid ""
-"Do you want to send all selected files:\n"
-"(choose 'No' to only send the currently selected file.)"
-msgstr ""
-"Kas saadad kõik valitud failid:\n"
-"(vali 'Ei', kui saadad ainult hetkel valitud faili.)"
+#, fuzzy
+msgid "Do you want to see more entries?"
+msgstr "Kas taastad seaded?"
 
-msgid "Do you want to update your STB_BOX?"
-msgstr "Kas uuendad STB_BOX tarkvara?"
+#, fuzzy
+msgid "Do you want to set selected url to the Startpage?"
+msgstr "Kas paigaldad paketi:\n"
+
+#, fuzzy
+msgid "Do you want to update your EGAMI image?"
+msgstr "Kas uuendad linux receiver tarkvara?"
+
+msgid "Do you want to update your linux receiver?"
+msgstr "Kas uuendad linux receiver tarkvara?"
 
 msgid "Do you want to upgrade the package:\n"
 msgstr "Kas uuendad paketi:\n"
+
+msgid "Domain"
+msgstr ""
+
+msgid "Domain:"
+msgstr ""
 
 msgid "Don't save"
 msgstr "Ära salvesta"
@@ -2382,6 +2847,9 @@ msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
 msgstr[0] "Valmis - paigaldatud või uuendatud %d pakett (%s)"
 msgstr[1] "Valmis - paigaldatud või uuendatud %d paketti (%s)"
 
+msgid "Down Key"
+msgstr ""
+
 msgid "Download"
 msgstr "Allalaadimine"
 
@@ -2392,7 +2860,41 @@ msgstr "Allalaadimine %s serverist"
 msgid "Download .NFI-files for USB-flasher"
 msgstr "Laadi alla .NFI-failid USB-le"
 
+#, fuzzy
+msgid "Download CVS extensions..."
+msgstr "Näita laiendusi"
+
+msgid "Download EGAMI Addons"
+msgstr ""
+
+#, fuzzy
+msgid "Download Online Feeds Extensions"
+msgstr "Näita käsiloevaid tööülesandeid laienduste menüüs"
+
+msgid "Download Online Feeds all Packages"
+msgstr ""
+
+#, fuzzy
+msgid "Download User addons from url..."
+msgstr "Allalaadimine %s serverist"
+
+#, fuzzy
+msgid "Download Video"
+msgstr "Allalaadimine"
+
+#, fuzzy
+msgid "Download extensions from EGAMI server..."
+msgstr "Allalaadimine %s serverist"
+
+#, fuzzy
+msgid "Download location"
+msgstr "Kehtetu asukoht"
+
 msgid "Download plugins"
+msgstr "Paigalda laiendusi"
+
+#, fuzzy
+msgid "Download subtitle:"
 msgstr "Paigalda laiendusi"
 
 msgid "Downloadable plugins"
@@ -2401,12 +2903,27 @@ msgstr "Saadaolevad laiendused"
 msgid "Downloading"
 msgstr "Laetakse alla"
 
+#, fuzzy
+msgid "Downloading an addon... Please wait..."
+msgstr "Laienduste nimekirja laadimine. Oota..."
+
 msgid "Downloading plugin information. Please wait..."
 msgstr "Laienduste nimekirja laadimine. Oota..."
 
-#, python-format
-msgid "Drivers: %s"
+#, fuzzy
+msgid "Downloading screenshots. Please wait..."
+msgstr "Laienduste nimekirja laadimine. Oota..."
+
+#, fuzzy
+msgid "Drivers: "
 msgstr "Ajurid: %s"
+
+msgid "DropBear Panel"
+msgstr ""
+
+#, fuzzy
+msgid "Duration: "
+msgstr "Küllastus"
 
 msgid "Dutch"
 msgstr "Hollandi"
@@ -2416,6 +2933,10 @@ msgstr "Dünaamiline kontrast"
 
 msgid "E"
 msgstr "E"
+
+#, fuzzy
+msgid "ECM Info"
+msgstr "CCcam ECM info"
 
 msgid "ECM Statistics"
 msgstr "ECM statistika"
@@ -2435,11 +2956,42 @@ msgstr "ECM viimane"
 msgid "ECM-Time"
 msgstr "ECM aeg"
 
+msgid "EGAMI Backup complete! Please wait..."
+msgstr ""
+
+msgid "EGAMI Devices Manager has just unmounted all your devices."
+msgstr ""
+
+#, fuzzy
+msgid "EGAMI File Manager"
+msgstr "Tarkvarakoopia haldur"
+
+msgid "EGAMI Full Backup Panel"
+msgstr ""
+
+msgid "EGAMI MultiBoot"
+msgstr ""
+
+msgid "EGAMI Package Installation..."
+msgstr ""
+
+msgid "EGAMI Panel"
+msgstr ""
+
+msgid "EGAMI Personal Backup Panel"
+msgstr ""
+
+msgid "EIT/TOT/TDT Info"
+msgstr ""
+
 msgid "EPG"
 msgstr "Saatekava"
 
 msgid "EPG Cache Check"
 msgstr "EPG vahemälu kontroll"
+
+msgid "EPG Panel"
+msgstr ""
 
 msgid "EPG Search"
 msgstr "EPG otsing"
@@ -2475,6 +3027,9 @@ msgstr "Ecm:"
 msgid "Edit"
 msgstr "Muuda"
 
+msgid "Edit CCcam.cfg Lines"
+msgstr ""
+
 msgid "Edit DNS"
 msgstr "Muuda DNS"
 
@@ -2490,11 +3045,11 @@ msgstr "Muuda kanalinimekirja"
 msgid "Edit settings"
 msgstr "Muuda seadeid"
 
-msgid "Edit the Nameserver configuration of your STB_BOX.\n"
-msgstr "Muuda STB_BOX nimeserveri seadeid.\n"
+msgid "Edit the Nameserver configuration of your linux receiver.\n"
+msgstr "Muuda linux receiver nimeserveri seadeid.\n"
 
-msgid "Edit the network configuration of your STB_BOX.\n"
-msgstr "Muuda STB_BOX võrguseadeid.\n"
+msgid "Edit the network configuration of your linux receiver.\n"
+msgstr "Muuda linux receiver võrguseadeid.\n"
 
 msgid "Edit title"
 msgstr "Muuda pealkirja"
@@ -2502,8 +3057,38 @@ msgstr "Muuda pealkirja"
 msgid "Edit upgrade source url."
 msgstr "Muuda uuenduste allika url."
 
+#, fuzzy
+msgid "Education"
+msgstr "Modulatsioon"
+
 msgid "Education/Science/..."
 msgstr "Haridus ja teadus"
+
+#, fuzzy
+msgid "Egami File Manager"
+msgstr "Tarkvarakoopia haldur"
+
+msgid "Egami File Manager - Settings"
+msgstr ""
+
+#, fuzzy
+msgid "EgamiBoot has been installed succesfully!"
+msgstr "PIN kood on muudetud."
+
+msgid "EgamiBoot is running from:  "
+msgstr ""
+
+msgid "EgamiBoot will stop all your STB activity now to install the new image."
+msgstr ""
+
+msgid "EgamiBoot: Deleting Image"
+msgstr ""
+
+msgid "EgamiBoot: Install new image"
+msgstr ""
+
+msgid "Eject"
+msgstr ""
 
 msgid "Elapsed"
 msgstr "Kulunud"
@@ -2513,6 +3098,9 @@ msgstr "Möödas & jäänud"
 
 msgid "Electronic Program Guide"
 msgstr "Saatekava (EPG)"
+
+msgid "EmuInfo Tool: "
+msgstr ""
 
 msgid "Enable"
 msgstr "Luba"
@@ -2532,14 +3120,27 @@ msgstr "Luba Netmed EPG"
 msgid "Enable ViaSat EPG"
 msgstr "Luba Viasat EPG"
 
+msgid "Enable and set the duration of the second infobar (press OK twice) that may include more information on the current service."
+msgstr ""
+
 msgid "Enable debug log"
 msgstr "Luba silumislogid"
+
+msgid "Enable dyndns system:"
+msgstr ""
 
 msgid "Enable freesat EPG"
 msgstr "Luba freesat EPG"
 
+#, fuzzy
+msgid "Enable log:"
+msgstr "Luba silumislogid"
+
 msgid "Enable multiple bouquets"
 msgstr "Luba lemmiknimekirjad"
+
+msgid "Enable only media filter ?"
+msgstr ""
 
 msgid "Enable or disable Permanent Timeshift. When activated, you can wind back until the time you zapped to a channel, and you can make recordings in retrospect."
 msgstr "Luba või keela pidev ajanihe. Lubamisel saad kerida tagasi kanalivahetushetkeni ja luua tagasivaates salvestusi."
@@ -2583,11 +3184,18 @@ msgstr "Lõpp aeg"
 msgid "English"
 msgstr "Inglise"
 
+msgid "Enigma-Debug:"
+msgstr ""
+
 msgid "Enigma2 skin selector"
 msgstr "Enigma2 välimuse valik"
 
 msgid "Enimga2 Changes"
 msgstr "Enimga2 muudatused"
+
+#, fuzzy
+msgid "Enter Key"
+msgstr "Sisesta pin kood"
 
 msgid "Enter main menu..."
 msgstr "Mine peamenüüsse..."
@@ -2604,6 +3212,13 @@ msgstr "Sisesta endale logi koopia saatmiseks oma mailiaadress."
 msgid "Enter your forum user name, to make it easier trace logs."
 msgstr "Sisesta foorumi kasutajanimi logide jälgimise hõlbustamiseks."
 
+msgid "Enter your search term(s)"
+msgstr ""
+
+#, fuzzy
+msgid "Entertainment"
+msgstr "Mine peamenüüsse..."
+
 msgid "Entitlements"
 msgstr "Õigused"
 
@@ -2616,16 +3231,12 @@ msgstr "Veakood"
 msgid "Error executing plugin"
 msgstr "Viga laienduse käivitamisel"
 
-msgid "Error reading webpage!"
+#, fuzzy
+msgid "Error reading "
 msgstr "Viga veebilehe lugemisel!"
 
-#, python-format
-msgid ""
-"Error:\n"
-"%s"
-msgstr ""
-"Viga:\n"
-"%s"
+msgid "Error reading webpage!"
+msgstr "Viga veebilehe lugemisel!"
 
 #, python-format
 msgid ""
@@ -2686,6 +3297,10 @@ msgstr "Välju sisendseadmete valikust."
 msgid "Exit mediaplayer"
 msgstr "Sulge meediamängija"
 
+#, fuzzy
+msgid "Exit mediaplayer on the end of file ?"
+msgstr "Sulge meediamängija"
+
 msgid "Exit movie list"
 msgstr "Sulge filmilist"
 
@@ -2700,6 +3315,10 @@ msgstr "Välju võrguliideste nimekirjast"
 
 msgid "Exit network wizard"
 msgstr "Välju võrgu häälestusest"
+
+#, fuzzy
+msgid "Exit the Opera browser."
+msgstr "Näita laienduste nimekirja.."
 
 msgid "Exit the wizard"
 msgstr "Välju juhendatud seadistusabist"
@@ -2743,11 +3362,18 @@ msgstr "Väline"
 msgid "External (CF)"
 msgstr "Väline (CF)"
 
+#, fuzzy
+msgid "FAN Setup"
+msgstr "AFP seaded"
+
 msgid "FEC"
 msgstr "FEC"
 
 msgid "FLASH"
 msgstr "FLASH"
+
+msgid "FTP Panel"
+msgstr ""
 
 msgid "FTP Setup"
 msgstr "FTP seaded"
@@ -2761,12 +3387,27 @@ msgstr "Algseadistus"
 msgid "Failed"
 msgstr "Nurjus"
 
+msgid "Failed to download an Addon..."
+msgstr ""
+
 msgid "Failed to remove old files."
 msgstr "Vanade failide kustutamine nurjus."
+
+#, fuzzy
+msgid "Failed..."
+msgstr "Nurjus"
 
 #, python-format
 msgid "Fan %d"
 msgstr "Ventilaator %d"
+
+#, fuzzy
+msgid "Fan Setup"
+msgstr "AFP seaded"
+
+#, fuzzy
+msgid "Fan mode"
+msgstr "Kanalivahetus"
 
 msgid "Fast"
 msgstr "Kiire"
@@ -2786,6 +3427,21 @@ msgstr "Edasikerimise kiirused"
 msgid "Favourites"
 msgstr "Lemmikud"
 
+msgid "February"
+msgstr ""
+
+msgid "Fetching feed entries"
+msgstr ""
+
+msgid "Fetching search entries"
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "File Manager Install..."
+msgstr ""
+
 msgid "File appears to be busy.\n"
 msgstr "Fail on hõivatud.\n"
 
@@ -2799,8 +3455,14 @@ msgstr ""
 msgid "Filesystem Check"
 msgstr "Failisüsteemi kontroll"
 
-msgid "Filesystem check"
-msgstr "Failisüsteemi kontroll"
+msgid "Filesystemposition list left"
+msgstr ""
+
+msgid "Filesystemposition list right"
+msgstr ""
+
+msgid "Film & Animation"
+msgstr ""
 
 msgid "Finetune"
 msgstr "Peenhäälestus"
@@ -2829,6 +3491,10 @@ msgstr "Vilkuv"
 msgid "Flashing failed"
 msgstr "Tarkvara paigaldamine nurjus"
 
+#, fuzzy
+msgid "Folder:"
+msgstr "levitaja:"
+
 msgid "Following tasks will be done after you press OK!"
 msgstr "Järgmised toimingud tehakse pärast OK vajutamist!"
 
@@ -2843,6 +3509,10 @@ msgstr "Kasuta helitugevuse nuppe"
 
 msgid "Frame size in full view"
 msgstr "Kaadri suurus täisvaates"
+
+#, fuzzy
+msgid "France"
+msgstr "romantika"
 
 msgid "Free Memory:"
 msgstr "Vaba mälu:"
@@ -2896,11 +3566,17 @@ msgstr "Esipaneeli protsessori versioon: %d"
 msgid "Ftpd service type: Vsftpd server"
 msgstr "Ftpd tüüp: Vsftpd server"
 
+msgid "Full Backup"
+msgstr ""
+
 msgid "Full transparency"
 msgstr "Täiesti läbipaistev"
 
 msgid "Fulscreen"
 msgstr "Täisekraan"
+
+msgid "Function Not Yet Available"
+msgstr ""
 
 msgid "Function of OK button"
 msgstr "OK nupu toime"
@@ -2908,12 +3584,25 @@ msgstr "OK nupu toime"
 msgid "GB"
 msgstr "GB"
 
+#, fuzzy
+msgid "GUI Config Informations"
+msgstr "Tarkvarast"
+
 msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to restart the GUI now?"
 msgstr ""
 "Välimuse jõustamiseks tuleb kasutajaliides taaskäivitada\n"
 "Kas teed seda kohe?"
+
+msgid "GUI: "
+msgstr ""
+
+msgid "GZ-package:\\n"
+msgstr ""
+
+msgid "Gaming"
+msgstr ""
 
 msgid "Gateway"
 msgstr "Lüüs"
@@ -2933,6 +3622,14 @@ msgstr "Žanr"
 msgid "German"
 msgstr "Saksa"
 
+#, fuzzy
+msgid "Germany"
+msgstr "Saksa"
+
+#, fuzzy
+msgid "Get Subtitle"
+msgstr "Subtiitrid"
+
 msgid "Get latest experimental image"
 msgstr "Hangi uusim eksperimentaalne tarkvara"
 
@@ -2944,6 +3641,9 @@ msgstr "Saateinfo hankimine nurjus!"
 
 msgid "Getting plugin information. Please wait..."
 msgstr "Hangitakse laienduse andmeid. Oota..."
+
+msgid "Global"
+msgstr ""
 
 msgid "Go down the list"
 msgstr "Liigu nimekirjas alla"
@@ -2966,11 +3666,19 @@ msgstr "Liigu järgmisele saatele"
 msgid "Go to next page of service"
 msgstr "Liigu järgmisele kanalite lehele"
 
+#, fuzzy
+msgid "Go to next page."
+msgstr "Liigu järgmisele saatele"
+
 msgid "Go to previous event"
 msgstr "Liigu eelmisele saatele"
 
 msgid "Go to previous page of service"
 msgstr "Liigu eelmisele kanalite lehele"
+
+#, fuzzy
+msgid "Go to previous page."
+msgstr "Liigu eelmisele saatele"
 
 msgid "Go up the list"
 msgstr "Liigu nimekirjas üles"
@@ -3029,6 +3737,10 @@ msgstr "Graafilise EPG seaded"
 msgid "Graphics"
 msgstr "Graafiline"
 
+#, fuzzy
+msgid "Great Britain"
+msgstr "Partitsiooni loomine"
+
 msgid "Greek"
 msgstr "Kreeka"
 
@@ -3041,14 +3753,33 @@ msgstr "Kaitsevahemik"
 msgid "H: = Hourly / D: = Daily / W: = Weekly / M: = Monthly"
 msgstr "H: = 1x tunnis / D: = 1x päevas / W: = 1x nädalas / M: = 1x kuus"
 
+msgid "HARD DISK: "
+msgstr ""
+
 msgid "HD list"
 msgstr "HD kanalid"
+
+msgid "HD videos"
+msgstr ""
+
+msgid "HDD mounted in:               "
+msgstr ""
 
 msgid "HDMI CEC"
 msgstr "HDMI CEC"
 
 msgid "HDMI CEC Setup"
 msgstr "HDMI CEC seaded"
+
+#, fuzzy
+msgid "HTTP Stream settings"
+msgstr "EMU seaded"
+
+msgid "HTTPD Config File:"
+msgstr ""
+
+msgid "HTTPD Panel"
+msgstr ""
 
 msgid "Handle standby from TV"
 msgstr "Ooterežiim TV kaudu"
@@ -3065,11 +3796,47 @@ msgstr "Kõvaketta väljalülitamine peale"
 msgid "Harddisk"
 msgstr "Kõvaketas"
 
+#, fuzzy
+msgid "Hardware: "
+msgstr "Vastuvõtja:"
+
+msgid "HbbTV Applications"
+msgstr ""
+
+msgid ""
+"HbbTV Browser was not running.\n"
+"Please running browser before start HbbTV Application."
+msgstr ""
+
+#, fuzzy
+msgid "HbbTV Plugin"
+msgstr "Laiendused"
+
 msgid "Hebrew"
 msgstr "Heebrea"
 
 msgid "Height"
 msgstr "Kõrgus"
+
+msgid "Help"
+msgstr ""
+
+msgid ""
+"Here is the list of installed images in Your STB\n"
+"\n"
+"Please choose an image to boot."
+msgstr ""
+
+msgid ""
+"Here is the list of mounted devices in Your STB\n"
+"\n"
+"Please choose a device where You would like to install EgamiBoot:"
+msgstr ""
+
+msgid ""
+"Here is the list of mounted devices in Your STB\n"
+"Please choose a device where You would like to keep Your backup:"
+msgstr ""
 
 msgid "Hidden network"
 msgstr "Varjatud võrk"
@@ -3098,6 +3865,10 @@ msgstr "Hierarhia teave"
 msgid "High bitrate support"
 msgstr "Kõrge bitrate tugi"
 
+#, fuzzy
+msgid "History"
+msgstr "Kanalivahetuse ajalugu..."
+
 msgid "History buttons mode"
 msgstr "Ajaloo nuppude olek"
 
@@ -3110,8 +3881,14 @@ msgstr "Hoia pilti"
 msgid "Hold till locked"
 msgstr "Hoia pilti lukustamiseni"
 
+msgid "Holland"
+msgstr ""
+
 msgid "Home"
 msgstr "Kodu"
+
+msgid "Hong Kong"
+msgstr ""
 
 msgid "Hops:"
 msgstr ""
@@ -3143,6 +3920,9 @@ msgstr "Tunnid minutid sekundid"
 msgid "How many minutes do you want to record?"
 msgstr "Mitu minutit soovid salvestada?"
 
+msgid "Howto & Style"
+msgstr ""
+
 msgid "Hue"
 msgstr "Värvitoon"
 
@@ -3163,6 +3943,14 @@ msgstr "IP aadress"
 
 msgid "IP:"
 msgstr "IP:"
+
+#, fuzzy
+msgid "IPK Installation..."
+msgstr "Paigaldamine lõppenud."
+
+#, fuzzy
+msgid "IPKG-package:\\n"
+msgstr "paketti"
 
 msgid "ISO file is too large for this filesystem!"
 msgstr "ISO fail on liiga suur selle failisüsteemi jaoks!"
@@ -3239,11 +4027,19 @@ msgstr ""
 "Ära hooli praegu heledatest varjunditest, need seame paika järgmisena. \n"
 "Kui oled tulemusega rahul, vajuta OK."
 
-msgid "Image Information"
-msgstr "Tarkvarast"
-
-msgid "Image Manager"
+#, fuzzy
+msgid "Image Name"
 msgstr "Tarkvarakoopia haldur"
+
+msgid "Image will be booted on the next STB boot!"
+msgstr ""
+
+msgid "Image:"
+msgstr "Tarkvara:"
+
+#, fuzzy
+msgid "Image: "
+msgstr "Tarkvara:"
 
 msgid "Immediate shutdown"
 msgstr "Kohene väljalülitus"
@@ -3256,6 +4052,10 @@ msgstr "Toimumas"
 
 msgid "Inadyn Log"
 msgstr "Inadyn logi"
+
+#, fuzzy
+msgid "Inadyn Panel"
+msgstr "Inadyn seaded"
 
 msgid "Inadyn Setup"
 msgstr "Inadyn seaded"
@@ -3281,6 +4081,9 @@ msgstr "Suurendatud pinge"
 msgid "Index"
 msgstr "Indeks"
 
+msgid "India"
+msgstr ""
+
 msgid "Info"
 msgstr "Andmed"
 
@@ -3293,19 +4096,24 @@ msgstr "Info nupp (pikk)"
 msgid "Info button (short)"
 msgstr "Info nupp (lühike)"
 
-msgid "InfoBar EPG"
-msgstr "Inforiba EPG"
-
 msgid "InfoBar EPG mode"
 msgstr "Inforiba EPG"
 
 msgid "Infobar EPG"
 msgstr "Inforiba EPG"
 
+#, fuzzy
+msgid "Infobar timeout"
+msgstr "Inforiba näitamine"
+
 msgid "InfobarEPG settings"
 msgstr "Inforiba EPG seaded"
 
 msgid "Information"
+msgstr "Info"
+
+#, fuzzy
+msgid "Informations"
 msgstr "Info"
 
 msgid "Init"
@@ -3335,11 +4143,24 @@ msgstr "Sisend"
 msgid "Input device setup"
 msgstr "Sisendseadmete seadistamine"
 
-msgid "Input devices"
-msgstr "Sisendseadmed"
-
 msgid "Install"
 msgstr "Paigalda"
+
+#, fuzzy
+msgid "Install Confirmation"
+msgstr "Saada kinnitus"
+
+#, fuzzy
+msgid "Install IPK"
+msgstr "Paigalda"
+
+#, fuzzy
+msgid "Install Image"
+msgstr "Paigalda"
+
+#, fuzzy
+msgid "Install Tar-ball"
+msgstr "Paigalda kanalinimekiri"
 
 msgid "Install a new image with a USB stick"
 msgstr "Paigalda uus tarkvara USB pulgalt"
@@ -3362,11 +4183,26 @@ msgstr "IPK paigaldamine"
 msgid "Install or remove finished."
 msgstr "Paigaldamine või kustutamine on tehtud."
 
+msgid "Install packages from /tmp ..."
+msgstr ""
+
 msgid "Install picons on"
 msgstr "Paigalda kanalilogod"
 
 msgid "Install plugins"
 msgstr "Paigalda laiendusi"
+
+#, fuzzy
+msgid "Install softcam"
+msgstr "Tarkvara paigaldamine..."
+
+#, fuzzy
+msgid "Install this package"
+msgstr "Kas paigaldad paketi:\n"
+
+#, fuzzy
+msgid "Installation aborted !"
+msgstr "Paigaldamine lõppenud."
 
 msgid "Installation finished."
 msgstr "Paigaldamine lõppenud."
@@ -3377,17 +4213,22 @@ msgstr "Paigaldamine"
 msgid "Installing Service"
 msgstr "Teenuse paigaldamine"
 
+#, fuzzy
+msgid "Installing an addon... Please wait..."
+msgstr "Hangitakse laienduse andmeid. Oota..."
+
 msgid "Installing software..."
 msgstr "Tarkvara paigaldamine..."
+
+#, fuzzy
+msgid "Instant Record..."
+msgstr "Kohene salvestus..."
 
 msgid "Instant record location"
 msgstr "Kohese salvestuse asukoht"
 
 msgid "Instant recording location"
 msgstr "Kohese salvestuse asukoht"
-
-msgid "Instant recording..."
-msgstr "Kohene salvestus..."
 
 msgid "Instant recordings location"
 msgstr "Kohese salvestuse asukoht"
@@ -3404,7 +4245,8 @@ msgstr "Keskmine"
 msgid "Internal"
 msgstr "Sisemine"
 
-msgid "Internal flash"
+#, fuzzy
+msgid "Internal Flash"
 msgstr "Sisemine flash-mälu"
 
 msgid "Internal hdd only"
@@ -3412,6 +4254,22 @@ msgstr "Ainult sisesel kõvakettal"
 
 msgid "Interval between keys when repeating:"
 msgstr "Võtme kordamise vahemik:"
+
+#, fuzzy
+msgid "Interval in min:"
+msgstr "Ainult sisesel kõvakettal"
+
+#, fuzzy
+msgid "Invalid "
+msgstr "kehtetu tüüp"
+
+msgid ""
+"Invalid URL!!(Empty)\n"
+"Please, Input to the URL."
+msgstr ""
+
+msgid "Invalid URL. Please check again!!"
+msgstr ""
 
 #, python-format
 msgid "Invalid directory selected: %s"
@@ -3429,13 +4287,35 @@ msgstr "Vastupidi"
 msgid "Ipkg"
 msgstr "Ipkg"
 
+msgid "Ireland"
+msgstr ""
+
 msgid "Is this setting ok?"
 msgstr "Kas need seaded sobivad?"
 
 msgid "Is this video mode ok?"
 msgstr "Kas see videorežiim sobib?"
 
+msgid "Israel"
+msgstr ""
+
+msgid "It will move the mouse pointer down."
+msgstr ""
+
+msgid "It will move the mouse pointer left."
+msgstr ""
+
+msgid "It will move the mouse pointer right."
+msgstr ""
+
+msgid "It will move the mouse pointer up."
+msgstr ""
+
 msgid "Italian"
+msgstr "Itaalia"
+
+#, fuzzy
+msgid "Italy"
 msgstr "Itaalia"
 
 msgid "Items per page "
@@ -3444,11 +4324,21 @@ msgstr "Kirjet lehel"
 msgid "Items per page for list screen"
 msgstr "Kirjet lehel nimekirja laadis"
 
+#, fuzzy
+msgid "January"
+msgstr "juhend"
+
+msgid "Japan"
+msgstr ""
+
 msgid "Job View"
 msgstr "Töövaade"
 
 msgid "Job overview"
 msgstr "Töövaade"
+
+msgid "July"
+msgstr ""
 
 msgid "Jump back 24 hours"
 msgstr "Hüppa 24 tundi tagasi"
@@ -3477,6 +4367,9 @@ msgstr "Hüppa eelmisele tähistatud kohale"
 msgid "Jump to prime time"
 msgstr "Hüppa tippajale"
 
+msgid "June"
+msgstr ""
+
 msgid "Just change channels"
 msgstr "Kanalivahetus"
 
@@ -3490,11 +4383,27 @@ msgstr "Kanalivahetus"
 msgid "Keeps MovieList open whilst playing audio files."
 msgstr "Filmilist hoitakse helifailide esitusel avatud."
 
-#, python-format
-msgid "Kernel: %s"
+#, fuzzy
+msgid "Kernel Informations"
+msgstr "Kanali andmed"
+
+#, fuzzy
+msgid "Kernel Version: "
+msgstr "Versioon: "
+
+#, fuzzy
+msgid "Kernel-Debug:"
+msgstr "Kernel: %s"
+
+#, fuzzy
+msgid "Kernel:"
 msgstr "Kernel: %s"
 
 msgid "Keyboard"
+msgstr "Klaviatuur"
+
+#, fuzzy
+msgid "Keyboard language"
 msgstr "Klaviatuur"
 
 msgid "Keyboard map"
@@ -3502,6 +4411,9 @@ msgstr "Klaviatuur"
 
 msgid "Keyboard setup"
 msgstr "Klaviatuuri seaded"
+
+msgid "Kill, manage all running processes..."
+msgstr ""
 
 msgid "LAN adapter"
 msgstr "Kohtvõrgu adapter"
@@ -3533,6 +4445,18 @@ msgstr "LED heledus ooterežiimil."
 msgid "LNB"
 msgstr "LNB"
 
+msgid "LOADING..."
+msgstr ""
+
+msgid "LOF"
+msgstr ""
+
+msgid "LOF/H"
+msgstr ""
+
+msgid "LOF/L"
+msgstr ""
+
 msgid "Label"
 msgstr "Nimi"
 
@@ -3545,15 +4469,18 @@ msgstr "Keele valik"
 msgid "Last Req."
 msgstr "Viimane päring"
 
+msgid "Last Update:"
+msgstr "Uuendatud:"
+
+#, fuzzy
+msgid "Last Upgrade: "
+msgstr "Uuendatud:"
+
 msgid "Last config"
 msgstr "Viimane seadistus"
 
 msgid "Last speed"
 msgstr "Eelmine kiirus"
-
-#, python-format
-msgid "Last update: %s"
-msgstr "Uuendatud: %s"
 
 msgid "Last used share: "
 msgstr ""
@@ -3573,6 +4500,13 @@ msgstr "Väljud DVD-mängijast?"
 
 msgid "Left"
 msgstr "Vasak"
+
+#, fuzzy
+msgid "Left Key"
+msgstr "Vasak"
+
+msgid "Left Mouse Button"
+msgstr ""
 
 msgid "Leisure hobbies"
 msgstr "Vaba aeg ja hobid"
@@ -3626,6 +4560,10 @@ msgstr "Loetle saadaolevad võrgud"
 msgid "List mode"
 msgstr "Nimekirja laad"
 
+#, fuzzy
+msgid "List of Storage Devices"
+msgstr "Salvestite loetelu"
+
 msgid "List of storage devices"
 msgstr "Salvestite loetelu"
 
@@ -3647,6 +4585,9 @@ msgstr "Laadi"
 msgid "Load EPG"
 msgstr "Laadi EPG"
 
+msgid "Load feed on startup:"
+msgstr ""
+
 msgid "Load playlist"
 msgstr "Lae esitusloend"
 
@@ -3665,23 +4606,19 @@ msgstr "Asukoht"
 msgid "Lock:"
 msgstr "Lukus:"
 
-msgid "Log Manager"
-msgstr "Logihaldur"
+#, fuzzy
+msgid "Log"
+msgstr "Logid"
+
+#, fuzzy
+msgid "Log file name:"
+msgstr "Pikad failinimed"
 
 msgid "Log results to harddisk"
 msgstr "Logi tulemused kõvakettale"
 
-msgid "LogManager"
-msgstr "Logihaldur"
-
-msgid "Logs"
-msgstr "Logid"
-
 msgid "Logs location"
 msgstr "Logide asukoht"
-
-msgid "Logs manager"
-msgstr "Logi haldur"
 
 msgid "Logs older then the set no of days will be deleted."
 msgstr "Logid, mis on määratud päevade arvust vanemad, kustutatakse."
@@ -3716,6 +4653,10 @@ msgstr "MB"
 msgid "MORE"
 msgstr "VEEL"
 
+#, fuzzy
+msgid "Main Menu"
+msgstr "Peamenüü"
+
 msgid "Main menu"
 msgstr "Peamenüü"
 
@@ -3734,11 +4675,69 @@ msgstr "Tee see märk lõpupunktiks"
 msgid "Make this mark just a mark"
 msgstr "Tee see märk lihtsalt märgiks"
 
+msgid "Manage Inadyn, SSH, uShare, OpenVPN, NFS..."
+msgstr ""
+
+msgid "Manage Inadyn, simple dyndns updater..."
+msgstr ""
+
+msgid "Manage Your MiniDLNA UpNp Server..."
+msgstr ""
+
+msgid "Manage Your NFS Server..."
+msgstr ""
+
+msgid "Manage Your Telnet..."
+msgstr ""
+
+msgid "Manage Your UpNp Client..."
+msgstr ""
+
+msgid "Manage Your cron..."
+msgstr ""
+
+msgid "Manage Your devices like USB, HDD, DVD..."
+msgstr ""
+
+msgid "Manage Your ftp..."
+msgstr ""
+
+msgid "Manage Your little WWW web-apache"
+msgstr ""
+
+#, fuzzy
+msgid "Manage Your network share..."
+msgstr "Seadista võrk uuesti"
+
+msgid "Manage Your openvpn..."
+msgstr ""
+
+msgid "Manage Your pcscd..."
+msgstr ""
+
+msgid "Manage Your samba..."
+msgstr ""
+
+msgid "Manage Your ssh server / client..."
+msgstr ""
+
+msgid "Manage Your swapfile..."
+msgstr ""
+
+msgid "Manage Your ushare UpNp Server..."
+msgstr ""
+
 msgid "Manage extensions"
 msgstr "Laienduste haldamine"
 
-msgid "Manage your STB_BOX's software"
-msgstr "Halda STB_BOX tarkvara"
+msgid "Manage system and kernel logs..."
+msgstr ""
+
+msgid "Manage your linux receiver's software"
+msgstr "Halda linux receiver tarkvara"
+
+msgid "Manual Install EGAMI and IPK packages"
+msgstr ""
 
 msgid "Manual Scan"
 msgstr "Käsiotsing"
@@ -3754,6 +4753,10 @@ msgstr "Käsitsi sisestatud transponder"
 
 msgid "Manufacturer"
 msgstr "Tootja"
+
+#, fuzzy
+msgid "March"
+msgstr "Otsi"
 
 msgid "Margin after recording (minutes)"
 msgstr "Salvestuse lõppu lisatakse (min)"
@@ -3786,10 +4789,22 @@ msgstr "Suurim lubatud päevade arv:"
 msgid "Maximum space used (MB):"
 msgstr "Suurim lubatud kettaruum (MB):"
 
+#, fuzzy
+msgid "May"
+msgstr "päev"
+
 msgid "Media playback Remaining/Elapsed as"
 msgstr "Jäänud/möödunud meedia esitus"
 
 msgid "Media player"
+msgstr "Meediamängija"
+
+#, fuzzy
+msgid "Media scanner"
+msgstr "Meediamängija"
+
+#, fuzzy
+msgid "MediaPlayer"
 msgstr "Meediamängija"
 
 msgid "Medium is not a writeable DVD!"
@@ -3819,8 +4834,15 @@ msgstr "Teade"
 msgid "Message..."
 msgstr "Teade..."
 
+msgid "Mexico"
+msgstr ""
+
 msgid "MiniDLNA Log"
 msgstr "MiniDLNA logi"
+
+#, fuzzy
+msgid "MiniDLNA Panel"
+msgstr "MiniDLNA seaded"
 
 msgid "MiniDLNA Setup"
 msgstr "MiniDLNA seaded"
@@ -3855,10 +4877,6 @@ msgstr "Režiim"
 msgid "Model: "
 msgstr "Tüüp: "
 
-#, python-format
-msgid "Model: %s"
-msgstr "Mudel: %s"
-
 msgid "Modulation"
 msgstr "Modulatsioon"
 
@@ -3877,10 +4895,52 @@ msgstr "Esmaspäev"
 msgid "Monthly"
 msgstr "Kord kuus"
 
+#, fuzzy
+msgid "More Options"
+msgstr "Salvesta asukoht"
+
+msgid "More video entries."
+msgstr ""
+
 msgid "Mosquito noise reduction"
 msgstr "Müra tasandus"
 
+msgid "Most discussed"
+msgstr ""
+
+#, fuzzy
+msgid "Most linked"
+msgstr "Kaks rida"
+
+msgid "Most popular"
+msgstr ""
+
+#, fuzzy
+msgid "Most recent"
+msgstr "Tugevda rohelist"
+
+msgid "Most responded"
+msgstr ""
+
+msgid "Most shared"
+msgstr ""
+
+msgid "Most viewed"
+msgstr ""
+
 msgid "Mount"
+msgstr "Haagi"
+
+#, fuzzy
+msgid "Mount Manager"
+msgstr "Cron haldur"
+
+#, fuzzy
+msgid "Mount: "
+msgstr "Haagi"
+
+#, fuzzy
+msgid "Mountpoints"
 msgstr "Haagi"
 
 msgid "Mounts Setup"
@@ -3888,6 +4948,9 @@ msgstr "Haakepunktid"
 
 msgid "Mounts setup"
 msgstr "Haakepunktid"
+
+msgid "Mouse"
+msgstr ""
 
 msgid "Move"
 msgstr "Liiguta"
@@ -3940,6 +5003,10 @@ msgstr "Film/draama"
 msgid "Movielist menu"
 msgstr "Filmilisti menüü"
 
+#, fuzzy
+msgid "Moving files"
+msgstr "Pikad failinimed"
+
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
@@ -3958,11 +5025,40 @@ msgstr "Multiplex"
 msgid "Multisat"
 msgstr "Mitu satelliiti"
 
+msgid "Music"
+msgstr ""
+
 msgid "Music/Ballet/Dance"
 msgstr "Muusika/ballett/tants"
 
 msgid "Mute"
 msgstr "Vaikus"
+
+msgid "My TubePlayer"
+msgstr ""
+
+#, fuzzy
+msgid "MyTube Settings"
+msgstr "Tuuneri seaded"
+
+msgid "MyTubePlayer"
+msgstr ""
+
+msgid "MyTubePlayer Help"
+msgstr ""
+
+msgid "MyTubePlayer active video downloads"
+msgstr ""
+
+#, fuzzy
+msgid "MyTubePlayer settings"
+msgstr "Tuuneri seaded"
+
+msgid "MyTubeVideoInfoScreen"
+msgstr ""
+
+msgid "MyTubeVideohelpScreen"
+msgstr ""
 
 msgid "N/A"
 msgstr "Ei ole kasutusel"
@@ -3976,6 +5072,9 @@ msgstr "NFI tarkvara paigaldamine"
 msgid "NFI image flashing completed. Press Yellow to Reboot!"
 msgstr "NFI tarkvara on paigaldatud. Taaskäivitamiseks vajuta kollast nuppu!"
 
+msgid "NFS Server Panel"
+msgstr ""
+
 msgid "NFS Setup"
 msgstr "NFS seaded"
 
@@ -3984,6 +5083,10 @@ msgstr "NFS seaded"
 
 msgid "NIM"
 msgstr "NIM"
+
+#, fuzzy
+msgid "NIT Info"
+msgstr "Andmed"
 
 msgid "NOW"
 msgstr "PRAEGU"
@@ -3998,6 +5101,14 @@ msgid "Name"
 msgstr "Nimi"
 
 msgid "Name:"
+msgstr "Nimi:"
+
+#, fuzzy
+msgid "Name: "
+msgstr "Nimi:"
+
+#, fuzzy
+msgid "Name: n/a"
 msgstr "Nimi:"
 
 msgid "Nameserver"
@@ -4031,6 +5142,10 @@ msgstr "Võrgu ID"
 msgid "Network Information"
 msgstr "Võrgumaski teave"
 
+#, fuzzy
+msgid "Network Mounts"
+msgstr "Võrgu haakepunktid"
+
 msgid "Network Servers:"
 msgstr "Võrguserverid:"
 
@@ -4040,11 +5155,12 @@ msgstr "Võrgu häälestamine"
 msgid "Network Test"
 msgstr "Võrguühenduse test"
 
+#, fuzzy
+msgid "Network Wizard"
+msgstr "Võrguabiline"
+
 msgid "Network configuration..."
 msgstr "Võrgu häälestamine..."
-
-msgid "Network mounts"
-msgstr "Võrgu haakepunktid"
 
 msgid "Network name (SSID)"
 msgstr "Võrgu nimi (SSID)"
@@ -4076,14 +5192,45 @@ msgstr "Uus"
 msgid "New PIN"
 msgstr "Uus PIN"
 
+msgid "New Zealand"
+msgstr ""
+
+#, fuzzy
+msgid "New directory"
+msgstr "Loo kataloog"
+
+#, fuzzy
+msgid "New file"
+msgstr "Uus profiil: "
+
 msgid "New profile: "
 msgstr "Uus profiil: "
+
+#, fuzzy
+msgid "New symlink"
+msgstr "Uus versioon:"
 
 msgid "New timers location"
 msgstr "Uue taimeri asukoht"
 
 msgid "New version:"
 msgstr "Uus versioon:"
+
+msgid "NewCamd DES Key:"
+msgstr ""
+
+msgid "NewFile"
+msgstr ""
+
+#, fuzzy
+msgid "NewFolder"
+msgstr "Jagatud kataloogid"
+
+msgid "Newcamd"
+msgstr ""
+
+msgid "News & Politics"
+msgstr ""
 
 msgid "News Current Affairs"
 msgstr "Uudised"
@@ -4132,6 +5279,9 @@ msgstr "Kirjeldust ei ole."
 msgid "No details for this image file"
 msgstr "Selle tarkvara kohta pole teavet"
 
+msgid "No detected HbbTV applications."
+msgstr ""
+
 msgid "No displayable files on this medium found!"
 msgstr "Sellel andmekandjal pole kuvatavaid faile!"
 
@@ -4144,6 +5294,10 @@ msgstr "Kiire kerimine pole veel võimalik, aga saad kasutad numbrinuppe edasi/t
 msgid "No free tuner!"
 msgstr "Pole vaba tuunerit!"
 
+#, fuzzy
+msgid "No further information available."
+msgstr "Kirjeldust ei ole."
+
 msgid "No httpport defined in oscam.conf. This value is required!"
 msgstr ""
 
@@ -4151,6 +5305,12 @@ msgid "No httppwd defined in oscam.conf"
 msgstr ""
 
 msgid "No httpuser defined in oscam.conf"
+msgstr ""
+
+msgid "No more picture-files."
+msgstr ""
+
+msgid "No more playable files."
 msgstr ""
 
 msgid "No network connection available."
@@ -4161,6 +5321,10 @@ msgstr "Võrke ei leitud"
 
 msgid "No of items switch (increase or reduced)"
 msgstr "Pole, mida vahetada (suurendada või vähendada)"
+
+#, fuzzy
+msgid "No playable video found! Stop playing this movie?"
+msgstr "Kas lõpetad taasesituse?"
 
 msgid "No positioner capable frontend found."
 msgstr "Ei leitud positsioneeri toetavat tuunerit."
@@ -4223,6 +5387,10 @@ msgstr ""
 "Kas soovid määrata koodi?\n"
 "Kui vastad 'Ei', kanalit ei kaitsta koodiga!"
 
+#, fuzzy
+msgid "No videos to display"
+msgstr "Otsi levitajat"
+
 msgid "No wireless networks found! Searching..."
 msgstr "WiFi võrke ei leitud! Otsing..."
 
@@ -4247,23 +5415,27 @@ msgstr ""
 "Ei leidnud töötavat WiFi seadet.\n"
 " Kontrolli, kas tuuneriga ühilduv seade on ühendatud ja kas kohalik võrk töötab."
 
+#, fuzzy
+msgid "No, but play video again"
+msgstr "Ei, alusta uuesti algusest"
+
 msgid "No, but restart from begin"
 msgstr "Ei, alusta uuesti algusest"
 
-msgid "No, but restart from beginning"
-msgstr "Ei, alusta uuesti algusest"
+msgid "No, but switch to video entries."
+msgstr ""
+
+msgid "No, but switch to video search."
+msgstr ""
 
 msgid "No, do nothing."
 msgstr "Ei, ära tee midagi."
 
-msgid "No, just start my STB_BOX"
-msgstr "Ei, käivita STB_BOX"
+msgid "No, just start my linux receiver"
+msgstr "Ei, käivita linux receiver"
 
 msgid "No, never"
 msgstr "Ei, mitte kunagi"
-
-msgid "No, scan later manually"
-msgstr "Ei, kanalid otsitakse hiljem käsitsi"
 
 msgid "NodeID"
 msgstr "NodeID"
@@ -4277,6 +5449,9 @@ msgstr "Pole"
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, with stretching the left/right)
 msgid "Nonlinear"
 msgstr "Ebalineaarne"
+
+msgid "Nonprofits & Activism"
+msgstr ""
 
 msgid "Normal mode"
 msgstr "Tavaline"
@@ -4311,6 +5486,9 @@ msgstr ""
 "Vaba ruumi: %sMB\n"
 "Asukoht: %s"
 
+msgid "Not fetching feed entries"
+msgstr ""
+
 msgid "Not mounted"
 msgstr "Haakimata"
 
@@ -4329,6 +5507,10 @@ msgstr ""
 
 msgid "Nothing to upgrade"
 msgstr "Uuendusi ei ole"
+
+#, fuzzy
+msgid "November"
+msgstr "Number"
 
 msgctxt "now/next: 'now' event label"
 msgid "Now"
@@ -4367,6 +5549,10 @@ msgstr "ONID"
 msgid "OSD 3D Setup"
 msgstr "OSD 3D seadistamine"
 
+#, fuzzy
+msgid "OSD Settings"
+msgstr "OSD settings"
+
 msgid "OSD name request"
 msgstr "OSD nime päring"
 
@@ -4378,6 +5564,9 @@ msgstr "OScam info"
 
 msgid "OScam info"
 msgstr "OScam info"
+
+msgid "October"
+msgstr ""
 
 msgid "Off"
 msgstr "Väljas"
@@ -4412,20 +5601,29 @@ msgstr "Ainult laiendused."
 msgid "Only free scan"
 msgstr "Ainult vabakanalid"
 
-msgid "Open satellites list"
-msgstr "Ava satelliidinimekiri"
+msgid "Open Pip..."
+msgstr ""
 
-msgid "Open service list"
-msgstr "Ava kanalinimekiri"
+msgid "Open Startpage"
+msgstr ""
 
-msgid "Open service list and select next channel"
-msgstr "Ava kanalinimekiri ja vali järgmine kanal"
+#, fuzzy
+msgid "Open Timer List..."
+msgstr "Taimerid"
 
-msgid "Open service list and select previous channel"
-msgstr "Ava kanalinimekiri ja vali eelmine kanal"
+#, fuzzy
+msgid "Open URL"
+msgstr "OpenVpn logi"
+
+msgid "Open WebBrowser..."
+msgstr ""
 
 msgid "Open the movie list"
 msgstr "Ava filmilist"
+
+#, fuzzy
+msgid "OpenVPN Panel"
+msgstr "OpenVPN seaded"
 
 msgid "OpenVPN setup"
 msgstr "OpenVPN seaded"
@@ -4435,6 +5633,22 @@ msgstr "OpenVpn logi"
 
 msgid "OpenVpn Setup"
 msgstr "OpenVpn seaded"
+
+#, fuzzy
+msgid "Opera Browser"
+msgstr "Kataloogilehitseja"
+
+msgid ""
+"Opera Browser was not running.\n"
+"Please running browser using [File]>[Start/Stop] menu."
+msgstr ""
+
+msgid "Opera Web Browser Plugin v1.0"
+msgstr ""
+
+#, fuzzy
+msgid "Options:"
+msgstr "Kodeering:"
 
 msgid "Orbital position"
 msgstr "Orbitaalpositioon"
@@ -4463,6 +5677,10 @@ msgstr "Seadistusfailid kirjutatakse üle?"
 msgid "PAL"
 msgstr "PAL"
 
+#, fuzzy
+msgid "PAT Info"
+msgstr "Andmed"
+
 msgid "PCR PID"
 msgstr "PCR PID"
 
@@ -4478,6 +5696,17 @@ msgstr "PMT PID"
 #, python-format
 msgid "PTS Plugin Error: %s"
 msgstr "PTS (pidev ajanihe) viga: %s"
+
+#, fuzzy
+msgid "Package NOT installed!"
+msgstr "Paketinimekirja uuendus"
+
+msgid "Package Removing..."
+msgstr ""
+
+#, fuzzy
+msgid "Package installed!"
+msgstr "Paketinimekirja uuendus"
 
 msgid "Package list update"
 msgstr "Paketinimekirja uuendus"
@@ -4500,9 +5729,20 @@ msgstr "Leht paremale"
 msgid "Page up"
 msgstr "Leht üles"
 
+#, fuzzy
+msgid "PageDown Key"
+msgstr "Leht alla"
+
+msgid "PageUp Key"
+msgstr ""
+
 #. TRANSLATORS: (aspect ratio policy: cropped content on left/right) in doubt, keep english term
 msgid "Pan&scan"
 msgstr "Pan&scan"
+
+#, fuzzy
+msgid "Parent Directory"
+msgstr "Ülemkataloog"
 
 msgid "Parent directory"
 msgstr "Ülemkataloog"
@@ -4540,8 +5780,14 @@ msgstr "Pane film lõpus seisma"
 msgid "Pause playback"
 msgstr "Peata taasesitus"
 
+msgid "Pcscd Panel"
+msgstr ""
+
 msgid "Peak load (max queued requests per workerthread)"
 msgstr "Tippkoormus (suurim päringute arv lõime kohta)"
+
+msgid "People & Blogs"
+msgstr ""
 
 msgid "Percentage"
 msgstr "Protsent"
@@ -4551,12 +5797,6 @@ msgstr "Protsent vasakul"
 
 msgid "Percentage right"
 msgstr "Protsent paremal"
-
-msgid "Perform a full image backup"
-msgstr "Loo täielik tarkvarakoopia"
-
-msgid "Perform a image backup before updating."
-msgstr "Loo enne uuendamist tarkvarakoopia."
 
 msgid "Perform a setting backup before updating."
 msgstr "Loo enne uuendamist seadistustest varukoopia."
@@ -4569,6 +5809,15 @@ msgstr "Loo seadistustest varukoopia. Enne uuendamist on see väga soovitatav."
 
 msgid "Perform an online update check in the background"
 msgstr "Otsi taustal uuendusi"
+
+msgid "Perform cache read timings"
+msgstr ""
+
+msgid "Perform device read timings"
+msgstr ""
+
+msgid "Permanent Clock"
+msgstr ""
 
 msgid "Permanent Timeshift enable"
 msgstr "Pideva ajanihke lubamine"
@@ -4588,8 +5837,19 @@ msgstr "Kustutad lõplikult kõik failid prügikastist?"
 msgid "Permanently remove all deleted items"
 msgstr "Kustuta lõplikult kõik failid"
 
+#, fuzzy
+msgid "Permission"
+msgstr "Versioon:"
+
+#, fuzzy
+msgid "Permission for file has been changed sucesfully!"
+msgstr "PIN kood on muudetud."
+
 msgid "Persian"
 msgstr "Pärsia"
+
+msgid "Pets & Animals"
+msgstr ""
 
 msgid "Phone number"
 msgstr "Telefoninumber"
@@ -4618,6 +5878,10 @@ msgstr "Pilt ekraanigraafikas (PiG)"
 msgid "Picture player"
 msgstr "Pildimängija"
 
+#, fuzzy
+msgid "PicturePlayer"
+msgstr "Pildimängija"
+
 #. TRANSLATORS: (aspect ratio policy: black bars on left/right) in doubt, keep english term.
 msgid "Pillarbox"
 msgstr "Pillarbox"
@@ -4637,14 +5901,15 @@ msgstr "Esita DVD"
 msgid "Play Music..."
 msgstr "Mängi muusikat..."
 
+#, fuzzy
+msgid "Play MyTube movies"
+msgstr "Näita salvestusi..."
+
 msgid "Play audio in background"
 msgstr "Mängi taustal heli"
 
 msgid "Play audio-CD..."
 msgstr "Esita heliplaat..."
-
-msgid "Play back media files"
-msgstr "Esita meediafaile"
 
 msgid "Play entry"
 msgstr "Esita"
@@ -4667,11 +5932,18 @@ msgstr "Esita järgmine (naase filmilisti)"
 msgid "Play next (return to previous service)"
 msgstr "Esita järgmine (naase vaadatud kanalile)"
 
+#, fuzzy
+msgid "Play next video"
+msgstr "Esita järgmine"
+
 msgid "Play previous"
 msgstr "Esita eelmine"
 
 msgid "Play recorded movies..."
 msgstr "Näita salvestusi..."
+
+msgid "Play video again"
+msgstr ""
 
 msgid "Please add titles to the compilation."
 msgstr "Lisa valikusse pealkirjad."
@@ -4685,10 +5957,22 @@ msgstr "Kontrolli võrgu seadeid!"
 msgid "Please choose CCcam-Reader"
 msgstr "Vali CCcam-lugeja"
 
+#, fuzzy
+msgid "Please choose an HbbTV application."
+msgstr "Vali laiendus..."
+
 msgid "Please choose an extension..."
 msgstr "Vali laiendus..."
 
+#, fuzzy
+msgid "Please choose one."
+msgstr "Vali kaardi pesa"
+
 msgid "Please choose reader"
+msgstr "Vali kaardi pesa"
+
+#, fuzzy
+msgid "Please choose."
 msgstr "Vali kaardi pesa"
 
 msgid ""
@@ -4711,6 +5995,10 @@ msgstr "Ühenda vastuvõtja internetti"
 msgid "Please do not change any values unless you know what you are doing!"
 msgstr "Ära muuda midagi seni, kuni oled kindel selles, mida teed!"
 
+#, fuzzy
+msgid "Please enter URL here"
+msgstr "Sisesta uus faili nimi"
+
 msgid "Please enter a name for the new bouquet"
 msgstr "Sisesta uue lemmiknimekirja nimi"
 
@@ -4732,6 +6020,10 @@ msgstr "Sisesta õige kood"
 msgid "Please enter the old PIN code"
 msgstr "Sisesta vana PIN kood"
 
+#, fuzzy
+msgid "Please enter your search term."
+msgstr "Sisesta uus faili nimi"
+
 msgid "Please follow the instructions on the TV"
 msgstr "Jälgi ekraanil olevaid juhiseid"
 
@@ -4750,8 +6042,8 @@ msgstr "Vali kustutatav esitusloend..."
 msgid "Please select a playlist..."
 msgstr "Vali esitusloend..."
 
-msgid "Please select a sub service..."
-msgstr "Vali alamkanal..."
+msgid "Please select a standard feed or try searching for videos."
+msgstr ""
 
 msgid "Please select a subservice to record..."
 msgstr "Vali salvestamiseks alamkanal..."
@@ -4811,6 +6103,9 @@ msgstr ""
 "Seadista kasutajaliides muutes väärtusi, kuni sinise kasti servad puutuvad vastu ekraani servu.\n"
 "Kui oled valmis, vajuta jätkamiseks OK."
 
+msgid "Please to press button TXT to open Virtual keyboard"
+msgstr ""
+
 msgid ""
 "Please use direction keys to move the PiP window.\n"
 "Press Bouquet +/- to resize the window.\n"
@@ -4826,6 +6121,10 @@ msgstr "Kasuta keele valimiseks 'ÜLES' ja 'ALLA' nuppe. Valimiseks vajuta OK."
 msgid "Please wait (downloading channel list)"
 msgstr "Oota (kanalinimekirja hankimine)"
 
+#, fuzzy
+msgid "Please wait (downloading softcam)"
+msgstr "Oota (kanalinimekirja hankimine)"
+
 msgid "Please wait (updating packages)"
 msgstr "Oota (pakettide uuendamine)"
 
@@ -4834,6 +6133,10 @@ msgstr "Oota kuni võrguseaded aktiveeritakse..."
 
 msgid "Please wait while scanning is in progress..."
 msgstr "Pilti laetakse. Oota..."
+
+#, fuzzy
+msgid "Please wait while starting\n"
+msgstr "Oota kuni võrk taaskäivitub..."
 
 msgid "Please wait while we configure your network..."
 msgstr "Oota kuni seadistan võrgu..."
@@ -4856,6 +6159,37 @@ msgstr "Oota..."
 msgid "Please wait... Loading list..."
 msgstr "Oota. Sisu laetakse..."
 
+#, fuzzy
+msgid "Please wait...activing swapfile!!!"
+msgstr "Oota. Sisu laetakse..."
+
+#, fuzzy
+msgid "Please wait...creating swapfile!!!"
+msgstr "Oota. Sisu laetakse..."
+
+#, fuzzy
+msgid "Please wait...deactiving swapfile!!!"
+msgstr "Oota. Sisu laetakse..."
+
+#, fuzzy
+msgid "Please wait...removing swapfile!!!"
+msgstr "Oota. Sisu laetakse..."
+
+#, fuzzy
+msgid "Please, choose addon to install:"
+msgstr "Vali laiendus..."
+
+#, fuzzy
+msgid "Please, choose addon to remove:"
+msgstr "Vali laiendus..."
+
+#, fuzzy
+msgid "Please, choose an addon to install:"
+msgstr "Vali laiendus..."
+
+msgid "Please: DO NOT reboot your STB and turn off the power.\n"
+msgstr ""
+
 msgid "Plugin Browser"
 msgstr "Laiendused"
 
@@ -4873,6 +6207,9 @@ msgstr "Laienduste halduri abi"
 
 msgid "Plugins"
 msgstr "Laiendused"
+
+msgid "Poland"
+msgstr ""
 
 msgid "Polarization"
 msgstr "Polarisatsioon"
@@ -4967,6 +6304,10 @@ msgstr "Eelista vaegkuuljate subtiitreid"
 msgid "Prefer subtitles stored by service"
 msgstr "Eelista käsitsi määratud subtiitreid"
 
+#, fuzzy
+msgid "Preference"
+msgstr "Eelistatud tuuner"
+
 msgid "Preferred tuner"
 msgstr "Eelistatud tuuner"
 
@@ -5043,6 +6384,10 @@ msgstr "Prioriteet"
 msgid "Process"
 msgstr "Toiming"
 
+#, fuzzy
+msgid "Process Informations"
+msgstr "Kanali andmed"
+
 msgid "Profile"
 msgstr "Profiil"
 
@@ -5085,6 +6430,10 @@ msgstr "Otsi levitajat"
 msgid "Provider: "
 msgstr "Levitaja: "
 
+#, fuzzy
+msgid "Provider: n/a"
+msgstr "Levitaja: "
+
 msgid "Providers"
 msgstr "Levitajad"
 
@@ -5094,11 +6443,15 @@ msgstr "Levitajad:"
 msgid "Providers: "
 msgstr "Levitajad: "
 
+#, fuzzy
+msgid "Published"
+msgstr "avaldamata"
+
 msgid "Put TV in standby"
 msgstr "Lülita TV välja"
 
-msgid "Put your STB_BOX in standby"
-msgstr "Pane STB_BOX ooterežiimi"
+msgid "Put your linux receiver in standby"
+msgstr "Pane linux receiver ooterežiimi"
 
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr "Pythoni programm /tmp/mmi.socket jaoks"
@@ -5107,6 +6460,10 @@ msgid "Quick"
 msgstr "Kiire"
 
 msgid "Quick zap"
+msgstr "Kiire kanalivalik"
+
+#, fuzzy
+msgid "Quickzap"
 msgstr "Kiire kanalivalik"
 
 msgid "RAM"
@@ -5124,12 +6481,20 @@ msgstr "Raadio"
 msgid "Random"
 msgstr "Juhuslik"
 
+#, fuzzy
+msgid "Rating"
+msgstr "Ootan"
+
 #, python-format
 msgid "Rating defined by broadcaster - %d"
 msgstr "Teenusepakkuja hinnang - %d"
 
 msgid "Rating undefined"
 msgstr "Hinnang määramata"
+
+#, fuzzy
+msgid "Ratings: "
+msgstr "Ootan"
 
 msgid "Read Userdata from oscam.conf"
 msgstr "Loe kasutajaandmeid oscam.conf failist"
@@ -5139,6 +6504,10 @@ msgstr "Kaardipesa"
 
 msgid "Reader Statistics"
 msgstr "Kaardipesa statistika"
+
+#, fuzzy
+msgid "Reading file. Please wait..."
+msgstr "Otsin uuendusi. Oota..."
 
 #, python-format
 msgid "Ready to install \"%s\" ?"
@@ -5157,6 +6526,9 @@ msgstr "Kustutame möödunud taimerid?"
 msgid "Really exit the subservices quickzap?"
 msgstr "Väljuda alamkanalite valikust?"
 
+msgid "Really quit MyTube Player?"
+msgstr ""
+
 msgid "Really reboot now?"
 msgstr "Taaskäivitad vastuvõtja?"
 
@@ -5169,14 +6541,17 @@ msgstr "Lülitad vastuvõtja välja?"
 msgid "Really upgrade the frontprocessor and reboot now?"
 msgstr "Uuendad esiprotsessori ja taaskäivitad vastuvõtja?"
 
-msgid "Really upgrade your STB_BOX and reboot now?"
-msgstr "Uuendad ja taaskäivitad STB_BOX?"
+msgid "Really upgrade your linux receiver and reboot now?"
+msgstr "Uuendad ja taaskäivitad linux receiver?"
 
 msgid "Reboot"
 msgstr "Taaskäivitus"
 
 msgid "Rec"
 msgstr "Salv."
+
+msgid "Recently featured"
+msgstr ""
 
 msgid "Reception settings"
 msgstr "Vastuvõtu seaded"
@@ -5218,11 +6593,18 @@ msgstr "Punane"
 msgid "Red button..."
 msgstr "Punane nupp..."
 
+msgid "Reduce size logging:"
+msgstr ""
+
 msgid "Reduce time scale"
 msgstr "Vähenda ajavahemikku"
 
 msgid "Reenter new PIN"
 msgstr "Korda uut PIN-i"
+
+#, fuzzy
+msgid "Reference"
+msgstr "Kanali referents"
 
 msgid "Refresh every (in hours)"
 msgstr "Värskenda iga  (tund)"
@@ -5236,10 +6618,17 @@ msgstr "Värskendussageduse valik."
 msgid "Regard deep standby as standby"
 msgstr "Käsitle sügavooterežiimi tavalise ooterežiimina"
 
+msgid "Related video entries."
+msgstr ""
+
 msgid "Relative"
 msgstr "Suhteline"
 
 msgid "Release"
+msgstr "Stabiilne väljalase"
+
+#, fuzzy
+msgid "Relevance"
 msgstr "Stabiilne väljalase"
 
 msgid "Reload"
@@ -5263,17 +6652,31 @@ msgstr "Jäänud & möödunud"
 msgid "Remember service PIN"
 msgstr "Mäleta kanali PIN-i"
 
+msgid "Remember to reload enigma2 !"
+msgstr ""
+
 msgid "Remote box"
 msgstr "Kauge vastuvõtja"
 
 msgid "Remote control type"
 msgstr "Puldi tüüp"
 
+#, fuzzy
+msgid "Remote logging:"
+msgstr "Eemalda laiendusi"
+
 msgid "Remove"
 msgstr "Eemalda"
 
 msgid "Remove Confirmation"
 msgstr "Kustutamise kinnitus"
+
+msgid "Remove EGAMI Packages"
+msgstr ""
+
+#, fuzzy
+msgid "Remove Image "
+msgstr "Eemalda taimer"
 
 msgid "Remove Service"
 msgstr "Eemalda teenus"
@@ -5296,6 +6699,9 @@ msgstr "Eemalda valitud pealkiri"
 msgid "Remove finished."
 msgstr "Eemaldatud."
 
+msgid "Remove installed egami packages..."
+msgstr ""
+
 msgid "Remove items from trash can after (days)"
 msgstr "Salvestiste eemaldamine prügikastist pärast (päeva)"
 
@@ -5312,6 +6718,10 @@ msgid "Removing"
 msgstr "Eemaldab"
 
 msgid "Removing Service"
+msgstr "Teenuse eemaldamine"
+
+#, fuzzy
+msgid "Removing canceled!"
 msgstr "Teenuse eemaldamine"
 
 #, python-format
@@ -5376,6 +6786,9 @@ msgstr "Jaga edasi:"
 msgid "Resolution"
 msgstr "Resolutsioon"
 
+msgid "Response video entries."
+msgstr ""
+
 msgid "Restart"
 msgstr "Taaskäivita"
 
@@ -5385,8 +6798,9 @@ msgstr "Taaskäivita kasutajaliides"
 msgid "Restart GUI now?"
 msgstr "Taaskäivitad kasutajaliidese?"
 
-msgid "Restart enigma"
-msgstr "Taaskäivita enigma2"
+#, fuzzy
+msgid "Restart box."
+msgstr "Taaskäivita"
 
 msgid "Restart network"
 msgstr "Taaskäivita võrk "
@@ -5398,6 +6812,10 @@ msgid "Restart your network connection and interfaces.\n"
 msgstr "Taaskäivita võrgu ühendus ja adapter.\n"
 
 msgid "Restore"
+msgstr "Taasta"
+
+#, fuzzy
+msgid "Restore EGAMI"
 msgstr "Taasta"
 
 msgid "Restore backups"
@@ -5429,6 +6847,9 @@ msgstr "Jätka alates %s"
 msgid "Resuming playback"
 msgstr "Taasesituse jätkamine"
 
+msgid "Return"
+msgstr ""
+
 msgid "Return to movie list"
 msgstr "Tagasi filmilisti"
 
@@ -5444,11 +6865,22 @@ msgstr "Taasta teleteksti subtiitrite algne reamurdmine"
 msgid "Right"
 msgstr "Parem"
 
+#, fuzzy
+msgid "Right Key"
+msgstr "Helehall"
+
+msgid "Right Mouse Button"
+msgstr ""
+
 msgid "Roll-off"
 msgstr "Roll-off"
 
 msgid "Romanian"
 msgstr "Rumeenia"
+
+#, fuzzy
+msgid "Root Directory "
+msgstr "Juurkataloog"
 
 msgid "Root directory"
 msgstr "Juurkataloog"
@@ -5459,11 +6891,19 @@ msgstr "Mootori pööramise kiirus"
 msgid "Round start time on"
 msgstr "Ümarda algusaega"
 
+#, fuzzy
+msgid "Run"
+msgstr "P"
+
 msgid "Run how often ?"
 msgstr "Kui tihti käivitada?"
 
 msgid "Running"
 msgstr "Kasutusel"
+
+#, fuzzy
+msgid "Russia"
+msgstr "Vene"
 
 msgid "Russian"
 msgstr "Vene"
@@ -5476,6 +6916,12 @@ msgstr "SABnzbd seaded"
 
 msgid "SABnzbd setup"
 msgstr "SABnzbd seaded"
+
+msgid "SD CARD: "
+msgstr ""
+
+msgid "SD card mounted in:         "
+msgstr ""
 
 msgid "SID"
 msgstr "SID"
@@ -5494,6 +6940,10 @@ msgstr "SSID:"
 
 msgid "Samba Log"
 msgstr "Samba logi"
+
+#, fuzzy
+msgid "Samba Panel"
+msgstr "Samba seaded"
 
 msgid "Samba Setup"
 msgstr "Samba seaded"
@@ -5536,6 +6986,10 @@ msgstr "Salvesta"
 
 msgid "Save EPG"
 msgstr "Salvesta EPG"
+
+#, fuzzy
+msgid "Save Filesystemposition on exit"
+msgstr "salvesta väljumisel viimane vali sihtkaust või meedia"
 
 msgid "Save Timeshift as Movie and continue recording"
 msgstr "Salvesta ajanihe filmina ja jätka salvestamist"
@@ -5624,14 +7078,22 @@ msgstr "Otsing..."
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Otsib algsed lamedb-d järjestatud satelliitide järgi ühendatud positsioneeriga"
 
+msgid "Science & Technology"
+msgstr ""
+
 msgid "Scrolling Speed"
 msgstr "Kerimise kiirus"
 
 msgid "Search"
 msgstr "Otsi"
 
-msgid "Search IMDb for information about current event."
-msgstr "IMDb otsing käesoleva saate kohta."
+#, fuzzy
+msgid "Search Term(s)"
+msgstr "Otsi itta"
+
+#, fuzzy
+msgid "Search category:"
+msgstr "Otsi itta"
 
 msgid "Search east"
 msgstr "Otsi itta"
@@ -5639,8 +7101,12 @@ msgstr "Otsi itta"
 msgid "Search for similar events"
 msgstr "Otsi sarnaseid saateid"
 
-msgid "Search the epg for current event."
-msgstr "Otsi käesoleva saate kava."
+#, fuzzy
+msgid "Search region:"
+msgstr "Otsi itta"
+
+msgid "Search restricted content:"
+msgstr ""
 
 msgid "Search west"
 msgstr "Otsi läände"
@@ -5686,6 +7152,10 @@ msgstr "Vali kõvaketas"
 
 msgid "Select a bouquet"
 msgstr "Vali lemmiknimekiri"
+
+#, fuzzy
+msgid "Select a line to edit"
+msgstr "Vali võrgukaart"
 
 msgid "Select a movie"
 msgstr "Vali film"
@@ -5747,9 +7217,6 @@ msgstr "Määra 'jah', kui soovid, et ajanihe jätkub ka pärast selle salvestus
 msgid "Select if you want the Subservice mode to be activated."
 msgstr "Määra 'jah', kui soovid aktiveerida alamkanalite režiimi."
 
-msgid "Select if you want to use the ViX coloured Buttons (set to 'no' if you want to use (Multi) Quick Button)."
-msgstr "Vali, kui soovid kasutada ViX värvinuppe (määra 'ei', kui kasutad MultiQuickButtonit)."
-
 msgid "Select input device"
 msgstr "Vali sisendseade"
 
@@ -5764,6 +7231,10 @@ msgstr "Vali asukoht"
 
 msgid "Select movie"
 msgstr "Vali film"
+
+#, fuzzy
+msgid "Select new feed to view."
+msgstr "Vali sisendseade."
 
 msgid "Select provider to add..."
 msgstr "Vali lisamiseks levitaja..."
@@ -5795,23 +7266,18 @@ msgstr "Vali video sisend ÜLES/ALLA nuppudega"
 msgid "Select video mode"
 msgstr "Vali videorežiim"
 
-msgid "Select what you want the Channel +/- button to activate:"
-msgstr "Vali Channel +/- nupu toime:"
-
 msgid "Select what you want the TV button to activate:"
 msgstr "Vali TV nupu toime:"
 
 msgid "Select wireless network"
 msgstr "Vali WiFi võrk"
 
+#, fuzzy
+msgid "Select your choice."
+msgstr "Vali sisendseade."
+
 msgid "Select your provider, and press OK to start the scan"
 msgstr "Vali teenusepakkuja ja vajuta otsingu alustamiseks OK"
-
-msgid "Send"
-msgstr "Saada"
-
-msgid "Send Confirmation"
-msgstr "Saada kinnitus"
 
 msgid "Send DiSEqC"
 msgstr "DiSEqC"
@@ -5825,6 +7291,9 @@ msgstr "Kas saadad endale koopia?"
 msgid "Seperate titles with a main menu"
 msgstr "Eraldi pealkirjad koos peamenüüga"
 
+msgid "September"
+msgstr ""
+
 msgid "Sequence repeat"
 msgstr "Järjekorra kordus"
 
@@ -5835,6 +7304,10 @@ msgid "Serial No"
 msgstr "Seerianumber"
 
 msgid "Serv.Name"
+msgstr "Kanalinimi"
+
+#, fuzzy
+msgid "Server Name:"
 msgstr "Kanalinimi"
 
 msgid "Server:"
@@ -5853,6 +7326,10 @@ msgid "Service Information"
 msgstr "Kanali andmed"
 
 msgid "Service Name"
+msgstr "Kanalinimi"
+
+#, fuzzy
+msgid "Service Time"
 msgstr "Kanalinimi"
 
 msgid "Service Title mode"
@@ -5908,24 +7385,29 @@ msgstr "Kanaliotsing"
 msgid "Service title mode"
 msgstr "Kanalinime kuju"
 
-msgid ""
-"Service unavailable!\n"
-"Check tuner configuration!"
-msgstr ""
-"Kanal pole saadaval!\n"
-"Kontrolli tuuneri seadeid!"
-
 msgid "Service width"
 msgstr "Kanalinime laius"
 
 msgid "Services"
 msgstr "Kanalid"
 
+#, fuzzy
+msgid "Services Panel"
+msgstr "Kanalinimi"
+
 msgid "Services may be grouped in bouquets. When enabled, you can use more then one bouquet."
 msgstr "Kanalid saab rühmitada lemmiknimekirjadesse. Kui see valik on lubatud, saad kasutada rohkem kui ühte lemmiknimekirja."
 
+#, fuzzy
+msgid "Set Default CAM"
+msgstr "Vaikimisi"
+
 msgid "Set System"
 msgstr "Määra süsteem"
+
+#, fuzzy
+msgid "Set as Startpage"
+msgstr "käivitu sellel kanalil"
 
 msgid "Set end Time"
 msgstr "Määra lõppaeg"
@@ -5935,6 +7417,13 @@ msgstr "Määra lõppaeg"
 
 msgid "Set fixed"
 msgstr "Määra püsiaadress"
+
+#, fuzzy
+msgid "Set fps for external subtitles"
+msgstr "Väliste subtiitrite viiteaeg"
+
+msgid "Set index mark:"
+msgstr ""
 
 msgid "Set interface as default Interface"
 msgstr "Määra vaikimisi võrguliideseks"
@@ -5990,6 +7479,9 @@ msgstr "Määra taimeri lõppaeg."
 msgid "Set the time to hide the infobar."
 msgstr "Määra aeg inforiba peitmiseks."
 
+msgid "Set the time to hide the second infobar. The bar also disappears on pressing 'OK'."
+msgstr ""
+
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Määra saate edenemise näit kanalivalikus."
 
@@ -6035,6 +7527,14 @@ msgstr "Seaded..."
 msgid "Setup"
 msgstr "Seadistamine"
 
+#, fuzzy
+msgid "Setup HDD"
+msgstr "Vali kõvaketas"
+
+#, fuzzy
+msgid "Setup an additional OSD settings..."
+msgstr "Otsi lisa SR"
+
 msgid "Setup how to control the channel changing."
 msgstr "Seadista, kuidas kanalivahetus toimub."
 
@@ -6078,6 +7578,10 @@ msgstr "Jaod"
 msgid "Sharpness"
 msgstr "Teravus"
 
+#, fuzzy
+msgid "Short Movies"
+msgstr "Lühikesed failinimed"
+
 msgid "Short filenames"
 msgstr "Lühikesed failinimed"
 
@@ -6089,6 +7593,10 @@ msgstr "Autotaimerite nimekiri"
 
 msgid "Show CCcam in extensions ?"
 msgstr "Näita CCcam laienduste menüüs ?"
+
+#, fuzzy
+msgid "Show CI Messages?"
+msgstr "Peida CI teated"
 
 msgid "Show Clients"
 msgstr "Näita kliente"
@@ -6105,8 +7613,20 @@ msgstr "Näita EIT nüüd/järgmine inforibal"
 msgid "Show EPG for current channel..."
 msgstr "Näita käesoleva saate kava..."
 
+#, fuzzy
+msgid "Show Egami informations?"
+msgstr "näita saate sisututvustust..."
+
+#, fuzzy
+msgid "Show Format Setup..."
+msgstr "RFmod seadistused..."
+
 msgid "Show Games show"
 msgstr ""
+
+#, fuzzy
+msgid "Show LAN Setup..."
+msgstr "RFmod seadistused..."
 
 msgid "Show Log"
 msgstr "Näita logi"
@@ -6116,6 +7636,14 @@ msgstr "Näita logihaldurit laienduste loendis."
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr "Jäänud/möödunud näit meedia esitusel"
+
+#, fuzzy
+msgid "Show No data on transponder info?"
+msgstr "näita transponderi infot"
+
+#, fuzzy
+msgid "Show No free tuner info?"
+msgstr "Pole vaba tuunerit!"
 
 msgid "Show OE Log"
 msgstr "Näita OE logi"
@@ -6135,6 +7663,14 @@ msgstr "RFmod seadistused..."
 msgid "Show Readers/Proxies"
 msgstr ""
 
+#, fuzzy
+msgid "Show Service invalid info?"
+msgstr "Kanaliinfo"
+
+#, fuzzy
+msgid "Show Service not found info?"
+msgstr "Saateinfo tähesuurus"
+
 msgid "Show Time Remaining/Elapsed"
 msgstr "Jäänud/möödunud aja näit"
 
@@ -6143,6 +7679,10 @@ msgstr "Taimerite nimekiri"
 
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Jäänud/möödunud transponderi näit"
+
+#, fuzzy
+msgid "Show Tune failed info?"
+msgstr "Näita üksikasjalikku saatetutvustust"
 
 msgid "Show ViX spinning logo when system is busy."
 msgstr "Näita hõivatud oleku puhul animatsiooni."
@@ -6174,11 +7714,12 @@ msgstr "Näita salastatust inforibal"
 msgid "Show detailed event info"
 msgstr "Näita üksikasjalikku saatetutvustust"
 
+#, fuzzy
+msgid "Show details"
+msgstr "Näita saateinfot"
+
 msgid "Show encryption info in the infobar (when supported by the skin)."
 msgstr "Näita salastatust inforibal (kui teema seda toetab)."
-
-msgid "Show epg"
-msgstr "Näita saatekava"
 
 msgid "Show event details"
 msgstr "Näita saateinfot"
@@ -6189,8 +7730,13 @@ msgstr "Näita saate edenemist kanalinimekirjas"
 msgid "Show extended description"
 msgstr "Näita täpsemat sisututvustust"
 
-msgid "Show extensions..."
-msgstr "Näita laiendusi"
+#, fuzzy
+msgid "Show gui2 config informations..."
+msgstr "näita saate sisututvustust..."
+
+#, fuzzy
+msgid "Show hidden files ?"
+msgstr "Näita infot"
 
 msgid "Show icon for new/unseen items"
 msgstr "Tähista uus/vaatamata nimetus"
@@ -6216,6 +7762,9 @@ msgstr "Näita kerimisel inforiba"
 msgid "Show job tasks in extensions"
 msgstr "Näita käsiloevaid tööülesandeid laienduste menüüs"
 
+msgid "Show kernel messages..."
+msgstr ""
+
 msgid "Show live tv when movie stopped"
 msgstr "Filmi lõppedes mine telekanalile"
 
@@ -6234,6 +7783,9 @@ msgstr "Näita võrgu haakepunkte..."
 msgid "Show or hide the extended description, (skin dependent)."
 msgstr "Näita või varja täpsemat saatetutvustust (sõltub teemast)."
 
+msgid "Show permanental clock"
+msgstr ""
+
 msgid "Show picon background colour"
 msgstr "Kanalilogo tausta värv"
 
@@ -6245,6 +7797,10 @@ msgstr "Teise inforiba näitamine"
 
 msgid "Show services beginning with"
 msgstr "Näita kanalid mis algavad"
+
+#, fuzzy
+msgid "Show setup..."
+msgstr "RFmod seadistused..."
 
 msgid "Show shutdown menu"
 msgstr "Seiskamismenüü"
@@ -6258,22 +7814,28 @@ msgstr "Näita lähtefaile (source)"
 msgid "Show status icons in movielist"
 msgstr "Oleku tähistus filmilistis"
 
+msgid "Show table with all pictures ?"
+msgstr ""
+
 msgid "Show tag menu"
 msgstr "Näita märksõnade menüüd"
 
-msgid "Show the infomation on current event."
-msgstr "Näita käesoleva saate teavet."
+#, fuzzy
+msgid "Show the Menu window."
+msgstr "Näita laienduste nimekirja.."
 
-msgid "Show the list of AutoTimers."
-msgstr "Näita autotaimeriloendit."
-
-msgid "Show the list of timers."
-msgstr "Näita taimeriloendit."
+#, fuzzy
+msgid "Show the Virtual keyboard window."
+msgstr "Virtuaalklahvistik"
 
 msgid "Show the media player..."
 msgstr "Näita meediamängijat..."
 
 msgid "Show the plugin browser.."
+msgstr "Näita laienduste nimekirja.."
+
+#, fuzzy
+msgid "Show the plugins..."
 msgstr "Näita laienduste nimekirja.."
 
 msgid "Show the radio player..."
@@ -6409,13 +7971,14 @@ msgstr "Väike edenemisriba"
 msgid "Social/Political/Economics"
 msgstr "Sotsiaal/poliitika/majandus"
 
-msgid "SoftCam / CI"
-msgstr "EMU / CI"
-
 msgid "Softcam setings"
 msgstr "EMU seaded"
 
 msgid "Softcam settings"
+msgstr "EMU seaded"
+
+#, fuzzy
+msgid "Softcam type"
 msgstr "EMU seaded"
 
 msgid "Software"
@@ -6457,17 +8020,62 @@ msgstr "Toimuvad serverite hooldetööd. Proovi hiljem uuesti"
 msgid "Sorry feeds seem be in an unstable state, if you wish to use them please enable 'Allow unstable updates' in online update setup."
 msgstr "Uuendused serverites on testimata. Kui soovid neid kasutada määra 'Luba testimata uuendused' uuendamise seadistustes."
 
+msgid "Sorry it seems that there are not Linux formatted devices mounted on your STB. To install EgamiBoot you need a Linux formatted part1 device. Click on the blue button to open Egami Devices Panel"
+msgstr ""
+
+msgid "Sorry no device found to store backup. Please check your media in EGAMI devices panel."
+msgstr ""
+
+msgid "Sorry the name of the new Image is too long."
+msgstr ""
+
+msgid "Sorry this name is reserved. Choose another name for the new Image."
+msgstr ""
+
 msgid "Sorry uShare Config is Missing"
 msgstr "uShare seadistamata"
+
+#, fuzzy
+msgid "Sorry you cannot delete Flash image"
+msgstr "Seda ei saa kustutada!"
+
+msgid "Sorry you cannot delete the image currently booted from."
+msgstr ""
 
 #, python-format
 msgid "Sorry, %s has not been installed!"
 msgstr "%s ei paigaldatud!"
 
+#, fuzzy
+msgid "Sorry, EGAMI Backup not found."
+msgstr "Varukoopiat ei leitud!"
+
+msgid "Sorry, an Image with the name "
+msgstr ""
+
 msgid "Sorry, no backups found!"
 msgstr "Varukoopiat ei leitud!"
 
 msgid "Sorry, no details available!"
+msgstr "Üksikasjad puuduvad!"
+
+msgid ""
+"Sorry, there is not any connected devices in your STB.\n"
+"Please connect HDD or USB to full backup Your EGAMI Image!"
+msgstr ""
+
+msgid ""
+"Sorry, there is not any connected devices in your STB.\n"
+"Please connect HDD or USB to install EGAMI Multiboot!"
+msgstr ""
+
+msgid ""
+"Sorry, there is not any connected devices in your STB.\n"
+"Please connect HDD or USB to store/restore Your EGAMI Backup!"
+msgstr ""
+
+#, fuzzy
+msgid "Sorry, video is not available!"
 msgstr "Üksikasjad puuduvad!"
 
 msgid ""
@@ -6477,11 +8085,18 @@ msgstr ""
 "Varukoopia asukohta ei saa salvestada.\n"
 "Vali uus asukoht."
 
+msgid "Sorry: Wrong image in flash found. You have to install in flash EGAMI Image"
+msgstr ""
+
 msgid "Sort"
 msgstr "Järjesta"
 
 msgid "Sort EPG List"
 msgstr "Saatekava järjestamine"
+
+#, fuzzy
+msgid "Sort files by"
+msgstr "Järjestuse aluseks"
 
 msgid "Sort list by"
 msgstr "Järjestuse aluseks"
@@ -6501,14 +8116,29 @@ msgstr "Heli"
 msgid "Sound carrier"
 msgstr "Heli kandevsagedus"
 
+#, fuzzy
+msgid "Source"
+msgstr "Allika päring"
+
+#, fuzzy
+msgid "Source Image file"
+msgstr "mall"
+
 msgid "Source request"
 msgstr "Allika päring"
+
+msgid "Source:"
+msgstr ""
 
 msgid "South"
 msgstr "Lõuna"
 
-msgid "Space used:"
-msgstr "Kasutatud ruum:"
+#, fuzzy
+msgid "South Korea"
+msgstr "Lõuna"
+
+msgid "Spain"
+msgstr ""
 
 msgid "Spanish"
 msgstr "Hispaania"
@@ -6534,6 +8164,14 @@ msgstr "Seiskamine"
 msgid "Start"
 msgstr "Käivita"
 
+#, fuzzy
+msgid "Start Page"
+msgstr "Käivita test"
+
+#, fuzzy
+msgid "Start execution"
+msgstr "Subtiitrite valik"
+
 msgid "Start from the beginning"
 msgstr "Alusta algusest"
 
@@ -6552,14 +8190,187 @@ msgstr "Algusaeg"
 msgid "Start timeshift"
 msgstr "Käivita ajanihe"
 
+#, fuzzy
+msgid "Start with following feed:"
+msgstr "Käivita nimekirjana"
+
 msgid "Start with list screen"
 msgstr "Käivita nimekirjana"
+
+#, fuzzy
+msgid "Start/Stop"
+msgstr "Käivita"
 
 msgid "Starting on"
 msgstr "Alates"
 
+#, fuzzy
+msgid "Startpage"
+msgstr "Käivita"
+
 msgid "Status"
 msgstr "Olek"
+
+msgid "Status: Crond is running!"
+msgstr ""
+
+msgid "Status: Crond stopped!"
+msgstr ""
+
+msgid "Status: DjMount is running!"
+msgstr ""
+
+msgid "Status: DjMount stopped!"
+msgstr ""
+
+msgid "Status: DropBear is running!"
+msgstr ""
+
+msgid "Status: DropBear stopped!"
+msgstr ""
+
+#, fuzzy
+msgid "Status: FTP is running!"
+msgstr "Varukoopia loomine..."
+
+msgid "Status: FTP is starting..."
+msgstr ""
+
+msgid "Status: FTP is stopping..."
+msgstr ""
+
+msgid "Status: FTP stopped!"
+msgstr ""
+
+#, fuzzy
+msgid "Status: Httpd is running!"
+msgstr "Varukoopia loomine..."
+
+msgid "Status: Httpd stopped!"
+msgstr ""
+
+msgid "Status: Inadyn is running!"
+msgstr ""
+
+msgid "Status: Inadyn stopped!"
+msgstr ""
+
+msgid "Status: Nfsd is running!"
+msgstr ""
+
+msgid "Status: Nfsd is starting..."
+msgstr ""
+
+msgid "Status: Nfsd is stopping..."
+msgstr ""
+
+msgid "Status: Nfsd stopped!"
+msgstr ""
+
+msgid "Status: OpenVPN is running!"
+msgstr ""
+
+msgid "Status: OpenVPN stopped!"
+msgstr ""
+
+msgid "Status: Pcscd is running!"
+msgstr ""
+
+msgid "Status: Pcscd stopped!"
+msgstr ""
+
+msgid "Status: Samba is running!"
+msgstr ""
+
+msgid "Status: Samba stopped!"
+msgstr ""
+
+msgid "Status: Telnet is running!"
+msgstr ""
+
+msgid "Status: Telnet is starting..."
+msgstr ""
+
+msgid "Status: Telnet is stopping..."
+msgstr ""
+
+msgid "Status: Telnet stopped!"
+msgstr ""
+
+msgid "Status: crond is starting..."
+msgstr ""
+
+msgid "Status: crond is stopping..."
+msgstr ""
+
+msgid "Status: djmount is starting..."
+msgstr ""
+
+msgid "Status: djmount is stopping..."
+msgstr ""
+
+msgid "Status: dropbear is starting..."
+msgstr ""
+
+msgid "Status: dropbear is stopping..."
+msgstr ""
+
+msgid "Status: httpd is starting..."
+msgstr ""
+
+msgid "Status: httpd is stopping..."
+msgstr ""
+
+msgid "Status: inadyn is starting..."
+msgstr ""
+
+msgid "Status: inadyn is stopping..."
+msgstr ""
+
+msgid "Status: openvpn is starting..."
+msgstr ""
+
+msgid "Status: openvpn is stopping..."
+msgstr ""
+
+msgid "Status: pcscd is starting..."
+msgstr ""
+
+msgid "Status: pcscd is stopping..."
+msgstr ""
+
+msgid "Status: samba is starting..."
+msgstr ""
+
+msgid "Status: samba is stopping..."
+msgstr ""
+
+msgid "Status: syslogd and klogd are running!"
+msgstr ""
+
+msgid "Status: syslogd and klogd stopped!"
+msgstr ""
+
+msgid "Status: syslogd is starting..."
+msgstr ""
+
+msgid "Status: syslogd is stopping..."
+msgstr ""
+
+msgid "Status: uShare is running!"
+msgstr ""
+
+msgid "Status: uShare stopped!"
+msgstr ""
+
+msgid "Status: ushare is starting..."
+msgstr ""
+
+msgid "Status: ushare is stopping..."
+msgstr ""
+
+msgid "Std. Feeds"
+msgstr ""
 
 msgid "Step east"
 msgstr "Samm itta"
@@ -6621,6 +8432,34 @@ msgstr "Salvestatud asukoht"
 msgid "Stream"
 msgstr "Voogesitus"
 
+#, fuzzy
+msgid "Stream Informations"
+msgstr "Kanali andmed"
+
+msgid "Stream advanced info - CAT"
+msgstr ""
+
+msgid "Stream advanced info - ECM"
+msgstr ""
+
+msgid "Stream advanced info - EIT/TOT/TDT"
+msgstr ""
+
+msgid "Stream advanced info - Help"
+msgstr ""
+
+msgid "Stream advanced info - NIT"
+msgstr ""
+
+msgid "Stream advanced info - PAT"
+msgstr ""
+
+msgid "Stream advanced info - PMT"
+msgstr ""
+
+msgid "Stream advanced info - SDT/BAT"
+msgstr ""
+
 msgid "Stream request"
 msgstr "Striimi päring"
 
@@ -6678,23 +8517,60 @@ msgstr "Subtiitrite seaded"
 msgid "Subtitles"
 msgstr "Subtiitrid"
 
+msgid "Subtitles downloader language"
+msgstr ""
+
+#, fuzzy
+msgid "Subtitles settings"
+msgstr "Subtiitrite seaded"
+
+#, fuzzy
+msgid "Success..."
+msgstr "Uuri faile..."
+
 msgid "Sun"
 msgstr "P"
 
 msgid "Sunday"
 msgstr "Pühapäev"
 
-msgid "Support at"
-msgstr "Tugi aadressil"
+#, fuzzy
+msgid "Swap File Name:"
+msgstr "uShare nimi"
+
+#, fuzzy
+msgid "Swap File Settings"
+msgstr "Subtiitrite seaded"
 
 msgid "Swap PiP and main picture"
 msgstr "Vaheta PiP- ja peapilt"
 
+msgid "Swap Place:"
+msgstr ""
+
 msgid "Swap SNR in '%' with SNR in 'db'"
 msgstr "Vaheta SNR '%' > SNR 'db'"
 
+#, fuzzy
+msgid "Swap SNR in db with SNR in percentage on OSD"
+msgstr "Vaheta SNR '%' > SNR 'db'"
+
+#, fuzzy
+msgid "Swap Size:"
+msgstr "Suurus: "
+
 msgid "Swap services"
 msgstr "Vaheta kanalid"
+
+msgid ""
+"Swapfile does not exist\n"
+"\n"
+"Press Blue Button to create"
+msgstr ""
+
+#, fuzzy
+msgid "Sweden"
+msgstr "Rootsi"
 
 msgid "Swedish"
 msgstr "Rootsi"
@@ -6708,28 +8584,21 @@ msgstr "Vaheta tava laadist nimekirjaks"
 msgid "Switch config"
 msgstr "Vaheta seadistust"
 
-msgid "Switch next channel"
-msgstr "Järgmisele kanalile"
-
 msgid "Switch to filelist"
 msgstr "Mine faililoendisse"
 
-msgid "Switch to next channel in history"
-msgstr "Järgmisele kanalile ajaloos"
+msgid "Switch to keyboard/mouse mode."
+msgstr ""
 
-msgid "Switch to next sub service"
+#, fuzzy
+msgid "Switch to next subservice"
 msgstr "Vaheta järgmisele alamkanalile"
 
 msgid "Switch to playlist"
 msgstr "Mine esitusloendisse"
 
-msgid "Switch to previous channel"
-msgstr "Eelmisele kanalile"
-
-msgid "Switch to previous channel in history"
-msgstr "Eelmisele kanalile ajaloos"
-
-msgid "Switch to previous sub service"
+#, fuzzy
+msgid "Switch to previous subservice"
 msgstr "Vaheta eelmisele alamkanalile"
 
 msgid "Switchable tuner types:"
@@ -6737,6 +8606,13 @@ msgstr "Ümberlülitatavate tuunerite tüübid:"
 
 msgid "Symbol rate"
 msgstr "Sümbolikiirus"
+
+msgid "Symlink created sucesfully"
+msgstr ""
+
+#, fuzzy
+msgid "Symlink:"
+msgstr "Link:"
 
 msgid "Sync NTP every (minutes)"
 msgstr "Sükroniseeri NTP iga (minut)"
@@ -6747,11 +8623,14 @@ msgstr "Sükroniseeri aeg kasutades"
 msgid "Synchronize systemtime using transponder or internet."
 msgstr "Sünkronineeri vastuvõtja aeg kasutades transponderit või internetti."
 
+msgid "Syslog Panel"
+msgstr ""
+
 msgid "System"
 msgstr "Süsteem"
 
-#, python-format
-msgid "System temperature: %s"
+#, fuzzy
+msgid "System Temperature:"
 msgstr "Temperatuur: %s"
 
 msgid "System: "
@@ -6770,6 +8649,9 @@ msgstr "TS fail on liiga suur ISO9660/1 jaoks!"
 msgid "TSID"
 msgstr "TSID"
 
+msgid "TV"
+msgstr ""
+
 msgid "TV button mode"
 msgstr "TV nupu toime"
 
@@ -6785,11 +8667,25 @@ msgstr "Valiku sisu"
 msgid "Tags"
 msgstr "Sildid"
 
+#, fuzzy
+msgid "Tags: "
+msgstr "Sildid"
+
+msgid "Taiwan"
+msgstr ""
+
+msgid "Target"
+msgstr ""
+
 msgid "Teletext subtitle color"
 msgstr "Teleteksti subtiitrite värv"
 
 msgid "Telnet Interface"
 msgstr "Telneti kasutajaliides"
+
+#, fuzzy
+msgid "Telnet Panel"
+msgstr "Telneti port"
 
 msgid "Telnet Port"
 msgstr "Telneti port"
@@ -6812,8 +8708,8 @@ msgstr "Testi DiSEqC seadeid"
 msgid "Test mode"
 msgstr "Testpilt"
 
-msgid "Test the network configuration of your STB_BOX.\n"
-msgstr "Testi STB_BOX kohtvõrgu seadeid.\n"
+msgid "Test the network configuration of your linux receiver.\n"
+msgstr "Testi linux receiver kohtvõrgu seadeid.\n"
 
 msgid "Test type"
 msgstr "Testi tüüp"
@@ -6835,11 +8731,24 @@ msgstr ""
 "Jätkamiseks vajutage OK."
 
 msgid ""
-"Thank you for using the wizard. Your STB_BOX is now ready to use.\n"
-"Please press OK to start using your STB_BOX."
+"Thank you for using the wizard. Your linux receiver is now ready to use.\n"
+"Please press OK to start using your linux receiver."
 msgstr ""
-"Täname, et kasutasid abimeest. STB_BOX on nüüd kasutamiseks valmis.\n"
-"STB_BOX käikuvõtmiseks vajuta OK."
+"Täname, et kasutasid abimeest. linux receiver on nüüd kasutamiseks valmis.\n"
+"linux receiver käikuvõtmiseks vajuta OK."
+
+msgid ""
+"The /media/egamiboot/EgamiBootUpload directory is EMPTY!\n"
+"\n"
+"Please upload one of the file:\n"
+"Xtrend ET Series images\n"
+"- ZIP format image e.x\n"
+"OpenPLi-2.1-beta-et9x00-20120304_usb.zip\n"
+"\n"
+"Dreambox Series images\n"
+"- NFI format image e.x\n"
+"PeterPan-Neverlan.v2.2-DM800HDse.nfi\n"
+msgstr ""
 
 msgid ""
 "The AutoTimer plugin is not installed!\n"
@@ -6849,13 +8758,19 @@ msgstr ""
 "Paigalda see."
 
 msgid ""
+"The Box will be now restarted to remount devices.\n"
+"Don't forget to remap your device after the reboot.\n"
+"Press ok to continue"
+msgstr ""
+
+msgid ""
 "The Cool TV Guide plugin is not installed!\n"
 "Please install it."
 msgstr ""
 "Cool TV Guide ei ole paigaldatud!\n"
 "Paigalda see."
 
-msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a STB_BOX format data DVD (which will not play in stand-alone DVD players) instead?"
+msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux receiver format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standard ei toeta H.264 (HDTV) video voogesitust. Kas soovite luua Vu+ Ultimo vormingus andmete (data) DVD, mida teised DVD mängijad ei mängi?"
 
 msgid ""
@@ -6906,11 +8821,21 @@ msgstr ""
 "USB pulk oli ette valmistatud käivitatavana.\n"
 "Nüüd saad NFI tarkvara faili alla laadida!"
 
-msgid "The STB_BOX reads the stored EPG data every (hours)."
-msgstr "STB_BOX loeb salvestatud EPG andmeid iga (tund)."
+#, fuzzy
+msgid ""
+"The VideoMode plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"IMDb laiendus ei ole paigaldatud!\n"
+"Paigalda see."
 
-msgid "The STB_BOX stores the EPG data every (hours)."
-msgstr "STB_BOX salvestab EPG andmed iga (tund)."
+#, fuzzy
+msgid ""
+"The WebBrowser plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"IMDb laiendus ei ole paigaldatud!\n"
+"Paigalda see."
 
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Varundamine nurjus. Vali uus varukoopia asukoht."
@@ -6951,6 +8876,12 @@ msgstr ""
 msgid "The following files were found..."
 msgstr "Leiti järgmised failid..."
 
+msgid "The linux receiver reads the stored EPG data every (hours)."
+msgstr "linux receiver loeb salvestatud EPG andmeid iga (tund)."
+
+msgid "The linux receiver stores the EPG data every (hours)."
+msgstr "linux receiver salvestab EPG andmed iga (tund)."
+
 msgid "The md5sum validation failed, the file may be corrupted!"
 msgstr "md5sum kontroll ebaõnnestus, fail võib olla rikutud!"
 
@@ -6960,6 +8891,9 @@ msgid ""
 msgstr ""
 "Võrguabiline ei ole paigaldatud! \n"
 "Paigalda see."
+
+msgid "The new image will be installed and auto booted in few minutes."
+msgstr ""
 
 #, python-format
 msgid "The path %s already exists."
@@ -6991,14 +8925,14 @@ msgstr "Taimerite fail (pm_timers.xml) on rikutud ja seda ei saa laadida."
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Taimerite fail (timers.xml) on rikutud ja seda ei saa laadida."
 
-msgid "The user interface of your STB_BOX is restarting"
-msgstr "STB_BOX kasutajaliides taaskäivitub"
+msgid "The user interface of your linux receiver is restarting"
+msgstr "linux receiver kasutajaliides taaskäivitub"
 
 msgid ""
-"The user interface of your STB_BOX is restarting\n"
+"The user interface of your linux receiver is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
-"STB_BOX kasutajaliides taaskäivitub\n"
+"linux receiver kasutajaliides taaskäivitub\n"
 "vea tõttu 'mytest.py' failis"
 
 msgid ""
@@ -7041,6 +8975,9 @@ msgstr "Uuendusi ei ole saadaval."
 msgid "There is no [webif] section in oscam.conf"
 msgstr ""
 
+msgid "There is not any EGAMI Backup file on connected devices!"
+msgstr ""
+
 msgid ""
 "There might not be enough Space on the selected Partition.\n"
 "Do you really want to continue?"
@@ -7048,18 +8985,31 @@ msgstr ""
 "Kõvakettal pole piisavalt vaba ruumi.\n"
 "Kas soovid kindlasti jätkata?"
 
+#, fuzzy
+msgid "There was an error getting the feed entries. Please try again."
+msgstr "Paketiloendi hankimisel tekkis viga. Proovi uuesti"
+
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr "DVD RW ketas on formaaditud.Uuesti formaatimisel kustutatakse kõik, mis plaadile kirjutatud."
 
-#, python-format
-msgid "This STB_BOX cannot decode %s streams!"
-msgstr "STB_BOX ei suuda dekodeerida %s voogesitust!"
+msgid "This Month"
+msgstr ""
+
+msgid "This Week"
+msgstr ""
 
 msgid "This allows you change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size"
 msgstr "Siin saab muuta tähesuurust suhtes teemaga. 1 suurendab ja -1 vähendab"
 
 msgid "This allows you change the number of rows shown."
 msgstr "Siin saab muuta näidatavate ridade arvu."
+
+msgid "This is the help screen. Feed me with something to display."
+msgstr ""
+
+#, python-format
+msgid "This linux receiver cannot decode %s streams!"
+msgstr "linux receiver ei suuda dekodeerida %s voogesitust!"
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
 msgstr "See valik võimaldab vähendada pildi plokkmüra (block-noise). Seda tehakse pildi teravuse arvelt."
@@ -7173,12 +9123,12 @@ msgid "This option sets up the picture sharpness, used when the picture is being
 msgstr "See valik määrab pildi teravuse ülesskaleerimisel."
 
 msgid ""
-"This plugin creates a USB stick which can be used to update the firmware of your STB_BOX without the need for a network or WLAN connection.\n"
+"This plugin creates a USB stick which can be used to update the firmware of your linux receiver without the need for a network or WLAN connection.\n"
 "First, a USB stick needs to be prepared so that it becomes bootable.\n"
 "In the next step, an NFI image file can be downloaded from the update server and saved on the USB stick.\n"
 "If you already have a prepared bootable USB stick, please insert it now. Otherwise plug in a USB stick with a minimum size of 64 MB!"
 msgstr ""
-"See laiendus valmistab ette USB pulga, mida saab kasutada STB_BOX tarkvara uuendamiseks ilma võrgu- või WLAN ühenduseta. \n"
+"See laiendus valmistab ette USB pulga, mida saab kasutada linux receiver tarkvara uuendamiseks ilma võrgu- või WLAN ühenduseta. \n"
 "Algul tuleb USB pulk teha alglaetavaks. \n"
 "Siis saab uuenduste serverist alla laadida NFI tarkvara faili ja salvestada selle USB pulgale. \n"
 "Kui oled juba ette valmistanud alglaetava USB pulga, siis ühenda see nüüd. Vastasel korral ühenda min. 64 MB USB pulk!"
@@ -7266,6 +9216,10 @@ msgstr "TiVo toetus"
 
 msgid "Time"
 msgstr "Aeg"
+
+#, fuzzy
+msgid "Time Period:"
+msgstr "Taimeri muutja"
 
 msgid "Time Update in Minutes"
 msgstr "Kellaaja uuendamine (min)"
@@ -7390,12 +9344,12 @@ msgid "To subtitle selection"
 msgstr "Subtiitrite valik"
 
 msgid ""
-"To update your STB_BOX firmware, please follow these steps:\n"
+"To update your linux receiver firmware, please follow these steps:\n"
 "1) Turn off your box with the rear power switch and make sure the bootable USB stick is plugged in.\n"
 "2) Turn mains back on and hold the DOWN button on the front panel pressed for 10 seconds.\n"
 "3) Wait for bootup and follow instructions of the wizard."
 msgstr ""
-"STB_BOX püsivara uuendamiseks toimi järgnevalt: \n"
+"linux receiver püsivara uuendamiseks toimi järgnevalt: \n"
 "1) Lülita vastuvõtja tagumisest lülitist välja ja veendu, et alglaaditav USB pulk on ühendatud. \n"
 "2) Lülita vastuvõtja sisse, hoides DOWN nuppu esipaneelil vajutatuna 10 sekundi jooksul. \n"
 "3) Oota alglaadimiseni ja jälgi abilise juhendeid ekraanil."
@@ -7424,11 +9378,22 @@ msgstr "Toonvalimine"
 msgid "Toneburst A/B"
 msgstr "Toonvalimine A/B"
 
+msgid "Tools"
+msgstr ""
+
 msgid "Top and Bottom"
 msgstr "Üleval ja all"
 
 msgid "Top and bottom"
 msgstr "Üleval ja all"
+
+#, fuzzy
+msgid "Top favorites"
+msgstr "Lisa lemmikutesse"
+
+#, fuzzy
+msgid "Top rated"
+msgstr "Sümbolikiirus"
 
 msgid "Total"
 msgstr "Kokku"
@@ -7460,6 +9425,10 @@ msgstr "Tõlge"
 msgid "Translation:"
 msgstr "Tõlge:"
 
+#, fuzzy
+msgid "Translation: "
+msgstr "Tõlge:"
+
 msgid "Transmission mode"
 msgstr "Edastamise moodus"
 
@@ -7467,6 +9436,10 @@ msgid "Transparent"
 msgstr "Läbipaistev"
 
 msgid "Transponder"
+msgstr "Transponder"
+
+#, fuzzy
+msgid "Transponder Time"
 msgstr "Transponder"
 
 msgid "Transponder type"
@@ -7478,6 +9451,12 @@ msgstr "Prügikast"
 msgid "Trashcan:"
 msgstr "Prügikast:"
 
+msgid "Travel & Events"
+msgstr ""
+
+msgid "Trending videos"
+msgstr ""
+
 msgid "Tries left:"
 msgstr "Katseid järel:"
 
@@ -7485,6 +9464,14 @@ msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Otsin kaabelvõrgu sagedusi.Oota..."
 
 msgid "Trying to download a new packetlist. Please wait..."
+msgstr "Üritan laadida alla uut nimekirja. Oota..."
+
+#, fuzzy
+msgid "Trying to download the Youtube feed entries. Please wait..."
+msgstr "Üritan laadida alla uut nimekirja. Oota..."
+
+#, fuzzy
+msgid "Trying to download the Youtube search results. Please wait..."
 msgstr "Üritan laadida alla uut nimekirja. Oota..."
 
 msgid "Tue"
@@ -7542,19 +9529,32 @@ msgstr "Otsingu tüüp"
 msgid "Type: "
 msgstr "Tüüp: "
 
+#, fuzzy
+msgid "U-Share UPnP root directory:"
+msgstr "Ülemkataloog"
+
 msgid "USALS"
 msgstr "USALS"
+
+msgid "USB 2 device mounted in:   "
+msgstr ""
+
+msgid "USB 3 device mounted in:   "
+msgstr ""
+
+msgid "USB device mounted in:     "
+msgstr ""
 
 msgid "USB stick wizard"
 msgstr "USB-mälupulk"
 
 msgid ""
 "Unattended upgrade in progress\n"
-"Please wait until your STB_BOX reboots\n"
+"Please wait until your linux receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Toimub automatiseeritud uuendamine\n"
-"Oota STB_BOX taaskäivitumist\n"
+"Oota linux receiver taaskäivitumist\n"
 "Selleks võib kuluda mõni minut"
 
 msgid "Unattended upgrade without GUI and reboot system"
@@ -7590,6 +9590,9 @@ msgstr "Unicable Matrix"
 msgid "Uninstall"
 msgstr "Eemalda"
 
+msgid "United States"
+msgstr ""
+
 msgid "Universal LNB"
 msgstr "Universaal LNB"
 
@@ -7599,8 +9602,15 @@ msgstr "Tundmatu"
 msgid "Unmount"
 msgstr "Haagi lahti"
 
+#, fuzzy
+msgid "Unmount All"
+msgstr "Haagi lahti"
+
 msgid "Unsupported"
 msgstr "Pole toetatud"
+
+msgid "Up Key"
+msgstr ""
 
 msgid "Update"
 msgstr "Uuendus"
@@ -7614,7 +9624,7 @@ msgid_plural "Update completed, %d packages were installed."
 msgstr[0] "Uuendamine tehtud, paigaldati %d pakett."
 msgstr[1] "Uuendamine tehtud, paigaldati %d paketti."
 
-msgid "Update failed. Your STB_BOX does not have a working internet connection."
+msgid "Update failed. Your linux receiver does not have a working internet connection."
 msgstr "Uuendamine nurjus. Vastuvõtjal puudub internetiühendus."
 
 msgid "Update interval (in seconds)"
@@ -7622,6 +9632,10 @@ msgstr "Uuendamise vahemik (sekundites)"
 
 msgid "Updatefeed not available."
 msgstr "Uuenduslink pole saadaval."
+
+#, fuzzy
+msgid "Updating device list"
+msgstr "Ava kanalinimekiri"
 
 msgid "Updating software catalog"
 msgstr "Tarkvara kataloogi uuendamine"
@@ -7647,6 +9661,9 @@ msgstr ""
 msgid "Uptime"
 msgstr "Ülalolekuaeg"
 
+msgid "Url"
+msgstr ""
+
 msgid "Use"
 msgstr "Kasuta"
 
@@ -7668,14 +9685,19 @@ msgstr "Netmed EPG kasutamine, kui see on saadaval."
 msgid "Use PTS seekbar while timeshifting?"
 msgstr "Näita ajanihke ajal PTS otsiriba?"
 
+#, fuzzy
+msgid "Use Picon:"
+msgstr "Kanalilogo"
+
+#, fuzzy
+msgid "Use Port:"
+msgstr "Port:"
+
 msgid "Use TV remote control"
 msgstr "Kasuta TV pulti"
 
 msgid "Use USALS for this sat"
 msgstr "Selle satelliidi jaoks on kasutuses USALS"
-
-msgid "Use ViX coloured Buttons *"
-msgstr "Kasuta ViX värvinuppe *"
 
 msgid "Use ViaSat EPG information when it is available."
 msgstr "Viasat EPG kasutamine, kui see on saadaval."
@@ -7761,6 +9783,13 @@ msgstr "Kasutusel:"
 msgid "User - bouquets"
 msgstr "Lemmiknimekirjad"
 
+#, fuzzy
+msgid "User Addons"
+msgstr "Kasutaja määratud"
+
+msgid "User Scripts Info"
+msgstr ""
+
 msgid "User defined"
 msgstr "Kasutaja määratud"
 
@@ -7772,6 +9801,10 @@ msgstr "Kasutajaliidese nähtavus"
 
 msgid "User name"
 msgstr "Kasutajanimi"
+
+#, fuzzy
+msgid "User video entries."
+msgstr "Kasutajaliides"
 
 msgid "Username"
 msgstr "Kasutajatunnus"
@@ -7797,12 +9830,11 @@ msgstr "VCR scart"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (intro trailer)"
 
+msgid "Version:"
+msgstr "Versioon:"
+
 msgid "Version: "
 msgstr "Versioon: "
-
-#, python-format
-msgid "Version: %s"
-msgstr "Versioon: %s"
 
 msgid "Vertical"
 msgstr "Vertikaalne"
@@ -7810,14 +9842,19 @@ msgstr "Vertikaalne"
 msgid "Vertical turning speed"
 msgstr "Vertikaalse pööramise kiirus"
 
-msgid "ViX EPG"
-msgstr "ViX EPG"
-
 msgid "Video Enhancement Settings"
 msgstr "Pildi paranduste sätted"
 
 msgid "Video PID"
 msgstr "Video PID"
+
+#, fuzzy
+msgid "Video Size: "
+msgstr "Videosuurus"
+
+#, fuzzy
+msgid "Video Size: n/a"
+msgstr "Video abimees"
 
 msgid "Video enhancement preview"
 msgstr "Pildi paranduste eelvaade"
@@ -7856,17 +9893,28 @@ msgstr "Video seaded"
 msgid "Video wizard"
 msgstr "Video abimees"
 
+#, fuzzy, python-format
+msgid "Video: %s fps"
+msgstr "Video seaded"
+
+msgid "Videobrowser exit behavior:"
+msgstr ""
+
 msgid "Videocodec"
 msgstr "Videokoodek"
 
 msgid "Videoformat"
 msgstr "Videoformaat"
 
+msgid "Videoplayer stop/exit behavior:"
+msgstr ""
+
 msgid "Videosize"
 msgstr "Videosuurus"
 
-msgid "View"
-msgstr "Vaade"
+#, fuzzy
+msgid "View Count"
+msgstr "Vaate laad"
 
 msgid "View Movies..."
 msgstr "Vaata filme..."
@@ -7874,8 +9922,15 @@ msgstr "Vaata filme..."
 msgid "View Rass interactive..."
 msgstr "Vaata Rass interactive..."
 
+#, fuzzy
+msgid "View Users Video"
+msgstr "Vaata Video CD..."
+
 msgid "View Video CD..."
 msgstr "Vaata Video CD..."
+
+msgid "View active downloads"
+msgstr ""
 
 msgid "View details"
 msgstr "Vaata üksikasju"
@@ -7925,47 +9980,37 @@ msgstr "Vaate laad"
 msgid "View photos..."
 msgstr "Vaata fotosi..."
 
+msgid "View related videos"
+msgstr ""
+
+msgid "View response videos"
+msgstr ""
+
 msgid "View teletext..."
 msgstr "Kuva teksti-TV..."
 
-msgid "View the changes"
-msgstr "Vaata muudatusi"
+msgid "View this shell-script"
+msgstr ""
 
 msgid "View video CD..."
 msgstr "Vaata video CD..."
 
-msgid "Virtual keyboard"
+#, fuzzy
+msgid "Views: "
+msgstr "Vaade"
+
+#, fuzzy
+msgid "Virtual Keyboard"
 msgstr "Virtuaalklahvistik"
 
-msgid "Virtuosso Image Xtreme"
-msgstr "Virtuosso Image Xtreme"
+msgid "Virtual keyboard"
+msgstr "Virtuaalklahvistik"
 
 msgid "Voltage mode"
 msgstr "Pinge valik"
 
 msgid "Volume"
 msgstr "Helitugevus"
-
-msgid "STB_BOX advanced remote control (native)"
-msgstr "STB_BOX täpsem pult (algupärane)"
-
-msgid "STB_BOX format data DVD (HDTV compatible)"
-msgstr "STB_BOX vormingus data DVD"
-
-msgid "STB_BOX front panel"
-msgstr "STB_BOX esipaneel"
-
-msgid "STB_BOX ir keyboard"
-msgstr "STB_BOX infrapuna klaviatuur"
-
-msgid "STB_BOX ir mouse"
-msgstr "STB_BOX infrapuna hiir"
-
-msgid "STB_BOX remote control (native)"
-msgstr "STB_BOX pult (algupärane)"
-
-msgid "STB_BOX software because updates are available."
-msgstr "STB_BOX tarkvara, sest uuendused on saadaval."
 
 msgid "W"
 msgstr "W"
@@ -7991,10 +10036,18 @@ msgstr "WPA2"
 msgid "WSS on 4:3"
 msgstr "WSS 4:3 -ga"
 
+#, fuzzy
+msgid "WWW Directory:"
+msgstr "Kataloog"
+
 msgid "Wait please while gathering data..."
 msgstr "Oota andmete kogumist..."
 
 msgid "Wait please while scanning for devices..."
+msgstr "Oota andmekandjate tuvastamist..."
+
+#, fuzzy
+msgid "Wait please while scanning your stb devices..."
 msgstr "Oota andmekandjate tuvastamist..."
 
 msgid "Waiting"
@@ -8021,14 +10074,21 @@ msgstr "Käivita TV"
 msgid "Wakeup signal from TV"
 msgstr "Äratussignaal TV-st"
 
-msgid "Wakeup your STB_BOX from standby"
-msgstr "Käivita STB_BOX "
+msgid "Wakeup your linux receiver from standby"
+msgstr "Käivita linux receiver "
+
+msgid "Warning you are going to format "
+msgstr ""
 
 msgid "Watch movies..."
 msgstr "Vaata salvestusi..."
 
 msgid "Watch recordings..."
 msgstr "Vaata salvestusi..."
+
+#, fuzzy
+msgid "Web Browser"
+msgstr "Laiendused"
 
 msgid "Web Interface"
 msgstr "Veebiliides"
@@ -8045,6 +10105,36 @@ msgstr "Nädalapäev"
 msgid "Weekly"
 msgstr "Iga nädal"
 
+msgid "Welcome to EgamiBoot 2.0 MultiBoot Plugin installation."
+msgstr ""
+
+msgid "Welcome to EgamiBoot 2.0 MultiBoot Plugin."
+msgstr ""
+
+msgid ""
+"Welcome to the MyTube Youtube Player.\n"
+"\n"
+"Use the Bouqet+ button to navigate to the search field and the Bouqet- to navigate to the video entries.\n"
+"\n"
+"To play a movie just press OK on your remote control.\n"
+"\n"
+"Press info to see the movie description.\n"
+"\n"
+"Press the Menu button for additional options.\n"
+"\n"
+"The Help button shows this help again."
+msgstr ""
+
+msgid ""
+"Welcome to the MyTube Youtube Player.\n"
+"\n"
+"While entering your search term(s) you will get suggestions displayed matching your search term.\n"
+"\n"
+"To select a suggestion press DOWN on your remote, select the desired result and press OK on your remote to start the search.\n"
+"\n"
+"Press exit to get back to the input field."
+msgstr ""
+
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
@@ -8058,31 +10148,31 @@ msgstr ""
 "\n"
 "Edasi otsi lõike lõpp, vajuta OK.Tehtud."
 
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your STB_BOX by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
-msgstr "Tere tulemast tarkvara uuendamise seadistusabilisse. Seadistusabiline aitab STB_BOX seadete varundamisel ja tarkvara uuendamisel."
+msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgstr "Tere tulemast tarkvara uuendamise seadistusabilisse. Seadistusabiline aitab linux receiver seadete varundamisel ja tarkvara uuendamisel."
 
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your STB_BOX to the Internet, this wizard will guide you through the basic network setup of your STB_BOX.\n"
+"If you want to connect your linux receiver to the Internet, this wizard will guide you through the basic network setup of your linux receiver.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
 "Tere tulemast.\n"
 "\n"
-"See abiline juhendab STB_BOX võrgu seadistamisel, kui tahad ühendada STB_BOX internetti.\n"
+"See abiline juhendab linux receiver võrgu seadistamisel, kui tahad ühendada linux receiver internetti.\n"
 "\n"
 "Võrgu seadistamise alustamiseks vajuta OK"
 
 msgid ""
 "Welcome.\n"
 "\n"
-"This start wizard will guide you through the basic setup of your STB_BOX.\n"
+"This start wizard will guide you through the basic setup of your linux receiver.\n"
 "Press the OK button on your remote control to move to the next step."
 msgstr ""
 "Tere.\n"
 "\n"
-"See stardiabiline juhendab STB_BOX põhiseadete määramisel.\n"
+"See stardiabiline juhendab linux receiver põhiseadete määramisel.\n"
 "Vajuta puldil OK nuppu järgmise sammu juurde minekuks."
 
 msgid "Welcome..."
@@ -8214,13 +10304,13 @@ msgstr "Olles häälestatud kanalile, uurib süsteem tavaliselt transponderi muu
 msgid ""
 "When you do a factory reset, you will lose ALL your configuration data\n"
 "(including bouquets, services, satellite data ...)\n"
-"After completion of factory reset, your STB_BOX will restart automatically!\n"
+"After completion of factory reset, your linux receiver will restart automatically!\n"
 "\n"
 "Really do a factory reset?"
 msgstr ""
 "Kui taastad algseadistuse, kaovad kõik isiklikud seaded\n"
 "(ka lemmikud, kanalid, satelliidid, konf.failid jne...)\n"
-"Pärast algseadistuse taastamist, teeb STB_BOX automaatselt alglaadimise!\n"
+"Pärast algseadistuse taastamist, teeb linux receiver automaatselt alglaadimise!\n"
 "\n"
 "Kas soovid kindlasti taastada algseadistuse?"
 
@@ -8233,11 +10323,18 @@ msgstr "Kuhu salvetatakse?"
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Kuhu salvestada ajanihke sisu?"
 
+msgid "Where would You like to have an UPnP root directory?"
+msgstr ""
+
 msgid "Which event do you want to save permanently?"
 msgstr "Millise saate soovid lõplikult salvestada?"
 
 msgid "White"
 msgstr "Valge"
+
+#, fuzzy
+msgid "Wicardd Info"
+msgstr "CCcam Info"
 
 msgid "Width"
 msgstr "Laius"
@@ -8265,6 +10362,9 @@ msgstr "Määrates 'jah', avatakse alati lemmiknimekirjade valik. Määrates 'ei
 
 msgid "With this option you can hide Job Tasks from the extension screen (short blue button press)."
 msgstr "Siin saab valida, kas käsiloevaid tööülesandeid näidatakse laienduste menüüs (sinine nupp)."
+
+msgid "Would you like to install a softcam?"
+msgstr ""
 
 msgid "Write error while recording. Disk full?\n"
 msgstr "Viga salvestamisel. Kõvaketas täis?\n"
@@ -8310,6 +10410,12 @@ msgstr "Jah, kustuta see salvestus"
 msgid "Yes, backup my settings!"
 msgstr "Jah, tee seadistustest varukoopia!"
 
+msgid "Yes, but play next video"
+msgstr ""
+
+msgid "Yes, but play previous video"
+msgstr ""
+
 msgid "Yes, do a manual scan now"
 msgstr "Jah, tee nüüd käsiotsing"
 
@@ -8351,6 +10457,9 @@ msgstr ""
 "kas soovid selle eemaldada\n"
 "\"%s\"?"
 
+msgid "You are not running Egami Image. You must mount devices Your self."
+msgstr ""
+
 msgid "You can cancel the installation."
 msgstr "Paigaldamise saab tühistada."
 
@@ -8369,8 +10478,8 @@ msgstr "Nimekirja saab järjestada aja või tähestiku järgi."
 msgid "You can install this plugin."
 msgstr "Selle laienduse saab paigaldada."
 
-msgid "You can only burn STB_BOX recordings!"
-msgstr "Plaadile saab kirjutada ainult STB_BOX salvestusi!"
+msgid "You can only burn linux receiver recordings!"
+msgstr "Plaadile saab kirjutada ainult linux receiver salvestusi!"
 
 msgid "You can remove this plugin."
 msgstr "Selle laienduse saab eemaldada."
@@ -8378,11 +10487,17 @@ msgstr "Selle laienduse saab eemaldada."
 msgid "You cannot delete this!"
 msgstr "Seda ei saa kustutada!"
 
+#, fuzzy
+msgid "You cannot format DVD drive."
+msgstr "Soovid panna DVD mängima?"
+
+msgid ""
+"You cannot format HDD with this tool.\n"
+"Please use Hdd manager in Main Menu"
+msgstr ""
+
 msgid "You didn't select a channel to record from."
 msgstr "Salvestavat kanalit pole valitud."
-
-msgid "You have already sent this log, are you sure you want to resend this log:\n"
-msgstr "Oled selle logi juba saatnud, kas tõesti saadad uuesti:\n"
 
 msgid "You have chosen to backup your settings. Please press OK to start the backup now."
 msgstr "Otsustasid luua turvakoopia kõvakettale. Vajuta OK alustamiseks nüüd."
@@ -8393,29 +10508,29 @@ msgstr "Otsustasid luua uue alglaetava USB-pulga tarkvarale. Kõik vana info USB
 msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
 msgstr "Oled otsustanud seadistused taastada. Enigma2 taaskäivitub pärast taastamist. Vajuta nüüd OK taastamise alustamiseks."
 
+#, fuzzy
+msgid "You have to provide a name for the new Image."
+msgstr "Sisesta uue markeri nimi"
+
 msgid ""
-"You have not setup your user info in the setup screen\n"
-"Press MENU, and enter your info, then try again"
+"You have to select one Image to install.\n"
+"Please, upload your zip file in the folder: /media/egamiboot/EgamiBootUpload and select the image to install."
 msgstr ""
-"Seadistusmenüüs on kasutajainfo sisestamata\n"
-"Vajuta MENU, sisesta oma andmed ja proovi uuesti"
 
-msgid "You have selected no logs to delete."
-msgstr "Kustutamiseks ei ole logifaile valitud."
-
-msgid "You have selected no logs to send."
-msgstr "Saatmiseks ei ole logifaile valitud."
+#, fuzzy
+msgid "You have to setup backup location."
+msgstr "Varukoopia asukoht"
 
 #, python-format
 msgid "You have to wait %s!"
 msgstr "Tuleb oodata %s!"
 
 msgid ""
-"You need a PC connected to your STB_BOX. If you need further instructions, please visit the website http://www.dm7025.de.\n"
-"Your STB_BOX will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+"You need a PC connected to your linux receiver. If you need further instructions, please visit the website http://www.dm7025.de.\n"
+"Your linux receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
 msgstr ""
-"Nüüd on vaja ühendada STB_BOX arvutiga. Kui on vaja abi, siis vaata : http://www.dm7025.de.\n"
-"STB_BOX on nüüd peatatud.Kui on täidetud uuendamise juhised veebilehelt, siis uus tarkvara palub taastada seadeid."
+"Nüüd on vaja ühendada linux receiver arvutiga. Kui on vaja abi, siis vaata : http://www.dm7025.de.\n"
+"linux receiver on nüüd peatatud.Kui on täidetud uuendamise juhised veebilehelt, siis uus tarkvara palub taastada seadeid."
 
 msgid "You seem to be in timeshift, Do you want to leave timeshift ?"
 msgstr "Ajanihe on kasutusel. Kas peatad selle?"
@@ -8423,99 +10538,11 @@ msgstr "Ajanihe on kasutusel. Kas peatad selle?"
 msgid "You system does not support ext4"
 msgstr "Vastuvõtja ei toeta ext4"
 
+msgid "Your STB will freeze during the installation process."
+msgstr ""
+
 msgid "Your STB will restart after pressing OK on your remote control."
 msgstr "Vastuvõtja taaskäivitub pärast puldil OK vajutamist."
-
-msgid "Your STB_BOX is not connected to the internet, please check your network settings and try again."
-msgstr "Internetiühendust pole. Kontrolli võrgu seadeid ja ürita uuesti."
-
-msgid ""
-"Your STB_BOX is now ready to be used.\n"
-"\n"
-"Your internet connection is working now.\n"
-"\n"
-msgstr ""
-"STB_BOX on kasutamiseks valmis.\n"
-"\n"
-"Internetiühendus töötab.\n"
-"\n"
-
-msgid ""
-"Your STB_BOX is now ready to use.\n"
-"\n"
-"Your internet connection is working now.\n"
-"\n"
-"Please press OK to continue."
-msgstr ""
-"STB_BOX on kasutamiseks valmis.\n"
-"\n"
-"Internetiühendus töötab.\n"
-"\n"
-"Vajutage OK jätkamiseks."
-
-msgid "Your STB_BOX is rebooting"
-msgstr "STB_BOX taaskäivitub"
-
-msgid "Your STB_BOX is shutting down"
-msgstr "STB_BOX lülitub välja"
-
-msgid "Your STB_BOX is shutting down. Please stand by..."
-msgstr "STB_BOX lülitub välja. Oota..."
-
-msgid "Your STB_BOX might be unusable now. Please consult the manual for further assistance before rebooting your STB_BOX."
-msgstr "STB_BOX võib olla nüüd kasutuskõlbmatu. Uuri juhendit täiendava abi leidmiseks enne STB_BOX taaskäivitamist."
-
-msgid ""
-"Your STB_BOX wants to reboot your STB_BOX.\n"
-"Do that now?"
-msgstr ""
-"STB_BOX tuleks taaskäivitada.\n"
-"Kas teed seda kohe?"
-
-msgid ""
-"Your STB_BOX wants to restart the user interface.\n"
-"Do that now?"
-msgstr ""
-"STB_BOX vjab kasutajaliidese taaskäivitamist.\n"
-"Kas teed seda kohe?"
-
-msgid ""
-"Your STB_BOX wants to set your STB_BOX to standby.\n"
-"Do that now?"
-msgstr ""
-"Unetaimer soovib panna STB_BOXooterežiimi\n"
-"Kas teed seda kohe?"
-
-msgid ""
-"Your STB_BOX wants to shut down your STB_BOX.\n"
-"Do that now?"
-msgstr ""
-"Unetaimer soovib STB_BOX välja lülitada.\n"
-"Kas teed seda kohe?"
-
-#, python-format
-msgid ""
-"Your STB_BOX will be restarted after the installation of service\n"
-"Ready to install \"%s\" ?"
-msgstr ""
-"Pärast teenuse paigaldamist STB_BOX taaskäivitub\n"
-"Kas paigaldad \"%s\"?"
-
-msgid ""
-"Your STB_BOX will be restarted after the installation of service.\n"
-"\n"
-"Do you want to install now ?"
-msgstr ""
-"Pärast teenuse paigaldamist STB_BOX taaskäivitub.\n"
-"\n"
-"Kas paigaldad?"
-
-msgid ""
-"Your STB_BOX will be restarted after the removal of service\n"
-"Do you want to remove now ?"
-msgstr ""
-"STB_BOX taaskäivitub pärast teenuse eemaldamist\n"
-"Kas eemaldad?"
 
 msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
 msgstr "Turvakoopia valmis. Me informeerime edasistest uuenduste käigust."
@@ -8543,11 +10570,11 @@ msgstr ""
 
 msgid ""
 "Your frontprocessor will be upgraded\n"
-"Please wait until your STB_BOX reboots\n"
+"Please wait until your linux receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Esiprotsessorit uuendatakse\n"
-"Oota STB_BOX taaskäivitumist\n"
+"Oota linux receiver taaskäivitumist\n"
 "See võib võtta mõne minuti"
 
 msgid ""
@@ -8560,6 +10587,97 @@ msgstr ""
 #, python-format
 msgid "Your internet connection is working (ip: %s)"
 msgstr "Internetiühendus töötab (ip: %s)"
+
+msgid "Your linux receiver is not connected to the internet, please check your network settings and try again."
+msgstr "Internetiühendust pole. Kontrolli võrgu seadeid ja ürita uuesti."
+
+msgid ""
+"Your linux receiver is now ready to be used.\n"
+"\n"
+"Your internet connection is working now.\n"
+"\n"
+msgstr ""
+"linux receiver on kasutamiseks valmis.\n"
+"\n"
+"Internetiühendus töötab.\n"
+"\n"
+
+msgid ""
+"Your linux receiver is now ready to use.\n"
+"\n"
+"Your internet connection is working now.\n"
+"\n"
+"Please press OK to continue."
+msgstr ""
+"linux receiver on kasutamiseks valmis.\n"
+"\n"
+"Internetiühendus töötab.\n"
+"\n"
+"Vajutage OK jätkamiseks."
+
+msgid "Your linux receiver is rebooting"
+msgstr "linux receiver taaskäivitub"
+
+msgid "Your linux receiver is shutting down"
+msgstr "linux receiver lülitub välja"
+
+msgid "Your linux receiver is shutting down. Please stand by..."
+msgstr "linux receiver lülitub välja. Oota..."
+
+msgid "Your linux receiver might be unusable now. Please consult the manual for further assistance before rebooting your linux receiver."
+msgstr "linux receiver võib olla nüüd kasutuskõlbmatu. Uuri juhendit täiendava abi leidmiseks enne linux receiver taaskäivitamist."
+
+msgid ""
+"Your linux receiver wants to reboot your linux receiver.\n"
+"Do that now?"
+msgstr ""
+"linux receiver tuleks taaskäivitada.\n"
+"Kas teed seda kohe?"
+
+msgid ""
+"Your linux receiver wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+"linux receiver vjab kasutajaliidese taaskäivitamist.\n"
+"Kas teed seda kohe?"
+
+msgid ""
+"Your linux receiver wants to set your linux receiver to standby.\n"
+"Do that now?"
+msgstr ""
+"Unetaimer soovib panna linux receiverooterežiimi\n"
+"Kas teed seda kohe?"
+
+msgid ""
+"Your linux receiver wants to shut down your linux receiver.\n"
+"Do that now?"
+msgstr ""
+"Unetaimer soovib linux receiver välja lülitada.\n"
+"Kas teed seda kohe?"
+
+#, python-format
+msgid ""
+"Your linux receiver will be restarted after the installation of service\n"
+"Ready to install \"%s\" ?"
+msgstr ""
+"Pärast teenuse paigaldamist linux receiver taaskäivitub\n"
+"Kas paigaldad \"%s\"?"
+
+msgid ""
+"Your linux receiver will be restarted after the installation of service.\n"
+"\n"
+"Do you want to install now ?"
+msgstr ""
+"Pärast teenuse paigaldamist linux receiver taaskäivitub.\n"
+"\n"
+"Kas paigaldad?"
+
+msgid ""
+"Your linux receiver will be restarted after the removal of service\n"
+"Do you want to remove now ?"
+msgstr ""
+"linux receiver taaskäivitub pärast teenuse eemaldamist\n"
+"Kas eemaldad?"
 
 msgid "Your network configuration has been activated."
 msgstr "Võrguseadistus on aktiveeritud."
@@ -8825,14 +10943,35 @@ msgstr "jätka"
 msgid "cooking"
 msgstr "kokandus"
 
-msgid "copy"
-msgstr "kopeeri"
+#, fuzzy
+msgid "copy file"
+msgstr "Profiil"
 
 msgid "copy to bouquets"
 msgstr "kopeeri nimekirjadesse"
 
+#, fuzzy
+msgid "copying file ..."
+msgstr "Uuri faile..."
+
 msgid "create directory"
 msgstr "loo kataloog"
+
+#, fuzzy
+msgid "creating new directory"
+msgstr "loo kataloog"
+
+#, fuzzy
+msgid "creating new directory ..."
+msgstr "loo kataloog"
+
+#, fuzzy
+msgid "creating new file"
+msgstr "Failisüsteemi loominr"
+
+#, fuzzy
+msgid "creating new file ..."
+msgstr "Uuri faile..."
 
 #, python-format
 msgid "currently installed image: %s"
@@ -8847,11 +10986,20 @@ msgstr "päev"
 msgid "decrease uphop by 1"
 msgstr ""
 
-msgid "delete"
-msgstr "kustuta"
+#, fuzzy
+msgid "default"
+msgstr "Vaikimisi"
 
 msgid "delete cut"
 msgstr "kustuta lõige"
+
+#, fuzzy
+msgid "delete file"
+msgstr "Kustuta fail"
+
+#, fuzzy
+msgid "deleting file ..."
+msgstr "Kustuta fail"
 
 msgid "descramble and record ecm"
 msgstr "dekodeeri ja salvesta ecm"
@@ -8918,6 +11066,9 @@ msgstr "luba lemmikute muutmine"
 
 msgid "enable move mode"
 msgstr "luba liigutamine menüüdes"
+
+msgid "enable/disable Swap:"
+msgstr ""
 
 msgid "enabled"
 msgstr "lubatud"
@@ -9045,18 +11196,20 @@ msgstr "salvesta see kaader bitmapina"
 msgid "green"
 msgstr "roheline"
 
+msgid "group-execute"
+msgstr ""
+
+msgid "group-read"
+msgstr ""
+
+msgid "group-write"
+msgstr ""
+
 msgid "handicraft"
 msgstr "käsitöö"
 
 msgid "handled"
 msgstr "töödeldud"
-
-msgid ""
-"has been sent to the ViX beta team.\n"
-"please quote"
-msgstr ""
-"saadeti ViX beta tiimile.\n"
-"palun osunda "
 
 msgid "height"
 msgstr "kõrgus"
@@ -9115,6 +11268,27 @@ msgstr "vaba aja harrastused"
 msgid "length"
 msgstr "pikkus"
 
+msgid "linux receiver advanced remote control (native)"
+msgstr "linux receiver täpsem pult (algupärane)"
+
+msgid "linux receiver format data DVD (HDTV compatible)"
+msgstr "linux receiver vormingus data DVD"
+
+msgid "linux receiver front panel"
+msgstr "linux receiver esipaneel"
+
+msgid "linux receiver ir keyboard"
+msgstr "linux receiver infrapuna klaviatuur"
+
+msgid "linux receiver ir mouse"
+msgstr "linux receiver infrapuna hiir"
+
+msgid "linux receiver remote control (native)"
+msgstr "linux receiver pult (algupärane)"
+
+msgid "linux receiver software because updates are available."
+msgstr "linux receiver tarkvara, sest uuendused on saadaval."
+
 msgid "literature"
 msgstr "kirjandus"
 
@@ -9132,6 +11306,9 @@ msgstr "magasinid/reportaažid/dokumentaalid"
 
 msgid "making a backup before updating"
 msgstr "enne uuendamist on soovitatav"
+
+msgid "manage local Files"
+msgstr ""
 
 msgid "manual"
 msgstr "juhend"
@@ -9160,14 +11337,15 @@ msgstr "motosport"
 msgid "motoring"
 msgstr "autondus"
 
-msgid "move"
-msgstr "liiguta"
-
 msgid "move down to last entry"
 msgstr "liigu viimasele reale"
 
 msgid "move down to next entry"
 msgstr "liigu järgmisele reale"
+
+#, fuzzy
+msgid "move file"
+msgstr "Eemalda pealkiri"
 
 msgid "move up to first entry"
 msgstr "liigu esimesele reale"
@@ -9177,6 +11355,10 @@ msgstr "liigu eelmisele reale"
 
 msgid "movie/drama (general)"
 msgstr "film/draama"
+
+#, fuzzy
+msgid "moving file ..."
+msgstr "Uuri faile..."
 
 msgid "ms"
 msgstr "ms"
@@ -9196,6 +11378,14 @@ msgstr "loodus/loomad/keskkond"
 msgid "never"
 msgstr "mitte kunagi"
 
+#, fuzzy
+msgid "new directory name"
+msgstr "Loo kataloog"
+
+#, fuzzy
+msgid "new file name"
+msgstr "faili nimi"
+
 msgid "new media"
 msgstr "uus meedia"
 
@@ -9207,6 +11397,14 @@ msgstr "uudised/päevakajalised sündmused"
 
 msgid "news/weather report"
 msgstr "uudised/ilm"
+
+#, fuzzy
+msgid "next channel"
+msgstr "Liigu järgmisele kanalile"
+
+#, fuzzy
+msgid "next channel in history"
+msgstr "Järgmisele kanalile ajaloos"
 
 msgid "no"
 msgstr "ei"
@@ -9225,6 +11423,10 @@ msgstr "tundmatu või puuduv kaart"
 
 msgid "no storage devices found"
 msgstr "andmekandjaid ei leitud"
+
+#, fuzzy
+msgid "no timeout"
+msgstr "Pidev"
 
 msgid "none"
 msgstr "mitte midagi"
@@ -9265,17 +11467,42 @@ msgstr "ainult LOETAV meedial."
 msgid "once"
 msgstr "üks kord"
 
+#, fuzzy
+msgid "open Satellites"
+msgstr "Satelliidid"
+
 msgid "open bouquetlist"
 msgstr "näita lemmiknimekirju"
 
 msgid "open nameserver configuration"
 msgstr "nimeserveri seaded"
 
+#, fuzzy
+msgid "open servicelist"
+msgstr "Ava kanalinimekiri"
+
+#, fuzzy
+msgid "open servicelist(down)"
+msgstr "Ava kanalinimekiri"
+
+#, fuzzy
+msgid "open servicelist(up)"
+msgstr "Ava kanalinimekiri"
+
 msgid "original"
 msgstr "algupärane"
 
 msgid "original language"
 msgstr "algupärane keel"
+
+msgid "other-execute"
+msgstr ""
+
+msgid "other-read"
+msgstr ""
+
+msgid "other-write"
+msgstr ""
 
 msgid "packages selected."
 msgstr "paketti valitud."
@@ -9298,12 +11525,6 @@ msgstr "pid:"
 msgid "play as picture in picture"
 msgstr "näita kanal pilt-pildis"
 
-msgid "play from next mark or playlist entry"
-msgstr "taasesita järgmisest märgist või valikust"
-
-msgid "play from previous mark or playlist entry"
-msgstr "taasesita eelmisest märgist"
-
 msgid "play in mainwindow"
 msgstr "näita peaaknas"
 
@@ -9321,6 +11542,14 @@ msgstr "popkultuur/traditsiooniline kunst"
 
 msgid "pre-school children's program"
 msgstr "koolieelikute saade"
+
+#, fuzzy
+msgid "previous channel"
+msgstr "Liigu eelmisele kanalile"
+
+#, fuzzy
+msgid "previous channel in history"
+msgstr "Eelmisele kanalile ajaloos"
 
 msgid "provid:"
 msgstr "levitaja:"
@@ -9379,8 +11608,13 @@ msgstr "kustuta valitud satelliit"
 msgid "remove this mark"
 msgstr "kustuta see märk"
 
-msgid "rename"
-msgstr "muuda nime"
+#, fuzzy
+msgid "rename file"
+msgstr "Ümbernimetamine nurjus!"
+
+#, fuzzy
+msgid "renaming file ..."
+msgstr "Uuri faile..."
 
 msgid "repeat playlist"
 msgstr "korda esitusloendit"
@@ -9435,6 +11669,9 @@ msgstr "vali CAID-id"
 
 msgid "select menu entry"
 msgstr "vali menüüpunkt"
+
+msgid "send signal to this process..."
+msgstr ""
 
 msgid "serious music/classic music"
 msgstr "süvamuusika/klassikaline muusika"
@@ -9508,6 +11745,10 @@ msgstr "näita meediaesitajat peamenüüs"
 msgid "show program information..."
 msgstr "näita saate sisututvustust..."
 
+#, fuzzy
+msgid "show single EPG..."
+msgstr "näita kava..."
+
 msgid "show softwaremanager in plugin menu"
 msgstr "näita tarkvarahaldurit laienduste menüüs"
 
@@ -9574,6 +11815,10 @@ msgstr "alusta lõiget siit"
 msgid "start directory"
 msgstr "juur kaust"
 
+#, fuzzy
+msgid "start web browser"
+msgstr "DVD faililehitseja"
+
 msgid "stepsize"
 msgstr "sammu suurus"
 
@@ -9582,6 +11827,9 @@ msgstr "stereo"
 
 msgid "stop using as startup service"
 msgstr "ära käivitu sellel kanalil"
+
+msgid "switch Fan On/Off"
+msgstr ""
 
 msgid "switch to bookmarks"
 msgstr "mine lemmikute-loendisse"
@@ -9643,6 +11891,10 @@ msgstr "uShare logi"
 msgid "uShare Name"
 msgstr "uShare nimi"
 
+#, fuzzy
+msgid "uShare Panel"
+msgstr "uShare nimi"
+
 msgid "uShare Port"
 msgstr "uShare port"
 
@@ -9676,6 +11928,15 @@ msgstr "uuendust saadaval."
 msgid "user defined"
 msgstr "kasutaja määratud"
 
+msgid "user-execute"
+msgstr ""
+
+msgid "user-read"
+msgstr ""
+
+msgid "user-write"
+msgstr ""
+
 msgid "using:"
 msgstr "kasutuses:"
 
@@ -9708,18 +11969,6 @@ msgstr "veesport"
 
 msgid "weekly"
 msgstr "iga nädal"
-
-msgid "when asking question about this log"
-msgstr "küsides selle logi kohta"
-
-msgid ""
-"when asking question about this log\n"
-"\n"
-"A copy has been sent to yourself."
-msgstr ""
-"küsides selle logi kohta\n"
-"\n"
-"Koopia saadeti iseendale."
 
 msgid "white"
 msgstr "valge"
@@ -9769,14 +12018,258 @@ msgstr "kanalivahetus"
 msgid "zapped"
 msgstr "vahetatud"
 
-#~ msgid "Hardware:"
-#~ msgstr "Vastuvõtja:"
+#~ msgid "Are you sure you want to delete all selected logs:\n"
+#~ msgstr "Kas kustutad kõik valitud logid:\n"
 
-#~ msgid "Image:"
-#~ msgstr "Tarkvara:"
+#~ msgid "Are you sure you want to delete this log:\n"
+#~ msgstr "Kas kustutad selle logi:\n"
 
-#~ msgid "Last Update:"
-#~ msgstr "Uuendatud:"
+#~ msgid "Attach a file"
+#~ msgstr "Lisa fail"
 
-#~ msgid "Version:"
-#~ msgstr "Versioon:"
+#~ msgid "Automatic image backup"
+#~ msgstr "Automaatne tarkvarakoopia loomine"
+
+#~ msgid "Build: %s"
+#~ msgstr "Järk: %s"
+
+#~ msgid "By Team ViX"
+#~ msgstr "ViX tiimilt"
+
+#~ msgid "Bytes received:"
+#~ msgstr "Vastu võetud baidid:"
+
+#~ msgid "Bytes sent:"
+#~ msgstr "Saadetud baidid:"
+
+#~ msgid "Channel +/- button mode"
+#~ msgstr "+/-nuppude toime"
+
+#~ msgid "Checking Logs..."
+#~ msgstr "Logide uurimine..."
+
+#~ msgid "Chipset: BCM%s"
+#~ msgstr "Kiibistik: BCM%s"
+
+#~ msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
+#~ msgstr "Luba teise inforiba näitamine (2 X OK). Seal võib leida käesoleva kanali kohta rohkem teavet."
+
+#~ msgid "Convert ext3 filesystem to ext4"
+#~ msgstr "Teisenda ext3 > ext4"
+
+#~ msgid "Crash Logs"
+#~ msgstr "Vealogid"
+
+#~ msgid "CronTimers"
+#~ msgstr "Cron taimerid"
+
+#~ msgid "Debug Logs"
+#~ msgstr "Silumislogi failid"
+
+#~ msgid "Detected Devices:"
+#~ msgstr "Leitud andmekandjad"
+
+#~ msgid "Device mounts"
+#~ msgstr "Haakepunktid"
+
+#~ msgid "Do you want to add any additional information ?"
+#~ msgstr "Kas soovid lisada lisateavet?"
+
+#~ msgid ""
+#~ "Do you want to attach a text file to explain the log ?\n"
+#~ "(choose 'No' to type message using virtual keyboard.)"
+#~ msgstr ""
+#~ "Kas soovid lisada logi selgituseks tekstifaili?\n"
+#~ "(vali 'Ei', kui lisad sõnumi virtuaalklahvistiku abil.)"
+
+#~ msgid ""
+#~ "Do you want to delete all selected files:\n"
+#~ "(choose 'No' to only delete the currently selected file.)"
+#~ msgstr ""
+#~ "Kas kustutad kõik valitud failid:\n"
+#~ "(valides 'EI', kustutatakse ainult hetkel valitud fail.)"
+
+#~ msgid ""
+#~ "Do you want to send all selected files:\n"
+#~ "(choose 'No' to only send the currently selected file.)"
+#~ msgstr ""
+#~ "Kas saadad kõik valitud failid:\n"
+#~ "(vali 'Ei', kui saadad ainult hetkel valitud faili.)"
+
+#~ msgid ""
+#~ "Error:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Viga:\n"
+#~ "%s"
+
+#~ msgid "Filesystem check"
+#~ msgstr "Failisüsteemi kontroll"
+
+#~ msgid "InfoBar EPG"
+#~ msgstr "Inforiba EPG"
+
+#~ msgid "Input devices"
+#~ msgstr "Sisendseadmed"
+
+#~ msgid "Last update: %s"
+#~ msgstr "Uuendatud: %s"
+
+#~ msgid "Log Manager"
+#~ msgstr "Logihaldur"
+
+#~ msgid "LogManager"
+#~ msgstr "Logihaldur"
+
+#~ msgid "Logs manager"
+#~ msgstr "Logi haldur"
+
+#~ msgid "Model: %s"
+#~ msgstr "Mudel: %s"
+
+#~ msgid "No, but restart from beginning"
+#~ msgstr "Ei, alusta uuesti algusest"
+
+#~ msgid "No, scan later manually"
+#~ msgstr "Ei, kanalid otsitakse hiljem käsitsi"
+
+#~ msgid "Open satellites list"
+#~ msgstr "Ava satelliidinimekiri"
+
+#~ msgid "Open service list and select next channel"
+#~ msgstr "Ava kanalinimekiri ja vali järgmine kanal"
+
+#~ msgid "Open service list and select previous channel"
+#~ msgstr "Ava kanalinimekiri ja vali eelmine kanal"
+
+#~ msgid "Perform a full image backup"
+#~ msgstr "Loo täielik tarkvarakoopia"
+
+#~ msgid "Perform a image backup before updating."
+#~ msgstr "Loo enne uuendamist tarkvarakoopia."
+
+#~ msgid "Play back media files"
+#~ msgstr "Esita meediafaile"
+
+#~ msgid "Please select a sub service..."
+#~ msgstr "Vali alamkanal..."
+
+#~ msgid "Restart enigma"
+#~ msgstr "Taaskäivita enigma2"
+
+#~ msgid "Search IMDb for information about current event."
+#~ msgstr "IMDb otsing käesoleva saate kohta."
+
+#~ msgid "Search the epg for current event."
+#~ msgstr "Otsi käesoleva saate kava."
+
+#~ msgid "Select if you want to use the ViX coloured Buttons (set to 'no' if you want to use (Multi) Quick Button)."
+#~ msgstr "Vali, kui soovid kasutada ViX värvinuppe (määra 'ei', kui kasutad MultiQuickButtonit)."
+
+#~ msgid "Select what you want the Channel +/- button to activate:"
+#~ msgstr "Vali Channel +/- nupu toime:"
+
+#~ msgid "Send"
+#~ msgstr "Saada"
+
+#~ msgid ""
+#~ "Service unavailable!\n"
+#~ "Check tuner configuration!"
+#~ msgstr ""
+#~ "Kanal pole saadaval!\n"
+#~ "Kontrolli tuuneri seadeid!"
+
+#~ msgid "Show epg"
+#~ msgstr "Näita saatekava"
+
+#~ msgid "Show the infomation on current event."
+#~ msgstr "Näita käesoleva saate teavet."
+
+#~ msgid "Show the list of AutoTimers."
+#~ msgstr "Näita autotaimeriloendit."
+
+#~ msgid "Show the list of timers."
+#~ msgstr "Näita taimeriloendit."
+
+#~ msgid "SoftCam / CI"
+#~ msgstr "EMU / CI"
+
+#~ msgid "Space used:"
+#~ msgstr "Kasutatud ruum:"
+
+#~ msgid "Support at"
+#~ msgstr "Tugi aadressil"
+
+#~ msgid "Switch next channel"
+#~ msgstr "Järgmisele kanalile"
+
+#~ msgid "Switch to previous channel"
+#~ msgstr "Eelmisele kanalile"
+
+#~ msgid "Use ViX coloured Buttons *"
+#~ msgstr "Kasuta ViX värvinuppe *"
+
+#~ msgid "Version: %s"
+#~ msgstr "Versioon: %s"
+
+#~ msgid "ViX EPG"
+#~ msgstr "ViX EPG"
+
+#~ msgid "View the changes"
+#~ msgstr "Vaata muudatusi"
+
+#~ msgid "Virtuosso Image Xtreme"
+#~ msgstr "Virtuosso Image Xtreme"
+
+#~ msgid "You have already sent this log, are you sure you want to resend this log:\n"
+#~ msgstr "Oled selle logi juba saatnud, kas tõesti saadad uuesti:\n"
+
+#~ msgid ""
+#~ "You have not setup your user info in the setup screen\n"
+#~ "Press MENU, and enter your info, then try again"
+#~ msgstr ""
+#~ "Seadistusmenüüs on kasutajainfo sisestamata\n"
+#~ "Vajuta MENU, sisesta oma andmed ja proovi uuesti"
+
+#~ msgid "You have selected no logs to delete."
+#~ msgstr "Kustutamiseks ei ole logifaile valitud."
+
+#~ msgid "You have selected no logs to send."
+#~ msgstr "Saatmiseks ei ole logifaile valitud."
+
+#~ msgid "copy"
+#~ msgstr "kopeeri"
+
+#~ msgid "delete"
+#~ msgstr "kustuta"
+
+#~ msgid ""
+#~ "has been sent to the ViX beta team.\n"
+#~ "please quote"
+#~ msgstr ""
+#~ "saadeti ViX beta tiimile.\n"
+#~ "palun osunda "
+
+#~ msgid "move"
+#~ msgstr "liiguta"
+
+#~ msgid "play from next mark or playlist entry"
+#~ msgstr "taasesita järgmisest märgist või valikust"
+
+#~ msgid "play from previous mark or playlist entry"
+#~ msgstr "taasesita eelmisest märgist"
+
+#~ msgid "rename"
+#~ msgstr "muuda nime"
+
+#~ msgid "when asking question about this log"
+#~ msgstr "küsides selle logi kohta"
+
+#~ msgid ""
+#~ "when asking question about this log\n"
+#~ "\n"
+#~ "A copy has been sent to yourself."
+#~ msgstr ""
+#~ "küsides selle logi kohta\n"
+#~ "\n"
+#~ "Koopia saadeti iseendale."
