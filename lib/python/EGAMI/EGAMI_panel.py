@@ -21,7 +21,7 @@ from Plugins.SystemPlugins.NetworkBrowser.NetworkBrowser import NetworkBrowser
 from Tools.Directories import fileExists
 
 from EGAMI.EGAMI_tools import runBackCmd, unload_modules, wyszukaj_re, checkkernel, wyszukaj_in
-from EGAMI.EGAMI_skins import EGProcessInfo_Skin, EGKernelInfo_Skin, EGAdvancedStreamInfo_Skin, EGSmartScript_Skin, EGSwapManager_Skin, EGKernelModulesManager_Skin
+from EGAMI.EGAMI_skins import EGProcessInfo_Skin, EGKernelInfo_Skin, EGAdvancedStreamInfo_Skin, EGSmartScript_Skin, EGSwapManager_Skin, EGKernelModulesManager_Skin, EGEnigma2ConfigInfo_Skin
  
 
 import time, os
@@ -418,7 +418,7 @@ class EGKernelInfo(Screen):
 class EGEnigma2ConfigInfo(Screen):
 	def __init__(self, session, args = 0):
 	
-		self.skin = EGKernelInfo_Skin
+		self.skin = EGEnigma2ConfigInfo_Skin
 		Screen.__init__(self, session)
 		self.menu = args
 		
