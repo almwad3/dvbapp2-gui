@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-03 20:47+0100\n"
-"PO-Revision-Date: 2013-01-07 19:15+0100\n"
+"PO-Revision-Date: 2013-01-23 00:54+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: AndyBlacburn, j-ot&Trial\n"
 "Language: de\n"
@@ -2799,13 +2799,13 @@ msgid "Download Online Feeds all Packages"
 msgstr "Lade Online Feeds alle Pakete"
 
 msgid "Download User addons from url..."
-msgstr "%s vom Server herunterladen"
+msgstr "Zeige vom Server herunterladen"
 
 msgid "Download Video"
 msgstr "Herunterladen"
 
 msgid "Download extensions from EGAMI server..."
-msgstr "%s vom Server herunterladen"
+msgstr "Zeige vom Server herunterladen"
 
 msgid "Download location"
 msgstr "Fehlerhafter Ort"
@@ -5947,10 +5947,10 @@ msgid "Please wait (downloading channel list)"
 msgstr "Bitte warten (Senderliste wird runtergeladen)"
 
 msgid "Please wait (downloading softcam)"
-msgstr "Bitte warten (Senderliste wird runtergeladen)"
+msgstr "Bitte warten (softcam wird runtergeladen)"
 
 msgid "Please wait (updating packages)"
-msgstr "Bitte warten (Packete werden aktualisiert)"
+msgstr "Bitte warten (Paket werden aktualisiert)"
 
 msgid "Please wait for activation of your network configuration..."
 msgstr "Bitte warte, die Netzwerk-Konfiguration wird aktiviert."
@@ -6885,19 +6885,19 @@ msgid "Search"
 msgstr "Suche"
 
 msgid "Search Term(s)"
-msgstr "Östlich suchen"
+msgstr "Suchtext"
 
 msgid "Search category:"
-msgstr "Östlich suchen"
+msgstr "Suchtext"
 
 msgid "Search east"
-msgstr "Östlich suchen"
+msgstr "Suchtext"
 
 msgid "Search for similar events"
 msgstr "Ähnliche Sendungen suchen"
 
 msgid "Search region:"
-msgstr "Östlich suchen"
+msgstr "Suchtext"
 
 msgid "Search restricted content:"
 msgstr "Suche eingeschränkten Inhalt:"
@@ -11741,6 +11741,9 @@ msgstr "umschalten"
 
 msgid "zapped"
 msgstr "umgeschaltet"
+
+msgid "Press CH+ to enter search TEXT"
+msgstr "Um den Suchtext einzugeben bitte Channel+ Taste drücken"
 
 #~ msgid "Are you sure you want to delete all selected logs:\n"
 #~ msgstr ""
