@@ -2832,7 +2832,7 @@ msgid "Downloading screenshots. Please wait..."
 msgstr "Lade Plugin-Informationen herunter. Bitte warten..."
 
 msgid "Drivers: "
-msgstr "Treiber: %s"
+msgstr "Treiber: "
 
 msgid "DropBear Panel"
 msgstr ""
