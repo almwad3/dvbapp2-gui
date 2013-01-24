@@ -11743,7 +11743,7 @@ msgid "zapped"
 msgstr "umgeschaltet"
 
 msgid "Press CH+ to enter search TEXT"
-msgstr "Um den Suchtext einzugeben bitte Channel+ Taste drücken"
+msgstr "Für Suchtext bitte Channel+  drücken"
 
 #~ msgid "Are you sure you want to delete all selected logs:\n"
 #~ msgstr ""
