@@ -1,4 +1,4 @@
-SUBDIRS = egami_icons countries menu icons buttons spinner GraphEPG lcd piconbg extensions
+SUBDIRS = egami_icons countries menu icons buttons spinner epg lcd piconbg extensions
 
 installdir = $(pkgdatadir)/skin_default
 
