@@ -942,7 +942,9 @@ class HbbTVHelper(Screen, InfoBarNotifications):
 		self._applicationList = None
 
 		self.mVuplusBox = False
-		issue = open("/etc/issue").read()
+		f = open("/etc/issue")
+		issue = f.read()
+		f.close()
 		if(issue.startswith("Vuplus")):
 			self.mVuplusBox = True
 
@@ -1059,6 +1061,8 @@ class HbbTVHelper(Screen, InfoBarNotifications):
 			self._profile = self._applicationList[0]["profile"]
 			url = self._applicationList[0]["url"]
 		if url is None:
+			service = self._session.nav.getCurrentService()
+			info = service and service.info()
 			url = info.getInfoString(iServiceInformation.sHBBTVUrl)
 		return url
 
@@ -1080,8 +1084,7 @@ class HbbTVHelper(Screen, InfoBarNotifications):
 		start_stop_mode = []
 		if self._is_browser_running():
 			start_stop_mode.append((_('Stop'),'Stop'))
-		else:	
-			start_stop_mode.append((_('Start'),'Start'))
+		else:	start_stop_mode.append((_('Start'),'Start'))
 		self._session.openWithCallback(self._browser_config_selected, ChoiceBox, title=_("Please choose one."), list=start_stop_mode)
 
 	def _browser_config_selected(self, selected):
@@ -1145,9 +1148,6 @@ class OperaBrowserSetting:
 		for line in f.readlines():
 			if line.startswith('start='):
 				tmp = line[6:len(line)-1].split()
-				tmp.strip()
-				if str(tmp) == "http://www2.vuplus.com/":
-					tmp = "http://www.google.com/"
 				self._start = tmp[0]
 				if len(tmp) > 1:
 					self._type = int(tmp[1])
@@ -2158,10 +2158,10 @@ def Plugins(path, **kwargs):
 	l = []
 	l.append(PluginDescriptor(where=PluginDescriptor.WHERE_AUTOSTART, needsRestart=True, fnc=auto_start_main))
 	if not config.misc.firstrun.getValue():
-		l.append(PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, needsRestart=True, fnc=session_start_main, weight=-100))
+		l.append(PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, needsRestart=True, fnc=session_start_main, weight=-10))
 	l.append(PluginDescriptor(name=_("HbbTV Applications"), where=PluginDescriptor.WHERE_EXTENSIONSMENU, needsRestart=True, fnc=plugin_extension_start_application))
 	l.append(PluginDescriptor(name=_("Browser Start/Stop"), where=PluginDescriptor.WHERE_EXTENSIONSMENU, needsRestart=True, fnc=plugin_extension_browser_config))
-	l.append(PluginDescriptor(name=_("Web Browser"), description=_("start web browser"), where=PluginDescriptor.WHERE_PLUGINMENU, needsRestart=True, fnc=plugin_start_main))
+	l.append(PluginDescriptor(name=_("Web Browser"), description=_("start opera web browser"), where=PluginDescriptor.WHERE_PLUGINMENU, needsRestart=True, fnc=plugin_start_main))
 
 	return l
 
