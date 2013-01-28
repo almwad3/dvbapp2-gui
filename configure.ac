@@ -261,9 +261,6 @@ data/rc_models/vu/Makefile
 data/rc_models/vu2/Makefile
 data/rc_models/xp1000/Makefile
 data/skin_default/Makefile
-data/skin_default/egami_icons/Makefile
-data/skin_default/menu/Makefile
-data/skin_default/icons/Makefile
 data/skin_default/border/Makefile
 data/skin_default/buttons/Makefile
 data/skin_default/countries/Makefile
@@ -279,6 +276,7 @@ data/skin_default/menu/Makefile
 data/skin_default/piconbg/Makefile
 data/skin_default/spinner/Makefile
 data/skin_default/window/Makefile
+data/skin_default/egami_icons/Makefile
 include/Makefile
 lib/Makefile
 lib/base/eenv.cpp
