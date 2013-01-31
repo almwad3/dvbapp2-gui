@@ -4531,7 +4531,7 @@ msgstr "Jít na pozici 0"
 
 #
 msgid "Goto :"
-msgstr "Přejít na :"
+msgstr "Na:"
 
 #
 msgid "Goto next bouquet"
