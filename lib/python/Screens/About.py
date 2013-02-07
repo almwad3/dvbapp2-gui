@@ -340,8 +340,8 @@ class SystemNetworkInfo(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		Screen.setTitle(self, _("Network Information"))
-		#self.skinName = ["SystemNetworkInfo", "About"]
-		self.skinName = ["About"]
+		self.skinName = ["SystemNetworkInfo", "About"]
+		#self.skinName = ["About"]
 		self["LabelBSSID"] = StaticText()
 		self["LabelESSID"] = StaticText()
 		self["LabelQuality"] = StaticText()
