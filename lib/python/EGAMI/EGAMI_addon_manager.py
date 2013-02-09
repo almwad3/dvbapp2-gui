@@ -230,8 +230,8 @@ class EG_InternetAddons(Screen):
 		  'blue': self.showAddonInfo})
 		
 		self['status'] = Label(_('Please, choose addon to install:'))
-		self['button_download'] = Label(_('Download'))
-		self['button_preview'] = Label(_('Preview'))
+		self['key_red'] = Label(_('Download'))
+		self['key_blue'] = Label(_('Preview'))
 		self.state = self.STATE_IDLE
 		self.StateTimer = eTimer()
 		self.StateTimer.stop()
@@ -450,7 +450,7 @@ class EGAddonRemove(Screen):
 		Screen.__init__(self, session)
 		
 		self['status'] = Label(_('Please, choose addon to remove:'))
-		self['button_download'] = Label(_('Remove'))
+		self['key_red'] = Label(_('Remove'))
 		
 		self.mlist = []
 		
@@ -522,7 +522,7 @@ class EG_Manual_installation(Screen):
 		self.addony = self["listaaddonow"]
 		
 		self['status'] = Label(_('Please, choose addon to install:'))
-		self['button_download'] = Label(_('Install'))
+		self['key_red'] = Label(_('Install'))
 		
         	self['actions'] = ActionMap(['ColorActions', 'WizardActions',
          	'DirectionActions'], {'ok': self.start,

@@ -33,9 +33,9 @@ EG_InternetAddons_Skin = """
 			<widget name="status" position="30,10" size="400,25" font="Regular;21" valign="center" halign="center"/>
 			<ePixmap name="border" pixmap="skin_default/div-h.png" position="10,485" size="800,4"/>
 			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
-			<widget name="button_download" position="65,509" size="200,25" font="Regular;18"/>
+			<widget name="key_red" position="65,509" size="200,25" font="Regular;18"/>
 			<ePixmap position="430,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_blue.png" transparent="1" alphatest="on" />
-			<widget name="button_preview" position="470,509" size="200,25" font="Regular;20" />
+			<widget name="key_blue" position="470,509" size="200,25" font="Regular;20" />
 		</screen>"""
 		
 # EG Addon Remove Window
@@ -46,7 +46,7 @@ EGAddonRemove_Skin = """
 			<widget name="status" position="30,10" size="400,25" font="Regular;21" valign="center" halign="center"/>
 			<ePixmap name="border" pixmap="skin_default/div-h.png" position="10,485" size="800,4"/>
 			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
-			<widget name="button_download" position="65,509" size="200,25" font="Regular;18"/>
+			<widget name="key_red" position="65,509" size="200,25" font="Regular;18"/>
 		</screen>"""
 
 # EG Addon Management Window
@@ -65,7 +65,7 @@ EG_Manual_installation_Skin = """
 			<widget name="status" position="30,10" size="400,25" font="Regular;21" valign="center" halign="center"/>
 			<ePixmap name="border" pixmap="skin_default/div-h.png" position="10,485" size="800,4"/>
 			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
-			<widget name="button_download" position="65,509" size="200,25" font="Regular;18"/>
+			<widget name="key_red" position="65,509" size="200,25" font="Regular;18"/>
 		</screen>"""
 		
 		

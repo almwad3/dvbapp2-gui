@@ -74,7 +74,7 @@ class EGDeviceManager(Screen):
 	self["key_green"] = Button(_("Informations"))
 	
         self["key_yellow_png"] = Pixmap()
-        self["key_blue_png"] = Pixmap()	
+        self["key_blue_png"] = Pixmap()
         self["key_red_png"] = Pixmap()
         self["key_green_png"] = Pixmap()
 		
