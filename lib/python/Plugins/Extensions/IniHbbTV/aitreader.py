@@ -2,7 +2,7 @@
 from subprocess import Popen, PIPE
 import os, xml.dom.minidom, re
 
-DUMPBIN = "/usr/lib/enigma2/python/Plugins/Extensions/HbbTV/dumpait"
+DUMPBIN = "/usr/lib/enigma2/python/Plugins/Extensions/IniHbbTV/dumpait"
 class eAITSectionReader:
 	def __init__(self, demux, pmtid, sid):
 		self.mAppList  = []
