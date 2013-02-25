@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-14 17:59+0100\n"
-"PO-Revision-Date: 2013-02-25 14:53+0100\n"
+"PO-Revision-Date: 2013-02-25 15:28+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -10331,6 +10331,12 @@ msgstr "Установить"
 
 msgid "Mode"
 msgstr "Режим"
+
+msgid "CrossEPG"
+msgstr "Настройка CrossEPG"
+
+msgid "CrossEPG Downloader"
+msgstr "Язык CrossEPG"
 
 msgid "Use the wizard to set up basic features"
 msgstr "Используйте Помощник для настройки основных функций"
