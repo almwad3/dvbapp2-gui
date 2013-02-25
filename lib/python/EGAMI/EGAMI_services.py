@@ -69,7 +69,7 @@ class EGServicesMenu(Screen):
 		self.list = []
 		mypath = resolveFilename(SCOPE_CURRENT_SKIN)
 		if not fileExists(mypath + "egami_icons"):
-			mypath = "/usr/share/enigma2/skin_default/"
+			mypath = "/usr/share/enigma2/"
 		    
 
 		mypixmap = (mypath + "egami_icons/nfsserver_panel.png")
