@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-14 17:59+0100\n"
-"PO-Revision-Date: 2012-12-28 12:05+0100\n"
+"PO-Revision-Date: 2013-02-25 14:53+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -5924,7 +5924,7 @@ msgid "Settings"
 msgstr "Установки"
 
 msgid "Settings..."
-msgstr "Настройки системы"
+msgstr "Настройки"
 
 msgid "Setup"
 msgstr "Настройка"
@@ -10332,12 +10332,6 @@ msgstr "Установить"
 msgid "Mode"
 msgstr "Режим"
 
-msgid "CrossEPG"
-msgstr "Настройка CrossEPG"
-
-msgid "CrossEPG Downloader"
-msgstr "Язык CrossEPG"
-
 msgid "Use the wizard to set up basic features"
 msgstr "Используйте Помощник для настройки основных функций"
 
@@ -11202,4 +11196,10 @@ msgstr "Выберите видео вход..."
 
 msgid "Register new account"
 msgstr "Создать новый аккаунт"
+
+msgid "Display"
+msgstr "Настройки дисплея"
+
+msgid "Your linux box is shutting down"
+msgstr "Ваш ресивер выключается"
 
