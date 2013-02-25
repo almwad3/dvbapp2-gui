@@ -407,4 +407,4 @@ class NetworkWizard(WizardLanguage, Rc):
 			text1 = _("Your STB_BOX is now ready to be used.\n\nYour internet connection is not working now.\n\n")
 			text2 = _("Please press OK to continue.")
 			return text1 + "\n" + text2
-		
+
