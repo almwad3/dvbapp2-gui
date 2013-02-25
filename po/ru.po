@@ -10332,12 +10332,6 @@ msgstr "Установить"
 msgid "Mode"
 msgstr "Режим"
 
-msgid "CrossEPG"
-msgstr "Настройка CrossEPG"
-
-msgid "CrossEPG Downloader"
-msgstr "Язык CrossEPG"
-
 msgid "Use the wizard to set up basic features"
 msgstr "Используйте Помощник для настройки основных функций"
 
@@ -11205,7 +11199,3 @@ msgstr "Создать новый аккаунт"
 
 msgid "Display"
 msgstr "Настройки дисплея"
-
-msgid "Your linux box is shutting down"
-msgstr "Ваш ресивер выключается"
-
