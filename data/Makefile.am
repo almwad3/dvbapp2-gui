@@ -1,4 +1,4 @@
-SUBDIRS = skin_default fonts extensions keymaps rc_models
+SUBDIRS = egami_icons fonts extensions keymaps rc_models
 
 dist_pkgdata_DATA = \
 	encoding.conf \
