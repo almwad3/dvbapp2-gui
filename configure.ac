@@ -263,7 +263,7 @@ data/rc_models/vu/Makefile
 data/rc_models/vu2/Makefile
 data/rc_models/xp1000/Makefile
 data/egami_icons/Makefile
-data/egami_icons/buttonsMakefile
+data/egami_icons/buttons/Makefile
 include/Makefile
 lib/Makefile
 lib/base/eenv.cpp
