@@ -1,4 +1,4 @@
-SUBDIRS = egami_icons border buttons countries crossepg dvr epg extensions icons infobar logos piconbg spinner window
+SUBDIRS = egami_icons icons
 
 installdir = $(pkgdatadir)/skin_default
 
