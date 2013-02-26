@@ -32,9 +32,9 @@ EG_InternetAddons_Skin = """
 			<widget name="menu" position="10,60" size="610,420" scrollbarMode="showOnDemand"/>
 			<widget name="status" position="30,10" size="400,25" font="Regular;21" valign="center" halign="center"/>
 			<ePixmap name="border" pixmap="skin_default/egami_icons/div-h.png" position="10,485" size="800,4"/>
-			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_red" position="65,509" size="200,25" font="Regular;18"/>
-			<ePixmap position="430,509" zPosition="0" size="35,25" pixmap="skin_default/egami_icons/buttons/button_blue.png" transparent="1" alphatest="on" />
+			<ePixmap position="430,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_blue.png" transparent="1" alphatest="on" />
 			<widget name="key_blue" position="470,509" size="200,25" font="Regular;20" />
 		</screen>"""
 		
@@ -45,7 +45,7 @@ EGAddonRemove_Skin = """
 			<widget name="remove" position="10,60" size="610,420" scrollbarMode="showOnDemand"/>
 			<widget name="status" position="30,10" size="400,25" font="Regular;21" valign="center" halign="center"/>
 			<ePixmap name="border" pixmap="skin_default/egami_icons/div-h.png" position="10,485" size="800,4"/>
-			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_red" position="65,509" size="200,25" font="Regular;18"/>
 		</screen>"""
 
@@ -64,7 +64,7 @@ EG_Manual_installation_Skin = """
 			<widget name="listaaddonow" position="10,60" size="610,420" scrollbarMode="showOnDemand"/>
 			<widget name="status" position="30,10" size="400,25" font="Regular;21" valign="center" halign="center"/>
 			<ePixmap name="border" pixmap="skin_default/egami_icons/div-h.png" position="10,485" size="800,4"/>
-			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap position="30,509" zPosition="0" size="35,25" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_red" position="65,509" size="200,25" font="Regular;18"/>
 		</screen>"""
 		
@@ -91,13 +91,13 @@ EGSwapManager_Skin = """
 		   <screen name="EGSwapManager" position="center,center" size="570,350" title="EGAMI Swap File Manager" >
 			      <widget name="config" position="10,10" size="540,180" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="70,220" size="430,75" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		</screen>"""
 		
@@ -118,13 +118,13 @@ EGDeviceManager_Skin = """
 				      </convert>
 			      </widget>
 			      <widget name="lab1" zPosition="2" position="50,40" size="700,40" font="Regular;24" halign="center" transparent="1"/>
-			      <widget name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="40,524" size="140,40" alphatest="on" />
+			      <widget name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="40,524" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="70,524" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <widget name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="210,524" size="140,40" alphatest="on" />
+			      <widget name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="210,524" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="240,524" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <widget name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="360,524" size="140,40" alphatest="on" />
+			      <widget name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="360,524" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="390,524" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <widget name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="510,524" size="140,40" alphatest="on" />
+			      <widget name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="510,524" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="540,524" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 	
@@ -132,8 +132,8 @@ EGDeviceManager_Skin = """
 EGDeviceManager_Setup_Skin = """
 		  <screen name="EGDeviceManager_Setup" position="center,center" size="902,340" title="EGAMI Devices Manager - Setup">
 			  <widget name="config" position="30,10" size="840,275" scrollbarMode="showOnDemand"/>
-			  <ePixmap pixmap="skin_default/egami_icons/buttons/button_red.png" position="200,300" size="140,40" alphatest="on"/>
-			  <ePixmap pixmap="skin_default/egami_icons/buttons/button_green.png" position="550,300" size="140,40" alphatest="on"/>
+			  <ePixmap pixmap="skin_default/buttons/button_red.png" position="200,300" size="140,40" alphatest="on"/>
+			  <ePixmap pixmap="skin_default/buttons/button_green.png" position="550,300" size="140,40" alphatest="on"/>
 			  <widget name="key_red" position="220,300" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
 			  <widget name="key_green" position="570,300" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
 		  </screen>"""
@@ -142,8 +142,8 @@ EGDeviceManager_Setup_Skin = """
 # EG Devices - HDD Setup
 EGHDDParm_Skin = """
 		<screen name="EGHDDParm" position="center,center" size="520,270" title="EGAMI Hard Drive Setup" >
-			<ePixmap name="czerwony" position="20,220" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
-			<ePixmap name="zielony" position="190,220" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on" />
+			<ePixmap name="czerwony" position="20,220" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap name="zielony" position="190,220" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on" />
 	    		<ePixmap pixmap="skin_default/egami_icons/div-h.png" position="10,160" size="500,4" />
 			<widget name="config" position="10,10" size="500,80" scrollbarMode="showOnDemand" />
 			<widget name="key_red" position="0,229" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="center" transparent="1"/>
@@ -184,13 +184,13 @@ EGCronMang_Skin = """
 				  <convert type="StringList" />
 			      </widget>
 			      <widget name="state" position="150,250" size="230,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		  </screen>"""
 
@@ -198,9 +198,9 @@ EGCronMang_Skin = """
 EGSetupCronConf_Skin = """
 		  <screen name="EGSetupCronConf" position="center,center" size="570,350" title="EGAMI Cron Setup">
 			      <widget name="config" position="10,20" size="550,280" scrollbarMode="showOnDemand" />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
 		  </screen>"""
 
@@ -209,13 +209,13 @@ EGDropbearConfig_Skin = """
 		      <screen name="EGDropbearConfig" position="center,center" size="570,350" title="EGAMI Dropbear Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 		      
@@ -224,13 +224,13 @@ EGPcscdConfig_Skin = """
 		      <screen name="EGPcscdConfig" position="center,center" size="570,350" title="EGAMI Pcscd Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 		      
@@ -239,13 +239,13 @@ EGSambaConfig_Skin = """
 		      <screen name="EGSambaConfig" position="center,center" size="570,350" title="EGAMI Samba Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 
@@ -254,13 +254,13 @@ EGTelnetConfig_Skin = """
 		      <screen name="EGTelnetConfig" position="center,center" size="570,350" title="EGAMI Telnet Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 		      
@@ -269,13 +269,13 @@ EGFtpConfig_Skin = """
 		      <screen name="EGFtpConfig" position="center,center" size="570,350" title="EGAMI FTP Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 		      
@@ -284,13 +284,13 @@ EGOpenVPNConfig_Skin = """
 		      <screen name="EGOpenVPNConfig" position="center,center" size="570,350" title="EGAMI OpenVPN Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 		      
@@ -299,13 +299,13 @@ EGDjMountConfig_Skin = """
 		<screen name="EGDjMountConfig" position="center,center" size="570,350" title="EGAMI DjMount Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 # EG Services Configs Root - DjMount
@@ -314,9 +314,9 @@ EGDjMountConfigRoot_Skin = """
 			<widget name="text" position="0,2" size="540,22" font="Regular;22" />
 			<widget name="target" position="0,23" size="540,22" valign="center" font="Regular;22" />
 			<widget name="filelist" position="0,55" zPosition="1" size="540,210" scrollbarMode="showOnDemand" selectionDisabled="1" />
-			<widget name="red" position="0,415" zPosition="1" size="135,40" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<widget name="red" position="0,415" zPosition="1" size="135,40" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_red" position="0,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />	
-			<widget name="green" position="135,415" zPosition="1" size="135,40" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on" />
+			<widget name="green" position="135,415" zPosition="1" size="135,40" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on" />
 			<widget name="key_green" position="135,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		</screen>"""
 		
@@ -325,13 +325,13 @@ EGUShareConfig_Skin = """
 		      <screen name="EGUShareConfig" position="center,center" size="570,350" title="EGAMI uShare Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
 
@@ -340,13 +340,13 @@ EGSyslogDConfig_Skin = """
 		    <screen name="EGSyslogDConfig" position="center,center" size="570,450" title="EGAMI Syslogd and Klogd Setup" >
 			      <widget name="config" position="10,10" size="550,330" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="100,360" size="370,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,420" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,420" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,420" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,420" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,420" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,420" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,420" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,420" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,420" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,420" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,420" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,420" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		    </screen>"""
 
@@ -355,13 +355,13 @@ EGHttpd_Skin = """
 		    <screen name="EGHttpd" position="center,center" size="570,350" title="EGAMI HTTPD Server Setup" >
 			      <widget name="config" position="10,10" size="550,220" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,245" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		    </screen>"""
 
@@ -370,13 +370,13 @@ EGInadyn_Skin = """
 		    <screen name="EGInadyn" position="center,center" size="570,370" title="EGAMI Inadyn - dynamic DNS Client" >
 			      <widget name="config" position="10,10" size="550,260" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,280" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,340" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,340" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,340" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,340" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,340" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,340" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,340" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,340" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,340" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,340" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,340" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,340" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 		    </screen>"""
 		
@@ -386,13 +386,13 @@ EGNfsServer_Skin = """
 		   <screen name="EGNfsServer" position="center,center" size="570,350" title="EGAMI NFS Server Setup" >
 			      <widget name="config" position="10,10" size="550,200" scrollbarMode="showOnDemand" />
 			      <widget name="state" position="120,240" size="300,25" font="Regular;20" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" shadowOffset="-2,-2" shadowColor="black"  />
-			      <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="10,320" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="40,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="150,320" size="140,40" alphatest="on" />
 			      <widget name="key_green" position="180,320" zPosition="1" size="200,40" font="Regular;20" halign="left" valign="top" backgroundColor="#9f1313" transparent="1" />
-			      <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="300,320" size="140,40" alphatest="on" />
 			      <widget name="key_yellow" position="330,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
-			      <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
+			      <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="450,320" size="140,40" alphatest="on" />
 			      <widget name="key_blue" position="480,320" zPosition="1" size="140,40" font="Regular;20" halign="left" valign="top" backgroundColor="#a08500" transparent="1" />
 			</screen>"""
 
@@ -411,10 +411,10 @@ EGEmuManager_Skin = """
 	    		<ePixmap pixmap="skin_default/egami_icons/div-h.png" position="10,483" size="800,4" />
 	    		<ePixmap pixmap="skin_default/egami_icons/dish_scan.png" zPosition="0" position="30,55" size="200,200" transparent="1" alphatest="on"/>
 	    		<ePixmap pixmap="skin_default/egami_icons/icon_camd.png" zPosition="0" position="20,225" size="200,200" transparent="1" alphatest="on" />
-			<ePixmap position="40,504" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on"/>
-			<ePixmap position="200,504" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on"/>
-			<ePixmap position="360,504" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_yellow.png" transparent="1" alphatest="on"/>
-			<ePixmap position="550,504" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_blue.png" transparent="1" alphatest="on"/>
+			<ePixmap position="40,504" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on"/>
+			<ePixmap position="200,504" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on"/>
+			<ePixmap position="360,504" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_yellow.png" transparent="1" alphatest="on"/>
+			<ePixmap position="550,504" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_blue.png" transparent="1" alphatest="on"/>
 			<widget name="key_red" position="60,504" zPosition="1" size="170,25" font="Regular;20" valign="top" halign="left" backgroundColor="red" transparent="1" />
 			<widget name="key_green" position="220,504" zPosition="1" size="170,25" font="Regular;20" valign="top" halign="left" backgroundColor="green" transparent="1" />
 			<widget name="key_yellow" position="380,504" zPosition="1" size="170,25" font="Regular;20" valign="top" halign="left" backgroundColor="yellow" transparent="1" />
@@ -439,9 +439,9 @@ EGDecodingSetup_Skin = """
 		<screen name="EGDecodingSetup" position="center,center" size="670,250" title="EGAMI Decoding Setup" >
       			<widget name="config" position="10,10" size="650,180" scrollbarMode="showOnDemand" />
 			<widget name="key_red" position="50,220" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_red_png" position="20,220" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_red_png" position="20,220" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_green" position="310,220" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_green_png" position="280,220" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_green_png" position="280,220" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on" />
 		</screen>"""
 
 
@@ -457,9 +457,9 @@ EGInfoBarSetup_Skin = """
 		<screen name="EGInfoBarSetup" position="center,center" size="670,550" title="EGAMI Infobar Setup" >
       			<widget name="config" position="10,10" size="650,480" scrollbarMode="showOnDemand" />
 			<widget name="key_red" position="50,520" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_red_png" position="20,520" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_red_png" position="20,520" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_green" position="310,520" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_green_png" position="280,520" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_green_png" position="280,520" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on" />
 		</screen>"""
 
 # EG Kernel Modules Menu
@@ -467,9 +467,9 @@ EGKernelModulesManager_Skin = """
 		<screen name="EGKernelModulesManager" position="center,center" size="670,550" title="EGAMI Kernel Modules Manager" >
       			<widget name="config" position="10,10" size="650,480" scrollbarMode="showOnDemand" />
 			<widget name="key_red" position="50,520" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_red_png" position="20,520" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_red_png" position="20,520" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_green" position="310,520" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_green_png" position="280,520" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_green_png" position="280,520" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on" />
 		</screen>"""
 
 # EG Mount Edit Menu
@@ -481,9 +481,9 @@ EGMountEdit_Skin = """
 # EG Mount Manager Menu
 EGMountManager_Skin = """
 		<screen name="MountManager" position="center,center" size="420,300" title="Mount Manager">
-			<ePixmap name="greenbutton" position="0,0" zPosition="1" size="140,40" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on" />
-			<ePixmap name="yellowbutton" position="140,0" zPosition="1" size="140,40" pixmap="skin_default/egami_icons/buttons/button_yellow.png" transparent="1" alphatest="on" />
-			<ePixmap name="bluebutton" position="280,0" zPosition="1" size="140,40" pixmap="skin_default/egami_icons/buttons/button_blue.png" transparent="1" alphatest="on" />
+			<ePixmap name="greenbutton" position="0,0" zPosition="1" size="140,40" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on" />
+			<ePixmap name="yellowbutton" position="140,0" zPosition="1" size="140,40" pixmap="skin_default/buttons/button_yellow.png" transparent="1" alphatest="on" />
+			<ePixmap name="bluebutton" position="280,0" zPosition="1" size="140,40" pixmap="skin_default/buttons/button_blue.png" transparent="1" alphatest="on" />
 			<widget name="green" position="0,9" zPosition="2" size="140,40" font="Regular;20" valign="top" halign="center" transparent="1" />
 			<widget name="yellow" position="140,9" zPosition="2" size="140,40" font="Regular;20" valign="top" halign="center" transparent="1" />
 			<widget name="blue" position="280,9" zPosition="2" size="140,40" font="Regular;20" valign="top" halign="center" transparent="1" />
@@ -505,9 +505,9 @@ EGProcessInfo_Skin = """
 		<screen name="EGProcessInfo" position="center,center" size="670,550" title="EGAMI Process Informations" >
       			<widget name="menu" position="10,10" size="650,480" scrollbarMode="showOnDemand" />
 			<widget name="key_red" position="50,520" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_red_png" position="20,520" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_red_png" position="20,520" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on" />
 			<widget name="key_green" position="310,520" zPosition="2" size="200,20" font="Regular;20" valign="top" halign="left" transparent="1"/>
-			<ePixmap name="key_green_png" position="280,520" zPosition="1" size="200,40" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on" />
+			<ePixmap name="key_green_png" position="280,520" zPosition="1" size="200,40" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on" />
     		</screen>"""
 
 # EG Kernel info
@@ -543,8 +543,8 @@ EGFileManagerConfig_Skin ="""
             			<widget name="config" position="0,0" size="640,360" scrollbarMode="showOnDemand" />
             			<widget name="buttonred" position="120,360" size="100,40" zPosition="1"  transparent="1" foregroundColor="white" font="Regular;18"/>
             			<widget name="buttongreen" position="380,360" size="100,40" zPosition="1"  transparent="1" foregroundColor="white" font="Regular;18"/>
-            			<ePixmap position="100,358" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="on"/>
-            			<ePixmap position="360,358" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on"/>
+            			<ePixmap position="100,358" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="on"/>
+            			<ePixmap position="360,358" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on"/>
         		</screen>"""
 
 # EGAMI FileManager - Main Window
@@ -554,15 +554,15 @@ EGFileManager_Skin = """
 				<widget name="list_right_text" font="Regular;20" position="575,0" size="150,30"/>
             			<widget name="list_left" position="0,30" size="460,480" scrollbarMode="showOnDemand" />
             			<widget name="list_right" position="465,30" size="460,480" scrollbarMode="showOnDemand" />
-            			<ePixmap position="20,545" size="80,80" zPosition="1" pixmap="skin_default/egami_icons/buttons/button_red.png" transparent="1" alphatest="blend" />
+            			<ePixmap position="20,545" size="80,80" zPosition="1" pixmap="skin_default/buttons/button_red.png" transparent="1" alphatest="blend" />
             			<widget name="copy_text" zPosition="4" position="50,545" size="140,40" halign="left" valign="top" font="Regular;22" transparent="1" />
-            			<ePixmap position="160,545" size="80,80" zPosition="1" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="blend" />
+            			<ePixmap position="160,545" size="80,80" zPosition="1" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="blend" />
 				<widget name="remove_text" zPosition="4" position="190,545" size="140,40" halign="left" valign="top" font="Regular;22" transparent="1" />
-				<ePixmap position="320,545" size="80,80" zPosition="1" pixmap="skin_default/egami_icons/buttons/button_yellow.png" transparent="1" alphatest="blend" />
+				<ePixmap position="320,545" size="80,80" zPosition="1" pixmap="skin_default/buttons/button_yellow.png" transparent="1" alphatest="blend" />
 				<widget name="move_text" zPosition="4" position="350,545" size="140,40" halign="left" valign="top" font="Regular;22" transparent="1" />
-				<ePixmap position="470,545" size="80,80" zPosition="1" pixmap="skin_default/egami_icons/buttons/button_blue.png" transparent="1" alphatest="blend" />
+				<ePixmap position="470,545" size="80,80" zPosition="1" pixmap="skin_default/buttons/button_blue.png" transparent="1" alphatest="blend" />
 				<widget name="more_text" zPosition="4" position="500,545" size="240,40" halign="left" valign="top" font="Regular;22" transparent="1"  />
-				<ePixmap position="740,545" size="80,80" zPosition="1" pixmap="skin_default/egami_icons/buttons/key_menu.png" transparent="1" alphatest="blend" />
+				<ePixmap position="740,545" size="80,80" zPosition="1" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="blend" />
 				<widget name="settings_text" zPosition="4" position="790,545" size="240,40" halign="left" valign="top" font="Regular;22" transparent="1" />
         		</screen>"""
 
@@ -597,7 +597,7 @@ EGFileManager_symlink_create_Skin = """
         		<screen name="EGFileManager_symlink_create" position="center,center" size="550,400" title="EGAMI File Manager - New Symlink" >
             			<widget name="config" position="0,0" size="550,360" scrollbarMode="showOnDemand" />
             			<widget name="buttongreen" position="120,360" size="100,40" valign="center" halign="center" zPosition="1"  transparent="1" foregroundColor="white" font="Regular;18"/>
-            			<ePixmap position="120,360" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on"/>
+            			<ePixmap position="120,360" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on"/>
         		</screen>"""
 			
 # EGAMI FileManager - File Permissions
@@ -605,7 +605,7 @@ EGFileManager_file_permision_Skin = """
         		<screen name="EGFileManager_file_permision" position="center,center" size="550,400" title="EGAMI File Manager - File permission settings" >
             			<widget name="config" position="0,0" size="550,360" scrollbarMode="showOnDemand" />
             			<widget name="buttongreen" position="120,360" size="100,40" valign="center" halign="center" zPosition="1"  transparent="1" foregroundColor="white" font="Regular;18"/>
-            			<ePixmap position="120,360" size="100,40" zPosition="0" pixmap="skin_default/egami_icons/buttons/button_green.png" transparent="1" alphatest="on"/>
+            			<ePixmap position="120,360" size="100,40" zPosition="0" pixmap="skin_default/buttons/button_green.png" transparent="1" alphatest="on"/>
         		</screen>"""
 
     		
@@ -616,10 +616,10 @@ EGGreenPanel_Skin = """
 			  <eLabel text="Extras" zPosition="4" position="230,520" size="140,40" halign="left" font="Regular;22" transparent="1" />
 			  <eLabel text="File Mode" zPosition="4" position="400,520" size="140,40" halign="left" font="Regular;22" transparent="1" />
 			  <eLabel text="Scripts" zPosition="4" position="580,520" size="140,40" halign="left" font="Regular;22" transparent="1"  />
-			  <ePixmap name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="20,520" size="140,40" alphatest="on" />
-			  <ePixmap name="key_green_png" pixmap="skin_default/egami_icons/buttons/button_green.png" position="200,520" size="140,40" alphatest="on" />
-			  <ePixmap name="key_yellow_png" pixmap="skin_default/egami_icons/buttons/button_yellow.png" position="370,520" size="140,40" alphatest="on" />
-			  <ePixmap name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="550,520" size="140,40" alphatest="on" />
+			  <ePixmap name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="20,520" size="140,40" alphatest="on" />
+			  <ePixmap name="key_green_png" pixmap="skin_default/buttons/button_green.png" position="200,520" size="140,40" alphatest="on" />
+			  <ePixmap name="key_yellow_png" pixmap="skin_default/buttons/button_yellow.png" position="370,520" size="140,40" alphatest="on" />
+			  <ePixmap name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="550,520" size="140,40" alphatest="on" />
 			  <widget source="list" render="Listbox" position="10,0" size="680,510" zPosition="2" scrollbarMode="showOnDemand" transparent="1">
 				<convert type="TemplatedMultiContent">
 				    {"template": [
@@ -652,8 +652,8 @@ EGUsbWifiTuner_Skin = """
 				      }
 				      </convert>
 			      </widget>
-			      <widget name="key_red_png" pixmap="skin_default/egami_icons/buttons/button_red.png" position="60,524" size="140,40" alphatest="on" />
-			      <widget name="key_blue_png" pixmap="skin_default/egami_icons/buttons/button_blue.png" position="600,524" size="140,40" alphatest="on" />
+			      <widget name="key_red_png" pixmap="skin_default/buttons/button_red.png" position="60,524" size="140,40" alphatest="on" />
+			      <widget name="key_blue_png" pixmap="skin_default/buttons/button_blue.png" position="600,524" size="140,40" alphatest="on" />
 			      <widget name="key_red" position="60,520" zPosition="1" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
 			      <widget name="key_blue" position="600,520" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 		      </screen>"""
@@ -669,8 +669,8 @@ EGServices_Skin = """
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (40, 30), png = 1)], "fonts": [gFont("Regular", 20)], "itemHeight": 40 }
 				</convert>
 			</widget>
-			<widget name="key_yellow_big_png" position="20,340" size="200,40" pixmap="skin_default/egami_icons/buttons/button_yellow.png" alphatest="on" />
-			<widget name="key_blue_big_png" position="230,340" size="200,40" pixmap="skin_default/egami_icons/buttons/button_blue.png" alphatest="on" />
+			<widget name="key_yellow_big_png" position="20,340" size="200,40" pixmap="skin_default/buttons/button_yellow.png" alphatest="on" />
+			<widget name="key_blue_big_png" position="230,340" size="200,40" pixmap="skin_default/buttons/button_blue.png" alphatest="on" />
 			<widget name="key_yellow" position="20,340" size="200,40" font="Regular;20" backgroundColor="#a08500" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 			<widget name="key_blue" position="230,340" size="200,40" font="Regular;20" backgroundColor="#18188b" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		</screen>"""
@@ -682,8 +682,8 @@ EGAMIBackupPanel_Skin = """
 		      <widget name="label2" position="10,80" size="840,290" zPosition="1" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
 		      <widget name="label3" position="10,110" size="840,290" zPosition="1" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
 		      <widget name="list" position="10,170" size="840,290" scrollbarMode="showOnDemand"/>
-		      <ePixmap pixmap="skin_default/egami_icons/buttons/yellow.png" position="72,290" size="140,40" alphatest="on" />
-		      <ePixmap pixmap="skin_default/egami_icons/buttons/blue.png" position="284,290" size="140,40" alphatest="on" />
+		      <ePixmap pixmap="skin_default/buttons/yellow.png" position="72,290" size="140,40" alphatest="on" />
+		      <ePixmap pixmap="skin_default/buttons/blue.png" position="284,290" size="140,40" alphatest="on" />
 		      <widget name="key_yellow" position="72,290" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
 		      <widget name="key_blue" position="284,290" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
 		</screen>"""
@@ -694,8 +694,8 @@ EGAMIBackupPanel_Step2_Skin = """
 		      <widget name="label1" position="10,10" size="840,30" zPosition="1" halign="center" font="Regular;25" backgroundColor="#9f1313" transparent="1"/>
 		      <widget name="label2" position="10,80" size="840,290" zPosition="1" halign="center" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
 		      <widget name="config" position="130,160" size="450,290" scrollbarMode="showOnDemand"/>
-		      <ePixmap pixmap="skin_default/egami_icons/buttons/yellow.png" position="200,340" size="140,40" alphatest="on"/>
-		      <ePixmap pixmap="skin_default/egami_icons/buttons/green.png" position="550,340" size="140,40" alphatest="on"/>
+		      <ePixmap pixmap="skin_default/buttons/yellow.png" position="200,340" size="140,40" alphatest="on"/>
+		      <ePixmap pixmap="skin_default/buttons/green.png" position="550,340" size="140,40" alphatest="on"/>
 		      <widget name="key_yellow" position="200,340" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
 		      <widget name="key_green" position="550,340" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
 		</screen>"""	
@@ -710,9 +710,9 @@ EGAMIBackupPanel_Step3_Skin = """
 EGAMIRestorePanel_Step1_Skin = """	
 		<screen name="EGAMIRestorePanel_Step1" position="center,center" size="902,550" title="EGAMI Backup Restore - STEP 1">
 		      <widget name="config" position="30,10" size="840,510" scrollbarMode="showOnDemand"/>
-		      <ePixmap pixmap="skin_default/egami_icons/buttons/blue.png" position="380,510" size="140,40" alphatest="on"/>
+		      <ePixmap pixmap="skin_default/buttons/blue.png" position="380,510" size="140,40" alphatest="on"/>
 		      <widget name="key_blue" position="380,510" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
-		      <ePixmap pixmap="skin_default/egami_icons/buttons/green.png" position="550,510" size="140,40" alphatest="on"/>
+		      <ePixmap pixmap="skin_default/buttons/green.png" position="550,510" size="140,40" alphatest="on"/>
 		      <widget name="key_green" position="550,510" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
 		</screen>"""	
 		
