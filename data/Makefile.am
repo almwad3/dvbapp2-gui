@@ -1,4 +1,4 @@
-SUBDIRS = egami_icons spinner fonts extensions keymaps rc_models
+SUBDIRS = skin_default spinner fonts extensions keymaps rc_models
 
 dist_pkgdata_DATA = \
 	encoding.conf \
