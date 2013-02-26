@@ -71,7 +71,7 @@ self.session.openWithCallback(msgClosed, EpgLoadMsg)
 					</menu>
 					<item level="2" entryID="setup_epgmulti"><setup id="epgmulti" /></item>
 					<item level="2" entryID="setup_epgenhanced"><setup id="epgenhanced" /></item>
-					<item level="2" entryID="setup_epginfobar"><setup id="epginfobar" /></item>
+					<!--<item level="2" entryID="setup_epginfobar"><setup id="epginfobar" /></item>-->
 					<item level="2" entryID="setup_epggraphical"><setup id="epggraphical" /></item>
 				</menu>
 			</menu>
