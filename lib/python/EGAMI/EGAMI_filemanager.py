@@ -166,12 +166,12 @@ def FileEntryComponent(name, absolute = None, isDir = False):
 	res = [ (absolute, isDir) ]
 	res.append((eListboxPythonMultiContent.TYPE_TEXT, 40, 2, 1000, 22, 0, RT_HALIGN_LEFT, name))
 	if isDir:
-		png = LoadPixmap("/usr/share/enigma2/egami_icons/ext_dir.png")
+		png = LoadPixmap("/usr/share/enigma2/skin_default/egami_icons/ext_dir.png")
 	else:
 		extension = name.split('.')
 		extension = extension[-1].lower()
 		if EXTENSIONS.has_key(extension):
-			png = LoadPixmap("/usr/share/enigma2/egami_icons/" + EXTENSIONS[extension] + ".png")
+			png = LoadPixmap("/usr/share/enigma2/skin_default/egami_icons/" + EXTENSIONS[extension] + ".png")
 		else:
 			png = None
 	if png is not None:
@@ -329,7 +329,7 @@ class EGFileList(MenuList):
 					else:
 						res = [ (x, False) ]
 						res.append((eListboxPythonMultiContent.TYPE_TEXT, 40, 2, 1000, 22, 0, RT_HALIGN_LEFT, name + " [" + self.getTSLength(path) + "]"))
-						png = LoadPixmap("/usr/share/enigma2/egami_icons/ext_movie.png")
+						png = LoadPixmap("/usr/share/enigma2/skin_default/egami_icons/ext_movie.png")
 						res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, 12, 3, 20, 20, png))
 						self.list.append(res)
 		self.l.setList(self.list)
