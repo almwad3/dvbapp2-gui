@@ -1,12 +1,5 @@
 <wizard>
-		<step id="start" nextstep="introduction">
-			<text value="Welcome.\n\nThis start wizard will guide you through the basic setup of your linux receiver.\nPress the OK button on your remote control to move to the next step." />
-			<code>
-self.clearSelectedKeys()
-self.selectKey("OK")
-			</code>
-		</step>
-		<step id="introduction" >
+		<step id="start" >
 			<text value="Use the up/down keys on your remote control to select an option. After that, press OK." />
 			<list>
 				<listentry caption="Use the wizard to set up basic features" step="network" />
@@ -171,7 +164,7 @@ self.selectKey("RIGHT")
 			</code>
 		</step>
 		<step id="end" laststep="true">
-			<text value="Thank you for using the wizard. Your STB_BOX is now ready to use.\nPlease press OK to start using your STB_BOX." />
+			<text value="Thank you for using the wizard. Your linux box is now ready to use.\nPlease press OK to start using your linux box." />
 			<code>
 self.clearSelectedKeys()
 self.selectKey("OK")
