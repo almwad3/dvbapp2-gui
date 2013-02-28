@@ -164,7 +164,7 @@ self.selectKey("RIGHT")
 			</code>
 		</step>
 		<step id="end" laststep="true">
-			<text value="Thank you for using the wizard. Your linux box is now ready to use.\nPlease press OK to start using your linux box." />
+			<text value="Thank you for using the wizard. Your STB_BOX is now ready to use.\nPlease press OK to start using your STB_BOX." />
 			<code>
 self.clearSelectedKeys()
 self.selectKey("OK")
