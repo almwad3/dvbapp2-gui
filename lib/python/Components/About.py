@@ -50,16 +50,26 @@ def getBuildVersionString():
 
 def getLastUpdateString():
 	try:
-		if os.path.isfile('/var/lib/opkg/status'):
-			st = os.stat('/var/lib/opkg/status')
-		else:
-			st = os.stat('/usr/lib/ipkg/status')
-		tm = time.localtime(st.st_mtime)
-		if tm.tm_year >= 2011:
-			return time.strftime("%Y-%m-%d %H:%M:%S", tm)
-	except:
-		pass
-	return _("unavailable")
+		file = open(resolveFilename(SCOPE_SYSETC, 'image-version'), 'r')
+		lines = file.readlines()
+		for x in lines:
+			splitted = x.split('=')
+			if splitted[0] == "date":
+				#YYYY MM DD hh mm
+				#2005 11 29 01 16
+				string = splitted[1].replace('\n','')
+				year = string[0:4]
+				month = string[4:6]
+				day = string[6:8]
+				date = '-'.join((year, month, day))
+				hour = string[8:10]
+				minute = string[10:12]
+				time = ':'.join((hour, minute))
+				lastupdated = ' '.join((date, time))
+		file.close()
+		return lastupdated
+	except IOError:
+		return "unavailable"
 
 def getDriversString():
 	try:
