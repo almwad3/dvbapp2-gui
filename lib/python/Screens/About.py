@@ -39,14 +39,14 @@ class About(Screen):
 
 		AboutText = _("Hardware: ") + about.getHardwareTypeString() + "\n"
 		AboutText += _("Drivers: ") + about.getDriversVersionString() + "\n"
-		AboutText += _("Image: ") + about.getImageTypeString() + "\n"
+		AboutText += _("Image: ") + about.getImageVersionString() + "\n"
 		AboutText += _("Kernel Version: ") + about.getKernelVersionString() + "\n"
 		
 		EnigmaVersion = _("GUI: ") + about.getEnigmaVersionString()
 		self["EnigmaVersion"] = StaticText(EnigmaVersion)
 		AboutText += EnigmaVersion + "\n"
 
-		ImageVersion = _("Last Upgrade: ") + about.getImageVersionString()
+		ImageVersion = _("Last Upgrade: ") + about.getLastUpdateString()
 		self["ImageVersion"] = StaticText(ImageVersion)
 		AboutText += ImageVersion + "\n"
 
