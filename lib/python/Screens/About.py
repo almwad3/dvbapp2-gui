@@ -38,6 +38,11 @@ class About(Screen):
 		Screen.__init__(self, session)
 
 		AboutText = _("Hardware: ") + about.getHardwareTypeString() + "\n"
+		if path.exists('/proc/stb/info/chipset'):
+			AboutText += _("Chipset: BCM%s") % about.getChipSetString().lower().replace('\n','').replace('bcm','') + "\n"
+
+		AboutText += _("CPU: %s") % about.getCPUString() + "\n"
+		AboutText += _("Cores: %s") % about.getCpuCoresString() + "\n"
 		AboutText += _("Drivers: ") + about.getDriversVersionString() + "\n"
 		AboutText += _("Image: ") + about.getImageVersionString() + "\n"
 		AboutText += _("Kernel Version: ") + about.getKernelVersionString() + "\n"
@@ -73,7 +78,6 @@ class About(Screen):
 			AboutText += _("System Temperature:") + " " + tempinfo.replace('\n','') + mark + "C\n\n"
 
 		self["TranslationHeader"] = StaticText(_("Translation:"))
-
 
 		# don't remove the string out of the _(), or it can't be "translated" anymore.
 		# TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
