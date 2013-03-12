@@ -1,18 +1,5 @@
 <menu text="Mainmenu" title="Main menu">
 	<id val="mainmenu" />
-<!-- the following types are allowed:
-	<screen [module="mod"] [screen="classname"]>[arguments]</screen>
-		executes Screen called "classname" from module "Screen.mod"
-		if no module is given, Screen must be globally available.
-		if no screen is given, module is used as screen class name.
-		arguments must be comma seperated (will be fed to eval), and can
-			use stuff from module
-		(of course you must specify at least one of module, screen.)
-	<setup id="id" />
-		opens a setup with specified id
-	<code> .. code .. </code>
-		"exec"s code
--->
 		<menu weight="1" level="0" text="EGAMI Panel" entryID="egami_screen">
 			<id val="egami" />
 			<item weight="1" text="EGAMI Personal Backup Panel" entryID="backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGAMIBackupPanel;self.session.open(EGAMIBackupPanel)</code></item>
@@ -30,7 +17,7 @@
 
 					<item weight="20" text="Automatic scan" entryID="auto_scan"><screen module="ScanSetup" screen="ScanSimple" /></item>
 					<item weight="30" text="Manual scan" entryID="manual_scan"><screen module="ScanSetup" /></item>
-				</menu>	
+				</menu>
 				<item level="0" text="Timeshift settings" entryID="timshift_setup"><screen module="Timershift" screen="TimeshiftSettings" /></item>
 				<item level="0" text="Recording settings" entryID="recording_setup"><screen module="Recordings" screen="RecordingSettings" /></item>
 				<menu weight="10" text="Common interface" entryID="cam_setup">
@@ -71,7 +58,6 @@ self.session.openWithCallback(msgClosed, EpgLoadMsg)
 					</menu>
 					<item level="2" entryID="setup_epgmulti"><setup id="epgmulti" /></item>
 					<item level="2" entryID="setup_epgenhanced"><setup id="epgenhanced" /></item>
-					<!--<item level="2" entryID="setup_epginfobar"><setup id="epginfobar" /></item>-->
 					<item level="2" entryID="setup_epggraphical"><setup id="epggraphical" /></item>
 				</menu>
 			</menu>
@@ -151,22 +137,22 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 </code>
 			</item>
 			<item weight="15" level="0" text="Software update" entryID="software_update"><screen module="SoftwareUpdate" screen="UpdatePlugin" /></item>
+			<item weight="16" level="0" text="VCR scart" entryID="scart_switch" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>
+		</menu>	
+		<menu weight="4" level="0" text="Timers" entryID="timer_menu">
+			<id val="timermenu" />
+			<!--<item weight="100" level="0" text="CronTimers" entryID="crontimer_edit"><screen module="CronTimer" screen="CronTimers" /></item>-->
+			<item weight="100" level="0" text="Timers" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList" /></item>
+			<item weight="100" level="0" text="PowerTimers" entryID="powertimer_edit"><screen module="PowerTimerEdit" screen="PowerTimerEditList" /></item>
 		</menu>
-		<menu weight="4" level="0" text="Information" entryID="info_screen">
+		<menu weight="5" level="0" text="Information" entryID="info_screen">
 			<id val="information" />
 			<item level="0" text="About" entryID="about_screen"><screen module="About" screen="About"/></item>
 			<item level="0" text="Devices" entryID="device_screen"><screen module="About" screen="Devices"/></item>
 			<item level="0" text="Memory" entryID="device_screen"><screen module="About" screen="SystemMemoryInfo"/></item>
 			<item level="0" text="Network" entryID="device_screen"><screen module="About" screen="SystemNetworkInfo"/></item>
 			<item level="1" text="Service" entryID="service_info_screen"><screen module="ServiceInfo" screen="ServiceInfo"/></item>
-		</menu>		
-		<menu weight="5" level="0" text="Timers" entryID="timer_menu">
-			<id val="timermenu" />
-			<!--<item weight="100" level="0" text="CronTimers" entryID="crontimer_edit"><screen module="CronTimer" screen="CronTimers" /></item>-->
-			<item weight="100" level="0" text="Timers" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList" /></item>
-			<item weight="100" level="0" text="PowerTimers" entryID="powertimer_edit"><screen module="PowerTimerEdit" screen="PowerTimerEditList" /></item>
-		</menu>
-		<item weight="6" level="0" text="VCR scart" entryID="scart_switch" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>
+		</menu>	
 		<menu weight="7" text="Standby / Restart" entryID="standby_restart_list" endtext=">">
 			<id val="shutdown" />
 			<item text="Standby" entryID="standby" endtext="&gt;&lt;"><screen module="Standby" screen="Standby"/></item>
