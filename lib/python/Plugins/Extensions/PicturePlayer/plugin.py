@@ -16,7 +16,7 @@ def main(session, **kwargs):
 
 def menu(menuid, **kwargs):
 	if menuid == "mainmenu":
-		return [(_("Picture player"), main, "picture_player", 1)]
+		return [(_("Picture Player"), main, "picture_player", 1)]
 	return []
       
 def filescan_open(list, session, **kwargs):

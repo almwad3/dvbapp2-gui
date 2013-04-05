@@ -173,8 +173,8 @@ class MeteoMain(Screen):
 
                 weather_data['forecasts'] = forecasts
                 dom.unlink()
-                maintext = 'Data provider: '
-                self['lab1b'].setText('Yahoo Weather')
+                maintext = _('Data provider: ')
+                self['lab1b'].setText(_('Yahoo Weather'))
                 city = '%s' % str(weather_data['location']['city'])
                 self['lab2'].setText(city)
                 txt = str(weather_data['condition']['date'])
@@ -194,31 +194,31 @@ class MeteoMain(Screen):
                 self['lab5'].instance.setPixmap(png)
                 txt = str(weather_data['condition']['text'])
                 self['lab6'].setText(txt)
-                self['lab7'].setText('Humidity :')
+                self['lab7'].setText(_('Humidity :'))
                 txt = str(weather_data['atmosphere']['humidity']) + ' %'
                 self['lab7b'].setText(txt)
-                self['lab8'].setText('Pressure :')
+                self['lab8'].setText(_('Pressure :'))
                 txt = str(weather_data['atmosphere']['pressure']) + ' mb'
                 self['lab8b'].setText(txt)
-                self['lab9'].setText('Visibility :')
+                self['lab9'].setText(_('Visibility :'))
                 txt = str(weather_data['atmosphere']['visibility']) + ' km'
                 self['lab9b'].setText(txt)
-                self['lab10'].setText('Sunrise :')
+                self['lab10'].setText(_('Sunrise :'))
                 txt = str(weather_data['astronomy']['sunrise'])
                 self['lab10b'].setText(txt)
-                self['lab11'].setText('Sunset :')
+                self['lab11'].setText(_('Sunset :'))
                 txt = str(weather_data['astronomy']['sunset'])
                 self['lab11b'].setText(txt)
-                self['lab12'].setText('Wind :')
+                self['lab12'].setText(_('Wind :'))
                 direction = self.wind_direction(str(weather_data['wind']['direction']))
-                txt = 'From %s at %s kmh' % (direction, str(weather_data['wind']['speed']))
+                txt = _('From') +  direction + _('at') + str(weather_data['wind']['speed']) + _('kmh')
                 self['lab12b'].setText(txt)
                 txt = self.extend_day(str(weather_data['forecasts'][0]['day']))
                 self['lab13'].setText(txt)
-                self['lab14'].setText('High :')
+                self['lab14'].setText(_('High :'))
                 txt = str(weather_data['forecasts'][0]['high']) + '\xc2\xb0C'
                 self['lab14b'].setText(txt)
-                self['lab15'].setText('Low :')
+                self['lab15'].setText(_('Low :'))
                 txt = str(weather_data['forecasts'][0]['low']) + '\xc2\xb0C'
                 self['lab15b'].setText(txt)
                 txt = str(weather_data['forecasts'][0]['text'])
@@ -229,10 +229,10 @@ class MeteoMain(Screen):
                 self['lab17'].instance.setPixmap(png)
                 txt = self.extend_day(str(weather_data['forecasts'][1]['day']))
                 self['lab18'].setText(txt)
-                self['lab19'].setText('High :')
+                self['lab19'].setText(_('High :'))
                 txt = str(weather_data['forecasts'][1]['high']) + '\xc2\xb0C'
                 self['lab19b'].setText(txt)
-                self['lab20'].setText('Low :')
+                self['lab20'].setText(_('Low :'))
                 txt = str(weather_data['forecasts'][1]['low']) + '\xc2\xb0C'
                 self['lab20b'].setText(txt)
                 txt = str(weather_data['forecasts'][1]['text'])
@@ -242,16 +242,16 @@ class MeteoMain(Screen):
                 png = loadPic(myicon, 100, 100, 0, 0, 0, 0)
                 self['lab22'].instance.setPixmap(png)
                 self['lab23'].setText(city)
-                self['lab24'].setText('Latitude :')
+                self['lab24'].setText(_('Latitude :'))
                 txt = str(weather_data['geo']['lat']) + '\xc2\xb0'
                 self['lab24b'].setText(txt)
-                self['lab25'].setText('Longitude :')
+                self['lab25'].setText(_('Longitude :'))
                 txt = str(weather_data['geo']['long']) + '\xc2\xb0'
                 self['lab25b'].setText(txt)
-                self['lab26'].setText('Region :')
+                self['lab26'].setText(_('Region :'))
                 txt = str(weather_data['location']['region'])
                 self['lab26b'].setText(txt)
-                self['lab27'].setText('Country :')
+                self['lab27'].setText(_('Country :'))
                 txt = str(weather_data['location']['country'])
                 self['lab27b'].setText(txt)
                 myicon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/weather/red.png'
@@ -300,19 +300,19 @@ class MeteoMain(Screen):
 
     def extend_day(self, day):
         if day == 'Mon':
-            return 'Monday'
+            return _('Monday')
         elif day == 'Tue':
-            return 'Tuesday'
+            return _('Tuesday')
         elif day == 'Wed':
-            return 'Wednesday'
+            return _('Wednesday')
         elif day == 'Thu':
-            return 'Thursday'
+            return _('Thursday')
         elif day == 'Fri':
-            return 'Friday'
+            return _('Friday')
         elif day == 'Sat':
-            return 'Saturday'
+            return _('Saturday')
         elif day == 'Sun':
-            return 'Sunday'
+            return _('Sunday')
         else:
             return day
 
