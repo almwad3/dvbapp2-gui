@@ -448,6 +448,7 @@ from Plugins.Plugin import PluginDescriptor
 def Plugins(**kwargs):
 	l = []
 	l.append(PluginDescriptor(name=_("Weather"), where=PluginDescriptor.WHERE_EXTENSIONSMENU, needsRestart=False, fnc=main))
-	l.append(PluginDescriptor(name=_("Weather"), where=PluginDescriptor.WHERE_MENU, needsRestart=False, fnc=menu))
+	#l.append(PluginDescriptor(name=_("Weather"), where=PluginDescriptor.WHERE_MENU, needsRestart=False, fnc=menu))
+	l.append(PluginDescriptor(name = _("Weather"), description = _("Check weather today"), where = PluginDescriptor.WHERE_PLUGINMENU, needsRestart = False, fnc = main))
 	return l
       
