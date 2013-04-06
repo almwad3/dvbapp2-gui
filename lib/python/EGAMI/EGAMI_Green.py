@@ -232,7 +232,7 @@ class EGGreenPanel(Screen):
 		self["list"] = List(self.list)
 		self["key_red"] = Label(_("Addons"))
 		self["key_green"] = Label(_("Extras"))
-		self["key_yellow"] = Label(_("File Mode"))
+		self["key_yellow"] = Label(_("File Manager"))
 		self["key_blue"] = Label(_("Scripts"))
 		self.updateList()
 		self["actions"] = ActionMap(["WizardActions", "ColorActions"],

@@ -138,7 +138,9 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 </code>
 			</item>
 			<item weight="15" level="0" text="Software update" entryID="software_update"><screen module="SoftwareUpdate" screen="UpdatePlugin" /></item>
-		</menu>	
+			<item weight="16" text="EGAMI Personal Backup Panel" entryID="backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGAMIBackupPanel;self.session.open(EGAMIBackupPanel)</code></item>
+			<item weight="17" text="EGAMI Full Backup Panel" entryID="full_backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGFullBackup;self.session.open(EGFullBackup)</code></item>
+		</menu>
 		<menu weight="5" level="0" text="Information" entryID="info_screen">
 			<id val="information" />
 			<item level="0" text="About" entryID="about_screen"><screen module="About" screen="About"/></item>
@@ -147,12 +149,6 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 			<item level="0" text="Network" entryID="device_screen"><screen module="About" screen="SystemNetworkInfo"/></item>
 			<item level="1" text="Service" entryID="service_info_screen"><screen module="ServiceInfo" screen="ServiceInfo"/></item>
 		</menu>
-		<menu weight="6" level="0" text="EGAMI Panel" entryID="egami_screen">
-			<id val="egami" />
-			<item weight="1" text="EGAMI Personal Backup Panel" entryID="backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGAMIBackupPanel;self.session.open(EGAMIBackupPanel)</code></item>
-			<item weight="1" text="EGAMI Full Backup Panel" entryID="full_backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGFullBackup;self.session.open(EGFullBackup)</code></item>
-			<item weight="1" text="EGAMI File Manager" entryID="file_manager"><code>from EGAMI.EGAMI_filemanager import EGFileManager;self.session.open(EGFileManager)</code></item>
-		</menu>		
 		<menu weight="7" text="Standby / Restart" entryID="standby_restart_list" endtext=">">
 			<id val="shutdown" />
 			<item text="Standby" entryID="standby" endtext="&gt;&lt;"><screen module="Standby" screen="Standby"/></item>

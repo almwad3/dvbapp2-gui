@@ -516,5 +516,6 @@ def menu(menuid, **kwargs):
 from Plugins.Plugin import PluginDescriptor
 def Plugins(**kwargs):
 	return [
-		PluginDescriptor(name = "EgamiBoot", description = "EGAMI MultiBoot", where = PluginDescriptor.WHERE_MENU, fnc = menu),
+		#PluginDescriptor(name = "EgamiBoot", description = "EGAMI MultiBoot", where = PluginDescriptor.WHERE_MENU, fnc = menu),
+		PluginDescriptor(name = "EGAMIBoot", description=_('E2 Light Multiboot'), icon='plugin_icon.png', where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main)
 	]
