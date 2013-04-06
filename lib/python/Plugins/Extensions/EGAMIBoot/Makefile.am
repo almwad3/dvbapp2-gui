@@ -7,5 +7,5 @@ install_PYTHON = \
 	plugin.py egamiboot.py ex_init.py
 	
 install_DATA = \
-	dev_cf.png dev_hdd.png dev_sd.png dev_usb.png egamiboot.mvi \
+	dev_cf.png dev_hdd.png dev_sd.png dev_usb.png plugin_icon.png egamiboot.mvi \
 	nandsim_2637 nandsim_322 nandsim_360
