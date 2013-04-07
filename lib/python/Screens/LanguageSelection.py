@@ -44,7 +44,6 @@ class LanguageSelection(Screen):
 
 		self["key_red"] = Label(_("Cancel"))
 		self["key_green"] = Label(_("Save"))
-		self["key_yellow"] = Label(_("Auto language selection"))
 
 		self["actions"] = ActionMap(["SetupActions", "ColorActions"],
 		{
@@ -52,12 +51,9 @@ class LanguageSelection(Screen):
 			"cancel": self.cancel,
 			"red": self.cancel,
 			"green": self.save,
-			"yellow": self.AutoAudioSelection,
+			"yellow": self.updateCache,
 		}, -1)
-
-	def AutoAudioSelection(self):
-		self.session.open(Setup, "autolanguagesetup")
-	    
+		
 	def updateCache(self):
 		print"updateCache"
 		self["languages"].setList([('update cache','Updating cache, please wait...',None)])
