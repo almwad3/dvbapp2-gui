@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2_v2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 20:47+0100\n"
+"POT-Creation-Date: 2013-04-16 19:39+0200\n"
 "PO-Revision-Date: 2012-12-09 02:03+0100\n"
 "Last-Translator: Andy Blackburn <andyblac@o2.co.uk>\n"
 "Language-Team: \n"
@@ -49,15 +49,11 @@ msgstr ""
 "\n"
 "Αφού πιέσετε ΟΚ, παρακαλώ περιμένετε!"
 
-msgid ""
-"\n"
-"An Input/output error usually indicates a corrupted filesystem! Please check the filesystem of your timeshift-device!"
-msgstr ""
-
 #
+#, fuzzy
 msgid ""
 "\n"
-"Backup your linux receiver settings."
+"Backup your linux box settings."
 msgstr ""
 "\n"
 "Αντίγραφο ασφαλείας των ρυθμίσεων."
@@ -71,17 +67,19 @@ msgstr ""
 "Επεξεργασία της πηγής αναβαθμίσεων"
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Manage extensions or plugins for your linux receiver"
+"Manage extensions or plugins for your linux box"
 msgstr ""
 "\n"
 "Διαχείριση επεκτάσεων ή προσθέτων του δέκτη"
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Online update of your linux receiver software."
+"Online update of your linux box software."
 msgstr ""
 "\n"
 "Διαδικτυακή ενημέρωση του λογισμικού του δέκτη"
@@ -104,18 +102,20 @@ msgstr ""
 "Αποκατάσταση των αντιγράφων ασφαλείας κατά ημερομηνία."
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Restore your linux receiver settings."
+"Restore your linux box settings."
 msgstr ""
 "\n"
 "Αποκατάσταση των ρυθμίσεων."
 
 #
 #
+#, fuzzy
 msgid ""
 "\n"
-"Restore your linux receiver with a new firmware."
+"Restore your linux box with a new firmware."
 msgstr ""
 "\n"
 "Αποκατάσταση του δέκτη με νέο λογισμικό"
@@ -205,6 +205,12 @@ msgid ""
 "!!(Empty)\n"
 "Please, Input to the"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "%-H:%M"
+msgstr "%H:%M"
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -361,6 +367,12 @@ msgid_plural "%s updated packages available"
 msgstr[0] ""
 msgstr[1] ""
 
+#
+# , python-format
+#, fuzzy, python-format
+msgid "%s%d min"
+msgstr "%d λεπτά"
+
 #, python-format
 msgid "%s/%s: %s"
 msgstr ""
@@ -412,16 +424,6 @@ msgstr ""
 
 msgid "/media/usb/"
 msgstr ""
-
-#
-#
-msgid "0"
-msgstr "0"
-
-#
-#
-msgid "1"
-msgstr "1"
 
 msgid "1 GB"
 msgstr ""
@@ -533,11 +535,6 @@ msgstr ""
 
 #
 #
-msgid "2"
-msgstr "2"
-
-#
-#
 #, fuzzy
 msgid "2. STEP - Choose backup location"
 msgstr "Επιλέξτε θέση του αντιγράφου ασφαλείας"
@@ -580,11 +577,6 @@ msgstr "Εμφάνιση πληροφοριών crypto στη μπάρα πλη�
 
 #
 #
-msgid "3"
-msgstr "3"
-
-#
-#
 #, fuzzy
 msgid "30"
 msgstr "0"
@@ -601,20 +593,17 @@ msgstr ""
 msgid "3D Mode"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "3D Surround"
+msgstr "Ήχος"
+
 msgid "3D setup"
 msgstr ""
 
 msgid "3X"
 msgstr ""
-
-#
-msgid "3d mode"
-msgstr "τύπος 3d"
-
-#
-#
-msgid "4"
-msgstr "4"
 
 #
 #
@@ -635,11 +624,6 @@ msgid "4X"
 msgstr ""
 
 #
-#
-msgid "5"
-msgstr "5"
-
-#
 # , python-format
 #, fuzzy
 msgid "5 min."
@@ -647,11 +631,6 @@ msgstr "%d λεπτά"
 
 msgid "512 MB"
 msgstr ""
-
-#
-#
-msgid "6"
-msgstr "6"
 
 #
 # , python-format
@@ -662,23 +641,8 @@ msgstr "%d λεπτά"
 msgid "64 MB"
 msgstr ""
 
-#
-#
-msgid "7"
-msgstr "7"
-
-#
-#
-msgid "8"
-msgstr "8"
-
 msgid "8 MB"
 msgstr ""
-
-#
-#
-msgid "9"
-msgstr "9"
 
 #
 msgid "<Current movielist location>"
@@ -726,15 +690,11 @@ msgstr ""
 "Θέλετε να διατηρήσετε τη δική σας έκδοση;"
 
 #
-msgid "A demo plugin for TPM usage."
-msgstr "Δοκιμαστικό πρόσθετο για χρήση TPM"
-
-#
 #
 #, fuzzy
 msgid ""
 "A finished power timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Μία ολοκληρωμένη εγγραφή θέτει το δέκτη σε βαθιά αναμονή\n"
 "Να εκτελεστεί τώρα;"
@@ -744,25 +704,27 @@ msgstr ""
 #, fuzzy
 msgid ""
 "A finished powertimer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Μία ολοκληρωμένη εγγραφή θέτει το δέκτη σε αναμονή\n"
 "Να εκτελεστεί τώρα;"
 
 #
 #
+#, fuzzy
 msgid ""
 "A finished record timer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Μία ολοκληρωμένη εγγραφή θέτει το δέκτη σε αναμονή\n"
 "Να εκτελεστεί τώρα;"
 
 #
 #
+#, fuzzy
 msgid ""
 "A finished record timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Μία ολοκληρωμένη εγγραφή θέτει το δέκτη σε βαθιά αναμονή\n"
 "Να εκτελεστεί τώρα;"
@@ -822,18 +784,20 @@ msgstr ""
 
 #
 #
+#, fuzzy
 msgid ""
 "A sleep timer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Ο χρονοδιακόπτης απενεργοποίησης θέτει το δέκτη σε αναμονή.\n"
 "Να εκτελεστεί τώρα;"
 
 #
 #
+#, fuzzy
 msgid ""
 "A sleep timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Ο χρονοδιακόπτης απενεργοποίησης θέτει το δέκτη σε βαθιά αναμονή.\n"
 "Να εκτελεστεί τώρα;"
@@ -871,6 +835,9 @@ msgstr "AA"
 msgid "AB"
 msgstr "AB"
 
+msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
 msgid "AFP Setup"
 msgstr ""
 
@@ -900,9 +867,6 @@ msgstr "Περί..."
 #
 msgid "Accesspoint:"
 msgstr "Σημείο πρόσβασης:"
-
-msgid "Action"
-msgstr ""
 
 msgid "Action on long powerbutton press"
 msgstr ""
@@ -958,12 +922,6 @@ msgstr "Προσθήκη"
 msgid "Add AutoTimer"
 msgstr ""
 
-#
-#
-#, fuzzy
-msgid "Add Bookmark"
-msgstr "προσθήκη σελιδοδείκτη"
-
 msgid "Add Timer"
 msgstr ""
 
@@ -986,11 +944,23 @@ msgstr "προσθήκη nameserver"
 msgid "Add a new title"
 msgstr "Προσθήκη νέου τίτλου"
 
+#
+#
+#, fuzzy
+msgid "Add a record timer"
+msgstr "Προσθήκη χρονοδιακόπτη"
+
 msgid "Add a record timer for current event"
 msgstr ""
 
 msgid "Add a zap timer for current event"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Add a zap timer for next event"
+msgstr "μετάβαση στην επόμενη εγγραφή"
 
 #
 #
@@ -1072,6 +1042,12 @@ msgstr ""
 msgid "Adding schedule..."
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "Additional Info"
+msgstr "Σάρωση πρόσθετης SR"
+
 msgid "Additional ZAP informations..."
 msgstr ""
 
@@ -1110,12 +1086,14 @@ msgstr ""
 msgid "Addon removed!"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "Addons"
+msgstr "Ορισμός από το χρήστη"
+
 msgid "Address"
 msgstr ""
-
-#
-msgid "Adjust 3D settings"
-msgstr "Μεταβολή ρυθμίσεων 3D"
 
 #
 #
@@ -1170,6 +1148,12 @@ msgstr ""
 msgid "Alias:"
 msgstr ""
 
+msgid "Alignment of events"
+msgstr ""
+
+msgid "Alignment of service names"
+msgstr ""
+
 #
 #
 msgid "All"
@@ -1187,6 +1171,12 @@ msgstr ""
 msgid "All satellites"
 msgstr ""
 
+msgid "Allocate"
+msgstr ""
+
+msgid "Allocate unused memory index"
+msgstr ""
+
 msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
@@ -1199,16 +1189,16 @@ msgstr ""
 msgid "Allows more detailed to be in the crash log"
 msgstr ""
 
-msgid "Allows the linux receiver to read the stored EPG data regularly."
+msgid "Allows the linux box to read the stored EPG data regularly."
 msgstr ""
 
-msgid "Allows the linux receiver to store the EPG data regularly."
+msgid "Allows the linux box to store the EPG data regularly."
+msgstr ""
+
+msgid "Allows you hide the extensions of known file types."
 msgstr ""
 
 msgid "Allows you setup the button to do what you choose."
-msgstr ""
-
-msgid "Allows you to choose the Picons to be displayed on the frontpanel."
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -1324,6 +1314,18 @@ msgstr "Σίγουρα να γίνει έξοδος από αυτό τον οδ�
 #
 #
 #, fuzzy
+msgid "Are you sure you want to delete all selected logs:\n"
+msgstr "Σίγουρα να γίνει έξοδος από αυτό τον οδηγό;"
+
+#
+#
+#, fuzzy
+msgid "Are you sure you want to delete this log:\n"
+msgstr "Σίγουρα να γίνει έξοδος από αυτό τον οδηγό;"
+
+#
+#
+#, fuzzy
 msgid ""
 "Are you sure you want to delete this:\n"
 " "
@@ -1362,8 +1364,11 @@ msgstr ""
 msgid "Are you sure you want to save the EPG Cache to:\n"
 msgstr ""
 
-msgid "Are you sure you want to update your linux receiver?"
-msgstr ""
+#
+#
+#, fuzzy
+msgid "Are you sure you want to send this log:\n"
+msgstr "Σίγουρα να γίνει έξοδος από αυτό τον οδηγό;"
 
 #
 #
@@ -1381,9 +1386,6 @@ msgstr ""
 #, fuzzy
 msgid "Ask User"
 msgstr "Ερώτηση χρήστη"
-
-msgid "Ask before shutdown"
-msgstr ""
 
 msgid "Ask to load new entries"
 msgstr ""
@@ -1417,10 +1419,8 @@ msgstr "ανατεθημένες υπηρεσίες/πάροχοι:"
 msgid "At End:"
 msgstr ""
 
-#
-#
-msgid "Audio"
-msgstr "Ήχος"
+msgid "Attach a file"
+msgstr ""
 
 #
 msgid "Audio PID"
@@ -1507,6 +1507,15 @@ msgstr "Αυτόματη δημιουργία κεφαλαίου κάθε ? λε
 msgid "Auto flesh"
 msgstr "Auto flesh"
 
+#
+#
+#, fuzzy
+msgid "Auto focus"
+msgstr "Auto flesh"
+
+msgid "Auto focus commencing ..."
+msgstr ""
+
 msgid "Auto language selection"
 msgstr ""
 
@@ -1580,16 +1589,6 @@ msgstr "BA"
 #
 msgid "BB"
 msgstr "BB"
-
-#
-#
-msgid "BER"
-msgstr "BER"
-
-#
-#
-msgid "BER:"
-msgstr "BER:"
 
 msgid "BZ2-package:\\n"
 msgstr ""
@@ -1827,10 +1826,14 @@ msgstr ""
 msgid "Button setup"
 msgstr ""
 
-#
-#
-msgid "C"
-msgstr "C"
+msgid "Bypass HDMI EDID Check"
+msgstr ""
+
+msgid "Bytes received:"
+msgstr ""
+
+msgid "Bytes sent:"
+msgstr ""
 
 #
 #
@@ -1899,12 +1902,19 @@ msgstr ""
 msgid "CF card mounted in:        "
 msgstr ""
 
+msgid "CHANGE BOUQUET"
+msgstr ""
+
 #
 #
 msgid "CI assignment"
 msgstr "Ορισμός CI"
 
 msgid "COMPACT FLASH: "
+msgstr ""
+
+#, python-format
+msgid "CPU: %s"
 msgstr ""
 
 #
@@ -1933,6 +1943,20 @@ msgstr "Cache Thumbnails"
 msgid "Cached:"
 msgstr ""
 
+msgid "Calculate"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Calculate all positions"
+msgstr "Τροχιακή θέση"
+
+msgid "Calculation complete"
+msgstr ""
+
+msgid "Calibrate"
+msgstr ""
+
 msgid "Can be used for different fps between external subtitles and video."
 msgstr ""
 
@@ -1950,6 +1974,12 @@ msgid "Cancel"
 msgstr "Άκυρο "
 
 msgid "Cannot delete file"
+msgstr ""
+
+msgid "Cannot determine"
+msgstr ""
+
+msgid "Cannot find any signal ..., aborting !"
 msgstr ""
 
 msgid "Cannot move to trash can"
@@ -1981,10 +2011,19 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
+msgid "Center time-labels and remove date"
+msgstr ""
+
 #
 #
 msgid "Change bouquets in quickzap"
 msgstr "Αλλαγή μπουκέτου στο γρήγορο zapping"
+
+#
+#
+#, fuzzy
+msgid "Change city"
+msgstr "Αλλαγή pin:"
 
 msgid "Change permanent clock position"
 msgstr ""
@@ -2019,9 +2058,6 @@ msgstr "Αλλαγή pin ρυθμίσεων:"
 #
 msgid "Change step size"
 msgstr "Αλλαγή μεγέθους βήματος"
-
-msgid "Changelog"
-msgstr "Καταγραφή αλλαγών"
 
 #
 #
@@ -2084,11 +2120,6 @@ msgstr "Επιλογή Καναλιού"
 
 #
 #
-msgid "Channellist menu"
-msgstr "Μενού λίστας καναλιών"
-
-#
-#
 msgid "Chap."
 msgstr "Κεφ."
 
@@ -2122,6 +2153,12 @@ msgstr ""
 #
 #
 #, fuzzy
+msgid "Checking Logs..."
+msgstr "Έλεγχος του Filesystem..."
+
+#
+#
+#, fuzzy
 msgid "Checking filesystem..."
 msgstr "Έλεγχος του Filesystem..."
 
@@ -2139,6 +2176,16 @@ msgstr ""
 
 msgid "Children/Youth"
 msgstr ""
+
+#, python-format
+msgid "Chipset: BCM%s"
+msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Chnage to bouquet"
+msgstr "Προσθήκη σε μπουκέτο"
 
 msgid "Choose Bouquet"
 msgstr ""
@@ -2158,10 +2205,10 @@ msgstr "Επιλέξτε φάκελο προορισμού"
 msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when the linux receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when the linux box is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when the linux receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when the linux box is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose time interval to which the graphics will be rounded off."
@@ -2211,6 +2258,12 @@ msgstr "Εκκαθάριση"
 
 #
 #
+#, fuzzy
+msgid "Clear"
+msgstr "Εκκαθάριση καταγραφής"
+
+#
+#
 msgid "Clear before scan"
 msgstr "Εκκαθάριση πριν τη σάρωση"
 
@@ -2245,6 +2298,15 @@ msgstr ""
 #
 msgid "Close"
 msgstr "Κλείσιμο"
+
+#
+#
+#, fuzzy
+msgid "Close bouquet list."
+msgstr "Επεξεργασία λίστας μπουκέτων"
+
+msgid "Close dialog"
+msgstr ""
 
 #
 #
@@ -2292,11 +2354,6 @@ msgstr ""
 #, fuzzy
 msgid "Command To Run"
 msgstr "Σειρά εντολών "
-
-#
-#
-msgid "Command execution..."
-msgstr "Εκτέλεση εντολής..."
 
 #
 #
@@ -2362,6 +2419,12 @@ msgstr ""
 msgid "Configuration mode"
 msgstr ""
 
+#
+#
+#, fuzzy, python-format
+msgid "Configuration mode: %s"
+msgstr "Παραμετροποίηση"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr ""
 
@@ -2393,11 +2456,6 @@ msgstr "Παραμετροποίηση διεπαφής"
 #, fuzzy
 msgid "Configure internal epg..."
 msgstr "Παραμετροποίηση διεπαφής"
-
-#
-#
-msgid "Configure nameservers"
-msgstr "Παραμετροποίηση nameservers"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr ""
@@ -2445,6 +2503,9 @@ msgid "Configure the color of the teletext subtitles."
 msgstr ""
 
 msgid "Configure the contrast level of the front panel display."
+msgstr ""
+
+msgid "Configure the duration in minutes for the screensaver."
 msgstr ""
 
 msgid "Configure the first audio language (highest priority)."
@@ -2593,6 +2654,12 @@ msgstr ""
 
 #
 #
+#, fuzzy
+msgid "Configure your NTP server."
+msgstr "Παραμετροποίηση nameservers"
+
+#
+#
 msgid "Configure your internal LAN"
 msgstr "Παραμετροποίηση δικτύου"
 
@@ -2668,8 +2735,9 @@ msgstr "Συνέχισε"
 
 #
 #
-msgid "Continue in background"
-msgstr "Συνέχεια στο παρασκήνιο"
+#, fuzzy
+msgid "Continue configuring your network"
+msgstr "Πέρας ρύθμισης του δικτύου"
 
 msgid "Continue playback"
 msgstr ""
@@ -2721,16 +2789,14 @@ msgstr ""
 msgid "Copying files"
 msgstr "Μεγάλα ονόματα αρχείων"
 
+#, python-format
+msgid "Cores: %s"
+msgstr ""
+
 msgid ""
 "Could not activate Permanent-Timeshift!\n"
 "Timeshift-Path does not exist"
 msgstr ""
-
-#
-#
-#, fuzzy
-msgid "Could not connect to linux receiver .NFI image feed server:"
-msgstr "Αδύνατη σύνδεση στο  δέκτη. Διακομιστής λογισμικού NFI:"
 
 msgid "Could not find installed channel list."
 msgstr ""
@@ -2763,6 +2829,14 @@ msgid "Could not save configfile %s!"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Country :"
+msgstr "Προσάρτηση:"
+
+msgid "Crash Logs"
+msgstr ""
+
+#
 #
 #, fuzzy
 msgid "Create"
@@ -2776,7 +2850,7 @@ msgstr "Δημιουργία DVD-ISO"
 #
 #
 #, fuzzy
-msgid "Create Directory"
+msgid "Create directory"
 msgstr "δημιουργία φακέλου"
 
 #
@@ -2864,14 +2938,6 @@ msgstr "Tρέχων αναμεταδότης"
 msgid "Current value: "
 msgstr "Τρέχουσα τιμή: "
 
-#
-msgid "Current version:"
-msgstr "Τρέχουσα έκδοση:"
-
-#
-msgid "Currently installed image"
-msgstr "Τρέχων εγκατεστημένο λογισμικό"
-
 msgid "Currentpage(Bookmark)"
 msgstr ""
 
@@ -2924,10 +2990,8 @@ msgstr "Τσέχικα"
 msgid "Czech Republic"
 msgstr ""
 
-#
-#
-msgid "D"
-msgstr "D"
+msgid "DAC"
+msgstr ""
 
 #
 #
@@ -3019,14 +3083,14 @@ msgstr "Δανικά"
 
 #
 #
-msgid "Date"
-msgstr "Ημερομηνία"
+#, fuzzy
+msgid "Data provider: "
+msgstr "προσθήκη παρόχου"
 
 #
 #
-#, fuzzy
-msgid "Date/time input"
-msgstr "Εισαγωγή ημερομηνίας/ώρας"
+msgid "Date"
+msgstr "Ημερομηνία"
 
 msgid "Deactivate permanent clock"
 msgstr ""
@@ -3035,6 +3099,9 @@ msgstr ""
 #, fuzzy
 msgid "Deactive"
 msgstr "σχετικό"
+
+msgid "Debug Logs"
+msgstr ""
 
 msgid "December"
 msgstr ""
@@ -3061,6 +3128,11 @@ msgstr "Προεπιλεγμένες"
 #
 msgid "Default movie location"
 msgstr "Αρχική"
+
+#
+#, fuzzy
+msgid "Default recording type"
+msgstr "Τερματισμός εγγραφής"
 
 #
 #
@@ -3335,13 +3407,11 @@ msgstr "Αποσύνδεση"
 
 #
 #
-msgid "Dish"
-msgstr "Κάτοπτρο"
-
-#
-#
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Χώρος δίσκου που διατίθεται για εγγραφές (σε GB)"
+
+msgid "Display"
+msgstr ""
 
 #
 #
@@ -3368,9 +3438,6 @@ msgid "Display message before playing next movie"
 msgstr ""
 
 msgid "Display search results by:"
-msgstr ""
-
-msgid "Display settings"
 msgstr ""
 
 msgid "Display the EIT now/next eventdata in infobar."
@@ -3481,6 +3548,12 @@ msgstr ""
 
 #
 # , python-format
+#, fuzzy, python-format
+msgid "Do you really want to remove the timer for %s?"
+msgstr "Θέλετε πραγματικά να διαγράψετε το %s;"
+
+#
+# , python-format
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Θέλετε να αφαιρέσετε το σελιδοδείκτη του %s;"
@@ -3493,15 +3566,30 @@ msgid ""
 " "
 msgstr "Θέλετε να αφαιρέσετε το πακέτο:\n"
 
+# , python-format
+#, fuzzy
+msgid "Do you want to add any additional information ?"
+msgstr "Είστε σίγουρος για λήψη λογισμικού;"
+
 msgid ""
 "Do you want to also install samba client ?\n"
 "This allows you to mount your windows shares on this device."
+msgstr ""
+
+msgid ""
+"Do you want to attach a text file to explain the log ?\n"
+"(choose 'No' to type message using virtual keyboard.)"
 msgstr ""
 
 #
 #
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Θέλετε να γίνει εγγραφή αυτής της συλλογής σε DVD;"
+
+msgid ""
+"Do you want to delete all selected files:\n"
+"(choose 'No' to only delete the currently selected file.)"
+msgstr ""
 
 #
 # , python-format
@@ -3524,11 +3612,6 @@ msgstr "Θέλετε να κάνετε σάρωση για υπηρεσίες;"
 #
 msgid "Do you want to do another manual service scan?"
 msgstr "Θέλετε να πραγματοποιηθεί μία ακόμα χειροκίνητη σάρωση;"
-
-# , python-format
-#, fuzzy, python-format
-msgid "Do you want to download the image to %s ?"
-msgstr "Είστε σίγουρος για λήψη λογισμικού;"
 
 #
 #
@@ -3557,11 +3640,6 @@ msgstr "Θέλετε να παίξει το DVD στη συσκευή;"
 msgid "Do you want to preview this DVD before burning?"
 msgstr "Θέλετε να γίνει προεπισκόπιση αυτού του DVD πριν την εγγραφή;"
 
-#
-#
-msgid "Do you want to reboot your linux receiver?"
-msgstr "Θέλετε να γίνει επανεκκίνηση του δέκτη;"
-
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
@@ -3586,6 +3664,11 @@ msgstr "Θέλετε να συνεχίσετε την αναπαραγωγή;"
 msgid "Do you want to see more entries?"
 msgstr "Θέλετε να επαναφέρετε τις ρυθμίσεις σας;"
 
+msgid ""
+"Do you want to send all selected files:\n"
+"(choose 'No' to only send the currently selected file.)"
+msgstr ""
+
 #
 #
 #, fuzzy
@@ -3600,7 +3683,8 @@ msgstr "Θέλετε να γίνει αναβάθμιση του δέκτη;"
 
 #
 #
-msgid "Do you want to update your linux receiver?"
+#, fuzzy
+msgid "Do you want to update your linux box?"
 msgstr "Θέλετε να γίνει αναβάθμιση του δέκτη;"
 
 #
@@ -3640,17 +3724,6 @@ msgstr ""
 #
 msgid "Download"
 msgstr "Λήψη"
-
-# , python-format
-#, fuzzy, python-format
-msgid "Download %s from server"
-msgstr "Λήψη %s από το διακομιστή"
-
-#
-#
-#, fuzzy
-msgid "Download .NFI-files for USB-flasher"
-msgstr "Λήψη αρχείων .NFI για USB-Flasher"
 
 #
 #, fuzzy
@@ -3696,11 +3769,6 @@ msgstr ""
 #, fuzzy
 msgid "Download subtitle:"
 msgstr "Λήψη"
-
-#
-#
-msgid "Downloadable plugins"
-msgstr "Πρόσθετα για λήψη"
 
 #
 #
@@ -3750,6 +3818,9 @@ msgstr "Δυναμική αντίθεση"
 msgid "E"
 msgstr "E"
 
+msgid "E2 Light Multiboot"
+msgstr ""
+
 #
 #
 #, fuzzy
@@ -3778,9 +3849,6 @@ msgid "EGAMI Backup complete! Please wait..."
 msgstr ""
 
 msgid "EGAMI Devices Manager has just unmounted all your devices."
-msgstr ""
-
-msgid "EGAMI File Manager"
 msgstr ""
 
 msgid "EGAMI Full Backup Panel"
@@ -3829,12 +3897,6 @@ msgstr "Επιλογή γλώσσας EPG 2"
 msgid "EPG location"
 msgstr ""
 
-#
-#
-#, fuzzy
-msgid "EPG selection"
-msgstr "Επιλογή EPG"
-
 msgid "EPG settings"
 msgstr ""
 
@@ -3848,6 +3910,12 @@ msgstr "ΣΦΑΛΜΑ - Αποτυχία στη σάρωση  (%s)!"
 #
 msgid "East"
 msgstr "Ανατολή"
+
+#
+#
+#, fuzzy
+msgid "East limit set"
+msgstr "Ορισμός ορίων"
 
 msgid "Ecm:"
 msgstr ""
@@ -3887,12 +3955,14 @@ msgstr "Επεξεργασία ρυθμίσεων"
 
 #
 #
-msgid "Edit the Nameserver configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Edit the Nameserver configuration of your linux box.\n"
 msgstr "Επεξεργασία ρυθμίσεων Nameserver του δέκτη.\n"
 
 #
 #
-msgid "Edit the network configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Edit the network configuration of your linux box.\n"
 msgstr "Επεξεργασία ρυθμίσεων δικτύου του δέκτη.\n"
 
 #
@@ -4029,11 +4099,6 @@ msgstr "Ενεργοποίηση teletext caching"
 
 #
 #
-msgid "Enable timer"
-msgstr "Ενεργοποίηση χρονοδιακόπτη"
-
-#
-#
 msgid "Enabled"
 msgstr "Ενεργοποιήθηκε"
 
@@ -4082,9 +4147,6 @@ msgstr ""
 msgid "Enigma2 skin selector"
 msgstr ""
 
-msgid "Enimga2 Changes"
-msgstr ""
-
 #
 #
 #, fuzzy
@@ -4100,6 +4162,12 @@ msgstr "Είσοδος στο κεντρικό μενού..."
 #
 msgid "Enter pin code"
 msgstr "Εισαγωγή κωδικού pin"
+
+#
+#
+#, fuzzy
+msgid "Enter the city name:"
+msgstr "Βάλτε το pin υπηρεσίας"
 
 #
 #
@@ -4148,6 +4216,14 @@ msgid "Error reading webpage!"
 msgstr ""
 
 #
+#
+#, fuzzy, python-format
+msgid ""
+"Error:\n"
+"%s"
+msgstr "Σφάλμα"
+
+#
 # , python-format
 #, python-format
 msgid ""
@@ -4175,17 +4251,6 @@ msgstr "Μέγεθος γραμματοσειράς προγράμματος"
 
 msgid "Event font size (relative to skin size)"
 msgstr ""
-
-#
-#
-#, fuzzy
-msgid "Event view"
-msgstr "Προγράμματα"
-
-#
-#, fuzzy
-msgid "Event view menu"
-msgstr "Μενού προγραμμάτων"
 
 #
 msgid "Everywhere"
@@ -4336,6 +4401,12 @@ msgstr ""
 msgid "External (CF)"
 msgstr ""
 
+msgid "Extras"
+msgstr ""
+
+msgid "FAILED"
+msgstr ""
+
 #
 #
 #, fuzzy
@@ -4373,6 +4444,9 @@ msgid "Failed to download an Addon..."
 msgstr ""
 
 msgid "Failed to remove old files."
+msgstr ""
+
+msgid "Failed to write /tmp/positionersetup.log: "
 msgstr ""
 
 #
@@ -4438,6 +4512,12 @@ msgstr ""
 msgid "File"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "File Manager"
+msgstr "Ανεύρεση υπηρεσιών"
+
 msgid "File Manager Install..."
 msgstr ""
 
@@ -4462,6 +4542,22 @@ msgstr ""
 
 msgid "Film & Animation"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Final position at"
+msgstr "Τροχιακή θέση"
+
+#
+#, fuzzy
+msgid "Final position at index"
+msgstr "Τροχιακή θέση"
+
+#
+#
+#, fuzzy
+msgid "Fine movement"
+msgstr "Κίνηση positioner"
 
 #
 #
@@ -4492,18 +4588,8 @@ msgstr "Φιλλανδικά"
 msgid "Fixed"
 msgstr "σταθερό"
 
-#
-#
-msgid "Flash"
-msgstr "Flash"
-
 msgid "Flashing"
 msgstr ""
-
-#
-#
-msgid "Flashing failed"
-msgstr "Η εγκατάσταση απέτυχε"
 
 msgid "Folder:"
 msgstr ""
@@ -4591,6 +4677,9 @@ msgstr "Παρ"
 msgid "Friday"
 msgstr "Παρασκευή"
 
+msgid "From"
+msgstr ""
+
 msgid "From :"
 msgstr ""
 
@@ -4655,6 +4744,12 @@ msgstr ""
 msgid "Gateway"
 msgstr "Gateway"
 
+#
+#
+#, fuzzy
+msgid "Gateway:"
+msgstr "Gateway"
+
 msgid "General"
 msgstr ""
 
@@ -4683,12 +4778,6 @@ msgstr "Γερμανικά"
 #, fuzzy
 msgid "Get Subtitle"
 msgstr "Υπότιτλοι"
-
-msgid "Get latest experimental image"
-msgstr "Λήψη τελευταίου λογισμικού experimental"
-
-msgid "Get latest release image"
-msgstr "Λήψη τελευταίου σταθερού λογισμικού"
 
 msgid "Getting Event Info failed!"
 msgstr ""
@@ -4771,11 +4860,29 @@ msgstr "Πήγαινε στην θέση 0"
 msgid "Goto :"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "Goto X"
+msgstr "Πήγαινε στην θέση 0"
+
+#
+#
+#, fuzzy
+msgid "Goto index position"
+msgstr "Πήγαινε στην θέση"
+
 msgid "Goto next bouquet"
 msgstr ""
 
 msgid "Goto next channel"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Goto next day of events"
+msgstr "μετάβαση στην επόμενη εγγραφή"
 
 msgid "Goto next event"
 msgstr ""
@@ -4794,6 +4901,12 @@ msgstr ""
 msgid "Goto previous channel"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "Goto previous day of events"
+msgstr "μετάβαση στην προηγούμενη εγγραφή"
+
 msgid "Goto previous event"
 msgstr ""
 
@@ -4803,11 +4916,23 @@ msgstr ""
 msgid "Goto specific data/time"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "GotoX calibration"
+msgstr "Πήγαινε στην θέση"
+
 msgid "GraphMultiEpg Settings"
 msgstr ""
 
 msgid "Graphical EPG"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Graphical InfobarEPG settings"
+msgstr "Γραφικό Multi EPG"
 
 #
 #
@@ -4853,6 +4978,9 @@ msgid "HD videos"
 msgstr ""
 
 msgid "HDD mounted in:               "
+msgstr ""
+
+msgid "HDMI"
 msgstr ""
 
 msgid "HDMI CEC"
@@ -4923,6 +5051,9 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
+msgid "Helps setting up your dish"
+msgstr ""
+
 msgid ""
 "Here is the list of installed images in Your STB\n"
 "\n"
@@ -4956,6 +5087,11 @@ msgid "Hide error messages from the Common Interface module."
 msgstr ""
 
 #
+#, fuzzy
+msgid "Hide known extensions"
+msgstr "εμφάνιση επεκτάσεων..."
+
+#
 #
 #, fuzzy
 msgid "Hide player"
@@ -4974,6 +5110,9 @@ msgstr "Πληροφορίες ιεραρχίας"
 #, fuzzy
 msgid "Hierarchy information"
 msgstr "Πληροφορίες ιεραρχίας"
+
+msgid "High :"
+msgstr ""
 
 #
 #
@@ -5051,6 +5190,9 @@ msgstr ""
 msgid "Hue"
 msgstr "Hue"
 
+msgid "Humidity :"
+msgstr ""
+
 #
 msgid "Hungarian"
 msgstr "Ουγγρικά"
@@ -5060,6 +5202,12 @@ msgstr ""
 
 msgid "IMDb Search"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "IP Address"
+msgstr "Διεύθυνση IP"
 
 #
 #
@@ -5225,10 +5373,8 @@ msgstr ""
 msgid "Increased voltage"
 msgstr "Αυξημένη τάση"
 
-#
-#
-msgid "Index"
-msgstr "Ευρετήριο"
+msgid "Index allocated:"
+msgstr ""
 
 msgid "India"
 msgstr ""
@@ -5237,12 +5383,6 @@ msgstr ""
 #
 msgid "Info"
 msgstr "Πληροφορίες"
-
-#
-#
-#, fuzzy
-msgid "Info bar"
-msgstr "Μπάρα πληροφοριών"
 
 msgid "Info button (long)"
 msgstr ""
@@ -5290,8 +5430,23 @@ msgstr "Init"
 msgid "Initial fast forward speed"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "Initial lock ratio"
+msgstr "Άκυρη τοποθεσία "
+
 msgid "Initial rewind speed"
 msgstr ""
+
+msgid "Initial signal quality"
+msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Initial signal quality:"
+msgstr "Ποιότητα σύνδεσης:"
 
 #
 #
@@ -5424,12 +5579,6 @@ msgstr ""
 #, fuzzy
 msgid "Installing an addon... Please wait..."
 msgstr "Λήψη πληροφοριών προσθέτου. Παρακαλώ περιμένετε..."
-
-#
-#
-#, fuzzy
-msgid "Installing software..."
-msgstr "Εγκατάσταση λογισμικού..."
 
 #
 #
@@ -5568,6 +5717,9 @@ msgstr "Αντικείμενα ανά σελίδα"
 msgid "Items per page for list screen"
 msgstr "Αντικείμενα ανά σελίδα"
 
+msgid "JUMP 24 HOURS"
+msgstr ""
+
 #
 #
 #, fuzzy
@@ -5580,12 +5732,6 @@ msgstr ""
 #
 #
 msgid "Job View"
-msgstr "Εμφάνιση εργασιών"
-
-#
-#
-#, fuzzy
-msgid "Job overview"
 msgstr "Εμφάνιση εργασιών"
 
 msgid "July"
@@ -5777,6 +5923,12 @@ msgstr ""
 msgid "Latitude"
 msgstr "Γεωγρ. πλάτος"
 
+#
+#
+#, fuzzy
+msgid "Latitude :"
+msgstr "Γεωγρ. πλάτος"
+
 msgid "Latvian"
 msgstr ""
 
@@ -5808,6 +5960,11 @@ msgstr ""
 msgid "Letterbox"
 msgstr "Letterbox"
 
+#
+#, fuzzy
+msgid "Letterbox zoom"
+msgstr "Letterbox"
+
 msgid "Light Grey"
 msgstr ""
 
@@ -5829,6 +5986,17 @@ msgstr ""
 #
 msgid "Limit west"
 msgstr "Δυτικό όριο"
+
+#
+#, fuzzy
+msgid "Limits cancelled"
+msgstr "Ανάγνωση πίνακα κατατμήσεων"
+
+#
+#
+#, fuzzy
+msgid "Limits enabled"
+msgstr "Όρια ενεργοποιήμενα"
 
 #
 #
@@ -5863,10 +6031,6 @@ msgstr "Τίτλοι συνδεδεμένοι με μενού DVD"
 
 msgid "List EPG functions..."
 msgstr ""
-
-#
-msgid "List available networks"
-msgstr "Λίστα διαθέσιμων δικτύων"
 
 msgid "List mode"
 msgstr ""
@@ -5935,8 +6099,9 @@ msgstr "Τοποθεσία"
 
 #
 #
-msgid "Lock:"
-msgstr "Κλείδωμα:"
+#, fuzzy
+msgid "Lock ratio"
+msgstr "Τοποθεσία"
 
 msgid "Log"
 msgstr ""
@@ -5950,6 +6115,9 @@ msgstr "Μεγάλα ονόματα αρχείων"
 #
 msgid "Log results to harddisk"
 msgstr "Καταγραφή αποτελεσμάτων στο δίσκο"
+
+msgid "LogManager"
+msgstr ""
 
 msgid "Logs location"
 msgstr ""
@@ -5981,6 +6149,15 @@ msgstr "Συνεχές πάτημα πλήκτρου"
 msgid "Longitude"
 msgstr "Γεωγρ. μήκος"
 
+#
+#
+#, fuzzy
+msgid "Longitude :"
+msgstr "Γεωγρ. μήκος"
+
+msgid "Low :"
+msgstr ""
+
 msgid "Luxembourgish"
 msgstr ""
 
@@ -5989,11 +6166,6 @@ msgstr ""
 
 msgid "MB"
 msgstr ""
-
-#
-#
-msgid "MORE"
-msgstr "ΠΕΡΙΣΣΟΤΕΡΑ"
 
 #
 #
@@ -6093,7 +6265,8 @@ msgstr ""
 
 #
 #
-msgid "Manage your linux receiver's software"
+#, fuzzy
+msgid "Manage your linux box's software"
 msgstr "Διαχείριση λογισμικού δέκτη"
 
 msgid "Manual Install EGAMI and IPK packages"
@@ -6167,24 +6340,19 @@ msgstr ""
 msgid "May"
 msgstr "ημέρα"
 
+#
+#
+#, fuzzy
+msgid "Media Player"
+msgstr "Αναπαραγωγή πολυμέσων"
+
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
 
 #
 #
-msgid "Media player"
-msgstr "Αναπαραγωγή πολυμέσων"
-
-#
-#
 #, fuzzy
 msgid "Media scanner"
-msgstr "Αναπαραγωγή πολυμέσων"
-
-#
-#
-#, fuzzy
-msgid "MediaPlayer"
 msgstr "Αναπαραγωγή πολυμέσων"
 
 #
@@ -6205,6 +6373,11 @@ msgid "Memory Information"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Memory index"
+msgstr "Μνήμη"
+
+#
 #
 msgid "Menu"
 msgstr "Μενού"
@@ -6214,16 +6387,6 @@ msgstr ""
 
 msgid "Merging Timeshift files"
 msgstr ""
-
-#
-#
-msgid "Message"
-msgstr "Μήνυμα"
-
-#
-#
-msgid "Message..."
-msgstr "Μήνυμα..."
 
 msgid "Mexico"
 msgstr ""
@@ -6399,6 +6562,12 @@ msgstr ""
 msgid "Move to other directory"
 msgstr "Μετακινηση σε άλλο φάκελο"
 
+#
+#
+#, fuzzy
+msgid "Move to position X"
+msgstr "Πήγαινε στην θέση"
+
 msgid "Move up a page"
 msgstr ""
 
@@ -6406,6 +6575,24 @@ msgstr ""
 #
 msgid "Move west"
 msgstr "Μετακίνηση δυτικά"
+
+#
+#
+#, fuzzy
+msgid "Moved to position 0"
+msgstr "Πήγαινε στην θέση"
+
+#
+#
+#, fuzzy
+msgid "Moved to position at index"
+msgstr "Πήγαινε στην θέση"
+
+#
+#
+#, fuzzy
+msgid "Movement"
+msgstr "Μετακίνηση ανατολικά"
 
 msgid "Movie List"
 msgstr ""
@@ -6429,13 +6616,32 @@ msgstr ""
 
 #
 #
-msgid "Movielist menu"
-msgstr "Μένου λίστας ταινιών"
+#, fuzzy
+msgid "Moving"
+msgstr "Διαγραφή"
+
+#
+#
+#, fuzzy
+msgid "Moving east ..."
+msgstr "Αναζήτηση αρχείων"
 
 #
 #, fuzzy
 msgid "Moving files"
 msgstr "Μεγάλα ονόματα αρχείων"
+
+#
+#
+#, fuzzy
+msgid "Moving to position"
+msgstr "Πήγαινε στην θέση"
+
+#
+#
+#, fuzzy
+msgid "Moving west ..."
+msgstr "Αναζήτηση αρχείων"
 
 #
 #
@@ -6472,11 +6678,6 @@ msgstr ""
 msgid "Music/Ballet/Dance"
 msgstr ""
 
-#
-#
-msgid "Mute"
-msgstr "Σίγαση"
-
 msgid "My TubePlayer"
 msgstr ""
 
@@ -6512,21 +6713,6 @@ msgstr ""
 msgid "N/A"
 msgstr "N/A"
 
-#
-#
-msgid "NEXT"
-msgstr "ΕΠΟΜΕΝΟ"
-
-#
-#
-#, fuzzy
-msgid "NFI image flashing"
-msgstr "Εγκατάσταση λογισμικού NFI"
-
-#
-msgid "NFI image flashing completed. Press Yellow to Reboot!"
-msgstr "Η εγκατάσταση λογισμικού NFI τελείωσε. Πατήστε Κίτρινο για επανεκκίνηση!"
-
 msgid "NFS Server Panel"
 msgstr ""
 
@@ -6545,13 +6731,14 @@ msgstr "NIM"
 msgid "NIT Info"
 msgstr "Πληροφορίες"
 
-#
-#
-msgid "NOW"
-msgstr "ΤΩΡΑ"
-
 msgid "NTP"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "NTP server"
+msgstr "Nameserver"
 
 #
 #
@@ -6594,12 +6781,6 @@ msgstr "Nameserver %d"
 msgid "Nameserver settings"
 msgstr "Παραμετροποίηση Nameserver "
 
-#
-#
-#, fuzzy
-msgid "Nameserver setup"
-msgstr "Ρύθμιση Nameserver"
-
 msgid "Namespace"
 msgstr "Namespace"
 
@@ -6623,12 +6804,6 @@ msgstr "ID δικτύου"
 msgid "Network Information"
 msgstr ""
 
-#
-#
-#, fuzzy
-msgid "Network Mounts"
-msgstr "Έλεγχος δικτύου"
-
 msgid "Network Servers:"
 msgstr ""
 
@@ -6649,8 +6824,8 @@ msgstr "Οδηγός δικτύωσης"
 #
 #
 #, fuzzy
-msgid "Network configuration..."
-msgstr "Διαμόρφωση δικτύου..."
+msgid "Network mounts"
+msgstr "Έλεγχος δικτύου"
 
 #
 #, fuzzy
@@ -6664,6 +6839,12 @@ msgstr "Ανεύρεση Δικτύου"
 
 #
 #
+#, fuzzy
+msgid "Network settings/info"
+msgstr "Ενεργοποίηση ρυθμίσεων δικτύου"
+
+#
+#
 msgid "Network setup"
 msgstr "Ρύθμιση δικτύου"
 
@@ -6671,11 +6852,6 @@ msgstr "Ρύθμιση δικτύου"
 #
 msgid "Network test"
 msgstr "Έλεγχος δικτύου"
-
-#
-#
-msgid "Network test..."
-msgstr "Έλεγχος δικτύου..."
 
 #
 msgid "Network test: "
@@ -6727,11 +6903,6 @@ msgstr "Νέα έκδοση:"
 
 msgid "New timers location"
 msgstr ""
-
-#
-#
-msgid "New version:"
-msgstr "Νέα έκδοση:"
 
 msgid "NewCamd DES Key:"
 msgstr ""
@@ -6808,11 +6979,6 @@ msgstr ""
 msgid "No description available."
 msgstr "Δεν υπάρχει περιγραφή."
 
-#
-#
-msgid "No details for this image file"
-msgstr "Δεν υπάρχουν λεπτομέρειες για αυτό το αρχείο"
-
 msgid "No detected HbbTV applications."
 msgstr ""
 
@@ -6832,6 +6998,12 @@ msgstr ""
 #
 msgid "No fast winding possible yet.. but you can use the number buttons to skip forward/backward!"
 msgstr "Δεν είναι δυνατή η γρήγορη μετάβαση... Χρησιμοποιήστε τα αριθμητικά πλήκτρα για μετακίνηση εμπρός/πίσω!"
+
+#
+#
+#, fuzzy
+msgid "No free index available"
+msgstr "Δεν υπάρχει περιγραφή."
 
 #
 #
@@ -6867,6 +7039,12 @@ msgstr "Δεν υπάρχει διαθέσιμη σύνδεση δικτύου."
 #
 #
 msgid "No networks found"
+msgstr "Δεν βρέθηκαν δίκτυα"
+
+#
+#
+#, fuzzy
+msgid "No new plugins found"
 msgstr "Δεν βρέθηκαν δίκτυα"
 
 msgid "No of items switch (increase or reduced)"
@@ -6944,6 +7122,12 @@ msgid ""
 msgstr ""
 "Δεν ενεργοποιήθηκε tuner!\n"
 "Παραμετροποιήστε το tuner προτού κάνετε ανεύρεση υπηρεσιών."
+
+#
+#
+#, fuzzy
+msgid "No updates available"
+msgstr "Δεν υπάρχουν διαθέσιμες ενημερώσεις."
 
 msgid "No updates available. Please try again later."
 msgstr ""
@@ -7031,7 +7215,8 @@ msgstr "Όχι. Μην κάνεις τίποτα."
 
 #
 #
-msgid "No, just start my linux receiver"
+#, fuzzy
+msgid "No, just start my linux box"
 msgstr "Όχι, απλώς εκκίνηση του δέκτη"
 
 #
@@ -7119,10 +7304,6 @@ msgstr ""
 "Παρακαλώ παραμετροποιήστε το tuner πρώτα."
 
 #
-msgid "Nothing to upgrade"
-msgstr "Τίποτα για αναβάθμιση"
-
-#
 #
 #, fuzzy
 msgid "November"
@@ -7134,12 +7315,6 @@ msgstr ""
 
 #
 #
-#, fuzzy
-msgid "Now playing"
-msgstr "Τώρα παίζει"
-
-#
-#
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "Χρησιμοποιείστε τις ρυθμίσεις αντίθεσης για να μεγιστοποιήσετε τη φωτεινότητα του φόντου, αλλά βεβαιωθείτε ότι μπορείτε να διακρίνετε τη διαφορά ανάμεσα στις δύο φωτεινότερες σκιές. Εάν το κάνατε, πιέστε ΟΚ."
 
@@ -7147,9 +7322,6 @@ msgid "Number"
 msgstr ""
 
 msgid "Number of rows"
-msgstr ""
-
-msgid "OE Changes"
 msgstr ""
 
 #
@@ -7227,6 +7399,9 @@ msgid "One line"
 msgstr ""
 
 msgid "OnlineVersionCheck"
+msgstr ""
+
+msgid "Only active when in standby"
 msgstr ""
 
 #
@@ -7319,6 +7494,9 @@ msgstr "Να αντικατασταθούν τα αρχεία ρυθμίσεων
 msgid "Overwrite configuration files?"
 msgstr ""
 
+msgid "PAGE UP/DOWN"
+msgstr ""
+
 #
 #
 msgid "PAL"
@@ -7338,14 +7516,11 @@ msgstr "PCR PID"
 msgid "PIDs"
 msgstr "PIDs"
 
-#
-#
-#, fuzzy
-msgid "PIN code needed"
-msgstr "Χρειάζεται το Pin code"
-
 msgid "PMT PID"
 msgstr "PMT PID"
+
+msgid "PRIMETIME"
+msgstr ""
 
 #, python-format
 msgid "PTS Plugin Error: %s"
@@ -7370,10 +7545,6 @@ msgstr "Ενημέρωση λίστας πακέτων"
 #
 msgid "Package list update"
 msgstr "Ενημέρωση λίστας πακέτων"
-
-#
-msgid "Packages"
-msgstr "Πακέτα"
 
 #
 #
@@ -7426,12 +7597,6 @@ msgstr "Γονικός έλεγχος"
 
 msgid "Parental control editor"
 msgstr ""
-
-#
-#
-#, fuzzy
-msgid "Parental control services editor"
-msgstr "Επεξεργασία υπηρεσιών γονικού έλεγχου"
 
 #
 #
@@ -7492,12 +7657,6 @@ msgstr "Δεξιόστροφη"
 msgid "Perform a setting backup before updating."
 msgstr ""
 
-msgid "Perform a setting backup,"
-msgstr ""
-
-msgid "Perform a setting backup, making a backup before updating is strongly advised."
-msgstr ""
-
 msgid "Perform an online update check in the background"
 msgstr ""
 
@@ -7553,12 +7712,6 @@ msgstr "Τηλεφωνικός αριθμός"
 msgid "PiP"
 msgstr ""
 
-#
-#
-#, fuzzy
-msgid "PiP setup"
-msgstr "Εγκατάσταση PiP"
-
 msgid "Picon"
 msgstr ""
 
@@ -7570,6 +7723,12 @@ msgstr ""
 
 msgid "Picon width"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Picture Player"
+msgstr "Αναπαραγωγή εικόνων"
 
 #
 #
@@ -7639,6 +7798,12 @@ msgstr "Αναπαραγωγή Audio-CD..."
 #
 #
 #, fuzzy
+msgid "Play back media files"
+msgstr "Επιλέξτε αρχεία αντιγράφου ασφαλείας"
+
+#
+#
+#, fuzzy
 msgid "Play entry"
 msgstr "αναπαραγωγή"
 
@@ -7692,11 +7857,6 @@ msgstr "Παρακαλώ προσθέστε τίτλους στη συλλογή
 msgid "Please change recording endtime"
 msgstr "Παρακαλώ αλλάξτε την ώρα τερματισμού"
 
-#
-#
-msgid "Please check your network settings!"
-msgstr "Παρακαλώ ελέγξτε τις ρυθμίσεις δικτύου!"
-
 msgid "Please choose CCcam-Reader"
 msgstr ""
 
@@ -7723,17 +7883,14 @@ msgstr ""
 #
 #
 #, fuzzy
-msgid "Please choose."
+msgid "Please choose what you want to do next."
 msgstr "Παρακαλώ επιλέξτε μία επέκταση..."
 
 #
 #
-msgid ""
-"Please configure or verify your Nameservers by filling out the required values.\n"
-"When you are ready press OK to continue."
-msgstr ""
-"Παρακαλώ ρυθμίστε ή επιβεβαιώστε τους Nameservers συμπλρώνοντας τα απαιτούμενα πεδία.\n"
-"Όταν είστε έτοιμος, πιέστε ΟΚ για συνέχεια."
+#, fuzzy
+msgid "Please choose."
+msgstr "Παρακαλώ επιλέξτε μία επέκταση..."
 
 #
 #
@@ -7744,7 +7901,7 @@ msgstr ""
 "Παρακαλώ ρυθμίστε τη σύνδεση διαδικτύου συμπληρώνοντας τα απαιτούμενα πεδία.\n"
 "Όταν είστε έτοιμος, πιέστε ΟΚ για συνέχεια."
 
-msgid "Please connect your receiver to the internet"
+msgid "Please connect your linux box to the internet"
 msgstr ""
 
 #
@@ -7838,9 +7995,6 @@ msgstr "Επέλεξε μια υπό-υπηρεσία για εγγραφή..."
 #
 msgid "Please select a subservice..."
 msgstr "Επιλέξτε μια υπό-υπηρεσία"
-
-msgid "Please select an NFI file and press green key to flash!"
-msgstr "Παρακαλώ επιλέξτε αρχείο NFI και πιέστε το πράσινο κουμπί για εγκατάσταση!"
 
 #
 #
@@ -7971,6 +8125,12 @@ msgstr "Παρακαλώ περιμένετε. Προετοιμασία διεπ
 
 #
 #
+#, fuzzy
+msgid "Please wait while we test your network connection..."
+msgstr "Παρακαλώ περιμένετε. Έλεγχος δικτύου..."
+
+#
+#
 msgid "Please wait while we test your network..."
 msgstr "Παρακαλώ περιμένετε. Έλεγχος δικτύου..."
 
@@ -8040,11 +8200,6 @@ msgstr ""
 msgid "Plugin Browser"
 msgstr ""
 
-#
-#
-msgid "Plugin browser"
-msgstr "Διαφυλλιστής προσθέτων"
-
 msgid "Plugin details"
 msgstr ""
 
@@ -8065,6 +8220,12 @@ msgstr "Πρόσθετα"
 
 msgid "Poland"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Polarisation"
+msgstr "Πόλωση"
 
 #
 #
@@ -8120,31 +8281,19 @@ msgstr ""
 
 #
 #
+#, fuzzy
+msgid "Position stored at index"
+msgstr "Αποθήκευση positioner"
+
+#
+#
 msgid "Positioner"
 msgstr "Positioner"
-
-msgid "Positioner Setup"
-msgstr ""
-
-#
-#
-msgid "Positioner fine movement"
-msgstr "Ελάχιστη κίνηση positioner"
-
-#
-#
-msgid "Positioner movement"
-msgstr "Κίνηση positioner"
 
 #
 #
 msgid "Positioner setup"
 msgstr "Ρύθμιση positioner"
-
-#
-#
-msgid "Positioner storage"
-msgstr "Αποθήκευση positioner"
 
 #
 #
@@ -8218,9 +8367,6 @@ msgstr "Προτιμώμενο tuner"
 msgid "Preferred tuner"
 msgstr "Προτιμώμενο tuner"
 
-msgid "Prepare another USB stick for image flashing"
-msgstr "Προετοιμάστε άλλο usb stick για εγκατάσταση λογισμικού."
-
 #
 #
 msgid "Preparing... Please wait"
@@ -8291,8 +8437,17 @@ msgstr "Πιέστε ΟΚ για εναλλαγή της επιλογής."
 
 #
 #
+#, fuzzy
+msgid "Press ok to confirm"
+msgstr "Πιέστε OK για σάρωση"
+
+#
+#
 msgid "Press yellow to set this interface as default interface."
 msgstr "Πιέστε το ΚΙΤΡΙΝΟ για να τεθεί ως προεπιλεγμένη διεπαφή."
+
+msgid "Pressure :"
+msgstr ""
 
 #
 #
@@ -8419,7 +8574,8 @@ msgstr "Πολωνικά"
 msgid "Put TV in standby"
 msgstr "Θέστε την TV σε αναμονή"
 
-msgid "Put your linux receiver in standby"
+#, fuzzy
+msgid "Put your linux box in standby"
 msgstr "Θέστε το δέκτη σε αναμονή"
 
 #
@@ -8456,11 +8612,6 @@ msgstr "Έξοδος RF"
 #
 msgid "RGB"
 msgstr "RGB"
-
-#
-#
-msgid "Radio"
-msgstr "Ραδιόφωνο"
 
 #
 #
@@ -8542,10 +8693,13 @@ msgstr "Επανεκκίνηση τώρα;"
 msgid "Really shutdown now?"
 msgstr "Τερματισμός τώρα;"
 
+msgid "Really upgrade the front panel and reboot now?"
+msgstr ""
+
 msgid "Really upgrade the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your linux receiver and reboot now?"
+msgid "Really upgrade your linux box and reboot now?"
 msgstr ""
 
 #
@@ -8553,21 +8707,30 @@ msgstr ""
 msgid "Reboot"
 msgstr "Επανεκκίνηση"
 
-msgid "Rec"
-msgstr "Εγγρ."
-
 msgid "Recently featured"
 msgstr ""
 
 #
 #
-#, fuzzy
-msgid "Reception settings"
-msgstr "Ρυθμίσεις λήψης"
+msgid "Record"
+msgstr "Εγγραφή"
 
 #
 #
-msgid "Record"
+#, fuzzy
+msgid "Record next"
+msgstr "Εγγραφή"
+
+#
+#
+#, fuzzy
+msgid "Record now"
+msgstr "Εγγραφή"
+
+#
+#
+#, fuzzy
+msgid "Record once"
 msgstr "Εγγραφή"
 
 msgid "Record started! Stopping timeshift now ..."
@@ -8644,6 +8807,9 @@ msgstr "Επιλογή συχνότητας ανανέωσης."
 #
 msgid "Regard deep standby as standby"
 msgstr "Να θεωρείται ο Τερματισμός ως Αναμονή"
+
+msgid "Region :"
+msgstr ""
 
 msgid "Related video entries."
 msgstr ""
@@ -8936,11 +9102,6 @@ msgstr "Αποκατάσταση αντιγράφων ασφαλείας"
 
 #
 #
-msgid "Restore is running..."
-msgstr "Αποκατάσταση εκτελείται..."
-
-#
-#
 msgid "Restore system settings"
 msgstr "Αποκατάσταση ρυθμίσεων συστήματος"
 
@@ -8969,6 +9130,9 @@ msgstr "Συνέχεια από το %s"
 #. TRANSLATORS: question or a choice, but it is a statement.)
 msgid "Resuming playback"
 msgstr "Συνέχεια αναπαραγωγής"
+
+msgid "Retrieving data ..."
+msgstr ""
 
 msgid "Return"
 msgstr ""
@@ -9026,6 +9190,12 @@ msgstr "Αρχικός φάκελος"
 
 #
 #
+#, fuzzy
+msgid "Rotor step position:"
+msgstr "Αποθήκευση θέσης"
+
+#
+#
 msgid "Rotor turning speed"
 msgstr "Ταχύτητα του ρότορα"
 
@@ -9078,15 +9248,8 @@ msgstr "SID"
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
 
-#
-#
-msgid "SNR"
-msgstr "SNR"
-
-#
-#
-msgid "SNR:"
-msgstr "SNR:"
+msgid "SPDIF"
+msgstr ""
 
 #
 #
@@ -9130,6 +9293,12 @@ msgstr "Δορυφορικός εξοπλισμός"
 #
 #, fuzzy
 msgid "Satellite equipment setup"
+msgstr "Ρύθμιση δορυφορικού εξοπλισμού"
+
+#
+#
+#, fuzzy
+msgid "Satellite longitude:"
 msgstr "Ρύθμιση δορυφορικού εξοπλισμού"
 
 #
@@ -9191,6 +9360,12 @@ msgstr ""
 msgid "Save playlist"
 msgstr "αποθήκευση λίστας αναπαραγωγής"
 
+msgid "Save timeshift file"
+msgstr ""
+
+msgid "Save timeshift file in movie directory"
+msgstr ""
+
 msgid "Saving EPG Cache..."
 msgstr ""
 
@@ -9235,6 +9410,11 @@ msgid "Scan additional SR"
 msgstr "Σάρωση πρόσθετης SR"
 
 #
+#, fuzzy
+msgid "Scan available networks"
+msgstr "Λίστα διαθέσιμων δικτύων"
+
+#
 #
 #, fuzzy
 msgid "Scan files..."
@@ -9275,12 +9455,10 @@ msgstr "Η σάρωση απέτυχε!"
 msgid "Scanning..."
 msgstr "Σάρωση..."
 
-#
-#
-msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
-msgstr "Εκτελεί σάρωση αρχικής lamedb ταξινομημένης κατά δορυφόρο με συνδεδεμένο positioner"
-
 msgid "Science & Technology"
+msgstr ""
+
+msgid "Scripts"
 msgstr ""
 
 msgid "Scrolling Speed"
@@ -9325,6 +9503,18 @@ msgstr "Αναζήτηση δυτικά"
 
 #
 #
+#, fuzzy
+msgid "Searching"
+msgstr "Αναζήτηση ανατολικά"
+
+#
+#
+#, fuzzy
+msgid "Searching east ..."
+msgstr "Αναζήτηση ανατολικά"
+
+#
+#
 msgid "Searching for available updates. Please wait..."
 msgstr "Αναζήτηση για διαθέσιμες ενμερώσεις. Παρακαλώ περιμένετε..."
 
@@ -9332,6 +9522,12 @@ msgstr "Αναζήτηση για διαθέσιμες ενμερώσεις. Π�
 #
 msgid "Searching for new installed or removed packages. Please wait..."
 msgstr "Αναζήτηση για νέα εγκατεστημένα ή διεγραμμένα πακέτα. Παρακαλώ περιμένετε..."
+
+#
+#
+#, fuzzy
+msgid "Searching west ..."
+msgstr "Αναζήτηση δυτικά"
 
 #
 #
@@ -9374,54 +9570,15 @@ msgstr "επέλεξε CAId"
 
 #
 #
-msgid "Select HDD"
-msgstr "Επιλέξτε HDD"
-
-#
-#
-#, fuzzy
-msgid "Select a bouquet"
-msgstr "Επιλέξτε ταινία"
-
-#
-#
 #, fuzzy
 msgid "Select a line to edit"
 msgstr "Επιλέξτε προσαρμογέα δικτύου"
 
 #
 #
-msgid "Select a movie"
-msgstr "Επιλέξτε ταινία"
-
-#
-#
-#, fuzzy
-msgid "Select a network adapter"
-msgstr "Επιλέξτε προσαρμογέα δικτύου"
-
-#
-#
-#, fuzzy
-msgid "Select a skin"
-msgstr "Επιλέξτε ταινία"
-
-#
-#
-#, fuzzy
-msgid "Select a tuner"
-msgstr "Επιλέξτε ταινία"
-
-#
-#
 #, fuzzy
 msgid "Select a wireless network"
 msgstr "Επιλέξτε ασύρματο δίκτυο"
-
-#
-#, fuzzy
-msgid "Select an image to be downloaded"
-msgstr "Επιλογή λογισμικού για λήψη"
 
 #
 #
@@ -9451,9 +9608,6 @@ msgstr "Επιλέξτε προορισμό αντιγραφής για:"
 
 msgid "Select default EPG type..."
 msgstr ""
-
-msgid "Select desired image from feed list"
-msgstr "Επιλέξτε επιθυμητό λογισμικό από τη λίστα"
 
 #
 msgid "Select destination for:"
@@ -9577,6 +9731,15 @@ msgstr "Επιλέξτε συσκευή εισαγωγής χαρακτήρων.
 msgid "Select your provider, and press OK to start the scan"
 msgstr "Επιλέξτε παροχέα, και πιέστε ΟΚ για εκκίνηση σάρωσης"
 
+msgid "Send"
+msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Send Confirmation"
+msgstr "Εγκατάσταση tuner"
+
 #
 #
 msgid "Send DiSEqC"
@@ -9639,12 +9802,6 @@ msgstr ""
 msgid "Service Name"
 msgstr ""
 
-#
-#
-#, fuzzy
-msgid "Service Time"
-msgstr "Ανεύρεση υπηρεσιών"
-
 msgid "Service Title mode"
 msgstr ""
 
@@ -9662,12 +9819,6 @@ msgstr "Η υπηρεσία προστέθηκε στα αγαπημένα."
 #
 msgid "Service has been added to the selected bouquet."
 msgstr "Η υπηρεσία προστέθηκε στo επιλεγμένο μπουκέτο"
-
-#
-#
-#, fuzzy
-msgid "Service info"
-msgstr "Πληροφορίες υπηρεσίας"
 
 msgid "Service info font size"
 msgstr ""
@@ -9854,6 +10005,9 @@ msgstr ""
 msgid "Set time window to 5 hours"
 msgstr ""
 
+msgid "Set time window to 6 hours"
+msgstr ""
+
 msgid "Set to the desired primetime (hour)."
 msgstr ""
 
@@ -9912,11 +10066,11 @@ msgstr ""
 msgid "Setup the interval to check for online updates. (in hours)"
 msgstr ""
 
-msgid "Setup what a long press on the power button does."
-msgstr ""
-
-msgid "Setup what a short press on the power button does."
-msgstr ""
+#
+#
+#, fuzzy
+msgid "Setup your positioner"
+msgstr "Αποθήκευση θέσης"
 
 #
 #
@@ -9926,10 +10080,6 @@ msgstr "Δορυφορικός εξοπλισμός"
 
 msgid "Setup your timezone."
 msgstr ""
-
-#, python-format
-msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
-msgstr "Να προχωρήσει ο Οδηγός Usb Stick και να εγκαταστήσει το λογισμικό %s στη μνήμη flash;"
 
 msgid "Share Folder's"
 msgstr ""
@@ -9972,9 +10122,6 @@ msgid "Show Clients"
 msgstr ""
 
 msgid "Show Display Icons"
-msgstr ""
-
-msgid "Show E2 Log"
 msgstr ""
 
 #
@@ -10023,16 +10170,10 @@ msgstr "εμφάνιση πληροφοριών αναμεταδότη"
 msgid "Show No free tuner info?"
 msgstr "Δεν υπάρχει ελεύθερο tuner!"
 
-msgid "Show OE Log"
-msgstr ""
-
 msgid "Show OScam in extensions ?"
 msgstr ""
 
 msgid "Show PVR status in MoviePlayer infobar"
-msgstr ""
-
-msgid "Show Picons *"
 msgstr ""
 
 msgid "Show RFmod setup..."
@@ -10115,6 +10256,12 @@ msgstr "εμφάνιση λεπτομερειών προγράμματος"
 
 msgid "Show encryption info in the infobar (when supported by the skin)."
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Show epg"
+msgstr "εμφάνιση μενού tag "
 
 #
 #
@@ -10216,6 +10363,9 @@ msgstr ""
 msgid "Show positioner movement"
 msgstr "Εμφάνιση κινήσεων του positioner"
 
+msgid "Show screensaver"
+msgstr ""
+
 #
 #
 #, fuzzy
@@ -10303,6 +10453,12 @@ msgstr "Εμφάνιση animation κατά την καθυστέρηση"
 msgid "Show transponder remaining/elapsed as"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "Show warning when timeshift is stopped"
+msgstr "Συμπεριφορά όταν μια ταινία σταμάτησε"
+
 msgid "Shows the icons when new/unseen, else will not show an icon."
 msgstr ""
 
@@ -10325,22 +10481,23 @@ msgstr "τυχαία ανακατανομή λίστας αναπαραγωγή�
 msgid "Shutdown"
 msgstr "Τερματισμός"
 
-msgid "Shutdown in (mins)"
-msgstr ""
-
 #
 msgid "Side by Side"
 msgstr "Σε παράθεση"
 
-#
-#, fuzzy
-msgid "Side by side"
-msgstr "Σε παράθεση"
+msgid "Signal OK, proceeding"
+msgstr ""
 
 #
 #
 msgid "Signal Strength:"
 msgstr "Ένταση σήματος:"
+
+#
+#
+#, fuzzy
+msgid "Signal quality"
+msgstr "Ποιότητα σύνδεσης:"
 
 #
 #
@@ -10405,6 +10562,18 @@ msgstr "Ένας αναμεταδότης"
 msgid "SingleEPG settings"
 msgstr "Επεξεργασία ρυθμίσεων"
 
+#
+#
+#, fuzzy
+msgid "Site latitude"
+msgstr "Γεωγρ. πλάτος"
+
+#
+#
+#, fuzzy
+msgid "Site longitude"
+msgstr "Γεωγρ. μήκος"
+
 msgid "Size: "
 msgstr ""
 
@@ -10427,11 +10596,6 @@ msgstr "Προστασία υπηρεσιών"
 
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
-
-#
-#
-msgid "Sleep Timer"
-msgstr "Χρονοδιακόπτης απενεργοποίησης"
 
 #
 #
@@ -10550,6 +10714,9 @@ msgstr ""
 msgid "Sorry no device found to store backup. Please check your media in EGAMI devices panel."
 msgstr ""
 
+msgid "Sorry no matches found"
+msgstr ""
+
 msgid "Sorry the name of the new Image is too long."
 msgstr ""
 
@@ -10604,6 +10771,9 @@ msgstr ""
 #, fuzzy
 msgid "Sorry, video is not available!"
 msgstr "Μερικά πρόσθετα δεν είναι διαθέσιμα:\n"
+
+msgid "Sorry, wrong WOEID"
+msgstr ""
 
 msgid ""
 "Sorry, your backup destination is not writeable.\n"
@@ -10676,6 +10846,9 @@ msgstr "Νότος"
 #, fuzzy
 msgid "South Korea"
 msgstr "Νότος"
+
+msgid "Space used:"
+msgstr ""
 
 msgid "Spain"
 msgstr ""
@@ -10956,6 +11129,18 @@ msgstr "Βήμα δυτικά"
 
 #
 #
+#, fuzzy
+msgid "Stepped east"
+msgstr "Βήμα ανατολικά"
+
+#
+#
+#, fuzzy
+msgid "Stepped west"
+msgstr "Βήμα δυτικά"
+
+#
+#
 msgid "Stop"
 msgstr "Τερματισμός"
 
@@ -11015,11 +11200,14 @@ msgstr ""
 msgid "Stop timeshift while recording?"
 msgstr ""
 
-msgid "Stop timeshift?"
-msgstr ""
-
 msgid "Stopped"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "Store at index"
+msgstr "Αποθήκευση θέσης"
 
 #
 #
@@ -11070,13 +11258,14 @@ msgstr "Stream request"
 msgid "Strict DLNA"
 msgstr ""
 
+#
+#
+#, fuzzy
+msgid "Strongest position"
+msgstr "Αποθήκευση θέσης"
+
 msgid "Subservice mode"
 msgstr ""
-
-#
-#
-msgid "Subservices"
-msgstr "Υπό-υπηρεσίες"
 
 #
 #
@@ -11168,6 +11357,12 @@ msgstr "Κυρ"
 #
 msgid "Sunday"
 msgstr "Κυριακή"
+
+msgid "Sunrise :"
+msgstr ""
+
+msgid "Sunset :"
+msgstr ""
 
 msgid "Swap File Name:"
 msgstr ""
@@ -11271,6 +11466,9 @@ msgstr "Σύνδεση:"
 msgid "Sync NTP every (minutes)"
 msgstr ""
 
+msgid "Sync failure moving back to origin !"
+msgstr ""
+
 msgid "Sync time using"
 msgstr ""
 
@@ -11307,6 +11505,9 @@ msgstr "Το αρχείο TS είναι πολύ μεγάλο για το ISO966
 
 msgid "TSID"
 msgstr "TSID"
+
+msgid "TUNING"
+msgstr ""
 
 msgid "TV"
 msgstr ""
@@ -11385,7 +11586,8 @@ msgstr "Κατάσταση ελέγχου"
 
 #
 #
-msgid "Test the network configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Test the network configuration of your linux box.\n"
 msgstr "Ελέγξτε τις ρυθμίσεις δικτύου του δέκτη.\n"
 
 #
@@ -11415,10 +11617,15 @@ msgstr ""
 "Σας ευχαριστούμε που χρησιμοποιήσατε τον Οδηγό.\n"
 "Παρακαλώ πιέστε ΟΚ για συνέχεια."
 
+#
+#
+#, fuzzy
 msgid ""
-"Thank you for using the wizard. Your linux receiver is now ready to use.\n"
-"Please press OK to start using your linux receiver."
+"Thank you for using the wizard. Your linux box is now ready to use.\n"
+"Please press OK to start using your linux box."
 msgstr ""
+"Σας ευχαριστούμε που χρησιμοποιήσατε τον Οδηγό.\n"
+"Παρακαλώ πιέστε ΟΚ για συνέχεια."
 
 msgid ""
 "The /media/egamiboot/EgamiBootUpload directory is EMPTY!\n"
@@ -11451,7 +11658,8 @@ msgstr ""
 
 #
 #
-msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux receiver format data DVD (which will not play in stand-alone DVD players) instead?"
+#, fuzzy
+msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux box format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux receiver format data DVD (which will not play in stand-alone DVD players) instead?"
 
 msgid ""
@@ -11485,13 +11693,6 @@ msgid ""
 "What do you want to do now with the timeshift file?"
 msgstr ""
 
-msgid ""
-"The USB stick was prepared to be bootable.\n"
-"Now you can download an NFI image file!"
-msgstr ""
-"Το usb stick προετοιμάσθηκε ως εκκινήσιμο.\n"
-"Τώρα μπορεί να γίνει λήψη του αρχείου NFI!"
-
 #
 #
 #, fuzzy
@@ -11517,9 +11718,6 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Το backup απέτυχε. Διάλεξτε άλλη τοποθεσία για το backup."
 
-msgid "The current update maybe unstable"
-msgstr ""
-
 #, python-format
 msgid ""
 "The directory %s is not a EXT2, EXT3, EXT4 or NFS partition.\n"
@@ -11537,34 +11735,18 @@ msgstr ""
 "Επιλέξτε εναλλακτικά έναν εγγράψιμο φάκελο."
 
 #
-# , python-format
-#, python-format
-msgid ""
-"The following device was found:\n"
-"\n"
-"%s\n"
-"\n"
-"Do you want to write the USB flasher to this stick?"
-msgstr ""
-"Βρέθηκε η παρακάτω συσκευή:\n"
-"\n"
-"%s\n"
-"\n"
-"Θέλετε να γράψετε το USB flasher σε αυτό το stick;"
-
-#
 #
 msgid "The following files were found..."
 msgstr "Βρέθηκαν τα παρακάτω αρχεία..."
 
-msgid "The linux receiver reads the stored EPG data every (hours)."
+msgid "The linux box reads the stored EPG data every (hours)."
 msgstr ""
 
-msgid "The linux receiver stores the EPG data every (hours)."
+msgid "The linux box stores the EPG data every (hours)."
 msgstr ""
 
-msgid "The md5sum validation failed, the file may be corrupted!"
-msgstr "Η επιβεβαίωση md5sum απέτυχε, το αρχείο ενδέχεται να είναι κατεστραμμένο!"
+msgid "The loopthrough setting is wrong."
+msgstr ""
 
 #
 #
@@ -11598,16 +11780,6 @@ msgstr "Τα αποτελέσματα γράφτηκαν στο %s."
 
 #
 #
-msgid "The sleep timer has been activated."
-msgstr "Ο χρονοδιακόπτης απενεργοποίησης ενεργοποιήθηκε."
-
-#
-#
-msgid "The sleep timer has been disabled."
-msgstr "Ο χρονοδιακόπτης απενεργοποίησης απενεργοποιήθηκε."
-
-#
-#
 #, fuzzy
 msgid ""
 "The software management extension is not installed!\n"
@@ -11629,15 +11801,19 @@ msgstr "Το timer file (timers.xml) ειναι άκυρο και δεν φωρ�
 
 #
 #, fuzzy
-msgid "The user interface of your linux receiver is restarting"
+msgid "The user interface of your linux box is restarting"
 msgstr ""
 "\n"
 "Αποκατάσταση των ρυθμίσεων."
 
+#
+#, fuzzy
 msgid ""
-"The user interface of your linux receiver is restarting\n"
+"The user interface of your linux box is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
+"\n"
+"Αποκατάσταση των ρυθμίσεων."
 
 #
 #
@@ -11661,10 +11837,6 @@ msgstr ""
 #
 msgid "The wizard can backup your current settings. Do you want to do a backup now?"
 msgstr "Ο Οδηγός μπορεί να κρατήσει αντίγραφο των ρυθμίσεων. Να κρατήσει αντίγραφο τώρα;"
-
-#, python-format
-msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
-msgstr "Ο Οδηγός βρήκε αντίγραφο ασφαλείας των ρυθμίσεων. Θέλετε να αποκαταστήσετε τις παλιές ρυθμίσεις σας από το %s;"
 
 #
 #
@@ -11691,6 +11863,9 @@ msgid "There are no updates available."
 msgstr "Δεν υπάρχουν διαθέσιμες ενημερώσεις."
 
 msgid "There is no [webif] section in oscam.conf"
+msgstr ""
+
+msgid "There is no signal to lock on !"
 msgstr ""
 
 msgid "There is not any EGAMI Backup file on connected devices!"
@@ -11731,7 +11906,7 @@ msgstr ""
 #
 # , python-format
 #, fuzzy, python-format
-msgid "This linux receiver cannot decode %s streams!"
+msgid "This linux box cannot decode %s streams!"
 msgstr "Αυτός ο δέκτης δε μπορεί να αποκωδικοποιήσει %s streams!"
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -11800,6 +11975,12 @@ msgstr ""
 msgid "This option configures the video output mode (or resolution)."
 msgstr ""
 
+msgid "This option configures you can Bypass HDMI EDID check"
+msgstr ""
+
+msgid "This option configures you can enable 3D Surround Sound."
+msgstr ""
+
 msgid "This option lets you adjust the 3D depth"
 msgstr ""
 
@@ -11844,17 +12025,6 @@ msgstr ""
 
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
 msgstr ""
-
-msgid ""
-"This plugin creates a USB stick which can be used to update the firmware of your linux receiver without the need for a network or WLAN connection.\n"
-"First, a USB stick needs to be prepared so that it becomes bootable.\n"
-"In the next step, an NFI image file can be downloaded from the update server and saved on the USB stick.\n"
-"If you already have a prepared bootable USB stick, please insert it now. Otherwise plug in a USB stick with a minimum size of 64 MB!"
-msgstr ""
-"Αυτό το πρόσθετο δημιουργεί ένα usb stick που μπορεί να χρησιμοποιηθεί για αναβάθμιση του linux receiver χωρίς ανάγκη ύπαρξης δικτύου.\n"
-"Καταρχήν, ένα usb stick πρέπει να προετοιμασθεί ώστε να είναι εκκινήσιμο.\n"
-"Στο επόμενο βήμα, ένα αρχείο NFI μπορεί να αποθηκευτεί σε αυτό από τον διακομιστή ενημερώσεων.\n"
-"Εάν έχετε ένα ήδη έτοιμο usb stick, παρακαλώ συνδέστε το τώρα. Αλλιώς συνδέστε ένα usb stick ελάχιστης χωρητικότητας 64MB!"
 
 #
 #
@@ -11933,6 +12103,11 @@ msgstr ""
 msgid "This test detects your configured LAN adapter."
 msgstr "Αυτός ο έλεγχος αναζητά την ρυθμισμένη κάρτα δικτύου."
 
+msgid ""
+"This will (re-)calculate all positions of your rotor and may remove previously memorised positions and fine-tuning!\n"
+"Are you sure?"
+msgstr ""
+
 #
 #
 msgid "Three"
@@ -11999,18 +12174,6 @@ msgstr ""
 
 #
 #
-#, fuzzy
-msgid "Timer edit"
-msgstr "Επεξεργασία χρονοδιακόπτη"
-
-#
-#
-#, fuzzy
-msgid "Timer editor"
-msgstr "Επεξεργασία χρονοδιακόπτη"
-
-#
-#
 msgid "Timer entry"
 msgstr "Εγγραφή χρονοδιακόπτη"
 
@@ -12067,8 +12230,9 @@ msgstr "Επιλογή χρονοδιακόπτη"
 
 #
 #
-msgid "Timer status:"
-msgstr "Κατάσταση χρονοδιακόπτη:"
+#, fuzzy
+msgid "Timer selection..."
+msgstr "Επιλογή χρονοδιακόπτη"
 
 #
 #
@@ -12146,13 +12310,6 @@ msgstr "Επιλογή ήχου"
 msgid "To subtitle selection"
 msgstr "Επιλογή υποτίτλων"
 
-msgid ""
-"To update your linux receiver firmware, please follow these steps:\n"
-"1) Turn off your box with the rear power switch and make sure the bootable USB stick is plugged in.\n"
-"2) Turn mains back on and hold the DOWN button on the front panel pressed for 10 seconds.\n"
-"3) Wait for bootup and follow instructions of the wizard."
-msgstr ""
-
 #
 #
 msgid "Today"
@@ -12165,6 +12322,9 @@ msgid "Toggle a cut mark at the current position"
 msgstr ""
 
 msgid "Toggle aspect ratio..."
+msgstr ""
+
+msgid "Toggle between bouquet/epg lists"
 msgstr ""
 
 msgid "Tone amplitude"
@@ -12190,11 +12350,6 @@ msgstr ""
 
 #
 msgid "Top and Bottom"
-msgstr "Πάνω και Κάτω"
-
-#
-#, fuzzy
-msgid "Top and bottom"
 msgstr "Πάνω και Κάτω"
 
 #
@@ -12236,18 +12391,7 @@ msgstr "Track"
 
 #
 #
-msgid "Translation"
-msgstr "Μετάφραση"
-
-#
-#
 msgid "Translation:"
-msgstr "Μετάφραση:"
-
-#
-#
-#, fuzzy
-msgid "Translation: "
 msgstr "Μετάφραση:"
 
 #
@@ -12261,12 +12405,6 @@ msgstr ""
 #
 #
 msgid "Transponder"
-msgstr "Αναμεταδότης"
-
-#
-#
-#, fuzzy
-msgid "Transponder Time"
 msgstr "Αναμεταδότης"
 
 #
@@ -12331,6 +12469,12 @@ msgstr "Συντονισμός"
 
 #
 #
+#, fuzzy
+msgid "Tune and focus"
+msgstr "Κατάσταση tuner"
+
+#
+#
 msgid "Tune failed!"
 msgstr "Ο συντονισμός απέτυχε!"
 
@@ -12355,9 +12499,11 @@ msgstr ""
 msgid "Tuner status"
 msgstr "Κατάσταση tuner"
 
-#, python-format
-msgid "Tuner status %s"
-msgstr ""
+#
+#
+#, fuzzy
+msgid "Tuner status:"
+msgstr "Κατάσταση tuner"
 
 #
 #
@@ -12403,6 +12549,9 @@ msgstr "Γονικός φάκελος"
 msgid "USALS"
 msgstr "USALS"
 
+msgid "USALS calibration"
+msgstr ""
+
 msgid "USB 2 device mounted in:   "
 msgstr ""
 
@@ -12412,21 +12561,15 @@ msgstr ""
 msgid "USB device mounted in:     "
 msgstr ""
 
-#
-msgid "USB stick wizard"
-msgstr "Οδηγός USB stick"
-
+#, fuzzy
 msgid ""
 "Unattended upgrade in progress\n"
-"Please wait until your linux receiver reboots\n"
+"Please wait until your linux box reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Εκτελείται αναβάθμιση\n"
 "Παρακαλώ περιμένετε μέχρι την επανεκκίνηση του δέκτη\n"
 "Θα διαρκέσει μερικά λεπτά"
-
-msgid "Unattended upgrade without GUI and reboot system"
-msgstr "Αναβάθμιση χωρίς γραφικό περιβάλλον και επανεκκίνηση"
 
 #
 #
@@ -12448,11 +12591,6 @@ msgstr "Αναίρεση απεγκατάστασης"
 
 msgid "Unencrypted"
 msgstr "Χωρίς κωδικοποίηση"
-
-#
-#
-msgid "UnhandledKey"
-msgstr "UnhandledKey"
 
 #
 #
@@ -12506,6 +12644,12 @@ msgstr ""
 msgid "Update"
 msgstr "Ενημέρωση"
 
+msgid "Update and ask to reboot"
+msgstr ""
+
+msgid "Update and reboot (recommended)"
+msgstr ""
+
 msgid "Update channel list only"
 msgstr ""
 
@@ -12518,7 +12662,13 @@ msgstr[1] ""
 #
 #
 #, fuzzy
-msgid "Update failed. Your linux receiver does not have a working internet connection."
+msgid "Update completed. Do you want to reboot your linux box?"
+msgstr "Θέλετε να γίνει επανεκκίνηση του δέκτη;"
+
+#
+#
+#, fuzzy
+msgid "Update failed. Your linux box does not have a working internet connection."
 msgstr ""
 "Ο δέκτης σας είναι τώρα έτοιμος για χρήση.\n"
 "\n"
@@ -12543,9 +12693,6 @@ msgstr "Επεξεργασία λίστας υπηρεσιών"
 #
 msgid "Updating software catalog"
 msgstr "Ενημέρωση καταλόγου λογισμικού"
-
-msgid "Upgrade and reboot system"
-msgstr ""
 
 #
 #
@@ -12697,11 +12844,6 @@ msgstr ""
 msgid "Use this video enhancement settings?"
 msgstr "Χρήση αυτών των ρυθμίσεων αναβάθμισης εικόνας;"
 
-#
-#
-msgid "Use time of currently running service"
-msgstr "Χρήση ώρας από τρέχουσα υπηρεσία"
-
 msgid "Use trash can in movielist"
 msgstr ""
 
@@ -12756,11 +12898,19 @@ msgstr ""
 msgid "Username:"
 msgstr ""
 
+#, python-format
+msgid "Using LNB %d"
+msgstr ""
+
 #
 msgid "Using fixed address"
 msgstr "Χρήση σταθερής διεύθυνσης"
 
 msgid "Using old profile: "
+msgstr ""
+
+#, python-format
+msgid "Using tuner %s"
 msgstr ""
 
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
@@ -12867,6 +13017,12 @@ msgstr ""
 
 msgid "Videosize"
 msgstr "Μέγεθος video"
+
+#
+#
+#, fuzzy
+msgid "View"
+msgstr "Εμφάνιση εργασιών"
 
 msgid "View Count"
 msgstr ""
@@ -13004,11 +13160,8 @@ msgstr ""
 msgid "Virtual Keyboard"
 msgstr "Εικονικό πληκτρολόγιο"
 
-#
-#
-#, fuzzy
-msgid "Virtual keyboard"
-msgstr "Εικονικό πληκτρολόγιο"
+msgid "Visibility :"
+msgstr ""
 
 #
 #
@@ -13017,16 +13170,8 @@ msgstr "Voltage mode"
 
 #
 #
-msgid "Volume"
-msgstr "Ένταση"
-
-#
-#
 msgid "W"
 msgstr "W"
-
-msgid "WARNING: feeds maybe unstable."
-msgstr ""
 
 #
 #
@@ -13106,10 +13251,14 @@ msgstr "Εκκίνηση TV από αναμονή"
 msgid "Wakeup signal from TV"
 msgstr "Σήμα εκκίνησης από TV"
 
-msgid "Wakeup your linux receiver from standby"
+#, fuzzy
+msgid "Wakeup your linux box from standby"
 msgstr "Εκκίνηση δέκτη από αναμονή"
 
 msgid "Warning you are going to format "
+msgstr ""
+
+msgid "Warning: no LNB; using factory defaults."
 msgstr ""
 
 #
@@ -13123,6 +13272,10 @@ msgstr "Αναπαραγωγή εγγραφών..."
 #, fuzzy
 msgid "Watch recordings..."
 msgstr "εγγραφή..."
+
+#, fuzzy
+msgid "Weather"
+msgstr "Άλλο"
 
 msgid "Web Browser"
 msgstr ""
@@ -13149,6 +13302,12 @@ msgstr "Ημέρα εβδομάδος"
 #, fuzzy
 msgid "Weekly"
 msgstr "εβδομαδιαία"
+
+#
+#
+#, fuzzy
+msgid "Weighted position"
+msgstr "Αποθηκευμένη θέση"
 
 msgid "Welcome to EgamiBoot 2.0 MultiBoot Plugin installation."
 msgstr ""
@@ -13199,15 +13358,16 @@ msgstr ""
 #
 #
 #, fuzzy
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux box by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
 msgstr "Καλώς ορίσατε στον Οδηγό αναβάθμισης λογισμικού. Ο Οδηγός θα σας βοηθήσει στην αναβάθμιση του λογισμικού του δέκτη παρέχοντας δυνατότητα αντιγράφου ασφαλείας των ρυθμίσεών σας και σύντομη επεξήγηση της διαδικασίας."
 
 #
 #
+#, fuzzy
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your linux receiver to the Internet, this wizard will guide you through the basic network setup of your linux receiver.\n"
+"If you want to connect your linux box to the Internet, this wizard will guide you through the basic network setup of your linux box.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
@@ -13219,28 +13379,14 @@ msgstr ""
 
 #
 #
-#, fuzzy
-msgid ""
-"Welcome.\n"
-"\n"
-"This start wizard will guide you through the basic setup of your linux receiver.\n"
-"Press the OK button on your remote control to move to the next step."
-msgstr ""
-"Καλώς ορίσατε.\n"
-"\n"
-"Εάν θέλετε να συνδέσετε το δέκτη στο διαδίκτυο, αυτό ο Οδηγός θα σας καθοδηγήσει στα βήματα της διαδικασίας ρύθμισης δικτύου του δέκτη.\n"
-"\n"
-"Πιέστε ΟΚ για εκκίνηση ρύθμισης του δικτύου."
-
-#
-#
-msgid "Welcome..."
-msgstr "Καλώς ορίσατε..."
-
-#
-#
 msgid "West"
 msgstr "Δυτικά"
+
+#
+#
+#, fuzzy
+msgid "West limit set"
+msgstr "Ορισμός ορίων"
 
 msgid "What Day of month ?"
 msgstr ""
@@ -13272,6 +13418,9 @@ msgid "When enabled, a popup message will be shown when a recording starts."
 msgstr ""
 
 msgid "When enabled, a recording is allowed to interrupt live tv, when there are no free tuners."
+msgstr ""
+
+msgid "When enabled, a warning will be displayed and the user will get an option to stop or to continue the timeshift."
 msgstr ""
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
@@ -13366,10 +13515,11 @@ msgstr ""
 
 #
 #
+#, fuzzy
 msgid ""
 "When you do a factory reset, you will lose ALL your configuration data\n"
 "(including bouquets, services, satellite data ...)\n"
-"After completion of factory reset, your linux receiver will restart automatically!\n"
+"After completion of factory reset, your linux box will restart automatically!\n"
 "\n"
 "Really do a factory reset?"
 msgstr ""
@@ -13405,6 +13555,9 @@ msgid "Wicardd Info"
 msgstr ""
 
 msgid "Width"
+msgstr ""
+
+msgid "Wind :"
 msgstr ""
 
 #
@@ -13467,6 +13620,9 @@ msgstr ""
 #
 msgid "YPbPr"
 msgstr "YPbPr"
+
+msgid "Yahoo Weather"
+msgstr ""
 
 #
 #
@@ -13590,7 +13746,8 @@ msgstr "Μπορείτε να εγκαταστήσετε το πρόσθετο."
 
 #
 #
-msgid "You can only burn linux receiver recordings!"
+#, fuzzy
+msgid "You can only burn linux box recordings!"
 msgstr "Μπορείτε να εγγράψετε μόνο εγγραφές από δέκτη!"
 
 #
@@ -13617,19 +13774,32 @@ msgstr ""
 msgid "You didn't select a channel to record from."
 msgstr "Δεν επιλέξατε κανάλι για εγγραφή."
 
+msgid "You have already sent this log, are you sure you want to resend this log:\n"
+msgstr ""
+
 #
 #
 msgid "You have chosen to backup your settings. Please press OK to start the backup now."
 msgstr "Επιλέξατε να κρατηθεί αντίγραφο ασφαλείας των ρυθμίσεων. Πιέστε ΟΚ για να ξεκινήσει η διαδικασία τώρα."
 
 #
-msgid "You have chosen to create a new .NFI flasher bootable USB stick. This will repartition the USB stick and therefore all data on it will be erased."
-msgstr "Επιλέξατε να δημιουργήσετε νέο εκκινήσιμο Usb stick για εγκατάσταση NFI. Θα γίνει εκ νέου κατάτμηση του usb stick και όλα τα δεδομένα σε αυτό θα χαθούν."
-
-#
 #
 msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
 msgstr "Επιλέξατε αποκατάσταση των ρυθμίσεων. Το Enigma2 θα επανεκκινήσει μετά την αποκατάσταση. Πιέστε ΟΚ για να ξεκνήσει η διαδικασία τώρα."
+
+msgid ""
+"You have not setup your user info in the setup screen\n"
+"Press MENU, and enter your info, then try again"
+msgstr ""
+
+#
+#
+#, fuzzy
+msgid "You have selected no logs to delete."
+msgstr "Παρακαλώ επιλέξτε λίστα αναπαραγωγής για διαγραφή..."
+
+msgid "You have selected no logs to send."
+msgstr ""
 
 #
 #
@@ -13656,9 +13826,10 @@ msgstr "Περιμένετε για %s!"
 
 #
 #
+#, fuzzy
 msgid ""
-"You need a PC connected to your linux receiver. If you need further instructions, please visit the website http://www.dm7025.de.\n"
-"Your linux receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+"You need a PC connected to your linux box. If you need further instructions, please visit the website http://www.dm7025.de.\n"
+"Your linux box will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
 msgstr ""
 "You need a PC connected to your linux receiver. If you need further instructions, please visit the website http://www.dm7025.de.\n"
 "Your linux receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
@@ -13668,6 +13839,9 @@ msgstr ""
 
 msgid "You system does not support ext4"
 msgstr "Το σύστημά σας δεν υποστηρίζει ext4"
+
+msgid "Your IP:"
+msgstr ""
 
 msgid "Your STB will freeze during the installation process."
 msgstr ""
@@ -13696,19 +13870,22 @@ msgstr ""
 msgid "Your current collection will get lost!"
 msgstr "Η τρέχουσα συλλογή σας θα χαθεί!"
 
-#
-#
 msgid ""
-"Your frontprocessor firmware must be upgraded.\n"
-"Press OK to start upgrade."
+"Your front panel will be upgraded\n"
+"This may take a few minutes"
 msgstr ""
-"Το “frontprocessor firmware” πρέπει να αναβαθμιστεί\n"
-"Πιέστε ΟΚ για την αναβάθμιση."
 
+#, fuzzy
 msgid ""
 "Your frontprocessor will be upgraded\n"
-"Please wait until your linux receiver reboots\n"
+"Please wait until your linux box reboots\n"
 "This may take a few minutes"
+msgstr ""
+"Εκτελείται αναβάθμιση\n"
+"Παρακαλώ περιμένετε μέχρι την επανεκκίνηση του δέκτη\n"
+"Θα διαρκέσει μερικά λεπτά"
+
+msgid "Your internet connection is already configured."
 msgstr ""
 
 #
@@ -13722,14 +13899,45 @@ msgstr "Η σύνδεση προς το διαδίκτυο δεν δουλεύε
 msgid "Your internet connection is working (ip: %s)"
 msgstr ""
 
-msgid "Your linux receiver is not connected to the internet, please check your network settings and try again."
+#
+#
+#, fuzzy
+msgid "Your linux box does not have an internet connection"
+msgstr ""
+"Ο δέκτης σας είναι τώρα έτοιμος για χρήση.\n"
+"\n"
+"Η σύνδεση με το διαδίκτυο είναι έτοιμη.\n"
+"\n"
+
+#, fuzzy
+msgid "Your linux box does not support PiP HD"
+msgstr "Το σύστημά σας δεν υποστηρίζει ext4"
+
+msgid "Your linux box is not connected to the internet"
+msgstr ""
+
+msgid "Your linux box is not connected to the internet, please check your network settings and try again."
 msgstr ""
 
 #
 #
 #, fuzzy
 msgid ""
-"Your linux receiver is now ready to be used.\n"
+"Your linux box is now ready to be used.\n"
+"\n"
+"Your internet connection is not working now.\n"
+"\n"
+msgstr ""
+"Ο δέκτης σας είναι τώρα έτοιμος για χρήση.\n"
+"\n"
+"Η σύνδεση με το διαδίκτυο είναι έτοιμη.\n"
+"\n"
+
+#
+#
+#, fuzzy
+msgid ""
+"Your linux box is now ready to be used.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -13741,8 +13949,9 @@ msgstr ""
 
 #
 #
+#, fuzzy
 msgid ""
-"Your linux receiver is now ready to use.\n"
+"Your linux box is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -13754,25 +13963,39 @@ msgstr ""
 "\n"
 "Πιέστε ΟΚ για συνέχεια."
 
-msgid "Your linux receiver is rebooting"
-msgstr ""
-
-msgid "Your linux receiver is shutting down"
+msgid "Your linux box is rebooting"
 msgstr ""
 
 #
 #
-msgid "Your linux receiver is shutting down. Please stand by..."
+#, fuzzy
+msgid "Your linux box is shutting down"
 msgstr "Ο δέκτης τερματίζεται. Παρακαλώ περιμένετε..."
 
-msgid "Your linux receiver might be unusable now. Please consult the manual for further assistance before rebooting your linux receiver."
+#
+#
+#, fuzzy
+msgid "Your linux box is shutting down. Please stand by..."
+msgstr "Ο δέκτης τερματίζεται. Παρακαλώ περιμένετε..."
+
+msgid "Your linux box might be unusable now. Please consult the manual for further assistance before rebooting your linux box."
+msgstr ""
+
+msgid ""
+"Your linux box offers three levels of configuration options:\n"
+"\n"
+"Simple - We suggest this level if this is your first contact with a linux box.\n"
+"Intermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your linux box.\n"
+"Expert - This gives you full control over all available settings of your linux box.\n"
+"\n"
+"Warning: Higher levels may lead to increased usage complexity."
 msgstr ""
 
 #
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to reboot your linux receiver.\n"
+"Your linux box wants to reboot your linux box.\n"
 "Do that now?"
 msgstr "Θέλετε να γίνει επανεκκίνηση του δέκτη;"
 
@@ -13780,7 +14003,7 @@ msgstr "Θέλετε να γίνει επανεκκίνηση του δέκτη;
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to restart the user interface.\n"
+"Your linux box wants to restart the user interface.\n"
 "Do that now?"
 msgstr ""
 "Ο δέκτης σας είναι τώρα έτοιμος για χρήση.\n"
@@ -13792,7 +14015,7 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to set your linux receiver to standby.\n"
+"Your linux box wants to set your linux box to standby.\n"
 "Do that now?"
 msgstr ""
 "Ο χρονοδιακόπτης απενεργοποίησης θέτει το δέκτη σε αναμονή.\n"
@@ -13802,7 +14025,7 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to shut down your linux receiver.\n"
+"Your linux box wants to shut down your linux box.\n"
 "Do that now?"
 msgstr ""
 "Ο χρονοδιακόπτης απενεργοποίησης θέτει το δέκτη σε βαθιά αναμονή.\n"
@@ -13810,18 +14033,18 @@ msgstr ""
 
 #, python-format
 msgid ""
-"Your linux receiver will be restarted after the installation of service\n"
+"Your linux box will be restarted after the installation of service\n"
 "Ready to install \"%s\" ?"
 msgstr ""
 
 msgid ""
-"Your linux receiver will be restarted after the installation of service.\n"
+"Your linux box will be restarted after the installation of service.\n"
 "\n"
 "Do you want to install now ?"
 msgstr ""
 
 msgid ""
-"Your linux receiver will be restarted after the removal of service\n"
+"Your linux box will be restarted after the removal of service\n"
 "Do you want to remove now ?"
 msgstr ""
 
@@ -13831,9 +14054,6 @@ msgid "Your network configuration has been activated."
 msgstr "Η ρύθμιση δικτύου ενεργοποιήθηκε."
 
 msgid "Your receiver does not have an internet connection"
-msgstr ""
-
-msgid "Your receiver is not connected to the internet"
 msgstr ""
 
 #
@@ -14033,6 +14253,12 @@ msgid "as plugin in extended bar"
 msgstr ""
 
 #
+#
+#, fuzzy
+msgid "at"
+msgstr "Σαβ"
+
+#
 msgid "at beginning"
 msgstr "στην αρχή"
 
@@ -14131,6 +14357,15 @@ msgstr ""
 
 #
 #
+#, fuzzy
+msgid "centered"
+msgstr "Μέσο"
+
+msgid "centered, wrapped"
+msgstr ""
+
+#
+#
 msgid "chapters"
 msgstr "κεφάλαια"
 
@@ -14160,11 +14395,6 @@ msgstr "σύνθετο"
 
 #
 #
-msgid "config menu"
-msgstr "μενού ρύθμισης"
-
-#
-#
 msgid "confirmed"
 msgstr "επιβεβαιωμένο"
 
@@ -14179,6 +14409,9 @@ msgid "continue"
 msgstr "συνέχεια"
 
 msgid "cooking"
+msgstr ""
+
+msgid "copy"
 msgstr ""
 
 msgid "copy file"
@@ -14223,11 +14456,6 @@ msgstr "Δημιουργίας συτήματος αρχείων"
 msgid "creating new file ..."
 msgstr "Αναζήτηση αρχείων"
 
-# , python-format
-#, python-format
-msgid "currently installed image: %s"
-msgstr "εγκατεστημένο λογισμικό: %s"
-
 #
 #
 msgid "daily"
@@ -14246,6 +14474,12 @@ msgstr ""
 #, fuzzy
 msgid "default"
 msgstr "Προεπιλεγμένες"
+
+#
+#
+#, fuzzy
+msgid "delete"
+msgstr "Διαγραφή"
 
 #
 #
@@ -14309,6 +14543,12 @@ msgstr "Ολοκληρώθηκε!"
 
 msgid "e-Mail address"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "east"
+msgstr "Μετακίνηση ανατολικά"
 
 msgid "ecm time:"
 msgstr ""
@@ -14377,6 +14617,9 @@ msgstr "σημείωσε το τέλος αποκοπής"
 #
 msgid "end favourites edit"
 msgstr "τέλος επεξεργασίας αγαπημένων "
+
+msgid "enter number to jump to channel."
+msgstr ""
 
 msgid "entertainment (10-16 year old)"
 msgstr ""
@@ -14532,13 +14775,13 @@ msgstr ""
 msgid "handled"
 msgstr ""
 
+msgid ""
+"has been sent to the ViX beta team.\n"
+"please quote"
+msgstr ""
+
 msgid "height"
 msgstr "ύψος"
-
-#
-#
-msgid "help..."
-msgstr "βοήθεια..."
 
 msgid "hops:"
 msgstr ""
@@ -14572,9 +14815,6 @@ msgstr "εισαγωγή σημειωτή"
 msgid "invalid type"
 msgstr ""
 
-msgid "is strongly advised."
-msgstr ""
-
 msgid "jazz"
 msgstr ""
 
@@ -14587,6 +14827,9 @@ msgstr "μετάβαση στον πρηγούμενο τίτλο"
 #
 msgid "jump forward to the next title"
 msgstr "μετάβαση στον επόμενο τίτλο"
+
+msgid "kmh"
+msgstr ""
 
 msgid "languages"
 msgstr ""
@@ -14601,6 +14844,9 @@ msgstr "έξοδος απο το movie player..."
 msgid "left"
 msgstr "αριστερά"
 
+msgid "left, wrapped"
+msgstr ""
+
 msgid "leisure hobbies (general)"
 msgstr ""
 
@@ -14609,29 +14855,34 @@ msgstr ""
 msgid "length"
 msgstr "μήκος"
 
-msgid "linux receiver advanced remote control (native)"
+msgid "limit ..., aborting !"
+msgstr ""
+
+msgid "linux box advanced remote control (native)"
 msgstr ""
 
 #
 #
-msgid "linux receiver format data DVD (HDTV compatible)"
+#, fuzzy
+msgid "linux box format data DVD (HDTV compatible)"
 msgstr "linux receiver format data DVD (HDTV compatible)"
 
-msgid "linux receiver front panel"
+msgid "linux box front panel"
 msgstr ""
 
-msgid "linux receiver ir keyboard"
+msgid "linux box ir keyboard"
 msgstr ""
 
-msgid "linux receiver ir mouse"
+msgid "linux box ir mouse"
 msgstr ""
 
-msgid "linux receiver remote control (native)"
+msgid "linux box remote control (native)"
 msgstr ""
 
 #
 #
-msgid "linux receiver software because updates are available."
+#, fuzzy
+msgid "linux box software because updates are available."
 msgstr "λογισμικό δέκτη γιατί διατίθενται ενημερώσεις."
 
 msgid "literature"
@@ -14651,9 +14902,6 @@ msgid "loopthrough to"
 msgstr "loopthrough to"
 
 msgid "magazines/reports/documentary"
-msgstr ""
-
-msgid "making a backup before updating"
 msgstr ""
 
 msgid "manage local Files"
@@ -14695,6 +14943,12 @@ msgstr ""
 
 msgid "motoring"
 msgstr ""
+
+#
+#
+#, fuzzy
+msgid "move"
+msgstr "Διαγραφή"
 
 #
 #
@@ -14865,6 +15119,9 @@ msgstr "of a SINGLE layer medium used."
 #
 msgid "off"
 msgstr "εκτός"
+
+msgid "offset is"
+msgstr ""
 
 #
 #
@@ -15074,6 +15331,12 @@ msgstr "διαγραφή αυτού του σημειωτή"
 #
 #
 #, fuzzy
+msgid "rename"
+msgstr "Μετονομασία"
+
+#
+#
+#, fuzzy
 msgid "rename file"
 msgstr "πρότυπο αρχείο"
 
@@ -15112,6 +15375,9 @@ msgstr "μετάβαση στο προηγούμενο κεφάλαιο"
 #
 msgid "right"
 msgstr "δεξιά"
+
+msgid "right, wrapped"
+msgstr ""
 
 msgid "rock/pop"
 msgstr ""
@@ -15350,7 +15616,7 @@ msgstr "εκκίνηση φακέλου"
 #
 #
 #, fuzzy
-msgid "start web browser"
+msgid "start opera web browser"
 msgstr "Διαφυλλιστής DVD"
 
 msgid "stepsize"
@@ -15543,6 +15809,21 @@ msgstr ""
 msgid "weekly"
 msgstr "εβδομαδιαία"
 
+#
+#
+#, fuzzy
+msgid "west"
+msgstr "Μετακίνηση δυτικά"
+
+msgid "when asking question about this log"
+msgstr ""
+
+msgid ""
+"when asking question about this log\n"
+"\n"
+"A copy has been sent to yourself."
+msgstr ""
+
 msgid "white"
 msgstr "άσπρο"
 
@@ -15597,8 +15878,120 @@ msgstr "zap"
 
 #
 #
+#, fuzzy
+msgid "zap and record"
+msgstr "εγγραφή"
+
+#
+#
 msgid "zapped"
 msgstr "zapped"
+
+#
+#
+#~ msgid "0"
+#~ msgstr "0"
+
+#
+#
+#~ msgid "1"
+#~ msgstr "1"
+
+#
+#
+#~ msgid "2"
+#~ msgstr "2"
+
+#
+#
+#~ msgid "3"
+#~ msgstr "3"
+
+#
+#~ msgid "3d mode"
+#~ msgstr "τύπος 3d"
+
+#
+#
+#~ msgid "4"
+#~ msgstr "4"
+
+#
+#
+#~ msgid "5"
+#~ msgstr "5"
+
+#
+#
+#~ msgid "6"
+#~ msgstr "6"
+
+#
+#
+#~ msgid "7"
+#~ msgstr "7"
+
+#
+#
+#~ msgid "8"
+#~ msgstr "8"
+
+#
+#
+#~ msgid "9"
+#~ msgstr "9"
+
+#
+#~ msgid "A demo plugin for TPM usage."
+#~ msgstr "Δοκιμαστικό πρόσθετο για χρήση TPM"
+
+#
+#
+#, fuzzy
+#~ msgid "Add Bookmark"
+#~ msgstr "προσθήκη σελιδοδείκτη"
+
+#
+#~ msgid "Adjust 3D settings"
+#~ msgstr "Μεταβολή ρυθμίσεων 3D"
+
+#
+#
+#~ msgid "Audio"
+#~ msgstr "Ήχος"
+
+#
+#
+#~ msgid "BER"
+#~ msgstr "BER"
+
+#
+#
+#~ msgid "BER:"
+#~ msgstr "BER:"
+
+#
+#
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "Changelog"
+#~ msgstr "Καταγραφή αλλαγών"
+
+#
+#
+#~ msgid "Channellist menu"
+#~ msgstr "Μενού λίστας καναλιών"
+
+#
+#
+#~ msgid "Command execution..."
+#~ msgstr "Εκτέλεση εντολής..."
+
+#
+#
+#~ msgid "Continue in background"
+#~ msgstr "Συνέχεια στο παρασκήνιο"
 
 #
 #, fuzzy
@@ -15608,8 +16001,203 @@ msgstr "zapped"
 #
 #
 #, fuzzy
+#~ msgid "Could not connect to linux receiver .NFI image feed server:"
+#~ msgstr "Αδύνατη σύνδεση στο  δέκτη. Διακομιστής λογισμικού NFI:"
+
+#
+#
+#, fuzzy
+#~ msgid "Create Directory"
+#~ msgstr "δημιουργία φακέλου"
+
+#
+#~ msgid "Current version:"
+#~ msgstr "Τρέχουσα έκδοση:"
+
+#
+#~ msgid "Currently installed image"
+#~ msgstr "Τρέχων εγκατεστημένο λογισμικό"
+
+#
+#
+#~ msgid "D"
+#~ msgstr "D"
+
+#
+#
+#, fuzzy
+#~ msgid "Date/time input"
+#~ msgstr "Εισαγωγή ημερομηνίας/ώρας"
+
+#
+#
+#~ msgid "Dish"
+#~ msgstr "Κάτοπτρο"
+
+# , python-format
+#, fuzzy
+#~ msgid "Download %s from server"
+#~ msgstr "Λήψη %s από το διακομιστή"
+
+#
+#
+#, fuzzy
+#~ msgid "Download .NFI-files for USB-flasher"
+#~ msgstr "Λήψη αρχείων .NFI για USB-Flasher"
+
+#
+#
+#~ msgid "Downloadable plugins"
+#~ msgstr "Πρόσθετα για λήψη"
+
+#
+#
+#, fuzzy
+#~ msgid "EPG selection"
+#~ msgstr "Επιλογή EPG"
+
+#
+#
+#~ msgid "Enable timer"
+#~ msgstr "Ενεργοποίηση χρονοδιακόπτη"
+
+#
+#
+#, fuzzy
+#~ msgid "Event view"
+#~ msgstr "Προγράμματα"
+
+#
+#, fuzzy
+#~ msgid "Event view menu"
+#~ msgstr "Μενού προγραμμάτων"
+
+#
+#
+#~ msgid "Flash"
+#~ msgstr "Flash"
+
+#
+#
+#~ msgid "Flashing failed"
+#~ msgstr "Η εγκατάσταση απέτυχε"
+
+#~ msgid "Get latest experimental image"
+#~ msgstr "Λήψη τελευταίου λογισμικού experimental"
+
+#~ msgid "Get latest release image"
+#~ msgstr "Λήψη τελευταίου σταθερού λογισμικού"
+
+#
+#
+#~ msgid "Index"
+#~ msgstr "Ευρετήριο"
+
+#
+#
+#, fuzzy
+#~ msgid "Info bar"
+#~ msgstr "Μπάρα πληροφοριών"
+
+#
+#
+#, fuzzy
 #~ msgid "InfoBar EPG"
 #~ msgstr "Μπάρα πληροφοριών"
+
+#
+#
+#, fuzzy
+#~ msgid "Installing software..."
+#~ msgstr "Εγκατάσταση λογισμικού..."
+
+#
+#
+#, fuzzy
+#~ msgid "Job overview"
+#~ msgstr "Εμφάνιση εργασιών"
+
+#
+#
+#~ msgid "Lock:"
+#~ msgstr "Κλείδωμα:"
+
+#
+#
+#~ msgid "MORE"
+#~ msgstr "ΠΕΡΙΣΣΟΤΕΡΑ"
+
+#
+#
+#~ msgid "Media player"
+#~ msgstr "Αναπαραγωγή πολυμέσων"
+
+#
+#
+#~ msgid "Message"
+#~ msgstr "Μήνυμα"
+
+#
+#
+#~ msgid "Message..."
+#~ msgstr "Μήνυμα..."
+
+#
+#
+#~ msgid "Movielist menu"
+#~ msgstr "Μένου λίστας ταινιών"
+
+#
+#
+#~ msgid "Mute"
+#~ msgstr "Σίγαση"
+
+#
+#
+#~ msgid "NEXT"
+#~ msgstr "ΕΠΟΜΕΝΟ"
+
+#
+#
+#, fuzzy
+#~ msgid "NFI image flashing"
+#~ msgstr "Εγκατάσταση λογισμικού NFI"
+
+#
+#~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
+#~ msgstr "Η εγκατάσταση λογισμικού NFI τελείωσε. Πατήστε Κίτρινο για επανεκκίνηση!"
+
+#
+#
+#~ msgid "NOW"
+#~ msgstr "ΤΩΡΑ"
+
+#
+#
+#, fuzzy
+#~ msgid "Nameserver setup"
+#~ msgstr "Ρύθμιση Nameserver"
+
+#
+#
+#, fuzzy
+#~ msgid "Network configuration..."
+#~ msgstr "Διαμόρφωση δικτύου..."
+
+#
+#
+#~ msgid "Network test..."
+#~ msgstr "Έλεγχος δικτύου..."
+
+#
+#
+#~ msgid "New version:"
+#~ msgstr "Νέα έκδοση:"
+
+#
+#
+#~ msgid "No details for this image file"
+#~ msgstr "Δεν υπάρχουν λεπτομέρειες για αυτό το αρχείο"
 
 #
 #
@@ -15623,15 +16211,165 @@ msgstr "zapped"
 #~ msgstr "Όχι, θα γίνει σάρωση αργότερα"
 
 #
+#~ msgid "Nothing to upgrade"
+#~ msgstr "Τίποτα για αναβάθμιση"
+
+#
+#
+#, fuzzy
+#~ msgid "Now playing"
+#~ msgstr "Τώρα παίζει"
+
+#
+#
+#, fuzzy
+#~ msgid "PIN code needed"
+#~ msgstr "Χρειάζεται το Pin code"
+
+#
+#~ msgid "Packages"
+#~ msgstr "Πακέτα"
+
+#
+#
+#, fuzzy
+#~ msgid "Parental control services editor"
+#~ msgstr "Επεξεργασία υπηρεσιών γονικού έλεγχου"
+
+#
+#
+#, fuzzy
+#~ msgid "PiP setup"
+#~ msgstr "Εγκατάσταση PiP"
+
+#
+#
+#~ msgid "Please check your network settings!"
+#~ msgstr "Παρακαλώ ελέγξτε τις ρυθμίσεις δικτύου!"
+
+#
+#
+#~ msgid ""
+#~ "Please configure or verify your Nameservers by filling out the required values.\n"
+#~ "When you are ready press OK to continue."
+#~ msgstr ""
+#~ "Παρακαλώ ρυθμίστε ή επιβεβαιώστε τους Nameservers συμπλρώνοντας τα απαιτούμενα πεδία.\n"
+#~ "Όταν είστε έτοιμος, πιέστε ΟΚ για συνέχεια."
+
+#
 #
 #, fuzzy
 #~ msgid "Please select a sub service..."
 #~ msgstr "Επιλέξτε μια υπό-υπηρεσία"
 
+#~ msgid "Please select an NFI file and press green key to flash!"
+#~ msgstr "Παρακαλώ επιλέξτε αρχείο NFI και πιέστε το πράσινο κουμπί για εγκατάσταση!"
+
+#
+#
+#~ msgid "Plugin browser"
+#~ msgstr "Διαφυλλιστής προσθέτων"
+
+#
+#
+#~ msgid "Positioner fine movement"
+#~ msgstr "Ελάχιστη κίνηση positioner"
+
+#~ msgid "Prepare another USB stick for image flashing"
+#~ msgstr "Προετοιμάστε άλλο usb stick για εγκατάσταση λογισμικού."
+
+#
+#
+#~ msgid "Radio"
+#~ msgstr "Ραδιόφωνο"
+
+#~ msgid "Rec"
+#~ msgstr "Εγγρ."
+
+#
+#
+#, fuzzy
+#~ msgid "Reception settings"
+#~ msgstr "Ρυθμίσεις λήψης"
+
 #
 #
 #~ msgid "Restart enigma"
 #~ msgstr "Επανεκκίνηση enigma"
+
+#
+#
+#~ msgid "Restore is running..."
+#~ msgstr "Αποκατάσταση εκτελείται..."
+
+#
+#
+#~ msgid "SNR"
+#~ msgstr "SNR"
+
+#
+#
+#~ msgid "SNR:"
+#~ msgstr "SNR:"
+
+#
+#
+#~ msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
+#~ msgstr "Εκτελεί σάρωση αρχικής lamedb ταξινομημένης κατά δορυφόρο με συνδεδεμένο positioner"
+
+#
+#
+#~ msgid "Select HDD"
+#~ msgstr "Επιλέξτε HDD"
+
+#
+#
+#, fuzzy
+#~ msgid "Select a bouquet"
+#~ msgstr "Επιλέξτε ταινία"
+
+#
+#
+#~ msgid "Select a movie"
+#~ msgstr "Επιλέξτε ταινία"
+
+#
+#
+#, fuzzy
+#~ msgid "Select a network adapter"
+#~ msgstr "Επιλέξτε προσαρμογέα δικτύου"
+
+#
+#
+#, fuzzy
+#~ msgid "Select a skin"
+#~ msgstr "Επιλέξτε ταινία"
+
+#
+#
+#, fuzzy
+#~ msgid "Select a tuner"
+#~ msgstr "Επιλέξτε ταινία"
+
+#
+#, fuzzy
+#~ msgid "Select an image to be downloaded"
+#~ msgstr "Επιλογή λογισμικού για λήψη"
+
+#~ msgid "Select desired image from feed list"
+#~ msgstr "Επιλέξτε επιθυμητό λογισμικό από τη λίστα"
+
+#
+#
+#, fuzzy
+#~ msgid "Service Time"
+#~ msgstr "Ανεύρεση υπηρεσιών"
+
+#
+#
+#, fuzzy
+#~ msgid "Service info"
+#~ msgstr "Πληροφορίες υπηρεσίας"
 
 #
 #
@@ -15642,9 +16380,190 @@ msgstr "zapped"
 #~ "Υπηρεσία μη διαθέσιμη!\n"
 #~ "Ελένξτε της παραμετροποιήσης του tuner!"
 
+#~ msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
+#~ msgstr "Να προχωρήσει ο Οδηγός Usb Stick και να εγκαταστήσει το λογισμικό %s στη μνήμη flash;"
+
+#
+#, fuzzy
+#~ msgid "Side by side"
+#~ msgstr "Σε παράθεση"
+
+#
+#
+#~ msgid "Sleep Timer"
+#~ msgstr "Χρονοδιακόπτης απενεργοποίησης"
+
 #
 #~ msgid "SoftCam / CI"
 #~ msgstr "SoftCam / CI"
+
+#
+#
+#~ msgid "Subservices"
+#~ msgstr "Υπό-υπηρεσίες"
+
+#~ msgid ""
+#~ "The USB stick was prepared to be bootable.\n"
+#~ "Now you can download an NFI image file!"
+#~ msgstr ""
+#~ "Το usb stick προετοιμάσθηκε ως εκκινήσιμο.\n"
+#~ "Τώρα μπορεί να γίνει λήψη του αρχείου NFI!"
+
+#
+# , python-format
+#~ msgid ""
+#~ "The following device was found:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Do you want to write the USB flasher to this stick?"
+#~ msgstr ""
+#~ "Βρέθηκε η παρακάτω συσκευή:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Θέλετε να γράψετε το USB flasher σε αυτό το stick;"
+
+#~ msgid "The md5sum validation failed, the file may be corrupted!"
+#~ msgstr "Η επιβεβαίωση md5sum απέτυχε, το αρχείο ενδέχεται να είναι κατεστραμμένο!"
+
+#
+#
+#~ msgid "The sleep timer has been activated."
+#~ msgstr "Ο χρονοδιακόπτης απενεργοποίησης ενεργοποιήθηκε."
+
+#
+#
+#~ msgid "The sleep timer has been disabled."
+#~ msgstr "Ο χρονοδιακόπτης απενεργοποίησης απενεργοποιήθηκε."
+
+#~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
+#~ msgstr "Ο Οδηγός βρήκε αντίγραφο ασφαλείας των ρυθμίσεων. Θέλετε να αποκαταστήσετε τις παλιές ρυθμίσεις σας από το %s;"
+
+#~ msgid ""
+#~ "This plugin creates a USB stick which can be used to update the firmware of your linux receiver without the need for a network or WLAN connection.\n"
+#~ "First, a USB stick needs to be prepared so that it becomes bootable.\n"
+#~ "In the next step, an NFI image file can be downloaded from the update server and saved on the USB stick.\n"
+#~ "If you already have a prepared bootable USB stick, please insert it now. Otherwise plug in a USB stick with a minimum size of 64 MB!"
+#~ msgstr ""
+#~ "Αυτό το πρόσθετο δημιουργεί ένα usb stick που μπορεί να χρησιμοποιηθεί για αναβάθμιση του linux receiver χωρίς ανάγκη ύπαρξης δικτύου.\n"
+#~ "Καταρχήν, ένα usb stick πρέπει να προετοιμασθεί ώστε να είναι εκκινήσιμο.\n"
+#~ "Στο επόμενο βήμα, ένα αρχείο NFI μπορεί να αποθηκευτεί σε αυτό από τον διακομιστή ενημερώσεων.\n"
+#~ "Εάν έχετε ένα ήδη έτοιμο usb stick, παρακαλώ συνδέστε το τώρα. Αλλιώς συνδέστε ένα usb stick ελάχιστης χωρητικότητας 64MB!"
+
+#
+#
+#, fuzzy
+#~ msgid "Timer edit"
+#~ msgstr "Επεξεργασία χρονοδιακόπτη"
+
+#
+#
+#, fuzzy
+#~ msgid "Timer editor"
+#~ msgstr "Επεξεργασία χρονοδιακόπτη"
+
+#
+#
+#~ msgid "Timer status:"
+#~ msgstr "Κατάσταση χρονοδιακόπτη:"
+
+#
+#, fuzzy
+#~ msgid "Top and bottom"
+#~ msgstr "Πάνω και Κάτω"
+
+#
+#
+#~ msgid "Translation"
+#~ msgstr "Μετάφραση"
+
+#
+#
+#, fuzzy
+#~ msgid "Translation: "
+#~ msgstr "Μετάφραση:"
+
+#
+#
+#, fuzzy
+#~ msgid "Transponder Time"
+#~ msgstr "Αναμεταδότης"
+
+#
+#~ msgid "USB stick wizard"
+#~ msgstr "Οδηγός USB stick"
+
+#~ msgid "Unattended upgrade without GUI and reboot system"
+#~ msgstr "Αναβάθμιση χωρίς γραφικό περιβάλλον και επανεκκίνηση"
+
+#
+#
+#~ msgid "UnhandledKey"
+#~ msgstr "UnhandledKey"
+
+#
+#
+#~ msgid "Use time of currently running service"
+#~ msgstr "Χρήση ώρας από τρέχουσα υπηρεσία"
+
+#
+#
+#, fuzzy
+#~ msgid "Virtual keyboard"
+#~ msgstr "Εικονικό πληκτρολόγιο"
+
+#
+#
+#~ msgid "Volume"
+#~ msgstr "Ένταση"
+
+#
+#
+#, fuzzy
+#~ msgid ""
+#~ "Welcome.\n"
+#~ "\n"
+#~ "This start wizard will guide you through the basic setup of your linux receiver.\n"
+#~ "Press the OK button on your remote control to move to the next step."
+#~ msgstr ""
+#~ "Καλώς ορίσατε.\n"
+#~ "\n"
+#~ "Εάν θέλετε να συνδέσετε το δέκτη στο διαδίκτυο, αυτό ο Οδηγός θα σας καθοδηγήσει στα βήματα της διαδικασίας ρύθμισης δικτύου του δέκτη.\n"
+#~ "\n"
+#~ "Πιέστε ΟΚ για εκκίνηση ρύθμισης του δικτύου."
+
+#
+#
+#~ msgid "Welcome..."
+#~ msgstr "Καλώς ορίσατε..."
+
+#
+#~ msgid "You have chosen to create a new .NFI flasher bootable USB stick. This will repartition the USB stick and therefore all data on it will be erased."
+#~ msgstr "Επιλέξατε να δημιουργήσετε νέο εκκινήσιμο Usb stick για εγκατάσταση NFI. Θα γίνει εκ νέου κατάτμηση του usb stick και όλα τα δεδομένα σε αυτό θα χαθούν."
+
+#
+#
+#~ msgid ""
+#~ "Your frontprocessor firmware must be upgraded.\n"
+#~ "Press OK to start upgrade."
+#~ msgstr ""
+#~ "Το “frontprocessor firmware” πρέπει να αναβαθμιστεί\n"
+#~ "Πιέστε ΟΚ για την αναβάθμιση."
+
+#
+#
+#~ msgid "config menu"
+#~ msgstr "μενού ρύθμισης"
+
+# , python-format
+#~ msgid "currently installed image: %s"
+#~ msgstr "εγκατεστημένο λογισμικό: %s"
+
+#
+#
+#~ msgid "help..."
+#~ msgstr "βοήθεια..."
 
 #
 #

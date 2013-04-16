@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 20:47+0100\n"
+"POT-Creation-Date: 2013-04-16 19:39+0200\n"
 "PO-Revision-Date: 2012-12-09 02:01+0100\n"
 "Last-Translator: Andy Blackburn <andyblac@o2.co.uk>\n"
 "Language-Team: Ivo / enigma2 (c) <ivog@apolllo.lv>\n"
@@ -48,15 +48,11 @@ msgstr ""
 "\n"
 "Nospiediet OK un gaidiet!"
 
-msgid ""
-"\n"
-"An Input/output error usually indicates a corrupted filesystem! Please check the filesystem of your timeshift-device!"
-msgstr ""
-
 #
+#, fuzzy
 msgid ""
 "\n"
-"Backup your linux receiver settings."
+"Backup your linux box settings."
 msgstr ""
 "\n"
 "Veidot linux receiver iestatījumu dublējumkopiju."
@@ -69,16 +65,16 @@ msgstr ""
 "\n"
 "Rediģēt atjaunināšanas avota adresi."
 
-#
 msgid ""
 "\n"
-"Manage extensions or plugins for your linux receiver"
+"Manage extensions or plugins for your linux box"
 msgstr ""
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Online update of your linux receiver software."
+"Online update of your linux box software."
 msgstr ""
 "\n"
 "linux receiver programmatūras atjaunināšana tiešsaistē."
@@ -100,17 +96,19 @@ msgstr ""
 "Atjaunot dublējumkopijas pēc datuma."
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Restore your linux receiver settings."
+"Restore your linux box settings."
 msgstr ""
 "\n"
 "Atjaunot linux receiver iestatījumus."
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Restore your linux receiver with a new firmware."
+"Restore your linux box with a new firmware."
 msgstr ""
 "\n"
 "Atjaunot linux receiver ar jaunu programmatūru."
@@ -193,6 +191,11 @@ msgid ""
 "!!(Empty)\n"
 "Please, Input to the"
 msgstr ""
+
+#
+#, fuzzy
+msgid "%-H:%M"
+msgstr "%H:%M"
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -341,6 +344,11 @@ msgid_plural "%s updated packages available"
 msgstr[0] ""
 msgstr[1] ""
 
+#
+#, fuzzy, python-format
+msgid "%s%d min"
+msgstr "%d min"
+
 #, python-format
 msgid "%s/%s: %s"
 msgstr ""
@@ -389,14 +397,6 @@ msgstr ""
 
 msgid "/media/usb/"
 msgstr ""
-
-#
-msgid "0"
-msgstr "0"
-
-#
-msgid "1"
-msgstr "1"
 
 msgid "1 GB"
 msgstr ""
@@ -490,10 +490,6 @@ msgid "1st Infobar timeout"
 msgstr ""
 
 #
-msgid "2"
-msgstr "2"
-
-#
 #, fuzzy
 msgid "2. STEP - Choose backup location"
 msgstr "Izvēlieties dublējumkopijas vietu"
@@ -531,10 +527,6 @@ msgid "2nd infobar"
 msgstr "rādīt transpondera informāciju"
 
 #
-msgid "3"
-msgstr "3"
-
-#
 #, fuzzy
 msgid "30"
 msgstr "0"
@@ -550,18 +542,16 @@ msgstr ""
 msgid "3D Mode"
 msgstr ""
 
+#
+#, fuzzy
+msgid "3D Surround"
+msgstr "Skaņa"
+
 msgid "3D setup"
 msgstr ""
 
 msgid "3X"
 msgstr ""
-
-msgid "3d mode"
-msgstr ""
-
-#
-msgid "4"
-msgstr "4"
 
 #
 msgid "4:3"
@@ -579,20 +569,12 @@ msgid "4X"
 msgstr ""
 
 #
-msgid "5"
-msgstr "5"
-
-#
 #, fuzzy
 msgid "5 min."
 msgstr "%d min"
 
 msgid "512 MB"
 msgstr ""
-
-#
-msgid "6"
-msgstr "6"
 
 #
 #, fuzzy
@@ -602,20 +584,8 @@ msgstr "%d min"
 msgid "64 MB"
 msgstr ""
 
-#
-msgid "7"
-msgstr "7"
-
-#
-msgid "8"
-msgstr "8"
-
 msgid "8 MB"
 msgstr ""
-
-#
-msgid "9"
-msgstr "9"
 
 #
 msgid "<Current movielist location>"
@@ -660,14 +630,11 @@ msgstr ""
 "Konfigurācijas datne (%s) ir pārveidota kopš uzstādīšanas.\n"
 "Vai vēlaties paturēt savu versiju?"
 
-msgid "A demo plugin for TPM usage."
-msgstr ""
-
 #
 #, fuzzy
 msgid ""
 "A finished power timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Taimeris ir beidzis ierakstu un vēlas izslēgt\n"
 "linux receiver. Vai darīt to tagad?"
@@ -676,23 +643,25 @@ msgstr ""
 #, fuzzy
 msgid ""
 "A finished powertimer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Taimeris ir beidzis ierakstu un vēlas pārslēgt\n"
 "linux receiver gaidstāves režīmā. Vai darīt to tagad?"
 
 #
+#, fuzzy
 msgid ""
 "A finished record timer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Taimeris ir beidzis ierakstu un vēlas pārslēgt\n"
 "linux receiver gaidstāves režīmā. Vai darīt to tagad?"
 
 #
+#, fuzzy
 msgid ""
 "A finished record timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Taimeris ir beidzis ierakstu un vēlas izslēgt\n"
 "linux receiver. Vai darīt to tagad?"
@@ -747,17 +716,19 @@ msgid ""
 msgstr ""
 
 #
+#, fuzzy
 msgid ""
 "A sleep timer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Miega taimeris vēlas pārslēgt\n"
 "linux receiver gaidstāves režīmā. Vai darīt to tagad?"
 
 #
+#, fuzzy
 msgid ""
 "A sleep timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Miega taimeris vēlas izslēgt\n"
 "linux receiver. Vai darīt to tagad?"
@@ -790,6 +761,9 @@ msgstr "AA"
 msgid "AB"
 msgstr "AB"
 
+msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
 msgid "AFP Setup"
 msgstr ""
 
@@ -814,9 +788,6 @@ msgstr "Par..."
 
 #
 msgid "Accesspoint:"
-msgstr ""
-
-msgid "Action"
 msgstr ""
 
 msgid "Action on long powerbutton press"
@@ -867,11 +838,6 @@ msgstr "Pievienot"
 msgid "Add AutoTimer"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Add Bookmark"
-msgstr "pievienot grāmatzīmi"
-
 msgid "Add Timer"
 msgstr ""
 
@@ -891,11 +857,21 @@ msgstr "pievienot vārdu servera ierakstu"
 msgid "Add a new title"
 msgstr "Pievienot jaunu nosaukumu"
 
+#
+#, fuzzy
+msgid "Add a record timer"
+msgstr "Pievienot taimeri"
+
 msgid "Add a record timer for current event"
 msgstr ""
 
 msgid "Add a zap timer for current event"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Add a zap timer for next event"
+msgstr "pārvietot lejup uz nākamo ierakstu"
 
 #
 #, fuzzy
@@ -967,6 +943,11 @@ msgstr ""
 msgid "Adding schedule..."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Additional Info"
+msgstr "Meklēt papildu SR"
+
 msgid "Additional ZAP informations..."
 msgstr ""
 
@@ -999,10 +980,12 @@ msgstr ""
 msgid "Addon removed!"
 msgstr ""
 
-msgid "Address"
-msgstr ""
+#
+#, fuzzy
+msgid "Addons"
+msgstr "Lietotāja definēts"
 
-msgid "Adjust 3D settings"
+msgid "Address"
 msgstr ""
 
 #
@@ -1048,6 +1031,12 @@ msgstr ""
 msgid "Alias:"
 msgstr ""
 
+msgid "Alignment of events"
+msgstr ""
+
+msgid "Alignment of service names"
+msgstr ""
+
 #
 msgid "All"
 msgstr "Visi"
@@ -1063,6 +1052,12 @@ msgstr ""
 msgid "All satellites"
 msgstr ""
 
+msgid "Allocate"
+msgstr ""
+
+msgid "Allocate unused memory index"
+msgstr ""
+
 msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
@@ -1075,16 +1070,16 @@ msgstr ""
 msgid "Allows more detailed to be in the crash log"
 msgstr ""
 
-msgid "Allows the linux receiver to read the stored EPG data regularly."
+msgid "Allows the linux box to read the stored EPG data regularly."
 msgstr ""
 
-msgid "Allows the linux receiver to store the EPG data regularly."
+msgid "Allows the linux box to store the EPG data regularly."
+msgstr ""
+
+msgid "Allows you hide the extensions of known file types."
 msgstr ""
 
 msgid "Allows you setup the button to do what you choose."
-msgstr ""
-
-msgid "Allows you to choose the Picons to be displayed on the frontpanel."
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -1191,6 +1186,16 @@ msgstr "Vai tiešām vēlaties dzēst %s?"
 
 #
 #, fuzzy
+msgid "Are you sure you want to delete all selected logs:\n"
+msgstr "Vai tiešām vēlaties dzēst %s?"
+
+#
+#, fuzzy
+msgid "Are you sure you want to delete this log:\n"
+msgstr "Vai tiešām vēlaties dzēst %s?"
+
+#
+#, fuzzy
 msgid ""
 "Are you sure you want to delete this:\n"
 " "
@@ -1227,8 +1232,10 @@ msgstr ""
 msgid "Are you sure you want to save the EPG Cache to:\n"
 msgstr ""
 
-msgid "Are you sure you want to update your linux receiver?"
-msgstr ""
+#
+#, fuzzy
+msgid "Are you sure you want to send this log:\n"
+msgstr "Vai tiešām vēlaties dzēst %s?"
 
 #
 msgid "Artist"
@@ -1244,9 +1251,6 @@ msgstr ""
 #, fuzzy
 msgid "Ask User"
 msgstr "Jautāt"
-
-msgid "Ask before shutdown"
-msgstr ""
 
 msgid "Ask to load new entries"
 msgstr ""
@@ -1273,9 +1277,8 @@ msgstr ""
 msgid "At End:"
 msgstr ""
 
-#
-msgid "Audio"
-msgstr "Skaņa"
+msgid "Attach a file"
+msgstr ""
 
 msgid "Audio PID"
 msgstr ""
@@ -1344,6 +1347,12 @@ msgstr "Automātiska nodaļu veidošana katras? minūtes (0=neveidot)"
 msgid "Auto flesh"
 msgstr ""
 
+msgid "Auto focus"
+msgstr ""
+
+msgid "Auto focus commencing ..."
+msgstr ""
+
 msgid "Auto language selection"
 msgstr ""
 
@@ -1407,14 +1416,6 @@ msgstr "BA"
 #
 msgid "BB"
 msgstr "BB"
-
-#
-msgid "BER"
-msgstr "BER"
-
-#
-msgid "BER:"
-msgstr "BER:"
 
 msgid "BZ2-package:\\n"
 msgstr ""
@@ -1618,9 +1619,14 @@ msgstr ""
 msgid "Button setup"
 msgstr ""
 
-#
-msgid "C"
-msgstr "C"
+msgid "Bypass HDMI EDID Check"
+msgstr ""
+
+msgid "Bytes received:"
+msgstr ""
+
+msgid "Bytes sent:"
+msgstr ""
 
 #
 msgid "C-Band"
@@ -1685,11 +1691,18 @@ msgstr ""
 msgid "CF card mounted in:        "
 msgstr ""
 
+msgid "CHANGE BOUQUET"
+msgstr ""
+
 #
 msgid "CI assignment"
 msgstr ""
 
 msgid "COMPACT FLASH: "
+msgstr ""
+
+#, python-format
+msgid "CPU: %s"
 msgstr ""
 
 #
@@ -1715,6 +1728,18 @@ msgstr "Kešatmiņas sīktēli"
 msgid "Cached:"
 msgstr ""
 
+msgid "Calculate"
+msgstr ""
+
+msgid "Calculate all positions"
+msgstr ""
+
+msgid "Calculation complete"
+msgstr ""
+
+msgid "Calibrate"
+msgstr ""
+
 msgid "Can be used for different fps between external subtitles and video."
 msgstr ""
 
@@ -1731,6 +1756,12 @@ msgid "Cancel"
 msgstr "Atcelt"
 
 msgid "Cannot delete file"
+msgstr ""
+
+msgid "Cannot determine"
+msgstr ""
+
+msgid "Cannot find any signal ..., aborting !"
 msgstr ""
 
 msgid "Cannot move to trash can"
@@ -1761,10 +1792,18 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
+msgid "Center time-labels and remove date"
+msgstr ""
+
 #
 # ???
 msgid "Change bouquets in quickzap"
 msgstr "Mainīt buķetes ātrās slēgšanas režīmā"
+
+#
+#, fuzzy
+msgid "Change city"
+msgstr "Mainīt PIN"
 
 msgid "Change permanent clock position"
 msgstr ""
@@ -1793,9 +1832,6 @@ msgstr ""
 
 #
 msgid "Change step size"
-msgstr ""
-
-msgid "Changelog"
 msgstr ""
 
 #
@@ -1853,10 +1889,6 @@ msgid "ChannelEPG settings"
 msgstr "Kanālu izvēle"
 
 #
-msgid "Channellist menu"
-msgstr "Kanālu saraksta izvēlne"
-
-#
 msgid "Chap."
 msgstr "Nod."
 
@@ -1886,6 +1918,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Checking Logs..."
+msgstr "Pārbauda datņu sistēmu..."
+
+#
+#, fuzzy
 msgid "Checking filesystem..."
 msgstr "Pārbauda datņu sistēmu..."
 
@@ -1904,6 +1941,15 @@ msgstr ""
 msgid "Children/Youth"
 msgstr ""
 
+#, python-format
+msgid "Chipset: BCM%s"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Chnage to bouquet"
+msgstr "Pievienot buķetei"
+
 msgid "Choose Bouquet"
 msgstr ""
 
@@ -1921,10 +1967,10 @@ msgstr "Izvēlēties mērķa mapi"
 msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when the linux receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when the linux box is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when the linux receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when the linux box is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose time interval to which the graphics will be rounded off."
@@ -1969,6 +2015,11 @@ msgid "Cleanup"
 msgstr "Tīrīšana"
 
 #
+#, fuzzy
+msgid "Clear"
+msgstr "Notīrīt žurnālu"
+
+#
 msgid "Clear before scan"
 msgstr "Notīrīt pirms meklēšanas"
 
@@ -1998,6 +2049,14 @@ msgstr ""
 #
 msgid "Close"
 msgstr "Aizvērt"
+
+#
+#, fuzzy
+msgid "Close bouquet list."
+msgstr "beigt buķešu rediģēšanu"
+
+msgid "Close dialog"
+msgstr ""
 
 #
 msgid "Close title selection"
@@ -2040,10 +2099,6 @@ msgstr ""
 #, fuzzy
 msgid "Command To Run"
 msgstr "Komandu secība"
-
-#
-msgid "Command execution..."
-msgstr "Izpilda komandu..."
 
 #
 msgid "Command order"
@@ -2100,6 +2155,11 @@ msgstr ""
 msgid "Configuration mode"
 msgstr ""
 
+#
+#, fuzzy, python-format
+msgid "Configuration mode: %s"
+msgstr "Konfigurē"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr ""
 
@@ -2126,10 +2186,6 @@ msgstr ""
 #, fuzzy
 msgid "Configure internal epg..."
 msgstr "Konfigurē"
-
-#
-msgid "Configure nameservers"
-msgstr ""
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr ""
@@ -2177,6 +2233,9 @@ msgid "Configure the color of the teletext subtitles."
 msgstr ""
 
 msgid "Configure the contrast level of the front panel display."
+msgstr ""
+
+msgid "Configure the duration in minutes for the screensaver."
 msgstr ""
 
 msgid "Configure the first audio language (highest priority)."
@@ -2323,6 +2382,9 @@ msgstr ""
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr ""
 
+msgid "Configure your NTP server."
+msgstr ""
+
 #
 msgid "Configure your internal LAN"
 msgstr ""
@@ -2387,8 +2449,9 @@ msgid "Continue"
 msgstr ""
 
 #
-msgid "Continue in background"
-msgstr "Turpināt fonā"
+#, fuzzy
+msgid "Continue configuring your network"
+msgstr "Tīkla konfigurēšana pabeigta"
 
 msgid "Continue playback"
 msgstr ""
@@ -2433,15 +2496,14 @@ msgstr ""
 msgid "Copying files"
 msgstr "Pārbauda datņu sistēmu..."
 
+#, python-format
+msgid "Cores: %s"
+msgstr ""
+
 msgid ""
 "Could not activate Permanent-Timeshift!\n"
 "Timeshift-Path does not exist"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Could not connect to linux receiver .NFI image feed server:"
-msgstr "Nevar savienoties ar linux receiver .NFI imidža barotnes serveris:"
 
 msgid "Could not find installed channel list."
 msgstr ""
@@ -2471,6 +2533,12 @@ msgstr ""
 msgid "Could not save configfile %s!"
 msgstr ""
 
+msgid "Country :"
+msgstr ""
+
+msgid "Crash Logs"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Create"
@@ -2482,7 +2550,7 @@ msgstr "Izveidot DVD-ISO"
 
 #
 #, fuzzy
-msgid "Create Directory"
+msgid "Create directory"
 msgstr "izveidot mapi"
 
 msgid "Create more detailed crash log"
@@ -2558,13 +2626,6 @@ msgstr "Pašreizējais transponderis"
 msgid "Current value: "
 msgstr ""
 
-#
-msgid "Current version:"
-msgstr "Pašreizējā versija:"
-
-msgid "Currently installed image"
-msgstr ""
-
 msgid "Currentpage(Bookmark)"
 msgstr ""
 
@@ -2610,9 +2671,8 @@ msgstr "Čehu"
 msgid "Czech Republic"
 msgstr ""
 
-#
-msgid "D"
-msgstr "D"
+msgid "DAC"
+msgstr ""
 
 #
 msgid "DHCP"
@@ -2692,13 +2752,13 @@ msgid "Danish"
 msgstr "Dāņu"
 
 #
-msgid "Date"
-msgstr "Datums"
+#, fuzzy
+msgid "Data provider: "
+msgstr "Operatori"
 
 #
-#, fuzzy
-msgid "Date/time input"
-msgstr "Laiks / Datums"
+msgid "Date"
+msgstr "Datums"
 
 msgid "Deactivate permanent clock"
 msgstr ""
@@ -2707,6 +2767,9 @@ msgstr ""
 #, fuzzy
 msgid "Deactive"
 msgstr "pievienot alternatīvas"
+
+msgid "Debug Logs"
+msgstr ""
 
 msgid "December"
 msgstr ""
@@ -2730,6 +2793,11 @@ msgstr ""
 #
 msgid "Default movie location"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Default recording type"
+msgstr "šis ieraksts"
 
 #
 #, fuzzy
@@ -2960,11 +3028,10 @@ msgstr "Izslēgts"
 msgid "Disconnect"
 msgstr ""
 
-#
-msgid "Dish"
-msgstr "Antena"
-
 msgid "Disk space to reserve for recordings (in GB)"
+msgstr ""
+
+msgid "Display"
 msgstr ""
 
 #
@@ -2986,9 +3053,6 @@ msgid "Display message before playing next movie"
 msgstr ""
 
 msgid "Display search results by:"
-msgstr ""
-
-msgid "Display settings"
 msgstr ""
 
 msgid "Display the EIT now/next eventdata in infobar."
@@ -3086,6 +3150,11 @@ msgid "Do you really want to remove the plugin \"%s\"?"
 msgstr "Vai tiešām vēlaties DZĒST spraudni \"%s \"?"
 
 #
+#, fuzzy, python-format
+msgid "Do you really want to remove the timer for %s?"
+msgstr "Vai tiešām vēlaties DZĒST spraudni \"%s \"?"
+
+#
 # ???
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -3098,14 +3167,29 @@ msgid ""
 " "
 msgstr "Vai tiešām vēlaties DZĒST spraudni \"%s \"?"
 
+#
+#, fuzzy
+msgid "Do you want to add any additional information ?"
+msgstr "Vai vēleties manuāli meklēt citus kanālus?"
+
 msgid ""
 "Do you want to also install samba client ?\n"
 "This allows you to mount your windows shares on this device."
 msgstr ""
 
+msgid ""
+"Do you want to attach a text file to explain the log ?\n"
+"(choose 'No' to type message using virtual keyboard.)"
+msgstr ""
+
 #
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Vai vēlaties ierakstīt šo kolekciju uz DVD nesēja?"
+
+msgid ""
+"Do you want to delete all selected files:\n"
+"(choose 'No' to only delete the currently selected file.)"
+msgstr ""
 
 #
 #, fuzzy
@@ -3124,10 +3208,6 @@ msgstr "Vai vēleties meklēt kanālus?"
 #
 msgid "Do you want to do another manual service scan?"
 msgstr "Vai vēleties manuāli meklēt citus kanālus?"
-
-#, python-format
-msgid "Do you want to download the image to %s ?"
-msgstr ""
 
 #
 #, fuzzy
@@ -3151,10 +3231,6 @@ msgstr "Vai vēlaties atskaņot DVD?"
 msgid "Do you want to preview this DVD before burning?"
 msgstr "Vai vēleties skatīt šo DVD pirms rakstīšanas?"
 
-#
-msgid "Do you want to reboot your linux receiver?"
-msgstr "Vai vēlaties atsāknēt linux receiver?"
-
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
@@ -3175,6 +3251,11 @@ msgstr "Vai vēlaties atsākt šo atskaņošanu?"
 msgid "Do you want to see more entries?"
 msgstr "Vai vēlaties atjaunot savus iestatījumus?"
 
+msgid ""
+"Do you want to send all selected files:\n"
+"(choose 'No' to only send the currently selected file.)"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Do you want to set selected url to the Startpage?"
@@ -3186,7 +3267,8 @@ msgid "Do you want to update your EGAMI image?"
 msgstr "Vai vēlaties atjaunināt linux receiver?"
 
 #
-msgid "Do you want to update your linux receiver?"
+#, fuzzy
+msgid "Do you want to update your linux box?"
 msgstr "Vai vēlaties atjaunināt linux receiver?"
 
 #
@@ -3222,15 +3304,6 @@ msgstr ""
 #
 msgid "Download"
 msgstr "Lejuplādēt"
-
-#, python-format
-msgid "Download %s from server"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Download .NFI-files for USB-flasher"
-msgstr "Lejuplādēt .NFI-datnes priekš USB-ielādes"
 
 #
 #, fuzzy
@@ -3269,10 +3342,6 @@ msgstr ""
 #, fuzzy
 msgid "Download subtitle:"
 msgstr "Lejuplādē"
-
-#
-msgid "Downloadable plugins"
-msgstr "Lejuplādējamie spraudņi"
 
 #
 msgid "Downloading"
@@ -3315,6 +3384,9 @@ msgstr ""
 msgid "E"
 msgstr "E"
 
+msgid "E2 Light Multiboot"
+msgstr ""
+
 msgid "ECM Info"
 msgstr ""
 
@@ -3340,9 +3412,6 @@ msgid "EGAMI Backup complete! Please wait..."
 msgstr ""
 
 msgid "EGAMI Devices Manager has just unmounted all your devices."
-msgstr ""
-
-msgid "EGAMI File Manager"
 msgstr ""
 
 msgid "EGAMI Full Backup Panel"
@@ -3387,11 +3456,6 @@ msgstr ""
 msgid "EPG location"
 msgstr ""
 
-#
-#, fuzzy
-msgid "EPG selection"
-msgstr "EPG izvēle"
-
 msgid "EPG settings"
 msgstr ""
 
@@ -3403,6 +3467,9 @@ msgstr "KĻŪDA - meklēšana neizdevās (%s)!"
 #
 msgid "East"
 msgstr "Austrumi"
+
+msgid "East limit set"
+msgstr ""
 
 msgid "Ecm:"
 msgstr ""
@@ -3436,11 +3503,13 @@ msgid "Edit settings"
 msgstr "Rediģēt iestatījumus"
 
 #
-msgid "Edit the Nameserver configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Edit the Nameserver configuration of your linux box.\n"
 msgstr "Rediģēt linux receiver domēna vārdu servera konfigurāciju.\n"
 
 #
-msgid "Edit the network configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Edit the network configuration of your linux box.\n"
 msgstr "Rediģēt linux receiver tīkla konfigurāciju.\n"
 
 #
@@ -3554,10 +3623,6 @@ msgid "Enable teletext caching"
 msgstr ""
 
 #
-msgid "Enable timer"
-msgstr "Aktivizēt taimeri"
-
-#
 msgid "Enabled"
 msgstr "Aktivizēts"
 
@@ -3600,9 +3665,6 @@ msgstr ""
 msgid "Enigma2 skin selector"
 msgstr ""
 
-msgid "Enimga2 Changes"
-msgstr ""
-
 msgid "Enter Key"
 msgstr ""
 
@@ -3613,6 +3675,11 @@ msgstr "Atvērt galveno izvēlni..."
 #
 msgid "Enter pin code"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enter the city name:"
+msgstr "Ievadiet kanāla PIN"
 
 #
 msgid "Enter the service pin"
@@ -3655,6 +3722,13 @@ msgid "Error reading webpage!"
 msgstr ""
 
 #
+#, fuzzy, python-format
+msgid ""
+"Error:\n"
+"%s"
+msgstr "Kļūda"
+
+#
 #, python-format
 msgid ""
 "Error: %s\n"
@@ -3678,16 +3752,6 @@ msgstr ""
 
 msgid "Event font size (relative to skin size)"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Event view"
-msgstr "Notikumu skats"
-
-#
-#, fuzzy
-msgid "Event view menu"
-msgstr "Notikumu skats"
 
 msgid "Everywhere"
 msgstr ""
@@ -3815,6 +3879,12 @@ msgstr ""
 msgid "External (CF)"
 msgstr ""
 
+msgid "Extras"
+msgstr ""
+
+msgid "FAILED"
+msgstr ""
+
 #
 #, fuzzy
 msgid "FAN Setup"
@@ -3848,6 +3918,9 @@ msgid "Failed to download an Addon..."
 msgstr ""
 
 msgid "Failed to remove old files."
+msgstr ""
+
+msgid "Failed to write /tmp/positionersetup.log: "
 msgstr ""
 
 #
@@ -3904,6 +3977,11 @@ msgstr ""
 msgid "File"
 msgstr ""
 
+#
+#, fuzzy
+msgid "File Manager"
+msgstr "Kanālu meklēšana"
+
 msgid "File Manager Install..."
 msgstr ""
 
@@ -3929,6 +4007,19 @@ msgid "Film & Animation"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Final position at"
+msgstr "Iet uz pozīciju"
+
+msgid "Final position at index"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Fine movement"
+msgstr "Rādīt pozicioniera kustību"
+
+#
 msgid "Finetune"
 msgstr "Precīzā regulēšana"
 
@@ -3951,16 +4042,8 @@ msgstr "Somu"
 msgid "Fixed"
 msgstr ""
 
-#
-msgid "Flash"
-msgstr "Iekšējā atmiņa"
-
 msgid "Flashing"
 msgstr ""
-
-#
-msgid "Flashing failed"
-msgstr "Lādēšana neizdevās"
 
 msgid "Folder:"
 msgstr ""
@@ -4038,6 +4121,9 @@ msgstr "Pk"
 msgid "Friday"
 msgstr "Piektdiena"
 
+msgid "From"
+msgstr ""
+
 msgid "From :"
 msgstr ""
 
@@ -4094,6 +4180,11 @@ msgstr ""
 msgid "Gateway"
 msgstr "Vārteja"
 
+#
+#, fuzzy
+msgid "Gateway:"
+msgstr "Vārteja"
+
 msgid "General"
 msgstr ""
 
@@ -4120,12 +4211,6 @@ msgstr "Vācu"
 #, fuzzy
 msgid "Get Subtitle"
 msgstr "Subtitri"
-
-msgid "Get latest experimental image"
-msgstr ""
-
-msgid "Get latest release image"
-msgstr ""
 
 msgid "Getting Event Info failed!"
 msgstr ""
@@ -4199,11 +4284,26 @@ msgstr "Iet uz 0"
 msgid "Goto :"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Goto X"
+msgstr "Iet uz 0"
+
+#
+#, fuzzy
+msgid "Goto index position"
+msgstr "Iet uz pozīciju"
+
 msgid "Goto next bouquet"
 msgstr ""
 
 msgid "Goto next channel"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Goto next day of events"
+msgstr "pārvietot lejup uz nākamo ierakstu"
 
 msgid "Goto next event"
 msgstr ""
@@ -4221,6 +4321,11 @@ msgstr ""
 msgid "Goto previous channel"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Goto previous day of events"
+msgstr "pārvietot augšup uz iepriekšējo ierakstu"
+
 msgid "Goto previous event"
 msgstr ""
 
@@ -4230,11 +4335,21 @@ msgstr ""
 msgid "Goto specific data/time"
 msgstr ""
 
+#
+#, fuzzy
+msgid "GotoX calibration"
+msgstr "Iet uz pozīciju"
+
 msgid "GraphMultiEpg Settings"
 msgstr ""
 
 msgid "Graphical EPG"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Graphical InfobarEPG settings"
+msgstr "Grafiskais daudzkanālu EPG"
 
 #
 msgid "Graphical Multi EPG"
@@ -4274,6 +4389,9 @@ msgid "HD videos"
 msgstr ""
 
 msgid "HDD mounted in:               "
+msgstr ""
+
+msgid "HDMI"
 msgstr ""
 
 msgid "HDMI CEC"
@@ -4338,6 +4456,9 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
+msgid "Helps setting up your dish"
+msgstr ""
+
 msgid ""
 "Here is the list of installed images in Your STB\n"
 "\n"
@@ -4369,6 +4490,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Hide known extensions"
+msgstr "skatīt paplašinājumus..."
+
+#
+#, fuzzy
 msgid "Hide player"
 msgstr "slēpt atskaņotāju"
 
@@ -4382,6 +4508,9 @@ msgstr ""
 #, fuzzy
 msgid "Hierarchy information"
 msgstr "Hierarhijas informācija"
+
+msgid "High :"
+msgstr ""
 
 #
 msgid "High bitrate support"
@@ -4450,6 +4579,9 @@ msgstr ""
 msgid "Hue"
 msgstr ""
 
+msgid "Humidity :"
+msgstr ""
+
 #
 msgid "Hungarian"
 msgstr "Ungāru"
@@ -4459,6 +4591,11 @@ msgstr ""
 
 msgid "IMDb Search"
 msgstr ""
+
+#
+#, fuzzy
+msgid "IP Address"
+msgstr "IP adrese"
 
 #
 #, fuzzy
@@ -4612,9 +4749,8 @@ msgstr ""
 msgid "Increased voltage"
 msgstr "Palielināt spriegumu"
 
-#
-msgid "Index"
-msgstr "Indekss"
+msgid "Index allocated:"
+msgstr ""
 
 msgid "India"
 msgstr ""
@@ -4622,11 +4758,6 @@ msgstr ""
 #
 msgid "Info"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Info bar"
-msgstr "Infojosla"
 
 msgid "Info button (long)"
 msgstr ""
@@ -4668,7 +4799,18 @@ msgstr "Inic"
 msgid "Initial fast forward speed"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Initial lock ratio"
+msgstr "Nederīga vieta"
+
 msgid "Initial rewind speed"
+msgstr ""
+
+msgid "Initial signal quality"
+msgstr ""
+
+msgid "Initial signal quality:"
 msgstr ""
 
 #
@@ -4777,11 +4919,6 @@ msgstr ""
 #, fuzzy
 msgid "Installing an addon... Please wait..."
 msgstr "Iegūst spraudņa informāciju. Lūdzu gaidiet..."
-
-#
-#, fuzzy
-msgid "Installing software..."
-msgstr "Uzstāda programmatūru..."
 
 #
 #, fuzzy
@@ -4903,6 +5040,9 @@ msgstr ""
 msgid "Items per page for list screen"
 msgstr ""
 
+msgid "JUMP 24 HOURS"
+msgstr ""
+
 #
 #, fuzzy
 msgid "January"
@@ -4913,11 +5053,6 @@ msgstr ""
 
 #
 msgid "Job View"
-msgstr "Darbu skats"
-
-#
-#, fuzzy
-msgid "Job overview"
 msgstr "Darbu skats"
 
 msgid "July"
@@ -5095,6 +5230,11 @@ msgid "Latitude"
 msgstr "Platums"
 
 #
+#, fuzzy
+msgid "Latitude :"
+msgstr "Platums"
+
+#
 msgid "Latvian"
 msgstr "Latviešu"
 
@@ -5123,6 +5263,11 @@ msgstr ""
 msgid "Letterbox"
 msgstr "Letterbox"
 
+#
+#, fuzzy
+msgid "Letterbox zoom"
+msgstr "Letterbox"
+
 msgid "Light Grey"
 msgstr ""
 
@@ -5142,6 +5287,16 @@ msgstr ""
 #
 msgid "Limit west"
 msgstr "Rietumu limits"
+
+#
+#, fuzzy
+msgid "Limits cancelled"
+msgstr "Dzēst virsrakstu"
+
+#
+#, fuzzy
+msgid "Limits enabled"
+msgstr "Limiti ieslēgti"
 
 #
 msgid "Limits off"
@@ -5167,9 +5322,6 @@ msgid "Linked titles with a DVD menu"
 msgstr "Saistītie nosaukumi ar DVD izvēlni"
 
 msgid "List EPG functions..."
-msgstr ""
-
-msgid "List available networks"
 msgstr ""
 
 msgid "List mode"
@@ -5231,8 +5383,9 @@ msgid "Location"
 msgstr "Atrašanās vieta"
 
 #
-msgid "Lock:"
-msgstr "Slēgt:"
+#, fuzzy
+msgid "Lock ratio"
+msgstr "Atrašanās vieta"
 
 msgid "Log"
 msgstr ""
@@ -5245,6 +5398,9 @@ msgstr "datnes nosaukums"
 #
 msgid "Log results to harddisk"
 msgstr "Žurnalēt rezultātus uz cietā diska"
+
+msgid "LogManager"
+msgstr ""
 
 msgid "Logs location"
 msgstr ""
@@ -5273,6 +5429,14 @@ msgstr "Ilgstošs taustiņa nospiediens"
 msgid "Longitude"
 msgstr "Garums"
 
+#
+#, fuzzy
+msgid "Longitude :"
+msgstr "Garums"
+
+msgid "Low :"
+msgstr ""
+
 msgid "Luxembourgish"
 msgstr ""
 
@@ -5281,10 +5445,6 @@ msgstr ""
 
 msgid "MB"
 msgstr ""
-
-#
-msgid "MORE"
-msgstr "VAIRĀK"
 
 #
 #, fuzzy
@@ -5373,7 +5533,8 @@ msgid "Manage system and kernel logs..."
 msgstr ""
 
 #
-msgid "Manage your linux receiver's software"
+#, fuzzy
+msgid "Manage your linux box's software"
 msgstr "Pārvaldīt ierīces programmatūru"
 
 msgid "Manual Install EGAMI and IPK packages"
@@ -5438,21 +5599,17 @@ msgstr ""
 msgid "May"
 msgstr "diena"
 
+#
+#, fuzzy
+msgid "Media Player"
+msgstr "Mediju atskaņotājs"
+
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
 
 #
-msgid "Media player"
-msgstr "Mediju atskaņotājs"
-
-#
 #, fuzzy
 msgid "Media scanner"
-msgstr "Mediju atskaņotājs"
-
-#
-#, fuzzy
-msgid "MediaPlayer"
 msgstr "Mediju atskaņotājs"
 
 #
@@ -5469,6 +5626,9 @@ msgstr ""
 msgid "Memory Information"
 msgstr ""
 
+msgid "Memory index"
+msgstr ""
+
 #
 msgid "Menu"
 msgstr "Izvēlne"
@@ -5478,14 +5638,6 @@ msgstr ""
 
 msgid "Merging Timeshift files"
 msgstr ""
-
-#
-msgid "Message"
-msgstr "Paziņojums"
-
-#
-msgid "Message..."
-msgstr "Paziņojums..."
 
 msgid "Mexico"
 msgstr ""
@@ -5640,12 +5792,32 @@ msgstr ""
 msgid "Move to other directory"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Move to position X"
+msgstr "Iet uz pozīciju"
+
 msgid "Move up a page"
 msgstr ""
 
 #
 msgid "Move west"
 msgstr "Griezt uz rietumiem"
+
+#
+#, fuzzy
+msgid "Moved to position 0"
+msgstr "Iet uz pozīciju"
+
+#
+#, fuzzy
+msgid "Moved to position at index"
+msgstr "Iet uz pozīciju"
+
+#
+#, fuzzy
+msgid "Movement"
+msgstr "Griezt uz austrumiem"
 
 msgid "Movie List"
 msgstr ""
@@ -5666,11 +5838,27 @@ msgid "Movie/Drama"
 msgstr ""
 
 #
-msgid "Movielist menu"
-msgstr "Filmu saraksta izvēlne"
+#, fuzzy
+msgid "Moving"
+msgstr "Dzēšana"
+
+#
+#, fuzzy
+msgid "Moving east ..."
+msgstr "Griezt uz austrumiem"
 
 msgid "Moving files"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Moving to position"
+msgstr "Iet uz pozīciju"
+
+#
+#, fuzzy
+msgid "Moving west ..."
+msgstr "Griezt uz rietumiem"
 
 #
 msgid "Multi EPG"
@@ -5701,10 +5889,6 @@ msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr ""
-
-#
-msgid "Mute"
-msgstr "Klusēt"
 
 msgid "My TubePlayer"
 msgstr ""
@@ -5738,17 +5922,6 @@ msgstr ""
 msgid "N/A"
 msgstr "N/A"
 
-#
-msgid "NEXT"
-msgstr "NĀKAMAIS"
-
-msgid "NFI image flashing"
-msgstr ""
-
-#
-msgid "NFI image flashing completed. Press Yellow to Reboot!"
-msgstr "NFI imidža lādēšana pabeigta. Spiediet dzelteno pogu, lai atsāknētu!"
-
 msgid "NFS Server Panel"
 msgstr ""
 
@@ -5764,12 +5937,13 @@ msgstr ""
 msgid "NIT Info"
 msgstr ""
 
-#
-msgid "NOW"
-msgstr "PAŠREIZ"
-
 msgid "NTP"
 msgstr ""
+
+#
+#, fuzzy
+msgid "NTP server"
+msgstr "Domēna vārdu serveris"
 
 #
 msgid "NTSC"
@@ -5805,11 +5979,6 @@ msgstr "Domēna vārdu serveris %d"
 msgid "Nameserver settings"
 msgstr "Domēna vārdu servera iestatījumi"
 
-#
-#, fuzzy
-msgid "Nameserver setup"
-msgstr "Domēna vārdu servera iestatne"
-
 msgid "Namespace"
 msgstr ""
 
@@ -5830,11 +5999,6 @@ msgstr ""
 msgid "Network Information"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Network Mounts"
-msgstr "Tīkla pārbaude"
-
 msgid "Network Servers:"
 msgstr ""
 
@@ -5852,8 +6016,8 @@ msgstr "Tīkla vednis"
 
 #
 #, fuzzy
-msgid "Network configuration..."
-msgstr "Tīkla konfigurācija..."
+msgid "Network mounts"
+msgstr "Tīkla pārbaude"
 
 msgid "Network name (SSID)"
 msgstr ""
@@ -5863,16 +6027,17 @@ msgid "Network scan"
 msgstr "Tīkla meklēšana"
 
 #
+#, fuzzy
+msgid "Network settings/info"
+msgstr "Aktivizēt tīkla iestatījumus"
+
+#
 msgid "Network setup"
 msgstr "Tīkla iestatne"
 
 #
 msgid "Network test"
 msgstr "Tīkla pārbaude"
-
-#
-msgid "Network test..."
-msgstr "Tīkla pārbaude..."
 
 msgid "Network test: "
 msgstr ""
@@ -5916,10 +6081,6 @@ msgstr "Jauna versija:"
 
 msgid "New timers location"
 msgstr ""
-
-#
-msgid "New version:"
-msgstr "Jauna versija:"
 
 msgid "NewCamd DES Key:"
 msgstr ""
@@ -5987,10 +6148,6 @@ msgstr ""
 msgid "No description available."
 msgstr ""
 
-#
-msgid "No details for this image file"
-msgstr "Nav informācijas par šo imidža datni"
-
 msgid "No detected HbbTV applications."
 msgstr ""
 
@@ -6005,6 +6162,11 @@ msgstr "Nav atrasta informācija par notikumiem, ieraksts turpinās."
 #
 msgid "No fast winding possible yet.. but you can use the number buttons to skip forward/backward!"
 msgstr ""
+
+#
+#, fuzzy
+msgid "No free index available"
+msgstr "Daži spraudņi nav pieejami:\n"
 
 #
 msgid "No free tuner!"
@@ -6034,6 +6196,9 @@ msgstr ""
 
 #
 msgid "No networks found"
+msgstr ""
+
+msgid "No new plugins found"
 msgstr ""
 
 msgid "No of items switch (increase or reduced)"
@@ -6096,6 +6261,11 @@ msgid ""
 msgstr ""
 "Nav aktīva uztvērēja!\n"
 "Lūdzu iestatiet uztvērēju pirms sākat meklēt kanālus."
+
+#
+#, fuzzy
+msgid "No updates available"
+msgstr "Daži spraudņi nav pieejami:\n"
 
 msgid "No updates available. Please try again later."
 msgstr ""
@@ -6172,7 +6342,8 @@ msgid "No, do nothing."
 msgstr "Nē, nedarīt neko"
 
 #
-msgid "No, just start my linux receiver"
+#, fuzzy
+msgid "No, just start my linux box"
 msgstr "Nē, vienkārši startēt linux receiver"
 
 msgid "No, never"
@@ -6249,20 +6420,12 @@ msgstr ""
 "Nav ko meklēt!\n"
 "Lūdzu iestatiet uztvērēju pirms sākat meklēt kanālus."
 
-msgid "Nothing to upgrade"
-msgstr ""
-
 msgid "November"
 msgstr ""
 
 msgctxt "now/next: 'now' event label"
 msgid "Now"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Now playing"
-msgstr "Atskaņo"
 
 #
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
@@ -6272,9 +6435,6 @@ msgid "Number"
 msgstr ""
 
 msgid "Number of rows"
-msgstr ""
-
-msgid "OE Changes"
 msgstr ""
 
 #
@@ -6345,6 +6505,9 @@ msgid "One line"
 msgstr ""
 
 msgid "OnlineVersionCheck"
+msgstr ""
+
+msgid "Only active when in standby"
 msgstr ""
 
 #
@@ -6426,6 +6589,9 @@ msgstr ""
 msgid "Overwrite configuration files?"
 msgstr ""
 
+msgid "PAGE UP/DOWN"
+msgstr ""
+
 #
 msgid "PAL"
 msgstr "PAL"
@@ -6440,12 +6606,10 @@ msgstr ""
 msgid "PIDs"
 msgstr "PIDs"
 
-#
-#, fuzzy
-msgid "PIN code needed"
-msgstr "Vajadzīgs pin kods"
-
 msgid "PMT PID"
+msgstr ""
+
+msgid "PRIMETIME"
 msgstr ""
 
 #, python-format
@@ -6468,9 +6632,6 @@ msgstr "Pakotņu saraksta atjaunināšana"
 #
 msgid "Package list update"
 msgstr "Pakotņu saraksta atjaunināšana"
-
-msgid "Packages"
-msgstr ""
 
 #
 msgid "Packet management"
@@ -6517,11 +6678,6 @@ msgstr "Vecāku kontrole"
 
 msgid "Parental control editor"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Parental control services editor"
-msgstr "Vecāku kontroles kanālu redaktors"
 
 #
 msgid "Parental control setup"
@@ -6576,12 +6732,6 @@ msgstr "Cirkulārā labā"
 msgid "Perform a setting backup before updating."
 msgstr ""
 
-msgid "Perform a setting backup,"
-msgstr ""
-
-msgid "Perform a setting backup, making a backup before updating is strongly advised."
-msgstr ""
-
 msgid "Perform an online update check in the background"
 msgstr ""
 
@@ -6633,11 +6783,6 @@ msgstr ""
 msgid "PiP"
 msgstr ""
 
-#
-#, fuzzy
-msgid "PiP setup"
-msgstr "PiP iestatne"
-
 msgid "Picon"
 msgstr ""
 
@@ -6649,6 +6794,11 @@ msgstr ""
 
 msgid "Picon width"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Picture Player"
+msgstr "Attēlu rādītājs"
 
 #
 #, fuzzy
@@ -6705,6 +6855,11 @@ msgstr "Atskaņot mūzikas CD..."
 
 #
 #, fuzzy
+msgid "Play back media files"
+msgstr "Izvēlieties dublējumkopijas datnes"
+
+#
+#, fuzzy
 msgid "Play entry"
 msgstr "atskaņot ierakstu"
 
@@ -6753,10 +6908,6 @@ msgstr ""
 msgid "Please change recording endtime"
 msgstr "Lūdzu nomainiet ieraksta beigu laiku"
 
-#
-msgid "Please check your network settings!"
-msgstr "Lūdzu pārbaudiet tīkla iestatījumus!"
-
 msgid "Please choose CCcam-Reader"
 msgstr ""
 
@@ -6779,14 +6930,13 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Please choose."
+msgid "Please choose what you want to do next."
 msgstr "Lūdzu izvēlieties darbību..."
 
 #
-msgid ""
-"Please configure or verify your Nameservers by filling out the required values.\n"
-"When you are ready press OK to continue."
-msgstr ""
+#, fuzzy
+msgid "Please choose."
+msgstr "Lūdzu izvēlieties darbību..."
 
 #
 msgid ""
@@ -6794,7 +6944,7 @@ msgid ""
 "When you are ready press OK to continue."
 msgstr ""
 
-msgid "Please connect your receiver to the internet"
+msgid "Please connect your linux box to the internet"
 msgstr ""
 
 #
@@ -6871,9 +7021,6 @@ msgstr "Lūdzu izvēlieties papildkanālu ierakstam..."
 #
 msgid "Please select a subservice..."
 msgstr "Lūdzu izvēlieties papildkanālu..."
-
-msgid "Please select an NFI file and press green key to flash!"
-msgstr ""
 
 #
 #, fuzzy
@@ -6976,6 +7123,11 @@ msgid "Please wait while we prepare your network interfaces..."
 msgstr ""
 
 #
+#, fuzzy
+msgid "Please wait while we test your network connection..."
+msgstr "Lūdzu gaidiet kamēr tīkls tiek konfigurēts..."
+
+#
 msgid "Please wait while we test your network..."
 msgstr ""
 
@@ -7035,10 +7187,6 @@ msgstr ""
 msgid "Plugin Browser"
 msgstr ""
 
-#
-msgid "Plugin browser"
-msgstr "Spraudņu pārlūks"
-
 msgid "Plugin details"
 msgstr ""
 
@@ -7056,6 +7204,11 @@ msgstr "Spraudņi"
 
 msgid "Poland"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Polarisation"
+msgstr "Polarizācija"
 
 #
 msgid "Polarization"
@@ -7103,24 +7256,17 @@ msgid "Position setup"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Position stored at index"
+msgstr "Pozicioniera iestatne"
+
+#
 msgid "Positioner"
 msgstr "Pozicionieris"
-
-msgid "Positioner Setup"
-msgstr ""
-
-msgid "Positioner fine movement"
-msgstr ""
-
-msgid "Positioner movement"
-msgstr ""
 
 #
 msgid "Positioner setup"
 msgstr "Pozicioniera iestatne"
-
-msgid "Positioner storage"
-msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7173,9 +7319,6 @@ msgid "Preference"
 msgstr ""
 
 msgid "Preferred tuner"
-msgstr ""
-
-msgid "Prepare another USB stick for image flashing"
 msgstr ""
 
 #
@@ -7234,7 +7377,15 @@ msgid "Press OK to toggle the selection."
 msgstr ""
 
 #
+#, fuzzy
+msgid "Press ok to confirm"
+msgstr "Spiediet OK, lai meklētu."
+
+#
 msgid "Press yellow to set this interface as default interface."
+msgstr ""
+
+msgid "Pressure :"
 msgstr ""
 
 #
@@ -7341,7 +7492,7 @@ msgstr "Poļu"
 msgid "Put TV in standby"
 msgstr ""
 
-msgid "Put your linux receiver in standby"
+msgid "Put your linux box in standby"
 msgstr ""
 
 #
@@ -7372,10 +7523,6 @@ msgstr "RF izeja"
 #
 msgid "RGB"
 msgstr "RGB"
-
-#
-msgid "Radio"
-msgstr "Radio"
 
 #
 msgid "Random"
@@ -7447,29 +7594,39 @@ msgstr "Vai tiešām restartēt tagad?"
 msgid "Really shutdown now?"
 msgstr "Vai tiešām izslēgt tagad?"
 
+msgid "Really upgrade the front panel and reboot now?"
+msgstr ""
+
 msgid "Really upgrade the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your linux receiver and reboot now?"
+msgid "Really upgrade your linux box and reboot now?"
 msgstr ""
 
 #
 msgid "Reboot"
 msgstr "Atsāknēt"
 
-msgid "Rec"
-msgstr ""
-
 msgid "Recently featured"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Reception settings"
-msgstr "Uztveršanas iestatījumi"
+msgid "Record"
+msgstr "Ierakstīt"
 
 #
-msgid "Record"
+#, fuzzy
+msgid "Record next"
+msgstr "Ierakstīt"
+
+#
+#, fuzzy
+msgid "Record now"
+msgstr "Ierakstīt"
+
+#
+#, fuzzy
+msgid "Record once"
 msgstr "Ierakstīt"
 
 msgid "Record started! Stopping timeshift now ..."
@@ -7534,6 +7691,9 @@ msgid "Refresh rate selection."
 msgstr "Atjaunināšanas ātruma izvēle."
 
 msgid "Regard deep standby as standby"
+msgstr ""
+
+msgid "Region :"
 msgstr ""
 
 msgid "Related video entries."
@@ -7782,10 +7942,6 @@ msgid "Restore backups"
 msgstr ""
 
 #
-msgid "Restore is running..."
-msgstr ""
-
-#
 msgid "Restore system settings"
 msgstr "Atjaunot sistēmas iestatījumus"
 
@@ -7811,6 +7967,9 @@ msgstr ""
 #. TRANSLATORS: question or a choice, but it is a statement.)
 msgid "Resuming playback"
 msgstr "Atsāk atskaņošanu"
+
+msgid "Retrieving data ..."
+msgstr ""
 
 msgid "Return"
 msgstr ""
@@ -7855,6 +8014,11 @@ msgstr "sākuma mape"
 
 msgid "Root directory"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Rotor step position:"
+msgstr "Saglabāt pozīciju"
 
 #
 msgid "Rotor turning speed"
@@ -7906,13 +8070,8 @@ msgstr ""
 msgid "SINGLE LAYER DVD"
 msgstr ""
 
-#
-msgid "SNR"
-msgstr "SNR"
-
-#
-msgid "SNR:"
-msgstr "SNR:"
+msgid "SPDIF"
+msgstr ""
 
 #
 msgid "SSID:"
@@ -7950,6 +8109,11 @@ msgstr ""
 #
 #, fuzzy
 msgid "Satellite equipment setup"
+msgstr "Pavadoņa piederumu iestatne"
+
+#
+#, fuzzy
+msgid "Satellite longitude:"
 msgstr "Pavadoņa piederumu iestatne"
 
 #
@@ -8004,6 +8168,12 @@ msgstr ""
 msgid "Save playlist"
 msgstr "saglabāt repertuāru"
 
+msgid "Save timeshift file"
+msgstr ""
+
+msgid "Save timeshift file in movie directory"
+msgstr ""
+
 msgid "Saving EPG Cache..."
 msgstr ""
 
@@ -8043,6 +8213,11 @@ msgstr ""
 msgid "Scan additional SR"
 msgstr "Meklēt papildu SR"
 
+#
+#, fuzzy
+msgid "Scan available networks"
+msgstr "Meklēt bezvadu tīklus"
+
 msgid "Scan files..."
 msgstr ""
 
@@ -8077,11 +8252,10 @@ msgstr ""
 msgid "Scanning..."
 msgstr ""
 
-#
-msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
-msgstr "Meklē noklusētos lamedbs, sakārtotus pēc pavadoņiem ar pievienotu pozicioniera antenu"
-
 msgid "Science & Technology"
+msgstr ""
+
+msgid "Scripts"
 msgstr ""
 
 msgid "Scrolling Speed"
@@ -8120,12 +8294,27 @@ msgid "Search west"
 msgstr "Meklēt rietumos"
 
 #
+#, fuzzy
+msgid "Searching"
+msgstr "Meklēt austrumos"
+
+#
+#, fuzzy
+msgid "Searching east ..."
+msgstr "Meklēt austrumos"
+
+#
 msgid "Searching for available updates. Please wait..."
 msgstr ""
 
 #
 msgid "Searching for new installed or removed packages. Please wait..."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Searching west ..."
+msgstr "Meklēt rietumos"
 
 #
 msgid "Secondary DNS"
@@ -8163,45 +8352,14 @@ msgid "Select CAId"
 msgstr "Izvēlēties"
 
 #
-msgid "Select HDD"
-msgstr "Izvēlēties cieto disku"
-
-#
-#, fuzzy
-msgid "Select a bouquet"
-msgstr "Izvēlēties filmu"
-
-#
 #, fuzzy
 msgid "Select a line to edit"
 msgstr "Izvēlēties tīkla adapteri"
 
 #
-msgid "Select a movie"
-msgstr "Izvēlēties filmu"
-
-#
-#, fuzzy
-msgid "Select a network adapter"
-msgstr "Izvēlēties tīkla adapteri"
-
-#
-#, fuzzy
-msgid "Select a skin"
-msgstr "Izvēlēties filmu"
-
-#
-#, fuzzy
-msgid "Select a tuner"
-msgstr "Izvēlēties filmu"
-
-#
 #, fuzzy
 msgid "Select a wireless network"
 msgstr "Meklēt bezvadu tīklus"
-
-msgid "Select an image to be downloaded"
-msgstr ""
 
 #
 msgid "Select audio track"
@@ -8225,9 +8383,6 @@ msgid "Select copy destination for:"
 msgstr ""
 
 msgid "Select default EPG type..."
-msgstr ""
-
-msgid "Select desired image from feed list"
 msgstr ""
 
 msgid "Select destination for:"
@@ -8334,6 +8489,14 @@ msgstr "Izvēlēties filmu"
 msgid "Select your provider, and press OK to start the scan"
 msgstr ""
 
+msgid "Send"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Send Confirmation"
+msgstr "Uztvērēja konfigurācija"
+
 #
 msgid "Send DiSEqC"
 msgstr "Sūtīt DiSEqC"
@@ -8391,11 +8554,6 @@ msgstr ""
 msgid "Service Name"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Service Time"
-msgstr "Kanālu meklēšana"
-
 msgid "Service Title mode"
 msgstr ""
 
@@ -8411,11 +8569,6 @@ msgstr "Kanāls tika pievienots favorītiem."
 #
 msgid "Service has been added to the selected bouquet."
 msgstr "Kanāls tika pievienots izvēlētajai buķetei."
-
-#
-#, fuzzy
-msgid "Service info"
-msgstr "Kanāla info"
 
 msgid "Service info font size"
 msgstr ""
@@ -8581,6 +8734,9 @@ msgstr ""
 msgid "Set time window to 5 hours"
 msgstr ""
 
+msgid "Set time window to 6 hours"
+msgstr ""
+
 msgid "Set to the desired primetime (hour)."
 msgstr ""
 
@@ -8635,11 +8791,10 @@ msgstr ""
 msgid "Setup the interval to check for online updates. (in hours)"
 msgstr ""
 
-msgid "Setup what a long press on the power button does."
-msgstr ""
-
-msgid "Setup what a short press on the power button does."
-msgstr ""
+#
+#, fuzzy
+msgid "Setup your positioner"
+msgstr "Saglabāt pozīciju"
 
 #
 #, fuzzy
@@ -8647,11 +8802,6 @@ msgid "Setup your satellite equipment"
 msgstr "Pavadoņa piederumu iestatne"
 
 msgid "Setup your timezone."
-msgstr ""
-
-#
-#, python-format
-msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
 msgstr ""
 
 msgid "Share Folder's"
@@ -8689,9 +8839,6 @@ msgid "Show Clients"
 msgstr ""
 
 msgid "Show Display Icons"
-msgstr ""
-
-msgid "Show E2 Log"
 msgstr ""
 
 msgid "Show EIT now/next in infobar"
@@ -8733,16 +8880,10 @@ msgstr "rādīt transpondera informāciju"
 msgid "Show No free tuner info?"
 msgstr "Nav brīva uztvērēja!"
 
-msgid "Show OE Log"
-msgstr ""
-
 msgid "Show OScam in extensions ?"
 msgstr ""
 
 msgid "Show PVR status in MoviePlayer infobar"
-msgstr ""
-
-msgid "Show Picons *"
 msgstr ""
 
 msgid "Show RFmod setup..."
@@ -8814,6 +8955,11 @@ msgstr "rādīt notikuma detaļas"
 
 msgid "Show encryption info in the infobar (when supported by the skin)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Show epg"
+msgstr "rādīt etiķetes izvēlni"
 
 #
 #, fuzzy
@@ -8903,6 +9049,9 @@ msgstr ""
 msgid "Show positioner movement"
 msgstr "Rādīt pozicioniera kustību"
 
+msgid "Show screensaver"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Show second infobar"
@@ -8978,6 +9127,11 @@ msgstr ""
 msgid "Show transponder remaining/elapsed as"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Show warning when timeshift is stopped"
+msgstr "Darbība kad filma ir apturēta"
+
 msgid "Shows the icons when new/unseen, else will not show an icon."
 msgstr ""
 
@@ -8997,17 +9151,17 @@ msgstr "jaukts repertuārs"
 msgid "Shutdown"
 msgstr ""
 
-msgid "Shutdown in (mins)"
-msgstr ""
-
 msgid "Side by Side"
 msgstr ""
 
-msgid "Side by side"
+msgid "Signal OK, proceeding"
 msgstr ""
 
 #
 msgid "Signal Strength:"
+msgstr ""
+
+msgid "Signal quality"
 msgstr ""
 
 msgid "Signal strength:"
@@ -9060,6 +9214,16 @@ msgstr "Viens transponderis"
 msgid "SingleEPG settings"
 msgstr "Rediģēt iestatījumus"
 
+#
+#, fuzzy
+msgid "Site latitude"
+msgstr "Platums"
+
+#
+#, fuzzy
+msgid "Site longitude"
+msgstr "Garums"
+
 msgid "Size: "
 msgstr ""
 
@@ -9080,10 +9244,6 @@ msgstr "Aizsargāt kanālus"
 
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
-
-#
-msgid "Sleep Timer"
-msgstr "Miega taimeris"
 
 #
 #, fuzzy
@@ -9186,6 +9346,9 @@ msgstr ""
 msgid "Sorry no device found to store backup. Please check your media in EGAMI devices panel."
 msgstr ""
 
+msgid "Sorry no matches found"
+msgstr ""
+
 msgid "Sorry the name of the new Image is too long."
 msgstr ""
 
@@ -9238,6 +9401,9 @@ msgstr ""
 #, fuzzy
 msgid "Sorry, video is not available!"
 msgstr "Daži spraudņi nav pieejami:\n"
+
+msgid "Sorry, wrong WOEID"
+msgstr ""
 
 msgid ""
 "Sorry, your backup destination is not writeable.\n"
@@ -9299,6 +9465,9 @@ msgstr "Dienvidi"
 #, fuzzy
 msgid "South Korea"
 msgstr "Dienvidi"
+
+msgid "Space used:"
+msgstr ""
 
 msgid "Spain"
 msgstr ""
@@ -9558,6 +9727,16 @@ msgid "Step west"
 msgstr "Soli uz rietumiem"
 
 #
+#, fuzzy
+msgid "Stepped east"
+msgstr "Soli uz austrumiem"
+
+#
+#, fuzzy
+msgid "Stepped west"
+msgstr "Soli uz rietumiem"
+
+#
 msgid "Stop"
 msgstr "Apturēt"
 
@@ -9607,11 +9786,13 @@ msgstr ""
 msgid "Stop timeshift while recording?"
 msgstr ""
 
-msgid "Stop timeshift?"
-msgstr ""
-
 msgid "Stopped"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Store at index"
+msgstr "Saglabāt pozīciju"
 
 #
 msgid "Store position"
@@ -9659,12 +9840,13 @@ msgstr ""
 msgid "Strict DLNA"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Strongest position"
+msgstr "Saglabāt pozīciju"
+
 msgid "Subservice mode"
 msgstr ""
-
-#
-msgid "Subservices"
-msgstr "Papildkanāli"
 
 #
 #, fuzzy
@@ -9733,6 +9915,12 @@ msgstr "Sv"
 #
 msgid "Sunday"
 msgstr "Svētdiena"
+
+msgid "Sunrise :"
+msgstr ""
+
+msgid "Sunset :"
+msgstr ""
 
 msgid "Swap File Name:"
 msgstr ""
@@ -9827,6 +10015,9 @@ msgstr "Saite:"
 msgid "Sync NTP every (minutes)"
 msgstr ""
 
+msgid "Sync failure moving back to origin !"
+msgstr ""
+
 msgid "Sync time using"
 msgstr ""
 
@@ -9859,6 +10050,9 @@ msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS datne ir par lielu priekš ISO9660 līmeņa 1!"
 
 msgid "TSID"
+msgstr ""
+
+msgid "TUNING"
 msgstr ""
 
 msgid "TV"
@@ -9928,7 +10122,8 @@ msgid "Test mode"
 msgstr "Testa režīms"
 
 #
-msgid "Test the network configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Test the network configuration of your linux box.\n"
 msgstr "Pārbaudīt tīkla linux receiver konfigurāciju.\n"
 
 #
@@ -9954,8 +10149,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Thank you for using the wizard. Your linux receiver is now ready to use.\n"
-"Please press OK to start using your linux receiver."
+"Thank you for using the wizard. Your linux box is now ready to use.\n"
+"Please press OK to start using your linux box."
 msgstr ""
 
 msgid ""
@@ -9988,7 +10183,8 @@ msgid ""
 msgstr ""
 
 #
-msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux receiver format data DVD (which will not play in stand-alone DVD players) instead?"
+#, fuzzy
+msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux box format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standarts neatbalsta H.264 (HDTV) attēla plūsmas. Vai jūs tā vietā vēlaties izveidot linux receiver formāta datu DVD (kuru nevarēs izmantot standarta DVD atskaņotājos)?"
 
 msgid ""
@@ -10022,11 +10218,6 @@ msgid ""
 "What do you want to do now with the timeshift file?"
 msgstr ""
 
-msgid ""
-"The USB stick was prepared to be bootable.\n"
-"Now you can download an NFI image file!"
-msgstr ""
-
 #
 #, fuzzy
 msgid ""
@@ -10049,9 +10240,6 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Dublējumkopēšana neizdevās. Lūdzu izvēlieties citu vietu dublējumkopijai. "
 
-msgid "The current update maybe unstable"
-msgstr ""
-
 #, python-format
 msgid ""
 "The directory %s is not a EXT2, EXT3, EXT4 or NFS partition.\n"
@@ -10066,31 +10254,16 @@ msgid ""
 msgstr ""
 
 #
-#, python-format
-msgid ""
-"The following device was found:\n"
-"\n"
-"%s\n"
-"\n"
-"Do you want to write the USB flasher to this stick?"
-msgstr ""
-"Atrasta sekojoša ierīce:\n"
-"\n"
-"%s\n"
-"\n"
-"Vai vēlaties ierakstīt USB lādētāju šajā atmiņas ierīcē?"
-
-#
 msgid "The following files were found..."
 msgstr ""
 
-msgid "The linux receiver reads the stored EPG data every (hours)."
+msgid "The linux box reads the stored EPG data every (hours)."
 msgstr ""
 
-msgid "The linux receiver stores the EPG data every (hours)."
+msgid "The linux box stores the EPG data every (hours)."
 msgstr ""
 
-msgid "The md5sum validation failed, the file may be corrupted!"
+msgid "The loopthrough setting is wrong."
 msgstr ""
 
 #
@@ -10120,14 +10293,6 @@ msgid "The results have been written to %s."
 msgstr "Rezultāti saglabāti %s."
 
 #
-msgid "The sleep timer has been activated."
-msgstr "Miega taimeris tika aktivizēts."
-
-#
-msgid "The sleep timer has been disabled."
-msgstr "Miega taimeris tika izslēgts."
-
-#
 #, fuzzy
 msgid ""
 "The software management extension is not installed!\n"
@@ -10147,15 +10312,19 @@ msgstr "Taimera datne (timers.xml) ir bojāta un to nevar ielādēt."
 
 #
 #, fuzzy
-msgid "The user interface of your linux receiver is restarting"
+msgid "The user interface of your linux box is restarting"
 msgstr ""
 "\n"
 "Atjaunot linux receiver iestatījumus."
 
+#
+#, fuzzy
 msgid ""
-"The user interface of your linux receiver is restarting\n"
+"The user interface of your linux box is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
+"\n"
+"Atjaunot linux receiver iestatījumus."
 
 #
 msgid ""
@@ -10174,10 +10343,6 @@ msgstr ""
 #
 msgid "The wizard can backup your current settings. Do you want to do a backup now?"
 msgstr "Vednis var izveidot pašreizējo iestatījumu dublējumkopiju. Vai vēlaties veidot dublējumkopiju tagad?"
-
-#, python-format
-msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
-msgstr ""
 
 #
 msgid "The wizard is finished now."
@@ -10200,6 +10365,9 @@ msgid "There are no updates available."
 msgstr ""
 
 msgid "There is no [webif] section in oscam.conf"
+msgstr ""
+
+msgid "There is no signal to lock on !"
 msgstr ""
 
 msgid "There is not any EGAMI Backup file on connected devices!"
@@ -10236,7 +10404,7 @@ msgid "This is the help screen. Feed me with something to display."
 msgstr ""
 
 #, python-format
-msgid "This linux receiver cannot decode %s streams!"
+msgid "This linux box cannot decode %s streams!"
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -10305,6 +10473,12 @@ msgstr ""
 msgid "This option configures the video output mode (or resolution)."
 msgstr ""
 
+msgid "This option configures you can Bypass HDMI EDID check"
+msgstr ""
+
+msgid "This option configures you can enable 3D Surround Sound."
+msgstr ""
+
 msgid "This option lets you adjust the 3D depth"
 msgstr ""
 
@@ -10348,13 +10522,6 @@ msgid "This option sets the surpression of false digital contours, that are the 
 msgstr ""
 
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
-msgstr ""
-
-msgid ""
-"This plugin creates a USB stick which can be used to update the firmware of your linux receiver without the need for a network or WLAN connection.\n"
-"First, a USB stick needs to be prepared so that it becomes bootable.\n"
-"In the next step, an NFI image file can be downloaded from the update server and saved on the USB stick.\n"
-"If you already have a prepared bootable USB stick, please insert it now. Otherwise plug in a USB stick with a minimum size of 64 MB!"
 msgstr ""
 
 #
@@ -10426,6 +10593,11 @@ msgstr ""
 msgid "This test detects your configured LAN adapter."
 msgstr "Šis tests atrod konfigurēto tīkla adapteri."
 
+msgid ""
+"This will (re-)calculate all positions of your rotor and may remove previously memorised positions and fine-tuning!\n"
+"Are you sure?"
+msgstr ""
+
 #
 msgid "Three"
 msgstr "Trīs"
@@ -10482,16 +10654,6 @@ msgid "Timer List"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Timer edit"
-msgstr "Rediģēt taimeri"
-
-#
-#, fuzzy
-msgid "Timer editor"
-msgstr "Taimeru redaktors"
-
-#
 msgid "Timer entry"
 msgstr "Taimera ieraksts"
 
@@ -10539,8 +10701,9 @@ msgid "Timer selection"
 msgstr "Taimeru izvēle"
 
 #
-msgid "Timer status:"
-msgstr "Taimera statuss:"
+#, fuzzy
+msgid "Timer selection..."
+msgstr "Taimeru izvēle"
 
 #
 #, fuzzy
@@ -10608,13 +10771,6 @@ msgstr ""
 msgid "To subtitle selection"
 msgstr ""
 
-msgid ""
-"To update your linux receiver firmware, please follow these steps:\n"
-"1) Turn off your box with the rear power switch and make sure the bootable USB stick is plugged in.\n"
-"2) Turn mains back on and hold the DOWN button on the front panel pressed for 10 seconds.\n"
-"3) Wait for bootup and follow instructions of the wizard."
-msgstr ""
-
 #
 msgid "Today"
 msgstr "Šodien"
@@ -10626,6 +10782,9 @@ msgid "Toggle a cut mark at the current position"
 msgstr ""
 
 msgid "Toggle aspect ratio..."
+msgstr ""
+
+msgid "Toggle between bouquet/epg lists"
 msgstr ""
 
 msgid "Tone amplitude"
@@ -10647,9 +10806,6 @@ msgid "Tools"
 msgstr ""
 
 msgid "Top and Bottom"
-msgstr ""
-
-msgid "Top and bottom"
 msgstr ""
 
 #
@@ -10686,16 +10842,7 @@ msgid "Track"
 msgstr "Celiņš"
 
 #
-msgid "Translation"
-msgstr "Translēšana"
-
-#
 msgid "Translation:"
-msgstr "Translēšana:"
-
-#
-#, fuzzy
-msgid "Translation: "
 msgstr "Translēšana:"
 
 #
@@ -10707,11 +10854,6 @@ msgstr ""
 
 #
 msgid "Transponder"
-msgstr "Transponderis"
-
-#
-#, fuzzy
-msgid "Transponder Time"
 msgstr "Transponderis"
 
 #
@@ -10762,6 +10904,11 @@ msgid "Tune"
 msgstr "Noskaņo"
 
 #
+#, fuzzy
+msgid "Tune and focus"
+msgstr "Uztvērēja statuss"
+
+#
 msgid "Tune failed!"
 msgstr "Neizdevās noskaņot!"
 
@@ -10783,9 +10930,10 @@ msgstr ""
 msgid "Tuner status"
 msgstr "Uztvērēja statuss"
 
-#, python-format
-msgid "Tuner status %s"
-msgstr ""
+#
+#, fuzzy
+msgid "Tuner status:"
+msgstr "Uztvērēja statuss"
 
 #
 msgid "Tuner type"
@@ -10826,6 +10974,9 @@ msgstr "Vecākdirektorija"
 msgid "USALS"
 msgstr "USALS"
 
+msgid "USALS calibration"
+msgstr ""
+
 msgid "USB 2 device mounted in:   "
 msgstr ""
 
@@ -10835,17 +10986,10 @@ msgstr ""
 msgid "USB device mounted in:     "
 msgstr ""
 
-#
-msgid "USB stick wizard"
-msgstr "USB atmiņas vednis"
-
 msgid ""
 "Unattended upgrade in progress\n"
-"Please wait until your linux receiver reboots\n"
+"Please wait until your linux box reboots\n"
 "This may take a few minutes"
-msgstr ""
-
-msgid "Unattended upgrade without GUI and reboot system"
 msgstr ""
 
 #
@@ -10864,10 +11008,6 @@ msgid "Undo uninstall"
 msgstr ""
 
 msgid "Unencrypted"
-msgstr ""
-
-#
-msgid "UnhandledKey"
 msgstr ""
 
 #
@@ -10912,6 +11052,12 @@ msgstr ""
 msgid "Update"
 msgstr "Atjaunināt"
 
+msgid "Update and ask to reboot"
+msgstr ""
+
+msgid "Update and reboot (recommended)"
+msgstr ""
+
 msgid "Update channel list only"
 msgstr ""
 
@@ -10921,7 +11067,12 @@ msgid_plural "Update completed, %d packages were installed."
 msgstr[0] ""
 msgstr[1] ""
 
-msgid "Update failed. Your linux receiver does not have a working internet connection."
+#
+#, fuzzy
+msgid "Update completed. Do you want to reboot your linux box?"
+msgstr "Vai vēlaties atsāknēt linux receiver?"
+
+msgid "Update failed. Your linux box does not have a working internet connection."
 msgstr ""
 
 msgid "Update interval (in seconds)"
@@ -10938,9 +11089,6 @@ msgstr "Rediģēt kanālu sarakstu"
 
 #
 msgid "Updating software catalog"
-msgstr ""
-
-msgid "Upgrade and reboot system"
 msgstr ""
 
 #
@@ -11080,10 +11228,6 @@ msgstr ""
 msgid "Use this video enhancement settings?"
 msgstr ""
 
-#
-msgid "Use time of currently running service"
-msgstr ""
-
 msgid "Use trash can in movielist"
 msgstr ""
 
@@ -11133,10 +11277,18 @@ msgstr ""
 msgid "Username:"
 msgstr ""
 
+#, python-format
+msgid "Using LNB %d"
+msgstr ""
+
 msgid "Using fixed address"
 msgstr ""
 
 msgid "Using old profile: "
+msgstr ""
+
+#, python-format
+msgid "Using tuner %s"
 msgstr ""
 
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
@@ -11236,6 +11388,11 @@ msgstr ""
 
 msgid "Videosize"
 msgstr ""
+
+#
+#, fuzzy
+msgid "View"
+msgstr "Darbu skats"
 
 msgid "View Count"
 msgstr ""
@@ -11346,25 +11503,16 @@ msgstr ""
 msgid "Virtual Keyboard"
 msgstr "Virtuālā klaviatūra"
 
-#
-#, fuzzy
-msgid "Virtual keyboard"
-msgstr "Virtuālā klaviatūra"
+msgid "Visibility :"
+msgstr ""
 
 #
 msgid "Voltage mode"
 msgstr "Sprieguma režīms"
 
 #
-msgid "Volume"
-msgstr "Skaļums"
-
-#
 msgid "W"
 msgstr "W"
-
-msgid "WARNING: feeds maybe unstable."
-msgstr ""
 
 #
 msgid "WEP"
@@ -11432,10 +11580,13 @@ msgstr ""
 msgid "Wakeup signal from TV"
 msgstr ""
 
-msgid "Wakeup your linux receiver from standby"
+msgid "Wakeup your linux box from standby"
 msgstr ""
 
 msgid "Warning you are going to format "
+msgstr ""
+
+msgid "Warning: no LNB; using factory defaults."
 msgstr ""
 
 #
@@ -11447,6 +11598,9 @@ msgstr "Atskaņot ierakstītās filmas..."
 #, fuzzy
 msgid "Watch recordings..."
 msgstr "ieraksta..."
+
+msgid "Weather"
+msgstr ""
 
 msgid "Web Browser"
 msgstr ""
@@ -11470,6 +11624,11 @@ msgstr "Nedēļas diena"
 #, fuzzy
 msgid "Weekly"
 msgstr "iknedēļas"
+
+#
+#, fuzzy
+msgid "Weighted position"
+msgstr "Saglabātā pozīcija"
 
 msgid "Welcome to EgamiBoot 2.0 MultiBoot Plugin installation."
 msgstr ""
@@ -11519,32 +11678,23 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux box by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
 msgstr "Sveicināti imidža atjaunināšanas vednī. Vednis palīdzēs Jums atjaunot Vu+ Ultimo programmatūru, sniedzot pašreizējo iestatījumu dublējumkopēšanas iespējas, kā arī īsumā izskaidros, kā veikt programmatūras atjaunināšanu."
 
-#
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your linux receiver to the Internet, this wizard will guide you through the basic network setup of your linux receiver.\n"
+"If you want to connect your linux box to the Internet, this wizard will guide you through the basic network setup of your linux box.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
 
-msgid ""
-"Welcome.\n"
-"\n"
-"This start wizard will guide you through the basic setup of your linux receiver.\n"
-"Press the OK button on your remote control to move to the next step."
-msgstr ""
-
-#
-msgid "Welcome..."
-msgstr "Sveicināti..."
-
 #
 msgid "West"
 msgstr "Rietumi"
+
+msgid "West limit set"
+msgstr ""
 
 msgid "What Day of month ?"
 msgstr ""
@@ -11575,6 +11725,9 @@ msgid "When enabled, a popup message will be shown when a recording starts."
 msgstr ""
 
 msgid "When enabled, a recording is allowed to interrupt live tv, when there are no free tuners."
+msgstr ""
+
+msgid "When enabled, a warning will be displayed and the user will get an option to stop or to continue the timeshift."
 msgstr ""
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
@@ -11668,10 +11821,11 @@ msgid "When tuned to a service the system will normally scan the transponder for
 msgstr ""
 
 #
+#, fuzzy
 msgid ""
 "When you do a factory reset, you will lose ALL your configuration data\n"
 "(including bouquets, services, satellite data ...)\n"
-"After completion of factory reset, your linux receiver will restart automatically!\n"
+"After completion of factory reset, your linux box will restart automatically!\n"
 "\n"
 "Really do a factory reset?"
 msgstr ""
@@ -11705,6 +11859,9 @@ msgid "Wicardd Info"
 msgstr ""
 
 msgid "Width"
+msgstr ""
+
+msgid "Wind :"
 msgstr ""
 
 #
@@ -11759,6 +11916,9 @@ msgstr ""
 #
 msgid "YPbPr"
 msgstr "YPbPr"
+
+msgid "Yahoo Weather"
+msgstr ""
 
 #
 msgid "Year"
@@ -11860,8 +12020,7 @@ msgstr ""
 msgid "You can install this plugin."
 msgstr ""
 
-#
-msgid "You can only burn linux receiver recordings!"
+msgid "You can only burn linux box recordings!"
 msgstr ""
 
 #
@@ -11885,17 +12044,29 @@ msgstr ""
 msgid "You didn't select a channel to record from."
 msgstr ""
 
+msgid "You have already sent this log, are you sure you want to resend this log:\n"
+msgstr ""
+
 #
 msgid "You have chosen to backup your settings. Please press OK to start the backup now."
 msgstr "Jūs izvēlējāties veidot iestatījumu dublējumkopiju. Lūdzu spiediet OK, lai sāktu kopijas veidošanu."
 
 #
-msgid "You have chosen to create a new .NFI flasher bootable USB stick. This will repartition the USB stick and therefore all data on it will be erased."
-msgstr "Jūs izvēlējāties veidot jaunu .NFI lādētāja sāknējamu USB atmiņu. Tadēļ USB atmiņa tiks pārdalīta un dzēsti visi tajā esošie dati."
-
-#
 msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
 msgstr "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
+
+msgid ""
+"You have not setup your user info in the setup screen\n"
+"Press MENU, and enter your info, then try again"
+msgstr ""
+
+#
+#, fuzzy
+msgid "You have selected no logs to delete."
+msgstr "Lūdzu izvēlieties repertuāru dzēšanai..."
+
+msgid "You have selected no logs to send."
+msgstr ""
 
 #
 #, fuzzy
@@ -11918,9 +12089,10 @@ msgid "You have to wait %s!"
 msgstr "Jums jāuzgaida %s!"
 
 #
+#, fuzzy
 msgid ""
-"You need a PC connected to your linux receiver. If you need further instructions, please visit the website http://www.dm7025.de.\n"
-"Your linux receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+"You need a PC connected to your linux box. If you need further instructions, please visit the website http://www.dm7025.de.\n"
+"Your linux box will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
 msgstr ""
 "Personālajam datoram jābūt savienotam ar linux receiver. Ja Jums ir nepieciešamas turpmākas instrukcijas, lūdzu apmeklējiet vietni http://www.dm7025.de.\n"
 "linux receiver tagad tiks apturēts. Pēc tam, kad būs izpildītas atjaunināšanas instrukcijas no tīkla vietnes, jaunā programmatūra piedāvās Jums atjaunot iestatījumus."
@@ -11929,6 +12101,9 @@ msgid "You seem to be in timeshift, Do you want to leave timeshift ?"
 msgstr ""
 
 msgid "You system does not support ext4"
+msgstr ""
+
+msgid "Your IP:"
 msgstr ""
 
 msgid "Your STB will freeze during the installation process."
@@ -11955,18 +12130,18 @@ msgstr ""
 msgid "Your current collection will get lost!"
 msgstr ""
 
-#
 msgid ""
-"Your frontprocessor firmware must be upgraded.\n"
-"Press OK to start upgrade."
+"Your front panel will be upgraded\n"
+"This may take a few minutes"
 msgstr ""
-"Uztvērēja programmatūru nepieciešams atjaunināt.\n"
-"Spiediet OK, lai sāktu atjaunināšanu."
 
 msgid ""
 "Your frontprocessor will be upgraded\n"
-"Please wait until your linux receiver reboots\n"
+"Please wait until your linux box reboots\n"
 "This may take a few minutes"
+msgstr ""
+
+msgid "Your internet connection is already configured."
 msgstr ""
 
 #
@@ -11979,54 +12154,84 @@ msgstr ""
 msgid "Your internet connection is working (ip: %s)"
 msgstr ""
 
-msgid "Your linux receiver is not connected to the internet, please check your network settings and try again."
+msgid "Your linux box does not have an internet connection"
+msgstr ""
+
+msgid "Your linux box does not support PiP HD"
+msgstr ""
+
+msgid "Your linux box is not connected to the internet"
+msgstr ""
+
+msgid "Your linux box is not connected to the internet, please check your network settings and try again."
 msgstr ""
 
 msgid ""
-"Your linux receiver is now ready to be used.\n"
+"Your linux box is now ready to be used.\n"
+"\n"
+"Your internet connection is not working now.\n"
+"\n"
+msgstr ""
+
+msgid ""
+"Your linux box is now ready to be used.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
 msgstr ""
 
-#
 msgid ""
-"Your linux receiver is now ready to use.\n"
+"Your linux box is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
 "Please press OK to continue."
 msgstr ""
 
-msgid "Your linux receiver is rebooting"
-msgstr ""
-
-msgid "Your linux receiver is shutting down"
+msgid "Your linux box is rebooting"
 msgstr ""
 
 #
-msgid "Your linux receiver is shutting down. Please stand by..."
+#, fuzzy
+msgid "Your linux box is shutting down"
 msgstr "linux receiver izslēdzas. Lūdzu gaidiet..."
 
-msgid "Your linux receiver might be unusable now. Please consult the manual for further assistance before rebooting your linux receiver."
+#
+#, fuzzy
+msgid "Your linux box is shutting down. Please stand by..."
+msgstr "linux receiver izslēdzas. Lūdzu gaidiet..."
+
+msgid "Your linux box might be unusable now. Please consult the manual for further assistance before rebooting your linux box."
+msgstr ""
+
+msgid ""
+"Your linux box offers three levels of configuration options:\n"
+"\n"
+"Simple - We suggest this level if this is your first contact with a linux box.\n"
+"Intermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your linux box.\n"
+"Expert - This gives you full control over all available settings of your linux box.\n"
+"\n"
+"Warning: Higher levels may lead to increased usage complexity."
 msgstr ""
 
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to reboot your linux receiver.\n"
+"Your linux box wants to reboot your linux box.\n"
 "Do that now?"
 msgstr "Vai vēlaties atsāknēt linux receiver?"
 
+#
+#, fuzzy
 msgid ""
-"Your linux receiver wants to restart the user interface.\n"
+"Your linux box wants to restart the user interface.\n"
 "Do that now?"
-msgstr ""
+msgstr "Vai vēlaties atsāknēt linux receiver?"
 
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to set your linux receiver to standby.\n"
+"Your linux box wants to set your linux box to standby.\n"
 "Do that now?"
 msgstr ""
 "Miega taimeris vēlas pārslēgt\n"
@@ -12035,7 +12240,7 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to shut down your linux receiver.\n"
+"Your linux box wants to shut down your linux box.\n"
 "Do that now?"
 msgstr ""
 "Miega taimeris vēlas izslēgt\n"
@@ -12043,18 +12248,18 @@ msgstr ""
 
 #, python-format
 msgid ""
-"Your linux receiver will be restarted after the installation of service\n"
+"Your linux box will be restarted after the installation of service\n"
 "Ready to install \"%s\" ?"
 msgstr ""
 
 msgid ""
-"Your linux receiver will be restarted after the installation of service.\n"
+"Your linux box will be restarted after the installation of service.\n"
 "\n"
 "Do you want to install now ?"
 msgstr ""
 
 msgid ""
-"Your linux receiver will be restarted after the removal of service\n"
+"Your linux box will be restarted after the removal of service\n"
 "Do you want to remove now ?"
 msgstr ""
 
@@ -12063,9 +12268,6 @@ msgid "Your network configuration has been activated."
 msgstr "Tīkla konfigurācija aktivizēta."
 
 msgid "Your receiver does not have an internet connection"
-msgstr ""
-
-msgid "Your receiver is not connected to the internet"
 msgstr ""
 
 #
@@ -12235,6 +12437,11 @@ msgstr ""
 msgid "as plugin in extended bar"
 msgstr ""
 
+#
+#, fuzzy
+msgid "at"
+msgstr "Se"
+
 msgid "at beginning"
 msgstr ""
 
@@ -12322,6 +12529,14 @@ msgid "center"
 msgstr ""
 
 #
+#, fuzzy
+msgid "centered"
+msgstr "Vidējs"
+
+msgid "centered, wrapped"
+msgstr ""
+
+#
 msgid "chapters"
 msgstr "nodaļas"
 
@@ -12347,10 +12562,6 @@ msgid "complex"
 msgstr "kompleksa"
 
 #
-msgid "config menu"
-msgstr "konfigurācijas izvēlne"
-
-#
 msgid "confirmed"
 msgstr "apstiprināts(a)"
 
@@ -12363,6 +12574,9 @@ msgid "continue"
 msgstr "turpināt"
 
 msgid "cooking"
+msgstr ""
+
+msgid "copy"
 msgstr ""
 
 msgid "copy file"
@@ -12401,10 +12615,6 @@ msgstr "Pārbauda datņu sistēmu..."
 msgid "creating new file ..."
 msgstr "Pārbauda datņu sistēmu..."
 
-#, python-format
-msgid "currently installed image: %s"
-msgstr ""
-
 #
 msgid "daily"
 msgstr "ikdienas"
@@ -12418,6 +12628,11 @@ msgstr ""
 
 msgid "default"
 msgstr ""
+
+#
+#, fuzzy
+msgid "delete"
+msgstr "Dzēst"
 
 #
 msgid "delete cut"
@@ -12474,6 +12689,11 @@ msgstr "pabeigts!"
 
 msgid "e-Mail address"
 msgstr ""
+
+#
+#, fuzzy
+msgid "east"
+msgstr "Griezt uz austrumiem"
 
 msgid "ecm time:"
 msgstr ""
@@ -12533,6 +12753,9 @@ msgstr "beigt griešanu šeit"
 #
 msgid "end favourites edit"
 msgstr "beigt favorītu rediģēšanu"
+
+msgid "enter number to jump to channel."
+msgstr ""
 
 msgid "entertainment (10-16 year old)"
 msgstr ""
@@ -12674,12 +12897,13 @@ msgstr ""
 msgid "handled"
 msgstr ""
 
-msgid "height"
+msgid ""
+"has been sent to the ViX beta team.\n"
+"please quote"
 msgstr ""
 
-#
-msgid "help..."
-msgstr "palīdzība..."
+msgid "height"
+msgstr ""
 
 msgid "hops:"
 msgstr ""
@@ -12709,9 +12933,6 @@ msgstr "ievietot iezīmi"
 msgid "invalid type"
 msgstr ""
 
-msgid "is strongly advised."
-msgstr ""
-
 msgid "jazz"
 msgstr ""
 
@@ -12722,6 +12943,9 @@ msgstr "pārlēkt uz iepriekšējo nosaukumu"
 #
 msgid "jump forward to the next title"
 msgstr "pārlēkt uz nākamo nosaukumu"
+
+msgid "kmh"
+msgstr ""
 
 msgid "languages"
 msgstr ""
@@ -12734,6 +12958,9 @@ msgstr "iziet no filmu atskaņotāja..."
 msgid "left"
 msgstr "kreisais"
 
+msgid "left, wrapped"
+msgstr ""
+
 msgid "leisure hobbies (general)"
 msgstr ""
 
@@ -12741,27 +12968,30 @@ msgstr ""
 msgid "length"
 msgstr "garums"
 
-msgid "linux receiver advanced remote control (native)"
+msgid "limit ..., aborting !"
+msgstr ""
+
+msgid "linux box advanced remote control (native)"
 msgstr ""
 
 #
-msgid "linux receiver format data DVD (HDTV compatible)"
+#, fuzzy
+msgid "linux box format data DVD (HDTV compatible)"
 msgstr "linux receiver formāta datu DVD (savietojams ar HDTV)"
 
-msgid "linux receiver front panel"
+msgid "linux box front panel"
 msgstr ""
 
-msgid "linux receiver ir keyboard"
+msgid "linux box ir keyboard"
 msgstr ""
 
-msgid "linux receiver ir mouse"
+msgid "linux box ir mouse"
 msgstr ""
 
-msgid "linux receiver remote control (native)"
+msgid "linux box remote control (native)"
 msgstr ""
 
-#
-msgid "linux receiver software because updates are available."
+msgid "linux box software because updates are available."
 msgstr ""
 
 msgid "literature"
@@ -12780,9 +13010,6 @@ msgid "loopthrough to"
 msgstr "loopthrough to"
 
 msgid "magazines/reports/documentary"
-msgstr ""
-
-msgid "making a backup before updating"
 msgstr ""
 
 msgid "manage local Files"
@@ -12819,6 +13046,11 @@ msgstr ""
 
 msgid "motoring"
 msgstr ""
+
+#
+#, fuzzy
+msgid "move"
+msgstr "Dzēst virsrakstu"
 
 #
 msgid "move down to last entry"
@@ -12961,6 +13193,9 @@ msgstr "no lietotā VIENSLĀŅA datu nesēja."
 #
 msgid "off"
 msgstr "izslēgts"
+
+msgid "offset is"
+msgstr ""
 
 #
 msgid "on"
@@ -13138,6 +13373,11 @@ msgstr "dzēst iezīmi"
 
 #
 #, fuzzy
+msgid "rename"
+msgstr "Pārsaukt"
+
+#
+#, fuzzy
 msgid "rename file"
 msgstr "šablona datne"
 
@@ -13169,6 +13409,9 @@ msgstr "attīt uz iepriekšējo nodaļu"
 #
 msgid "right"
 msgstr "labais"
+
+msgid "right, wrapped"
+msgstr ""
 
 msgid "rock/pop"
 msgstr ""
@@ -13378,7 +13621,7 @@ msgstr "sākuma mape"
 
 #
 #, fuzzy
-msgid "start web browser"
+msgid "start opera web browser"
 msgstr "Spraudņu pārlūks"
 
 msgid "stepsize"
@@ -13554,6 +13797,20 @@ msgstr ""
 msgid "weekly"
 msgstr "iknedēļas"
 
+#
+#, fuzzy
+msgid "west"
+msgstr "Griezt uz rietumiem"
+
+msgid "when asking question about this log"
+msgstr ""
+
+msgid ""
+"when asking question about this log\n"
+"\n"
+"A copy has been sent to yourself."
+msgstr ""
+
 msgid "white"
 msgstr ""
 
@@ -13606,13 +13863,235 @@ msgid "zap"
 msgstr "pārslēgt"
 
 #
+#, fuzzy
+msgid "zap and record"
+msgstr "ierakstīt"
+
+#
 msgid "zapped"
 msgstr "pārslēgts"
+
+#
+#~ msgid "0"
+#~ msgstr "0"
+
+#
+#~ msgid "1"
+#~ msgstr "1"
+
+#
+#~ msgid "2"
+#~ msgstr "2"
+
+#
+#~ msgid "3"
+#~ msgstr "3"
+
+#
+#~ msgid "4"
+#~ msgstr "4"
+
+#
+#~ msgid "5"
+#~ msgstr "5"
+
+#
+#~ msgid "6"
+#~ msgstr "6"
+
+#
+#~ msgid "7"
+#~ msgstr "7"
+
+#
+#~ msgid "8"
+#~ msgstr "8"
+
+#
+#~ msgid "9"
+#~ msgstr "9"
+
+#
+#, fuzzy
+#~ msgid "Add Bookmark"
+#~ msgstr "pievienot grāmatzīmi"
+
+#
+#~ msgid "Audio"
+#~ msgstr "Skaņa"
+
+#
+#~ msgid "BER"
+#~ msgstr "BER"
+
+#
+#~ msgid "BER:"
+#~ msgstr "BER:"
+
+#
+#~ msgid "C"
+#~ msgstr "C"
+
+#
+#~ msgid "Channellist menu"
+#~ msgstr "Kanālu saraksta izvēlne"
+
+#
+#~ msgid "Command execution..."
+#~ msgstr "Izpilda komandu..."
+
+#
+#~ msgid "Continue in background"
+#~ msgstr "Turpināt fonā"
+
+#
+#, fuzzy
+#~ msgid "Could not connect to linux receiver .NFI image feed server:"
+#~ msgstr "Nevar savienoties ar linux receiver .NFI imidža barotnes serveris:"
+
+#
+#, fuzzy
+#~ msgid "Create Directory"
+#~ msgstr "izveidot mapi"
+
+#
+#~ msgid "Current version:"
+#~ msgstr "Pašreizējā versija:"
+
+#
+#~ msgid "D"
+#~ msgstr "D"
+
+#
+#, fuzzy
+#~ msgid "Date/time input"
+#~ msgstr "Laiks / Datums"
+
+#
+#~ msgid "Dish"
+#~ msgstr "Antena"
+
+#
+#, fuzzy
+#~ msgid "Download .NFI-files for USB-flasher"
+#~ msgstr "Lejuplādēt .NFI-datnes priekš USB-ielādes"
+
+#
+#~ msgid "Downloadable plugins"
+#~ msgstr "Lejuplādējamie spraudņi"
+
+#
+#, fuzzy
+#~ msgid "EPG selection"
+#~ msgstr "EPG izvēle"
+
+#
+#~ msgid "Enable timer"
+#~ msgstr "Aktivizēt taimeri"
+
+#
+#, fuzzy
+#~ msgid "Event view"
+#~ msgstr "Notikumu skats"
+
+#
+#, fuzzy
+#~ msgid "Event view menu"
+#~ msgstr "Notikumu skats"
+
+#
+#~ msgid "Flash"
+#~ msgstr "Iekšējā atmiņa"
+
+#
+#~ msgid "Flashing failed"
+#~ msgstr "Lādēšana neizdevās"
+
+#
+#~ msgid "Index"
+#~ msgstr "Indekss"
+
+#
+#, fuzzy
+#~ msgid "Info bar"
+#~ msgstr "Infojosla"
 
 #
 #, fuzzy
 #~ msgid "InfoBar EPG"
 #~ msgstr "Infojosla"
+
+#
+#, fuzzy
+#~ msgid "Installing software..."
+#~ msgstr "Uzstāda programmatūru..."
+
+#
+#, fuzzy
+#~ msgid "Job overview"
+#~ msgstr "Darbu skats"
+
+#
+#~ msgid "Lock:"
+#~ msgstr "Slēgt:"
+
+#
+#~ msgid "MORE"
+#~ msgstr "VAIRĀK"
+
+#
+#~ msgid "Media player"
+#~ msgstr "Mediju atskaņotājs"
+
+#
+#~ msgid "Message"
+#~ msgstr "Paziņojums"
+
+#
+#~ msgid "Message..."
+#~ msgstr "Paziņojums..."
+
+#
+#~ msgid "Movielist menu"
+#~ msgstr "Filmu saraksta izvēlne"
+
+#
+#~ msgid "Mute"
+#~ msgstr "Klusēt"
+
+#
+#~ msgid "NEXT"
+#~ msgstr "NĀKAMAIS"
+
+#
+#~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
+#~ msgstr "NFI imidža lādēšana pabeigta. Spiediet dzelteno pogu, lai atsāknētu!"
+
+#
+#~ msgid "NOW"
+#~ msgstr "PAŠREIZ"
+
+#
+#, fuzzy
+#~ msgid "Nameserver setup"
+#~ msgstr "Domēna vārdu servera iestatne"
+
+#
+#, fuzzy
+#~ msgid "Network configuration..."
+#~ msgstr "Tīkla konfigurācija..."
+
+#
+#~ msgid "Network test..."
+#~ msgstr "Tīkla pārbaude..."
+
+#
+#~ msgid "New version:"
+#~ msgstr "Jauna versija:"
+
+#
+#~ msgid "No details for this image file"
+#~ msgstr "Nav informācijas par šo imidža datni"
 
 #
 #, fuzzy
@@ -13625,8 +14104,95 @@ msgstr "pārslēgts"
 
 #
 #, fuzzy
+#~ msgid "Now playing"
+#~ msgstr "Atskaņo"
+
+#
+#, fuzzy
+#~ msgid "PIN code needed"
+#~ msgstr "Vajadzīgs pin kods"
+
+#
+#, fuzzy
+#~ msgid "Parental control services editor"
+#~ msgstr "Vecāku kontroles kanālu redaktors"
+
+#
+#, fuzzy
+#~ msgid "PiP setup"
+#~ msgstr "PiP iestatne"
+
+#
+#~ msgid "Please check your network settings!"
+#~ msgstr "Lūdzu pārbaudiet tīkla iestatījumus!"
+
+#
+#, fuzzy
 #~ msgid "Please select a sub service..."
 #~ msgstr "Lūdzu izvēlieties papildkanālu..."
+
+#
+#~ msgid "Plugin browser"
+#~ msgstr "Spraudņu pārlūks"
+
+#
+#~ msgid "Radio"
+#~ msgstr "Radio"
+
+#
+#, fuzzy
+#~ msgid "Reception settings"
+#~ msgstr "Uztveršanas iestatījumi"
+
+#
+#~ msgid "SNR"
+#~ msgstr "SNR"
+
+#
+#~ msgid "SNR:"
+#~ msgstr "SNR:"
+
+#
+#~ msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
+#~ msgstr "Meklē noklusētos lamedbs, sakārtotus pēc pavadoņiem ar pievienotu pozicioniera antenu"
+
+#
+#~ msgid "Select HDD"
+#~ msgstr "Izvēlēties cieto disku"
+
+#
+#, fuzzy
+#~ msgid "Select a bouquet"
+#~ msgstr "Izvēlēties filmu"
+
+#
+#~ msgid "Select a movie"
+#~ msgstr "Izvēlēties filmu"
+
+#
+#, fuzzy
+#~ msgid "Select a network adapter"
+#~ msgstr "Izvēlēties tīkla adapteri"
+
+#
+#, fuzzy
+#~ msgid "Select a skin"
+#~ msgstr "Izvēlēties filmu"
+
+#
+#, fuzzy
+#~ msgid "Select a tuner"
+#~ msgstr "Izvēlēties filmu"
+
+#
+#, fuzzy
+#~ msgid "Service Time"
+#~ msgstr "Kanālu meklēšana"
+
+#
+#, fuzzy
+#~ msgid "Service info"
+#~ msgstr "Kanāla info"
 
 #
 #~ msgid ""
@@ -13635,6 +14201,101 @@ msgstr "pārslēgts"
 #~ msgstr ""
 #~ "Kanāls nav pieejams!\n"
 #~ "Pārbaudiet uztvērēja konfigurāciju!"
+
+#
+#~ msgid "Sleep Timer"
+#~ msgstr "Miega taimeris"
+
+#
+#~ msgid "Subservices"
+#~ msgstr "Papildkanāli"
+
+#
+#~ msgid ""
+#~ "The following device was found:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Do you want to write the USB flasher to this stick?"
+#~ msgstr ""
+#~ "Atrasta sekojoša ierīce:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Vai vēlaties ierakstīt USB lādētāju šajā atmiņas ierīcē?"
+
+#
+#~ msgid "The sleep timer has been activated."
+#~ msgstr "Miega taimeris tika aktivizēts."
+
+#
+#~ msgid "The sleep timer has been disabled."
+#~ msgstr "Miega taimeris tika izslēgts."
+
+#
+#, fuzzy
+#~ msgid "Timer edit"
+#~ msgstr "Rediģēt taimeri"
+
+#
+#, fuzzy
+#~ msgid "Timer editor"
+#~ msgstr "Taimeru redaktors"
+
+#
+#~ msgid "Timer status:"
+#~ msgstr "Taimera statuss:"
+
+#
+#~ msgid "Translation"
+#~ msgstr "Translēšana"
+
+#
+#, fuzzy
+#~ msgid "Translation: "
+#~ msgstr "Translēšana:"
+
+#
+#, fuzzy
+#~ msgid "Transponder Time"
+#~ msgstr "Transponderis"
+
+#
+#~ msgid "USB stick wizard"
+#~ msgstr "USB atmiņas vednis"
+
+#
+#, fuzzy
+#~ msgid "Virtual keyboard"
+#~ msgstr "Virtuālā klaviatūra"
+
+#
+#~ msgid "Volume"
+#~ msgstr "Skaļums"
+
+#
+#~ msgid "Welcome..."
+#~ msgstr "Sveicināti..."
+
+#
+#~ msgid "You have chosen to create a new .NFI flasher bootable USB stick. This will repartition the USB stick and therefore all data on it will be erased."
+#~ msgstr "Jūs izvēlējāties veidot jaunu .NFI lādētāja sāknējamu USB atmiņu. Tadēļ USB atmiņa tiks pārdalīta un dzēsti visi tajā esošie dati."
+
+#
+#~ msgid ""
+#~ "Your frontprocessor firmware must be upgraded.\n"
+#~ "Press OK to start upgrade."
+#~ msgstr ""
+#~ "Uztvērēja programmatūru nepieciešams atjaunināt.\n"
+#~ "Spiediet OK, lai sāktu atjaunināšanu."
+
+#
+#~ msgid "config menu"
+#~ msgstr "konfigurācijas izvēlne"
+
+#
+#~ msgid "help..."
+#~ msgstr "palīdzība..."
 
 #
 #~ msgid "play from next mark or playlist entry"

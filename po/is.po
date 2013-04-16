@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 20:47+0100\n"
+"POT-Creation-Date: 2013-04-16 19:39+0200\n"
 "PO-Revision-Date: 2012-12-09 02:01+0100\n"
 "Last-Translator: Andy Blackburn <andyblac@o2.co.uk>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -47,14 +47,10 @@ msgstr ""
 "\n"
 "Bíðið eftir að hafa ýtt á OK!"
 
+#, fuzzy
 msgid ""
 "\n"
-"An Input/output error usually indicates a corrupted filesystem! Please check the filesystem of your timeshift-device!"
-msgstr ""
-
-msgid ""
-"\n"
-"Backup your linux receiver settings."
+"Backup your linux box settings."
 msgstr ""
 "\n"
 "Taka afrit af stillingum."
@@ -66,17 +62,19 @@ msgstr ""
 "\n"
 "Breyta veffangi uppfærslu uppruna."
 
+#, fuzzy
 msgid ""
 "\n"
-"Manage extensions or plugins for your linux receiver"
+"Manage extensions or plugins for your linux box"
 msgstr ""
 "\n"
 "Umsýsla á viðbótum eða íforritum fyrir móttakarann þinn"
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Online update of your linux receiver software."
+"Online update of your linux box software."
 msgstr ""
 "\n"
 "Uppfærsla hugbúnaðar beint af neti."
@@ -98,17 +96,19 @@ msgstr ""
 "Setja inn stilligar eftir dagsetningu."
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Restore your linux receiver settings."
+"Restore your linux box settings."
 msgstr ""
 "\n"
 "Setja inn þínar stillingar aftur."
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Restore your linux receiver with a new firmware."
+"Restore your linux box with a new firmware."
 msgstr ""
 "\n"
 "Setja inn nýtt stýrikerfi í linux receiverið þitt."
@@ -193,6 +193,11 @@ msgid ""
 "!!(Empty)\n"
 "Please, Input to the"
 msgstr ""
+
+#
+#, fuzzy
+msgid "%-H:%M"
+msgstr "%H:%M"
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -341,6 +346,11 @@ msgid_plural "%s updated packages available"
 msgstr[0] ""
 msgstr[1] ""
 
+#
+#, fuzzy, python-format
+msgid "%s%d min"
+msgstr "%d min"
+
 #, python-format
 msgid "%s/%s: %s"
 msgstr ""
@@ -388,14 +398,6 @@ msgstr ""
 
 msgid "/media/usb/"
 msgstr ""
-
-#
-msgid "0"
-msgstr "0"
-
-#
-msgid "1"
-msgstr "1"
 
 msgid "1 GB"
 msgstr ""
@@ -487,10 +489,6 @@ msgstr ""
 msgid "1st Infobar timeout"
 msgstr ""
 
-#
-msgid "2"
-msgstr "2"
-
 #, fuzzy
 msgid "2. STEP - Choose backup location"
 msgstr "Veldu stað fyrir afrit"
@@ -528,10 +526,6 @@ msgid "2nd infobar"
 msgstr "sýna upplýsingar um sendi"
 
 #
-msgid "3"
-msgstr "3"
-
-#
 #, fuzzy
 msgid "30"
 msgstr "0"
@@ -547,18 +541,16 @@ msgstr ""
 msgid "3D Mode"
 msgstr ""
 
+#
+#, fuzzy
+msgid "3D Surround"
+msgstr "Hljóð"
+
 msgid "3D setup"
 msgstr ""
 
 msgid "3X"
 msgstr ""
-
-msgid "3d mode"
-msgstr ""
-
-#
-msgid "4"
-msgstr "4"
 
 #
 msgid "4:3"
@@ -576,20 +568,12 @@ msgid "4X"
 msgstr ""
 
 #
-msgid "5"
-msgstr "5"
-
-#
 #, fuzzy
 msgid "5 min."
 msgstr "%d min"
 
 msgid "512 MB"
 msgstr ""
-
-#
-msgid "6"
-msgstr "6"
 
 #
 #, fuzzy
@@ -599,20 +583,8 @@ msgstr "%d min"
 msgid "64 MB"
 msgstr ""
 
-#
-msgid "7"
-msgstr "7"
-
-#
-msgid "8"
-msgstr "8"
-
 msgid "8 MB"
 msgstr ""
-
-#
-msgid "9"
-msgstr "9"
 
 msgid "<Current movielist location>"
 msgstr "<Núverandi staður bíómyndalista>"
@@ -650,14 +622,11 @@ msgstr ""
 "Stillingaskrá (%s) er breytt síðan uppsetning var gerð.\n"
 "Viltu halda þinni útgáfu?"
 
-msgid "A demo plugin for TPM usage."
-msgstr "Íforrits sýnishorn."
-
 #
 #, fuzzy
 msgid ""
 "A finished power timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Tímastilling vill slökkva á linux receiverinu.\n"
 "Viltu gera það núna?"
@@ -666,23 +635,25 @@ msgstr ""
 #, fuzzy
 msgid ""
 "A finished powertimer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Tímastilling vill setja linux receiverið í\n"
 "biðstöðu. Viltu gera það núna?"
 
 #
+#, fuzzy
 msgid ""
 "A finished record timer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Tímastilling vill setja linux receiverið í\n"
 "biðstöðu. Viltu gera það núna?"
 
 #
+#, fuzzy
 msgid ""
 "A finished record timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Tímastilling vill slökkva á linux receiverinu.\n"
 "Viltu gera það núna?"
@@ -737,17 +708,19 @@ msgstr ""
 "Viltu hætta að nota það?"
 
 #
+#, fuzzy
 msgid ""
 "A sleep timer wants to set your\n"
-"linux receiver to standby. Do that now?"
+"linux box to standby. Do that now?"
 msgstr ""
 "Tímastilling vill setja linux receiverið í\n"
 "biðstöðu. Viltu gera það núna?"
 
 #
+#, fuzzy
 msgid ""
 "A sleep timer wants to shut down\n"
-"your linux receiver. Shutdown now?"
+"your linux box. Shutdown now?"
 msgstr ""
 "Tímastilling vill slökkva á linux receiverinu.\n"
 "Viltu gera það núna?"
@@ -779,6 +752,9 @@ msgstr "AA"
 msgid "AB"
 msgstr "AB"
 
+msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
 msgid "AFP Setup"
 msgstr ""
 
@@ -802,9 +778,6 @@ msgstr "Um..."
 #
 msgid "Accesspoint:"
 msgstr "Aðgangspunktur:"
-
-msgid "Action"
-msgstr ""
 
 msgid "Action on long powerbutton press"
 msgstr ""
@@ -854,11 +827,6 @@ msgstr "Viðbót"
 msgid "Add AutoTimer"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Add Bookmark"
-msgstr "bæta við bókamerki"
-
 msgid "Add Timer"
 msgstr ""
 
@@ -878,11 +846,20 @@ msgstr "bæta við nafnaþjón"
 msgid "Add a new title"
 msgstr "Bæta við nýjum titli"
 
+#, fuzzy
+msgid "Add a record timer"
+msgstr "Taka upp"
+
 msgid "Add a record timer for current event"
 msgstr ""
 
 msgid "Add a zap timer for current event"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Add a zap timer for next event"
+msgstr "fara niður í næsta atriði"
 
 #
 #, fuzzy
@@ -950,6 +927,11 @@ msgstr ""
 msgid "Adding schedule..."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Additional Info"
+msgstr "Leita á fleiri SR"
+
 msgid "Additional ZAP informations..."
 msgstr ""
 
@@ -984,10 +966,12 @@ msgstr ""
 msgid "Addon removed!"
 msgstr ""
 
-msgid "Address"
-msgstr ""
+#
+#, fuzzy
+msgid "Addons"
+msgstr "Stillt af notanda"
 
-msgid "Adjust 3D settings"
+msgid "Address"
 msgstr ""
 
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
@@ -1027,6 +1011,12 @@ msgstr ""
 msgid "Alias:"
 msgstr ""
 
+msgid "Alignment of events"
+msgstr ""
+
+msgid "Alignment of service names"
+msgstr ""
+
 msgid "All"
 msgstr "Allt"
 
@@ -1041,6 +1031,12 @@ msgstr ""
 msgid "All satellites"
 msgstr ""
 
+msgid "Allocate"
+msgstr ""
+
+msgid "Allocate unused memory index"
+msgstr ""
+
 msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
@@ -1053,16 +1049,16 @@ msgstr ""
 msgid "Allows more detailed to be in the crash log"
 msgstr ""
 
-msgid "Allows the linux receiver to read the stored EPG data regularly."
+msgid "Allows the linux box to read the stored EPG data regularly."
 msgstr ""
 
-msgid "Allows the linux receiver to store the EPG data regularly."
+msgid "Allows the linux box to store the EPG data regularly."
+msgstr ""
+
+msgid "Allows you hide the extensions of known file types."
 msgstr ""
 
 msgid "Allows you setup the button to do what you choose."
-msgstr ""
-
-msgid "Allows you to choose the Picons to be displayed on the frontpanel."
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -1158,6 +1154,14 @@ msgid ""
 msgstr "Ertu viss um að þú viljir hætta í ráðgjafanum?"
 
 #, fuzzy
+msgid "Are you sure you want to delete all selected logs:\n"
+msgstr "Ertu viss um að þú viljir hætta í ráðgjafanum?"
+
+#, fuzzy
+msgid "Are you sure you want to delete this log:\n"
+msgstr "Ertu viss um að þú viljir hætta í ráðgjafanum?"
+
+#, fuzzy
 msgid ""
 "Are you sure you want to delete this:\n"
 " "
@@ -1192,8 +1196,9 @@ msgstr ""
 msgid "Are you sure you want to save the EPG Cache to:\n"
 msgstr ""
 
-msgid "Are you sure you want to update your linux receiver?"
-msgstr ""
+#, fuzzy
+msgid "Are you sure you want to send this log:\n"
+msgstr "Ertu viss um að þú viljir hætta í ráðgjafanum?"
 
 msgid "Artist"
 msgstr "Listamaður"
@@ -1207,9 +1212,6 @@ msgstr ""
 #, fuzzy
 msgid "Ask User"
 msgstr "Spyrja notanda"
-
-msgid "Ask before shutdown"
-msgstr ""
 
 msgid "Ask to load new entries"
 msgstr ""
@@ -1239,8 +1241,8 @@ msgstr "úthlutaðar rásir/sendendur:"
 msgid "At End:"
 msgstr ""
 
-msgid "Audio"
-msgstr "Hljóð"
+msgid "Attach a file"
+msgstr ""
 
 msgid "Audio PID"
 msgstr "Hljóð PID"
@@ -1304,6 +1306,13 @@ msgstr "Skipta í kafla hverja ? mínútu (0=aldrei)"
 msgid "Auto flesh"
 msgstr "Sjálfvirkt skinn"
 
+#, fuzzy
+msgid "Auto focus"
+msgstr "Sjálfvirkt skinn"
+
+msgid "Auto focus commencing ..."
+msgstr ""
+
 msgid "Auto language selection"
 msgstr ""
 
@@ -1360,12 +1369,6 @@ msgstr "BA"
 
 msgid "BB"
 msgstr "BB"
-
-msgid "BER"
-msgstr "BER"
-
-msgid "BER:"
-msgstr "BER:"
 
 msgid "BZ2-package:\\n"
 msgstr ""
@@ -1542,8 +1545,14 @@ msgstr ""
 msgid "Button setup"
 msgstr ""
 
-msgid "C"
-msgstr "C"
+msgid "Bypass HDMI EDID Check"
+msgstr ""
+
+msgid "Bytes received:"
+msgstr ""
+
+msgid "Bytes sent:"
+msgstr ""
 
 msgid "C-Band"
 msgstr "C-Band"
@@ -1609,10 +1618,17 @@ msgstr ""
 msgid "CF card mounted in:        "
 msgstr ""
 
+msgid "CHANGE BOUQUET"
+msgstr ""
+
 msgid "CI assignment"
 msgstr "CI stillingar"
 
 msgid "COMPACT FLASH: "
+msgstr ""
+
+#, python-format
+msgid "CPU: %s"
 msgstr ""
 
 msgid "CVBS"
@@ -1634,6 +1650,19 @@ msgstr "Taka nyndir í skyndiminni"
 msgid "Cached:"
 msgstr ""
 
+msgid "Calculate"
+msgstr ""
+
+#, fuzzy
+msgid "Calculate all positions"
+msgstr "Staðsetning hnattar"
+
+msgid "Calculation complete"
+msgstr ""
+
+msgid "Calibrate"
+msgstr ""
+
 msgid "Can be used for different fps between external subtitles and video."
 msgstr ""
 
@@ -1649,6 +1678,12 @@ msgid "Cancel"
 msgstr "Hætta við"
 
 msgid "Cannot delete file"
+msgstr ""
+
+msgid "Cannot determine"
+msgstr ""
+
+msgid "Cannot find any signal ..., aborting !"
 msgstr ""
 
 msgid "Cannot move to trash can"
@@ -1678,8 +1713,15 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
+msgid "Center time-labels and remove date"
+msgstr ""
+
 msgid "Change bouquets in quickzap"
 msgstr "Skipta á milli rása flétta í rásastökki"
+
+#, fuzzy
+msgid "Change city"
+msgstr "Breyta aðgangskóða"
 
 msgid "Change permanent clock position"
 msgstr ""
@@ -1707,9 +1749,6 @@ msgstr "Breyta aðgangsorði fyrir uppsetningu"
 
 msgid "Change step size"
 msgstr "Breyta skrefa stærð"
-
-msgid "Changelog"
-msgstr "Breytingaskrá"
 
 msgid "Channel"
 msgstr "Rás"
@@ -1759,9 +1798,6 @@ msgstr "Rás:"
 msgid "ChannelEPG settings"
 msgstr "Rása val"
 
-msgid "Channellist menu"
-msgstr "Valmynd rásalista"
-
 msgid "Chap."
 msgstr "Kafli."
 
@@ -1787,6 +1823,10 @@ msgid "Checking Feeds"
 msgstr ""
 
 #, fuzzy
+msgid "Checking Logs..."
+msgstr "Athuga skráarkerfi..."
+
+#, fuzzy
 msgid "Checking filesystem..."
 msgstr "Athuga skráarkerfi..."
 
@@ -1805,6 +1845,14 @@ msgstr ""
 msgid "Children/Youth"
 msgstr ""
 
+#, python-format
+msgid "Chipset: BCM%s"
+msgstr ""
+
+#, fuzzy
+msgid "Chnage to bouquet"
+msgstr "Bæta við rásavönd"
+
 msgid "Choose Bouquet"
 msgstr ""
 
@@ -1821,10 +1869,10 @@ msgstr "Velja úttaks möppu"
 msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when the linux receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when the linux box is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when the linux receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when the linux box is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose time interval to which the graphics will be rounded off."
@@ -1864,6 +1912,10 @@ msgstr ""
 msgid "Cleanup"
 msgstr "Hreinsa"
 
+#, fuzzy
+msgid "Clear"
+msgstr "Tæma lista"
+
 msgid "Clear before scan"
 msgstr "Eyða fyrir leit"
 
@@ -1891,6 +1943,13 @@ msgstr ""
 
 msgid "Close"
 msgstr "Loka"
+
+#, fuzzy
+msgid "Close bouquet list."
+msgstr "Breyta rásavanda lista"
+
+msgid "Close dialog"
+msgstr ""
 
 msgid "Close title selection"
 msgstr "Loka titils vali"
@@ -1926,9 +1985,6 @@ msgstr ""
 #, fuzzy
 msgid "Command To Run"
 msgstr "Röðun skipana"
-
-msgid "Command execution..."
-msgstr "Keyrsla skipunar..."
 
 msgid "Command order"
 msgstr "Röðun skipana"
@@ -1975,6 +2031,10 @@ msgstr ""
 msgid "Configuration mode"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Configuration mode: %s"
+msgstr "Stilli"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr ""
 
@@ -2000,9 +2060,6 @@ msgstr "Stilla netkort"
 #, fuzzy
 msgid "Configure internal epg..."
 msgstr "Stilla netkort"
-
-msgid "Configure nameservers"
-msgstr "Stilla nafnaþjón"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr ""
@@ -2050,6 +2107,9 @@ msgid "Configure the color of the teletext subtitles."
 msgstr ""
 
 msgid "Configure the contrast level of the front panel display."
+msgstr ""
+
+msgid "Configure the duration in minutes for the screensaver."
 msgstr ""
 
 msgid "Configure the first audio language (highest priority)."
@@ -2196,6 +2256,10 @@ msgstr ""
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr ""
 
+#, fuzzy
+msgid "Configure your NTP server."
+msgstr "Stilla nafnaþjón"
+
 msgid "Configure your internal LAN"
 msgstr "Stilla innbyggt netkort"
 
@@ -2249,8 +2313,10 @@ msgstr "Innihald passar ekki á DVD!"
 msgid "Continue"
 msgstr "Áfram"
 
-msgid "Continue in background"
-msgstr "Halda áfram í bakgrunni"
+#
+#, fuzzy
+msgid "Continue configuring your network"
+msgstr "Búið að stilla netkerfið"
 
 msgid "Continue playback"
 msgstr ""
@@ -2292,14 +2358,14 @@ msgstr ""
 msgid "Copying files"
 msgstr "Löng skráarnöfn"
 
+#, python-format
+msgid "Cores: %s"
+msgstr ""
+
 msgid ""
 "Could not activate Permanent-Timeshift!\n"
 "Timeshift-Path does not exist"
 msgstr ""
-
-#, fuzzy
-msgid "Could not connect to linux receiver .NFI image feed server:"
-msgstr "Gat ekki tengt við linux receiver .NFI stýrikerfis vefþjón:"
 
 msgid "Could not find installed channel list."
 msgstr ""
@@ -2327,6 +2393,12 @@ msgstr ""
 msgid "Could not save configfile %s!"
 msgstr ""
 
+msgid "Country :"
+msgstr ""
+
+msgid "Crash Logs"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Create"
@@ -2337,7 +2409,7 @@ msgstr "Búa til DVD-ISO"
 
 #
 #, fuzzy
-msgid "Create Directory"
+msgid "Create directory"
 msgstr "búa til möppu"
 
 msgid "Create more detailed crash log"
@@ -2406,12 +2478,6 @@ msgstr "Núverandi sendir"
 msgid "Current value: "
 msgstr "Núverandi val:"
 
-msgid "Current version:"
-msgstr "Núverandi útgáfa:"
-
-msgid "Currently installed image"
-msgstr "Núverandi stýrikerfi"
-
 msgid "Currentpage(Bookmark)"
 msgstr ""
 
@@ -2449,8 +2515,8 @@ msgstr "Tékkneska"
 msgid "Czech Republic"
 msgstr ""
 
-msgid "D"
-msgstr "D"
+msgid "DAC"
+msgstr ""
 
 msgid "DHCP"
 msgstr "DHCP"
@@ -2526,13 +2592,13 @@ msgid "Danish"
 msgstr "Danska"
 
 #
-msgid "Date"
-msgstr "Dags"
+#, fuzzy
+msgid "Data provider: "
+msgstr "bæta við sendanda"
 
 #
-#, fuzzy
-msgid "Date/time input"
-msgstr "Tíma/Dags Innsláttur"
+msgid "Date"
+msgstr "Dags"
 
 msgid "Deactivate permanent clock"
 msgstr ""
@@ -2541,6 +2607,9 @@ msgstr ""
 #, fuzzy
 msgid "Deactive"
 msgstr "bæta við valkosti"
+
+msgid "Debug Logs"
+msgstr ""
 
 msgid "December"
 msgstr ""
@@ -2563,6 +2632,11 @@ msgstr "Venjulegt"
 
 msgid "Default movie location"
 msgstr "Sjálfgefin staðsetning bíómynda"
+
+#
+#, fuzzy
+msgid "Default recording type"
+msgstr "þessi upptaka"
 
 #
 #, fuzzy
@@ -2793,11 +2867,10 @@ msgstr "Óvirkt"
 msgid "Disconnect"
 msgstr "Aftengja"
 
-#
-msgid "Dish"
-msgstr "Diskur"
-
 msgid "Disk space to reserve for recordings (in GB)"
+msgstr ""
+
+msgid "Display"
 msgstr ""
 
 #
@@ -2821,9 +2894,6 @@ msgid "Display message before playing next movie"
 msgstr ""
 
 msgid "Display search results by:"
-msgstr ""
-
-msgid "Display settings"
 msgstr ""
 
 msgid "Display the EIT now/next eventdata in infobar."
@@ -2918,6 +2988,10 @@ msgstr "Viltu örugglega eyða möppunni %s af diskinum?"
 msgid "Do you really want to remove the plugin \"%s\"?"
 msgstr "Viltu örugglega eyða EYÐA íforriti \"%s\"?"
 
+#, fuzzy, python-format
+msgid "Do you really want to remove the timer for %s?"
+msgstr "Viltu örugglega eyða EYÐA íforriti \"%s\"?"
+
 #
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -2929,14 +3003,28 @@ msgid ""
 " "
 msgstr "Viltu örugglega eyða EYÐA íforriti \"%s\"?"
 
+#, fuzzy
+msgid "Do you want to add any additional information ?"
+msgstr "Viltu hlaða niður stýrikerfinu á %s ?"
+
 msgid ""
 "Do you want to also install samba client ?\n"
 "This allows you to mount your windows shares on this device."
 msgstr ""
 
+msgid ""
+"Do you want to attach a text file to explain the log ?\n"
+"(choose 'No' to type message using virtual keyboard.)"
+msgstr ""
+
 #
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Viltu brenna þessa skráar safn á DVD disk?"
+
+msgid ""
+"Do you want to delete all selected files:\n"
+"(choose 'No' to only delete the currently selected file.)"
+msgstr ""
 
 #
 #, fuzzy
@@ -2955,10 +3043,6 @@ msgstr "Viltu leita að rásum?"
 #
 msgid "Do you want to do another manual service scan?"
 msgstr "Viltu leita aftur handvirkt?"
-
-#, python-format
-msgid "Do you want to download the image to %s ?"
-msgstr "Viltu hlaða niður stýrikerfinu á %s ?"
 
 #
 #, fuzzy
@@ -2982,10 +3066,6 @@ msgstr "Viltu spila DVD diskinn sem er í spilaranum?"
 msgid "Do you want to preview this DVD before burning?"
 msgstr "Viltu forskoða þennan DVD disk fyrir brennslu?"
 
-#
-msgid "Do you want to reboot your linux receiver?"
-msgstr "Viltu endurræsa linux receiverinu?"
-
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
@@ -3006,6 +3086,11 @@ msgstr "Viltu halda áfram að spila þetta?"
 msgid "Do you want to see more entries?"
 msgstr "Viltu setja inn stillingarnar þínar aftur?"
 
+msgid ""
+"Do you want to send all selected files:\n"
+"(choose 'No' to only send the currently selected file.)"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Do you want to set selected url to the Startpage?"
@@ -3017,7 +3102,8 @@ msgid "Do you want to update your EGAMI image?"
 msgstr "Viltu uppfæra linux receiverið þitt?"
 
 #
-msgid "Do you want to update your linux receiver?"
+#, fuzzy
+msgid "Do you want to update your linux box?"
 msgstr "Viltu uppfæra linux receiverið þitt?"
 
 #
@@ -3053,15 +3139,6 @@ msgstr ""
 #
 msgid "Download"
 msgstr "Hlaða niður"
-
-#, fuzzy, python-format
-msgid "Download %s from server"
-msgstr "Hleð niður %s frá vefþjón"
-
-#
-#, fuzzy
-msgid "Download .NFI-files for USB-flasher"
-msgstr "Hlaða niður .NFI skrár fyrir keyranlegt USB"
 
 #, fuzzy
 msgid "Download CVS extensions..."
@@ -3101,9 +3178,6 @@ msgstr ""
 msgid "Download subtitle:"
 msgstr "Hleð niður"
 
-msgid "Downloadable plugins"
-msgstr "Niðurhalanleg íforrit"
-
 msgid "Downloading"
 msgstr "Hleð niður"
 
@@ -3140,6 +3214,9 @@ msgstr "Dýnamísk skerpa"
 msgid "E"
 msgstr "E"
 
+msgid "E2 Light Multiboot"
+msgstr ""
+
 #
 #, fuzzy
 msgid "ECM Info"
@@ -3167,9 +3244,6 @@ msgid "EGAMI Backup complete! Please wait..."
 msgstr ""
 
 msgid "EGAMI Devices Manager has just unmounted all your devices."
-msgstr ""
-
-msgid "EGAMI File Manager"
 msgstr ""
 
 msgid "EGAMI Full Backup Panel"
@@ -3214,11 +3288,6 @@ msgstr ""
 msgid "EPG location"
 msgstr ""
 
-#
-#, fuzzy
-msgid "EPG selection"
-msgstr "EPG val"
-
 msgid "EPG settings"
 msgstr ""
 
@@ -3229,6 +3298,9 @@ msgstr "VILLA - gat ekki leitað (%s)!"
 #
 msgid "East"
 msgstr "Austur"
+
+msgid "East limit set"
+msgstr ""
 
 msgid "Ecm:"
 msgstr ""
@@ -3259,11 +3331,13 @@ msgid "Edit settings"
 msgstr "Breyta stillingum"
 
 #
-msgid "Edit the Nameserver configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Edit the Nameserver configuration of your linux box.\n"
 msgstr "Breyta nafnaþjóns stillingum linux receiverins.\n"
 
 #
-msgid "Edit the network configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Edit the network configuration of your linux box.\n"
 msgstr "Breyta stillingum netkorts í linux receiverinu.\n"
 
 #
@@ -3377,10 +3451,6 @@ msgid "Enable teletext caching"
 msgstr ""
 
 #
-msgid "Enable timer"
-msgstr "Virkja tímastillingu"
-
-#
 msgid "Enabled"
 msgstr "Virkt"
 
@@ -3421,9 +3491,6 @@ msgstr ""
 msgid "Enigma2 skin selector"
 msgstr ""
 
-msgid "Enimga2 Changes"
-msgstr ""
-
 #, fuzzy
 msgid "Enter Key"
 msgstr "Slá inn kóða"
@@ -3434,6 +3501,10 @@ msgstr "Fara í aðal valmynd..."
 
 msgid "Enter pin code"
 msgstr "Slá inn kóða"
+
+#, fuzzy
+msgid "Enter the city name:"
+msgstr "Sláðu inn rása kóða"
 
 msgid "Enter the service pin"
 msgstr "Sláðu inn rása kóða"
@@ -3473,6 +3544,13 @@ msgid "Error reading webpage!"
 msgstr ""
 
 #
+#, fuzzy, python-format
+msgid ""
+"Error:\n"
+"%s"
+msgstr "Villa"
+
+#
 #, python-format
 msgid ""
 "Error: %s\n"
@@ -3496,16 +3574,6 @@ msgstr ""
 
 msgid "Event font size (relative to skin size)"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Event view"
-msgstr "Skoða atriði"
-
-#
-#, fuzzy
-msgid "Event view menu"
-msgstr "Skoða atriði"
 
 msgid "Everywhere"
 msgstr ""
@@ -3621,6 +3689,12 @@ msgstr ""
 msgid "External (CF)"
 msgstr ""
 
+msgid "Extras"
+msgstr ""
+
+msgid "FAILED"
+msgstr ""
+
 #
 #, fuzzy
 msgid "FAN Setup"
@@ -3654,6 +3728,9 @@ msgid "Failed to download an Addon..."
 msgstr ""
 
 msgid "Failed to remove old files."
+msgstr ""
+
+msgid "Failed to write /tmp/positionersetup.log: "
 msgstr ""
 
 #
@@ -3707,6 +3784,11 @@ msgstr ""
 msgid "File"
 msgstr ""
 
+#
+#, fuzzy
+msgid "File Manager"
+msgstr "Leita að rásum"
+
 msgid "File Manager Install..."
 msgstr ""
 
@@ -3729,6 +3811,19 @@ msgstr ""
 
 msgid "Film & Animation"
 msgstr ""
+
+#, fuzzy
+msgid "Final position at"
+msgstr "Staðsetning hnattar"
+
+#, fuzzy
+msgid "Final position at index"
+msgstr "Staðsetning hnattar"
+
+#
+#, fuzzy
+msgid "Fine movement"
+msgstr "Sýna færslu mótors"
 
 #
 msgid "Finetune"
@@ -3753,16 +3848,8 @@ msgstr "Finnska"
 msgid "Fixed"
 msgstr ""
 
-#
-msgid "Flash"
-msgstr "Forritun"
-
 msgid "Flashing"
 msgstr ""
-
-#
-msgid "Flashing failed"
-msgstr "Forritun tókt ekki"
 
 msgid "Folder:"
 msgstr ""
@@ -3837,6 +3924,9 @@ msgstr "Fös"
 msgid "Friday"
 msgstr "Föstudagur"
 
+msgid "From"
+msgstr ""
+
 msgid "From :"
 msgstr ""
 
@@ -3893,6 +3983,11 @@ msgstr ""
 msgid "Gateway"
 msgstr "Beinir"
 
+#
+#, fuzzy
+msgid "Gateway:"
+msgstr "Beinir"
+
 msgid "General"
 msgstr ""
 
@@ -3919,12 +4014,6 @@ msgstr "Þýska"
 #, fuzzy
 msgid "Get Subtitle"
 msgstr "Undirtextar"
-
-msgid "Get latest experimental image"
-msgstr "Ná í nýjustu prufuútgáfu stýrikerfis"
-
-msgid "Get latest release image"
-msgstr "Ná í nýjasta útgefið stýrikerfi"
 
 msgid "Getting Event Info failed!"
 msgstr ""
@@ -3996,11 +4085,25 @@ msgstr "Fara á 0"
 msgid "Goto :"
 msgstr ""
 
+#, fuzzy
+msgid "Goto X"
+msgstr "Fara á 0"
+
+#
+#, fuzzy
+msgid "Goto index position"
+msgstr "Fara á staðsetningu"
+
 msgid "Goto next bouquet"
 msgstr ""
 
 msgid "Goto next channel"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Goto next day of events"
+msgstr "fara niður í næsta atriði"
 
 msgid "Goto next event"
 msgstr ""
@@ -4018,6 +4121,11 @@ msgstr ""
 msgid "Goto previous channel"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Goto previous day of events"
+msgstr "fara upp í næsta atriði"
+
 msgid "Goto previous event"
 msgstr ""
 
@@ -4027,11 +4135,21 @@ msgstr ""
 msgid "Goto specific data/time"
 msgstr ""
 
+#
+#, fuzzy
+msgid "GotoX calibration"
+msgstr "Fara á staðsetningu"
+
 msgid "GraphMultiEpg Settings"
 msgstr ""
 
 msgid "Graphical EPG"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Graphical InfobarEPG settings"
+msgstr "Myndrænn dagskrárstjóri (EPG)"
 
 #
 msgid "Graphical Multi EPG"
@@ -4071,6 +4189,9 @@ msgid "HD videos"
 msgstr ""
 
 msgid "HDD mounted in:               "
+msgstr ""
+
+msgid "HDMI"
 msgstr ""
 
 msgid "HDMI CEC"
@@ -4133,6 +4254,9 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
+msgid "Helps setting up your dish"
+msgstr ""
+
 msgid ""
 "Here is the list of installed images in Your STB\n"
 "\n"
@@ -4162,6 +4286,10 @@ msgstr ""
 msgid "Hide error messages from the Common Interface module."
 msgstr ""
 
+#, fuzzy
+msgid "Hide known extensions"
+msgstr "skoða íforrit..."
+
 #
 #, fuzzy
 msgid "Hide player"
@@ -4177,6 +4305,9 @@ msgstr "Hierarchy upplýsingar"
 #, fuzzy
 msgid "Hierarchy information"
 msgstr "Stigskipta upplýsingar"
+
+msgid "High :"
+msgstr ""
 
 #
 msgid "High bitrate support"
@@ -4245,6 +4376,9 @@ msgstr ""
 msgid "Hue"
 msgstr "Litatónn"
 
+msgid "Humidity :"
+msgstr ""
+
 #
 msgid "Hungarian"
 msgstr "Ungverska"
@@ -4254,6 +4388,11 @@ msgstr ""
 
 msgid "IMDb Search"
 msgstr ""
+
+#
+#, fuzzy
+msgid "IP Address"
+msgstr "IP Netfang"
 
 #
 #, fuzzy
@@ -4406,20 +4545,14 @@ msgstr ""
 msgid "Increased voltage"
 msgstr "Aukin spenna"
 
-#
-msgid "Index"
-msgstr "Yfirlit"
+msgid "Index allocated:"
+msgstr ""
 
 msgid "India"
 msgstr ""
 
 #
 msgid "Info"
-msgstr "Upplýsingar"
-
-#
-#, fuzzy
-msgid "Info bar"
 msgstr "Upplýsingar"
 
 msgid "Info button (long)"
@@ -4462,8 +4595,21 @@ msgstr "Stilli"
 msgid "Initial fast forward speed"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Initial lock ratio"
+msgstr "Ógildur staður"
+
 msgid "Initial rewind speed"
 msgstr ""
+
+msgid "Initial signal quality"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Initial signal quality:"
+msgstr "Gæði tengingar:"
 
 msgid "Initialization"
 msgstr "Frumstilling"
@@ -4569,10 +4715,6 @@ msgstr ""
 #, fuzzy
 msgid "Installing an addon... Please wait..."
 msgstr "Næ í upplýsingar um íforrit. Vinsamlega bíðið..."
-
-#, fuzzy
-msgid "Installing software..."
-msgstr "Set inn hugbúnað..."
 
 #
 #, fuzzy
@@ -4692,6 +4834,9 @@ msgstr ""
 msgid "Items per page for list screen"
 msgstr ""
 
+msgid "JUMP 24 HOURS"
+msgstr ""
+
 #
 #, fuzzy
 msgid "January"
@@ -4702,11 +4847,6 @@ msgstr ""
 
 #
 msgid "Job View"
-msgstr "Skoða vinnslu"
-
-#
-#, fuzzy
-msgid "Job overview"
 msgstr "Skoða vinnslu"
 
 msgid "July"
@@ -4884,6 +5024,11 @@ msgid "Latitude"
 msgstr "Breiddargráða"
 
 #
+#, fuzzy
+msgid "Latitude :"
+msgstr "Breiddargráða"
+
+#
 msgid "Latvian"
 msgstr "Lettneska"
 
@@ -4912,6 +5057,11 @@ msgstr ""
 msgid "Letterbox"
 msgstr "Letterbox"
 
+#
+#, fuzzy
+msgid "Letterbox zoom"
+msgstr "Letterbox"
+
 msgid "Light Grey"
 msgstr ""
 
@@ -4931,6 +5081,16 @@ msgstr ""
 #
 msgid "Limit west"
 msgstr "Mörk í vestur"
+
+#
+#, fuzzy
+msgid "Limits cancelled"
+msgstr "Taka út titil"
+
+#
+#, fuzzy
+msgid "Limits enabled"
+msgstr "Mörk á"
 
 #
 msgid "Limits off"
@@ -4958,9 +5118,6 @@ msgstr "Tengdir titlar við DVD valmynd"
 
 msgid "List EPG functions..."
 msgstr ""
-
-msgid "List available networks"
-msgstr "Sýna netkerfi í boði"
 
 msgid "List mode"
 msgstr ""
@@ -5019,8 +5176,9 @@ msgid "Location"
 msgstr "Staðsetning"
 
 #
-msgid "Lock:"
-msgstr "Lás:"
+#, fuzzy
+msgid "Lock ratio"
+msgstr "Staðsetning"
 
 msgid "Log"
 msgstr ""
@@ -5032,6 +5190,9 @@ msgstr "Löng skráarnöfn"
 #
 msgid "Log results to harddisk"
 msgstr "Skýrslur á harðadisk"
+
+msgid "LogManager"
+msgstr ""
 
 msgid "Logs location"
 msgstr ""
@@ -5060,6 +5221,14 @@ msgstr "Ýtt lengi á hnapp"
 msgid "Longitude"
 msgstr "Lengdargráða"
 
+#
+#, fuzzy
+msgid "Longitude :"
+msgstr "Lengdargráða"
+
+msgid "Low :"
+msgstr ""
+
 msgid "Luxembourgish"
 msgstr ""
 
@@ -5068,10 +5237,6 @@ msgstr ""
 
 msgid "MB"
 msgstr ""
-
-#
-msgid "MORE"
-msgstr "MEIRA"
 
 #
 #, fuzzy
@@ -5160,7 +5325,8 @@ msgid "Manage system and kernel logs..."
 msgstr ""
 
 #
-msgid "Manage your linux receiver's software"
+#, fuzzy
+msgid "Manage your linux box's software"
 msgstr "Stjórna hugbúnaði móttakarans"
 
 msgid "Manual Install EGAMI and IPK packages"
@@ -5226,21 +5392,17 @@ msgstr ""
 msgid "May"
 msgstr "dagur"
 
+#
+#, fuzzy
+msgid "Media Player"
+msgstr "Spilari"
+
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
 
 #
-msgid "Media player"
-msgstr "Spilari"
-
-#
 #, fuzzy
 msgid "Media scanner"
-msgstr "Spilari"
-
-#
-#, fuzzy
-msgid "MediaPlayer"
 msgstr "Spilari"
 
 #
@@ -5257,6 +5419,9 @@ msgstr ""
 msgid "Memory Information"
 msgstr ""
 
+msgid "Memory index"
+msgstr ""
+
 #
 msgid "Menu"
 msgstr "Valmynd"
@@ -5266,14 +5431,6 @@ msgstr ""
 
 msgid "Merging Timeshift files"
 msgstr ""
-
-#
-msgid "Message"
-msgstr "Skilaboð"
-
-#
-msgid "Message..."
-msgstr "Skilaboð..."
 
 msgid "Mexico"
 msgstr ""
@@ -5429,12 +5586,32 @@ msgstr ""
 msgid "Move to other directory"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Move to position X"
+msgstr "Fara á staðsetningu"
+
 msgid "Move up a page"
 msgstr ""
 
 #
 msgid "Move west"
 msgstr "Færa vestur"
+
+#
+#, fuzzy
+msgid "Moved to position 0"
+msgstr "Fara á staðsetningu"
+
+#
+#, fuzzy
+msgid "Moved to position at index"
+msgstr "Fara á staðsetningu"
+
+#
+#, fuzzy
+msgid "Movement"
+msgstr "Færa austur"
 
 msgid "Movie List"
 msgstr ""
@@ -5453,12 +5630,28 @@ msgid "Movie/Drama"
 msgstr ""
 
 #
-msgid "Movielist menu"
-msgstr "Bíómynda valmynd"
+#, fuzzy
+msgid "Moving"
+msgstr "Eyði"
+
+#
+#, fuzzy
+msgid "Moving east ..."
+msgstr "Leita að skrám..."
 
 #, fuzzy
 msgid "Moving files"
 msgstr "Löng skráarnöfn"
+
+#
+#, fuzzy
+msgid "Moving to position"
+msgstr "Fara á staðsetningu"
+
+#
+#, fuzzy
+msgid "Moving west ..."
+msgstr "Leita að skrám..."
 
 #
 msgid "Multi EPG"
@@ -5488,10 +5681,6 @@ msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr ""
-
-#
-msgid "Mute"
-msgstr "Hljóð Af"
 
 msgid "My TubePlayer"
 msgstr ""
@@ -5525,18 +5714,6 @@ msgstr ""
 msgid "N/A"
 msgstr "Ekki til"
 
-#
-msgid "NEXT"
-msgstr "NÆST"
-
-#, fuzzy
-msgid "NFI image flashing"
-msgstr "NFI stýrikerfis forritun"
-
-#
-msgid "NFI image flashing completed. Press Yellow to Reboot!"
-msgstr "NFI forritun er lokið. Ýttu á gulan til að endurræsa!"
-
 msgid "NFS Server Panel"
 msgstr ""
 
@@ -5554,12 +5731,13 @@ msgstr "NIM"
 msgid "NIT Info"
 msgstr "Upplýsingar"
 
-#
-msgid "NOW"
-msgstr "NÚNA"
-
 msgid "NTP"
 msgstr ""
+
+#
+#, fuzzy
+msgid "NTP server"
+msgstr "Nafnaþjónn"
 
 #
 msgid "NTSC"
@@ -5595,11 +5773,6 @@ msgstr "Nafnaþjónn %d"
 msgid "Nameserver settings"
 msgstr "Uppsetning nafnaþjóns"
 
-#
-#, fuzzy
-msgid "Nameserver setup"
-msgstr "Uppsetning nafnaþjóns"
-
 msgid "Namespace"
 msgstr "Nafnabox"
 
@@ -5620,11 +5793,6 @@ msgstr ""
 msgid "Network Information"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Network Mounts"
-msgstr "Prufa nettengingu"
-
 msgid "Network Servers:"
 msgstr ""
 
@@ -5641,8 +5809,8 @@ msgstr "Netkerfis ráðgjafi"
 
 #
 #, fuzzy
-msgid "Network configuration..."
-msgstr "Stilling nettengingar..."
+msgid "Network mounts"
+msgstr "Prufa nettengingu"
 
 #, fuzzy
 msgid "Network name (SSID)"
@@ -5653,16 +5821,17 @@ msgid "Network scan"
 msgstr "Leita netkerfið allt"
 
 #
+#, fuzzy
+msgid "Network settings/info"
+msgstr "Virkja netkerfis stillingar"
+
+#
 msgid "Network setup"
 msgstr "Stillingar netkerfis"
 
 #
 msgid "Network test"
 msgstr "Prufa nettengingu"
-
-#
-msgid "Network test..."
-msgstr "Prufa nettengingu..."
 
 msgid "Network test: "
 msgstr "Prufa nettengingu:"
@@ -5705,10 +5874,6 @@ msgstr "Ný útgáfa:"
 
 msgid "New timers location"
 msgstr ""
-
-#
-msgid "New version:"
-msgstr "Ný útgáfa:"
 
 msgid "NewCamd DES Key:"
 msgstr ""
@@ -5776,10 +5941,6 @@ msgstr ""
 msgid "No description available."
 msgstr "Engin lýsing tiltæk."
 
-#
-msgid "No details for this image file"
-msgstr "Engar upplýsingar um þetta stýrikerfi"
-
 msgid "No detected HbbTV applications."
 msgstr ""
 
@@ -5793,6 +5954,11 @@ msgstr "Engar upplýsingar um atriði fundust, tek upp endalaust."
 
 msgid "No fast winding possible yet.. but you can use the number buttons to skip forward/backward!"
 msgstr "Ekki mögulegt að hraðspóla enn, þú getur notað númera takkana til að stökkva áfram/afturábak!"
+
+#
+#, fuzzy
+msgid "No free index available"
+msgstr "Engin lýsing tiltæk."
 
 #
 msgid "No free tuner!"
@@ -5823,6 +5989,11 @@ msgstr "Engin nettenging virk."
 
 #
 msgid "No networks found"
+msgstr "Ekkert netkerfi fannst"
+
+#
+#, fuzzy
+msgid "No new plugins found"
 msgstr "Ekkert netkerfi fannst"
 
 msgid "No of items switch (increase or reduced)"
@@ -5885,6 +6056,10 @@ msgid ""
 msgstr ""
 "Enginn móttakari er valinn!\n"
 "Stilltu móttakara áður er að þú ferð að leita að rásum."
+
+#, fuzzy
+msgid "No updates available"
+msgstr "Það er engin uppfærsla tiltæk."
 
 msgid "No updates available. Please try again later."
 msgstr ""
@@ -5959,7 +6134,8 @@ msgid "No, do nothing."
 msgstr "Nei, ekki gera neitt."
 
 #
-msgid "No, just start my linux receiver"
+#, fuzzy
+msgid "No, just start my linux box"
 msgstr "Nei, ræstu bara linux receiverið mitt"
 
 msgid "No, never"
@@ -6037,9 +6213,6 @@ msgstr ""
 "Ekkert til að leita!\n"
 "Stilltu inn móttakarann áður en að þú byrjar rása leit."
 
-msgid "Nothing to upgrade"
-msgstr ""
-
 #
 #, fuzzy
 msgid "November"
@@ -6050,11 +6223,6 @@ msgid "Now"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Now playing"
-msgstr "Spila núna"
-
-#
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "Notaðu núna skerpu (contrast) stillingar til að auka birtu bakgrunns eins mikið og hægt er en vertu samt viss um að sjá mun á björtustu tveim hlutum myndarinnar. Þegar þú hefur gert það ýttu þá á OK."
 
@@ -6062,9 +6230,6 @@ msgid "Number"
 msgstr ""
 
 msgid "Number of rows"
-msgstr ""
-
-msgid "OE Changes"
 msgstr ""
 
 #
@@ -6135,6 +6300,9 @@ msgid "One line"
 msgstr ""
 
 msgid "OnlineVersionCheck"
+msgstr ""
+
+msgid "Only active when in standby"
 msgstr ""
 
 msgid "Only extensions."
@@ -6218,6 +6386,9 @@ msgstr "Skrifa yfir stillinga skrár við hugbúnaðar uppfærslu?"
 msgid "Overwrite configuration files?"
 msgstr ""
 
+msgid "PAGE UP/DOWN"
+msgstr ""
+
 #
 msgid "PAL"
 msgstr "PAL"
@@ -6234,13 +6405,11 @@ msgstr "PCR PID"
 msgid "PIDs"
 msgstr "PIDs"
 
-#
-#, fuzzy
-msgid "PIN code needed"
-msgstr "Kóða vantar"
-
 msgid "PMT PID"
 msgstr "PMT PID"
+
+msgid "PRIMETIME"
+msgstr ""
 
 #, python-format
 msgid "PTS Plugin Error: %s"
@@ -6262,9 +6431,6 @@ msgstr "Listi uppfærðra pakka"
 #
 msgid "Package list update"
 msgstr "Listi uppfærðra pakka"
-
-msgid "Packages"
-msgstr ""
 
 #
 msgid "Packet management"
@@ -6309,11 +6475,6 @@ msgstr "Foreldrastýring"
 
 msgid "Parental control editor"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Parental control services editor"
-msgstr "Forritun foreldrakóða á rásir"
 
 #
 msgid "Parental control setup"
@@ -6365,12 +6526,6 @@ msgid "Percentage right"
 msgstr "Hringpólun hægri"
 
 msgid "Perform a setting backup before updating."
-msgstr ""
-
-msgid "Perform a setting backup,"
-msgstr ""
-
-msgid "Perform a setting backup, making a backup before updating is strongly advised."
 msgstr ""
 
 msgid "Perform an online update check in the background"
@@ -6425,11 +6580,6 @@ msgstr "Síma númer"
 msgid "PiP"
 msgstr ""
 
-#
-#, fuzzy
-msgid "PiP setup"
-msgstr "Uppsetning Mynd í Mynd"
-
 msgid "Picon"
 msgstr ""
 
@@ -6441,6 +6591,11 @@ msgstr ""
 
 msgid "Picon width"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Picture Player"
+msgstr "Mynd spilari"
 
 #
 #, fuzzy
@@ -6494,6 +6649,10 @@ msgstr ""
 msgid "Play audio-CD..."
 msgstr "Spila hljóð disk..."
 
+#, fuzzy
+msgid "Play back media files"
+msgstr "Veldu afrits skrár"
+
 #
 #, fuzzy
 msgid "Play entry"
@@ -6541,10 +6700,6 @@ msgstr "Vinsamlega bætið við titlum við efnið."
 msgid "Please change recording endtime"
 msgstr "Vinsamlega breytið lokatíma upptöku"
 
-#
-msgid "Please check your network settings!"
-msgstr "Vinsamlega athugaðu stillingar netkerfis!"
-
 msgid "Please choose CCcam-Reader"
 msgstr ""
 
@@ -6563,16 +6718,12 @@ msgid "Please choose reader"
 msgstr ""
 
 #, fuzzy
-msgid "Please choose."
+msgid "Please choose what you want to do next."
 msgstr "Vinsamlega veldu viðbót..."
 
-#
-msgid ""
-"Please configure or verify your Nameservers by filling out the required values.\n"
-"When you are ready press OK to continue."
-msgstr ""
-"Ýttu á stilla eða að athugaðu Nafnaþjóns stillingar.\n"
-"Ýttu á OK þegar þú ert búinn."
+#, fuzzy
+msgid "Please choose."
+msgstr "Vinsamlega veldu viðbót..."
 
 #
 msgid ""
@@ -6582,7 +6733,7 @@ msgstr ""
 "Til að stilla nettengingu filltu þá út viðeigandi gildi.\n"
 "Ýttu þá á OK til að halda áfram."
 
-msgid "Please connect your receiver to the internet"
+msgid "Please connect your linux box to the internet"
 msgstr ""
 
 #
@@ -6658,9 +6809,6 @@ msgstr "Velja undirrás til að taka upp..."
 #
 msgid "Please select a subservice..."
 msgstr "Vinsamlega veldu undirrás..."
-
-msgid "Please select an NFI file and press green key to flash!"
-msgstr "Vinsamlega veldu NFI stýrikerfi og ýttu á græna takkann til að setja inn!"
 
 #, fuzzy
 msgid "Please select medium to be scanned"
@@ -6771,6 +6919,11 @@ msgid "Please wait while we prepare your network interfaces..."
 msgstr "Vinsamlegast bíðið á meðan við stillum netkort..."
 
 #
+#, fuzzy
+msgid "Please wait while we test your network connection..."
+msgstr "Vinsamlega bíðið á meðan við prufum net tengingu..."
+
+#
 msgid "Please wait while we test your network..."
 msgstr "Vinsamlega bíðið á meðan við prufum net tengingu..."
 
@@ -6822,9 +6975,6 @@ msgstr ""
 msgid "Plugin Browser"
 msgstr ""
 
-msgid "Plugin browser"
-msgstr "Íforrita leit"
-
 msgid "Plugin details"
 msgstr ""
 
@@ -6839,6 +6989,11 @@ msgstr "Íforrit"
 
 msgid "Poland"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Polarisation"
+msgstr "Pólun"
 
 #
 msgid "Polarization"
@@ -6886,24 +7041,17 @@ msgid "Position setup"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Position stored at index"
+msgstr "Uppsetning mótors"
+
+#
 msgid "Positioner"
 msgstr "Mótorstýring"
-
-msgid "Positioner Setup"
-msgstr ""
-
-msgid "Positioner fine movement"
-msgstr ""
-
-msgid "Positioner movement"
-msgstr ""
 
 #
 msgid "Positioner setup"
 msgstr "Uppsetning mótors"
-
-msgid "Positioner storage"
-msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -6958,9 +7106,6 @@ msgstr "Rása upplýsingar"
 
 msgid "Preferred tuner"
 msgstr ""
-
-msgid "Prepare another USB stick for image flashing"
-msgstr "Undirbúa annan USB staut fyrir stýrikerfis forritun"
 
 #
 msgid "Preparing... Please wait"
@@ -7018,8 +7163,16 @@ msgid "Press OK to toggle the selection."
 msgstr "Ýttu á OK til að velja á milli."
 
 #
+#, fuzzy
+msgid "Press ok to confirm"
+msgstr "Ýtið á OK til að leita"
+
+#
 msgid "Press yellow to set this interface as default interface."
 msgstr "Ýttu á gula til að hafa þetta netkort sem sjálfvalið."
+
+msgid "Pressure :"
+msgstr ""
 
 msgid "Preview"
 msgstr "Forsýn"
@@ -7124,7 +7277,7 @@ msgstr "Pólska"
 msgid "Put TV in standby"
 msgstr ""
 
-msgid "Put your linux receiver in standby"
+msgid "Put your linux box in standby"
 msgstr ""
 
 #
@@ -7155,10 +7308,6 @@ msgstr "Loftnetsrás"
 #
 msgid "RGB"
 msgstr "RGB"
-
-#
-msgid "Radio"
-msgstr "Útvarp"
 
 #
 msgid "Random"
@@ -7229,29 +7378,39 @@ msgstr "Viltu örugglega endurræsa núna?"
 msgid "Really shutdown now?"
 msgstr "Viltu örugglega slökkva núna?"
 
+msgid "Really upgrade the front panel and reboot now?"
+msgstr ""
+
 msgid "Really upgrade the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your linux receiver and reboot now?"
+msgid "Really upgrade your linux box and reboot now?"
 msgstr ""
 
 #
 msgid "Reboot"
 msgstr "Endurræsi"
 
-msgid "Rec"
-msgstr ""
-
 msgid "Recently featured"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Reception settings"
-msgstr "Stilling móttöku"
+msgid "Record"
+msgstr "Upptaka"
 
 #
-msgid "Record"
+#, fuzzy
+msgid "Record next"
+msgstr "Upptaka"
+
+#
+#, fuzzy
+msgid "Record now"
+msgstr "Upptaka"
+
+#
+#, fuzzy
+msgid "Record once"
 msgstr "Upptaka"
 
 msgid "Record started! Stopping timeshift now ..."
@@ -7317,6 +7476,9 @@ msgid "Refresh rate selection."
 msgstr "Hressingar tíðni val."
 
 msgid "Regard deep standby as standby"
+msgstr ""
+
+msgid "Region :"
 msgstr ""
 
 msgid "Related video entries."
@@ -7563,10 +7725,6 @@ msgid "Restore backups"
 msgstr "Setja inn afrit"
 
 #
-msgid "Restore is running..."
-msgstr "Set inn afrit..."
-
-#
 msgid "Restore system settings"
 msgstr "Setja inn kerfis stillingar"
 
@@ -7591,6 +7749,9 @@ msgstr "Byrja aftur eftir %s"
 #. TRANSLATORS: question or a choice, but it is a statement.)
 msgid "Resuming playback"
 msgstr "Held áfram spilun"
+
+msgid "Retrieving data ..."
+msgstr ""
 
 msgid "Return"
 msgstr ""
@@ -7635,6 +7796,11 @@ msgstr "byrjunar mappa"
 
 msgid "Root directory"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Rotor step position:"
+msgstr "Vista staðsetningu"
 
 #
 msgid "Rotor turning speed"
@@ -7685,13 +7851,8 @@ msgstr "SID"
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
 
-#
-msgid "SNR"
-msgstr "SNR"
-
-#
-msgid "SNR:"
-msgstr "SNR:"
+msgid "SPDIF"
+msgstr ""
 
 #
 msgid "SSID:"
@@ -7728,6 +7889,11 @@ msgstr "Gervihnatta búnaður"
 #
 #, fuzzy
 msgid "Satellite equipment setup"
+msgstr "Uppsetning Gervihnattabúnaðar"
+
+#
+#, fuzzy
+msgid "Satellite longitude:"
 msgstr "Uppsetning Gervihnattabúnaðar"
 
 #
@@ -7781,6 +7947,12 @@ msgstr ""
 msgid "Save playlist"
 msgstr "vista spilunarlista"
 
+msgid "Save timeshift file"
+msgstr ""
+
+msgid "Save timeshift file in movie directory"
+msgstr ""
+
 msgid "Saving EPG Cache..."
 msgstr ""
 
@@ -7820,6 +7992,10 @@ msgstr ""
 msgid "Scan additional SR"
 msgstr "Leita á fleiri SR"
 
+#, fuzzy
+msgid "Scan available networks"
+msgstr "Sýna netkerfi í boði"
+
 #
 #, fuzzy
 msgid "Scan files..."
@@ -7856,11 +8032,10 @@ msgstr ""
 msgid "Scanning..."
 msgstr ""
 
-#
-msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
-msgstr "Leita sjálfgefna gervihnetti, raðað eftir hnöttum með tengdum mótor"
-
 msgid "Science & Technology"
+msgstr ""
+
+msgid "Scripts"
 msgstr ""
 
 msgid "Scrolling Speed"
@@ -7897,12 +8072,26 @@ msgstr ""
 msgid "Search west"
 msgstr "Leita vestur"
 
+#
+#, fuzzy
+msgid "Searching"
+msgstr "Leita austur"
+
+#
+#, fuzzy
+msgid "Searching east ..."
+msgstr "Leita austur"
+
 msgid "Searching for available updates. Please wait..."
 msgstr "Leita að tiltækum uppfærslum. Vinsamlega bíðið..."
 
 #
 msgid "Searching for new installed or removed packages. Please wait..."
 msgstr "Leita að nýinnsettum eða fjarlægðum pökkum. Vinsamlega bíðið..."
+
+#, fuzzy
+msgid "Searching west ..."
+msgstr "Leita vestur"
 
 #
 msgid "Secondary DNS"
@@ -7940,46 +8129,14 @@ msgid "Select CAId"
 msgstr "veldu CAId"
 
 #
-msgid "Select HDD"
-msgstr "Veldu harðadisk"
-
-#
-#, fuzzy
-msgid "Select a bouquet"
-msgstr "Veldu mynd"
-
-#
 #, fuzzy
 msgid "Select a line to edit"
 msgstr "Veldu Netkort"
 
 #
-msgid "Select a movie"
-msgstr "Veldu mynd"
-
-#
-#, fuzzy
-msgid "Select a network adapter"
-msgstr "Veldu Netkort"
-
-#
-#, fuzzy
-msgid "Select a skin"
-msgstr "Veldu mynd"
-
-#
-#, fuzzy
-msgid "Select a tuner"
-msgstr "Veldu mynd"
-
-#
 #, fuzzy
 msgid "Select a wireless network"
 msgstr "Veldu þráðlaust net"
-
-#, fuzzy
-msgid "Select an image to be downloaded"
-msgstr "Veldu stýrikerfi til að hlaða niður"
 
 #
 msgid "Select audio track"
@@ -8002,9 +8159,6 @@ msgstr ""
 
 msgid "Select default EPG type..."
 msgstr ""
-
-msgid "Select desired image from feed list"
-msgstr "Veldu stýrikerfi af listanum"
 
 msgid "Select destination for:"
 msgstr ""
@@ -8106,6 +8260,14 @@ msgstr "Veldu inntaks tæki."
 msgid "Select your provider, and press OK to start the scan"
 msgstr ""
 
+msgid "Send"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Send Confirmation"
+msgstr "Stilling móttakara"
+
 #
 msgid "Send DiSEqC"
 msgstr "Senda DiSEqC"
@@ -8162,11 +8324,6 @@ msgstr ""
 msgid "Service Name"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Service Time"
-msgstr "Leita að rásum"
-
 msgid "Service Title mode"
 msgstr ""
 
@@ -8180,11 +8337,6 @@ msgstr "Rás hefur verið bætt við eftirlætis lista."
 #
 msgid "Service has been added to the selected bouquet."
 msgstr "Rás hefur verið bætt við valinn rásavöndul."
-
-#
-#, fuzzy
-msgid "Service info"
-msgstr "Upplýsingar"
 
 msgid "Service info font size"
 msgstr ""
@@ -8351,6 +8503,9 @@ msgstr ""
 msgid "Set time window to 5 hours"
 msgstr ""
 
+msgid "Set time window to 6 hours"
+msgstr ""
+
 msgid "Set to the desired primetime (hour)."
 msgstr ""
 
@@ -8405,11 +8560,10 @@ msgstr ""
 msgid "Setup the interval to check for online updates. (in hours)"
 msgstr ""
 
-msgid "Setup what a long press on the power button does."
-msgstr ""
-
-msgid "Setup what a short press on the power button does."
-msgstr ""
+#
+#, fuzzy
+msgid "Setup your positioner"
+msgstr "Vista staðsetningu"
 
 #, fuzzy
 msgid "Setup your satellite equipment"
@@ -8417,10 +8571,6 @@ msgstr "Gervihnatta búnaður"
 
 msgid "Setup your timezone."
 msgstr ""
-
-#, python-format
-msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
-msgstr "Á USB stauts ráðgjafi  að halda áfram og setja stýrikerfi %s inn í minni móttakarans?"
 
 msgid "Share Folder's"
 msgstr ""
@@ -8458,9 +8608,6 @@ msgid "Show Clients"
 msgstr ""
 
 msgid "Show Display Icons"
-msgstr ""
-
-msgid "Show E2 Log"
 msgstr ""
 
 msgid "Show EIT now/next in infobar"
@@ -8503,16 +8650,10 @@ msgstr "sýna upplýsingar um sendi"
 msgid "Show No free tuner info?"
 msgstr "Enginn laus móttakari!"
 
-msgid "Show OE Log"
-msgstr ""
-
 msgid "Show OScam in extensions ?"
 msgstr ""
 
 msgid "Show PVR status in MoviePlayer infobar"
-msgstr ""
-
-msgid "Show Picons *"
 msgstr ""
 
 msgid "Show RFmod setup..."
@@ -8584,6 +8725,11 @@ msgstr "sýna atriði nánar"
 
 msgid "Show encryption info in the infobar (when supported by the skin)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Show epg"
+msgstr "sýna merkja valmynd"
 
 #
 #, fuzzy
@@ -8672,6 +8818,9 @@ msgstr ""
 msgid "Show positioner movement"
 msgstr "Sýna færslu mótors"
 
+msgid "Show screensaver"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Show second infobar"
@@ -8744,6 +8893,10 @@ msgstr ""
 msgid "Show transponder remaining/elapsed as"
 msgstr ""
 
+#, fuzzy
+msgid "Show warning when timeshift is stopped"
+msgstr "Aðgerð þegar mynd er stoppuð"
+
 msgid "Shows the icons when new/unseen, else will not show an icon."
 msgstr ""
 
@@ -8762,18 +8915,20 @@ msgstr "spila af handahófi úr lista"
 msgid "Shutdown"
 msgstr "Slökkva"
 
-msgid "Shutdown in (mins)"
-msgstr ""
-
 msgid "Side by Side"
 msgstr ""
 
-msgid "Side by side"
+msgid "Signal OK, proceeding"
 msgstr ""
 
 #
 msgid "Signal Strength:"
 msgstr "Styrkur merkis:"
+
+#
+#, fuzzy
+msgid "Signal quality"
+msgstr "Gæði tengingar:"
 
 #
 #, fuzzy
@@ -8826,6 +8981,16 @@ msgstr "Einn sendir"
 msgid "SingleEPG settings"
 msgstr "Breyta stillingum"
 
+#
+#, fuzzy
+msgid "Site latitude"
+msgstr "Breiddargráða"
+
+#
+#, fuzzy
+msgid "Site longitude"
+msgstr "Lengdargráða"
+
 msgid "Size: "
 msgstr ""
 
@@ -8846,10 +9011,6 @@ msgstr "Læsa rásum"
 
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
-
-#
-msgid "Sleep Timer"
-msgstr "Tímastilling"
 
 #
 #, fuzzy
@@ -8952,6 +9113,9 @@ msgstr ""
 msgid "Sorry no device found to store backup. Please check your media in EGAMI devices panel."
 msgstr ""
 
+msgid "Sorry no matches found"
+msgstr ""
+
 msgid "Sorry the name of the new Image is too long."
 msgstr ""
 
@@ -9003,6 +9167,9 @@ msgstr ""
 #, fuzzy
 msgid "Sorry, video is not available!"
 msgstr "Sum íforrit eru ekki til:\n"
+
+msgid "Sorry, wrong WOEID"
+msgstr ""
 
 msgid ""
 "Sorry, your backup destination is not writeable.\n"
@@ -9065,6 +9232,9 @@ msgstr "Suður"
 #, fuzzy
 msgid "South Korea"
 msgstr "Suður"
+
+msgid "Space used:"
+msgstr ""
 
 msgid "Spain"
 msgstr ""
@@ -9326,6 +9496,16 @@ msgid "Step west"
 msgstr "Skref vestur"
 
 #
+#, fuzzy
+msgid "Stepped east"
+msgstr "Skref austur"
+
+#
+#, fuzzy
+msgid "Stepped west"
+msgstr "Skref vestur"
+
+#
 msgid "Stop"
 msgstr "Stopp"
 
@@ -9375,11 +9555,13 @@ msgstr ""
 msgid "Stop timeshift while recording?"
 msgstr ""
 
-msgid "Stop timeshift?"
-msgstr ""
-
 msgid "Stopped"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Store at index"
+msgstr "Vista staðsetningu"
 
 #
 msgid "Store position"
@@ -9427,12 +9609,13 @@ msgstr ""
 msgid "Strict DLNA"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Strongest position"
+msgstr "Vista staðsetningu"
+
 msgid "Subservice mode"
 msgstr ""
-
-#
-msgid "Subservices"
-msgstr "Undirþjónusta"
 
 #
 #, fuzzy
@@ -9503,6 +9686,12 @@ msgstr "Sun"
 #
 msgid "Sunday"
 msgstr "Sunnudagur"
+
+msgid "Sunrise :"
+msgstr ""
+
+msgid "Sunset :"
+msgstr ""
 
 msgid "Swap File Name:"
 msgstr ""
@@ -9595,6 +9784,9 @@ msgstr "Tenging:"
 msgid "Sync NTP every (minutes)"
 msgstr ""
 
+msgid "Sync failure moving back to origin !"
+msgstr ""
+
 msgid "Sync time using"
 msgstr ""
 
@@ -9634,6 +9826,9 @@ msgstr "TS skrá er of stór fyrir ISO9660 level 1!"
 
 msgid "TSID"
 msgstr "TSID"
+
+msgid "TUNING"
+msgstr ""
 
 msgid "TV"
 msgstr ""
@@ -9702,7 +9897,8 @@ msgid "Test mode"
 msgstr "Prufu hamur"
 
 #
-msgid "Test the network configuration of your linux receiver.\n"
+#, fuzzy
+msgid "Test the network configuration of your linux box.\n"
 msgstr "Prófa stillingar netkorts í linux receiverinu.\n"
 
 #
@@ -9729,10 +9925,14 @@ msgstr ""
 "Takk fyrir að nota álfinn.\n"
 "Ýttu á OK til að halda áfram."
 
+#
+#, fuzzy
 msgid ""
-"Thank you for using the wizard. Your linux receiver is now ready to use.\n"
-"Please press OK to start using your linux receiver."
+"Thank you for using the wizard. Your linux box is now ready to use.\n"
+"Please press OK to start using your linux box."
 msgstr ""
+"Takk fyrir að nota álfinn.\n"
+"Ýttu á OK til að halda áfram."
 
 msgid ""
 "The /media/egamiboot/EgamiBootUpload directory is EMPTY!\n"
@@ -9763,7 +9963,8 @@ msgid ""
 "Please install it."
 msgstr ""
 
-msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux receiver format data DVD (which will not play in stand-alone DVD players) instead?"
+#, fuzzy
+msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux box format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD staðallinn er ekki með möguleika á H.264 (HDTV). Viltu búa til Vu+ Ultimo gagna disk (sem ekki er hægt að venjulegum DVD spilara) í staðinn?"
 
 msgid ""
@@ -9797,13 +9998,6 @@ msgid ""
 "What do you want to do now with the timeshift file?"
 msgstr ""
 
-msgid ""
-"The USB stick was prepared to be bootable.\n"
-"Now you can download an NFI image file!"
-msgstr ""
-"USB stauturinn var gerður ræsanlegur.\n"
-"Núna getur þú hlaðið niður NFI  stýrikerfis skrá!"
-
 #
 #, fuzzy
 msgid ""
@@ -9826,9 +10020,6 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Afritun mistókst. Veldu annan stað fyrir afritið."
 
-msgid "The current update maybe unstable"
-msgstr ""
-
 #, python-format
 msgid ""
 "The directory %s is not a EXT2, EXT3, EXT4 or NFS partition.\n"
@@ -9844,32 +10035,17 @@ msgstr ""
 "Vertu viss um að velja möppu sem má skrifa í."
 
 #
-#, python-format
-msgid ""
-"The following device was found:\n"
-"\n"
-"%s\n"
-"\n"
-"Do you want to write the USB flasher to this stick?"
-msgstr ""
-"Eftirfarandi tæki fannst:\n"
-"\n"
-"%s\n"
-"\n"
-"Viltu skrifa USB keyrslu skrá á þennan staut?"
-
-#
 msgid "The following files were found..."
 msgstr "Eftirfarandi skrár fundust..."
 
-msgid "The linux receiver reads the stored EPG data every (hours)."
+msgid "The linux box reads the stored EPG data every (hours)."
 msgstr ""
 
-msgid "The linux receiver stores the EPG data every (hours)."
+msgid "The linux box stores the EPG data every (hours)."
 msgstr ""
 
-msgid "The md5sum validation failed, the file may be corrupted!"
-msgstr "Md5sum prufun tókst ekki, skráin er sennilega skemmd!"
+msgid "The loopthrough setting is wrong."
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -9896,14 +10072,6 @@ msgstr "Kóðinn sem þú slóst inn er rangur."
 msgid "The results have been written to %s."
 msgstr "Útkoman hefur verið skrifuð á %s."
 
-#
-msgid "The sleep timer has been activated."
-msgstr "Tíma stilling fyrir svefn er virk."
-
-#
-msgid "The sleep timer has been disabled."
-msgstr "Tímastilling til að slökkva er óvirkur."
-
 #, fuzzy
 msgid ""
 "The software management extension is not installed!\n"
@@ -9923,15 +10091,19 @@ msgstr "Atriða skrá (timer.xml) er skemmd og var ekki hægt að lesa hana."
 
 #
 #, fuzzy
-msgid "The user interface of your linux receiver is restarting"
+msgid "The user interface of your linux box is restarting"
 msgstr ""
 "\n"
 "Setja inn þínar stillingar aftur."
 
+#
+#, fuzzy
 msgid ""
-"The user interface of your linux receiver is restarting\n"
+"The user interface of your linux box is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
+"\n"
+"Setja inn þínar stillingar aftur."
 
 #
 msgid ""
@@ -9952,10 +10124,6 @@ msgstr ""
 msgid "The wizard can backup your current settings. Do you want to do a backup now?"
 msgstr "Ráðgjafinn getur tekið afrit af stillingum þínum. Viltu taka afrit núna?"
 
-#, python-format
-msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
-msgstr "Ráðgjafinn fann afrit af stillingum. Viltu setja inn stillingar síðan %s?"
-
 msgid "The wizard is finished now."
 msgstr "Ráðgjafinn er búinn núna."
 
@@ -9974,6 +10142,9 @@ msgid "There are no updates available."
 msgstr "Það er engin uppfærsla tiltæk."
 
 msgid "There is no [webif] section in oscam.conf"
+msgstr ""
+
+msgid "There is no signal to lock on !"
 msgstr ""
 
 msgid "There is not any EGAMI Backup file on connected devices!"
@@ -10011,7 +10182,7 @@ msgstr ""
 
 #
 #, fuzzy, python-format
-msgid "This linux receiver cannot decode %s streams!"
+msgid "This linux box cannot decode %s streams!"
 msgstr "Þetta linux receiver getur ekki afrugað %s strauma!"
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -10080,6 +10251,12 @@ msgstr ""
 msgid "This option configures the video output mode (or resolution)."
 msgstr ""
 
+msgid "This option configures you can Bypass HDMI EDID check"
+msgstr ""
+
+msgid "This option configures you can enable 3D Surround Sound."
+msgstr ""
+
 msgid "This option lets you adjust the 3D depth"
 msgstr ""
 
@@ -10124,17 +10301,6 @@ msgstr ""
 
 msgid "This option sets up the picture sharpness, used when the picture is being upscaled."
 msgstr ""
-
-msgid ""
-"This plugin creates a USB stick which can be used to update the firmware of your linux receiver without the need for a network or WLAN connection.\n"
-"First, a USB stick needs to be prepared so that it becomes bootable.\n"
-"In the next step, an NFI image file can be downloaded from the update server and saved on the USB stick.\n"
-"If you already have a prepared bootable USB stick, please insert it now. Otherwise plug in a USB stick with a minimum size of 64 MB!"
-msgstr ""
-"Þetta íforrit útbýr USB staut sem er hægt að nota til að uppfæta stýrikerfið í linux receiverinu án þess að nota tölvu.\n"
-"Fyrst þarf að undirbúa USB stautinn þannig að hægt verði að ræsa frá honum.\n"
-"Næst þarf að hlaða niður NFI stýrikerfi frá uppfærslu vefþjóni sem er vistað á USB stautnum.\n"
-"Ef þú hefur nú þegar útbúið USB staut þá skaltu setja það í núna. Annars skaltu setja USB staut sem er minnst 64MB sem er hægt að nota!"
 
 msgid "This plugin is installed."
 msgstr "Þetta íforrit er uppsett."
@@ -10201,6 +10367,11 @@ msgstr ""
 msgid "This test detects your configured LAN adapter."
 msgstr "Þessi prufun skynjar innstillt netkort."
 
+msgid ""
+"This will (re-)calculate all positions of your rotor and may remove previously memorised positions and fine-tuning!\n"
+"Are you sure?"
+msgstr ""
+
 #
 msgid "Three"
 msgstr "Þrír"
@@ -10257,16 +10428,6 @@ msgid "Timer List"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Timer edit"
-msgstr "Breyta Tímastillingu"
-
-#
-#, fuzzy
-msgid "Timer editor"
-msgstr "Breyta Tímastillingum"
-
-#
 msgid "Timer entry"
 msgstr "Innsláttur tímastilltra atriða"
 
@@ -10312,8 +10473,9 @@ msgid "Timer selection"
 msgstr "Tímastillinga val"
 
 #
-msgid "Timer status:"
-msgstr "Tíma staða:"
+#, fuzzy
+msgid "Timer selection..."
+msgstr "Tímastillinga val"
 
 #
 #, fuzzy
@@ -10380,13 +10542,6 @@ msgstr ""
 msgid "To subtitle selection"
 msgstr ""
 
-msgid ""
-"To update your linux receiver firmware, please follow these steps:\n"
-"1) Turn off your box with the rear power switch and make sure the bootable USB stick is plugged in.\n"
-"2) Turn mains back on and hold the DOWN button on the front panel pressed for 10 seconds.\n"
-"3) Wait for bootup and follow instructions of the wizard."
-msgstr ""
-
 #
 msgid "Today"
 msgstr "Í dag"
@@ -10398,6 +10553,9 @@ msgid "Toggle a cut mark at the current position"
 msgstr ""
 
 msgid "Toggle aspect ratio..."
+msgstr ""
+
+msgid "Toggle between bouquet/epg lists"
 msgstr ""
 
 msgid "Tone amplitude"
@@ -10419,9 +10577,6 @@ msgid "Tools"
 msgstr ""
 
 msgid "Top and Bottom"
-msgstr ""
-
-msgid "Top and bottom"
 msgstr ""
 
 #, fuzzy
@@ -10458,16 +10613,7 @@ msgid "Track"
 msgstr "Spor"
 
 #
-msgid "Translation"
-msgstr "Þýðing"
-
-#
 msgid "Translation:"
-msgstr "Þýðing:"
-
-#
-#, fuzzy
-msgid "Translation: "
 msgstr "Þýðing:"
 
 #
@@ -10479,11 +10625,6 @@ msgstr ""
 
 #
 msgid "Transponder"
-msgstr "Sendir"
-
-#
-#, fuzzy
-msgid "Transponder Time"
 msgstr "Sendir"
 
 #
@@ -10538,6 +10679,11 @@ msgid "Tune"
 msgstr "Stilla"
 
 #
+#, fuzzy
+msgid "Tune and focus"
+msgstr "Móttakari"
+
+#
 msgid "Tune failed!"
 msgstr "Tókst ekki að stilla inn!"
 
@@ -10559,9 +10705,10 @@ msgstr ""
 msgid "Tuner status"
 msgstr "Móttakari"
 
-#, python-format
-msgid "Tuner status %s"
-msgstr ""
+#
+#, fuzzy
+msgid "Tuner status:"
+msgstr "Móttakari"
 
 msgid "Tuner type"
 msgstr "Gerð móttakara"
@@ -10599,6 +10746,9 @@ msgstr "Hýsingar mappa"
 msgid "USALS"
 msgstr "USALS"
 
+msgid "USALS calibration"
+msgstr ""
+
 msgid "USB 2 device mounted in:   "
 msgstr ""
 
@@ -10608,17 +10758,10 @@ msgstr ""
 msgid "USB device mounted in:     "
 msgstr ""
 
-#
-msgid "USB stick wizard"
-msgstr "USB stauta stjóri"
-
 msgid ""
 "Unattended upgrade in progress\n"
-"Please wait until your linux receiver reboots\n"
+"Please wait until your linux box reboots\n"
 "This may take a few minutes"
-msgstr ""
-
-msgid "Unattended upgrade without GUI and reboot system"
 msgstr ""
 
 #
@@ -10636,9 +10779,6 @@ msgstr "Hætta við að hætta við"
 
 msgid "Unencrypted"
 msgstr "Opin rás"
-
-msgid "UnhandledKey"
-msgstr "Ónotaður"
 
 #
 msgid "Unicable"
@@ -10681,6 +10821,12 @@ msgstr ""
 msgid "Update"
 msgstr "Uppfæra"
 
+msgid "Update and ask to reboot"
+msgstr ""
+
+msgid "Update and reboot (recommended)"
+msgstr ""
+
 msgid "Update channel list only"
 msgstr ""
 
@@ -10690,8 +10836,13 @@ msgid_plural "Update completed, %d packages were installed."
 msgstr[0] ""
 msgstr[1] ""
 
+#
 #, fuzzy
-msgid "Update failed. Your linux receiver does not have a working internet connection."
+msgid "Update completed. Do you want to reboot your linux box?"
+msgstr "Viltu endurræsa linux receiverinu?"
+
+#, fuzzy
+msgid "Update failed. Your linux box does not have a working internet connection."
 msgstr ""
 "linux receiverið þitt er nú tilbúið til notkunar.\n"
 "\n"
@@ -10711,9 +10862,6 @@ msgstr "Breyta rása lista"
 
 msgid "Updating software catalog"
 msgstr "Uppfæri efnisyfirlit hugbúnaðar"
-
-msgid "Upgrade and reboot system"
-msgstr ""
 
 #
 msgid "Upgrade finished."
@@ -10851,10 +10999,6 @@ msgstr ""
 msgid "Use this video enhancement settings?"
 msgstr "Nota mynd endurbóta stillingar?"
 
-#
-msgid "Use time of currently running service"
-msgstr "Nota tíma nú keyrandi þjónustu"
-
 msgid "Use trash can in movielist"
 msgstr ""
 
@@ -10904,10 +11048,18 @@ msgstr ""
 msgid "Username:"
 msgstr ""
 
+#, python-format
+msgid "Using LNB %d"
+msgstr ""
+
 msgid "Using fixed address"
 msgstr ""
 
 msgid "Using old profile: "
+msgstr ""
+
+#, python-format
+msgid "Using tuner %s"
 msgstr ""
 
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
@@ -11007,6 +11159,11 @@ msgstr ""
 
 msgid "Videosize"
 msgstr ""
+
+#
+#, fuzzy
+msgid "View"
+msgstr "Skoða vinnslu"
 
 msgid "View Count"
 msgstr ""
@@ -11121,25 +11278,16 @@ msgstr ""
 msgid "Virtual Keyboard"
 msgstr "Sýndar lyklaborð"
 
-#
-#, fuzzy
-msgid "Virtual keyboard"
-msgstr "Sýndar lyklaborð"
+msgid "Visibility :"
+msgstr ""
 
 #
 msgid "Voltage mode"
 msgstr "Spennu stýring"
 
 #
-msgid "Volume"
-msgstr "Styrkur"
-
-#
 msgid "W"
 msgstr "W"
-
-msgid "WARNING: feeds maybe unstable."
-msgstr ""
 
 #
 msgid "WEP"
@@ -11207,10 +11355,13 @@ msgstr ""
 msgid "Wakeup signal from TV"
 msgstr ""
 
-msgid "Wakeup your linux receiver from standby"
+msgid "Wakeup your linux box from standby"
 msgstr ""
 
 msgid "Warning you are going to format "
+msgstr ""
+
+msgid "Warning: no LNB; using factory defaults."
 msgstr ""
 
 #, fuzzy
@@ -11221,6 +11372,9 @@ msgstr "Spila uppteknar bíómyndir..."
 #, fuzzy
 msgid "Watch recordings..."
 msgstr "tek upp...."
+
+msgid "Weather"
+msgstr ""
 
 msgid "Web Browser"
 msgstr ""
@@ -11244,6 +11398,11 @@ msgstr "Vikudagur"
 #, fuzzy
 msgid "Weekly"
 msgstr "vikulega"
+
+#
+#, fuzzy
+msgid "Weighted position"
+msgstr "Vistuð staða"
 
 msgid "Welcome to EgamiBoot 2.0 MultiBoot Plugin installation."
 msgstr ""
@@ -11291,13 +11450,14 @@ msgstr ""
 "Farðu þá að enda þess og ýttu á OK, veldu 'enda klippingu'. Það er allt og sumt."
 
 #, fuzzy
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux box by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
 msgstr "Velkominn til stýrikerfis uppfærslu ráðgjafann. Ráðgjafinn aðstoðar þig við að uppfæra stýrikerfi linux receiverins með því að sjá um afritun af þínum stillingum og sýnir svo hverning uppfærslan fer fram."
 
+#, fuzzy
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your linux receiver to the Internet, this wizard will guide you through the basic network setup of your linux receiver.\n"
+"If you want to connect your linux box to the Internet, this wizard will guide you through the basic network setup of your linux box.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
@@ -11307,26 +11467,12 @@ msgstr ""
 "\n"
 "Ýttu á OK til að byrja stillingar á netkortinu"
 
-#, fuzzy
-msgid ""
-"Welcome.\n"
-"\n"
-"This start wizard will guide you through the basic setup of your linux receiver.\n"
-"Press the OK button on your remote control to move to the next step."
-msgstr ""
-"Velkomin (n).\n"
-"\n"
-"Ef þú vilt tengja linux receiverið við veraldarvefinn þá getur þessi ráðgjafi hjálpað þér að setja upp grunnstillingar til þess.\n"
-"\n"
-"Ýttu á OK til að byrja stillingar á netkortinu"
-
-#
-msgid "Welcome..."
-msgstr "Velkomin(n)..."
-
 #
 msgid "West"
 msgstr "Vestur"
+
+msgid "West limit set"
+msgstr ""
 
 msgid "What Day of month ?"
 msgstr ""
@@ -11357,6 +11503,9 @@ msgid "When enabled, a popup message will be shown when a recording starts."
 msgstr ""
 
 msgid "When enabled, a recording is allowed to interrupt live tv, when there are no free tuners."
+msgstr ""
+
+msgid "When enabled, a warning will be displayed and the user will get an option to stop or to continue the timeshift."
 msgstr ""
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
@@ -11450,10 +11599,11 @@ msgid "When tuned to a service the system will normally scan the transponder for
 msgstr ""
 
 #
+#, fuzzy
 msgid ""
 "When you do a factory reset, you will lose ALL your configuration data\n"
 "(including bouquets, services, satellite data ...)\n"
-"After completion of factory reset, your linux receiver will restart automatically!\n"
+"After completion of factory reset, your linux box will restart automatically!\n"
 "\n"
 "Really do a factory reset?"
 msgstr ""
@@ -11486,6 +11636,9 @@ msgid "Wicardd Info"
 msgstr ""
 
 msgid "Width"
+msgstr ""
+
+msgid "Wind :"
 msgstr ""
 
 #
@@ -11539,6 +11692,9 @@ msgstr ""
 #
 msgid "YPbPr"
 msgstr "YPbPr"
+
+msgid "Yahoo Weather"
+msgstr ""
 
 #
 msgid "Year"
@@ -11638,7 +11794,8 @@ msgstr ""
 msgid "You can install this plugin."
 msgstr "Þú getur sett inn þetta íforrit."
 
-msgid "You can only burn linux receiver recordings!"
+#, fuzzy
+msgid "You can only burn linux box recordings!"
 msgstr "Þú getur bara brennt linux receiver upptökur!"
 
 msgid "You can remove this plugin."
@@ -11661,17 +11818,29 @@ msgstr ""
 msgid "You didn't select a channel to record from."
 msgstr "Þú valdir ekki rás til að taka upp af."
 
+msgid "You have already sent this log, are you sure you want to resend this log:\n"
+msgstr ""
+
 #
 msgid "You have chosen to backup your settings. Please press OK to start the backup now."
 msgstr "Þú hefur valið að taka afrit af stillingum þínum. Ýttu á OK til að byrja að taka afrit núna."
 
 #
-msgid "You have chosen to create a new .NFI flasher bootable USB stick. This will repartition the USB stick and therefore all data on it will be erased."
-msgstr "Þú hefur valið að búa til nýjan keyranlegan .NFI USB staut. Þetta veldur því að öllum gögnum af USB stautum verður eytt."
-
-#
 msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
 msgstr "Þú hefur valið að setja inn eldra afrit. Enigma2 mun endurræsa eftir innsetningu. Ýttu á OK til að byrja að setja inn afritið núna."
+
+msgid ""
+"You have not setup your user info in the setup screen\n"
+"Press MENU, and enter your info, then try again"
+msgstr ""
+
+#
+#, fuzzy
+msgid "You have selected no logs to delete."
+msgstr "Veldu spilunarlista til að eyða..."
+
+msgid "You have selected no logs to send."
+msgstr ""
 
 #
 #, fuzzy
@@ -11693,9 +11862,10 @@ msgid "You have to wait %s!"
 msgstr "Þú þarf að bíða %s!"
 
 #
+#, fuzzy
 msgid ""
-"You need a PC connected to your linux receiver. If you need further instructions, please visit the website http://www.dm7025.de.\n"
-"Your linux receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+"You need a PC connected to your linux box. If you need further instructions, please visit the website http://www.dm7025.de.\n"
+"Your linux box will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
 msgstr ""
 "Þú þarft að hafa tölvu tengda við linux receiverið. Ef þú þarft nánari upplýsingar þá skoðaðu síðuna http://www.dm7025.de.\n"
 "linux receiverið verður núna stoppað. Eftir að þú hefur uppfært samkvæmt leiðbeinungunum á síðunni þá mun nýja stýrikerfið biðja þig um að setja aftur inn afritið."
@@ -11704,6 +11874,9 @@ msgid "You seem to be in timeshift, Do you want to leave timeshift ?"
 msgstr ""
 
 msgid "You system does not support ext4"
+msgstr ""
+
+msgid "Your IP:"
 msgstr ""
 
 msgid "Your STB will freeze during the installation process."
@@ -11729,18 +11902,18 @@ msgstr ""
 msgid "Your current collection will get lost!"
 msgstr "Núverandi safn þitt mun glatast!"
 
-#
 msgid ""
-"Your frontprocessor firmware must be upgraded.\n"
-"Press OK to start upgrade."
+"Your front panel will be upgraded\n"
+"This may take a few minutes"
 msgstr ""
-"Það þarf að uppfæra heila í framtölvu.\n"
-"Ýtið á OK til að byrja uppfærslu."
 
 msgid ""
 "Your frontprocessor will be upgraded\n"
-"Please wait until your linux receiver reboots\n"
+"Please wait until your linux box reboots\n"
 "This may take a few minutes"
+msgstr ""
+
+msgid "Your internet connection is already configured."
 msgstr ""
 
 #
@@ -11755,12 +11928,38 @@ msgstr ""
 msgid "Your internet connection is working (ip: %s)"
 msgstr ""
 
-msgid "Your linux receiver is not connected to the internet, please check your network settings and try again."
+#, fuzzy
+msgid "Your linux box does not have an internet connection"
+msgstr ""
+"linux receiverið þitt er nú tilbúið til notkunar.\n"
+"\n"
+"Veraldarvefs tengingin er virk núna.\n"
+"\n"
+
+msgid "Your linux box does not support PiP HD"
+msgstr ""
+
+msgid "Your linux box is not connected to the internet"
+msgstr ""
+
+msgid "Your linux box is not connected to the internet, please check your network settings and try again."
 msgstr ""
 
 #, fuzzy
 msgid ""
-"Your linux receiver is now ready to be used.\n"
+"Your linux box is now ready to be used.\n"
+"\n"
+"Your internet connection is not working now.\n"
+"\n"
+msgstr ""
+"linux receiverið þitt er nú tilbúið til notkunar.\n"
+"\n"
+"Veraldarvefs tengingin er virk núna.\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"Your linux box is now ready to be used.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -11771,8 +11970,9 @@ msgstr ""
 "\n"
 
 #
+#, fuzzy
 msgid ""
-"Your linux receiver is now ready to use.\n"
+"Your linux box is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -11784,29 +11984,42 @@ msgstr ""
 "\n"
 "Ýttu á OK til að halda áfram."
 
-msgid "Your linux receiver is rebooting"
-msgstr ""
-
-msgid "Your linux receiver is shutting down"
+msgid "Your linux box is rebooting"
 msgstr ""
 
 #
-msgid "Your linux receiver is shutting down. Please stand by..."
+#, fuzzy
+msgid "Your linux box is shutting down"
 msgstr "linux receiverið er að slökkva á sér. Vinsamlega bíðið..."
 
-msgid "Your linux receiver might be unusable now. Please consult the manual for further assistance before rebooting your linux receiver."
+#
+#, fuzzy
+msgid "Your linux box is shutting down. Please stand by..."
+msgstr "linux receiverið er að slökkva á sér. Vinsamlega bíðið..."
+
+msgid "Your linux box might be unusable now. Please consult the manual for further assistance before rebooting your linux box."
+msgstr ""
+
+msgid ""
+"Your linux box offers three levels of configuration options:\n"
+"\n"
+"Simple - We suggest this level if this is your first contact with a linux box.\n"
+"Intermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your linux box.\n"
+"Expert - This gives you full control over all available settings of your linux box.\n"
+"\n"
+"Warning: Higher levels may lead to increased usage complexity."
 msgstr ""
 
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to reboot your linux receiver.\n"
+"Your linux box wants to reboot your linux box.\n"
 "Do that now?"
 msgstr "Viltu endurræsa linux receiverinu?"
 
 #, fuzzy
 msgid ""
-"Your linux receiver wants to restart the user interface.\n"
+"Your linux box wants to restart the user interface.\n"
 "Do that now?"
 msgstr ""
 "linux receiverið þitt er nú tilbúið til notkunar.\n"
@@ -11817,7 +12030,7 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to set your linux receiver to standby.\n"
+"Your linux box wants to set your linux box to standby.\n"
 "Do that now?"
 msgstr ""
 "Tímastilling vill setja linux receiverið í\n"
@@ -11826,7 +12039,7 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
-"Your linux receiver wants to shut down your linux receiver.\n"
+"Your linux box wants to shut down your linux box.\n"
 "Do that now?"
 msgstr ""
 "Tímastilling vill slökkva á linux receiverinu.\n"
@@ -11834,18 +12047,18 @@ msgstr ""
 
 #, python-format
 msgid ""
-"Your linux receiver will be restarted after the installation of service\n"
+"Your linux box will be restarted after the installation of service\n"
 "Ready to install \"%s\" ?"
 msgstr ""
 
 msgid ""
-"Your linux receiver will be restarted after the installation of service.\n"
+"Your linux box will be restarted after the installation of service.\n"
 "\n"
 "Do you want to install now ?"
 msgstr ""
 
 msgid ""
-"Your linux receiver will be restarted after the removal of service\n"
+"Your linux box will be restarted after the removal of service\n"
 "Do you want to remove now ?"
 msgstr ""
 
@@ -11854,9 +12067,6 @@ msgid "Your network configuration has been activated."
 msgstr "Stillingar netkerfis hafa verið gerðar virkar."
 
 msgid "Your receiver does not have an internet connection"
-msgstr ""
-
-msgid "Your receiver is not connected to the internet"
 msgstr ""
 
 #
@@ -12023,6 +12233,11 @@ msgstr ""
 msgid "as plugin in extended bar"
 msgstr ""
 
+#
+#, fuzzy
+msgid "at"
+msgstr "Lau"
+
 msgid "at beginning"
 msgstr "að byrjun"
 
@@ -12109,6 +12324,14 @@ msgid "center"
 msgstr ""
 
 #
+#, fuzzy
+msgid "centered"
+msgstr "millistig"
+
+msgid "centered, wrapped"
+msgstr ""
+
+#
 msgid "chapters"
 msgstr "kaflar"
 
@@ -12134,10 +12357,6 @@ msgid "complex"
 msgstr "flókinn"
 
 #
-msgid "config menu"
-msgstr "stillinga valmynd"
-
-#
 msgid "confirmed"
 msgstr "staðfest"
 
@@ -12150,6 +12369,9 @@ msgid "continue"
 msgstr "halda áfram"
 
 msgid "cooking"
+msgstr ""
+
+msgid "copy"
 msgstr ""
 
 msgid "copy file"
@@ -12187,10 +12409,6 @@ msgstr "Athuga skráarkerfi..."
 msgid "creating new file ..."
 msgstr "Leita að skrám..."
 
-#, python-format
-msgid "currently installed image: %s"
-msgstr "núverandi stýrikerfi: %s"
-
 #
 msgid "daily"
 msgstr "daglega"
@@ -12206,6 +12424,11 @@ msgstr ""
 #, fuzzy
 msgid "default"
 msgstr "Venjulegt"
+
+#
+#, fuzzy
+msgid "delete"
+msgstr "Eyða"
 
 #
 msgid "delete cut"
@@ -12263,6 +12486,11 @@ msgstr "búinn!"
 msgid "e-Mail address"
 msgstr ""
 
+#
+#, fuzzy
+msgid "east"
+msgstr "Færa austur"
+
 msgid "ecm time:"
 msgstr ""
 
@@ -12319,6 +12547,9 @@ msgstr "enda klippingu hér"
 
 msgid "end favourites edit"
 msgstr "hætta breytingum eftirlætis lista"
+
+msgid "enter number to jump to channel."
+msgstr ""
 
 msgid "entertainment (10-16 year old)"
 msgstr ""
@@ -12460,12 +12691,13 @@ msgstr ""
 msgid "handled"
 msgstr ""
 
-msgid "height"
+msgid ""
+"has been sent to the ViX beta team.\n"
+"please quote"
 msgstr ""
 
-#
-msgid "help..."
-msgstr "hjálp..."
+msgid "height"
+msgstr ""
 
 msgid "hops:"
 msgstr ""
@@ -12495,9 +12727,6 @@ msgstr "setja merki hér"
 msgid "invalid type"
 msgstr ""
 
-msgid "is strongly advised."
-msgstr ""
-
 msgid "jazz"
 msgstr ""
 
@@ -12508,6 +12737,9 @@ msgstr "stökkva til baka í fyrri titil"
 #
 msgid "jump forward to the next title"
 msgstr "stökkva áfram í næsta titil"
+
+msgid "kmh"
+msgstr ""
 
 msgid "languages"
 msgstr ""
@@ -12520,6 +12752,9 @@ msgstr "hætta í spilara"
 msgid "left"
 msgstr "vinstri"
 
+msgid "left, wrapped"
+msgstr ""
+
 msgid "leisure hobbies (general)"
 msgstr ""
 
@@ -12527,27 +12762,32 @@ msgstr ""
 msgid "length"
 msgstr "lengd"
 
-msgid "linux receiver advanced remote control (native)"
+msgid "limit ..., aborting !"
+msgstr ""
+
+msgid "linux box advanced remote control (native)"
 msgstr ""
 
 #
-msgid "linux receiver format data DVD (HDTV compatible)"
+#, fuzzy
+msgid "linux box format data DVD (HDTV compatible)"
 msgstr "linux receiver gagna formaður DVD diskur (HDTV samhæfður)"
 
-msgid "linux receiver front panel"
+msgid "linux box front panel"
 msgstr ""
 
-msgid "linux receiver ir keyboard"
+msgid "linux box ir keyboard"
 msgstr ""
 
-msgid "linux receiver ir mouse"
+msgid "linux box ir mouse"
 msgstr ""
 
-msgid "linux receiver remote control (native)"
+msgid "linux box remote control (native)"
 msgstr ""
 
 #
-msgid "linux receiver software because updates are available."
+#, fuzzy
+msgid "linux box software because updates are available."
 msgstr "Hugbúnaður uppfærslur eru tiltækar fyrir linux receiverið."
 
 msgid "literature"
@@ -12565,9 +12805,6 @@ msgid "loopthrough to"
 msgstr "tengt saman við"
 
 msgid "magazines/reports/documentary"
-msgstr ""
-
-msgid "making a backup before updating"
 msgstr ""
 
 msgid "manage local Files"
@@ -12604,6 +12841,11 @@ msgstr ""
 
 msgid "motoring"
 msgstr ""
+
+#
+#, fuzzy
+msgid "move"
+msgstr "Eyða"
 
 #
 msgid "move down to last entry"
@@ -12747,6 +12989,9 @@ msgstr "af eins lags DVD disk."
 #
 msgid "off"
 msgstr "af"
+
+msgid "offset is"
+msgstr ""
 
 #
 msgid "on"
@@ -12924,6 +13169,11 @@ msgstr "taka út þetta merki"
 
 #
 #, fuzzy
+msgid "rename"
+msgstr "Endurnefna"
+
+#
+#, fuzzy
 msgid "rename file"
 msgstr "sniðmáts skrá"
 
@@ -12955,6 +13205,9 @@ msgstr "fara til baka á fyrri kafla"
 #
 msgid "right"
 msgstr "hægri"
+
+msgid "right, wrapped"
+msgstr ""
 
 msgid "rock/pop"
 msgstr ""
@@ -13159,7 +13412,7 @@ msgid "start directory"
 msgstr "byrjunar mappa"
 
 #, fuzzy
-msgid "start web browser"
+msgid "start opera web browser"
 msgstr "DVD skráar stjóri"
 
 msgid "stepsize"
@@ -13333,6 +13586,20 @@ msgstr ""
 msgid "weekly"
 msgstr "vikulega"
 
+#
+#, fuzzy
+msgid "west"
+msgstr "Færa vestur"
+
+msgid "when asking question about this log"
+msgstr ""
+
+msgid ""
+"when asking question about this log\n"
+"\n"
+"A copy has been sent to yourself."
+msgstr ""
+
 msgid "white"
 msgstr ""
 
@@ -13385,13 +13652,246 @@ msgid "zap"
 msgstr "stökk"
 
 #
+#, fuzzy
+msgid "zap and record"
+msgstr "taka upp"
+
+#
 msgid "zapped"
 msgstr "stokkið"
+
+#
+#~ msgid "0"
+#~ msgstr "0"
+
+#
+#~ msgid "1"
+#~ msgstr "1"
+
+#
+#~ msgid "2"
+#~ msgstr "2"
+
+#
+#~ msgid "3"
+#~ msgstr "3"
+
+#
+#~ msgid "4"
+#~ msgstr "4"
+
+#
+#~ msgid "5"
+#~ msgstr "5"
+
+#
+#~ msgid "6"
+#~ msgstr "6"
+
+#
+#~ msgid "7"
+#~ msgstr "7"
+
+#
+#~ msgid "8"
+#~ msgstr "8"
+
+#
+#~ msgid "9"
+#~ msgstr "9"
+
+#~ msgid "A demo plugin for TPM usage."
+#~ msgstr "Íforrits sýnishorn."
+
+#
+#, fuzzy
+#~ msgid "Add Bookmark"
+#~ msgstr "bæta við bókamerki"
+
+#~ msgid "Audio"
+#~ msgstr "Hljóð"
+
+#~ msgid "BER"
+#~ msgstr "BER"
+
+#~ msgid "BER:"
+#~ msgstr "BER:"
+
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "Changelog"
+#~ msgstr "Breytingaskrá"
+
+#~ msgid "Channellist menu"
+#~ msgstr "Valmynd rásalista"
+
+#~ msgid "Command execution..."
+#~ msgstr "Keyrsla skipunar..."
+
+#~ msgid "Continue in background"
+#~ msgstr "Halda áfram í bakgrunni"
+
+#, fuzzy
+#~ msgid "Could not connect to linux receiver .NFI image feed server:"
+#~ msgstr "Gat ekki tengt við linux receiver .NFI stýrikerfis vefþjón:"
+
+#
+#, fuzzy
+#~ msgid "Create Directory"
+#~ msgstr "búa til möppu"
+
+#~ msgid "Current version:"
+#~ msgstr "Núverandi útgáfa:"
+
+#~ msgid "Currently installed image"
+#~ msgstr "Núverandi stýrikerfi"
+
+#~ msgid "D"
+#~ msgstr "D"
+
+#
+#, fuzzy
+#~ msgid "Date/time input"
+#~ msgstr "Tíma/Dags Innsláttur"
+
+#
+#~ msgid "Dish"
+#~ msgstr "Diskur"
+
+#, fuzzy
+#~ msgid "Download %s from server"
+#~ msgstr "Hleð niður %s frá vefþjón"
+
+#
+#, fuzzy
+#~ msgid "Download .NFI-files for USB-flasher"
+#~ msgstr "Hlaða niður .NFI skrár fyrir keyranlegt USB"
+
+#~ msgid "Downloadable plugins"
+#~ msgstr "Niðurhalanleg íforrit"
+
+#
+#, fuzzy
+#~ msgid "EPG selection"
+#~ msgstr "EPG val"
+
+#
+#~ msgid "Enable timer"
+#~ msgstr "Virkja tímastillingu"
+
+#
+#, fuzzy
+#~ msgid "Event view"
+#~ msgstr "Skoða atriði"
+
+#
+#, fuzzy
+#~ msgid "Event view menu"
+#~ msgstr "Skoða atriði"
+
+#
+#~ msgid "Flash"
+#~ msgstr "Forritun"
+
+#
+#~ msgid "Flashing failed"
+#~ msgstr "Forritun tókt ekki"
+
+#~ msgid "Get latest experimental image"
+#~ msgstr "Ná í nýjustu prufuútgáfu stýrikerfis"
+
+#~ msgid "Get latest release image"
+#~ msgstr "Ná í nýjasta útgefið stýrikerfi"
+
+#
+#~ msgid "Index"
+#~ msgstr "Yfirlit"
+
+#
+#, fuzzy
+#~ msgid "Info bar"
+#~ msgstr "Upplýsingar"
 
 #
 #, fuzzy
 #~ msgid "InfoBar EPG"
 #~ msgstr "Upplýsingar"
+
+#, fuzzy
+#~ msgid "Installing software..."
+#~ msgstr "Set inn hugbúnað..."
+
+#
+#, fuzzy
+#~ msgid "Job overview"
+#~ msgstr "Skoða vinnslu"
+
+#
+#~ msgid "Lock:"
+#~ msgstr "Lás:"
+
+#
+#~ msgid "MORE"
+#~ msgstr "MEIRA"
+
+#
+#~ msgid "Media player"
+#~ msgstr "Spilari"
+
+#
+#~ msgid "Message"
+#~ msgstr "Skilaboð"
+
+#
+#~ msgid "Message..."
+#~ msgstr "Skilaboð..."
+
+#
+#~ msgid "Movielist menu"
+#~ msgstr "Bíómynda valmynd"
+
+#
+#~ msgid "Mute"
+#~ msgstr "Hljóð Af"
+
+#
+#~ msgid "NEXT"
+#~ msgstr "NÆST"
+
+#, fuzzy
+#~ msgid "NFI image flashing"
+#~ msgstr "NFI stýrikerfis forritun"
+
+#
+#~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
+#~ msgstr "NFI forritun er lokið. Ýttu á gulan til að endurræsa!"
+
+#
+#~ msgid "NOW"
+#~ msgstr "NÚNA"
+
+#
+#, fuzzy
+#~ msgid "Nameserver setup"
+#~ msgstr "Uppsetning nafnaþjóns"
+
+#
+#, fuzzy
+#~ msgid "Network configuration..."
+#~ msgstr "Stilling nettengingar..."
+
+#
+#~ msgid "Network test..."
+#~ msgstr "Prufa nettengingu..."
+
+#
+#~ msgid "New version:"
+#~ msgstr "Ný útgáfa:"
+
+#
+#~ msgid "No details for this image file"
+#~ msgstr "Engar upplýsingar um þetta stýrikerfi"
 
 #
 #, fuzzy
@@ -13404,8 +13904,119 @@ msgstr "stokkið"
 
 #
 #, fuzzy
+#~ msgid "Now playing"
+#~ msgstr "Spila núna"
+
+#
+#, fuzzy
+#~ msgid "PIN code needed"
+#~ msgstr "Kóða vantar"
+
+#
+#, fuzzy
+#~ msgid "Parental control services editor"
+#~ msgstr "Forritun foreldrakóða á rásir"
+
+#
+#, fuzzy
+#~ msgid "PiP setup"
+#~ msgstr "Uppsetning Mynd í Mynd"
+
+#
+#~ msgid "Please check your network settings!"
+#~ msgstr "Vinsamlega athugaðu stillingar netkerfis!"
+
+#
+#~ msgid ""
+#~ "Please configure or verify your Nameservers by filling out the required values.\n"
+#~ "When you are ready press OK to continue."
+#~ msgstr ""
+#~ "Ýttu á stilla eða að athugaðu Nafnaþjóns stillingar.\n"
+#~ "Ýttu á OK þegar þú ert búinn."
+
+#
+#, fuzzy
 #~ msgid "Please select a sub service..."
 #~ msgstr "Vinsamlega veldu undirrás..."
+
+#~ msgid "Please select an NFI file and press green key to flash!"
+#~ msgstr "Vinsamlega veldu NFI stýrikerfi og ýttu á græna takkann til að setja inn!"
+
+#~ msgid "Plugin browser"
+#~ msgstr "Íforrita leit"
+
+#~ msgid "Prepare another USB stick for image flashing"
+#~ msgstr "Undirbúa annan USB staut fyrir stýrikerfis forritun"
+
+#
+#~ msgid "Radio"
+#~ msgstr "Útvarp"
+
+#
+#, fuzzy
+#~ msgid "Reception settings"
+#~ msgstr "Stilling móttöku"
+
+#
+#~ msgid "Restore is running..."
+#~ msgstr "Set inn afrit..."
+
+#
+#~ msgid "SNR"
+#~ msgstr "SNR"
+
+#
+#~ msgid "SNR:"
+#~ msgstr "SNR:"
+
+#
+#~ msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
+#~ msgstr "Leita sjálfgefna gervihnetti, raðað eftir hnöttum með tengdum mótor"
+
+#
+#~ msgid "Select HDD"
+#~ msgstr "Veldu harðadisk"
+
+#
+#, fuzzy
+#~ msgid "Select a bouquet"
+#~ msgstr "Veldu mynd"
+
+#
+#~ msgid "Select a movie"
+#~ msgstr "Veldu mynd"
+
+#
+#, fuzzy
+#~ msgid "Select a network adapter"
+#~ msgstr "Veldu Netkort"
+
+#
+#, fuzzy
+#~ msgid "Select a skin"
+#~ msgstr "Veldu mynd"
+
+#
+#, fuzzy
+#~ msgid "Select a tuner"
+#~ msgstr "Veldu mynd"
+
+#, fuzzy
+#~ msgid "Select an image to be downloaded"
+#~ msgstr "Veldu stýrikerfi til að hlaða niður"
+
+#~ msgid "Select desired image from feed list"
+#~ msgstr "Veldu stýrikerfi af listanum"
+
+#
+#, fuzzy
+#~ msgid "Service Time"
+#~ msgstr "Leita að rásum"
+
+#
+#, fuzzy
+#~ msgid "Service info"
+#~ msgstr "Upplýsingar"
 
 #
 #~ msgid ""
@@ -13414,6 +14025,151 @@ msgstr "stokkið"
 #~ msgstr ""
 #~ "Rás finnst ekki!\n"
 #~ "Athugaðu stillingar móttakara!"
+
+#~ msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
+#~ msgstr "Á USB stauts ráðgjafi  að halda áfram og setja stýrikerfi %s inn í minni móttakarans?"
+
+#
+#~ msgid "Sleep Timer"
+#~ msgstr "Tímastilling"
+
+#
+#~ msgid "Subservices"
+#~ msgstr "Undirþjónusta"
+
+#~ msgid ""
+#~ "The USB stick was prepared to be bootable.\n"
+#~ "Now you can download an NFI image file!"
+#~ msgstr ""
+#~ "USB stauturinn var gerður ræsanlegur.\n"
+#~ "Núna getur þú hlaðið niður NFI  stýrikerfis skrá!"
+
+#
+#~ msgid ""
+#~ "The following device was found:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Do you want to write the USB flasher to this stick?"
+#~ msgstr ""
+#~ "Eftirfarandi tæki fannst:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Viltu skrifa USB keyrslu skrá á þennan staut?"
+
+#~ msgid "The md5sum validation failed, the file may be corrupted!"
+#~ msgstr "Md5sum prufun tókst ekki, skráin er sennilega skemmd!"
+
+#
+#~ msgid "The sleep timer has been activated."
+#~ msgstr "Tíma stilling fyrir svefn er virk."
+
+#
+#~ msgid "The sleep timer has been disabled."
+#~ msgstr "Tímastilling til að slökkva er óvirkur."
+
+#~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
+#~ msgstr "Ráðgjafinn fann afrit af stillingum. Viltu setja inn stillingar síðan %s?"
+
+#~ msgid ""
+#~ "This plugin creates a USB stick which can be used to update the firmware of your linux receiver without the need for a network or WLAN connection.\n"
+#~ "First, a USB stick needs to be prepared so that it becomes bootable.\n"
+#~ "In the next step, an NFI image file can be downloaded from the update server and saved on the USB stick.\n"
+#~ "If you already have a prepared bootable USB stick, please insert it now. Otherwise plug in a USB stick with a minimum size of 64 MB!"
+#~ msgstr ""
+#~ "Þetta íforrit útbýr USB staut sem er hægt að nota til að uppfæta stýrikerfið í linux receiverinu án þess að nota tölvu.\n"
+#~ "Fyrst þarf að undirbúa USB stautinn þannig að hægt verði að ræsa frá honum.\n"
+#~ "Næst þarf að hlaða niður NFI stýrikerfi frá uppfærslu vefþjóni sem er vistað á USB stautnum.\n"
+#~ "Ef þú hefur nú þegar útbúið USB staut þá skaltu setja það í núna. Annars skaltu setja USB staut sem er minnst 64MB sem er hægt að nota!"
+
+#
+#, fuzzy
+#~ msgid "Timer edit"
+#~ msgstr "Breyta Tímastillingu"
+
+#
+#, fuzzy
+#~ msgid "Timer editor"
+#~ msgstr "Breyta Tímastillingum"
+
+#
+#~ msgid "Timer status:"
+#~ msgstr "Tíma staða:"
+
+#
+#~ msgid "Translation"
+#~ msgstr "Þýðing"
+
+#
+#, fuzzy
+#~ msgid "Translation: "
+#~ msgstr "Þýðing:"
+
+#
+#, fuzzy
+#~ msgid "Transponder Time"
+#~ msgstr "Sendir"
+
+#
+#~ msgid "USB stick wizard"
+#~ msgstr "USB stauta stjóri"
+
+#~ msgid "UnhandledKey"
+#~ msgstr "Ónotaður"
+
+#
+#~ msgid "Use time of currently running service"
+#~ msgstr "Nota tíma nú keyrandi þjónustu"
+
+#
+#, fuzzy
+#~ msgid "Virtual keyboard"
+#~ msgstr "Sýndar lyklaborð"
+
+#
+#~ msgid "Volume"
+#~ msgstr "Styrkur"
+
+#, fuzzy
+#~ msgid ""
+#~ "Welcome.\n"
+#~ "\n"
+#~ "This start wizard will guide you through the basic setup of your linux receiver.\n"
+#~ "Press the OK button on your remote control to move to the next step."
+#~ msgstr ""
+#~ "Velkomin (n).\n"
+#~ "\n"
+#~ "Ef þú vilt tengja linux receiverið við veraldarvefinn þá getur þessi ráðgjafi hjálpað þér að setja upp grunnstillingar til þess.\n"
+#~ "\n"
+#~ "Ýttu á OK til að byrja stillingar á netkortinu"
+
+#
+#~ msgid "Welcome..."
+#~ msgstr "Velkomin(n)..."
+
+#
+#~ msgid "You have chosen to create a new .NFI flasher bootable USB stick. This will repartition the USB stick and therefore all data on it will be erased."
+#~ msgstr "Þú hefur valið að búa til nýjan keyranlegan .NFI USB staut. Þetta veldur því að öllum gögnum af USB stautum verður eytt."
+
+#
+#~ msgid ""
+#~ "Your frontprocessor firmware must be upgraded.\n"
+#~ "Press OK to start upgrade."
+#~ msgstr ""
+#~ "Það þarf að uppfæra heila í framtölvu.\n"
+#~ "Ýtið á OK til að byrja uppfærslu."
+
+#
+#~ msgid "config menu"
+#~ msgstr "stillinga valmynd"
+
+#~ msgid "currently installed image: %s"
+#~ msgstr "núverandi stýrikerfi: %s"
+
+#
+#~ msgid "help..."
+#~ msgstr "hjálp..."
 
 #
 #~ msgid "play from next mark or playlist entry"

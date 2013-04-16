@@ -4,7 +4,7 @@ msgid "3D setup"
 msgstr ""
 
 #: ../data/menu.xml
-msgid "A/V settings"
+msgid "A/V Setup"
 msgstr ""
 
 #: ../data/menu.xml
@@ -17,6 +17,10 @@ msgstr ""
 
 #: ../data/menu.xml
 msgid "Automatic scan"
+msgstr ""
+
+#: ../data/menu.xml
+msgid "CCcam info"
 msgstr ""
 
 #: ../data/menu.xml
@@ -36,15 +40,19 @@ msgid "Devices"
 msgstr ""
 
 #: ../data/menu.xml
-msgid "EPG advanced settings"
+msgid "Display"
 msgstr ""
 
 #: ../data/menu.xml
-msgid "EPG settings"
+msgid "EGAMI Full Backup Panel"
 msgstr ""
 
 #: ../data/menu.xml
-msgid "Expert settings"
+msgid "EGAMI Personal Backup Panel"
+msgstr ""
+
+#: ../data/menu.xml
+msgid "EPG"
 msgstr ""
 
 #: ../data/menu.xml
@@ -76,7 +84,7 @@ msgid "Initialization"
 msgstr ""
 
 #: ../data/menu.xml
-msgid "Language setup"
+msgid "Language"
 msgstr ""
 
 #: ../data/menu.xml
@@ -84,7 +92,7 @@ msgid "Load EPG"
 msgstr ""
 
 #: ../data/menu.xml
-msgid "Load/Save EPG"
+msgid "Load/Save"
 msgstr ""
 
 #: ../data/menu.xml
@@ -120,11 +128,7 @@ msgid "Network"
 msgstr ""
 
 #: ../data/menu.xml
-msgid "Network advanced settings"
-msgstr ""
-
-#: ../data/menu.xml
-msgid "Network setup"
+msgid "OScam info"
 msgstr ""
 
 #: ../data/menu.xml
@@ -208,6 +212,10 @@ msgid "System"
 msgstr ""
 
 #: ../data/menu.xml
+msgid "TV"
+msgstr ""
+
+#: ../data/menu.xml
 msgid "Telnet setup"
 msgstr ""
 
@@ -237,6 +245,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "12V output"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "12V output."
 msgstr ""
 
 #: ../data/setup.xml
@@ -284,15 +296,11 @@ msgid "Allows more detailed to be in the crash log"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Allows the linux receiver to read the stored EPG data regularly."
+msgid "Allows the linux box to read the stored EPG data regularly."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Allows the linux receiver to store the EPG data regularly."
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Allows you to choose the Picons to be displayed on the frontpanel."
+msgid "Allows the linux box to store the EPG data regularly."
 msgstr ""
 
 #: ../data/setup.xml
@@ -420,6 +428,10 @@ msgid "Button setup"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Can be used for different fps between external subtitles and video."
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Center DVB subtitles"
 msgstr ""
 
@@ -429,10 +441,6 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Channel"
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Channel +/- button mode"
 msgstr ""
 
 #: ../data/setup.xml
@@ -472,11 +480,11 @@ msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Choose the location where the EPG data will be stored when the linux receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when the linux box is shut down. The location must be available at boot time."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Choose the name of the file that holds the EPG data when the linux receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when the linux box is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 #: ../data/setup.xml
@@ -505,6 +513,14 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Configuration mode"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Configure an additional delay to improve external subtitle synchronisation."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Configure an additional delay to improve subtitle synchronisation."
 msgstr ""
 
 #: ../data/setup.xml
@@ -568,6 +584,10 @@ msgid "Configure the contrast level of the front panel display."
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Configure the duration in minutes for the screensaver."
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Configure the first audio language (highest priority)."
 msgstr ""
 
@@ -597,6 +617,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Configure the function of a short press on the power button."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Configure the function of the <  > buttons."
 msgstr ""
 
 #: ../data/setup.xml
@@ -748,6 +772,10 @@ msgid "Configure which tuner will be preferred, when more than one tuner is avai
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Configure your NTP server."
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Contrast"
 msgstr ""
 
@@ -780,6 +808,18 @@ msgid "DVB subtitle black transparency"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Default recording type"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Delay for external subtitles"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Descramble & record ECM' gives the option to descramble afterwards if descrambling on recording failed. 'Don't descramble, record ECM' save a scramble recording that can be descrambled on playback. 'Normal' means descramble the recording and don't record ECM."
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Descramble http streams"
 msgstr ""
 
@@ -797,10 +837,6 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Display message before playing next movie"
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Display settings"
 msgstr ""
 
 #: ../data/setup.xml
@@ -900,6 +936,10 @@ msgid "Gateway"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Graphical InfobarEPG settings"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "GraphicalEPG settings"
 msgstr ""
 
@@ -928,6 +968,10 @@ msgid "Hide zap errors"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "History buttons mode"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "IP address"
 msgstr ""
 
@@ -941,6 +985,14 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "If set to 'yes' channels without EPG will not be shown."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "If set to 'yes' it will show the 'PO' packages in browser."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "If set to 'yes' it will show the 'SRC' packages in browser."
 msgstr ""
 
 #: ../data/setup.xml
@@ -1124,6 +1176,10 @@ msgid "MultiEPG settings"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "NTP server"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Nameserver"
 msgstr ""
 
@@ -1288,15 +1344,7 @@ msgid "Select if you want the Subservice mode to be activated."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Select if you want to use the ViX coloured Buttons (set to 'no' if you want to use (Multi) Quick Button)."
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Select seekbar to be activated by arrow L/R (long) or << >> (long)."
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Select what you want the Channel +/- button to activate:"
 msgstr ""
 
 #: ../data/setup.xml
@@ -1333,6 +1381,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Services may be grouped in bouquets. When enabled, you can use more then one bouquet."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Set fps for external subtitles"
 msgstr ""
 
 #: ../data/setup.xml
@@ -1400,14 +1452,6 @@ msgid "Setup the interval to check for online updates. (in hours)"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Setup what a long press on the power button does."
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Setup what a short press on the power button does."
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Setup your timezone."
 msgstr ""
 
@@ -1437,10 +1481,6 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Show PVR status in MoviePlayer infobar"
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Show Picons *"
 msgstr ""
 
 #: ../data/setup.xml
@@ -1520,6 +1560,14 @@ msgid "Show positioner movement"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Show screensaver"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Show source packages"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Show status icons in movielist"
 msgstr ""
 
@@ -1532,7 +1580,15 @@ msgid "Show time remaining/elapsed"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Show translation packages"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Show transponder remaining/elapsed as"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Show warning when timeshift is stopped"
 msgstr ""
 
 #: ../data/setup.xml
@@ -1596,6 +1652,10 @@ msgid "Subtitle border width"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Subtitle delay when timing is bad"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Subtitle delay when timing lacks"
 msgstr ""
 
@@ -1656,11 +1716,11 @@ msgid "Test mode"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "The linux receiver reads the stored EPG data every (hours)."
+msgid "The linux box reads the stored EPG data every (hours)."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "The linux receiver stores the EPG data every (hours)."
+msgid "The linux box stores the EPG data every (hours)."
 msgstr ""
 
 #: ../data/setup.xml
@@ -1784,10 +1844,6 @@ msgid "Use PTS seekbar while timeshifting?"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Use ViX coloured Buttons *"
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Use ViaSat EPG information when it is available."
 msgstr ""
 
@@ -1845,6 +1901,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "When enabled, a recording is allowed to interrupt live tv, when there are no free tuners."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "When enabled, a warning will be displayed and the user will get an option to stop or to continue the timeshift."
 msgstr ""
 
 #: ../data/setup.xml
@@ -1971,430 +2031,6 @@ msgstr ""
 msgid "e-Mail address"
 msgstr ""
 
-#: ../data/skin.xml
-msgid "A"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "Audio"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "B"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "BER"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "C"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "D"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "Extensions"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "Info bar"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "Main menu"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "Record"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "SNR"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "Subservices"
-msgstr ""
-
-#: ../data/skin.xml
-msgid "Timeshift"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "0"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "1"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "2"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "3"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "4"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "5"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "6"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "7"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "8"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "9"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "About"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Audio"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "BER:"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Cancel"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Channel"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Channel selection"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Channellist menu"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Command execution..."
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Common Interface"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Continue in background"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "DVD file browser"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Date/time input"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Dish"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Downloadable plugins"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "EPG selection"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Electronic Program Guide"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Event view"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Event view menu"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Harddisk"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "History zap..."
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Index"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Input"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Installing software..."
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Job overview"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Language selection"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Lock:"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "MORE"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Main menu"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Media player"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Menu"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Message"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Message..."
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Movielist menu"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Mute"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "NEXT"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "NOW"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Nameserver setup"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Network configuration..."
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Network setup"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Network test..."
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Now playing"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "OK"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "OSD settings"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "PIN code needed"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Parental control services editor"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "PiP setup"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Plugin browser"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Radio"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Reception settings"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "SNR:"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Satfinder"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Seek"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Select HDD"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Select a bouquet"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Select a movie"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Select a network adapter"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Select a skin"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Select a tuner"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Service info"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Service scan"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Setup"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Sleep Timer"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Standby"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Subservices"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Subtitle selection"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Timer edit"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Timer editor"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Timer entry"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Timer log"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Timer sanity error"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Timer selection"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Translation"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Translation:"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "UnhandledKey"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Virtual keyboard"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Volume"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "Welcome..."
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "config menu"
-msgstr ""
-
-#: ../data/skin_default.xml
-msgid "help..."
-msgstr ""
-
-#: ../data/skin_display.xml
-msgid "Rec"
-msgstr ""
-
-#: ../data/skin_display.xml
-msgid "Recording"
-msgstr ""
-
-#: ../data/skin_display96.xml
-msgid "Rec"
-msgstr ""
-
-#: ../data/skin_display96.xml
-msgid "Recording"
-msgstr ""
-
 #: ../data/startwizard.xml
 msgid "Check the internet connection"
 msgstr ""
@@ -2424,11 +2060,11 @@ msgid "Exit the wizard"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "No, scan later manually"
+msgid "No"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Please connect your receiver to the internet"
+msgid "Please connect your linux box to the internet"
 msgstr ""
 
 #: ../data/startwizard.xml
@@ -2452,7 +2088,7 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Thank you for using the wizard. Your linux receiver is now ready to use.\nPlease press OK to start using your linux receiver."
+msgid "Thank you for using the wizard. Your linux box is now ready to use.\nPlease press OK to start using your linux box."
 msgstr ""
 
 #: ../data/startwizard.xml
@@ -2464,11 +2100,11 @@ msgid "Use the wizard to set up basic features"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Welcome.\n\nThis start wizard will guide you through the basic setup of your linux receiver.\nPress the OK button on your remote control to move to the next step."
+msgid "What do you want to scan?"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "What do you want to scan?"
+msgid "Would you like to install a softcam?"
 msgstr ""
 
 #: ../data/startwizard.xml
@@ -2484,11 +2120,15 @@ msgid "Yes, do another manual scan now"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Your receiver does not have an internet connection"
+msgid "Your linux box does not have an internet connection"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Your receiver is not connected to the internet"
+msgid "Your linux box is not connected to the internet"
+msgstr ""
+
+#: ../data/startwizard.xml
+msgid "Your linux box offers three levels of configuration options:\n\nSimple - We suggest this level if this is your first contact with a linux box.\nIntermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your linux box.\nExpert - This gives you full control over all available settings of your linux box.\n\nWarning: Higher levels may lead to increased usage complexity."
 msgstr ""
 
 #: ../data/userinterfacepositionerwizard.xml
@@ -2504,10 +2144,6 @@ msgid "Configure interface"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Configure nameservers"
-msgstr ""
-
-#: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
 msgid "Configure your network again"
 msgstr ""
 
@@ -2516,19 +2152,11 @@ msgid "Exit network wizard"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "List available networks"
-msgstr ""
-
-#: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
 msgid "Manual configuration"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Network wizard"
-msgstr ""
-
-#: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Please configure or verify your Nameservers by filling out the required values.\nWhen you are ready press OK to continue."
+msgid "Network Wizard"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
@@ -2548,6 +2176,10 @@ msgid "Please select the wireless network that you want to connect to.\n\nPlease
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
+msgid "Scan available networks"
+msgstr ""
+
+#: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
 msgid "Select interface"
 msgstr ""
 
@@ -2564,7 +2196,7 @@ msgid "The wireless LAN plugin is not installed!\nPlease install it and choose w
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Welcome.\n\nIf you want to connect your linux receiver to the Internet, this wizard will guide you through the basic network setup of your linux receiver.\n\nPress OK to start configuring your network"
+msgid "Welcome.\n\nIf you want to connect your linux box to the Internet, this wizard will guide you through the basic network setup of your linux box.\n\nPress OK to start configuring your network"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
@@ -2580,7 +2212,7 @@ msgid "Your internet connection is not working!\nPlease choose what you want to 
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Your linux receiver is now ready to use.\n\nYour internet connection is working now.\n\nPlease press OK to continue."
+msgid "Your linux box is now ready to use.\n\nYour internet connection is working now.\n\nPlease press OK to continue."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
@@ -2612,7 +2244,7 @@ msgid "No, do nothing."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "No, just start my linux receiver"
+msgid "No, just start my linux box"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
@@ -2632,7 +2264,7 @@ msgid "The wizard is finished now."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux box by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
@@ -2660,7 +2292,7 @@ msgid "You have chosen to restore your settings. Enigma2 will restart after rest
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "You need a PC connected to your linux receiver. If you need further instructions, please visit the website http://www.dm7025.de.\nYour linux receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+msgid "You need a PC connected to your linux box. If you need further instructions, please visit the website http://www.dm7025.de.\nYour linux box will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
@@ -2668,7 +2300,7 @@ msgid "Your backup succeeded. We will now continue to explain the further upgrad
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "Your linux receiver is shutting down. Please stand by..."
+msgid "Your linux box is shutting down. Please stand by..."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/Videomode/videowizard.xml
