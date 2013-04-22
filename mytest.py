@@ -515,7 +515,7 @@ def runScreenTest():
 	profile("Init:PowerKey")
 	power = PowerKey(session)
 
-	if config.misc.boxtype.value == 'odinm9' or config.misc.boxtype.value == 'ventonhdx':
+	if config.misc.boxtype.value == 'odinm9' or config.misc.boxtype.value == 'ventonhdx' or config.misc.boxtype.value == 'mbtwin':
 		profile("VFDSYMBOLS")
 		import Components.VfdSymbols
 		Components.VfdSymbols.SymbolsCheck(session)
