@@ -18,7 +18,7 @@ def checkkernel():
 	if not fileExists("/media/usb"):
 		os.system("mkdir /media/usb")
 	if (os.path.isfile("/proc/stb/info/boxtype") and os.path.isfile("/proc/stb/info/version")): 
-		if open("/proc/stb/info/boxtype").read().startswith("ini-10" or open("/proc/stb/info/boxtype").read().strip() == "ini-3000" or open("/proc/stb/info/boxtype").read().startswith("ini-50") or open("/proc/stb/info/boxtype").read().startswith("ini-70"):
+		if open("/proc/stb/info/boxtype").read().startswith("ini-10") or open("/proc/stb/info/boxtype").read().strip() == "ini-3000" or open("/proc/stb/info/boxtype").read().startswith("ini-50") or open("/proc/stb/info/boxtype").read().startswith("ini-70"):
 			if (about.getKernelVersionString()=="3.6.0"):
 				mycheck = 1
 	else:
