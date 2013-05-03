@@ -28,8 +28,8 @@ config.EGDecoding.show_ci_messages = ConfigYesNo(default=False)
 class EGDecodingSetup(ConfigListScreen, Screen):
     __module__ = __name__
     def __init__(self, session, args = 0):
-	self.skin = EGDecodingSetup_Skin
 	Screen.__init__(self, session)
+	self.skinName = ["Setup"]
 		
         list = []
 	#list.append(getConfigListEntry(__('Enable pmtX.tmp -> X-1..9'), config.EGDecoding.messageYesPmt))
@@ -85,24 +85,21 @@ config.infobar.permanentClockPosition = ConfigSelection(choices=["<>"], default=
 
 class EGInfoBarSetup(Screen, ConfigListScreen):
 	def __init__(self, session):
-	    
-	    self.skin = EGInfoBarSetup_Skin
-	    
 	    Screen.__init__(self, session)
+	    self.skinName = ["Setup"]
 	    
 	    self.list = []
 	    
 	    ConfigListScreen.__init__(self, self.list)
 	    
-	    self["key_red"] = Label(_("Cancel"))
-	    self["key_green"] = Label(_("Save"))
+	    self["key_red"] = Label(_("Save"))
+	    self["key_green"] = Label(_("Exit"))
 
 	    self["actions"] = ActionMap(["WizardActions", "ColorActions"],
 	    {
-	    "red": self.keyCancel,
+	    "red": self.keySave,
 	    "back": self.keyCancel,
-	    "green": self.keySave,
-
+	    "green": self.keyCancel,
 	    }, -2)
 
 	    self.list.append(getConfigListEntry(_("Infobar timeout"), config.usage.infobar_timeout))
