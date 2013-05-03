@@ -1,4 +1,4 @@
-installdir = $(pkglibdir)/python/Plugins/Extensions/AccuWeather/weather/xbmcsmall
+installdir = $(pkglibdir)/python/Plugins/Extensions/AccuWeather/xbmcweather/small
 
 install_DATA = \
 	*.png
