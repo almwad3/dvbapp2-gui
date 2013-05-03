@@ -3,6 +3,7 @@ from Tools.Directories import resolveFilename, SCOPE_SKIN
 from xml.etree.ElementTree import ElementTree
 from Components.config import config, ConfigInteger
 from Components.RcModel import rc_model
+from enigma import getBoxType
 from enigma import ePoint
 
 config.misc.rcused = ConfigInteger(default = 1)
@@ -36,15 +37,13 @@ class Rc:
 		self.onShown.append(self.initRc)
 
 	def initRc(self):
-		if self.isDefaultRc:
+		if getBoxType() == 'ventonhdx':
 			self["rc"].setPixmapNum(config.misc.rcused.getValue())
 		else:
-			self["rc"].setPixmapNum(0)
-		
-		if self.isDefaultRc:
-			rc = self.rcs[config.misc.rcused.value]
-		else:
-			rc = self.rcs[2]
+			if self.isDefaultRc:
+				self["rc"].setPixmapNum(config.misc.rcused.getValue())
+			else:
+				self["rc"].setPixmapNum(0)
 			
 		#if rc.has_key('RED'):
 		#	rcpos = self['rc'].getPosition()
@@ -87,9 +86,13 @@ class Rc:
 
 	def selectKey(self, key):
 		if self.isDefaultRc:
-			rc = self.rcs[config.misc.rcused.value]
+			rc = self.rcs[config.misc.rcused.getValue()]
 		else:
-			rc = self.rcs[2]
+			try:
+				rc = self.rcs[2]
+			except:
+				rc = self.rcs[config.misc.rcused.getValue()]
+
 		if rc.has_key(key):
 			rcpos = self["rc"].getPosition()
 			pos = rc[key]
@@ -115,3 +118,4 @@ class Rc:
 		for selectPic in self.selectpics:
 			for pic in selectPic[1]:
 				self[pic].hide()
+				
