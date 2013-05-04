@@ -37,13 +37,10 @@ class Rc:
 		self.onShown.append(self.initRc)
 
 	def initRc(self):
-		if getBoxType() == 'ventonhdx':
+		if self.isDefaultRc:
 			self["rc"].setPixmapNum(config.misc.rcused.getValue())
 		else:
-			if self.isDefaultRc:
-				self["rc"].setPixmapNum(config.misc.rcused.getValue())
-			else:
-				self["rc"].setPixmapNum(0)
+			self["rc"].setPixmapNum(0)
 			
 		#if rc.has_key('RED'):
 		#	rcpos = self['rc'].getPosition()
