@@ -62,9 +62,9 @@ class EGExtrasMenu(Screen):
 		elif (self.sel == 4):
 			from EGAMI.EGAMI_services import EGServicesMenu
 			self.session.open(EGServicesMenu)
-		elif (self.sel == 5):
-			from EGAMI.EGAMI_infobar_setup import EGDecodingSetup
-			self.session.open(EGDecodingSetup)
+		#elif (self.sel == 5):
+		#	from EGAMI.EGAMI_infobar_setup import EGDecodingSetup
+		#	self.session.open(EGDecodingSetup)
 		elif (self.sel == 6):
 			from EGAMI.EGAMI_infobar_setup import EGInfoBarSetup
 			self.session.open(EGInfoBarSetup)
@@ -142,13 +142,13 @@ class EGExtrasMenu(Screen):
 		res = (name,png,idx,desc)
 		self.list.append(res)
 		
-		mypixmap = (mypath + "egami_icons/decoding_settings.png")
-		png = LoadPixmap(mypixmap)
-		name = (_("Decoding Settings"))
-		desc = (_("Additional ZAP informations..."))
-		idx = 5
-		res = (name,png,idx,desc)
-		self.list.append(res)
+		#mypixmap = (mypath + "egami_icons/decoding_settings.png")
+		#png = LoadPixmap(mypixmap)
+		#name = (_("Decoding Settings"))
+		#desc = (_("Additional ZAP informations..."))
+		#idx = 5
+		#res = (name,png,idx,desc)
+		#self.list.append(res)
 
 		mypixmap = (mypath + "egami_icons/osd_settings.png")
 		png = LoadPixmap(mypixmap)
