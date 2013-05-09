@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-16 19:48+0200\n"
-"PO-Revision-Date: 2013-04-29 15:01+0100\n"
+"PO-Revision-Date: 2013-05-09 23:55+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: AndyBlacburn, j-ot&Trial\n"
 "Language: de\n"
@@ -1953,6 +1953,9 @@ msgstr "Konfigurieren der Zusammensetzung des Dateinamens von Aufnahmen"
 msgid "Configure http stream..."
 msgstr "Konfiguriere das Gateway."
 
+msgid "Configure if and how service type icons will be shown."
+msgstr "Konfigurieren ob und wie Sendertyp Icons gezeigt werden."
+
 msgid "Configure interface"
 msgstr "Netzwerkkarte konfigurieren"
 
@@ -2318,7 +2321,7 @@ msgid "Cool TV Guide"
 msgstr "Cool TV Guide"
 
 msgid "Copy"
-msgstr "kopieren"
+msgstr "Kopieren"
 
 msgid "Copy Settings to the new Image"
 msgstr "Kopiert Settings in das neue Image"
@@ -3401,7 +3404,7 @@ msgid "Event Info"
 msgstr "Programminformation..."
 
 msgid "Event font size"
-msgstr "Zeichgröße Programm"
+msgstr "Programm Schriftgröße"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Sendung Schriftgröße (relativ zur Skingröße)"
@@ -4722,6 +4725,9 @@ msgstr "Linke Taste"
 msgid "Left Mouse Button"
 msgstr "Linke Maustaste"
 
+msgid "Left from servicename"
+msgstr "Links vom Sendernamen"
+
 msgid "Leisure hobbies"
 msgstr "Freizeit/Hobby"
 
@@ -5001,13 +5007,6 @@ msgstr "Maxdown -"
 
 msgid "Maxdown: "
 msgstr "Maxdown: "
-
-msgid ""
-"Maximum Timeshift length per Event reached!\n"
-"Restarting Timeshift now ..."
-msgstr ""
-"Maximallänge für Timeshift erreicht!\n"
-"Timeshift wird jetzt neu gestartet ..."
 
 msgid "Maximum no of days:"
 msgstr "Maximalzahl von Tagen:"
@@ -6026,12 +6025,6 @@ msgstr "Dauerhafte Uhr"
 msgid "Permanent Timeshift enable"
 msgstr "Aktiviere permanenten TimeShift"
 
-msgid "Permanent Timeshift max events"
-msgstr "Permanenter TimeShift max. Sendungen"
-
-msgid "Permanent Timeshift max length"
-msgstr "Permanenter TimeShift max. Länge"
-
 msgid "Permanent Timeshift start delay"
 msgstr "Permanenter TimeShift Startverzögerung"
 
@@ -6839,6 +6832,9 @@ msgstr "Service PIN merken"
 msgid "Remember to reload enigma2 !"
 msgstr "Nicht vergessen Enigma2 erneut zu laden !"
 
+msgid "Reminder, you have chosen to save timeshift file."
+msgstr "Erinnerung! Du hast gewählt die Timeshift-Datei zu speichern."
+
 msgid "Remote box"
 msgstr "Remote-Box"
 
@@ -7052,6 +7048,9 @@ msgstr "Rechte Taste"
 
 msgid "Right Mouse Button"
 msgstr "rechte Maustaste"
+
+msgid "Right from servicename"
+msgstr "Rechts vom Sendernamen"
 
 msgid "Roll-off"
 msgstr "Roll-off"
@@ -7522,7 +7521,7 @@ msgid "Service has been added to the selected bouquet."
 msgstr "Sender wurde zur gewählten Favoritenliste hinzugefügt."
 
 msgid "Service info font size"
-msgstr "Sender Info Schriftgröße"
+msgstr "Senderinfo Schriftgröße"
 
 msgid ""
 "Service invalid!\n"
@@ -7535,7 +7534,7 @@ msgid "Service name"
 msgstr "Sendername"
 
 msgid "Service name font size"
-msgstr "Sender Name Schriftgröße"
+msgstr "Sendername Schriftgröße"
 
 msgid ""
 "Service not found!\n"
@@ -7983,6 +7982,9 @@ msgstr "Bildschirmschoner anzeigen"
 
 msgid "Show second infobar"
 msgstr "Zeige Second Infobar"
+
+msgid "Show service type icons"
+msgstr "Zeige Sendertype Icon"
 
 msgid "Show services beginning with"
 msgstr "Zeige Sender beginnend mit"
@@ -8634,6 +8636,9 @@ msgstr "Stoppe Test nach # fehlgeschlagenen Transpondern"
 msgid "Stop testing plane after # successful transponders"
 msgstr "Stoppe Test nach # erfolgreichen Transpondern"
 
+msgid "Stop timer recording"
+msgstr "Timeraufnahme beenden"
+
 msgid "Stop timeshift"
 msgstr "TimeShift stoppt"
 
@@ -8801,6 +8806,9 @@ msgstr "Schwedisch"
 
 msgid "Switch TV to correct input"
 msgstr "Fernseher auf passenden Eingang schalten"
+
+msgid "Switch between filelist/playlist"
+msgstr "Wechsel zwischen Datei-/Playliste"
 
 msgid "Switch between normal mode and list mode"
 msgstr "Tausche normalen und Listenmodus"
@@ -9548,7 +9556,7 @@ msgid "Time to execute command or script"
 msgstr "Zeit um Kommand oder Script auszuführen"
 
 msgid "Timeline font size"
-msgstr "Zeichengröße Zeitachse"
+msgstr "Zeitachse Schriftgröße"
 
 msgid "Timer List"
 msgstr "Timerliste"
@@ -10861,6 +10869,12 @@ msgstr "Gelbe, externe Untertitel"
 msgid "Yes"
 msgstr "Ja"
 
+msgid "Yes and save"
+msgstr "Ja und speichern"
+
+msgid "Yes and save in movie dir"
+msgstr "Ja und im Filmverzeichnis speichern"
+
 msgid "Yes to all"
 msgstr "Ja zu allen"
 
@@ -12090,9 +12104,6 @@ msgstr "Seite links"
 msgid "pass"
 msgstr "Durchgang"
 
-msgid "pause"
-msgstr "Pause"
-
 msgid "performing arts"
 msgstr "darstellende Künste"
 
@@ -12833,6 +12844,13 @@ msgstr "umgeschaltet"
 #~ msgid "Media player"
 #~ msgstr "Media Player"
 
+#~ msgid ""
+#~ "Maximum Timeshift length per Event reached!\n"
+#~ "Restarting Timeshift now ..."
+#~ msgstr ""
+#~ "Maximallänge für Timeshift erreicht!\n"
+#~ "Timeshift wird jetzt neu gestartet ..."
+
 #~ msgid "Message"
 #~ msgstr "Nachricht"
 
@@ -12907,21 +12925,11 @@ msgstr "umgeschaltet"
 #~ msgid "Parental control services editor"
 #~ msgstr "Jugendschutz-Sendereditor"
 
-#~ msgid "Perform a full image backup"
-#~ msgstr "Image Backup durchführen"
+#~ msgid "Permanent Timeshift max events"
+#~ msgstr "Permanenter TimeShift max. Sendungen"
 
-#~ msgid "Perform a image backup before updating."
-#~ msgstr "Vor Update ein Image Backup durchführen."
-
-#~ msgid "Perform a setting backup,"
-#~ msgstr "Einstellungen sichern"
-
-#~ msgid ""
-#~ "Perform a setting backup, making a backup before updating is strongly "
-#~ "advised."
-#~ msgstr ""
-#~ "Einstellungen zu sichern bevor ein Update durchgeführt wird ist sehr zu "
-#~ "empfehlen."
+#~ msgid "Permanent Timeshift max length"
+#~ msgstr "Permanenter TimeShift max. Länge"
 
 #~ msgid "PiP setup"
 #~ msgstr "PiP Einstellung"
@@ -13029,13 +13037,6 @@ msgstr "umgeschaltet"
 
 #~ msgid "Service info"
 #~ msgstr "Sender Info"
-
-#~ msgid ""
-#~ "Service unavailable!\n"
-#~ "Check tuner configuration!"
-#~ msgstr ""
-#~ "Kanal nicht verfügbar!\n"
-#~ "Bitte Tuner-Konfiguration überprüfen!"
 
 #~ msgid "Setup what a long press on the power button does."
 #~ msgstr "Stelle ein was bei langem Druck auf die Aus-Taste passieren soll."
@@ -13267,11 +13268,8 @@ msgstr "umgeschaltet"
 #~ msgid "help..."
 #~ msgstr "Hilfe..."
 
-#~ msgid "is strongly advised."
-#~ msgstr "wird sehr empfohlen"
-
-#~ msgid "making a backup before updating"
-#~ msgstr "Backup anlegen vor einem Update"
+#~ msgid "pause"
+#~ msgstr "Pause"
 
 #~ msgid "play from next mark or playlist entry"
 #~ msgstr "Wiedergabe ab der nächsten Markierung/Listeneintrag"
