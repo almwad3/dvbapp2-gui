@@ -1844,9 +1844,9 @@ void eDVBFrontend::setFrontend(bool recvEvents)
 			p[cmdseq.num].cmd = DTV_BANDWIDTH_HZ, p[cmdseq.num].u.data = parm.bandwidth, cmdseq.num++;
 			if (system == SYS_DVBT2)
 			{
-#ifdef DTV_DVBT2_PLP_ID
+//#ifdef DTV_DVBT2_PLP_ID
 				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
-#endif
+//#endif
 			}
 		}
 		else if (type == iDVBFrontend::feATSC)
