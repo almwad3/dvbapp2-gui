@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-16 19:48+0200\n"
-"PO-Revision-Date: 2013-05-09 23:55+0100\n"
+"PO-Revision-Date: 2013-05-21 07:09-0000\n"
 "Last-Translator: xxx\n"
 "Language-Team: AndyBlacburn, j-ot&Trial\n"
 "Language: de\n"
@@ -1568,6 +1568,9 @@ msgstr "Kanada"
 
 msgid "Cancel"
 msgstr "Abbrechen"
+
+msgid "Cancel save timeshift as movie"
+msgstr "Film speichern abbrechen"
 
 msgid "Cannot delete file"
 msgstr "Kann Datei nicht löschen"
@@ -5727,6 +5730,9 @@ msgstr ""
 msgid "November"
 msgstr "November"
 
+msgid "Nothing, just leave this menu"
+msgstr "Nicht, nur das Menü verlassen"
+
 msgctxt "now/next: 'now' event label"
 msgid "Now"
 msgstr "Jetzt"
@@ -6702,6 +6708,9 @@ msgstr " MyTube Player verlassen?"
 msgid "Really reboot now?"
 msgstr "Trotzdem neu booten?"
 
+msgid "Really reflash your STB_BOX and reboot now?"
+msgstr "Die STB_BOX wirklich flashen und neu starten?"
+
 msgid "Really restart now?"
 msgstr "Trotzdem neu starten?"
 
@@ -6777,6 +6786,15 @@ msgstr "Zeitskala verkleinern"
 
 msgid "Reenter new PIN"
 msgstr "Neuen PIN erneut eingeben"
+
+msgid ""
+"Reflash in progress\n"
+"Please wait until your STB_BOX reboots\n"
+"This may take a few minutes"
+msgstr ""
+"Flash wird durchgeführt.\n"
+"Bitte warten Sie, bis Ihre STB_BOX automatisch neu startet.\n"
+"Dies könnte einige Minuten in Anspruch nehmen."
 
 msgid "Reference"
 msgstr "Service Referenz"
@@ -7192,6 +7210,12 @@ msgstr "Timeshift-Dateien speichern"
 
 msgid "Save timeshift file in movie directory"
 msgstr "Timeshift als Aufnahme im Movie Verzeichnis speihern"
+
+msgid "Save timeshift as movie and continue recording"
+msgstr "TimeShift als Film speichern und Aufnahme fortsetzen"
+
+msgid "Save timeshift as movie and stop recording"
+msgstr "TimeShift als Film speichern und Aufnahme beenden"
 
 msgid "Saving EPG Cache..."
 msgstr "EPG Cache wird gespeichert ..."
@@ -9938,6 +9962,15 @@ msgstr "Softwarekatalog wird aktualisiert."
 
 msgid "Upgrade finished."
 msgstr "Upgrade beendet."
+
+msgid ""
+"Upgrade in progress\n"
+"Please wait until your STB_BOX reboots\n"
+"This may take a few minutes"
+msgstr ""
+"Aktualisierung wird durchgeführt.\n"
+"Bitte warten Sie, bis Ihre STB_BOX automatisch neu startet.\n"
+"Dies könnte einige Minuten in Anspruch nehmen."
 
 msgid "Upgrading"
 msgstr "Aktualisiere"
