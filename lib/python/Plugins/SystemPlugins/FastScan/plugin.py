@@ -379,8 +379,8 @@ def FastScanMain(session, **kwargs):
 
 def FastScanStart(menuid, **kwargs):
 	from Components.About import about
-	if menuid == "scan" and (about.getHardwareTypeString() == "ini-5000ru" or about.getHardwareTypeString() == "ini-1000ru"):
-		return [(_("Fast Scan"), FastScanMain, "fastscan", None)]
+	if menuid == "scan" and (about.getHardwareTypeString() == "INI-5000RU" or about.getHardwareTypeString() == "INI-1000RU"):
+			return [(_("Fast Scan"), FastScanMain, "fastscan", None)]     
 	else:
 		return []
 
