@@ -161,7 +161,11 @@ class InfoBarUnhandledKey:
 
 	#this function is called on every keypress!
 	def actionA(self, key, flag):
+		print 'KEY:', key
 		self.unhandledKeyDialog.hide()
+		if (key != 352 and key != 407 and key != 412) and self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
+			self.secondInfoBarScreen.hide()
+			self.secondInfoBarWasShown = False
 		if flag != 4:
 			if self.flags & (1<<1):
 				self.flags = self.uflags = 0
@@ -619,19 +623,12 @@ class InfoBarChannelSelection:
 				"openSatellites": (self.openSatellites, _("open Satellites")),
 			})
 
-
 	def ChannelPlusPressed(self):
 		if config.usage.channelbutton_mode.getValue() == "0":
 			self.zapDown()
 		elif config.usage.channelbutton_mode.getValue() == "1":
-			if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-				self.secondInfoBarScreen.hide()
-				self.secondInfoBarWasShown = False
 			self.openServiceList()
 		elif config.usage.channelbutton_mode.getValue() == "2":
-			if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-				self.secondInfoBarScreen.hide()
-				self.secondInfoBarWasShown = False
 			self.serviceListType = "Norm"
 			self.servicelist.showFavourites()
 			self.session.execDialog(self.servicelist)
@@ -640,22 +637,13 @@ class InfoBarChannelSelection:
 		if config.usage.channelbutton_mode.getValue() == "0":
 			self.zapUp()
 		elif config.usage.channelbutton_mode.getValue() == "1":
-			if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-				self.secondInfoBarScreen.hide()
-				self.secondInfoBarWasShown = False
 			self.openServiceList()
 		elif config.usage.channelbutton_mode.getValue() == "2":
-			if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-				self.secondInfoBarScreen.hide()
-				self.secondInfoBarWasShown = False
 			self.serviceListType = "Norm"
 			self.servicelist.showFavourites()
 			self.session.execDialog(self.servicelist)
 
 	def showTvChannelList(self, zap=False):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		self.servicelist.setModeTv()
 		if zap:
 			self.servicelist.zap()
@@ -663,9 +651,6 @@ class InfoBarChannelSelection:
 			self.session.execDialog(self.servicelist)
 
 	def showRadioChannelList(self, zap=False):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		self.servicelist.setModeRadio()
 		if zap:
 			self.servicelist.zap()
@@ -673,27 +658,18 @@ class InfoBarChannelSelection:
 			self.session.execDialog(self.servicelist)
 
 	def historyBack(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if config.usage.historymode.getValue() == "0":
 			self.servicelist.historyBack()
 		else:
 			self.servicelist.historyZap(-1)
 
 	def historyNext(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if config.usage.historymode.getValue() == "0":
 			self.servicelist.historyNext()
 		else:
 			self.servicelist.historyZap(+1)
 
 	def switchChannelUp(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if not config.usage.show_bouquetalways.getValue():
 #				self.servicelist.moveUp()
 			self.session.execDialog(self.servicelist)
@@ -702,9 +678,6 @@ class InfoBarChannelSelection:
 			self.session.execDialog(self.servicelist)
 
 	def switchChannelDown(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if not config.usage.show_bouquetalways.getValue():
 #				self.servicelist.moveDown()
 			self.session.execDialog(self.servicelist)
@@ -713,9 +686,6 @@ class InfoBarChannelSelection:
 			self.session.execDialog(self.servicelist)
 
 	def openServiceList(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		self.session.execDialog(self.servicelist)
 
 	def openSatellites(self):
@@ -743,7 +713,6 @@ class InfoBarChannelSelection:
 		self.servicelist.zap(enable_pipzap = True)
 
 	def zapDown(self):
-		print 'zapDown'
 		if self.pts_blockZap_timer.isActive():
 			return
 
@@ -778,9 +747,6 @@ class InfoBarMenu:
 		self.session.infobar = None
 
 	def mainMenu(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		print "loading mainmenu XML..."
 		menu = mdom.getroot()
 		assert menu.tag == "menu", "root element in menu must be 'menu'!"
@@ -927,9 +893,6 @@ class InfoBarEPG:
 		return None
 
 	def showEventInfoPlugins(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if isMoviePlayerInfoBar(self):
 			self.openEventView()
 		else:
@@ -959,9 +922,6 @@ class InfoBarEPG:
 		return None
 
 	def showEventGuidePlugins(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if isMoviePlayerInfoBar(self):
 			self.openEventView()
 		else:
@@ -993,9 +953,6 @@ class InfoBarEPG:
 			answer[1]()
 
 	def RedPressed(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if isStandardInfoBar(self) or isMoviePlayerInfoBar(self):
 			if config.usage.defaultEPGType.getValue() != _("Graphical EPG") and config.usage.defaultEPGType.getValue() != _("None"):
 					self.openGraphEPG()
@@ -1003,9 +960,6 @@ class InfoBarEPG:
 				self.openSingleServiceEPG()
 
 	def InfoPressed(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if isStandardInfoBar(self) or isMoviePlayerInfoBar(self):
 			if getBoxType().startswith('et') or getBoxType().startswith('odin') or getBoxType().startswith('venton') or getBoxType().startswith('tm') or getBoxType().startswith('gb') or getBoxType().startswith('xp1000'):
 				self.openEventView()
@@ -1013,24 +967,15 @@ class InfoBarEPG:
 				self.showDefaultEPG()
 
 	def IPressed(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if isStandardInfoBar(self) or isMoviePlayerInfoBar(self):
 			self.openEventView()
 
 	def EPGPressed(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if isStandardInfoBar(self) or isMoviePlayerInfoBar(self):
 			#self.openGraphEPG()
 			self.openMultiServiceEPG
 
 	def showEventInfoWhenNotVisible(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if self.shown:
 			self.openEventView()
 		else:
@@ -1132,9 +1077,6 @@ class InfoBarEPG:
 	def openInfoBarEPG(self, reopen=False):
 		if self.servicelist is None:
 			return
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if not reopen:
 			self.StartBouquet = self.servicelist.getRoot()
 			self.StartRef = self.session.nav.getCurrentlyPlayingServiceOrGroup()
@@ -1225,9 +1167,6 @@ class InfoBarEPG:
 	def openEventView(self, simple=False):
 		if self.servicelist is None:
 			return
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		ref = self.session.nav.getCurrentlyPlayingServiceOrGroup()
 		self.getNowNext()
 		epglist = self.epglist
@@ -3279,9 +3218,6 @@ class InfoBarExtensions:
 
 
 	def showExtensionSelection(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		self.updateExtensions()
 		extensionsList = self.extensionsList[:]
 		keys = []
@@ -3307,9 +3243,6 @@ class InfoBarExtensions:
 			answer[1][1]()
 
 	def showPluginBrowser(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		from Screens.PluginBrowser import PluginBrowser
 		self.session.open(PluginBrowser)
 
@@ -3376,10 +3309,43 @@ class InfoBarExtensions:
 			self.autopoller = None
 			self.autotimer = None
 
+	def showEPGSearch(self):
+		from Plugins.Extensions.EPGSearch.EPGSearch import EPGSearch
+		s = self.session.nav.getCurrentService()
+		if s:
+			info = s.info()
+			event = info.getEvent(0) # 0 = now, 1 = next
+			if event:
+				name = event and event.getEventName() or ''
+			else:
+				name = self.session.nav.getCurrentlyPlayingServiceOrGroup().toString()
+				name = name.split('/')
+				name = name[-1]
+				name = name.replace('.',' ')
+				name = name.split('-')
+				name = name[0]
+				if name.endswith(' '):
+					name = name[:-1]
+			if name:
+				self.session.open(EPGSearch, name, False)
+			else:
+				self.session.open(EPGSearch)
+		else:
+			self.session.open(EPGSearch)
+
+	def showIMDB(self):
+		if os.path.exists("/usr/lib/enigma2/python/Plugins/Extensions/IMDb/plugin.pyo"):
+			from Plugins.Extensions.IMDb.plugin import IMDB
+			s = self.session.nav.getCurrentService()
+			if s:
+				info = s.info()
+				event = info.getEvent(0) # 0 = now, 1 = next
+				name = event and event.getEventName() or ''
+				self.session.open(IMDB, name)
+		else:
+			self.session.open(MessageBox, _("The IMDb plugin is not installed!\nPlease install it."), type = MessageBox.TYPE_INFO,timeout = 10 )
+
 	def showMediaPlayer(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		if isinstance(self, InfoBarExtensions):
 			if isinstance(self, InfoBar):
 				try: # falls es nicht installiert ist
@@ -3613,6 +3579,7 @@ class InfoBarInstantRecord:
 		simulTimerList = self.session.nav.RecordTimer.record(recording)
 
 		if simulTimerList is None:	# no conflict
+			recording.autoincrease = False
 			self.recording.append(recording)
 		else:
 			if len(simulTimerList) > 1: # with other recording
@@ -3743,9 +3710,6 @@ class InfoBarInstantRecord:
 		return timers > identical
 
 	def instantRecord(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		pirr = preferredInstantRecordPath()
 		if not findSafeRecordPath(pirr) and not findSafeRecordPath(defaultMoviePath()):
 			if not pirr:
@@ -3790,9 +3754,6 @@ class InfoBarAudioSelection:
 			})
 
 	def audioSelection(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		from Screens.AudioSelection import AudioSelection
 		self.session.openWithCallback(self.audioSelected, AudioSelection, infobar=self)
 
@@ -3948,9 +3909,6 @@ class InfoBarRedButton:
 		self.onRedButtonActivation = [ ]
 
 	def activateRedButton(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		service = self.session.nav.getCurrentService()
 		info = service and service.info()
 		if info and info.getInfoString(iServiceInformation.sHBBTVUrl) != "":
@@ -4390,9 +4348,6 @@ class InfoBarTeletextPlugin:
 			print "no teletext plugin found!"
 
 	def startTeletext(self):
-		if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
 		self.teletext_plugin(session=self.session, service=self.session.nav.getCurrentService())
 
 class InfoBarSubtitleSupport(object):

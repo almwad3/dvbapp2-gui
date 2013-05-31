@@ -8,7 +8,8 @@ from Components.About import about
 from Components.config import config
 from Components.ScrollLabel import ScrollLabel
 from Components.Console import Console
-from enigma import eTimer, getBoxType
+
+from enigma import eTimer, getBoxType, getMachineBrand, getMachineName, getImageVersionString, getBuildVersionString, getDriverDateString, getEnigmaVersionString
 
 from Components.Pixmap import MultiPixmap
 from Components.Network import iNetwork
@@ -36,6 +37,8 @@ def get_ip_address(ifname):
 class About(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
+
+		#AboutText += _("Model:\t%s %s\n") % (getMachineBrand(), getMachineName())
 
 		AboutText = _("Hardware: ") + about.getHardwareTypeString() + "\n"
 		if path.exists('/proc/stb/info/chipset'):
