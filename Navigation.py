@@ -109,11 +109,17 @@ class Navigation:
 					signal = 1
 				else:
 					signal = 0
-				open("/proc/stb/lcd/symbol_scrambled", "w").write(str(signal))
+				f = open("/proc/stb/lcd/symbol_scrambled", "w")
+				f.write(str(signal))
+				f.close()
 			except:
-				open("/proc/stb/lcd/symbol_scrambled", "w").write("0")
+				f = open("/proc/stb/lcd/symbol_scrambled", "w")
+				f.write("0")
+				f.close()
 		elif path.exists("/proc/stb/lcd/symbol_scrambled") and config.lcd.mode.getValue() == '0':
-			open("/proc/stb/lcd/symbol_scrambled", "w").write("0")
+			f = open("/proc/stb/lcd/symbol_scrambled", "w")
+			f.write("0")
+			f.close()
 
 		# Venton series
 		if path.exists("/proc/stb/lcd/symbol_mp3") and config.lcd.mode.getValue() == '1':
@@ -122,11 +128,17 @@ class Navigation:
 					mp3 = 1
 				else:
 					mp3l = 0
-				open("/proc/stb/lcd/symbol_mp3", "w").write(str(mp3))
+				f = open("/proc/stb/lcd/symbol_mp3", "w")
+				f.write(str(mp3))
+				f.close()
 			except:
-				open("/proc/stb/lcd/symbol_mp3", "w").write("0")
+				f = open("/proc/stb/lcd/symbol_mp3", "w")
+				f.write("0")
+				f.close()
 		elif path.exists("/proc/stb/lcd/symbol_mp3") and config.lcd.mode.getValue() == '0':
-			open("/proc/stb/lcd/symbol_mp3", "w").write("0")
+			f = open("/proc/stb/lcd/symbol_mp3", "w")
+			f.write("0")
+			f.close()
 			
 		if ref is None:
 			self.stopService()
