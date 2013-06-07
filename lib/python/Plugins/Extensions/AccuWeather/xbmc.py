@@ -16,56 +16,56 @@ from enigma import loadPic, eTimer
 
 class MeteoMain(Screen):
     skin = '''<screen position="center,center" size="1280,720" title="Weather" flags="wfNoBorder">
-	  <ePixmap position="0,0" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xmbcweather/100.png" />
-	  <!--<widget source="global.CurrentTime" render="Label" position="1180,5" size="80,22" zPosition="1" font="Regular;16" valign="top" halign="left" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
+	  <ePixmap position="0,0" size="1280,720" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xbmcweather/100.png" />
+	  <!--<widget source="global.CurrentTime" render="Label" position="1180,5" size="80,22" zPosition="1" font="Regular;16" valign="top" halign="left" foregroundColor="white" backgroundColor="transparent" transparent="1">
 	  <convert type="ClockToText">Default</convert>
 	  </widget>-->
-	  <widget name="lab1" position="150,100" halign="right" size="220,20" zPosition="1" font="Regular;16" foregroundColor="#dcdcdc" backgroundColor="transpBlack" valign="top"  transparent="1" />
-	  <widget name="lab1b" position="373,100" halign="left" size="210,20" zPosition="1" font="Regular;16" foregroundColor="#ffa500" backgroundColor="transpBlack" valign="top"  transparent="1" />
-	  <widget name="lab2" position="150,120" halign="center" size="440,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab3" position="150,146" halign="center" size="440,20" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab4" position="140,220" halign="right" size="180,80" zPosition="1" font="Regular;80" foregroundColor="white" backgroundColor="transpBlack" valign="top"  transparent="1" />
-	  <widget name="lab4b" position="310,220" halign="right" size="40,30" zPosition="1" font="Regular;24" foregroundColor="white" backgroundColor="transpBlack" valign="top"  transparent="1" />
-	  <widget name="lab5" position="350,185" size="250,180" zPosition="1" alphatest="blend" />
-	  <widget name="lab6" position="150,367" halign="center" size="440,30" zPosition="1" font="Regular;23" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab7" position="140,420" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab7b" position="305,420" halign="left" size="280,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab8" position="140,450" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab8b" position="305,450" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab9" position="140,480" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab9b" position="305,480" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab10" position="140,510" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab10b" position="305,510" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab11" position="140,540" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab11b" position="305,540" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab12" position="140,570" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab12b" position="305,570" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab13" position="700,120" halign="center" size="430,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1"  />
-	  <widget name="lab14" position="730,170" halign="left" size="65,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab14b" position="795,170" halign="left" size="90,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab15" position="895,170" halign="left" size="60,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab15b" position="955,170" halign="left" size="60,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab16" position="730,200" halign="left" size="220,26" zPosition="1" font="Regular;22" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1"  />
-	  <widget name="lab17" position="1010,150" size="100,100" zPosition="1" alphatest="blend" />
-	  <widget name="lab18" position="700,300" halign="center" size="430,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1"  />
-	  <widget name="lab19" position="730,350" halign="left" size="65,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab19b" position="795,350" halign="left" size="90,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab20" position="895,350" halign="left" size="60,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab20b" position="955,350" halign="left" size="60,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab21" position="730,380" halign="left" size="220,26" zPosition="1" font="Regular;22" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1"  />
-	  <widget name="lab22" position="1010,320" size="100,100" zPosition="1" alphatest="blend" />
-	  <widget name="lab23" position="700,470" halign="center" size="430,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab24" position="730,510" halign="right" size="90,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab24b" position="830,510" halign="left" size="100,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab25" position="930,510" halign="left" size="100,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab25b" position="1040,510" halign="left" size="115,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab26" position="730,535" halign="right" size="90,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab26b" position="830,535" halign="left" size="330,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab27" position="730,560" halign="right" size="90,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab27b" position="830,560" halign="left" size="330,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
-	  <widget name="lab28" position="790,595" size="16,16" zPosition="1" alphatest="blend" />
-	  <widget name="lab28a" position="800,590" halign="right" size="20,20" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transpBlack" transparent="1" />
-	  <widget name="lab28b" position="830,590" halign="left" size="330,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transpBlack" valign="top" transparent="1" />
+	  <widget name="lab1" position="150,100" halign="right" size="220,20" zPosition="1" font="Regular;16" foregroundColor="#dcdcdc" backgroundColor="transparent" valign="top"  transparent="1" />
+	  <widget name="lab1b" position="373,100" halign="left" size="210,20" zPosition="1" font="Regular;16" foregroundColor="#ffa500" backgroundColor="transparent" valign="top"  transparent="1" />
+	  <widget name="lab2" position="150,120" halign="center" size="440,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab3" position="150,146" halign="center" size="440,20" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab4" position="140,220" halign="right" size="180,80" zPosition="1" font="Regular;80" foregroundColor="white" backgroundColor="transparent" valign="top"  transparent="1" />
+	  <widget name="lab4b" position="310,220" halign="right" size="40,30" zPosition="1" font="Regular;24" foregroundColor="white" backgroundColor="transparent" valign="top"  transparent="1" />
+	  <widget name="lab5" position="350,185" size="250,180" zPosition="3" transparent="1" alphatest="blend"/>
+	  <widget name="lab6" position="150,367" halign="center" size="440,30" zPosition="1" font="Regular;23" valign="top" foregroundColor="white" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab7" position="140,420" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab7b" position="305,420" halign="left" size="280,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab8" position="140,450" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab8b" position="305,450" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab9" position="140,480" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab9b" position="305,480" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab10" position="140,510" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab10b" position="305,510" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab11" position="140,540" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab11b" position="305,540" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab12" position="140,570" halign="right" size="150,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab12b" position="305,570" halign="left" size="285,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab13" position="700,120" halign="center" size="430,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transparent" transparent="1"  />
+	  <widget name="lab14" position="730,170" halign="left" size="65,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab14b" position="795,170" halign="left" size="90,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab15" position="895,170" halign="left" size="60,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab15b" position="955,170" halign="left" size="60,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab16" position="730,200" halign="left" size="220,26" zPosition="1" font="Regular;22" valign="top" foregroundColor="white" backgroundColor="transparent" transparent="1"  />
+	  <widget name="lab17" position="1010,150" size="100,100" zPosition="1" alphatest="blend" transparent="1" />
+	  <widget name="lab18" position="700,300" halign="center" size="430,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transparent" transparent="1"  />
+	  <widget name="lab19" position="730,350" halign="left" size="65,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab19b" position="795,350" halign="left" size="90,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab20" position="895,350" halign="left" size="60,24" zPosition="1" font="Regular;19" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab20b" position="955,350" halign="left" size="60,24" zPosition="1" font="Regular;19" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab21" position="730,380" halign="left" size="220,26" zPosition="1" font="Regular;22" valign="top" foregroundColor="white" backgroundColor="transparent" transparent="1"  />
+	  <widget name="lab22" position="1010,320" size="100,100" zPosition="1" alphatest="blend" transparent="1" />
+	  <widget name="lab23" position="700,470" halign="center" size="430,26" zPosition="1" font="Regular;24" valign="top" foregroundColor="white" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab24" position="730,510" halign="right" size="90,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab24b" position="830,510" halign="left" size="100,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab25" position="930,510" halign="left" size="100,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab25b" position="1040,510" halign="left" size="115,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab26" position="730,535" halign="right" size="90,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab26b" position="830,535" halign="left" size="330,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab27" position="730,560" halign="right" size="90,22" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab27b" position="830,560" halign="left" size="330,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
+	  <widget name="lab28" position="790,595" size="16,16" zPosition="1" alphatest="blend" transparent="1" />
+	  <widget name="lab28a" position="800,590" halign="right" size="20,20" zPosition="1" font="Regular;18" valign="top" foregroundColor="#8F8F8F" backgroundColor="transparent" transparent="1" />
+	  <widget name="lab28b" position="830,590" halign="left" size="330,22" zPosition="1" font="Regular;18" foregroundColor="white" backgroundColor="transparent" valign="top" transparent="1" />
 	  </screen>'''
 
     def __init__(self, session):
@@ -188,7 +188,7 @@ class MeteoMain(Screen):
                 txt = str(weather_data['condition']['temp'])
                 self['lab4'].setText(txt)
                 self['lab4b'].setText('\xc2\xb0C')
-                icon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xmbcweather/%s.png' % str(weather_data['condition']['code'])
+                icon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xbmcweather/%s.png' % str(weather_data['condition']['code'])
                 myicon = self.checkIcon(icon)
                 png = loadPic(myicon, 250, 180, 0, 0, 0, 0)
                 self['lab5'].instance.setPixmap(png)
@@ -223,7 +223,7 @@ class MeteoMain(Screen):
                 self['lab15b'].setText(txt)
                 txt = str(weather_data['forecasts'][0]['text'])
                 self['lab16'].setText(txt)
-                icon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xmbcweather/small/%s.png' % str(weather_data['forecasts'][0]['code'])
+                icon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xbmcweather/small/%s.png' % str(weather_data['forecasts'][0]['code'])
                 myicon = self.checkIcon(icon)
                 png = loadPic(myicon, 100, 100, 0, 0, 0, 0)
                 self['lab17'].instance.setPixmap(png)
@@ -237,7 +237,7 @@ class MeteoMain(Screen):
                 self['lab20b'].setText(txt)
                 txt = str(weather_data['forecasts'][1]['text'])
                 self['lab21'].setText(txt)
-                icon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xmbcweather/small/%s.png' % str(weather_data['forecasts'][1]['code'])
+                icon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xbmcweather/small/%s.png' % str(weather_data['forecasts'][1]['code'])
                 myicon = self.checkIcon(icon)
                 png = loadPic(myicon, 100, 100, 0, 0, 0, 0)
                 self['lab22'].instance.setPixmap(png)
@@ -254,7 +254,7 @@ class MeteoMain(Screen):
                 self['lab27'].setText(_('Country :'))
                 txt = str(weather_data['location']['country'])
                 self['lab27b'].setText(txt)
-                myicon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xmbcweather/red.png'
+                myicon = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/xbmcweather/red.png'
                 png = loadPic(myicon, 16, 16, 0, 0, 0, 0)
                 self['lab28'].instance.setPixmap(png)
                 self['lab28a'].setText(':')
