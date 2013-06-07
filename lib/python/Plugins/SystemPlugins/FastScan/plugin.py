@@ -154,20 +154,20 @@ class FastScanScreen(ConfigListScreen, Screen):
 		self.providers['Tricolor'] = (0, 900, True)
 		
 		#orgin
-		#self.providers['Canal Digitaal'] = (0, 900, True)
-		#self.providers['TV Vlaanderen'] = (0, 910, True)
-		#self.providers['TéléSAT'] = (0, 920, True)
-		#self.providers['Mobistar NL'] = (0, 930, False)
-		#self.providers['Mobistar FR'] = (0, 940, False)
-		#self.providers['AustriaSat'] = (0, 950, False)
-		#self.providers['Skylink Czech Republic'] = (1, 30, False)
-		#self.providers['Skylink Slovak Republic'] = (1, 31, False)
-		#self.providers['Canal Digitaal Astra3'] = (2, 900, True)
-		#self.providers['TV Vlaanderen Astra3'] = (2, 910, True)
-		#self.providers['TéléSAT Astra3'] = (2, 920, True)
-		#self.providers['Mobistar NL Astra3'] = (2, 930, False)
-		#self.providers['Mobistar FR Astra3'] = (2, 940, False)
-		#self.providers['AustriaSat Astra3'] = (2, 950, False)
+		self.providers['Canal Digitaal'] = (0, 900, True)
+		self.providers['TV Vlaanderen'] = (0, 910, True)
+		self.providers['TéléSAT'] = (0, 920, True)
+		self.providers['Mobistar NL'] = (0, 930, False)
+		self.providers['Mobistar FR'] = (0, 940, False)
+		self.providers['AustriaSat'] = (0, 950, False)
+		self.providers['Skylink Czech Republic'] = (1, 30, False)
+		self.providers['Skylink Slovak Republic'] = (1, 31, False)
+		self.providers['Canal Digitaal Astra3'] = (2, 900, True)
+		self.providers['TV Vlaanderen Astra3'] = (2, 910, True)
+		self.providers['TéléSAT Astra3'] = (2, 920, True)
+		self.providers['Mobistar NL Astra3'] = (2, 930, False)
+		self.providers['Mobistar FR Astra3'] = (2, 940, False)
+		self.providers['AustriaSat Astra3'] = (2, 950, False)
 
 		self.transponders = ((12515000, 22000000, eDVBFrontendParametersSatellite.FEC_5_6, 192,
 			eDVBFrontendParametersSatellite.Polarisation_Horizontal, eDVBFrontendParametersSatellite.Inversion_Unknown,
@@ -388,7 +388,7 @@ def FastScanMain(session, **kwargs):
 
 def FastScanStart(menuid, **kwargs):
 	from Components.About import about
-	if menuid == "scan" and (about.getHardwareTypeString() == "INI-5000RU" or about.getHardwareTypeString() == "INI-1000RU"):
+	if menuid == "scan":
 			return [(_("Fast Scan"), FastScanMain, "fastscan", None)]     
 	else:
 		return []
