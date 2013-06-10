@@ -1,6 +1,6 @@
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
-from Components.config import config, ConfigText, ConfigPassword, KEY_LEFT, KEY_RIGHT, KEY_0, KEY_DELETE, KEY_BACKSPACE, KEY_ASCII, ConfigSelection, ConfigBoolean
+from Components.config import config, ConfigText, ConfigPassword, KEY_LEFT, KEY_RIGHT, KEY_0, KEY_DELETE, KEY_BACKSPACE, KEY_ASCII
 
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
@@ -8,9 +8,7 @@ from Components.Slider import Slider
 from Components.ActionMap import NumberActionMap
 from Components.ConfigList import ConfigList
 from Components.Sources.List import List
-from Components.config import config
 from enigma import eTimer, eEnv, getMachineBrand, getMachineName
-
 
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
@@ -72,15 +70,14 @@ class Wizard(Screen):
 				if attrs.has_key('laststep'):
 					self.wizard[self.lastStep]["laststep"] = str(attrs.get('laststep'))
 			elif (name == "text"):
-				self.wizard[self.lastStep]["text"] = str(attrs.get('value')).replace("\\n", "\n").replace("STB_BOX","%s %s" % (getMachineBrand(), getMachineName()))
+				self.wizard[self.lastStep]["text"] = str(attrs.get('value')).replace("\\n", "\n").replace("%s %s","%s %s" % (getMachineBrand(), getMachineName()))
 			elif (name == "displaytext"):
-				self.wizard[self.lastStep]["displaytext"] = str(attrs.get('value')).replace("\\n", "\n").replace("STB_BOX","%s %s" % (getMachineBrand(), getMachineName()))
+				self.wizard[self.lastStep]["displaytext"] = str(attrs.get('value')).replace("\\n", "\n").replace("%s %s","%s %s" % (getMachineBrand(), getMachineName()))
 			elif (name == "list"):
 				if (attrs.has_key('type')):
 					if attrs["type"] == "dynamic":
 						self.wizard[self.lastStep]["dynamiclist"] = attrs.get("source")
-					if attrs["type"] == "config":
-						self.wizard[self.lastStep]["configelement"] = attrs.get("configelement")
+					#self.wizard[self.lastStep]["list"].append(("Hallo", "test"))
 				if (attrs.has_key("evaluation")):
 					#print "evaluation"
 					self.wizard[self.lastStep]["listevaluation"] = attrs.get("evaluation")
@@ -333,11 +330,6 @@ class Wizard(Screen):
 				nextStep = self["list"].current[1]
 				if (self.wizard[currStep].has_key("listevaluation")):
 					exec("self." + self.wizard[self.currStep]["listevaluation"] + "('" + nextStep + "')")
-				elif (self.wizard[currStep].has_key("configelement")):
-					configelement = self.wizard[currStep]["configelement"]
-					element = eval(configelement)
-					element.value = self["list"].current[1]
-					element.save()
 				else:
 					self.currStep = self.getStepWithID(nextStep)
 
@@ -552,7 +544,6 @@ class Wizard(Screen):
 		else:
 			if self.showList:
 # 				print "showing list,", self.currStep
-				index = 0
 				for renderer in self.renderer:
 					rootrenderer = renderer
 					while renderer.source is not None:
@@ -564,37 +555,20 @@ class Wizard(Screen):
 				#self["list"].instance.setZPosition(1)
 				self.list = []
 				if (self.wizard[self.currStep].has_key("dynamiclist")):
-					dynamiclist = self.wizard[self.currStep]["dynamiclist"]
-					print "dynamic list, calling", dynamiclist
+# 					print "dynamic list, calling",  self.wizard[self.currStep]["dynamiclist"]
 					newlist = eval("self." + self.wizard[self.currStep]["dynamiclist"] + "()")
 					#self.wizard[self.currStep]["evaluatedlist"] = []
 					for entry in newlist:
 						#self.wizard[self.currStep]["evaluatedlist"].append(entry)
 						self.list.append(entry)
 					#del self.wizard[self.currStep]["dynamiclist"]
-				if (self.wizard[self.currStep].has_key("configelement")):
-					configelement = self.wizard[self.currStep]["configelement"]
-					print "configelement:", configelement
-					element = eval(configelement)
-					
-					if isinstance(element, ConfigSelection):
-						for choice in element.choices.choices:
-							print "choice:", choice
-							self.list.append((choice[1], choice[0]))
-						index = element.getIndex()
-					elif isinstance(element, ConfigBoolean):
-						self.list.append((_(element.descriptions[True]), True))
-						self.list.append((_(element.descriptions[False]), False))
-						index = 1
-						if element.value:
-							index = 0
 				if (len(self.wizard[self.currStep]["list"]) > 0):
 					#self["list"].instance.setZPosition(2)
 					for x in self.wizard[self.currStep]["list"]:
 						self.list.append((self.getTranslation(x[0]), x[1]))
 				self.wizard[self.currStep]["evaluatedlist"] = self.list
 				self["list"].list = self.list
-				self["list"].index = index
+				self["list"].index = 0
 			else:
 				self["list"].hide()
 
