@@ -484,7 +484,7 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, \
 		except:
 			model = "unknown"
 		if model.startswith("ini-10") or model.startswith("ini-30") or model.startswith("ini-50") or model.startswith("ini-70") or model.startswith("ini-90"):
-				self.session.open(MessageBox, _("Your STB_BOX does not support PiP while watching a movie"), type = MessageBox.TYPE_INFO,timeout = 5 )
+				self.session.open(MessageBox, _("Your %s %s does not support PiP HD") % (enigma.getMachineBrand(), enigma.getMachineName()), type = MessageBox.TYPE_INFO,timeout = 5 )
 		else:
 			slist = self.servicelist
 			if self.session.pipshown:
