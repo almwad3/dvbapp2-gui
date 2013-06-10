@@ -49,7 +49,7 @@ from Tools.Directories import pathExists, fileExists, getRecordingFilename, copy
 from Tools.TimeShift import CopyTimeshiftJob, MergeTimeshiftJob, CreateAPSCFilesJob
 from Tools.KeyBindings import getKeyDescription
 
-from enigma import getBoxType, eBackgroundFileEraser, eTimer, eServiceCenter, eDVBServicePMTHandler, iServiceInformation, iPlayableService, eServiceReference, eEPGCache, eActionMap, getBoxType
+from enigma import getBoxType, eBackgroundFileEraser, eTimer, eServiceCenter, eDVBServicePMTHandler, iServiceInformation, iPlayableService, eServiceReference, eEPGCache, eActionMap, getBoxType, getMachineBrand, getMachineName
 
 from time import time, localtime, strftime
 from os import stat as os_stat, rename as os_rename
@@ -3497,7 +3497,7 @@ class InfoBarPiP:
 					self.session.pipshown = False
 					del self.session.pip
 			else:
-				self.session.open(MessageBox, _("Your STB_BOX does not support PiP HD"), type = MessageBox.TYPE_INFO,timeout = 5 )
+				self.session.open(MessageBox, _("Your %s %s does not support PiP HD") % (getMachineBrand(), getMachineName()), type = MessageBox.TYPE_INFO,timeout = 5 )
 
 	def swapPiP(self):
 		swapservice = self.session.nav.getCurrentlyPlayingServiceOrGroup()
