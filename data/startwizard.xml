@@ -12,7 +12,7 @@ self.selectKey("DOWN")
 			</code>
 		</step>
 		<step id="network" >
-			<text value="Please connect your STB_BOX to the internet" />
+			<text value="Please connect your %s %s to the internet" />
 			<list>
 				<listentry caption="Check the internet connection" step="update" />
 				<listentry caption="Skip internet connection check (disables automatic package installation)" step="nima" />
@@ -35,8 +35,8 @@ self.selectKey("OK")
 			<condition>
 self.condition = not config.misc.installwizard.ipkgloaded.value
 			</condition>
-			<text value="Your STB_BOX does not have an internet connection" />
-			<displaytext value="Your STB_BOX is not connected to the internet" />
+			<text value="Your %s %s does not have an internet connection" />
+			<displaytext value="Your %s %s is not connected to the internet" />
 			<list>
 				<listentry caption="Check the internet connection again" step="update" />
 				<listentry caption="Skip internet connection check (disables automatic package installation)" step="nima" />
@@ -164,14 +164,14 @@ self.selectKey("RIGHT")
 			</code>
 		</step>
 		<step id="expert">
-			<text value="Your STB_BOX offers three levels of configuration options:\n\nSimple - We suggest this level if this is your first contact with a STB_BOX.\nIntermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your STB_BOX.\nExpert - This gives you full control over all available settings of your STB_BOX.\n\nWarning: Higher levels may lead to increased usage complexity." />
+			<text value="Your %s %s offers three levels of configuration options:\n\nSimple - We suggest this level if this is your first contact with a %s %s.\nIntermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your %s %s.\nExpert - This gives you full control over all available settings of your %s %s.\n\nWarning: Higher levels may lead to increased usage complexity." />
 			<list type="config" configelement="config.usage.setup_level" />
 		</step>
 		<step id="end" laststep="true">
 			<condition>
 self.condition = self.isLastWizard
 			</condition>
-			<text value="Thank you for using the wizard. Your STB_BOX is now ready to use.\nPlease press OK to start using your STB_BOX." />
+			<text value="Thank you for using the wizard. Your %s %s is now ready to use.\nPlease press OK to start using your %s %s." />
 			<code>
 self.clearSelectedKeys()
 self.selectKey("OK")
