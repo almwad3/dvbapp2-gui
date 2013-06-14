@@ -3475,30 +3475,33 @@ class InfoBarPiP:
 			slist.togglePipzap()
 
 	def showPiP(self):
-		service = self.session.nav.getCurrentService()
-		info = service and service.info()
-		xres = str(info.getInfo(iServiceInformation.sVideoWidth))
-		
-		if self.session.pipshown:
-			slist = self.servicelist
-			if slist and slist.dopipzap:
-				slist.togglePipzap()
-			del self.session.pip
-			self.session.pipshown = False
-		else:
-			if int(xres) <= 720:
-				self.session.pip = self.session.instantiateDialog(PictureInPicture)
-				self.session.pip.show()
-				newservice = self.servicelist.servicelist.getCurrent()
-				if self.session.pip.playService(newservice):
-					self.session.pipshown = True
-					self.session.pip.servicePath = self.servicelist.getCurrentServicePath()
-				else:
-					self.session.pipshown = False
-					del self.session.pip
+		try:
+			service = self.session.nav.getCurrentService()
+			info = service and service.info()
+			xres = str(info.getInfo(iServiceInformation.sVideoWidth))
+			
+			if self.session.pipshown:
+				slist = self.servicelist
+				if slist and slist.dopipzap:
+					slist.togglePipzap()
+				del self.session.pip
+				self.session.pipshown = False
 			else:
-				self.session.open(MessageBox, _("Your %s %s does not support PiP HD") % (getMachineBrand(), getMachineName()), type = MessageBox.TYPE_INFO,timeout = 5 )
-
+				if int(xres) <= 720:
+					self.session.pip = self.session.instantiateDialog(PictureInPicture)
+					self.session.pip.show()
+					newservice = self.servicelist.servicelist.getCurrent()
+					if self.session.pip.playService(newservice):
+						self.session.pipshown = True
+						self.session.pip.servicePath = self.servicelist.getCurrentServicePath()
+					else:
+						self.session.pipshown = False
+						del self.session.pip
+				else:
+					self.session.open(MessageBox, _("Your %s %s does not support PiP HD") % (getMachineBrand(), getMachineName()), type = MessageBox.TYPE_INFO,timeout = 5 )
+		except:
+			pass
+		      
 	def swapPiP(self):
 		swapservice = self.session.nav.getCurrentlyPlayingServiceOrGroup()
 		pipref = self.session.pip.getCurrentService()
