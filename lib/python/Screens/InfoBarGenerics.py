@@ -65,10 +65,10 @@ from Screens.Setup import Setup
 import Screens.Standby
 
 def isStandardInfoBar(self):
-	return ".InfoBar'>" in `self`
+	return self.__class__.__name__ == "InfoBar"
 
 def isMoviePlayerInfoBar(self):
-	return ".MoviePlayer" in `self`
+	return self.__class__.__name__ == "MoviePlayer"
 
 def setResumePoint(session):
 	global resumePointCache, resumePointCacheLast
@@ -179,7 +179,7 @@ class InfoBarUnhandledKey:
 		return 0
 
 	def closeSIB(self, key):
-		if key >= 12 and key != 352 and key != 402 and key != 403 and key != 407 and key != 412 :
+		if key >= 12 and key != 352 and key != 103 and key != 108 and key != 402 and key != 403 and key != 407 and key != 412 :
 			return True
 		else:
 			return False
@@ -1800,7 +1800,7 @@ class InfoBarPVRState:
 			self["state"].setText("")
 			self["statusicon"].setPixmapNum(6)
 			self["speed"].setText("")
-		if self.execing and self.seekstate != self.SEEK_STATE_EOF and not config.usage.movieplayer_pvrstate.getValue():
+		if self.shown and self.seekstate != self.SEEK_STATE_EOF and not config.usage.movieplayer_pvrstate.getValue():
 			self.pvrStateDialog.show()
 			self.startHideTimer()
 
@@ -1881,16 +1881,12 @@ class InfoBarTimeshiftState(InfoBarPVRState):
 		self.onHide.append(self.__hideTimeshiftState)
 
 	def _mayShow(self):
-		if self.execing and self.timeshiftEnabled() and self.isSeekable() and self._InfoBarShowHide__state == self.STATE_SHOWN:
+		if self.shown and self.timeshiftEnabled() and self.isSeekable():
 			InfoBarTimeshift.ptsSeekPointerSetCurrentPos(self)
 			if config.timeshift.showinfobar.getValue():
 				self["TimeshiftSeekPointerActions"].setEnabled(True)
 			self.pvrStateDialog.show()
 			self.startHideTimer()
-
-		elif self.execing and self.timeshiftEnabled() and not self.isSeekable():
-			self["TimeshiftSeekPointerActions"].setEnabled(False)
-			self.pvrStateDialog.hide()
 
 	def __hideTimeshiftState(self):
 		self["TimeshiftSeekPointerActions"].setEnabled(False)
@@ -2156,7 +2152,6 @@ class InfoBarTimeshift:
 			# Delete Timeshift Records on zap
 			self.pts_eventcount = 0
 			print 'AAAAAAAAAAAAAAAAAAAAAA'
-			print 'TIME:', time()
 			# self.pts_cleanUp_timer.start(1000, True)
 
 	def __evEventInfoChanged(self):
@@ -2428,8 +2423,6 @@ class InfoBarTimeshift:
 			filelist.sort()
 
 			for filename in filelist:
-				print os.path.splitext(filename)
-				print 'LEN',len(os.path.splitext(filename))
 				if filename.startswith("pts_livebuffer") and not os.path.splitext(filename)[1]:
 					print "TRUE"
 					statinfo = os.stat("%s%s" % (config.usage.timeshift_path.getValue(),filename))
@@ -2720,11 +2713,7 @@ class InfoBarTimeshift:
 	def ptsCreateHardlink(self):
 		print 'ptsCreateHardlink'
 		for filename in os.listdir(config.usage.timeshift_path.getValue()):
-
-			print os.path.splitext(filename)
-			print 'LEN',len(os.path.splitext(filename))
 			# if filename.startswith("timeshift") and not os.path.splitext(filename)[1]:
-
 			if filename.startswith("timeshift") and not filename.endswith(".sc") and not filename.endswith(".del") and not filename.endswith(".copy"):
 				if os.path.exists("%spts_livebuffer_%s.eit" % (config.usage.timeshift_path.getValue(),self.pts_eventcount)):
 					self.BgFileEraser.erase("%spts_livebuffer_%s.eit" % (config.usage.timeshift_path.getValue(),self.pts_eventcount))
@@ -2734,7 +2723,6 @@ class InfoBarTimeshift:
 					self.BgFileEraser.erase("%spts_livebuffer_%s" % (config.usage.timeshift_path.getValue(),self.pts_eventcount))
 				if os.path.exists("%spts_livebuffer_%s.sc" % (config.usage.timeshift_path.getValue(),self.pts_eventcount)):
 					self.BgFileEraser.erase("%spts_livebuffer_%s.sc" % (config.usage.timeshift_path.getValue(),self.pts_eventcount))
-
 				try:
 					# Create link to pts_livebuffer file
 					os.link("%s%s" % (config.usage.timeshift_path.getValue(),filename), "%spts_livebuffer_%s" % (config.usage.timeshift_path.getValue(),self.pts_eventcount))
@@ -3538,7 +3526,13 @@ class InfoBarInstantRecord:
 			{
 				"instantRecord": (self.instantRecord, _("Instant Record...")),
 			})
-		self.recording = []
+		if isStandardInfoBar(self):
+			self.recording = []
+		else:
+			from Screens.InfoBar import InfoBar
+			InfoBarInstance = InfoBar.instance
+			if InfoBarInstance:
+				self.recording = InfoBarInstance.recording
 
 	def stopCurrentRecording(self, entry = -1):
 		if entry is not None and entry != -1:
@@ -3740,19 +3734,23 @@ class InfoBarInstantRecord:
 						 "\n" + _("No HDD found or HDD not initialized!"), MessageBox.TYPE_ERROR)
 			return
 
-		common =((_("Add recording (stop after current event)"), "event"),
-		(_("Add recording (indefinitely)"), "indefinitely"),
-		(_("Add recording (enter recording duration)"), "manualduration"),
-		(_("Add recording (enter recording endtime)"), "manualendtime"),)
+		if isStandardInfoBar(self):
+			common = ((_("Add recording (stop after current event)"), "event"),
+				(_("Add recording (indefinitely)"), "indefinitely"),
+				(_("Add recording (enter recording duration)"), "manualduration"),
+				(_("Add recording (enter recording endtime)"), "manualendtime"),)
 
-		timeshiftcommon = ((_("Timeshift save recording (stop after current event)"), "savetimeshift"),
-		(_("Timeshift save recording (Select event)"), "savetimeshiftEvent"),)
+			timeshiftcommon = ((_("Timeshift save recording (stop after current event)"), "savetimeshift"),
+				(_("Timeshift save recording (Select event)"), "savetimeshiftEvent"),)
+		else:
+			common = ()
+			timeshiftcommon = ()
 
 		if self.isInstantRecordRunning():
 			title =_("A recording is currently running.\nWhat do you want to do?")
 			list = ((_("Stop recording"), "stop"),) + common + \
-			((_("Change recording (duration)"), "changeduration"),
-			(_("Change recording (endtime)"), "changeendtime"),)
+				((_("Change recording (duration)"), "changeduration"),
+				(_("Change recording (endtime)"), "changeendtime"),)
 			if self.isTimerRecordRunning():
 				list += ((_("Stop timer recording"), "timer"),)
 		else:
@@ -3761,12 +3759,16 @@ class InfoBarInstantRecord:
 
 			if self.isTimerRecordRunning():
 				list += ((_("Stop timer recording"), "timer"),)
-		if self.timeshiftEnabled():
+		if isStandardInfoBar(self) and self.timeshiftEnabled():
 			list = list + timeshiftcommon
 
-		list = list + ((_("Do not record"), "no"),)
-		self.session.openWithCallback(self.recordQuestionCallback, ChoiceBox,title=title,list=list)
-		return
+		if isStandardInfoBar(self):
+			list = list + ((_("Do not record"), "no"),)
+
+		if list:
+			self.session.openWithCallback(self.recordQuestionCallback, ChoiceBox,title=title,list=list)
+		else:
+			return 0
 
 class InfoBarAudioSelection:
 	def __init__(self):
