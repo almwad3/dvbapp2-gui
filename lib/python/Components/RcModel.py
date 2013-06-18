@@ -6,11 +6,11 @@ class RcModel:
 	RCTYPE_DMM = 0
 	RCTYPE_DMM1 = 1
 	RCTYPE_DMM2 = 2
-	RCTYPE_EBOX5000 = 3	
+	RCTYPE_EBOX5000 = 3
 	RCTYPE_ET4X00 = 4
 	RCTYPE_ET6X00 = 5
 	RCTYPE_ET6500 = 6
-	RCTYPE_ET9X00 = 7	
+	RCTYPE_ET9X00 = 7
 	RCTYPE_ET9500 = 8
 	RCTYPE_GB = 9
 	RCTYPE_INI0 = 10
@@ -96,7 +96,7 @@ class RcModel:
 					self.currentRcType = self.RCTYPE_INI2
 			elif model == 'ini-5000' or model == 'ini-7000' or model == 'ini-7012':
 				self.currentRcType = self.RCTYPE_INI1
-			elif model == 'ini-1000' or model == 'ini-1000ru' or model == 'ini-5000ru':
+			elif model == 'ini-1000' or model == 'ini-1000ru' or model == 'ini-5000ru' or model== 'ini-9000':
 				self.currentRcType = self.RCTYPE_INI2
 			elif model == 'ini-1000sv' or model == 'ini-5000sv':
 				self.currentRcType = self.RCTYPE_INI3

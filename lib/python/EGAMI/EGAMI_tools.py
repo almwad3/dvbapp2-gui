@@ -22,7 +22,7 @@ def checkkernel():
 		model = f.read().strip()
 		f.close()
 		if model.startswith("ini-10") or model.startswith("ini-30") or model.startswith("ini-50") or model.startswith("ini-70") or model.startswith("ini-90"):
-			if (about.getKernelVersionString()=="3.6.0"):
+			if (about.getKernelVersionString()=="3.6.0") or :(about.getKernelVersionString()=="3.3.8") 
 				mycheck = 1
 	else:
 	  mycheck = 0
