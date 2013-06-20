@@ -347,7 +347,7 @@ const char *getMachineBrand()
 		
 		if((strcmp(boxtype_name, "ini-1000\n") == 0)  || (strcmp(boxtype_name, "ini-3000\n") == 0) || (strcmp(boxtype_name, "ini-5000\n") == 0) || (strcmp(boxtype_name, "ini-7000\n") == 0) || (strcmp(boxtype_name, "ini-7012\n") == 0))
 		{
-			return "Venton";
+			return "UNiBOX";
 		}
 		else if((strcmp(boxtype_name, "ini-1000sv\n") == 0) || (strcmp(boxtype_name, "ini-5000sv\n") == 0))
 		{
