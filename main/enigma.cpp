@@ -368,7 +368,7 @@ const char *getMachineBrand()
 const char *getMachineName()
 {
 	FILE *boxtype_file;
-	char boxtype_name[10];
+	char boxtype_name[20];
 
 	if((boxtype_file = fopen("/proc/stb/info/boxtype", "r")) != NULL)
 	{
