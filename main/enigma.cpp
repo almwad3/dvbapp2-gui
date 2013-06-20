@@ -377,23 +377,23 @@ const char *getMachineName()
 		
 		if(strcmp(boxtype_name, "ini-1000\n") == 0) 
 		{
-			return "HDe";
+			return "HD-e";
 		}
 		else if(strcmp(boxtype_name, "ini-3000\n") == 0) 
 		{
-			return "HD1";
+			return "HD-1";
 		}
 		else if(strcmp(boxtype_name, "ini-5000\n") == 0) 
 		{
-			return "HD2";
+			return "HD-2";
 		}
 		else if(strcmp(boxtype_name, "ini-7000\n") == 0) 
 		{
-			return "HD3";
+			return "HD-3";
 		}
 		else if(strcmp(boxtype_name, "ini-7012\n") == 0) 
 		{
-			return "HD3";
+			return "HD-3";
 		}
 		else if(strcmp(boxtype_name, "ini-1000sv\n") == 0) 
 		{
