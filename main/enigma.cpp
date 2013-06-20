@@ -336,12 +336,87 @@ const char *getDistro()
 
 const char *getMachineBrand()
 {
-	return MACHINE_BRAND;
+	FILE *boxtype_file;
+	char boxtype_name[20];
+
+	// for INI resellers
+	if((boxtype_file = fopen("/proc/stb/info/boxtype", "r")) != NULL)
+	{
+		fgets(boxtype_name, sizeof(boxtype_name), boxtype_file);
+		fclose(boxtype_file);
+		
+		if((strcmp(boxtype_name, "ini-1000\n") == 0)  || (strcmp(boxtype_name, "ini-3000\n") == 0) || (strcmp(boxtype_name, "ini-5000\n") == 0) || (strcmp(boxtype_name, "ini-7000\n") == 0) || (strcmp(boxtype_name, "ini-7012\n") == 0))
+		{
+			return "Venton";
+		}
+		else if((strcmp(boxtype_name, "ini-1000sv\n") == 0) || (strcmp(boxtype_name, "ini-5000sv\n") == 0))
+		{
+			return "Miraclebox";
+		}
+		else if((strcmp(boxtype_name, "ini-1000ru\n") == 0) || (strcmp(boxtype_name, "ini-5000ru\n") == 0))
+		{
+			return "Sezam";
+		}
+		else
+		{
+			return MACHINE_BRAND;
+		}
+	}
+	return MACHINE_BRAND; // to avoid if no /proc/stb/info/boxtype
 }
 
 const char *getMachineName()
 {
-	return MACHINE_NAME;
+	FILE *boxtype_file;
+	char boxtype_name[10];
+
+	if((boxtype_file = fopen("/proc/stb/info/boxtype", "r")) != NULL)
+	{
+		fgets(boxtype_name, sizeof(boxtype_name), boxtype_file);
+		fclose(boxtype_file);
+		
+		if(strcmp(boxtype_name, "ini-1000\n") == 0) 
+		{
+			return "HDe";
+		}
+		else if(strcmp(boxtype_name, "ini-3000\n") == 0) 
+		{
+			return "HD1";
+		}
+		else if(strcmp(boxtype_name, "ini-5000\n") == 0) 
+		{
+			return "HD2";
+		}
+		else if(strcmp(boxtype_name, "ini-7000\n") == 0) 
+		{
+			return "HD3";
+		}
+		else if(strcmp(boxtype_name, "ini-7012\n") == 0) 
+		{
+			return "HD3";
+		}
+		else if(strcmp(boxtype_name, "ini-1000sv\n") == 0) 
+		{
+			return "Premium Mini";
+		}
+		else if(strcmp(boxtype_name, "ini-5000sv\n") == 0) 
+		{
+			return "Premium Twin";
+		}
+		else if(strcmp(boxtype_name, "ini-1000ru\n") == 0) 
+		{
+			return "HD-1000";
+		} 
+		else if(strcmp(boxtype_name, "ini-5000ru\n") == 0) 
+		{
+			return "HD-5000";
+		}
+		else
+		{
+			return MACHINE_NAME;
+		}
+	}
+	return MACHINE_NAME; // to avoid if no /proc/stb/info/boxtype
 }
 
 const char *getImageVersionString()
@@ -364,27 +439,27 @@ const char *getBoxType()
   	// hack way to not change all in code
 	if(strcmp(BOXTYPE, "sezamhdx") == 0) 
 	{
-	  return "ventonhdx";
+		return "ventonhdx";
 	}
 	else if(strcmp(BOXTYPE, "sezamhde") == 0) 
 	{
-	  return "ventonhde";
+		return "ventonhde";
 	}
 	else if(strcmp(BOXTYPE, "inihdx") == 0) 
 	{
-	  return "ventonhdx";
+		return "ventonhdx";
 	}  
 	else if(strcmp(BOXTYPE, "inihde") == 0) 
 	{
-	  return "ventonhde";
+		return "ventonhde";
 	} 
 	else if(strcmp(BOXTYPE, "ini9000") == 0) 
 	{
-	  return "ventonhdx";
+		return "ventonhdx";
 	}
 	else
 	{
-	  return BOXTYPE;
+		return BOXTYPE;
 	}
 }
 
