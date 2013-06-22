@@ -339,7 +339,7 @@ const char *getMachineBrand()
 	FILE *boxtype_file;
 	char boxtype_name[20];
 
-	// for INI resellers
+	// for OEM resellers
 	if((boxtype_file = fopen("/proc/stb/info/boxtype", "r")) != NULL)
 	{
 		fgets(boxtype_name, sizeof(boxtype_name), boxtype_file);
@@ -357,6 +357,10 @@ const char *getMachineBrand()
 		{
 			return "Sezam";
 		}
+		else if((strcmp(boxtype_name, "xp1000s\n") == 0))
+		{
+			return "Octagon";
+		}
 		else
 		{
 			return MACHINE_BRAND;
@@ -370,6 +374,7 @@ const char *getMachineName()
 	FILE *boxtype_file;
 	char boxtype_name[20];
 
+	// for OEM resellers
 	if((boxtype_file = fopen("/proc/stb/info/boxtype", "r")) != NULL)
 	{
 		fgets(boxtype_name, sizeof(boxtype_name), boxtype_file);
@@ -411,6 +416,10 @@ const char *getMachineName()
 		{
 			return "HD-5000";
 		}
+		else if(strcmp(boxtype_name, "xp1000s\n") == 0) 
+		{
+			return "SF8 HD";
+		}	
 		else
 		{
 			return MACHINE_NAME;
