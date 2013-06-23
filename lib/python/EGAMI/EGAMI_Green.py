@@ -100,7 +100,7 @@ class EGExtrasMenu(Screen):
 		self.list = []
 		mypath = resolveFilename(SCOPE_CURRENT_SKIN)
 		if not fileExists(mypath + "egami_icons"):
-			mypath = "/usr/share/enigma2/"
+			mypath = "/usr/share/enigma2/skin_default/"
 
 		mypixmap = (mypath + "egami_icons/swap_manager.png")
 		png = LoadPixmap(mypixmap)

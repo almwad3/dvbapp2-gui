@@ -127,7 +127,7 @@ class EGDeviceManager(Screen):
     def buildMy_rec(self, device):
 		mypath = resolveFilename(SCOPE_CURRENT_SKIN)
 		if not fileExists(mypath + "egami_icons"):
-		    mypath = "/usr/share/enigma2/"
+		    mypath = "/usr/share/enigma2/skin_default/"
 		    
                 try:
                         if device.find('1') > 0:
