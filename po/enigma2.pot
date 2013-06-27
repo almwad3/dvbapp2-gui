@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-16 19:39+0200\n"
+"POT-Creation-Date: 2013-06-27 10:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,9 +45,10 @@ msgid ""
 "After pressing OK, please wait!"
 msgstr ""
 
+#, python-format
 msgid ""
 "\n"
-"Backup your linux box settings."
+"Backup your %s %s settings."
 msgstr ""
 
 msgid ""
@@ -55,14 +56,16 @@ msgid ""
 "Edit the upgrade source address."
 msgstr ""
 
+#, python-format
 msgid ""
 "\n"
-"Manage extensions or plugins for your linux box"
+"Manage extensions or plugins for your %s %s"
 msgstr ""
 
+#, python-format
 msgid ""
 "\n"
-"Online update of your linux box software."
+"Online update of your %s %s software."
 msgstr ""
 
 msgid ""
@@ -70,19 +73,21 @@ msgid ""
 "Press OK on your remote control to continue."
 msgstr ""
 
+#, python-format
+msgid ""
+"\n"
+"Restore your %s %s settings."
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"Restore your %s %s with a new firmware."
+msgstr ""
+
 msgid ""
 "\n"
 "Restore your backups by date."
-msgstr ""
-
-msgid ""
-"\n"
-"Restore your linux box settings."
-msgstr ""
-
-msgid ""
-"\n"
-"Restore your linux box with a new firmware."
 msgstr ""
 
 msgid ""
@@ -278,6 +283,34 @@ msgid "%k:%M %e/%m"
 msgstr ""
 
 #, python-format
+msgid "%s %s advanced remote control (native)"
+msgstr ""
+
+#, python-format
+msgid "%s %s format data DVD (HDTV compatible)"
+msgstr ""
+
+#, python-format
+msgid "%s %s front panel"
+msgstr ""
+
+#, python-format
+msgid "%s %s ir keyboard"
+msgstr ""
+
+#, python-format
+msgid "%s %s ir mouse"
+msgstr ""
+
+#, python-format
+msgid "%s %s remote control (native)"
+msgstr ""
+
+#, python-format
+msgid "%s %s software because updates are available."
+msgstr ""
+
+#, python-format
 msgid "%s (%s)\n"
 msgstr ""
 
@@ -340,6 +373,12 @@ msgstr ""
 msgid "/media/usb/"
 msgstr ""
 
+msgid "0"
+msgstr ""
+
+msgid "1"
+msgstr ""
+
 msgid "1 GB"
 msgstr ""
 
@@ -400,6 +439,9 @@ msgstr ""
 msgid "1X"
 msgstr ""
 
+msgid "2"
+msgstr ""
+
 msgid "2. STEP - Choose backup location"
 msgstr ""
 
@@ -421,6 +463,9 @@ msgstr ""
 msgid "2X"
 msgstr ""
 
+msgid "3"
+msgstr ""
+
 msgid "30"
 msgstr ""
 
@@ -437,6 +482,9 @@ msgid "3D Surround"
 msgstr ""
 
 msgid "3X"
+msgstr ""
+
+msgid "4"
 msgstr ""
 
 msgid "4:3"
@@ -499,24 +547,45 @@ msgid ""
 "Do you want to keep your version?"
 msgstr ""
 
+#, python-format
 msgid ""
 "A finished power timer wants to shut down\n"
-"your linux box. Shutdown now?"
+"your %s %s. Shutdown now?"
 msgstr ""
 
+#, python-format
+msgid ""
+"A finished powertimer wants to reboot your %s %s.\n"
+"Do that now?"
+msgstr ""
+
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+
+#, python-format
 msgid ""
 "A finished powertimer wants to set your\n"
-"linux box to standby. Do that now?"
+"%s %s to standby. Do that now?"
 msgstr ""
 
+#, python-format
+msgid ""
+"A finished powertimer wants to shutdown your %s %s.\n"
+"Do that now?"
+msgstr ""
+
+#, python-format
 msgid ""
 "A finished record timer wants to set your\n"
-"linux box to standby. Do that now?"
+"%s %s to standby. Do that now?"
 msgstr ""
 
+#, python-format
 msgid ""
 "A finished record timer wants to shut down\n"
-"your linux box. Shutdown now?"
+"your %s %s. Shutdown now?"
 msgstr ""
 
 msgid "A graphical EPG for all services of an specific bouquet"
@@ -558,14 +627,16 @@ msgid ""
 "Do you want to disable the second network interface?"
 msgstr ""
 
+#, python-format
 msgid ""
 "A sleep timer wants to set your\n"
-"linux box to standby. Do that now?"
+"%s %s to standby. Do that now?"
 msgstr ""
 
+#, python-format
 msgid ""
 "A sleep timer wants to shut down\n"
-"your linux box. Shutdown now?"
+"your %s %s. Shutdown now?"
 msgstr ""
 
 msgid "A small overview of the available icon states and actions."
@@ -607,6 +678,12 @@ msgstr ""
 msgid "Accesspoint:"
 msgstr ""
 
+msgid "AccuWeatherWeatherPlugin"
+msgstr ""
+
+msgid "AccuWeatherWeatherPlugin: Select Source"
+msgstr ""
+
 msgid "Activate"
 msgstr ""
 
@@ -617,9 +694,6 @@ msgid "Activate Picture in Picture"
 msgstr ""
 
 msgid "Activate current configuration"
-msgstr ""
-
-msgid "Activate permanent clock"
 msgstr ""
 
 msgid "Active"
@@ -719,9 +793,6 @@ msgid "Adding schedule..."
 msgstr ""
 
 msgid "Additional Info"
-msgstr ""
-
-msgid "Additional ZAP informations..."
 msgstr ""
 
 msgid "Additional stream informations..."
@@ -832,6 +903,9 @@ msgid "Alternative"
 msgstr ""
 
 msgid "Always ask"
+msgstr ""
+
+msgid "Amount of Precipitacion"
 msgstr ""
 
 msgid "An empty filename is illegal."
@@ -1298,6 +1372,9 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
+msgid "Cancel save timeshift as movie"
+msgstr ""
+
 msgid "Cannot delete file"
 msgstr ""
 
@@ -1335,9 +1412,6 @@ msgid "Center time-labels and remove date"
 msgstr ""
 
 msgid "Change city"
-msgstr ""
-
-msgid "Change permanent clock position"
 msgstr ""
 
 msgid "Change pin code"
@@ -1455,6 +1529,12 @@ msgstr ""
 msgid "Circular right"
 msgstr ""
 
+msgid "City"
+msgstr ""
+
+msgid "City or Postal Code"
+msgstr ""
+
 msgid "Cleaning Trashes"
 msgstr ""
 
@@ -1495,6 +1575,9 @@ msgid "Close dialog"
 msgstr ""
 
 msgid "Close title selection"
+msgstr ""
+
+msgid "Cloudiness"
 msgstr ""
 
 msgid "Code rate HP"
@@ -1552,6 +1635,9 @@ msgid "Complete"
 msgstr ""
 
 msgid "Complex (allows mixing audio tracks and aspects)"
+msgstr ""
+
+msgid "Comunity"
 msgstr ""
 
 msgid "Config default audio language..."
@@ -1683,11 +1769,6 @@ msgstr ""
 msgid "Cores: %s"
 msgstr ""
 
-msgid ""
-"Could not activate Permanent-Timeshift!\n"
-"Timeshift-Path does not exist"
-msgstr ""
-
 msgid "Could not find installed channel list."
 msgstr ""
 
@@ -1713,6 +1794,9 @@ msgstr ""
 msgid "Could not save configfile %s!"
 msgstr ""
 
+msgid "Country"
+msgstr ""
+
 msgid "Country :"
 msgstr ""
 
@@ -1729,9 +1813,6 @@ msgid "Create directory"
 msgstr ""
 
 msgid "Creating AP and SC Files"
-msgstr ""
-
-msgid "Creating Hardlink to Timeshift file failed!"
 msgstr ""
 
 #, python-format
@@ -1876,9 +1957,6 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-msgid "Deactivate permanent clock"
-msgstr ""
-
 msgid "Deactive"
 msgstr ""
 
@@ -1886,9 +1964,6 @@ msgid "Debug Logs"
 msgstr ""
 
 msgid "December"
-msgstr ""
-
-msgid "Decoding Settings"
 msgstr ""
 
 msgid "Deep Standby"
@@ -1969,6 +2044,9 @@ msgid "Description"
 msgstr ""
 
 msgid "Deselect"
+msgstr ""
+
+msgid "Detailed forecast"
 msgstr ""
 
 msgid "Details"
@@ -2206,6 +2284,10 @@ msgstr ""
 msgid "Do you want to preview this DVD before burning?"
 msgstr ""
 
+#, python-format
+msgid "Do you want to reboot your %s %s"
+msgstr ""
+
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
@@ -2229,10 +2311,11 @@ msgstr ""
 msgid "Do you want to set selected url to the Startpage?"
 msgstr ""
 
-msgid "Do you want to update your EGAMI image?"
+#, python-format
+msgid "Do you want to update your %s %s ?"
 msgstr ""
 
-msgid "Do you want to update your linux box?"
+msgid "Do you want to update your EGAMI image?"
 msgstr ""
 
 msgid "Do you want to upgrade the package:\n"
@@ -2245,9 +2328,6 @@ msgid "Domain:"
 msgstr ""
 
 msgid "Don't save"
-msgstr ""
-
-msgid "Don't save Timeshift as Movie"
 msgstr ""
 
 msgid "Don't stop current event but disable coming events"
@@ -2296,6 +2376,9 @@ msgid "Download subtitle:"
 msgstr ""
 
 msgid "Downloading"
+msgstr ""
+
+msgid "Downloading Detailed image 5 day forecast"
 msgstr ""
 
 msgid "Downloading an addon... Please wait..."
@@ -2410,10 +2493,12 @@ msgstr ""
 msgid "Edit settings"
 msgstr ""
 
-msgid "Edit the Nameserver configuration of your linux box.\n"
+#, python-format
+msgid "Edit the Nameserver configuration of your %s %s.\n"
 msgstr ""
 
-msgid "Edit the network configuration of your linux box.\n"
+#, python-format
+msgid "Edit the network configuration of your %s %s.\n"
 msgstr ""
 
 msgid "Edit title"
@@ -2695,9 +2780,6 @@ msgstr ""
 msgid "Failed to download an Addon..."
 msgstr ""
 
-msgid "Failed to remove old files."
-msgstr ""
-
 msgid "Failed to write /tmp/positionersetup.log: "
 msgstr ""
 
@@ -2938,6 +3020,9 @@ msgstr ""
 msgid "Getting plugin information. Please wait..."
 msgstr ""
 
+msgid "Getting weather information..."
+msgstr ""
+
 msgid "Global"
 msgstr ""
 
@@ -3158,6 +3243,9 @@ msgstr ""
 msgid "High :"
 msgstr ""
 
+msgid "High Temperature"
+msgstr ""
+
 msgid "High bitrate support"
 msgstr ""
 
@@ -3282,6 +3370,9 @@ msgid "Image:"
 msgstr ""
 
 msgid "Image: "
+msgstr ""
+
+msgid "Images satellite"
 msgstr ""
 
 msgid "Immediate shutdown"
@@ -3624,6 +3715,9 @@ msgstr ""
 msgid "Label"
 msgstr ""
 
+msgid "Language"
+msgstr ""
+
 msgid "Language selection"
 msgstr ""
 
@@ -3670,6 +3764,9 @@ msgstr ""
 msgid "Left Mouse Button"
 msgstr ""
 
+msgid "Left from servicename"
+msgstr ""
+
 msgid "Leisure hobbies"
 msgstr ""
 
@@ -3711,6 +3808,9 @@ msgid "Link:"
 msgstr ""
 
 msgid "Linked titles with a DVD menu"
+msgstr ""
+
+msgid "List"
 msgstr ""
 
 msgid "List EPG functions..."
@@ -3794,6 +3894,9 @@ msgstr ""
 msgid "Low :"
 msgstr ""
 
+msgid "Low Temperature"
+msgstr ""
+
 msgid "Luxembourgish"
 msgstr ""
 
@@ -3875,7 +3978,8 @@ msgstr ""
 msgid "Manage system and kernel logs..."
 msgstr ""
 
-msgid "Manage your linux box's software"
+#, python-format
+msgid "Manage your %s %s's software"
 msgstr ""
 
 msgid "Manual Install EGAMI and IPK packages"
@@ -3893,6 +3997,9 @@ msgstr ""
 msgid "March"
 msgstr ""
 
+msgid "Max"
+msgstr ""
+
 msgid "Max. bitrate: "
 msgstr ""
 
@@ -3903,11 +4010,6 @@ msgid "Maxdown -"
 msgstr ""
 
 msgid "Maxdown: "
-msgstr ""
-
-msgid ""
-"Maximum Timeshift length per Event reached!\n"
-"Restarting Timeshift now ..."
 msgstr ""
 
 msgid "May"
@@ -3944,6 +4046,9 @@ msgid "Merging Timeshift files"
 msgstr ""
 
 msgid "Mexico"
+msgstr ""
+
+msgid "Min"
 msgstr ""
 
 msgid "MiniDLNA Log"
@@ -4304,6 +4409,9 @@ msgstr ""
 msgid "News Current Affairs"
 msgstr ""
 
+msgid "Next"
+msgstr ""
+
 msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr ""
@@ -4370,6 +4478,11 @@ msgstr ""
 msgid "No httpuser defined in oscam.conf"
 msgstr ""
 
+msgid ""
+"No locations defined...\n"
+"Press 'Menu' to do that."
+msgstr ""
+
 msgid "No more picture-files."
 msgstr ""
 
@@ -4394,9 +4507,6 @@ msgstr ""
 msgid "No positioner capable frontend found."
 msgstr ""
 
-msgid "No sat tuner found!"
-msgstr ""
-
 msgid "No satellite frontend found!!"
 msgstr ""
 
@@ -4407,6 +4517,9 @@ msgid "No services/providers selected"
 msgstr ""
 
 msgid "No standby"
+msgstr ""
+
+msgid "No suitable sat tuner found!"
 msgstr ""
 
 msgid "No tags are set on these movies."
@@ -4544,6 +4657,9 @@ msgid ""
 "Please setup your tuner settings before you start a service scan."
 msgstr ""
 
+msgid "Nothing, just leave this menu"
+msgstr ""
+
 msgid "November"
 msgstr ""
 
@@ -4615,9 +4731,6 @@ msgid "Only extensions."
 msgstr ""
 
 msgid "Only free scan"
-msgstr ""
-
-msgid "Open Pip..."
 msgstr ""
 
 msgid "Open Startpage"
@@ -4701,10 +4814,6 @@ msgid "PMT PID"
 msgstr ""
 
 msgid "PRIMETIME"
-msgstr ""
-
-#, python-format
-msgid "PTS Plugin Error: %s"
 msgstr ""
 
 msgid "Package NOT installed!"
@@ -4802,9 +4911,6 @@ msgid "Perform cache read timings"
 msgstr ""
 
 msgid "Perform device read timings"
-msgstr ""
-
-msgid "Permanent Clock"
 msgstr ""
 
 msgid "Permanently delete all recordings in the trash can?"
@@ -5030,6 +5136,9 @@ msgstr ""
 msgid "Please wait for activation of your network configuration..."
 msgstr ""
 
+msgid "Please wait while gathering data..."
+msgstr ""
+
 msgid "Please wait while scanning is in progress..."
 msgstr ""
 
@@ -5082,6 +5191,9 @@ msgid "Please, choose an addon to install:"
 msgstr ""
 
 msgid "Please: DO NOT reboot your STB and turn off the power.\n"
+msgstr ""
+
+msgid "Plp ID"
 msgstr ""
 
 msgid "Plugin Browser"
@@ -5226,6 +5338,9 @@ msgstr ""
 msgid "Preview selected channel"
 msgstr ""
 
+msgid "Previous"
+msgstr ""
+
 msgid "Primary DNS"
 msgstr ""
 
@@ -5298,7 +5413,8 @@ msgstr ""
 msgid "Put TV in standby"
 msgstr ""
 
-msgid "Put your linux box in standby"
+#, python-format
+msgid "Put your %s %s in standby"
 msgstr ""
 
 msgid "Python frontend for /tmp/mmi.socket"
@@ -5361,6 +5477,9 @@ msgstr ""
 msgid "Really delete done timers?"
 msgstr ""
 
+msgid "Really delete this WeatherPlugin Entry?"
+msgstr ""
+
 msgid "Really exit the subservices quickzap?"
 msgstr ""
 
@@ -5368,6 +5487,10 @@ msgid "Really quit MyTube Player?"
 msgstr ""
 
 msgid "Really reboot now?"
+msgstr ""
+
+#, python-format
+msgid "Really reflash your %s %s and reboot now?"
 msgstr ""
 
 msgid "Really restart now?"
@@ -5382,7 +5505,8 @@ msgstr ""
 msgid "Really upgrade the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your linux box and reboot now?"
+#, python-format
+msgid "Really upgrade your %s %s and reboot now?"
 msgstr ""
 
 msgid "Reboot"
@@ -5444,6 +5568,13 @@ msgid "Reenter new PIN"
 msgstr ""
 
 msgid "Reference"
+msgstr ""
+
+#, python-format
+msgid ""
+"Reflash in progress\n"
+"Please wait until your %s %s reboots\n"
+"This may take a few minutes"
 msgstr ""
 
 msgid "Refresh rate"
@@ -5684,6 +5815,9 @@ msgstr ""
 msgid "Right Mouse Button"
 msgstr ""
 
+msgid "Right from servicename"
+msgstr ""
+
 msgid "Roll-off"
 msgstr ""
 
@@ -5789,12 +5923,6 @@ msgstr ""
 msgid "Save Filesystemposition on exit"
 msgstr ""
 
-msgid "Save Timeshift as Movie and continue recording"
-msgstr ""
-
-msgid "Save Timeshift as Movie and stop recording"
-msgstr ""
-
 msgid "Save and record"
 msgstr ""
 
@@ -5804,10 +5932,10 @@ msgstr ""
 msgid "Save playlist"
 msgstr ""
 
-msgid "Save timeshift file"
+msgid "Save timeshift as movie and continue recording"
 msgstr ""
 
-msgid "Save timeshift file in movie directory"
+msgid "Save timeshift as movie and stop recording"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -6002,6 +6130,9 @@ msgstr ""
 msgid "Select provider to add..."
 msgstr ""
 
+msgid "Select satellite image"
+msgstr ""
+
 msgid "Select service to add..."
 msgstr ""
 
@@ -6100,6 +6231,11 @@ msgid "Service scan"
 msgstr ""
 
 msgid "Service title mode"
+msgstr ""
+
+msgid ""
+"Service unavailable!\n"
+"Check tuner configuration!"
 msgstr ""
 
 msgid "Services"
@@ -6931,6 +7067,9 @@ msgstr ""
 msgid "Stop testing plane after # successful transponders"
 msgstr ""
 
+msgid "Stop timer recording"
+msgstr ""
+
 msgid "Stop timeshift"
 msgstr ""
 
@@ -7054,6 +7193,9 @@ msgstr ""
 msgid "Switch TV to correct input"
 msgstr ""
 
+msgid "Switch between filelist/playlist"
+msgstr ""
+
 msgid "Switch between normal mode and list mode"
 msgstr ""
 
@@ -7151,6 +7293,9 @@ msgstr ""
 msgid "Telnet Setup"
 msgstr ""
 
+msgid "Temperature"
+msgstr ""
+
 msgid "Terrestrial"
 msgstr ""
 
@@ -7160,7 +7305,8 @@ msgstr ""
 msgid "Test DiSEqC settings"
 msgstr ""
 
-msgid "Test the network configuration of your linux box.\n"
+#, python-format
+msgid "Test the network configuration of your %s %s.\n"
 msgstr ""
 
 msgid "Test type"
@@ -7204,17 +7350,13 @@ msgid ""
 "Please install it."
 msgstr ""
 
-msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a linux box format data DVD (which will not play in stand-alone DVD players) instead?"
+#, python-format
+msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a %s %s format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr ""
 
 msgid ""
 "The EPGSearch plugin is not installed!\n"
 "Please install it."
-msgstr ""
-
-msgid ""
-"The Filesystem on your Timeshift-Device does not support hardlinks.\n"
-"Make sure it is formatted in EXT2 or EXT3!"
 msgstr ""
 
 msgid ""
@@ -7231,11 +7373,6 @@ msgid "The PIN code has been changed successfully."
 msgstr ""
 
 msgid "The PIN codes you entered are different."
-msgstr ""
-
-msgid ""
-"The Timeshift record was not saved yet!\n"
-"What do you want to do now with the timeshift file?"
 msgstr ""
 
 msgid ""
@@ -7296,11 +7433,13 @@ msgstr ""
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr ""
 
-msgid "The user interface of your linux box is restarting"
+#, python-format
+msgid "The user interface of your %s %s is restarting"
 msgstr ""
 
+#, python-format
 msgid ""
-"The user interface of your linux box is restarting\n"
+"The user interface of your %s %s is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
 
@@ -7339,6 +7478,10 @@ msgstr ""
 msgid "There was an error getting the feed entries. Please try again."
 msgstr ""
 
+#, python-format
+msgid "This %s %s cannot decode %s streams!"
+msgstr ""
+
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr ""
 
@@ -7355,10 +7498,6 @@ msgid "This allows you change the number of rows shown."
 msgstr ""
 
 msgid "This is the help screen. Feed me with something to display."
-msgstr ""
-
-#, python-format
-msgid "This linux box cannot decode %s streams!"
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -7619,6 +7758,9 @@ msgstr ""
 msgid "Toggle between bouquet/epg lists"
 msgstr ""
 
+msgid "Tomorrow"
+msgstr ""
+
 msgid "Tone amplitude"
 msgstr ""
 
@@ -7781,10 +7923,7 @@ msgstr ""
 msgid "USB device mounted in:     "
 msgstr ""
 
-msgid ""
-"Unattended upgrade in progress\n"
-"Please wait until your linux box reboots\n"
-"This may take a few minutes"
+msgid "UV Index"
 msgstr ""
 
 msgid "Uncommitted DiSEqC command"
@@ -7853,10 +7992,8 @@ msgid_plural "Update completed, %d packages were installed."
 msgstr[0] ""
 msgstr[1] ""
 
-msgid "Update completed. Do you want to reboot your linux box?"
-msgstr ""
-
-msgid "Update failed. Your linux box does not have a working internet connection."
+#, python-format
+msgid "Update failed. Your %s %s does not have a working internet connection."
 msgstr ""
 
 msgid "Update interval (in seconds)"
@@ -7872,6 +8009,13 @@ msgid "Updating software catalog"
 msgstr ""
 
 msgid "Upgrade finished."
+msgstr ""
+
+#, python-format
+msgid ""
+"Upgrade in progress\n"
+"Please wait until your %s %s reboots\n"
+"This may take a few minutes"
 msgstr ""
 
 msgid "Upgrading"
@@ -8192,7 +8336,7 @@ msgstr ""
 msgid "WWW Directory:"
 msgstr ""
 
-msgid "Wait please while gathering data..."
+msgid "Wait"
 msgstr ""
 
 msgid "Wait please while scanning for devices..."
@@ -8225,7 +8369,11 @@ msgstr ""
 msgid "Wakeup signal from TV"
 msgstr ""
 
-msgid "Wakeup your linux box from standby"
+#, python-format
+msgid "Wakeup your %s %s from standby"
+msgstr ""
+
+msgid "Want to download forecast of the next 4 days?"
 msgstr ""
 
 msgid "Warning you are going to format "
@@ -8240,7 +8388,16 @@ msgstr ""
 msgid "Watch recordings..."
 msgstr ""
 
-msgid "Weather"
+msgid "Weather Info"
+msgstr ""
+
+msgid "Weather info Plugin"
+msgstr ""
+
+msgid "WeatherPlugin: Edit Entry"
+msgstr ""
+
+msgid "WeatherPlugin: List of Entries"
 msgstr ""
 
 msgid "Web Browser"
@@ -8335,10 +8492,11 @@ msgstr ""
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr ""
 
+#, python-format
 msgid ""
 "When you do a factory reset, you will lose ALL your configuration data\n"
 "(including bouquets, services, satellite data ...)\n"
-"After completion of factory reset, your linux box will restart automatically!\n"
+"After completion of factory reset, your %s %s will restart automatically!\n"
 "\n"
 "Really do a factory reset?"
 msgstr ""
@@ -8364,7 +8522,13 @@ msgstr ""
 msgid "Width"
 msgstr ""
 
+msgid "Wind"
+msgstr ""
+
 msgid "Wind :"
+msgstr ""
+
+msgid "Wind Speed"
 msgstr ""
 
 msgid "Wireless LAN"
@@ -8415,10 +8579,19 @@ msgstr ""
 msgid "Yes, and delete this movie"
 msgstr ""
 
+msgid "Yes, but don't save timeshift as movie"
+msgstr ""
+
 msgid "Yes, but play next video"
 msgstr ""
 
 msgid "Yes, but play previous video"
+msgstr ""
+
+msgid "Yes, but save timeshift as movie and continue recording"
+msgstr ""
+
+msgid "Yes, but save timeshift as movie and stop recording"
 msgstr ""
 
 msgid "Yes, returning to movie list"
@@ -8459,7 +8632,8 @@ msgstr ""
 msgid "You can install this plugin."
 msgstr ""
 
-msgid "You can only burn linux box recordings!"
+#, python-format
+msgid "You can only burn %s %s recordings!"
 msgstr ""
 
 msgid "You can remove this plugin."
@@ -8480,6 +8654,11 @@ msgid "You didn't select a channel to record from."
 msgstr ""
 
 msgid "You have already sent this log, are you sure you want to resend this log:\n"
+msgstr ""
+
+msgid ""
+"You have chosen to save the current timeshift event, but the event has not yet finished\n"
+"What do you want to do ?"
 msgstr ""
 
 msgid ""
@@ -8508,10 +8687,68 @@ msgstr ""
 msgid "You have to wait %s!"
 msgstr ""
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "You seem to be in timeshift, Do you want to leave timeshift ?"
 msgstr ""
 
 msgid "You system does not support ext4"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s does not support PiP HD"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is not connected to the internet, please check your network settings and try again."
+msgstr ""
+
+#, python-format
+msgid ""
+"Your %s %s is now ready to be used.\n"
+"\n"
+"Your internet connection is not working now.\n"
+"\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"Your %s %s is now ready to be used.\n"
+"\n"
+"Your internet connection is working now.\n"
+"\n"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is shutting down"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s might be unusable now. Please consult the manual for further assistance before rebooting your %s %s."
+msgstr ""
+
+#, python-format
+msgid ""
+"Your %s %s will be restarted after the installation of service\n"
+"Ready to install \"%s\" ?"
+msgstr ""
+
+#, python-format
+msgid ""
+"Your %s %s will be restarted after the installation of service.\n"
+"\n"
+"Do you want to install now ?"
+msgstr ""
+
+#, python-format
+msgid ""
+"Your %s %s will be restarted after the removal of service\n"
+"Do you want to remove now ?"
 msgstr ""
 
 msgid "Your IP:"
@@ -8540,9 +8777,10 @@ msgid ""
 "This may take a few minutes"
 msgstr ""
 
+#, python-format
 msgid ""
 "Your frontprocessor will be upgraded\n"
-"Please wait until your linux box reboots\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 
@@ -8551,72 +8789,6 @@ msgstr ""
 
 #, python-format
 msgid "Your internet connection is working (ip: %s)"
-msgstr ""
-
-msgid "Your linux box does not support PiP HD"
-msgstr ""
-
-msgid "Your linux box is not connected to the internet, please check your network settings and try again."
-msgstr ""
-
-msgid ""
-"Your linux box is now ready to be used.\n"
-"\n"
-"Your internet connection is not working now.\n"
-"\n"
-msgstr ""
-
-msgid ""
-"Your linux box is now ready to be used.\n"
-"\n"
-"Your internet connection is working now.\n"
-"\n"
-msgstr ""
-
-msgid "Your linux box is rebooting"
-msgstr ""
-
-msgid "Your linux box is shutting down"
-msgstr ""
-
-msgid "Your linux box might be unusable now. Please consult the manual for further assistance before rebooting your linux box."
-msgstr ""
-
-msgid ""
-"Your linux box wants to reboot your linux box.\n"
-"Do that now?"
-msgstr ""
-
-msgid ""
-"Your linux box wants to restart the user interface.\n"
-"Do that now?"
-msgstr ""
-
-msgid ""
-"Your linux box wants to set your linux box to standby.\n"
-"Do that now?"
-msgstr ""
-
-msgid ""
-"Your linux box wants to shut down your linux box.\n"
-"Do that now?"
-msgstr ""
-
-#, python-format
-msgid ""
-"Your linux box will be restarted after the installation of service\n"
-"Ready to install \"%s\" ?"
-msgstr ""
-
-msgid ""
-"Your linux box will be restarted after the installation of service.\n"
-"\n"
-"Do you want to install now ?"
-msgstr ""
-
-msgid ""
-"Your linux box will be restarted after the removal of service\n"
-"Do you want to remove now ?"
 msgstr ""
 
 msgid "Your network configuration has been activated."
@@ -8701,6 +8873,9 @@ msgid "abort favourites edit"
 msgstr ""
 
 msgid "about to start"
+msgstr ""
+
+msgid "accuWheater.com Information"
 msgstr ""
 
 msgid "activate network adapter configuration"
@@ -8864,9 +9039,6 @@ msgid "confirmed"
 msgstr ""
 
 msgid "connected"
-msgstr ""
-
-msgid "continue"
 msgstr ""
 
 msgid "cooking"
@@ -9082,6 +9254,9 @@ msgstr ""
 msgid "football/soccer"
 msgstr ""
 
+msgid "foreca.com Wheater Information"
+msgstr ""
+
 msgid "foreign countries/expeditions"
 msgstr ""
 
@@ -9113,6 +9288,9 @@ msgid "go to deep standby"
 msgstr ""
 
 msgid "go to standby"
+msgstr ""
+
+msgid "google.com API Wheater"
 msgstr ""
 
 msgid "grab this frame as bitmap"
@@ -9199,27 +9377,6 @@ msgid "length"
 msgstr ""
 
 msgid "limit ..., aborting !"
-msgstr ""
-
-msgid "linux box advanced remote control (native)"
-msgstr ""
-
-msgid "linux box format data DVD (HDTV compatible)"
-msgstr ""
-
-msgid "linux box front panel"
-msgstr ""
-
-msgid "linux box ir keyboard"
-msgstr ""
-
-msgid "linux box ir mouse"
-msgstr ""
-
-msgid "linux box remote control (native)"
-msgstr ""
-
-msgid "linux box software because updates are available."
 msgstr ""
 
 msgid "literature"
@@ -9375,6 +9532,9 @@ msgstr ""
 msgid "nothing connected"
 msgstr ""
 
+msgid "of"
+msgstr ""
+
 msgid "of a DUAL layer medium used."
 msgstr ""
 
@@ -9436,9 +9596,6 @@ msgid "page left"
 msgstr ""
 
 msgid "pass"
-msgstr ""
-
-msgid "pause"
 msgstr ""
 
 msgid "performing arts"
@@ -10005,9 +10162,6 @@ msgstr ""
 msgid "Information"
 msgstr ""
 
-msgid "Language"
-msgstr ""
-
 msgid "Load EPG"
 msgstr ""
 
@@ -10122,10 +10276,10 @@ msgstr ""
 msgid "Allows more detailed to be in the crash log"
 msgstr ""
 
-msgid "Allows the linux box to read the stored EPG data regularly."
+msgid "Allows the %s %s to read the stored EPG data regularly."
 msgstr ""
 
-msgid "Allows the linux box to store the EPG data regularly."
+msgid "Allows the %s %s to store the EPG data regularly."
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -10183,6 +10337,9 @@ msgid "Automatic save"
 msgstr ""
 
 msgid "Automatic setting backup"
+msgstr ""
+
+msgid "Automatically start timeshift after"
 msgstr ""
 
 msgid "Background check"
@@ -10254,10 +10411,10 @@ msgstr ""
 msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when the linux box is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when the %s %s is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when the linux box is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when the %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose time interval to which the graphics will be rounded off."
@@ -10288,6 +10445,9 @@ msgid "Configure for how many minutes finished events should remain visible in t
 msgstr ""
 
 msgid "Configure how recording filenames are constructed."
+msgstr ""
+
+msgid "Configure if and how service type icons will be shown."
 msgstr ""
 
 msgid "Configure on which devices the background delete option should be used."
@@ -10554,9 +10714,6 @@ msgstr ""
 msgid "Enable multiple bouquets"
 msgstr ""
 
-msgid "Enable or disable Permanent Timeshift. When activated, you can wind back until the time you zapped to a channel, and you can make recordings in retrospect."
-msgstr ""
-
 msgid "Enable panic button"
 msgstr ""
 
@@ -10605,9 +10762,6 @@ msgstr ""
 msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr ""
 
-msgid "If set to 'yes' a special seekbar is available during timeshift."
-msgstr ""
-
 msgid "If set to 'yes' channels without EPG will not be shown."
 msgstr ""
 
@@ -10629,6 +10783,9 @@ msgstr ""
 msgid "If set to 'yes' the channel list will be shown after switching between radio and TV modes."
 msgstr ""
 
+msgid "If set to 'yes' the channel number will be displayed in the infobar."
+msgstr ""
+
 msgid "If set to 'yes' the infobar will be displayed when a new event starts."
 msgstr ""
 
@@ -10639,6 +10796,9 @@ msgid "If set to 'yes' you can preview channels in the EPG list."
 msgstr ""
 
 msgid "If set to 'yes' you can preview channels in the channel list. Press 'OK' to preview the selected channel, press a 2nd 'OK' to exit and zap to that channel, pressing 'EXIT' to return to the channel you started at."
+msgstr ""
+
+msgid "If set to 'yes', allows you use the seekbar to jump to a point within the event."
 msgstr ""
 
 msgid "If set to 'yes; the infobar will be displayed when Fast Forwarding or Rewinding during media playback."
@@ -10753,18 +10913,6 @@ msgid "Perform a setting backup before updating."
 msgstr ""
 
 msgid "Perform an online update check in the background"
-msgstr ""
-
-msgid "Permanent Timeshift enable"
-msgstr ""
-
-msgid "Permanent Timeshift max events"
-msgstr ""
-
-msgid "Permanent Timeshift max length"
-msgstr ""
-
-msgid "Permanent Timeshift start delay"
 msgstr ""
 
 msgid "Picon width"
@@ -10884,12 +11032,6 @@ msgstr ""
 msgid "Set the jump-size of the seekbar."
 msgstr ""
 
-msgid "Set the maximum length a timeshift file may be."
-msgstr ""
-
-msgid "Set the maximum number of events (programs) that timeshift may handle."
-msgstr ""
-
 msgid "Set the scrolling speed of text on the front display."
 msgstr ""
 
@@ -10909,9 +11051,6 @@ msgid "Set to the desired primetime (minutes."
 msgstr ""
 
 msgid "Set to what you want the button to do."
-msgstr ""
-
-msgid "Set what the required action must be when zapping while a timeshift has been set as recording."
 msgstr ""
 
 msgid "Setup how to control the channel changing."
@@ -10968,6 +11107,9 @@ msgstr ""
 msgid "Show bouquet on launch"
 msgstr ""
 
+msgid "Show channel number in infobar"
+msgstr ""
+
 msgid "Show encryption info in the infobar (when supported by the skin)."
 msgstr ""
 
@@ -10987,6 +11129,9 @@ msgid "Show positioner movement"
 msgstr ""
 
 msgid "Show screensaver"
+msgstr ""
+
+msgid "Show service type icons"
 msgstr ""
 
 msgid "Show source packages"
@@ -11035,6 +11180,9 @@ msgid "Sound carrier"
 msgstr ""
 
 msgid "Stop timeshift while recording?"
+msgstr ""
+
+msgid "Stop's timeshift being used if a recording is in progress. (adviseable for usb sticks)"
 msgstr ""
 
 msgid "Subservice mode"
@@ -11094,10 +11242,10 @@ msgstr ""
 msgid "Test mode"
 msgstr ""
 
-msgid "The linux box reads the stored EPG data every (hours)."
+msgid "The %s %s reads the stored EPG data every (hours)."
 msgstr ""
 
-msgid "The linux box stores the EPG data every (hours)."
+msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
 msgid "This option allows you choose how to display elapsed time  as + or -"
@@ -11148,9 +11296,6 @@ msgstr ""
 msgid "Timeline font size"
 msgstr ""
 
-msgid "Timeshift will only start when the start delay time has passed. This prevents numurous very short files when zapping."
-msgstr ""
-
 msgid "Timeshift-save action on zap"
 msgstr ""
 
@@ -11172,9 +11317,6 @@ msgstr ""
 msgid "Use Netmed EPG information when it is available."
 msgstr ""
 
-msgid "Use PTS seekbar while timeshifting?"
-msgstr ""
-
 msgid "Use ViaSat EPG information when it is available."
 msgstr ""
 
@@ -11185,6 +11327,9 @@ msgid "Use original teletext position"
 msgstr ""
 
 msgid "Use the alternative or the conventional radio mode."
+msgstr ""
+
+msgid "Use timeshift seekbar while timeshifting?"
 msgstr ""
 
 msgid "Use trash can in movielist"
@@ -11280,6 +11425,9 @@ msgstr ""
 msgid "When enabled, the receiver will select an AC3 track (when available)."
 msgstr ""
 
+msgid "When enabled, timeshift starts automatically in background after specified time."
+msgstr ""
+
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr ""
 
@@ -11334,7 +11482,7 @@ msgstr ""
 msgid "Exit the wizard"
 msgstr ""
 
-msgid "Please connect your linux box to the internet"
+msgid "Please connect your %s %s to the internet"
 msgstr ""
 
 msgid "Please set up tuner A"
@@ -11353,8 +11501,8 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
 msgid ""
-"Thank you for using the wizard. Your linux box is now ready to use.\n"
-"Please press OK to start using your linux box."
+"Thank you for using the wizard. Your %s %s is now ready to use.\n"
+"Please press OK to start using your %s %s."
 msgstr ""
 
 msgid "Use the up/down keys on your remote control to select an option. After that, press OK."
@@ -11378,18 +11526,18 @@ msgstr ""
 msgid "Yes, do another manual scan now"
 msgstr ""
 
-msgid "Your linux box does not have an internet connection"
+msgid "Your %s %s does not have an internet connection"
 msgstr ""
 
-msgid "Your linux box is not connected to the internet"
+msgid "Your %s %s is not connected to the internet"
 msgstr ""
 
 msgid ""
-"Your linux box offers three levels of configuration options:\n"
+"Your %s %s offers three levels of configuration options:\n"
 "\n"
-"Simple - We suggest this level if this is your first contact with a linux box.\n"
-"Intermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your linux box.\n"
-"Expert - This gives you full control over all available settings of your linux box.\n"
+"Simple - We suggest this level if this is your first contact with a %s %s.\n"
+"Intermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your %s %s.\n"
+"Expert - This gives you full control over all available settings of your %s %s.\n"
 "\n"
 "Warning: Higher levels may lead to increased usage complexity."
 msgstr ""
@@ -11447,7 +11595,7 @@ msgstr ""
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your linux box to the Internet, this wizard will guide you through the basic network setup of your linux box.\n"
+"If you want to connect your %s %s to the Internet, this wizard will guide you through the basic network setup of your %s %s.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
@@ -11459,16 +11607,16 @@ msgid "Wireless network connection setup."
 msgstr ""
 
 msgid ""
-"Your internet connection is not working!\n"
-"Please choose what you want to do next."
-msgstr ""
-
-msgid ""
-"Your linux box is now ready to use.\n"
+"Your %s %s is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
 "Please press OK to continue."
+msgstr ""
+
+msgid ""
+"Your internet connection is not working!\n"
+"Please choose what you want to do next."
 msgstr ""
 
 msgid ""
@@ -11490,7 +11638,7 @@ msgstr ""
 msgid "No, do nothing."
 msgstr ""
 
-msgid "No, just start my linux box"
+msgid "No, just start my %s %s"
 msgstr ""
 
 msgid "OK, guide me through the upgrade process"
@@ -11505,7 +11653,7 @@ msgstr ""
 msgid "The wizard is finished now."
 msgstr ""
 
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux box by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your %s %s by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 
 msgid "Where do you want to backup your settings?"
@@ -11527,14 +11675,14 @@ msgid "You have chosen to restore your settings. Enigma2 will restart after rest
 msgstr ""
 
 msgid ""
-"You need a PC connected to your linux box. If you need further instructions, please visit the website http://www.dm7025.de.\n"
-"Your linux box will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+"You need a PC connected to your %s %s. If you need further instructions, please visit the website http://www.dm7025.de.\n"
+"Your %s %s will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+msgstr ""
+
+msgid "Your %s %s is shutting down. Please stand by..."
 msgstr ""
 
 msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr ""
-
-msgid "Your linux box is shutting down. Please stand by..."
 msgstr ""
 
 msgid "Refresh rate selection."

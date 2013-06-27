@@ -296,11 +296,11 @@ msgid "Allows more detailed to be in the crash log"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Allows the linux box to read the stored EPG data regularly."
+msgid "Allows the %s %s to read the stored EPG data regularly."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Allows the linux box to store the EPG data regularly."
+msgid "Allows the %s %s to store the EPG data regularly."
 msgstr ""
 
 #: ../data/setup.xml
@@ -377,6 +377,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Automatic setting backup"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Automatically start timeshift after"
 msgstr ""
 
 #: ../data/setup.xml
@@ -480,11 +484,11 @@ msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Choose the location where the EPG data will be stored when the linux box is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when the %s %s is shut down. The location must be available at boot time."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Choose the name of the file that holds the EPG data when the linux box is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when the %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 #: ../data/setup.xml
@@ -529,6 +533,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Configure how recording filenames are constructed."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Configure if and how service type icons will be shown."
 msgstr ""
 
 #: ../data/setup.xml
@@ -896,10 +904,6 @@ msgid "Enable multiple bouquets"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Enable or disable Permanent Timeshift. When activated, you can wind back until the time you zapped to a channel, and you can make recordings in retrospect."
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Enable panic button"
 msgstr ""
 
@@ -980,10 +984,6 @@ msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "If set to 'yes' a special seekbar is available during timeshift."
-msgstr ""
-
-#: ../data/setup.xml
 msgid "If set to 'yes' channels without EPG will not be shown."
 msgstr ""
 
@@ -1012,6 +1012,10 @@ msgid "If set to 'yes' the channel list will be shown after switching between ra
 msgstr ""
 
 #: ../data/setup.xml
+msgid "If set to 'yes' the channel number will be displayed in the infobar."
+msgstr ""
+
+#: ../data/setup.xml
 msgid "If set to 'yes' the infobar will be displayed when a new event starts."
 msgstr ""
 
@@ -1025,6 +1029,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "If set to 'yes' you can preview channels in the channel list. Press 'OK' to preview the selected channel, press a 2nd 'OK' to exit and zap to that channel, pressing 'EXIT' to return to the channel you started at."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "If set to 'yes', allows you use the seekbar to jump to a point within the event."
 msgstr ""
 
 #: ../data/setup.xml
@@ -1216,22 +1224,6 @@ msgid "Perform an online update check in the background"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Permanent Timeshift enable"
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Permanent Timeshift max events"
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Permanent Timeshift max length"
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Permanent Timeshift start delay"
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Picon width"
 msgstr ""
 
@@ -1392,14 +1384,6 @@ msgid "Set the jump-size of the seekbar."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Set the maximum length a timeshift file may be."
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Set the maximum number of events (programs) that timeshift may handle."
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Set the scrolling speed of text on the front display."
 msgstr ""
 
@@ -1425,10 +1409,6 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Set to what you want the button to do."
-msgstr ""
-
-#: ../data/setup.xml
-msgid "Set what the required action must be when zapping while a timeshift has been set as recording."
 msgstr ""
 
 #: ../data/setup.xml
@@ -1512,6 +1492,10 @@ msgid "Show bouquet on launch"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Show channel number in infobar"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Show channel numbers in channel selection"
 msgstr ""
 
@@ -1561,6 +1545,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Show screensaver"
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Show service type icons"
 msgstr ""
 
 #: ../data/setup.xml
@@ -1640,6 +1628,10 @@ msgid "Stop timeshift while recording?"
 msgstr ""
 
 #: ../data/setup.xml
+msgid "Stop's timeshift being used if a recording is in progress. (adviseable for usb sticks)"
+msgstr ""
+
+#: ../data/setup.xml
 msgid "Subservice mode"
 msgstr ""
 
@@ -1716,11 +1708,11 @@ msgid "Test mode"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "The linux box reads the stored EPG data every (hours)."
+msgid "The %s %s reads the stored EPG data every (hours)."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "The linux box stores the EPG data every (hours)."
+msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
 #: ../data/setup.xml
@@ -1804,10 +1796,6 @@ msgid "Timeshift settings"
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Timeshift will only start when the start delay time has passed. This prevents numurous very short files when zapping."
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Timeshift-save action on zap"
 msgstr ""
 
@@ -1840,10 +1828,6 @@ msgid "Use Netmed EPG information when it is available."
 msgstr ""
 
 #: ../data/setup.xml
-msgid "Use PTS seekbar while timeshifting?"
-msgstr ""
-
-#: ../data/setup.xml
 msgid "Use ViaSat EPG information when it is available."
 msgstr ""
 
@@ -1861,6 +1845,10 @@ msgstr ""
 
 #: ../data/setup.xml
 msgid "Use the alternative or the conventional radio mode."
+msgstr ""
+
+#: ../data/setup.xml
+msgid "Use timeshift seekbar while timeshifting?"
 msgstr ""
 
 #: ../data/setup.xml
@@ -1988,6 +1976,10 @@ msgid "When enabled, the receiver will select an AC3 track (when available)."
 msgstr ""
 
 #: ../data/setup.xml
+msgid "When enabled, timeshift starts automatically in background after specified time."
+msgstr ""
+
+#: ../data/setup.xml
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr ""
 
@@ -2064,7 +2056,7 @@ msgid "No"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Please connect your linux box to the internet"
+msgid "Please connect your %s %s to the internet"
 msgstr ""
 
 #: ../data/startwizard.xml
@@ -2088,7 +2080,7 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Thank you for using the wizard. Your linux box is now ready to use.\nPlease press OK to start using your linux box."
+msgid "Thank you for using the wizard. Your %s %s is now ready to use.\nPlease press OK to start using your %s %s."
 msgstr ""
 
 #: ../data/startwizard.xml
@@ -2120,15 +2112,15 @@ msgid "Yes, do another manual scan now"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Your linux box does not have an internet connection"
+msgid "Your %s %s does not have an internet connection"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Your linux box is not connected to the internet"
+msgid "Your %s %s is not connected to the internet"
 msgstr ""
 
 #: ../data/startwizard.xml
-msgid "Your linux box offers three levels of configuration options:\n\nSimple - We suggest this level if this is your first contact with a linux box.\nIntermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your linux box.\nExpert - This gives you full control over all available settings of your linux box.\n\nWarning: Higher levels may lead to increased usage complexity."
+msgid "Your %s %s offers three levels of configuration options:\n\nSimple - We suggest this level if this is your first contact with a %s %s.\nIntermediate - This level enables you to change some more options, mainly the graphical user interface and the behaviour of your %s %s.\nExpert - This gives you full control over all available settings of your %s %s.\n\nWarning: Higher levels may lead to increased usage complexity."
 msgstr ""
 
 #: ../data/userinterfacepositionerwizard.xml
@@ -2156,7 +2148,7 @@ msgid "Manual configuration"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Network Wizard"
+msgid "Network wizard"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
@@ -2196,7 +2188,7 @@ msgid "The wireless LAN plugin is not installed!\nPlease install it and choose w
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Welcome.\n\nIf you want to connect your linux box to the Internet, this wizard will guide you through the basic network setup of your linux box.\n\nPress OK to start configuring your network"
+msgid "Welcome.\n\nIf you want to connect your %s %s to the Internet, this wizard will guide you through the basic network setup of your %s %s.\n\nPress OK to start configuring your network"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
@@ -2208,11 +2200,11 @@ msgid "Wireless network connection setup."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Your internet connection is not working!\nPlease choose what you want to do next."
+msgid "Your %s %s is now ready to use.\n\nYour internet connection is working now.\n\nPlease press OK to continue."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
-msgid "Your linux box is now ready to use.\n\nYour internet connection is working now.\n\nPlease press OK to continue."
+msgid "Your internet connection is not working!\nPlease choose what you want to do next."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/NetworkWizard/networkwizard.xml
@@ -2244,7 +2236,7 @@ msgid "No, do nothing."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "No, just start my linux box"
+msgid "No, just start my %s %s"
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
@@ -2264,7 +2256,7 @@ msgid "The wizard is finished now."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your linux box by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your %s %s by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
@@ -2292,15 +2284,15 @@ msgid "You have chosen to restore your settings. Enigma2 will restart after rest
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "You need a PC connected to your linux box. If you need further instructions, please visit the website http://www.dm7025.de.\nYour linux box will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+msgid "You need a PC connected to your %s %s. If you need further instructions, please visit the website http://www.dm7025.de.\nYour %s %s will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
+msgstr ""
+
+#: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
+msgid "Your %s %s is shutting down. Please stand by..."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
 msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr ""
-
-#: ../lib/python/Plugins/SystemPlugins/SoftwareManager/imagewizard.xml
-msgid "Your linux box is shutting down. Please stand by..."
 msgstr ""
 
 #: ../lib/python/Plugins/SystemPlugins/Videomode/videowizard.xml
