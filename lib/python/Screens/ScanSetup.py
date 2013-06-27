@@ -480,11 +480,7 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport):
 			"guard_interval" : eDVBFrontendParametersTerrestrial.GuardInterval_Auto,
 			"hierarchy": eDVBFrontendParametersTerrestrial.Hierarchy_Auto,
 			"system": eDVBFrontendParametersTerrestrial.System_DVB_T,
-<<<<<<< HEAD
-			"plp_id": 0}
-=======
 			"plp_id": 0 }
->>>>>>> 61ddbf4e0661816ac5e1d83f07172ebf7a938f22
 
 		if frontendData is not None:
 			ttype = frontendData.get("tuner_type", "UNKNOWN")
@@ -689,13 +685,8 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport):
 		self.scan_ter.system = ConfigSelection(default = defaultTer["system"], choices = [
 			(eDVBFrontendParametersTerrestrial.System_DVB_T, _("DVB-T")),
 			(eDVBFrontendParametersTerrestrial.System_DVB_T2, _("DVB-T2"))])
-<<<<<<< HEAD
-		self.scan_ter.plpid = ConfigSelection(default = defaultTer["plp_id"], choices = [(0, _("0")), (1, _("1")), (2, _("2")), (3, _("3")), (4, _("4"))])
-		
-=======
 		self.scan_ter.plp_id = ConfigInteger(default = defaultTer["plp_id"], limits = (0, 255))
 
->>>>>>> 61ddbf4e0661816ac5e1d83f07172ebf7a938f22
 		self.scan_scansat = {}
 		for sat in nimmanager.satList:
 			#print sat[1]
@@ -837,12 +828,8 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport):
 						transmission = self.scan_ter.transmission.getValue(),
 						guard = self.scan_ter.guard.getValue(),
 						hierarchy = self.scan_ter.hierarchy.getValue(),
-<<<<<<< HEAD
-						plpid  = self.scan_ter.plpid.getValue())
-=======
 						system = self.scan_ter.system.getValue(),
 						plpid = self.scan_ter.plp_id.getValue())
->>>>>>> 61ddbf4e0661816ac5e1d83f07172ebf7a938f22
 				removeAll = False
 			elif self.scan_typeterrestrial.getValue() == "complete":
 				getInitialTerrestrialTransponderList(tlist, nimmanager.getTerrestrialDescription(index_to_scan))
