@@ -161,8 +161,7 @@ class Devices(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		Screen.setTitle(self, _("Device Information"))
-		#self.skinName = ["SystemDevicesInfo", "About"]
-		self.skinName = ["About"]
+		self.skinName = ["SystemDevicesInfo", "About"]
 		
 		self.AboutText = ""
 		self["AboutScrollLabel"] = ScrollLabel(self.AboutText)
