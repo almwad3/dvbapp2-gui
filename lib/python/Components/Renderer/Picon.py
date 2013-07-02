@@ -133,11 +133,11 @@ class Picon(Renderer):
 				pngname = self.defaultpngname
 			if self.pngname != pngname:
 				if pngname:
-					#self.instance.setScale(1)
-					self.instance.setPixmapFromFile(pngname)
-					self.instance.show()
-					#self.PicLoad.setPara((self.piconsize[0], self.piconsize[1], 0, 0, 1, 1, "#00000000"))
-					#self.PicLoad.startDecode(pngname)
+					self.instance.setScale(1)
+					#self.instance.setPixmapFromFile(pngname)
+					#self.instance.show()
+					self.PicLoad.setPara((self.piconsize[0], self.piconsize[1], 0, 0, 1, 1, "#00000000"))
+					self.PicLoad.startDecode(pngname)
 				else:
 					self.instance.hide()
 				self.pngname = pngname
