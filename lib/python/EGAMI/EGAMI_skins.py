@@ -524,11 +524,11 @@ EGEnigma2ConfigInfo_Skin = """
     		
 # EG PermanentClock
 EGPermanentClock_Skin = """
-    		<screen name="EGPermanentClock" position="610,30" size="60,24" flags="wfNoBorder" title="EGAMI Permanent Clock" backgroundColor="#55000000" >
-        		<widget source="global.CurrentTime" render="Label" position="0,0" size="60,24" font="LCD;24" foregroundColor="#d0d0d0" valign="center" halign="center" transparent="1" >
-            			<convert type="ClockToText">Default</convert>
-        		</widget>
-   		</screen>"""
+		<screen name="EGPermanentClock" position="610,40" size="90,40" flags="wfNoBorder" title="Egami Permanent Clock" backgroundColor="#55000000" >
+			<widget source="global.CurrentTime" render="Label" position="0,0" size="90,34" font="LCD;32" foregroundColor="#d0d0d0" valign="center" halign="center" transparent="1" >
+				<convert type="ClockToText">Default</convert>
+			</widget>
+		</screen>"""
    		
 # EGExecute
 EGExecute_Skin = """
