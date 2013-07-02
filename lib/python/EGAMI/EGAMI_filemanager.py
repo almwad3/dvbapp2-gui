@@ -509,11 +509,11 @@ class EGFileManager(Screen):
 
 	self["list_left_text"] = Label(_("Source"))
 	self["list_right_text"] = Label(_("Target"))
-	self["copy_text"] = Label(_("Copy"))
-	self["remove_text"] = Label(_("Remove"))
-	self["move_text"] = Label(_("Move"))
-	self["more_text"] = Label(_("More Options"))
-	self["settings_text"] = Label(_("Settings"))
+	self["key_red"] = Label(_("Copy"))
+	self["key_green"] = Label(_("Remove"))
+	self["key_yellow"] = Label(_("Move"))
+	self["key_blue"] = Label(_("More Options"))
+	self["key_menu"] = Label(_("Settings"))
 	
         self["actions"] = ActionMap(["ChannelSelectBaseActions","WizardActions", "DirectionActions","MenuActions","NumberActions","ColorActions"],
             {
