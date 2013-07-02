@@ -40,14 +40,14 @@ class EGAMIBackupPanel(Screen):
 		self['label1'] = Label(_('1. STEP - Choose option RESTORE / BACKUP'))
 		self['label2'] = Label(_('There is not any EGAMI Backup file on connected devices!'))
 		self['label3'] = Label(_(''))
+		self['key_red'] = Label(_('Cancel'))
+		self['key_green'] = Label(_('Restore EGAMI'))
 		self['key_yellow'] = Label(_('Backup EGAMI'))
-		self['key_blue'] = Label(_('Restore EGAMI'))
-		self['key_green'] = Label(_('Cancel'))
 
 		self.mlist = []
 		self['list'] = MenuList(self.mlist)
 		
-		self['actions'] = ActionMap(['OkCancelActions', 'ColorActions'], {'green': self.close, 'cancel': self.close, 'yellow': self.backuP, 'blue': self.restorE}, -1)
+		self['actions'] = ActionMap(['OkCancelActions', 'ColorActions'], {'red': self.close, 'cancel': self.close, 'yellow': self.backuP, 'green': self.restorE}, -1)
 		self.onLayoutFinish.append(self.updateT)
 
 	def updateT(self):
@@ -217,11 +217,11 @@ class EGAMIBackupPanel_Step2(Screen):
 		Screen.__init__(self, session)
 		self.list = []
 		self["config"] = MenuList(self.list)
-		self['key_yellow'] = Label(_('Backup EGAMI'))
-		self['key_green'] = Label(_('Cancel'))
+		self['key_green'] = Label(_('Backup EGAMI'))
+		self['key_red'] = Label(_('Cancel'))
 		self['label1'] = Label(_('2. STEP - Choose backup location'))
 		self['label2'] = Label(_('Here is the list of mounted devices in Your STB\nPlease choose a device where You would like to keep Your backup:'))
-		self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'yellow': self.saveMysets, 'green': self.close, 'back': self.close})
+		self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'green': self.saveMysets, 'red': self.close, 'back': self.close})
 		self.updateList()
 
 	def updateList(self):
@@ -457,9 +457,9 @@ class EGAMIRestorePanel_Step1(Screen, ConfigListScreen):
 		self.backpath = backpath
 		self.list = []
 		ConfigListScreen.__init__(self, self.list)
-		self['key_blue'] = Label(_('Restore'))
-		self['key_green'] = Label(_('Cancel'))
-		self['actions'] = ActionMap(["EGActions", "OkCancelActions","WizardActions"], {'blue': self.Continue, 'ok': self.Continue, "cancel": self.cancel, "green": self.cancel})
+		self['key_green'] = Label(_('Restore'))
+		self['key_red'] = Label(_('Cancel'))
+		self['actions'] = ActionMap(["EGActions", "OkCancelActions","WizardActions"], {'green': self.Continue, 'ok': self.Continue, "cancel": self.cancel, "red": self.cancel})
 		self.updateList()
 
 	def cancel(self):
@@ -688,11 +688,11 @@ class EGFullBackup(Screen, ConfigListScreen):
 		  
 		self.list = []
 		self["config"] = MenuList(self.list)
-		self['key_yellow'] = Label(_('Full Backup'))
-		self['key_green'] = Label(_('Cancel'))
+		self['key_green'] = Label(_('Full Backup'))
+		self['key_red'] = Label(_('Cancel'))
 		self['label1'] = Label(_('1. STEP - Choose backup location'))
 		self['label2'] = Label(_('Here is the list of mounted devices in Your STB\nPlease choose a device where You would like to keep Your backup:'))
-		self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'yellow': self.saveMysets, 'green': self.close, 'back': self.close})
+		self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'green': self.saveMysets, 'red': self.close, 'back': self.close})
 
 		self.deviceok = True
 		
