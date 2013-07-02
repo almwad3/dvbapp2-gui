@@ -555,7 +555,7 @@ class EGFileManager(Screen):
         if self.SOURCELIST.canDescent(): # isDir
             self.SOURCELIST.descent()
             if self.SOURCELIST.getCurrentDirectory(): #??? when is it none
-                self.setTitle(self.SOURCELIST.getCurrentDirectory())
+                self.setTitle("EGAMI File Manager - " + self.SOURCELIST.getCurrentDirectory())
         else:
             self.onFileAction()
 
@@ -636,7 +636,7 @@ class EGFileManager(Screen):
         self["list_right"].selectionEnabled(1)
         self.SOURCELIST = self["list_right"]
         self.TARGETLIST = self["list_left"]
-        self.setTitle(self.SOURCELIST.getCurrentDirectory())
+        self.setTitle("EGAMI File Manager - " + self.SOURCELIST.getCurrentDirectory())
 
     def listLeft(self):
 	self.doRefresh()
@@ -646,7 +646,7 @@ class EGFileManager(Screen):
         self["list_right"].selectionEnabled(0)
         self.SOURCELIST = self["list_left"]
         self.TARGETLIST = self["list_right"]
-        self.setTitle(self.SOURCELIST.getCurrentDirectory())
+        self.setTitle("EGAMI File Manager - " + self.SOURCELIST.getCurrentDirectory())
 
     def SysExecution(self, answer):
 	answer = answer and answer[1]
