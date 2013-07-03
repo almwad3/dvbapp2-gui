@@ -538,7 +538,7 @@ msgid "3D Surround"
 msgstr "3D Звук"
 
 msgid "3D setup"
-msgstr "Установки 3D"
+msgstr "Настройки 3D меню"
 
 msgid "3X"
 msgstr "3X"
@@ -752,7 +752,7 @@ msgid "A/V Setup"
 msgstr "Аудио/Видео настройки"
 
 msgid "A/V settings"
-msgstr "Настройки Звука/Видео"
+msgstr "Настройки Аудио/Видео"
 
 msgid "AA"
 msgstr "AA"
@@ -1295,7 +1295,7 @@ msgid "Auto focus commencing ..."
 msgstr "Начало Автофокуса..."
 
 msgid "Auto language selection"
-msgstr "Автоматический выбор языка"
+msgstr "Выбор языка аудио/субтитров/EPG"
 
 msgid "Auto language settings"
 msgstr "Автоматический выбор языка"
@@ -1654,7 +1654,7 @@ msgid "Cancel"
 msgstr "Отмена"
 
 msgid "Cancel save timeshift as movie"
-msgstr "Не сохранять сдвиг времени как видеозапись"
+msgstr "Не сохранять Timeshift как видеозапись"
 
 msgid "Cannot delete file"
 msgstr "Не удаётся удалить файл!"
@@ -1916,7 +1916,7 @@ msgid "Clear log"
 msgstr "Очистить журнал"
 
 msgid "Clear playlist"
-msgstr "Очистить список воспроизведения"
+msgstr "очистить список файлов"
 
 msgid "Client IP:"
 msgstr "IP клиента:"
@@ -1979,16 +1979,16 @@ msgid "Committed DiSEqC command"
 msgstr "Команда переключения DiSEqC"
 
 msgid "Common Interface"
-msgstr "Модуль доступа"
+msgstr "CI"
 
 msgid "Common Interface Assignment"
-msgstr "Назначение модуля доступа"
+msgstr "Настройка модуля доступа"
 
 msgid "Common Interface assignment"
-msgstr "Назначение модуля доступа"
+msgstr "Настройка модуля доступа"
 
 msgid "Common interface"
-msgstr "Модуль доступа"
+msgstr "CI"
 
 msgid "Communication"
 msgstr "Общение, связь"
@@ -2536,7 +2536,7 @@ msgid "Custom skip time for '7'/'9' buttons"
 msgstr "Время пропуска для кнопок '7' и '9' (секунд)"
 
 msgid "Customize"
-msgstr "Настройка..."
+msgstr "Индивидуальные настройки"
 
 msgid "Cut"
 msgstr "Вырезать"
@@ -2638,7 +2638,7 @@ msgid "Deep Standby"
 msgstr "Полный режим ожидания"
 
 msgid "Deep standby"
-msgstr "Режим глубокого ожидания"
+msgstr "Выключить ресивер"
 
 msgid "Default"
 msgstr "По умолчанию"
@@ -2675,7 +2675,7 @@ msgid "Delete Confirmation"
 msgstr "Подтверждение удаления"
 
 msgid "Delete entry"
-msgstr "Удалить выбранное"
+msgstr "удалить выбранное"
 
 msgid "Delete failed!"
 msgstr "Удаление неудачно!"
@@ -2850,7 +2850,7 @@ msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Резервировать место для записей (в ГБ)"
 
 msgid "Display"
-msgstr "VFD Дисплей"
+msgstr "Настройки VFD экрана"
 
 msgid "Display 16:9 content as"
 msgstr "Отображать формат 16:9 как"
@@ -3260,7 +3260,7 @@ msgid "Edit services list"
 msgstr "Редактировать список каналов"
 
 msgid "Edit settings"
-msgstr "Изменить настройки"
+msgstr "изменить настройки"
 
 #, python-format
 msgid "Edit the Nameserver configuration of your %s %s.\n"
@@ -4035,7 +4035,7 @@ msgid "Harddisk"
 msgstr "Жёсткий диск"
 
 msgid "Hardware: "
-msgstr "Версия железа:"
+msgstr "HW:"
 
 msgid "HbbTV Applications"
 msgstr "HbbTV приложения"
@@ -4103,7 +4103,7 @@ msgid "Hide known extensions"
 msgstr "Скрыть известные расширения файлов"
 
 msgid "Hide player"
-msgstr "скрыть проигрыватель"
+msgstr "скрыть плеер"
 
 msgid "Hide zap errors"
 msgstr "Скрывать сообщения об ошибках переключения"
@@ -5463,7 +5463,7 @@ msgid "Network name (SSID)"
 msgstr "Имя сети (SSID)"
 
 msgid "Network scan"
-msgstr "Поиск сетей"
+msgstr "Сетевой поиск"
 
 msgid "Network settings/info"
 msgstr "Настройки сети"
@@ -6523,10 +6523,10 @@ msgid "Position of finished Timers in Timerlist"
 msgstr "Расположение выполненных таймеров в списке"
 
 msgid "Position setup"
-msgstr "Установка положения"
+msgstr "Настройка положения меню"
 
 msgid "Position stored at index"
-msgstr "Позиция сохранные в индексах"
+msgstr "Позиция сохранена"
 
 msgid "Positioner"
 msgstr "Позиционер"
@@ -6653,7 +6653,7 @@ msgid "Primetime minute"
 msgstr "Прайм-тайм минут"
 
 msgid "Priority"
-msgstr "Очередность"
+msgstr "Приоритет"
 
 msgid "Process"
 msgstr "Процесс"
@@ -6852,7 +6852,7 @@ msgid "Recording in progress"
 msgstr "Идёт запись..."
 
 msgid "Recording settings"
-msgstr "Параметры записи"
+msgstr "Настройки записи"
 
 msgid "Recording type"
 msgstr "Тип записи"
@@ -6994,7 +6994,7 @@ msgid "Remove items from trash can after (days)"
 msgstr "Удаление из корзины через (в днях)"
 
 msgid "Remove plugins"
-msgstr "Удаление плагинов"
+msgstr "Удалить плагины"
 
 msgid "Remove timer"
 msgstr "Удалить таймер"
@@ -7080,10 +7080,10 @@ msgid "Restart"
 msgstr "Перезагрузка ресивера"
 
 msgid "Restart GUI"
-msgstr "Перезапустить GUI"
+msgstr "Перезапустить меню"
 
 msgid "Restart GUI now?"
-msgstr "Перезапустить GUI сейчас?"
+msgstr "Перезапустить меню сейчас?"
 
 msgid "Restart box."
 msgstr "Перезагрузка ресивера."
@@ -7289,10 +7289,10 @@ msgid "Save playlist"
 msgstr "сохранить плейлист"
 
 msgid "Save timeshift as movie and continue recording"
-msgstr "Сохранить сдвиг времени как видеофайл и продолжить запись"
+msgstr "Сохранить Timeshift как видеофайл и продолжить запись"
 
 msgid "Save timeshift as movie and stop recording"
-msgstr "Сохранить сдвиг времени как видеофайл и остановить запись"
+msgstr "Сохранить Timeshift как видеофайл и остановить запись"
 
 msgid "Saving EPG Cache..."
 msgstr "Сохранение кэша EPG..."
@@ -7489,7 +7489,7 @@ msgid "Select how to activate the Quick EPG mode:"
 msgstr "Выберите, как активировать режим Quick EPG:"
 
 msgid "Select if timeshift must continue when set to record."
-msgstr "Выберите, если сдвиг времени должен продолжаться при начале записи"
+msgstr "Выберите, если Timeshift должен продолжаться при начале записи"
 
 msgid "Select if you want the Subservice mode to be activated."
 msgstr "Выберите, если вы хотите активировать режим подсервисов."
@@ -7824,7 +7824,7 @@ msgid "Settings"
 msgstr "Установки"
 
 msgid "Settings..."
-msgstr "Установки..."
+msgstr "Настройки"
 
 msgid "Setup"
 msgstr "Настройка"
@@ -8719,13 +8719,13 @@ msgid "Stop timeshift"
 msgstr "Остановить TimeShift"
 
 msgid "Stop timeshift while recording?"
-msgstr "Остановить сдвиг времени во время записи?"
+msgstr "Остановить Timeshift во время записи?"
 
 msgid ""
 "Stop's timeshift being used if a recording is in progress. (adviseable for "
 "usb sticks)"
 msgstr ""
-"Использовать останов сдвига времени, если идет запись. (рекомендуется для "
+"Не использовать Timeshift, если идет запись. (рекомендуется для "
 "USB-флэшь)"
 
 msgid "Stopped"
@@ -8897,7 +8897,7 @@ msgid "Switch config"
 msgstr "Переключить конфиг"
 
 msgid "Switch to filelist"
-msgstr "переключить на список файлов"
+msgstr "перейти к списку файлов"
 
 msgid "Switch to keyboard/mouse mode."
 msgstr "Переключить в режим клавиатуры/мыши"
@@ -9012,16 +9012,19 @@ msgid "Temperature"
 msgstr "Температура"
 
 msgid "Terrestrial"
-msgstr "Наземный"
+msgstr "Эфирный"
 
 msgid "Terrestrial provider"
-msgstr "Наземный провайдер"
+msgstr "DVB-T/T2 провайдер"
 
 msgid "Test DiSEqC settings"
 msgstr "Тест настроек DiSEqC"
 
 msgid "Test mode"
 msgstr "Режим теста"
+
+msgid "FAN Control"
+msgstr "Вентилятор"
 
 #, python-format
 msgid "Test the network configuration of your %s %s.\n"
@@ -9642,31 +9645,31 @@ msgid "Timers"
 msgstr "Таймеры"
 
 msgid "Timeshift"
-msgstr "Сдвиг времени"
+msgstr "Timeshift"
 
 msgid "Timeshift location"
-msgstr "Расположение файлов сдвига времени"
+msgstr "Расположение файлов Timeshift"
 
 msgid "Timeshift not possible!"
-msgstr "Сдвиг времени невозможен!"
+msgstr "Timeshift невозможен!"
 
 msgid "Timeshift save failed!"
-msgstr "Сохранение файла сдвига времени неудачно!"
+msgstr "Сохранение файла Timeshift неудачно!"
 
 msgid "Timeshift save recording (Select event)"
-msgstr "сохранить запись Timeshift (выбрать событие)"
+msgstr "Сохранить Timeshift (выбрать событие)"
 
 msgid "Timeshift save recording (stop after current event)"
-msgstr "сохранить запись Timeshift (стоп после текущего события)"
+msgstr "Сохранить Timeshift (стоп после текущего события)"
 
 msgid "Timeshift saved to your harddisk!"
-msgstr "Файл сдвига времени сохранен на жестком диске!"
+msgstr "Файл Timeshift сохранен на жестком диске!"
 
 msgid "Timeshift settings"
-msgstr "Установки сдвига времени (Timeshift)"
+msgstr "Настройки Timeshift"
 
 msgid "Timeshift will get saved at end of event!"
-msgstr "Файл сдвига времени будет сохранён по окончании события"
+msgstr "Файл Timeshift будет сохранён по окончании события"
 
 msgid "Timeshift-save action on zap"
 msgstr "Timeshift-сохранить действие при переключении."
@@ -10105,7 +10108,7 @@ msgid "Use this video enhancement settings?"
 msgstr "Использовать эти настройки улучшения изображения?"
 
 msgid "Use timeshift seekbar while timeshifting?"
-msgstr "Использовать панель поиска при работе сдвига времени?"
+msgstr "Использовать панель поиска при работе Timeshift?"
 
 msgid "Use trash can in movielist"
 msgstr "Использовать корзину для списка фильмов"
@@ -10129,7 +10132,7 @@ msgid "User defined"
 msgstr "Определены пользователем"
 
 msgid "User interface"
-msgstr "Интерфейс пользователя"
+msgstr "Настройки пользователя"
 
 msgid "User interface visibility"
 msgstr "Видимости пользовательского интерфейса"
@@ -10173,7 +10176,7 @@ msgstr ""
 "отображались."
 
 msgid "VCR scart"
-msgstr "Видеомагнитофон"
+msgstr "Скарт"
 
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (трейлер)"
@@ -10933,7 +10936,7 @@ msgid "Yes, backup my settings!"
 msgstr "Да, сохранить мои настройки!"
 
 msgid "Yes, but don't save timeshift as movie"
-msgstr "Не сохранять сдвиг времени как видеозапись"
+msgstr "Не сохранять Timeshift как видеозапись"
 
 msgid "Yes, but play next video"
 msgstr "Да, но воспроизвести следующее видео"
@@ -10942,10 +10945,10 @@ msgid "Yes, but play previous video"
 msgstr "Да, но воспроизвести предыдушее видео"
 
 msgid "Yes, but save timeshift as movie and continue recording"
-msgstr "Сохранить сдвиг времени как видеофайл и продолжить запись"
+msgstr "Сохранить Timeshift как видеофайл и продолжить запись"
 
 msgid "Yes, but save timeshift as movie and stop recording"
-msgstr "Сохранить сдвиг времени как видеофайл и остановить запись"
+msgstr "Сохранить Timeshift как видеофайл и остановить запись"
 
 msgid "Yes, do a manual scan now"
 msgstr "Да, выполнить ручной поиск"
@@ -11059,7 +11062,7 @@ msgid ""
 "yet finished\n"
 "What do you want to do ?"
 msgstr ""
-"Вы выбрали для сохранения сдвиг времени текущего событие, но событие еще не "
+"Вы выбрали для сохранения Timeshift текущего событие, но событие еще не "
 "закончено\n"
 "Что вы хотите сделать?"
 
@@ -11370,10 +11373,10 @@ msgid "Zoom Off..."
 msgstr "Увеличение выключено..."
 
 msgid "[TimeShift] Restarting Timeshift!"
-msgstr "[Сдвиг времени] Перезапуск сдвига времени!"
+msgstr "[Timeshift] Перезапуск Timeshift!"
 
 msgid "[Timeshift] Merging records failed!"
-msgstr "[Сдвиг времени] Соединить записи не удалось!"
+msgstr "[Timeshift] Соединить записи не удалось!"
 
 msgid "[alternative edit]"
 msgstr "[редактирование альтернатив]"
@@ -12681,7 +12684,7 @@ msgstr "переключено"
 #~ msgstr "Режим кнопок Channel +/-"
 
 #~ msgid "Chipset:\tBCM%s"
-#~ msgstr "Чипсет:\tBCM%s"
+#~ msgstr "Чип:\tBCM%s"
 
 #~ msgid "Configure nameservers"
 #~ msgstr "Настройка DNS"
