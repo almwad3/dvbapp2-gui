@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-27 10:31-0700\n"
-"PO-Revision-Date: 2013-07-01 16:50+0400\n"
+"PO-Revision-Date: 2013-07-03 16:52+0400\n"
 "Last-Translator: xxx\n"
 "Language-Team: RU locale edited by Sowa\n"
 "Language: ru_RU\n"
@@ -1295,7 +1295,7 @@ msgid "Auto focus commencing ..."
 msgstr "Начало Автофокуса..."
 
 msgid "Auto language selection"
-msgstr "Выбор языка аудио/субтитров/EPG"
+msgstr "Выбор языка канала"
 
 msgid "Auto language settings"
 msgstr "Автоматический выбор языка"
@@ -1322,7 +1322,7 @@ msgid "Automatic setting backup"
 msgstr "Автосохранение настроек"
 
 msgid "Automatically start timeshift after"
-msgstr "Автоматическое начало сдвига во времени после"
+msgstr "Автоматическое начало Timeshift после"
 
 msgid "Automatically update Client/Server View?"
 msgstr "Просмотр автообновления Клиент/Сервер?"
@@ -1979,7 +1979,7 @@ msgid "Committed DiSEqC command"
 msgstr "Команда переключения DiSEqC"
 
 msgid "Common Interface"
-msgstr "CI"
+msgstr "Модуль условного доступа"
 
 msgid "Common Interface Assignment"
 msgstr "Настройка модуля доступа"
@@ -1988,7 +1988,7 @@ msgid "Common Interface assignment"
 msgstr "Настройка модуля доступа"
 
 msgid "Common interface"
-msgstr "CI"
+msgstr "Модуль условного доступа"
 
 msgid "Communication"
 msgstr "Общение, связь"
@@ -2763,7 +2763,7 @@ msgid "Devicename:"
 msgstr "Имя устройства: "
 
 msgid "Devices"
-msgstr "Об устройствах"
+msgstr "Устройства"
 
 msgid "Devices Manager"
 msgstr "Менеджер устройств "
@@ -4026,13 +4026,13 @@ msgid "Handle wakeup from TV"
 msgstr "Включение ресивера вручную при включении ТВ"
 
 msgid "Hard disk setup"
-msgstr "Настройка жёсткого диска"
+msgstr "Настройка жесткого диска"
 
 msgid "Hard disk standby after"
 msgstr "Отключение жёсткого диска через "
 
 msgid "Harddisk"
-msgstr "Жёсткий диск"
+msgstr "Жесткий диск"
 
 msgid "Hardware: "
 msgstr "HW:"
@@ -5123,7 +5123,7 @@ msgid "Medium is not empty!"
 msgstr "Носитель не пустой!"
 
 msgid "Memory"
-msgstr "О памяти"
+msgstr "Память"
 
 msgid "Memory Information"
 msgstr "Инфо о памяти"
@@ -5249,7 +5249,7 @@ msgid "Mounts Setup"
 msgstr "Настройка монтирования"
 
 msgid "Mounts setup"
-msgstr "Подкл. сетевых дисков"
+msgstr "Сетевые диски"
 
 msgid "Mouse"
 msgstr "Мышь"
@@ -6151,7 +6151,7 @@ msgid "Picon width"
 msgstr "Ширина Пикон"
 
 msgid "Picture Player"
-msgstr "Просмотр изображений"
+msgstr "Галерея"
 
 msgid "Picture in graphics"
 msgstr "Картинка в графике"
@@ -7827,7 +7827,7 @@ msgid "Settings..."
 msgstr "Настройки"
 
 msgid "Setup"
-msgstr "Настройка"
+msgstr "Настройки"
 
 msgid "Setup HDD"
 msgstr "Настройки жесткого диска"
@@ -8725,8 +8725,7 @@ msgid ""
 "Stop's timeshift being used if a recording is in progress. (adviseable for "
 "usb sticks)"
 msgstr ""
-"Не использовать Timeshift, если идет запись. (рекомендуется для "
-"USB-флэшь)"
+"Не использовать Timeshift, если идет запись. (рекомендуется для USB-флэшь)"
 
 msgid "Stopped"
 msgstr "Остановка"
@@ -9672,7 +9671,7 @@ msgid "Timeshift will get saved at end of event!"
 msgstr "Файл Timeshift будет сохранён по окончании события"
 
 msgid "Timeshift-save action on zap"
-msgstr "Timeshift-сохранить действие при переключении."
+msgstr "Сохранить Timeshift при переключении"
 
 msgid "Timezone"
 msgstr "Часовой пояс"
@@ -10132,7 +10131,7 @@ msgid "User defined"
 msgstr "Определены пользователем"
 
 msgid "User interface"
-msgstr "Настройки пользователя"
+msgstr "Настройки положения меню"
 
 msgid "User interface visibility"
 msgstr "Видимости пользовательского интерфейса"
