@@ -357,6 +357,10 @@ const char *getMachineBrand()
 		{
 			return "Sezam";
 		}
+		else if((strcmp(boxtype_name, "ini-1000de\n") == 0))
+		{
+			return "GM";
+		}		
 		else if((strcmp(boxtype_name, "xp1000s\n") == 0))
 		{
 			return "Octagon";
@@ -416,6 +420,10 @@ const char *getMachineName()
 		{
 			return "HD-5000";
 		}
+		else if(strcmp(boxtype_name, "ini-1000de\n") == 0) 
+		{
+			return "XpeedLX";
+		}		
 		else if(strcmp(boxtype_name, "xp1000s\n") == 0) 
 		{
 			return "SF8 HD";
