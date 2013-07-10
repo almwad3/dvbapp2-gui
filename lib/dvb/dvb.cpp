@@ -629,10 +629,13 @@ void *eDVBUsbAdapter::vtunerPump()
 				printf("vtunerPump() demuxFd (pidcount = %d) \n", pidcount);
 				int size = singleRead(demuxFd, buffer, sizeof(buffer));
 				printf("vtunerPump() singleRead = %d \n", size);
-				if (writeAll(vtunerFd, buffer, size) <= 0)
+				if(size > 0)
 				{
-					printf("vtunerPump() writeAll(%d) fail \n", size);
-					break;
+					if (writeAll(vtunerFd, buffer, size) <= 0)
+					{
+						printf("vtunerPump() writeAll(%d) fail \n", size);
+						break;
+					}
 				}
 			}
 		}
