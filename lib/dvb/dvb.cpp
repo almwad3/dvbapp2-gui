@@ -510,6 +510,7 @@ void *eDVBUsbAdapter::vtunerPump()
 		filter.pid = 0;
 		filter.output = DMX_OUT_TSDEMUX_TAP;
 		filter.pes_type = DMX_PES_OTHER;
+		printf("vtunerPump() DMX_SET_PES_FILTER & DMX_START (0x0000) \n");
 		if (ioctl(demuxFd, DMX_SET_PES_FILTER, &filter) >= 0
 				&& ioctl(demuxFd, DMX_START) >= 0)
 		{
@@ -518,6 +519,7 @@ void *eDVBUsbAdapter::vtunerPump()
 	}
 #endif
 
+	printf("vtunerPump() thread start \n");
 	while (running)
 	{
 		fd_set rset, xset;
@@ -529,6 +531,7 @@ void *eDVBUsbAdapter::vtunerPump()
 		FD_SET(vtunerFd, &xset);
 		FD_SET(demuxFd, &rset);
 		FD_SET(pipeFd[0], &rset);
+		printf("vtunerPump() Select \n");
 		if (Select(maxfd + 1, &rset, NULL, &xset, NULL) > 0)
 		{
 			if (FD_ISSET(vtunerFd, &xset))
@@ -536,6 +539,8 @@ void *eDVBUsbAdapter::vtunerPump()
 				int i, j;
 				int count = 0;
 				struct vtuner_message message;
+
+				printf("vtunerPump() vtunerFd \n");
 				memset(message.pidlist, 0xff, sizeof(message.pidlist));
 				::ioctl(vtunerFd, VTUNER_GET_MESSAGE, &message);
 
@@ -560,11 +565,13 @@ void *eDVBUsbAdapter::vtunerPump()
 
 						if (pidcount > 1)
 						{
+							printf("vtunerPump() DMX_REMOVE_PID (%04X) \n", pidList[i]);
 							::ioctl(demuxFd, DMX_REMOVE_PID, &pidList[i]);
 							pidcount--;
 						}
 						else if (pidcount == 1)
 						{
+							printf("vtunerPump() DMX_STOP \n");
 							::ioctl(demuxFd, DMX_STOP);
 							pidcount = 0;
 						}
@@ -588,6 +595,7 @@ void *eDVBUsbAdapter::vtunerPump()
 
 						if (pidcount)
 						{
+							printf("vtunerPump() DMX_ADD_PID (%04X) \n", message.pidlist[i]);
 							::ioctl(demuxFd, DMX_ADD_PID, &message.pidlist[i]);
 							pidcount++;
 						}
@@ -599,6 +607,7 @@ void *eDVBUsbAdapter::vtunerPump()
 							filter.pid = message.pidlist[i];
 							filter.output = DMX_OUT_TSDEMUX_TAP;
 							filter.pes_type = DMX_PES_OTHER;
+							printf("vtunerPump() DMX_SET_PES_FILTER & DMX_START (%04X) \n", message.pidlist[i]);
 							if (ioctl(demuxFd, DMX_SET_PES_FILTER, &filter) >= 0
 									&& ioctl(demuxFd, DMX_START) >= 0)
 							{
@@ -617,14 +626,19 @@ void *eDVBUsbAdapter::vtunerPump()
 			}
 			if (FD_ISSET(demuxFd, &rset))
 			{
+				printf("vtunerPump() demuxFd (pidcount = %d) \n", pidcount);
 				int size = singleRead(demuxFd, buffer, sizeof(buffer));
+				printf("vtunerPump() singleRead = %d \n", size);
 				if (writeAll(vtunerFd, buffer, size) <= 0)
 				{
+					printf("vtunerPump() writeAll(%d) fail \n", size);
 					break;
 				}
 			}
 		}
 	}
+	printf("vtunerPump() thread stop \n");
+
 	return NULL;
 }
 
