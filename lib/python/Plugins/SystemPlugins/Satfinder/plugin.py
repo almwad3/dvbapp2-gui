@@ -127,7 +127,10 @@ class Satfinder(ScanSetup):
 
 	def retune(self, configElement):
 		returnvalue = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-		satpos = int(self.tuning_sat.getValue())
+		try:
+			satpos = int(self.tuning_sat.getValue())
+		except:
+			satpos = 130
 		if self.tuning_type.getValue() == "manual_transponder":
 			if self.scan_sat.system.getValue() == eDVBFrontendParametersSatellite.System_DVB_S2:
 				fec = self.scan_sat.fec_s2.getValue()

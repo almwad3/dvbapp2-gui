@@ -138,8 +138,96 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 </code>
 			</item>
 			<item weight="15" level="0" text="Software update" entryID="software_update"><screen module="SoftwareUpdate" screen="UpdatePlugin" /></item>
-			<item weight="16" text="EGAMI Personal Backup Panel" entryID="backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGAMIBackupPanel;self.session.open(EGAMIBackupPanel)</code></item>
-			<item weight="17" text="EGAMI Full Backup Panel" entryID="full_backup_panel"><code>from EGAMI.EGAMI_backup_panel import EGFullBackup;self.session.open(EGFullBackup)</code></item>
+			<item weight="16" text="EGAMI Personal Backup Panel" entryID="backup_panel">
+<code>
+from EGAMI.EGAMI_backup_panel import EGAMIBackupPanel
+from Screens.MessageBox import MessageBox
+
+def checkMountedDevices():
+	from Tools.Directories import fileExists
+	check = False
+	if fileExists('/proc/mounts'):
+		fileExists('/proc/mounts')
+		f = open('/proc/mounts', 'r')
+		for line in f.readlines():
+			if line.find('/media/cf') != -1:
+				check = True
+				continue
+			if line.find('/media/usb') != -1:
+				check = True
+				continue
+			if line.find('/media/usb2') != -1:
+				check = True
+				continue
+			if line.find('/media/usb3') != -1:
+				check = True
+				continue
+			if line.find('/media/card') != -1:
+				check = True
+				continue
+			if line.find('/hdd') != -1:
+				check = True
+				continue
+		f.close()
+	else:
+		fileExists('/proc/mounts')
+		
+	if check == False:
+		return False
+	else:    
+		return True
+			
+if checkMountedDevices():
+	self.session.open(EGAMIBackupPanel)
+else:
+	self.session.open(MessageBox, _('Please connect HDD or USB to backup/restore Your EGAMI Image!'), MessageBox.TYPE_INFO)
+</code>
+</item>
+			<item weight="17" text="EGAMI Full Backup Panel" entryID="full_backup_panel">
+<code>
+from EGAMI.EGAMI_backup_panel import EGFullBackup
+from Screens.MessageBox import MessageBox
+
+def checkMountedDevices():
+	from Tools.Directories import fileExists
+	check = False
+	if fileExists('/proc/mounts'):
+		fileExists('/proc/mounts')
+		f = open('/proc/mounts', 'r')
+		for line in f.readlines():
+			if line.find('/media/cf') != -1:
+				check = True
+				continue
+			if line.find('/media/usb') != -1:
+				check = True
+				continue
+			if line.find('/media/usb2') != -1:
+				check = True
+				continue
+			if line.find('/media/usb3') != -1:
+				check = True
+				continue
+			if line.find('/media/card') != -1:
+				check = True
+				continue
+			if line.find('/hdd') != -1:
+				check = True
+				continue
+		f.close()
+	else:
+		fileExists('/proc/mounts')
+		
+	if check == False:
+		return False
+	else:    
+		return True
+			
+if checkMountedDevices():
+	self.session.open(EGFullBackup)
+else:
+	self.session.open(MessageBox, _('Please connect HDD or USB to full backup of Your EGAMI Image!'), MessageBox.TYPE_INFO)
+</code>
+</item>
 		</menu>
 		<menu weight="5" level="0" text="Information" entryID="info_screen">
 			<id val="information" />

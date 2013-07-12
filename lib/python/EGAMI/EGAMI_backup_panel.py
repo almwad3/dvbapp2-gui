@@ -70,8 +70,6 @@ class EGAMIBackupPanel(Screen):
 			fileExists('/etc/egami/.egamibackup_location')
 		if myfile == '':
 			myfile = self.scan_mediA()
-		#if myfile == '':
-		#	myfile = self.scan_deV()
 		if fileExists('/etc/egami/.egamibackup_files'):
 			fileExists('/etc/egami/.egamibackup_files')
 			f = open('/etc/egami/.egamibackup_files', 'r')
@@ -85,28 +83,13 @@ class EGAMIBackupPanel(Screen):
 		self['label2'].setText(_(mytext))
 		self['label3'].setText(_(mytext2))
 
-	def scan_deV(self):
-		system('mkdir /media/egamibackup_location')
-		pkgs = listdir('/dev/disk/by-uuid/')
-		myfile = '/media/egamibackup_location/'
-		for device in pkgs:
-			cmd = 'mount /dev/disk/by-uuid/' + device + ' /media/egamibackup_location'
-			rc = system(cmd)
-			myscripts = listdir(myfile)
-			for fil in myscripts:
-				if (fil.find('_EGAMI_Backup.egi') != -1):
-					fil2 = fil[9:-17]
-					date = fil[0:8]
-					self.mlist.append(fil2)
-					return fil2
-			system('umount /media/egamibackup_location')
-		return ''
-
 	def scan_mediA(self):
 		out = open('/etc/egami/.egamibackup_files', 'w')
 		backup = 'ok'
 		mylist = ['/media/hdd', '/media/cf', '/media/card', '/media/usb', '/media/usb2', '/media/usb3']
 		for dic in mylist:
+			if not fileExists(dic):
+				mkdir(dic)
 			myscripts = listdir(dic)
 			for fil in myscripts:
 				if (fil.find('_EGAMI_Backup.egi') != -1):
@@ -117,7 +100,6 @@ class EGAMIBackupPanel(Screen):
 					plik2 = date+'            '+dic+'/        '+'        '+fil2
 					self.mlist.append((plik2, plik, dic))
 		out.close()
-		return ''
 		self["list"].setList(self.mlist)
 		
 	def myclose(self):
