@@ -14,7 +14,6 @@
 				<menu weight="7" level="0" text="Service searching" entryID="service_searching_selection">
 					<id val="scan" />
 					<item weight="10" text="Tuner configuration" entryID="tuner_setup"><screen module="Satconfig" screen="NimSelection" /></item>
-
 					<item weight="20" text="Automatic scan" entryID="auto_scan"><screen module="ScanSetup" screen="ScanSimple" /></item>
 					<item weight="30" text="Manual scan" entryID="manual_scan"><screen module="ScanSetup" /></item>
 				</menu>
@@ -67,7 +66,8 @@ self.session.openWithCallback(msgClosed, EpgLoadMsg)
 					<id val="av" />
 					<item level="0" text="VCR scart" entryID="scart_switch" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>					
 				</menu>
-				<!--<item level="0" entryID="remote_setup"><setup id="remotesetup"/></item>-->
+				<item level="0" entryID="channelselection_setup"><setup id="channelselection" /></item>
+				<item level="0" entryID="remote_setup"><setup id="remotesetup"/></item>
 				<item level="0" entryID="usage_setup"><setup id="usage" /></item>
 				<menu level="0" text="Display" entryID="display_selection" requires="Display">
 				      <id val="display" />
