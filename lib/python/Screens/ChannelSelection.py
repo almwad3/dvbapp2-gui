@@ -4,6 +4,7 @@ from Tools.Profile import profile
 from Screen import Screen
 import Screens.InfoBar
 import Components.ParentalControl
+from Components.About import about
 from Components.Button import Button
 from Components.config import configfile, config
 from Components.ServiceList import ServiceList
@@ -292,10 +293,7 @@ class ChannelContextMenu(Screen):
 
 	def showServiceInPiP(self):
 		service = self.session.nav.getCurrentService()
-		info = service and service.info()
-		xres = str(info.getInfo(iServiceInformation.sVideoWidth))
-		
-		if int(xres) <= 720:
+		if about.getCPUString() == 'BCM7346B2' or about.getCPUString() == 'BCM7425B2':
 			if not self.pipAvailable:
 				return
 			if self.session.pipshown:
