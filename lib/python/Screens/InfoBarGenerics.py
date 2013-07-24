@@ -2068,7 +2068,8 @@ class InfoBarTimeshift:
 		
 		if not state:
 			self.setSeekState(self.SEEK_STATE_PLAY)
-			self.restartSubtitle()
+
+		self.restartSubtitle()
 
 		if self.timeshiftEnabled() and not self.isSeekable():
 			self.ptsSeekPointerReset()
