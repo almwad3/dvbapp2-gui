@@ -390,6 +390,7 @@ lib/python/Plugins/Extensions/AccuWeather/locale/es/LC_MESSAGES/Makefile
 lib/python/Plugins/Extensions/AccuWeather/wheathericons/Makefile
 lib/python/Plugins/Extensions/AccuWeather/xbmcweather/Makefile
 lib/python/Plugins/Extensions/AccuWeather/xbmcweather/small/Makefile
+lib/python/Plugins/Extensions/EGAMIFaq/Makefile
 lib/python/Plugins/SystemPlugins/CableScan/Makefile
 lib/python/Plugins/SystemPlugins/CommonInterfaceAssignment/Makefile
 lib/python/Plugins/SystemPlugins/CommonInterfaceAssignment/meta/Makefile
