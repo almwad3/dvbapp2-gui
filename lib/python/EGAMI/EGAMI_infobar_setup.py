@@ -74,6 +74,7 @@ class EGDecodingSetup(ConfigListScreen, Screen):
         self.close()
         
 config.infobar = ConfigSubsection()
+config.infobar.weatherEnabled = ConfigYesNo(default=False)
 config.infobar.piconEnabled = ConfigYesNo(default=True)
 config.infobar.piconType = ConfigSelection(choices={ 'Name': _('Name'), 'Reference': _('Reference')}, default='Reference')
 config.infobar.piconDirectory = ConfigSelection(choices={ 'flash': _('/etc/picon/'),
@@ -103,6 +104,7 @@ class EGInfoBarSetup(Screen, ConfigListScreen):
 	    }, -2)
 
 	    self.list.append(getConfigListEntry(_("Infobar timeout"), config.usage.infobar_timeout))
+	    self.list.append(getConfigListEntry(_('Show Weather on channel change'), config.infobar.weatherEnabled))
 	    self.list.append(getConfigListEntry(_("Show permanental clock"), config.plugins.PermanentClock.enabled))
 	    self.list.append(getConfigListEntry(_('    Set clock position'), config.infobar.permanentClockPosition))
 	    self.list.append(getConfigListEntry(_("Show second infobar"), config.usage.show_second_infobar))
