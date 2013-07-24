@@ -8,4 +8,4 @@ install_PYTHON = \
 	
 install_DATA = \
 	dev_cf.png dev_hdd.png dev_sd.png dev_usb.png plugin_icon.png egamiboot.mvi \
-	nandsim_2637 nandsim_322 nandsim_360
+	nandsim_360
