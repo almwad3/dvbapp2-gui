@@ -541,7 +541,6 @@ class AboutSummary(Screen):
 		Screen.__init__(self, session, parent = parent)
 		
 		self["selected"] = StaticText("About")
-
 		self["BoxType"] = StaticText(_("Hardware: "))
 		self["KernelVersion"] = StaticText(_("Kernel:") + " " + about.getKernelVersionString())
 		self["ImageType"] = StaticText(_("Image:") + " " + about.getImageTypeString())
