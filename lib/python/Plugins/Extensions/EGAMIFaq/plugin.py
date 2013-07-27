@@ -519,4 +519,4 @@ def main(session, **kwargs):
 		session.open(MessageBox, _('Sorry: You have to install MediaPortal to get running this plugin'), MessageBox.TYPE_INFO, 3)
 		
 def Plugins(**kwargs):
-	return PluginDescriptor(name=_("EGAMI FAQ"), description="Video Tutorials", where = [PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU], icon="plugin.png", fnc=main)
+	return PluginDescriptor(name=_("EGAMI FAQ"), description="Video Tutorials", where = [PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU], icon="plugin_icon.png", fnc=main)
