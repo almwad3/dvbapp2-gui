@@ -70,6 +70,10 @@ if VENTON
 SUBDIRS = ini0 ini1 ini2 ini3
 endif
 
+if INI
+SUBDIRS = ini0 ini1 ini2 ini3
+endif
+
 if VUSOLO
 SUBDIRS = vu
 endif
