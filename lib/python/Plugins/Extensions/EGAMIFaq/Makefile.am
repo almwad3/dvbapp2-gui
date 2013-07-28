@@ -5,4 +5,4 @@ install_PYTHON = \
 	plugin.py
 	
 install_DATA = \
-	plugin_icon.png
+	plugin_icon.png channels.xml
