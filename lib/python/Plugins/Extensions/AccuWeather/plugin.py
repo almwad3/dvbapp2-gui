@@ -19,30 +19,14 @@ from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.AVSwitch import AVSwitch
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.config import ConfigSubsection, ConfigSubList, ConfigText, ConfigInteger, config
-from setup import initConfig, initConfigacu, WeatherPluginEntriesListConfigScreen, WeatherPluginEntriesListConfigScreenacu, initConfigfore, WeatherPluginEntriesListConfigScreenfore
+from setup import initConfigfore, WeatherPluginEntriesListConfigScreenfore
 from string import upper
 from Screens.ChoiceBox import ChoiceBox
 from enigma import eListboxPythonMultiContent, gFont, RT_HALIGN_LEFT, RT_HALIGN_RIGHT, RT_WRAP, RT_VALIGN_CENTER
 from Components.MenuList import MenuList
 from Components.MultiContent import MultiContentEntryText
 from os import environ
-import gettext
-from Components.Language import language
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE, fileExists
-
-lang = language.getLanguage()
-environ['LANGUAGE'] = lang[:2]
-lenguaje = str(lang[:2])
-gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
-gettext.textdomain('enigma2')
-gettext.bindtextdomain('AccuWeather', '%s%s' % (resolveFilename(SCOPE_PLUGINS), 'Extensions/AccuWeather/locale/'))
-
-def _(txt):
-    t = gettext.dgettext('AccuWeather', txt)
-    if t == txt:
-        t = gettext.gettext(txt)
-    return t
-
 
 config.plugins.AccuWeatherPlugin = ConfigSubsection()
 config.plugins.AccuWeatherPlugin.entriescount = ConfigInteger(0)
@@ -52,8 +36,6 @@ config.plugins.AccuWeatherPlugin.acuentriescount = ConfigInteger(0)
 config.plugins.AccuWeatherPlugin.acuEntries = ConfigSubList()
 config.plugins.AccuWeatherPlugin.foreentriescount = ConfigInteger(0)
 config.plugins.AccuWeatherPlugin.foreEntries = ConfigSubList()
-initConfig()
-initConfigacu()
 initConfigfore()
 UserAgent = 'Mozilla/5.0 (X11; U; Linux x86_64; de; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.'
 
@@ -429,15 +411,15 @@ class ForecaWeatherPlugin(Screen):
 	      <widget name="ico_left" position="15,3" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/nm_left-fs8.png" alphatest="blend" zPosition="1" />
 	      <widget name="ico_right" position="930,3" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/nm_right-fs8.png" alphatest="blend" zPosition="1" />
 	      <widget name="ico_menu" position="750,355" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/menu.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_menu" position="786,356" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+	      <widget name="key_menu" position="786,356" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
 	      <widget name="ico_l" position="750,413" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/izq-fs8.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_l" position="786,414" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+	      <widget name="key_yellow" position="786,414" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
 	      <widget name="ico_r" position="750,444" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/dch-fs8.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_r" position="786,445" size="181,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+	      <widget name="key_blue" position="786,445" size="181,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
 	      <eLabel name="lin1" position="10,278" size="951,1" zPosition="1" backgroundColor="#05303030" />
 	      <eLabel name="lin2" position="726,288" size="1,330" zPosition="1" backgroundColor="#05303030" />
 	      <widget name="ico_blue" position="750,544" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/green.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_blue" position="786,545" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+	      <widget name="key_green" position="786,545" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
 
 	      <widget name="satelite" position="132,59" size="720,480" alphatest="blend" zPosition="10" transparent="1" />
 	      <widget name="statustext2" position="0,3" zPosition="8" size="970,627" font="Regular;20" halign="center" valign="center" transparent="0" />
@@ -451,7 +433,7 @@ class ForecaWeatherPlugin(Screen):
 	      <widget name="detallado" position="0,31" zPosition="8" size="970,594" scrollbarMode="showOnDemand" />
 
 	      <widget name="ico_red" position="750,504" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/red.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_red" position="786,505" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
+	      <widget name="key_red" position="786,505" size="182,25" transparent="1" font="Regular; 16" zPosition="1" noWrap="1" />
 	      <widget name="ico_vie" position="5,132" zPosition="2" size="29,40" alphatest="blend" />
 	      <widget name="barrapix_arr" position="0,31" zPosition="9" size="970,594" alphatest="blend" transparent="1" />
 	      <widget name="barrapix_abj" position="0,0" zPosition="9" size="20,20" alphatest="blend" transparent="1" />
@@ -468,7 +450,9 @@ class ForecaWeatherPlugin(Screen):
          'input_date_time': self.config,
          'menu': self.config,
          'right': self.nextItem,
+         'blue': self.nextItem,
          'left': self.previousItem,
+         'yellow': self.previousItem,
          'up': self.kup,
          'down': self.kdown,
          'green': self.selimagen,
@@ -492,9 +476,9 @@ class ForecaWeatherPlugin(Screen):
         self['ico_right'] = Pixmap()
         self['ico_r'] = Pixmap()
         self['ico_l'] = Pixmap()
-        self['texto_menu'] = Label(_('List'))
-        self['texto_l'] = Label(_('Previous'))
-        self['texto_r'] = Label(_('Next'))
+        self['key_menu'] = Label(_('List'))
+        self['key_yellow'] = Label(_('Previous'))
+        self['key_blue'] = Label(_('Next'))
         self['current_icon'] = WeatherIcon()
         self['satelite'] = WeatherIcon()
         self['lugar'] = Label()
@@ -504,8 +488,8 @@ class ForecaWeatherPlugin(Screen):
         self['condicion'] = Label()
         self['viento'] = Label()
         self.descargaactiva = None
-        self['texto_blue'] = Label(_('Images satellite') + '...')
-        self['texto_red'] = Label(_('Detailed forecast'))
+        self['key_green'] = Label(_('Images satellite') + '...')
+        self['key_red'] = Label(_('Detailed forecast'))
         self['ico_blue'] = Pixmap()
         self['ico_red'] = Pixmap()
         for i in range(1, 4):
@@ -747,17 +731,17 @@ class ForecaWeatherPlugin(Screen):
             dominio = self.weatherPluginEntry.dominio.value
             pais = self.weatherPluginEntry.pais.value
             self['ico_menu'].hide()
-            self['texto_menu'].hide()
+            self['key_menu'].hide()
             self['ico_left'].hide()
             self['ico_right'].hide()
             self['ico_l'].hide()
             self['ico_r'].hide()
-            self['texto_l'].hide()
-            self['texto_r'].hide()
-            self['texto_blue'].hide()
+            self['key_yellow'].hide()
+            self['key_blue'].hide()
+            self['key_green'].hide()
             self['ico_blue'].hide()
             self['ico_red'].hide()
-            self['texto_red'].hide()
+            self['key_red'].hide()
             self['statustext2'].hide()
             self['statustext'].setText(_('Getting weather information...') + '\n[' + ciudad + ', ' + ' - ' + pais + ']')
             cana = ''
@@ -770,16 +754,16 @@ class ForecaWeatherPlugin(Screen):
         else:
             self['statustext'].setText(_("No locations defined...\nPress 'Menu' to do that."))
             self['ico_menu'].show()
-            self['texto_menu'].show()
+            self['key_menu'].show()
             self['ico_left'].hide()
             self['ico_right'].hide()
             self['ico_l'].hide()
             self['ico_r'].hide()
-            self['texto_l'].hide()
-            self['texto_r'].hide()
-            self['texto_blue'].hide()
+            self['key_yellow'].hide()
+            self['key_blue'].hide()
+            self['key_green'].hide()
             self['ico_red'].hide()
-            self['texto_red'].hide()
+            self['key_red'].hide()
             self['ico_blue'].hide()
         self['statustext'].show()
 
@@ -873,12 +857,12 @@ class ForecaWeatherPlugin(Screen):
         self['viento'].setText('')
         self['info_barra'].hide()
         self['barra'].hide()
-        self['texto_blue'].hide()
+        self['key_green'].hide()
         self['ico_blue'].hide()
         self['ico_temp'].hide()
         self['ico_vie'].hide()
         self['ico_red'].hide()
-        self['texto_red'].hide()
+        self['key_red'].hide()
         for i in range(1, 4):
             self['dia%s' % i].setText('')
             self['icono_dia%s' % i].hide()
@@ -886,13 +870,13 @@ class ForecaWeatherPlugin(Screen):
 
         self['current_icon'].hide()
         self['ico_menu'].hide()
-        self['texto_menu'].hide()
+        self['key_menu'].hide()
         self['ico_left'].hide()
         self['ico_right'].hide()
         self['ico_l'].hide()
         self['ico_r'].hide()
-        self['texto_l'].hide()
-        self['texto_r'].hide()
+        self['key_yellow'].hide()
+        self['key_blue'].hide()
 
     def errorIconDownload(self, error = None, item = None):
         item.error = True
@@ -930,19 +914,19 @@ class ForecaWeatherPlugin(Screen):
         self.descargando = False
         self['statustext'].hide()
         self['ico_menu'].show()
-        self['texto_menu'].show()
-        self['texto_blue'].show()
+        self['key_menu'].show()
+        self['key_green'].show()
         self['ico_blue'].show()
         self['info_barra'].show()
         self['ico_red'].show()
-        self['texto_red'].show()
+        self['key_red'].show()
         if self.weatherPluginEntryCount > 1:
             self['ico_left'].show()
             self['ico_right'].show()
             self['ico_l'].show()
             self['ico_r'].show()
-            self['texto_l'].show()
-            self['texto_r'].show()
+            self['key_yellow'].show()
+            self['key_blue'].show()
         self['lugar'].show()
         self['temperatura'].show()
         self['condicion'].show()
@@ -1177,816 +1161,6 @@ class ForecaWeatherPlugin(Screen):
             self['statustext'].setText(str(error.getErrorMessage()))
             self['statustext'].show()
             self['statustext2'].hide()
-
-
-class AccuWeatherPlugin(Screen):
-    skin = '''<screen name="AccuWeatherPlugin" position="center,center" size="970,560" title="AccuWeather - accuwheater.com">
-	      <widget name="lugar" position="36,3" zPosition="2" size="512,28" font="Regular;23" transparent="1" valign="center" backgroundColor="#000000" />
-	      <widget name="info_entradas" position="753,3" zPosition="3" size="166,22" font="Regular; 16" transparent="1" halign="right" backgroundColor="#000000" />
-	      <widget name="current_icon" position="32,46" zPosition="1" size="74,74" alphatest="blend" />
-	      <widget name="temperatura" position="100,61" zPosition="1" size="78,30" font="Regular; 26" transparent="1" noWrap="1" halign="right" backgroundColor="#000000" />
-	      <widget name="condicion" position="201,63" zPosition="1" size="360,20" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="viento" position="201,90" zPosition="1" size="360,20" font="Regular;18" transparent="1" backgroundColor="#000000" />
-	      <widget name="humedad" position="201,115" zPosition="1" size="360,20" font="Regular;18" transparent="1" backgroundColor="#000000" />
-	      <widget name="rocio" position="201,140" zPosition="1" size="360,20" font="Regular;18" transparent="1" backgroundColor="#000000" />
-	      <widget name="presion" position="201,165" zPosition="1" size="360,20" font="Regular;18" transparent="1" backgroundColor="#000000" />
-	      <widget name="tendencia" position="201,190" zPosition="1" size="360,20" font="Regular;18" transparent="1" backgroundColor="#000000" />
-	      <widget name="visibilidad" position="201,215" zPosition="1" size="360,20" font="Regular;18" transparent="1" backgroundColor="#000000" />
-	      <widget name="sol" position="201,240" zPosition="1" size="360,20" font="Regular;18" transparent="1" backgroundColor="#000000" />
-	      <eLabel name="lin0" position="573,25" size="1,255" zPosition="1" backgroundColor="#10404040" />
-	      <widget name="icono1" position="584,30" zPosition="1" size="79,79" alphatest="blend" />
-	      <widget name="hora1" position="673,38" zPosition="1" size="180,22" halign="left" valign="center" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="temperatura1" position="673,57" zPosition="1" size="180,22" halign="left" valign="center" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="condicion1" position="673,76" zPosition="1" size="295,22" halign="left" valign="center" font="Regular; 16" transparent="1" noWrap="1" backgroundColor="#000000" />
-	      <widget name="icono2" position="584,115" zPosition="1" size="79,79" alphatest="blend" />
-	      <widget name="hora2" position="673,123" zPosition="1" size="180,22" halign="left" valign="center" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="temperatura2" position="673,143" zPosition="1" size="180,22" halign="left" valign="center" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="condicion2" position="673,163" zPosition="1" size="295,22" halign="left" valign="center" font="Regular; 16" transparent="1" noWrap="1" backgroundColor="#000000" />
-	      <widget name="icono3" position="584,200" zPosition="1" size="79,79" alphatest="blend" />
-	      <widget name="hora3" position="673,208" zPosition="1" size="180,22" halign="left" valign="center" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="temperatura3" position="673,228" zPosition="1" size="180,22" halign="left" valign="center" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="condicion3" position="673,248" zPosition="1" size="295,22" halign="left" valign="center" font="Regular; 16" transparent="1" noWrap="1" backgroundColor="#000000" />
-	      <widget name="dia1" position="24,297" zPosition="1" size="280,26" halign="center" valign="center" font="Regular; 22" transparent="1" backgroundColor="#000000" />
-	      <widget name="icono_dia1" position="124,326" zPosition="1" size="79,79" alphatest="blend" />
-	      <widget name="info_dia1" position="24,409" zPosition="1" size="280,90" halign="center" valign="top" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="dia2" position="342,297" zPosition="1" size="280,26" halign="center" valign="center" font="Regular; 22" transparent="1" backgroundColor="#000000" />
-	      <widget name="icono_dia2" position="442,327" zPosition="1" size="79,79" alphatest="blend" />
-	      <widget name="info_dia2" position="342,409" zPosition="1" size="280,90" halign="center" valign="bottom" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-	      <widget name="dia3" position="655,296" zPosition="1" size="280,26" halign="center" valign="center" font="Regular; 22" transparent="1" backgroundColor="#000000" />
-	      <widget name="icono_dia3" position="755,327" zPosition="1" size="79,79" alphatest="blend" />
-	      <widget name="info_dia3" position="655,409" zPosition="1" size="280,90" halign="center" valign="bottom" font="Regular; 18" transparent="1" backgroundColor="#000000" />
-
-	      <widget name="statustext" position="0,23" zPosition="0" size="570,261" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="#10bfbfbf" />
-	      <widget name="ico_left" position="15,3" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/nm_left-fs8.png" alphatest="blend" zPosition="1" />
-	      <widget name="ico_right" position="930,3" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/nm_right-fs8.png" alphatest="blend" zPosition="1" />
-	      <widget name="ico_menu" position="775,527" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/menu.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_menu" position="811,528" size="141,25" transparent="1" font="Regular; 16" zPosition="1" />
-	      <widget name="ico_l" position="8,527" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/izq-fs8.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_l" position="43,528" size="117,25" transparent="1" font="Regular; 16" zPosition="1" />
-	      <widget name="ico_r" position="170,527" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/dch-fs8.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_r" position="206,528" size="141,25" transparent="1" font="Regular; 16" zPosition="1" />
-	      <eLabel name="lin1" position="10,288" size="951,1" zPosition="1" backgroundColor="#10444444" />
-	      <eLabel name="lin2" position="10,510" size="951,1" zPosition="1" backgroundColor="#10444444" />
-	      <eLabel name="lin3" position="323,297" size="1,200" zPosition="1" backgroundColor="#10404040" />
-	      <eLabel name="lin4" position="636,297" size="1,200" zPosition="1" backgroundColor="#10404040" />
-
-	      <widget name="hora" position="100,90" zPosition="1" size="78,20" font="Regular; 18" transparent="1" halign="right" backgroundColor="#000000" />
-	      <widget name="ico_blue" position="350,527" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/green.png" alphatest="blend" zPosition="1" />
-	      <widget name="texto_blue" position="385,528" size="241,25" transparent="1" font="Regular; 16" zPosition="1" />
-
-	      <widget name="satelite" position="180,20" size="640,480" alphatest="blend" zPosition="9" transparent="1" />
-	      <widget name="statustext2" position="0,0" zPosition="8" size="970,560" font="Regular;20" halign="center" valign="center" transparent="0" />
-	      <widget name="barra" position="301,507" zPosition="10" size="406,45" alphatest="blend" />
-	      <ePixmap name="logofuente" position="10,213" size="107,63" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/icono1-fs8.png" transparent="1" alphatest="blend" />
-	      </screen>'''
-
-    def __init__(self, session):
-        self.session = session
-        Screen.__init__(self, session)
-        self['actions'] = ActionMap(['WizardActions',
-         'DirectionActions',
-         'ColorActions',
-         'EPGSelectActions',
-         'MenuActions'], {'back': self.exit,
-         'input_date_time': self.config,
-         'menu': self.config,
-         'right': self.nextItem,
-         'left': self.previousItem,
-         'green': self.selimagen}, -1)
-        self.sisat = False
-        self['statustext'] = Label()
-        self['statustext2'] = Label()
-        self['infosat'] = Pixmap()
-        self['barra'] = Pixmap()
-        self['ico_menu'] = Pixmap()
-        self['ico_left'] = Pixmap()
-        self['ico_right'] = Pixmap()
-        self['ico_r'] = Pixmap()
-        self['ico_l'] = Pixmap()
-        self['texto_menu'] = Label(_('Setup'))
-        self['texto_l'] = Label(_('Previous'))
-        self['texto_r'] = Label(_('Next'))
-        self['current_icon'] = WeatherIcon()
-        self['satelite'] = WeatherIcon()
-        self['lugar'] = Label()
-        self['info_entradas'] = Label()
-        self['temperatura'] = Label()
-        self['condicion'] = Label()
-        self['viento'] = Label()
-        self['humedad'] = Label()
-        self['rocio'] = Label()
-        self['presion'] = Label()
-        self['tendencia'] = Label()
-        self['visibilidad'] = Label()
-        self['sol'] = Label()
-        self['hora'] = Label()
-        self['texto_blue'] = Label(_('Images satellite') + '...')
-        self['ico_blue'] = Pixmap()
-        for i in range(1, 4):
-            self['dia%s' % i] = Label()
-            self['icono_dia%s' % i] = WeatherIcon()
-            self['info_dia%s' % i] = Label()
-
-        for i in range(1, 4):
-            self['hora%s' % i] = Label()
-            self['icono%s' % i] = WeatherIcon()
-            self['temperatura%s' % i] = Label()
-            self['condicion%s' % i] = Label()
-
-        self.appdir = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/acuwheathericons/'
-        if not os.path.exists(self.appdir):
-            os.mkdir(self.appdir)
-        self.weatherPluginEntryIndex = -1
-        self.weatherPluginEntryCount = config.plugins.AccuWeatherPlugin.acuentriescount.value
-        if self.weatherPluginEntryCount >= 1:
-            self.weatherPluginEntry = config.plugins.AccuWeatherPlugin.acuEntries[0]
-            self.weatherPluginEntryIndex = 1
-        else:
-            self.weatherPluginEntry = None
-        self.onLayoutFinish.append(self.startRun)
-
-    def selimagen(self):
-        contextFileList = [(_('Satellite'), 'sat'),
-         (_('High Temperature'), 'hig'),
-         (_('Low Temperature'), 'low'),
-         (_('UV Index'), 'uv'),
-         (_('Wind Speed'), 'win'),
-         (_('Amount of Precipitacion'), 'pre')]
-        dei = self.session.openWithCallback(self.SysExecution, ChoiceBox, title=_('Select satellite image') + ':', list=contextFileList)
-
-    def SysExecution(self, answer):
-        answer = answer and answer[1]
-        asp = None
-        if answer == 'sat':
-            asp = 'satellite.aspx'
-        elif answer == 'hig':
-            asp = 'high-temperature.aspx'
-        elif answer == 'low':
-            asp = 'low-temperature.aspx'
-        elif answer == 'uv':
-            asp = 'uv-index.aspx'
-        elif answer == 'win':
-            asp = 'wind-speed.aspx'
-        elif answer == 'pre':
-            asp = 'precipitation-amount.aspx'
-        if asp:
-            self.muestrasat(asp, answer)
-
-    def exit(self):
-        if self.sisat:
-            self.dessat()
-            return
-        self.close()
-
-    def muestrasat(self, asp, sufijo):
-        if self.sisat:
-            self.dessat()
-            return
-        appimagedir = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/'
-        self['barra'].instance.setPixmapFromFile(appimagedir + 'b' + sufijo + '-fs8.png')
-        self['barra'].show()
-        self['statustext2'].setText(_('Downloading') + ' ' + _('Images satellite') + '\n' + _('Wait') + '...')
-        self['statustext2'].show()
-        self.sisat = True
-        if self.weatherPluginEntry is not None:
-            ciudad = self.weatherPluginEntry.city.value
-            comunidad = self.weatherPluginEntry.comunity.value
-            if len(comunidad) > 0:
-                comunidad = comunidad + '/'
-            idioma = self.weatherPluginEntry.language.value
-            pais = self.weatherPluginEntry.pais.value
-            url = 'http://www.accuweather.com/%s/%s/%s%s/%s' % (idioma,
-             pais,
-             comunidad,
-             ciudad,
-             asp)
-            getXML(url).addCallback(self.xmlCallbackSat).addErrback(self.error)
-
-    def startRun(self):
-        self['infosat'].hide()
-        self['satelite'].hide()
-        self['barra'].hide()
-        if self.weatherPluginEntry is not None:
-            ciudad = self.weatherPluginEntry.city.value
-            comunidad = self.weatherPluginEntry.comunity.value
-            idioma = self.weatherPluginEntry.language.value
-            pais = self.weatherPluginEntry.pais.value
-            self['ico_menu'].hide()
-            self['texto_menu'].hide()
-            self['ico_left'].hide()
-            self['ico_right'].hide()
-            self['ico_l'].hide()
-            self['ico_r'].hide()
-            self['texto_l'].hide()
-            self['texto_r'].hide()
-            self['texto_blue'].hide()
-            self['ico_blue'].hide()
-            self['statustext2'].hide()
-            self['statustext'].setText(_('Getting weather information...') + '\n[' + ciudad + ', ' + comunidad + ' - ' + pais + ']')
-            if len(comunidad) > 0:
-                comunidad = comunidad + '/'
-            cana = ''
-            if self.weatherPluginEntryIndex == 1:
-                cana = '(' + _('Default') + ') '
-            self['info_entradas'].setText(cana + str(self.weatherPluginEntryIndex) + ' ' + _('of') + ' ' + str(self.weatherPluginEntryCount))
-            url = 'http://www.accuweather.com/%s/%s/%s%s/quick-look.aspx' % (idioma,
-             pais,
-             comunidad,
-             ciudad)
-            getXML(url).addCallback(self.xmlCallback).addErrback(self.error)
-        else:
-            self['statustext'].setText(_("No locations defined...\nPress 'Menu' to do that."))
-            self['ico_menu'].show()
-            self['texto_menu'].show()
-            self['ico_left'].hide()
-            self['ico_right'].hide()
-            self['ico_l'].hide()
-            self['ico_r'].hide()
-            self['texto_l'].hide()
-            self['texto_r'].hide()
-            self['texto_blue'].hide()
-            self['ico_blue'].hide()
-        self['statustext'].show()
-
-    def dessat(self):
-        os.system('rm /tmp/sp_*.gif;rm /tmp/iseur3.jpg')
-        self['satelite'].hide()
-        self['statustext2'].hide()
-        self['infosat'].hide()
-        self['barra'].hide()
-        self.sisat = False
-
-    def nextItem(self):
-        if self.sisat:
-            self.dessat()
-            return
-        if self.weatherPluginEntryCount != 0:
-            if self.weatherPluginEntryIndex < self.weatherPluginEntryCount:
-                self.weatherPluginEntryIndex = self.weatherPluginEntryIndex + 1
-            else:
-                self.weatherPluginEntryIndex = 1
-            self.setItem()
-
-    def previousItem(self):
-        if self.sisat:
-            self.dessat()
-            return
-        if self.weatherPluginEntryCount != 0:
-            if self.weatherPluginEntryIndex >= 2:
-                self.weatherPluginEntryIndex = self.weatherPluginEntryIndex - 1
-            else:
-                self.weatherPluginEntryIndex = self.weatherPluginEntryCount
-            self.setItem()
-
-    def setItem(self):
-        self.weatherPluginEntry = config.plugins.AccuWeatherPlugin.acuEntries[self.weatherPluginEntryIndex - 1]
-        self.clearFields()
-        self.startRun()
-
-    def clearFields(self):
-        self['lugar'].setText('')
-        self['info_entradas'].setText('')
-        self['temperatura'].setText('')
-        self['condicion'].setText('')
-        self['viento'].setText('')
-        self['humedad'].setText('')
-        self['rocio'].setText('')
-        self['presion'].setText('')
-        self['tendencia'].setText('')
-        self['visibilidad'].setText('')
-        self['sol'].setText('')
-        self['hora'].setText('')
-        self['texto_blue'].hide()
-        self['ico_blue'].hide()
-        for i in range(1, 4):
-            self['dia%s' % i].setText('')
-            self['icono_dia%s' % i].hide()
-            self['info_dia%s' % i].setText('')
-
-        for i in range(1, 4):
-            self['hora%s' % i].setText('')
-            self['icono%s' % i].hide()
-            self['temperatura%s' % i].setText('')
-            self['condicion%s' % i].setText('')
-
-        self['current_icon'].hide()
-        self['ico_menu'].hide()
-        self['texto_menu'].hide()
-        self['ico_left'].hide()
-        self['ico_right'].hide()
-        self['ico_l'].hide()
-        self['ico_r'].hide()
-        self['texto_l'].hide()
-        self['texto_r'].hide()
-
-    def errorIconDownload(self, error = None, item = None):
-        item.error = True
-
-    def finishedIconDownload(self, result, item):
-        if not item.error:
-            self.showIcon(item.index, item.filename)
-
-    def showIcon(self, nombre, filename):
-        self[nombre].updateIcon(filename)
-        self[nombre].show()
-
-    def xmlCallbackSat(self, xmlstring):
-        self['statustext2'].show()
-        laimagen = devImagen(xmlstring, 'ctl00_cphContent_imgMap')
-        url = laimagen
-        nombre = 'satelite'
-        parts = string.split(url, '/')
-        filename = '/tmp/' + parts[-1]
-        IconDownloadList = []
-        IconDownloadList.append(WeatherIconItem(url=url, filename=filename, index=nombre))
-        if len(IconDownloadList) != 0:
-            ds = defer.DeferredSemaphore(tokens=len(IconDownloadList))
-            downloads = [ ds.run(download, item).addErrback(self.errorIconDownload, item).addCallback(self.finishedIconDownload, item) for item in IconDownloadList ]
-            finished = defer.DeferredList(downloads).addErrback(self.error)
-
-    def xmlCallback(self, xmlstring):
-        self['statustext'].hide()
-        self['ico_menu'].show()
-        self['texto_menu'].show()
-        self['texto_blue'].show()
-        self['ico_blue'].show()
-        if self.weatherPluginEntryCount > 1:
-            self['ico_left'].show()
-            self['ico_right'].show()
-            self['ico_l'].show()
-            self['ico_r'].show()
-            self['texto_l'].show()
-            self['texto_r'].show()
-        IconDownloadList = []
-        self['lugar'].show()
-        self['temperatura'].show()
-        self['condicion'].show()
-        self['viento'].show()
-        self['humedad'].show()
-        self['rocio'].show()
-        self['presion'].show()
-        self['tendencia'].show()
-        self['visibilidad'].show()
-        self['sol'].show()
-        for i in range(1, 4):
-            self['dia%s' % i].show()
-            self['info_dia%s' % i].show()
-
-        for i in range(1, 4):
-            self['hora%s' % i].show()
-            self['temperatura%s' % i].show()
-            self['condicion%s' % i].show()
-
-        self['lugar'].setText(devHtml(xmlstring, 'ctl00_LocationHeader_lnkLocation'))
-        self['temperatura'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblCurrentTemp'))
-        self['condicion'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblCurrentText'))
-        self['hora'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblCurrentTime'))
-        temp = self.gesImagen('current_icon', xmlstring, 'ctl00_cphContent_imgCurConCondition')
-        if temp:
-            IconDownloadList.append(temp)
-        self['viento'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblWindsName') + ': ' + devHtml(xmlstring, 'ctl00_cphContent_lblWindsValue'))
-        self['humedad'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblHumidityName') + ': ' + devHtml(xmlstring, 'ctl00_cphContent_lblHumidityValue'))
-        self['rocio'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblDewPointName') + ': ' + devHtml(xmlstring, 'ctl00_cphContent_lblDewPointValue'))
-        self['presion'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblPressureName') + ': ' + devHtml(xmlstring, 'ctl00_cphContent_lblPressureValue'))
-        self['tendencia'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblPressureTenName') + ': ' + devHtml(xmlstring, 'ctl00_cphContent_lblPressureTenValue'))
-        self['visibilidad'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblVisibilityName') + ': ' + devHtml(xmlstring, 'ctl00_cphContent_lblVisibilityValue'))
-        self['sol'].setText(devHtml(xmlstring, 'ctl00_cphContent_lblSunRiseName') + ': ' + devHtml(xmlstring, 'ctl00_cphContent_lblSunRiseValue') + ' - ' + devHtml(xmlstring, 'ctl00_cphContent_lblSunSetValue'))
-        for i in range(1, 4):
-            self['dia%s' % i].setText(devHtml(xmlstring, 'ctl00_cphContent_lblDayName%s' % i))
-            temp = self.gesImagen('icono_dia%s' % i, xmlstring, 'ctl00_cphContent_imgDay%sIcon' % i)
-            if temp:
-                IconDownloadList.append(temp)
-            self['info_dia%s' % i].setText(devHtml(xmlstring, 'ctl00_cphContent_lblTxtForecast%s' % i) + '\n' + devHtml(xmlstring, 'ctl00_cphContent_lblHigh%s' % i) + '\n' + devHtml(xmlstring, 'ctl00_cphContent_lblLow%s' % i))
-
-        for i in range(1, 4):
-            self['hora%s' % i].setText(devHtml(xmlstring, 'ctl00_cphContent_lblHbhHour%s' % i))
-            temp = self.gesImagen('icono%s' % i, xmlstring, 'ctl00_cphContent_imgHbhCond%s' % i)
-            if temp:
-                IconDownloadList.append(temp)
-            self['temperatura%s' % i].setText(devHtml(xmlstring, 'ctl00_cphContent_lblHbhTemp%s' % i))
-            self['condicion%s' % i].setText(devHtml(xmlstring, 'ctl00_cphContent_lblHbhText%s' % i))
-
-        if len(IconDownloadList) != 0:
-            ds = defer.DeferredSemaphore(tokens=len(IconDownloadList))
-            downloads = [ ds.run(download, item).addErrback(self.errorIconDownload, item).addCallback(self.finishedIconDownload, item) for item in IconDownloadList ]
-            finished = defer.DeferredList(downloads).addErrback(self.error)
-        if self.weatherPluginEntryIndex == 1:
-            if 'ctl00_LocationHeader_debug' in xmlstring and 'ctl00_cphContent_lnkHbhDetails3' in xmlstring:
-                try:
-                    ertexto = devStrTm(xmlstring, 'ctl00_LocationHeader_debug', 'ctl00_cphContent_lnkHbhDetails3') + ' (from plugin)'
-                    sourceEncoding = 'utf-8'
-                    targetEncoding = 'iso-8859-1'
-                    f = open('/tmp/wf_acuspz.xml', 'w')
-                    f.write(ertexto)
-                    f.close()
-                except:
-                    pass
-
-    def gesImagen(self, nombre, xmlstring, etiqueta):
-        laimagen = devImagen(xmlstring, etiqueta)
-        url = laimagen
-        parts = string.split(url, '/')
-        filename = self.appdir + parts[-1]
-        filenamepng = filename.replace('.jpg', '-fs8.png')
-        if os.path.exists(filenamepng):
-            self[nombre].instance.setPixmapFromFile(filenamepng)
-            self[nombre].show()
-            return None
-        if not os.path.exists(filename):
-            return WeatherIconItem(url=url, filename=filename, index=nombre)
-        self.showIcon(nombre, filename)
-
-    def devsem(self, dia):
-        ret = dia
-        if self.weatherPluginEntry.language.value == 'es':
-            if dia == 'lun':
-                ret = 'Lunes'
-            elif dia == 'mar':
-                ret = 'Martes'
-            elif dia == 'mi\xc3\xa9':
-                ret = 'Mi\xc3\xa9rcoles'
-            elif dia == 'jue':
-                ret = 'Jueves'
-            elif dia == 'vie':
-                ret = 'Viernes'
-            elif dia == 's\xc3\xa1b':
-                ret = 'S\xc3\xa1bado'
-            elif dia == 'dom':
-                ret = 'Domingo'
-            else:
-                ret = upper(ret)
-        else:
-            ret = upper(ret)
-        return ret
-
-    def config(self):
-        if self.sisat:
-            self.dessat()
-            return
-        self.session.openWithCallback(self.setupFinished, WeatherPluginEntriesListConfigScreenacu)
-
-    def setupFinished(self, index, entry = None):
-        self.weatherPluginEntryCount = config.plugins.AccuWeatherPlugin.acuentriescount.value
-        if self.weatherPluginEntryCount >= 1:
-            if entry is not None:
-                self.weatherPluginEntry = entry
-                self.weatherPluginEntryIndex = index + 1
-            if self.weatherPluginEntry is None:
-                self.weatherPluginEntry = config.plugins.AccuWeatherPlugin.acuEntries[0]
-                self.weatherPluginEntryIndex = 1
-        else:
-            self.weatherPluginEntry = None
-            self.weatherPluginEntryIndex = -1
-        self.clearFields()
-        self.startRun()
-
-    def error(self, error = None):
-        if error is not None:
-            self.clearFields()
-            self['statustext'].setText(str(error.getErrorMessage()))
-            self['statustext'].show()
-            self['ico_menu'].show()
-            self['texto_menu'].show()
-
-
-class GoogleWeatherPlugin(Screen):
-    skin = '''<screen name="GoogleWeatherPlugin" position="center,center" size="770,470" title="Weather Info - google.com">
-	  <ePixmap name="logofuente" position="655,94" size="107,63" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/icono0-fs8.png" transparent="1" alphatest="blend" />
-	  <widget name="caption" position="36,21" zPosition="2" size="526,28" font="Regular;22" transparent="1" valign="center" />
-	  <widget name="info_entradas" position="566,23" zPosition="3" size="166,28" font="Regular; 16" transparent="1" halign="right" />
-	  <widget name="currentTemp" position="115,66" zPosition="3" size="78,30" font="Regular; 26" transparent="1" noWrap="1" />
-	  <widget name="condition" position="201,63" zPosition="1" size="536,20" font="Regular; 18" transparent="1" />
-	  <widget name="wind_condition" position="201,85" zPosition="1" size="536,20" font="Regular;18" transparent="1" />
-	  <widget name="weekday1" position="9,187" zPosition="1" size="180,22" halign="center" valign="center" font="Regular; 20" transparent="1" />
-	  <widget name="weekday1_icon" position="56,211" zPosition="1" size="74,74" alphatest="blend" />
-	  <widget name="weekday1_temp" position="9,285" zPosition="1" size="180,130" halign="center" valign="top" font="Regular;16" transparent="1" />
-	  <widget name="weekday2" position="199,187" zPosition="1" size="180,22" halign="center" valign="center" font="Regular; 20" transparent="1" />
-	  <widget name="weekday2_icon" position="252,211" zPosition="1" size="74,74" alphatest="blend" />
-	  <widget name="weekday2_temp" position="199,285" zPosition="1" size="180,130" halign="center" valign="bottom" font="Regular;16" transparent="1" />
-	  <widget name="weekday3" position="389,187" zPosition="1" size="180,22" halign="center" valign="center" font="Regular; 20" transparent="1" />
-	  <widget name="weekday3_icon" position="445,211" zPosition="1" size="74,74" alphatest="blend" />
-	  <widget name="weekday3_temp" position="389,285" zPosition="1" size="180,130" halign="center" valign="bottom" font="Regular;16" transparent="1" />
-	  <widget name="weekday4" position="579,187" zPosition="1" size="180,22" halign="center" valign="center" font="Regular; 20" transparent="1" />
-	  <widget name="weekday4_icon" position="628,211" zPosition="1" size="74,74" alphatest="blend" />
-	  <widget name="weekday4_temp" position="579,285" zPosition="1" size="180,130" halign="center" valign="bottom" font="Regular;16" transparent="1" />
-	  <widget name="statustext" position="0,23" zPosition="0" size="768,140" font="Regular;20" halign="center" valign="center" transparent="1" />
-	  <widget name="ico_left" position="10,21" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/nm_left-fs8.png" alphatest="blend" zPosition="1" />
-	  <widget name="ico_right" position="743,21" size="16,26" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/nm_right-fs8.png" alphatest="blend" zPosition="1" />
-	  <widget name="current_icon" position="8,50" zPosition="1" size="74,74" alphatest="blend" />
-	  <widget name="ico_menu" position="584,434" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/menu.png" alphatest="blend" zPosition="1" />
-	  <widget name="texto_menu" position="619,438" size="141,25" transparent="1" font="Regular; 16" zPosition="1" />
-	  <widget name="ico_l" position="5,434" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/izq-fs8.png" alphatest="blend" zPosition="1" />
-	  <widget name="texto_l" position="40,438" size="117,25" transparent="1" font="Regular; 16" zPosition="1" />
-	  <widget name="ico_r" position="160,434" size="35,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/image/dch-fs8.png" alphatest="blend" zPosition="1" />
-	  <widget name="texto_r" position="195,438" size="141,25" transparent="1" font="Regular; 16" zPosition="1" />
-	  <eLabel name="lin1" position="10,164" size="751,1" zPosition="1" backgroundColor="#10444444" />
-	  <eLabel name="lin2" position="10,420" size="751,1" zPosition="1" backgroundColor="#10444444" />
-	  <eLabel name="lin3" position="193,185" size="1,210" zPosition="1" backgroundColor="#10404040" />
-	  <eLabel name="lin4" position="383,185" size="1,210" zPosition="1" backgroundColor="#10404040" />
-	  <eLabel name="lin5" position="573,185" size="1,210" zPosition="1" backgroundColor="#10404040" />
-	  <widget name="ico_temp" position="59,50" zPosition="2" size="74,74" alphatest="blend" />
-	  </screen>'''
-
-    def __init__(self, session):
-        self.session = session
-        Screen.__init__(self, session)
-        self['actions'] = ActionMap(['WizardActions',
-         'DirectionActions',
-         'ColorActions',
-         'EPGSelectActions',
-         'MenuActions'], {'back': self.close,
-         'input_date_time': self.config,
-         'menu': self.config,
-         'right': self.nextItem,
-         'left': self.previousItem,
-         'blue': self.acuInfo}, -1)
-        self['statustext'] = Label()
-        self['caption'] = Label()
-        self['info_entradas'] = Label()
-        self['currentTemp'] = Label()
-        self['condition'] = Label()
-        self['wind_condition'] = Label()
-        self['current_icon'] = WeatherIcon()
-        self['ico_menu'] = Pixmap()
-        self['ico_left'] = Pixmap()
-        self['ico_temp'] = Pixmap()
-        self['ico_right'] = Pixmap()
-        self['ico_r'] = Pixmap()
-        self['ico_l'] = Pixmap()
-        self['texto_menu'] = Label(_('Setup'))
-        self['texto_l'] = Label(_('Previous'))
-        self['texto_r'] = Label(_('Next'))
-        for i in range(1, 5):
-            self['weekday%s' % i] = Label()
-            self['weekday%s_icon' % i] = WeatherIcon()
-            self['weekday%s_temp' % i] = Label()
-
-        self.appdir = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/wheathericons/'
-        self.rutapng = '/usr/lib/enigma2/python/Plugins/Extensions/AccuWeather/acuwheathericons/'
-        if not os.path.exists(self.appdir):
-            os.mkdir(self.appdir)
-        self.weatherPluginEntryIndex = -1
-        self.weatherPluginEntryCount = config.plugins.AccuWeatherPlugin.entriescount.value
-        if self.weatherPluginEntryCount >= 1:
-            self.weatherPluginEntry = config.plugins.AccuWeatherPlugin.Entries[0]
-            self.weatherPluginEntryIndex = 1
-        else:
-            self.weatherPluginEntry = None
-        self.onLayoutFinish.append(self.startRun)
-
-    def acuInfo(self):
-        self.session.open(AccuWeatherPlugin)
-
-    def startRun(self):
-        if self.weatherPluginEntry is not None:
-            self['ico_menu'].hide()
-            self['texto_menu'].hide()
-            self['ico_left'].hide()
-            self['ico_right'].hide()
-            self['ico_l'].hide()
-            self['ico_r'].hide()
-            self['texto_l'].hide()
-            self['texto_r'].hide()
-            self['ico_temp'].hide()
-            self['statustext'].setText(_('Getting weather information...') + '\n[' + self.weatherPluginEntry.city.value + ']')
-            cana = ''
-            if self.weatherPluginEntryIndex == 1:
-                cana = '(' + _('Default') + ') '
-            self['info_entradas'].setText(cana + str(self.weatherPluginEntryIndex) + ' ' + _('of') + ' ' + str(self.weatherPluginEntryCount))
-            url = 'http://www.google.com/ig/api?weather=%s&hl=%s' % (urllib.quote(self.weatherPluginEntry.city.value), self.weatherPluginEntry.language.value)
-            getXML(url).addCallback(self.xmlCallback).addErrback(self.error)
-        else:
-            self['statustext'].setText(_("No locations defined...\nPress 'Menu' to do that."))
-            self['ico_menu'].show()
-            self['texto_menu'].show()
-            self['ico_left'].hide()
-            self['ico_right'].hide()
-            self['ico_l'].hide()
-            self['ico_r'].hide()
-            self['texto_l'].hide()
-            self['texto_r'].hide()
-        self['statustext'].show()
-
-    def nextItem(self):
-        if self.weatherPluginEntryCount != 0:
-            if self.weatherPluginEntryIndex < self.weatherPluginEntryCount:
-                self.weatherPluginEntryIndex = self.weatherPluginEntryIndex + 1
-            else:
-                self.weatherPluginEntryIndex = 1
-            self.setItem()
-
-    def previousItem(self):
-        if self.weatherPluginEntryCount != 0:
-            if self.weatherPluginEntryIndex >= 2:
-                self.weatherPluginEntryIndex = self.weatherPluginEntryIndex - 1
-            else:
-                self.weatherPluginEntryIndex = self.weatherPluginEntryCount
-            self.setItem()
-
-    def setItem(self):
-        self.weatherPluginEntry = config.plugins.AccuWeatherPlugin.Entries[self.weatherPluginEntryIndex - 1]
-        self.clearFields()
-        self.startRun()
-
-    def clearFields(self):
-        self['caption'].setText('')
-        self['currentTemp'].setText('')
-        self['condition'].setText('')
-        self['wind_condition'].setText('')
-        self['current_icon'].hide()
-        self['ico_menu'].hide()
-        self['texto_menu'].hide()
-        self['ico_left'].hide()
-        self['ico_right'].hide()
-        self['ico_l'].hide()
-        self['ico_r'].hide()
-        self['texto_l'].hide()
-        self['texto_r'].hide()
-        self['ico_temp'].hide()
-        for i in range(1, 5):
-            self['weekday%s' % i].setText('')
-            self['weekday%s_icon' % i].hide()
-            self['weekday%s_temp' % i].setText('')
-
-    def errorIconDownload(self, error = None, item = None):
-        item.error = True
-
-    def finishedIconDownload(self, result, item):
-        if not item.error:
-            self.showIcon(item.index, item.filename)
-
-    def showIcon(self, index, filename):
-        if index == None:
-            self['current_icon'].updateIcon(filename)
-            self['current_icon'].show()
-        else:
-            self['weekday%s_icon' % index].updateIcon(filename)
-            self['weekday%s_icon' % index].show()
-
-    def xmlCallback(self, xmlstring):
-        self['statustext'].hide()
-        self['ico_menu'].show()
-        self['texto_menu'].show()
-        if self.weatherPluginEntryCount > 1:
-            self['ico_left'].show()
-            self['ico_right'].show()
-            self['ico_l'].show()
-            self['ico_r'].show()
-            self['texto_l'].show()
-            self['texto_r'].show()
-        metric = 0
-        index = 0
-        UnitSystemText = 'F'
-        IconDownloadList = []
-        root = xml.etree.cElementTree.fromstring(xmlstring)
-        for childs in root.findall('weather'):
-            for items in childs:
-                if items.tag == 'problem_cause':
-                    self['statustext'].setText(items.attrib.get('data').encode('utf-8', 'ignore'))
-                    self['statustext'].show()
-                if items.tag == 'forecast_information':
-                    for items2 in items:
-                        if items2.tag == 'city':
-                            self['caption'].setText(items2.attrib.get('data').encode('utf-8', 'ignore'))
-                        elif items2.tag == 'unit_system':
-                            if items2.attrib.get('data').encode('utf-8', 'ignore') == 'SI':
-                                metric = 1
-                                UnitSystemText = 'C'
-
-                elif items.tag == 'current_conditions':
-                    erhum = ''
-                    for items2 in items:
-                        if items2.tag == 'condition':
-                            self['condition'].setText(items2.attrib.get('data').encode('utf-8', 'ignore'))
-                        elif items2.tag == 'temp_f' and metric == 0:
-                            self['currentTemp'].setText('%s \xc2\xb0F' % items2.attrib.get('data').encode('utf-8', 'ignore'))
-                        elif items2.tag == 'temp_c' and metric == 1:
-                            itemp = None
-                            try:
-                                itemp = int(items2.attrib.get('data').encode('utf-8', 'ignore').strip())
-                            except:
-                                pass
-
-                            if not itemp == None:
-                                self['ico_temp'].show()
-                                filenamepng = self.rutapng + devimagentemperatura(itemp)
-                                self['ico_temp'].instance.setPixmapFromFile(filenamepng)
-                            self['currentTemp'].setText('%s \xc2\xb0C' % items2.attrib.get('data').encode('utf-8', 'ignore'))
-                        elif items2.tag == 'humidity':
-                            erhum = items2.attrib.get('data').encode('utf-8', 'ignore')
-                        elif items2.tag == 'wind_condition':
-                            self['wind_condition'].setText(erhum + ', ' + items2.attrib.get('data').encode('utf-8', 'ignore'))
-                        elif items2.tag == 'icon':
-                            url = 'http://www.google.com%s' % items2.attrib.get('data').encode('utf-8', 'ignore')
-                            parts = string.split(url, '/')
-                            filename = self.appdir + parts[-1]
-                            pngname = self.rutapng + devgificono(parts[-1], actual=True)
-                            if os.path.exists(pngname):
-                                self['current_icon'].instance.setPixmapFromFile(pngname)
-                                self['current_icon'].show()
-                            elif not os.path.exists(filename):
-                                IconDownloadList.append(WeatherIconItem(url=url, filename=filename, index=index))
-                            else:
-                                self.showIcon(None, filename)
-
-                elif items.tag == 'forecast_conditions':
-                    index = index + 1
-                    lowTemp = ''
-                    highTemp = ''
-                    icon = ''
-                    textowek = ''
-                    for items2 in items:
-                        if items2.tag == 'day_of_week':
-                            self['weekday%s' % index].setText(self.devsem(items2.attrib.get('data').encode('utf-8', 'ignore')))
-                        if items2.tag == 'low':
-                            lowTemp = items2.attrib.get('data').encode('utf-8', 'ignore')
-                        if items2.tag == 'high':
-                            highTemp = items2.attrib.get('data').encode('utf-8', 'ignore')
-                        if items2.tag == 'condition':
-                            lacond = items2.attrib.get('data').encode('utf-8', 'ignore')
-                            self['weekday%s_temp' % index].setText((_('Max') + ':%s\xc2\xb0%s \n' + _('Min') + ':%s\xc2\xb0%s\n%s') % (highTemp,
-                             UnitSystemText,
-                             lowTemp,
-                             UnitSystemText,
-                             lacond))
-                        if items2.tag == 'icon':
-                            url = 'http://www.google.com%s' % items2.attrib.get('data').encode('utf-8', 'ignore')
-                            parts = string.split(url, '/')
-                            filename = self.appdir + parts[-1]
-                            pngname = self.rutapng + devgificono(parts[-1])
-                            if os.path.exists(pngname):
-                                self['weekday%s_icon' % index].instance.setPixmapFromFile(pngname)
-                                self['weekday%s_icon' % index].show()
-                            elif not os.path.exists(filename):
-                                IconDownloadList.append(WeatherIconItem(url=url, filename=filename, index=index))
-                            else:
-                                self.showIcon(index, filename)
-
-        if len(IconDownloadList) != 0:
-            ds = defer.DeferredSemaphore(tokens=len(IconDownloadList))
-            downloads = [ ds.run(download, item).addErrback(self.errorIconDownload, item).addCallback(self.finishedIconDownload, item) for item in IconDownloadList ]
-            finished = defer.DeferredList(downloads).addErrback(self.error)
-        if self.weatherPluginEntryIndex == 1:
-            if '</weather>' in xmlstring and '<forecast_information>' in xmlstring:
-                try:
-                    sourceEncoding = 'utf-8'
-                    targetEncoding = 'iso-8859-1'
-                    ret = unicode(xmlstring, sourceEncoding).encode(targetEncoding)
-                    f = open('/tmp/wf_spz.xml', 'w')
-                    f.write(ret)
-                    f.close()
-                except:
-                    pass
-
-    def devsem(self, dia):
-        ret = dia
-        if self.weatherPluginEntry.language.value == 'es':
-            if dia == 'lun':
-                ret = 'Lunes'
-            elif dia == 'mar':
-                ret = 'Martes'
-            elif dia == 'mi\xc3\xa9':
-                ret = 'Mi\xc3\xa9rcoles'
-            elif dia == 'jue':
-                ret = 'Jueves'
-            elif dia == 'vie':
-                ret = 'Viernes'
-            elif dia == 's\xc3\xa1b':
-                ret = 'S\xc3\xa1bado'
-            elif dia == 'dom':
-                ret = 'Domingo'
-            else:
-                ret = upper(ret)
-        else:
-            ret = upper(ret)
-        return ret
-
-    def config(self):
-        self.session.openWithCallback(self.setupFinished, WeatherPluginEntriesListConfigScreen)
-
-    def setupFinished(self, index, entry = None):
-        self.weatherPluginEntryCount = config.plugins.AccuWeatherPlugin.entriescount.value
-        if self.weatherPluginEntryCount >= 1:
-            if entry is not None:
-                self.weatherPluginEntry = entry
-                self.weatherPluginEntryIndex = index + 1
-            if self.weatherPluginEntry is None:
-                self.weatherPluginEntry = config.plugins.AccuWeatherPlugin.Entries[0]
-                self.weatherPluginEntryIndex = 1
-        else:
-            self.weatherPluginEntry = None
-            self.weatherPluginEntryIndex = -1
-        self.clearFields()
-        self.startRun()
-
-    def error(self, error = None):
-        if error is not None:
-            self.clearFields()
-            self['statustext'].setText(str(error.getErrorMessage()))
-            self['statustext'].show()
-            self['ico_menu'].show()
-            self['texto_menu'].show()
-
 
 class WeatherIcon(Pixmap):
 
