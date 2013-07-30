@@ -75,7 +75,7 @@ def skin_user_skinname():
 config.skin = ConfigSubsection()
 
 # on SD hardware, ViX Night HD will not be available
-DEFAULT_SKIN = "skin.xml"
+DEFAULT_SKIN = "mega32/skin.xml"
 if not fileExists(resolveFilename(SCOPE_SKIN, DEFAULT_SKIN)):
 	# in that case, fallback to Magic (which is an SD skin)
 	DEFAULT_SKIN = "skin.xml"
