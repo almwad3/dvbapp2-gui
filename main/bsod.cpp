@@ -18,7 +18,7 @@
 
 /************************************************/
 
-#define CRASH_EMAILADDR "venton-crash@venton.de"
+#define CRASH_EMAILADDR "crash@egami-image.com"
 #define INFOFILE "/maintainer.info"
 
 #define RINGBUFFER_SIZE 16384
@@ -155,7 +155,7 @@ void bsodFatal(const char *component)
 	FILE *f;
 	const char* crashlog_name;
 	std::ostringstream os;
-	os << getConfigString("config.crash.debug_path", "/home/root/logs/enigma2_crash_";
+	os << getConfigString("config.crash.debug_path", "/home/root/logs/enigma2_crash_");
 	os << time(0);
 	os << ".log";
 	crashlog_name = os.str().c_str();
