@@ -430,7 +430,7 @@ msgid "1. STEP - Choose backup location"
 msgstr "1. Выбор расположения резервных копий"
 
 msgid "1. STEP - Choose option RESTORE / BACKUP"
-msgstr "1. Шаг - Выберите действие Восстановление / Резервная копия"
+msgstr "1. Шаг - Восстановление / Резервная копия"
 
 msgid "1.0"
 msgstr "1.0"
@@ -777,7 +777,7 @@ msgid "Abort"
 msgstr "Прервать"
 
 msgid "About"
-msgstr "Информация"
+msgstr "Инфо"
 
 msgid "About..."
 msgstr "О ресивере..."
@@ -828,13 +828,13 @@ msgid "Add"
 msgstr "Добавить"
 
 msgid "Add AutoTimer"
-msgstr "Добавить АТ"
+msgstr "Автотаймер"
 
 msgid "Add Timer"
-msgstr "Добавить Таймер"
+msgstr "Добавить таймер"
 
 msgid "Add a auto timer for current event"
-msgstr "Добавить АвтоТаймер для текущего события"
+msgstr "Добавить автотаймер"
 
 msgid "Add a mark"
 msgstr "Добавить метку"
@@ -846,16 +846,16 @@ msgid "Add a new title"
 msgstr "Добавить новое название"
 
 msgid "Add a record timer"
-msgstr "Добавить Таймер записи"
+msgstr "Добавить таймер"
 
 msgid "Add a record timer for current event"
-msgstr "Добавить Таймер для текущего события (записать)"
+msgstr "Добавить таймер записи"
 
 msgid "Add a zap timer for current event"
-msgstr "Добавить Таймер для текущего события (переключить)"
+msgstr "Добавить таймер переключения"
 
 msgid "Add a zap timer for next event"
-msgstr "Добавить Таймер для следующего события (переключить)"
+msgstr "Добавить таймер переключения"
 
 msgid "Add bookmark"
 msgstr "Добавить закладку"
@@ -873,16 +873,16 @@ msgid "Add provider"
 msgstr "Добавить провайдера"
 
 msgid "Add recording (enter recording duration)"
-msgstr "Добавить запись (введите продолжительность записи)"
+msgstr "Запись (введите продолжительность)"
 
 msgid "Add recording (enter recording endtime)"
-msgstr "Добавить запись (введите время окончания записи)"
+msgstr "Запись (введите время окончания записи)"
 
 msgid "Add recording (indefinitely)"
-msgstr "Добавить запись (на неопределенное время)"
+msgstr "Запись (на неопределенное время)"
 
 msgid "Add recording (stop after current event)"
-msgstr "Добавить запись (стоп после текущего события)"
+msgstr "Запись (остановить после текущего события)"
 
 msgid "Add service"
 msgstr "Добавить канал"
@@ -1705,10 +1705,10 @@ msgid "Change pin code"
 msgstr "Сменить PIN код"
 
 msgid "Change recording (duration)"
-msgstr "Смена записи (продолжительность)"
+msgstr "Изменить продолжительность записи"
 
 msgid "Change recording (endtime)"
-msgstr "Смена записи (время окончания)"
+msgstr "Изменить время окончания записи"
 
 msgid "Change repeat and delay settings?"
 msgstr "Измененить настройки повтора и задержки?"
@@ -2769,7 +2769,7 @@ msgid "Devices Manager"
 msgstr "Менеджер устройств "
 
 msgid "Devices Panel"
-msgstr "Панель устройств"
+msgstr "Устройства"
 
 msgid ""
 "Devices changes need a system restart to take effects.\n"
@@ -3076,9 +3076,9 @@ msgstr "Не останавливать текущее событие, но от
 #, python-format
 msgid "Done - Installed, upgraded or removed %d package (%s)"
 msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
-msgstr[0] "Готово - Установлен, обновлен или удален %d пакет с %s ошибками"
-msgstr[1] "Готово - Установлены, обновлены или удалены %d пакета с %s ошибками"
-msgstr[2] "Готово - Установлены, обновлены или удалены %d пакетов с %s ошибками"
+msgstr[0] "Готово - Установлен, обновлен или удален %d пакет (%s)"
+msgstr[1] "Готово - Установлено, обновлено или удалено %d пакета (%s)"
+msgstr[2] "Готово - Установлено, обновлено или удалено %d пакетов (%s)"
 
 msgid "Down Key"
 msgstr "Вниз"
@@ -3208,7 +3208,7 @@ msgid "EPG Cache Check"
 msgstr "Проверка кеша EPG"
 
 msgid "EPG Panel"
-msgstr "EPG панель"
+msgstr "Панель EPG"
 
 msgid "EPG Search"
 msgstr "Поиск в EPG"
@@ -3590,7 +3590,7 @@ msgid "FEC"
 msgstr "FEC"
 
 msgid "FLASH"
-msgstr "ФЛЕШ"
+msgstr "Внутренняя память"
 
 msgid "FTP Panel"
 msgstr "Панель FTP"
@@ -4549,10 +4549,10 @@ msgid "Internal"
 msgstr "Встроенный"
 
 msgid "Internal Flash"
-msgstr "Внутренняя флеш"
+msgstr "Память"
 
 msgid "Internal hdd only"
-msgstr "Только внутренний жёсткий диск"
+msgstr "Только внутренний жесткий диск"
 
 msgid "Interval between keys when repeating:"
 msgstr "Интервал нажатий клавиши для повторения"
@@ -5204,7 +5204,7 @@ msgid "Monthly"
 msgstr "Ежемесячно"
 
 msgid "More Options"
-msgstr "Доп. параметры"
+msgstr "Опции"
 
 msgid "More video entries."
 msgstr ""
@@ -5243,7 +5243,7 @@ msgid "Mount: "
 msgstr "Подключение:"
 
 msgid "Mountpoints"
-msgstr "Точки монтирования"
+msgstr "Подключения"
 
 msgid "Mounts Setup"
 msgstr "Настройка монтирования"
@@ -5330,10 +5330,10 @@ msgid "Moving west ..."
 msgstr "Перемещение на запад..."
 
 msgid "Multi EPG"
-msgstr "Мульти-EPG"
+msgstr "Мульти EPG"
 
 msgid "MultiEPG settings"
-msgstr "Настройки мульти-EPG"
+msgstr "Настройки мульти EPG"
 
 msgid "Multimedia"
 msgstr "Мультимедиа"
@@ -5445,7 +5445,7 @@ msgid "Network Information"
 msgstr "Информация о сети"
 
 msgid "Network Servers:"
-msgstr "Доступные сетеве ресурсы:"
+msgstr "Сетевые ресурсы:"
 
 msgid "Network Setup"
 msgstr "Настройка сети"
@@ -6239,7 +6239,7 @@ msgid "Please choose an HbbTV application."
 msgstr "Выберите  HbbTV приложение."
 
 msgid "Please choose an extension..."
-msgstr "Пожалуйста, выберите дополнение..."
+msgstr "Быстрый вызов плагинов"
 
 msgid "Please choose one."
 msgstr "Сделайте выбор."
@@ -6335,7 +6335,7 @@ msgid "Please select tag to filter..."
 msgstr "Пожалуйста, выберите тэг для фильтра..."
 
 msgid "Please select the movie path..."
-msgstr "Пожалуйста, выберите путь..."
+msgstr "Выберите расположение"
 
 msgid ""
 "Please select the network interface that you want to use for your internet "
@@ -6955,7 +6955,7 @@ msgid "Remote logging:"
 msgstr "Удаленный лог:"
 
 msgid "Remove"
-msgstr "Удаление"
+msgstr "Удалить"
 
 msgid "Remove Confirmation"
 msgstr "Подтверждение удаления"
@@ -7101,7 +7101,7 @@ msgid "Restore"
 msgstr "Восстановить"
 
 msgid "Restore EGAMI"
-msgstr "Восстановить EGAMI"
+msgstr "Восстановить"
 
 msgid "Restore backups"
 msgstr "Восстановление резервных копий"
@@ -7652,7 +7652,7 @@ msgid "Service number font size"
 msgstr "Размер шрифта номера канала"
 
 msgid "Service reference"
-msgstr "Ссылка канала"
+msgstr "Справка"
 
 msgid "Service scan"
 msgstr "Поиск каналов"
@@ -7821,7 +7821,7 @@ msgstr ""
 "файлов также здесь)"
 
 msgid "Settings"
-msgstr "Установки"
+msgstr "Настройки"
 
 msgid "Settings..."
 msgstr "Настройки"
@@ -7830,7 +7830,7 @@ msgid "Setup"
 msgstr "Настройки"
 
 msgid "Setup HDD"
-msgstr "Настройки жесткого диска"
+msgstr "Настройки диска"
 
 msgid "Setup an additional OSD settings..."
 msgstr "Дополнительные настройки меню"
@@ -10199,16 +10199,16 @@ msgid "Video PID"
 msgstr "Видео ПИД (VPID)"
 
 msgid "Video Size: "
-msgstr "Размер видео:"
+msgstr "Видео:"
 
 msgid "Video Size: n/a"
-msgstr "Размер видео: n/a"
+msgstr "Видео: n/a"
 
 msgid "Video enhancement preview"
-msgstr "Просмотр улучшения изображения"
+msgstr "Предпросмотр"
 
 msgid "Video enhancement setup"
-msgstr "Установки улучшения изображения"
+msgstr "Настройки улучшения изображения"
 
 msgid "Video fine tuning"
 msgstr "Точная настройка изображения"
@@ -10436,7 +10436,7 @@ msgid "Watch recordings..."
 msgstr "Смотреть записи..."
 
 msgid "Weather Info"
-msgstr "Информация о погоде"
+msgstr "Погода"
 
 msgid "Weather info Plugin"
 msgstr "Плагин Погоды"
@@ -11802,7 +11802,7 @@ msgid "free"
 msgstr "свободно"
 
 msgid "free diskspace"
-msgstr "свободно на диске"
+msgstr "свободно"
 
 msgid "full"
 msgstr "полный"
@@ -12848,7 +12848,7 @@ msgstr "переключено"
 #~ "Сканировать стандартные настройки по спутникам с подключенным мотоподвесом"
 
 #~ msgid "Search IMDb for information about current event."
-#~ msgstr "Поиск в IMDb для получения информации о текущем событии."
+#~ msgstr "Поиск в IMDB"
 
 #~ msgid "Search the epg for current event."
 #~ msgstr "Поиск EPG для данного события."
