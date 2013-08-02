@@ -1862,6 +1862,7 @@ void eDVBFrontend::setFrontend(bool recvEvents)
 			{
 #if DVB_API_VERSION > 5 || DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR >= 3
 				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
+#endif  
 			}
 		}
 		else if (type == iDVBFrontend::feATSC)
