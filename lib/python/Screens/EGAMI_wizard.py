@@ -11,6 +11,7 @@ from Components.Network import iNetwork
 from Components.Ipkg import IpkgComponent
 from Plugins.Plugin import PluginDescriptor
 from Components.PluginComponent import plugins
+from Screens.Console import Console
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 import os
 
@@ -49,7 +50,7 @@ class EGAMIWizardSetup(ConfigListScreen, Screen):
          'cancel': self.dontSaveAndExit}, -1)
 
     def run(self):
-	cmd = ";"
+	cmd = ""
 	if config.egwizard.enablehbbtv.value is True:
 		cmd += "opkg install --force-overwrite tslib-conf libts-1.0-0 libsysfs2 libgmp10 libmpfr4 vuplus-opera-browser-util enigma2-plugin-extensions-inihbbtv;"
 	else:
@@ -90,7 +91,9 @@ class EGAMIWizardSetup(ConfigListScreen, Screen):
 
 	config.egwizard.save()
 	#os.system(cmd)
-	self.session.open(InstallWizardIpkgUpdater, _('Please wait configuring EGAMI Image'), IpkgComponent.CMD_INSTALL, {'package': cmd})
+	self.session.open(Console, title = _("Please wait configuring EGAMI Image"), cmdlist = [cmd], finishedCallback = None, closeOnSuccess = True)
+	plugins.readPluginList(resolveFilename(SCOPE_PLUGINS))
+	#self.session.open(InstallWizardIpkgUpdater, _('Please wait configuring EGAMI Image'), IpkgComponent.CMD_INSTALL, {'package': cmd})
         self.close()
 
     def dontSaveAndExit(self):
