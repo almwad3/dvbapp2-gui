@@ -3,7 +3,7 @@ from Components.Label import Label
 from Components.config import config, configfile
 from Screens.Screen import Screen 
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_SKIN, SCOPE_CURRENT_SKIN
-from Tools.LoadPixmap import LoadPixmap, pixmap_cache
+from Tools.LoadPixmap import LoadPixmap
 from os import path as os_path
 from enigma import eConsoleAppContainer
 import re, string
