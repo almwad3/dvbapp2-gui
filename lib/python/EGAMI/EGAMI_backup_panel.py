@@ -21,7 +21,7 @@ from os import listdir
 
 from Tools.Directories import fileExists
 
-from os import system, listdir, chdir, getcwd, rename as os_rename, remove as os_remove
+from os import system, listdir, chdir, mkdir, getcwd, rename as os_rename, remove as os_remove
 from os.path import dirname, isdir
 
 from EGAMI.EGAMI_skins import EGAMIBackupPanel_Skin, EGAMIBackupPanel_Step2_Skin, EGAMIBackupPanel_Step3_Skin, EGAMIRestorePanel_Step1_Skin, EGAMIRestorePanel_Step2_Skin
