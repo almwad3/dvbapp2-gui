@@ -64,9 +64,21 @@ class EGAMIFaq_YTChannel(Screen):
 		self['key_red'] = Label("Load")
 		
 		mypath = resolveFilename(SCOPE_PLUGINS)
-		
-		self.user_path = mypath + "Extensions/EGAMIFaq/channels.xml"
-		
+
+		if (os.path.isfile("/proc/stb/info/boxtype")): 
+			f = open("/proc/stb/info/boxtype", "r")
+			model = f.read().strip()
+			f.close()
+
+		if model == "ini-1000sv" or model == "ini-5000sv":
+			self.user_path = mypath + "Extensions/EGAMIFaq/channels_3.xml"
+		elif model == "ini-1000ru" or model == "ini-5000ru" or model == "ini-9000ru":
+			self.user_path = mypath + "Extensions/EGAMIFaq/channels_2.xml"
+		elif model == "ini-3000" or model == "ini-5000" or model == "ini-7000" or model == "ini-7012":
+			self.user_path = mypath + "Extensions/EGAMIFaq/channels_1.xml"
+		else:
+			self.user_path = mypath + "Extensions/EGAMIFaq/channels.xml"
+			
 		self.keyLocked = True
 		self.genreliste = []
 		self.chooseMenuList = MenuList([], enableWrapAround=True, content=eListboxPythonMultiContent)
