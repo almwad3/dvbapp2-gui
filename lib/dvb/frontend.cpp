@@ -1,3 +1,4 @@
+#include <linux/version.h>
 #include <linux/dvb/version.h>
 
 #include <lib/dvb/dvb.h>
@@ -188,9 +189,9 @@ void eDVBFrontendParametersTerrestrial::set(const TerrestrialDeliverySystemDescr
 	inversion = Inversion_Unknown;
 	system = System_DVB_T;
 	plpid = 0;
-	eDebug("Terr freq %d, bw %d, cr_hp %d, cr_lp %d, tm_mode %d, guard %d, hierarchy %d, const %d, plpid %d",
+	eDebug("Terr freq %d, bw %d, cr_hp %d, cr_lp %d, tm_mode %d, guard %d, hierarchy %d, const %d",
 		frequency, bandwidth, code_rate_HP, code_rate_LP, transmission_mode,
-		guard_interval, hierarchy, modulation, plpid);
+		guard_interval, hierarchy, modulation);
 }
 
 eDVBFrontendParameters::eDVBFrontendParameters()
@@ -1861,8 +1862,12 @@ void eDVBFrontend::setFrontend(bool recvEvents)
 			if (system == SYS_DVBT2)
 			{
 #if DVB_API_VERSION > 5 || DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR >= 3
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3,7,0))
+				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID_LEGACY, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
+#else
 				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
-#endif  
+#endif
+#endif
 			}
 		}
 		else if (type == iDVBFrontend::feATSC)
