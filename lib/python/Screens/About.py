@@ -8,7 +8,7 @@ from Components.About import about
 from Components.config import config
 from Components.ScrollLabel import ScrollLabel
 from Components.Console import Console
-
+from Components.Label import Label
 from enigma import eTimer, getBoxType, getMachineBrand, getMachineName, getImageVersionString, getBuildVersionString, getDriverDateString, getEnigmaVersionString
 
 from Components.Pixmap import MultiPixmap
@@ -38,8 +38,6 @@ class About(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 
-		#AboutText += _("Model:\t%s %s\n") % (getMachineBrand(), getMachineName())
-
 		AboutText = _("Hardware: ") + about.getHardwareTypeString() + "\n"
 		if path.exists('/proc/stb/info/chipset'):
 			AboutText += _("Chipset: BCM%s") % about.getChipSetString().lower().replace('\n','').replace('bcm','') + "\n"
@@ -55,7 +53,10 @@ class About(Screen):
 		AboutText += EnigmaVersion + "\n"
 
 		ImageVersion = _("Last Upgrade: ") + about.getLastUpdateString()
-		self["ImageVersion"] = StaticText(ImageVersion)
+		
+		EGAMIVersion = "EGAMI " + about.getImageVersionString()
+		
+		self["EGAMIVersion"] = Label(EGAMIVersion)
 		AboutText += ImageVersion + "\n"
 
 		fp_version = getFPVersion()
@@ -102,19 +103,9 @@ class About(Screen):
 		if translator_name == "none":
 			translator_name = infomap.get("Last-Translator", "")
 
-		#AboutText += _("Translation: ") + translator_name + "\n"
-		
 		self["FPVersion"] = StaticText(fp_version)
-		
-		#try:
-		#  AboutText += "\n" + _("MAC Address: ") + getHwAddr('eth0') + "\n"
-		#  AboutText += _("IP Address: ") + get_ip_address('eth0') + "\n"
-		#except:
-		#  AboutText += "\n" + _("MAC Address: N/A") + "\n"
-		#  AboutText += _("IP Address: N/A") + "\n"		  
-		
+
 		self["TunerHeader"] = StaticText(_("Detected NIMs:"))
-		#AboutText += "\n" + _("Detected NIMs:") + "\n"
 
 		nims = nimmanager.nimList()
 		for count in range(len(nims)):
@@ -122,10 +113,8 @@ class About(Screen):
 				self["Tuner" + str(count)] = StaticText(nims[count])
 			else:
 				self["Tuner" + str(count)] = StaticText("")
-			#AboutText += nims[count] + "\n"
 
 		self["HDDHeader"] = StaticText(_("Detected HDD:"))
-		#AboutText += "\n" + _("Detected HDD:") + "\n"
 
 		hddlist = harddiskmanager.HDDList()
 		hddinfo = ""
@@ -141,7 +130,11 @@ class About(Screen):
 		else:
 			hddinfo = _("none")
 		self["hddA"] = StaticText(hddinfo)
-		#AboutText += hddinfo
+	
+		ImageUrl = _("WWW: ") + about.getImageUrlString()
+		self["ImageUrl"] = StaticText(ImageUrl)
+		AboutText += ImageUrl + "\n"
+		
 		self["AboutScrollLabel"] = ScrollLabel(AboutText)
 
 		self["actions"] = ActionMap(["SetupActions", "ColorActions", "DirectionActions"], 
@@ -162,6 +155,10 @@ class Devices(Screen):
 		Screen.__init__(self, session)
 		Screen.setTitle(self, _("Device Information"))
 		self.skinName = ["SystemDevicesInfo", "About"]
+
+		EGAMIVersion = "EGAMI " + about.getImageVersionString()
+		
+		self["EGAMIVersion"] = Label(EGAMIVersion)
 		
 		self.AboutText = ""
 		self["AboutScrollLabel"] = ScrollLabel(self.AboutText)
@@ -286,6 +283,10 @@ class SystemMemoryInfo(Screen):
 		Screen.setTitle(self, _("Memory Information"))
 		#self.skinName = ["SystemMemoryInfo", "About"]
 		self.skinName = ["About"]
+		EGAMIVersion = "EGAMI " + about.getImageVersionString()
+		
+		self["EGAMIVersion"] = Label(EGAMIVersion)
+		
 		self["AboutScrollLabel"] = ScrollLabel()
 
 		self["actions"] = ActionMap(["SetupActions", "ColorActions", "TimerEditActions"],
@@ -347,7 +348,10 @@ class SystemNetworkInfo(Screen):
 		Screen.__init__(self, session)
 		Screen.setTitle(self, _("Network Information"))
 		self.skinName = ["SystemNetworkInfo", "About"]
-		#self.skinName = ["About"]
+		EGAMIVersion = "EGAMI " + about.getImageVersionString()
+		
+		self["EGAMIVersion"] = Label(EGAMIVersion)
+		
 		self["LabelBSSID"] = StaticText()
 		self["LabelESSID"] = StaticText()
 		self["LabelQuality"] = StaticText()

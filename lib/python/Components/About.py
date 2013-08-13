@@ -21,6 +21,19 @@ def getImageVersionString():
 	except IOError:
 		return "unavailable"
 
+def getImageUrlString():
+	try:
+		file = open(resolveFilename(SCOPE_SYSETC, 'image-version'), 'r')
+		lines = file.readlines()
+		for x in lines:
+			splitted = x.split('=')
+			if splitted[0] == "url":
+				version = splitted[1].replace('\n','')
+		file.close()
+		return version
+	except IOError:
+		return "unavailable"
+	      
 def getEnigmaVersionString():
 	import enigma
 	enigma_version = enigma.getEnigmaVersionString()
