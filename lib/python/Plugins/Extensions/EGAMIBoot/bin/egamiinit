@@ -17,7 +17,10 @@ if [ `uname -r | grep 2.6.12 | wc -l` -lt 1 ]; then
 fi
 
 sleep 5
-
+if [ ! -e /media/egamiboot  ]; then
+	  mkdir /media/egamiboot
+fi 
+      
 if [ `uname -r | grep 2.6.12 | wc -l` -lt 1 ]; then
    DEVICES1=`find /dev/sd??`
    for DEVICE in $DEVICES1;
