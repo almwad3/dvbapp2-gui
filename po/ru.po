@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-27 10:31-0700\n"
-"PO-Revision-Date: 2013-07-03 17:04+0400\n"
+"PO-Revision-Date: 2013-08-07 16:07+0400\n"
 "Last-Translator: xxx\n"
 "Language-Team: RU locale edited by Sowa\n"
 "Language: ru_RU\n"
@@ -792,10 +792,10 @@ msgid "AccuWeatherWeatherPlugin: Select Source"
 msgstr "AccuWeatherWeatherPlugin: Выберите источник"
 
 msgid "Action on long powerbutton press"
-msgstr "Действие при длительном нажатии кнопки питания"
+msgstr "Длительное нажатии кнопки питания"
 
 msgid "Action on short powerbutton press"
-msgstr "Действие при коротком нажатии кнопки питания"
+msgstr "Короткое нажатии кнопки питания"
 
 msgid "Activate"
 msgstr "Активировать"
@@ -1072,7 +1072,7 @@ msgid "Allows you to show/hide OScam in extensions (blue button)."
 msgstr "Позволяет показать/скрыть OScam в расширениях (синяя кнопка)."
 
 msgid "Alpha"
-msgstr "Прозрачность"
+msgstr "Буквы"
 
 msgid "Alphanumeric"
 msgstr "Буквенно-цифровой"
@@ -1367,7 +1367,7 @@ msgid "Background color"
 msgstr "цвет фона"
 
 msgid "Background delete option"
-msgstr "Настройки фонового удаления"
+msgstr "Фоновое удаление"
 
 msgid "Background delete speed"
 msgstr "Скорость фонового удаления"
@@ -1406,19 +1406,19 @@ msgid "Begin time"
 msgstr "Время начала"
 
 msgid "Behavior of 'pause' when paused"
-msgstr "Действие кнопки 'пауза' во время паузы"
+msgstr "Кнопки 'пауза' во время паузы"
 
 msgid "Behavior of 0 key in PiP-mode"
-msgstr "Действие кнопки '0' в PiP режиме"
+msgstr "Кнопки '0' в PiP режиме"
 
 msgid "Behavior when a movie is started"
-msgstr "Действие при начале воспроизведения фильма"
+msgstr "Действие при начале показа"
 
 msgid "Behavior when a movie is stopped"
-msgstr "Действие при остановке воспроизведения фильма"
+msgstr "Действие при остановке показа"
 
 msgid "Behavior when a movie reaches the end"
-msgstr "Действие при окончании фильма"
+msgstr "Действие при окончании"
 
 msgid "Bitrate:"
 msgstr "Битрейт:"
@@ -1696,7 +1696,7 @@ msgid "Center time-labels and remove date"
 msgstr "Центрировать временную метку и удалить дату"
 
 msgid "Change bouquets in quickzap"
-msgstr "Сменять букеты при быстром переключении"
+msgstr "Переключать букеты при смене каналов"
 
 msgid "Change city"
 msgstr "Изменить город"
@@ -1741,13 +1741,13 @@ msgid "Channel list context menu"
 msgstr "Контекстное меню списка каналов"
 
 msgid "Channel list on mode change"
-msgstr "Изменить режим списка каналов на "
+msgstr "Список каналов при изменении режима"
 
 msgid "Channel list preview"
-msgstr "Предпросмотр в списке каналов"
+msgstr "Предпросмотр списка каналов"
 
 msgid "Channel list service mode*"
-msgstr "Сервисный режим списка каналов*"
+msgstr "Режим списка каналов"
 
 msgid "Channel list type"
 msgstr "Тип списка каналов"
@@ -2000,7 +2000,7 @@ msgid "Complex (allows mixing audio tracks and aspects)"
 msgstr "Комплекс (микширование звуковых дорожек и разрешения видео)"
 
 msgid "Composition of the recording filenames"
-msgstr "Список имён записанных файлов"
+msgstr "Список имен записанных файлов"
 
 msgid "Comunity"
 msgstr "Общение"
@@ -2644,7 +2644,7 @@ msgid "Default"
 msgstr "По умолчанию"
 
 msgid "Default movie location"
-msgstr "Расположение видеозаписей по умолчанию"
+msgstr "Расположение записей"
 
 msgid "Default recording type"
 msgstr "Тип записи по умолчанию"
@@ -2865,7 +2865,7 @@ msgid "Display and userinterface"
 msgstr "VFD Дисплей и Интерфейс пользователя"
 
 msgid "Display message before playing next movie"
-msgstr "Показать сообщение, при запуске следующего фильа"
+msgstr "Сообщение при показе след. файла"
 
 msgid "Display search results by:"
 msgstr "Отображать результат поиска:"
@@ -3363,7 +3363,7 @@ msgid "Enable only media filter ?"
 msgstr "Включить медиа фильтр ?"
 
 msgid "Enable panic button"
-msgstr "Включить тревожную кнопку"
+msgstr "Включить кнопку тревоги"
 
 msgid "Enable parental control"
 msgstr "Включить родительский контроль"
@@ -3639,7 +3639,7 @@ msgid "Fast epoch"
 msgstr "Быстрый период дискретизации"
 
 msgid "Fast forward speeds"
-msgstr "Скорости быстрой перемотки вперед"
+msgstr "Скорость перемотки вперед"
 
 msgid "Favourites"
 msgstr "Избранное"
@@ -4127,7 +4127,7 @@ msgid "History"
 msgstr "История"
 
 msgid "History buttons mode"
-msgstr "История режимов кнопки"
+msgstr "История просмотров"
 
 msgid "History zap..."
 msgstr "История переключений..."
@@ -4644,7 +4644,7 @@ msgid "Jump back 24 hours"
 msgstr "Перейти обратно на 24 часа"
 
 msgid "Jump first press in channel selection*"
-msgstr "Выбор канала первым нажатием*"
+msgstr "Переход при первом нажатии"
 
 msgid "Jump forward 24 hours"
 msgstr "Перейти вперед на 24 часа"
@@ -4821,7 +4821,7 @@ msgid "Light Grey"
 msgstr "Светло-серый"
 
 msgid "Limit character set for recording filenames"
-msgstr "Ограниченный набор символов для записи имен файлов"
+msgstr "Лимит символов для имен записи файлов"
 
 msgid "Limit debug log size (MB)"
 msgstr "Ограничить журнал отладки размером (МБ)"
@@ -5057,7 +5057,7 @@ msgid "Manage your %s %s's software"
 msgstr "Управление ПО  %s %s"
 
 msgid "Manual Install EGAMI and IPK packages"
-msgstr ""
+msgstr "Установка EGAMI и IPK пакетов"
 
 msgid "Manual Scan"
 msgstr "Ручное сканирование"
@@ -5078,10 +5078,10 @@ msgid "March"
 msgstr "Март"
 
 msgid "Margin after recording (minutes)"
-msgstr "Добавить после окончания времени записи дополнительно (минут)"
+msgstr "Добавить время после записи (мин)"
 
 msgid "Margin before recording (minutes)"
-msgstr "Добавить перед началом времени записи дополнительно (минут)"
+msgstr "Добавить время перед записью (мин)"
 
 msgid "Max"
 msgstr ""
@@ -5430,10 +5430,10 @@ msgid "Namespace"
 msgstr "Идентификатор"
 
 msgid "Netmask"
-msgstr "Маска подсети"
+msgstr "Маска"
 
 msgid "Netmask:"
-msgstr "Маска подсети:"
+msgstr "Маска:"
 
 msgid "Network"
 msgstr "Сеть"
@@ -5662,7 +5662,7 @@ msgid "No transparency"
 msgstr "без прозрачности"
 
 msgid "No tuner is configured for use with a diseqc positioner!"
-msgstr "Нет тюнера, настроенного для использования с diseqc позиционером!"
+msgstr "Нет тюнера, настроенного для использования с позиционером!"
 
 msgid ""
 "No tuner is enabled!\n"
@@ -7438,7 +7438,7 @@ msgid "Seek forward (enter time)"
 msgstr "Перемотка вперед (введите время)"
 
 msgid "Seekbar activation"
-msgstr "Активация панели поиска"
+msgstr "Вкл. панели поиска"
 
 msgid "Seekbar sensibility"
 msgstr "Чувствительность панели поиска"
@@ -7892,11 +7892,14 @@ msgstr "Показывать сообщения CI модуля?"
 msgid "Show Clients"
 msgstr "Показать клиентов"
 
+msgid "Channel selection settings"
+msgstr "Настройки списка каналов"
+
 msgid "Show Display Icons"
 msgstr "Показывать информацию на дисплее"
 
 msgid "Show EIT now/next in infobar"
-msgstr "Показывать EIT текущее/следующее в инфопанели"
+msgstr "Показывать EIT тек/след в инфобаре"
 
 msgid "Show EPG for current channel..."
 msgstr "Показать EPG для текущего канала ..."
@@ -7920,7 +7923,7 @@ msgid "Show Log Manager in extensions list ?"
 msgstr "Показывать журнал отчётов в меню расширений?"
 
 msgid "Show Media playback Remaining/Elapsed as"
-msgstr "Показывать при воспроизведении Осталось/Прошло как"
+msgstr "При воспроизведении осталось/прошло"
 
 msgid "Show No data on transponder info?"
 msgstr "Показывать сообщение Нет данных о ТП?"
@@ -7947,7 +7950,7 @@ msgid "Show Service not found info?"
 msgstr "Показывать информацию Сервис не найден?"
 
 msgid "Show Time Remaining/Elapsed"
-msgstr "Показывать Оставшееся/Прошедшее время"
+msgstr "Режим оставшееся/прошедшее время"
 
 msgid "Show Timer List"
 msgstr "Отобразить список таймеров"
@@ -8006,10 +8009,10 @@ msgid "Show event details"
 msgstr "показать детали события"
 
 msgid "Show event-progress in channel selection"
-msgstr "Отображать ход события в списке каналов"
+msgstr "Расположение прогресc бара"
 
 msgid "Show extended description"
-msgstr "показать расширенное описание"
+msgstr "Показать расширенное описание"
 
 msgid "Show gui2 config informations..."
 msgstr "Показывать gui2 конфигурацию..."
@@ -8021,7 +8024,7 @@ msgid "Show icon for new/unseen items"
 msgstr "Показ значков новый/непросмотренный"
 
 msgid "Show in extensions list ?"
-msgstr "Показать в меню расширений?"
+msgstr "Показать как расширение"
 
 msgid "Show info"
 msgstr "Показать информацию"
@@ -8051,13 +8054,13 @@ msgid "Show menu"
 msgstr "Показать меню"
 
 msgid "Show message when recording starts"
-msgstr "Показать сообщение, когда начинается запись"
+msgstr "Показать сообщение при начале записи"
 
 msgid "Show movie lengths in movielist"
-msgstr "Показать продолжительность записи в списке фильмов"
+msgstr "Показать продолжительность записи"
 
 msgid "Show network mounts ..."
-msgstr "Показать сетевые устройства..."
+msgstr "Показать сетевые устройства"
 
 msgid "Show or hide the extended description, (skin dependent)."
 msgstr "Показать или скрыть расширенные описания (зависит от скина)"
@@ -8074,11 +8077,17 @@ msgstr "Показывать движение позиционера"
 msgid "Show screensaver"
 msgstr "Показать заставку"
 
+msgid "Extended System"
+msgstr "Расширенные настройки"
+
 msgid "Show second infobar"
 msgstr "Показывать второй инфо-бар"
 
 msgid "Show service type icons"
-msgstr "Показать иконку типа канала"
+msgstr "Позиция пиконов в списке"
+
+msgid "Show picons in servicelist"
+msgstr "Показать пиконы"
 
 msgid "Show services beginning with"
 msgstr "Показать каналы начинающиеся с"
@@ -8096,7 +8105,7 @@ msgid "Show source packages"
 msgstr "Показать пакеты с исходным кодом"
 
 msgid "Show status icons in movielist"
-msgstr "Показать статусную иконку в списке фильмов"
+msgstr "Показать статус в списке"
 
 msgid "Show table with all pictures ?"
 msgstr "Показать таблицу со всеми картинками?"
@@ -8126,7 +8135,7 @@ msgid "Show the tv player..."
 msgstr "Включить режим ТВ..."
 
 msgid "Show time elapsed as positive"
-msgstr "Отображение прошедшего времени как положительного"
+msgstr "Прошедшее временя как положительное"
 
 msgid "Show time remaining/elapsed"
 msgstr "Показать оставшееся/прошедшее время"
@@ -8719,7 +8728,7 @@ msgid "Stop timeshift"
 msgstr "Остановить TimeShift"
 
 msgid "Stop timeshift while recording?"
-msgstr "Остановить Timeshift во время записи?"
+msgstr "Остановить Timeshift при записи"
 
 msgid ""
 "Stop's timeshift being used if a recording is in progress. (adviseable for "
@@ -9671,7 +9680,7 @@ msgid "Timeshift will get saved at end of event!"
 msgstr "Файл Timeshift будет сохранён по окончании события"
 
 msgid "Timeshift-save action on zap"
-msgstr "Сохранить Timeshift при переключении"
+msgstr "Сохранить при переключении"
 
 msgid "Timezone"
 msgstr "Часовой пояс"
@@ -10032,10 +10041,10 @@ msgid "Use a gateway"
 msgstr "Использовать шлюз"
 
 msgid "Use fastscan channel names"
-msgstr "Использовать быстрый поиск имён каналов"
+msgstr "Быстрый поиск имен каналов"
 
 msgid "Use fastscan channel numbering"
-msgstr "Использовать быстрый поиск номера канала"
+msgstr "Быстрый поиск номера канала"
 
 msgid "Use individual settings for each directory"
 msgstr "Запомнить эти параметры для каждого каталога"
@@ -10107,13 +10116,13 @@ msgid "Use this video enhancement settings?"
 msgstr "Использовать эти настройки улучшения изображения?"
 
 msgid "Use timeshift seekbar while timeshifting?"
-msgstr "Использовать панель поиска при работе Timeshift?"
+msgstr "Использовать временную панель"
 
 msgid "Use trash can in movielist"
-msgstr "Использовать корзину для списка фильмов"
+msgstr "Включить корзину для списка записей"
 
 msgid "Used service scan type"
-msgstr "Используемый тип сканирования"
+msgstr "Тип сканирования"
 
 msgid "Used:"
 msgstr "Используется:"
@@ -12654,6 +12663,12 @@ msgstr "переключить и записать"
 
 msgid "zapped"
 msgstr "переключено"
+
+msgid "EGAMI Wizard"
+msgstr "Мастер установки EGAMI"
+
+msgid "Clean network trash can's"
+msgstr "Очищать сетевую корзину"
 
 #~ msgid "3d mode"
 #~ msgstr "Режим 3D"
