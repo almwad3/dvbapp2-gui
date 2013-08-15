@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ViX-Enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-27 10:31-0700\n"
+"POT-Creation-Date: 2013-08-12 23:40+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Rob van der Does <robvddoes@gmail.com>\n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas\n"
@@ -387,7 +387,7 @@ msgid "* Only available if more than one interface is active."
 msgstr "* Enam kui ühe aktiivse liidese puhul."
 
 msgid "----------------------------------"
-msgstr ""
+msgstr "----------------------------------"
 
 msgid "/etc/picon/"
 msgstr ""
@@ -422,6 +422,9 @@ msgstr "Varukoopia asukoht"
 
 msgid "1. STEP - Choose option RESTORE / BACKUP"
 msgstr ""
+
+msgid "/s"
+msgstr "/s"
 
 msgid "1.0"
 msgstr "1.0"
@@ -1536,7 +1539,7 @@ msgid "CCcam Client Info"
 msgstr "CCcam kliendi info"
 
 msgid "CCcam Config Switcher"
-msgstr ""
+msgstr "CCcam config-faili valik"
 
 msgid "CCcam ECM Info"
 msgstr "CCcam ECM info"
@@ -1566,16 +1569,16 @@ msgid "CCcam Provider Info"
 msgstr "CCcam Provider Info"
 
 msgid "CCcam Remote Info"
-msgstr ""
+msgstr "CCcam remote info"
 
 msgid "CCcam Server Info"
 msgstr "CCcam serveri Info"
 
 msgid "CCcam Share Info"
-msgstr ""
+msgstr "CCcam share info"
 
 msgid "CCcam Shares Info"
-msgstr ""
+msgstr "CCcam shares info"
 
 msgid "CCcam info"
 msgstr "CCcam info"
@@ -1752,8 +1755,8 @@ msgstr "Kanali eelvaade"
 msgid "Channel selection"
 msgstr "Kanalivalik"
 
-msgid "Channel selection configuration"
-msgstr "Kanalivaliku seadistused"
+msgid "Channel selection settings"
+msgstr "Kanalivaliku seaded"
 
 msgid "Channel:"
 msgstr "Kanal:"
@@ -1873,6 +1876,9 @@ msgstr ""
 
 msgid "City or Postal Code"
 msgstr ""
+
+msgid "Clean network trash can's"
+msgstr "Tühjenda võrguketta prigikast"
 
 msgid "Cleaning Trashes"
 msgstr "Prügikasti puhastamine"
@@ -2025,7 +2031,10 @@ msgid "Configure http stream..."
 msgstr "Seadista lüüs."
 
 msgid "Configure if and how service type icons will be shown."
-msgstr "Määra kas ja kuidas näidatakse teenuse liike."
+msgstr "Määra, kas ja kuidas näidatakse teenuse liigi ikoone."
+
+msgid "Configure if service picons will be shown in the servicelist."
+msgstr "Määra, kas kanalinimekirjas näidatakse kanalilogosi."
 
 msgid "Configure interface"
 msgstr "Seadista liides"
@@ -2076,6 +2085,9 @@ msgstr "Määra esipaneeli heleduse tase tavakasutuses."
 
 msgid "Configure the brightness level of the front panel displa for standby."
 msgstr "Määra esipaneeli heleduse tase ooterežiimil."
+
+msgid "Configure the color of the external subtitles, alternative (normal in white, italic in yellow, bold in cyan, underscore in green), white or yellow."
+msgstr "Määra väliste subtiitrite värv - alternatiivne, valge või kollane. Alternatiivne: tavatekst valge, kaldtekst kollane, rasvane tekst sinine, allajoonitud tekst roheline."
 
 msgid "Configure the color of the teletext subtitles."
 msgstr "Määra teleteksti subtiitrite värv."
@@ -3510,6 +3522,9 @@ msgstr "Väline (CF)"
 msgid "Extras"
 msgstr ""
 
+msgid "External subtitle color"
+msgstr "Väliste subtiitrite värv"
+
 msgid "FAILED"
 msgstr "NURJUS"
 
@@ -3739,6 +3754,9 @@ msgstr "Täisekraan"
 
 msgid "Function Not Yet Available"
 msgstr ""
+
+msgid "Fulview resulution"
+msgstr "Täisekraani resolutsioon"
 
 msgid "Function of OK button"
 msgstr "OK nupu toime"
@@ -4070,7 +4088,7 @@ msgid "History buttons mode"
 msgstr "Ajaloo nuppude toiming"
 
 msgid "History zap..."
-msgstr "Kanalivahetuse ajalugu..."
+msgstr "Vaadatud kanalid..."
 
 msgid "Hold screen"
 msgstr "Hoia pilti"
@@ -4088,7 +4106,7 @@ msgid "Hong Kong"
 msgstr ""
 
 msgid "Hops:"
-msgstr ""
+msgstr "Hops:"
 
 msgid "Horizontal"
 msgstr "Horisontaalne"
@@ -4738,7 +4756,7 @@ msgid "Letterbox"
 msgstr "Letterbox"
 
 msgid "Letterbox zoom"
-msgstr ""
+msgstr "Letterbox zoom"
 
 msgid "Light Grey"
 msgstr "Helehall"
@@ -5057,6 +5075,9 @@ msgstr "Mälu andmed"
 
 msgid "Memory index"
 msgstr "Mälu indeks"
+
+msgid "Memory positions"
+msgstr "Mälukoht"
 
 msgid "Menu"
 msgstr "Menüü"
@@ -5935,6 +5956,9 @@ msgstr "PCR PID"
 
 msgid "PIDs"
 msgstr "PIDd"
+
+msgid "PLP ID"
+msgstr "PLP ID"
 
 msgid "PMT PID"
 msgstr "PMT PID"
@@ -6996,6 +7020,9 @@ msgstr "Uus nimi:"
 msgid "Renamed %s!"
 msgstr "Ümber nimetatud %s!"
 
+msgid "Repeat"
+msgstr "Korda"
+
 msgid "Repeat Display Message"
 msgstr "Korda teadet ekraanil"
 
@@ -7206,6 +7233,9 @@ msgstr "Samba seaded"
 
 msgid "Samba setup"
 msgstr "Samba seaded"
+
+msgid "Same resolution as skin"
+msgstr "Sama resolutsioon kui skinil"
 
 msgid "Sat"
 msgstr "L"
@@ -7853,7 +7883,7 @@ msgid "Show EIT now/next in infobar"
 msgstr "Näita EIT nüüd/järgmine inforibal"
 
 msgid "Show EPG for current channel..."
-msgstr "Näita käesoleva saate kava..."
+msgstr "Näita kanali saatekava..."
 
 #, fuzzy
 msgid "Show Egami informations?"
@@ -8030,6 +8060,9 @@ msgstr ""
 
 msgid "Show picon background colour"
 msgstr "Kanalilogo tausta värv"
+
+msgid "Show picons in servicelist"
+msgstr "Näita kanalinimekirjas kanalilogosi."
 
 msgid "Show positioner movement"
 msgstr "Näita positsioneeri liikumist"
@@ -8238,7 +8271,7 @@ msgid "Software"
 msgstr "Tarkvara"
 
 msgid "Software Update"
-msgstr "Uuendamise seaded"
+msgstr "Tarkvara uuendused"
 
 msgid "Software management"
 msgstr "Tarkvara haldamine"
@@ -9646,10 +9679,10 @@ msgid "Total cards:"
 msgstr "Kaarte kokku:"
 
 msgid "Total handled client ecm's"
-msgstr ""
+msgstr "Käsitletud ECM"
 
 msgid "Total handled client emm's"
-msgstr ""
+msgstr "Käsitletud EMM"
 
 msgid "Total:"
 msgstr "Kokku:"
@@ -9719,6 +9752,9 @@ msgstr "Häälestus nurjus!"
 
 msgid "Tuner"
 msgstr "Tuuner"
+
+msgid "Tuner :"
+msgstr "Tuuner :"
 
 msgid "Tuner configuration"
 msgstr "Tuuneri seaded"
@@ -9884,13 +9920,13 @@ msgid "Upgrading"
 msgstr "Uuendan"
 
 msgid "Uphops +"
-msgstr ""
+msgstr "Uphops +"
 
 msgid "Uphops -"
-msgstr ""
+msgstr "Uphops -"
 
 msgid "Uphops: "
-msgstr ""
+msgstr "Uphops: "
 
 msgid "Uptime"
 msgstr "Ülalolekuaeg"
@@ -9932,6 +9968,9 @@ msgstr "Selle satelliidi jaoks on kasutuses USALS"
 
 msgid "Use ViaSat EPG information when it is available."
 msgstr "Viasat EPG kasutamine, kui see on saadaval."
+
+msgid "Use WOL"
+msgstr "Kasuta WOL"
 
 msgid "Use a gateway"
 msgstr "Kasuta lüüsi"
@@ -10477,8 +10516,8 @@ msgstr "Määrates 'jah', liigutakse kanalivahetusel käesoleva lemmiknimekirja 
 msgid "When enabled, deleted recordings are moved to the trash can, instead of being deleted immediately."
 msgstr "Määrates 'jah', ei kustutata salvestusi silmapilkselt, vaid liigutatakse prügikasti."
 
-msgid "When enabled, external subtitles (in media files) will be displayed in yellow, instead of the original color."
-msgstr "Määrates 'jah', kuvatakse välised subtiitrid (meedia failidel) kollasena."
+msgid "When enabled, external subtitles will be always turned on for playback movie."
+msgstr "Määrates 'jah', käivitatakse välised subtiitrid alati koos filmiga."
 
 msgid "When enabled, graphical DVB subtitles are preferred over teletext subtitles, when both types are available."
 msgstr "Määrates 'jah', eelistatakse mõlema olemasolul DVB subtiitreid teleteksti omadele."
@@ -10494,6 +10533,9 @@ msgstr "Määrates 'jah', kuvatakse DVB subtiitrid nende tõelise värvi asemel 
 
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Määrates 'jah', kasuta energiakulu mõõtmist, et tuvastada mootori peatumist (kui vastuvõtja seda toetab)."
+
+msgid "When enabled, network trash can's are probed for cleaning."
+msgstr "Määrates 'jah', uuritakse kustutamisel ka võrgukettaid."
 
 msgid "When enabled, pressing '0' will zap you to the first channel in your first bouquet and delete your zap-history."
 msgstr "Määrates 'jah', viib '0' vajutus alati kanalile 1 ja kustutab kanalivahetuse ajaloo."
@@ -10662,9 +10704,6 @@ msgstr "Aasta"
 
 msgid "Yellow DVB subtitles"
 msgstr "Kollased DVB subtiitrid"
-
-msgid "Yellow external subtitles"
-msgstr "Kollased välised subtiitrid"
 
 msgid "Yes"
 msgstr "Jah"
@@ -11153,6 +11192,9 @@ msgstr "tähestikuline"
 msgid "alphabetic reverse"
 msgstr "tagurpidi tähestikujärjekord"
 
+msgid "alternative"
+msgstr "alternatiivne"
+
 msgid "arts/culture (without music, general)"
 msgstr "Kkunst/kultuur (välja arvatud muusika)"
 
@@ -11315,7 +11357,7 @@ msgid "day"
 msgstr "päev"
 
 msgid "decrease uphop by 1"
-msgstr ""
+msgstr "vähenda uphop 1"
 
 #, fuzzy
 msgid "default"
@@ -11526,7 +11568,7 @@ msgid "gardening"
 msgstr "aiandus"
 
 msgid "get the cards' server"
-msgstr ""
+msgstr "hangi kaardiserver"
 
 msgid "go to deep standby"
 msgstr "mine sügavooterežiimi"
@@ -11569,13 +11611,13 @@ msgid "height"
 msgstr "kõrgus"
 
 msgid "hops:"
-msgstr ""
+msgstr "hops:"
 
 msgid "horizontal"
 msgstr "horisontaalne"
 
 msgid "increase uphop by 1"
-msgstr ""
+msgstr "suurenda uphop 1"
 
 msgid "information/education/school program"
 msgstr "teave/haridus/kooliprogramm"
@@ -12053,34 +12095,34 @@ msgid "show alternatives"
 msgstr "näita asenduskanaleid"
 
 msgid "show cards with uphop 0"
-msgstr ""
+msgstr "näita kaarte: uphop 0"
 
 msgid "show cards with uphop 1"
-msgstr ""
+msgstr "näita kaarte: uphop 1"
 
 msgid "show cards with uphop 2"
-msgstr ""
+msgstr "näita kaarte: uphop 2"
 
 msgid "show cards with uphop 3"
-msgstr ""
+msgstr "näita kaarte: uphop 3"
 
 msgid "show cards with uphop 4"
-msgstr ""
+msgstr "näita kaarte: uphop 4"
 
 msgid "show cards with uphop 5"
-msgstr ""
+msgstr "näita kaarte: uphop 5"
 
 msgid "show cards with uphop 6"
-msgstr ""
+msgstr "näita kaarte: uphop 6"
 
 msgid "show cards with uphop 7"
-msgstr ""
+msgstr "näita kaarte: uphop 7"
 
 msgid "show cards with uphop 8"
-msgstr ""
+msgstr "näita kaarte: uphop 8"
 
 msgid "show cards with uphop 9"
-msgstr ""
+msgstr "näita kaarte: uphop 9"
 
 msgid "show event details"
 msgstr "näita üksikasju"
@@ -12446,296 +12488,3 @@ msgstr "vahetatud"
 
 #~ msgid "Do you want to download the image to %s ?"
 #~ msgstr "Kas soovid tarkvara alla laadida %s ?"
-
-#~ msgid "Download .NFI-files for USB-flasher"
-#~ msgstr "Laadi alla .NFI-failid USB-le"
-
-#~ msgid "Drivers:\t%s"
-#~ msgstr "Ajurid:\t%s"
-
-#~ msgid "Enimga2 Changes"
-#~ msgstr "Enigma2 muudatused"
-
-#~ msgid "Error downloading change log."
-#~ msgstr "Viga muudatuslogi hankimisel."
-
-#~ msgid "Filesystem check"
-#~ msgstr "Failisüsteemi kontroll"
-
-#~ msgid "Flash"
-#~ msgstr "Flash"
-
-#~ msgid "Flashing failed"
-#~ msgstr "Tarkvara paigaldamine nurjus"
-
-#~ msgid "Get latest experimental image"
-#~ msgstr "Hangi uusim eksperimentaalne tarkvara"
-
-#~ msgid "Get latest release image"
-#~ msgstr "Hangi uusim stabiilne tarkvara"
-
-#~ msgid "InfoBar EPG"
-#~ msgstr "Inforiba EPG"
-
-#~ msgid "Input devices"
-#~ msgstr "Sisendseadmed"
-
-#~ msgid "Kernel: %s"
-#~ msgstr "Kernel: %s"
-
-#~ msgid "Log Manager"
-#~ msgstr "Logihaldur"
-
-#~ msgid "Logs manager"
-#~ msgstr "Logi haldur"
-
-#, fuzzy
-#~ msgid "Model:\t%s %s\n"
-#~ msgstr "Mudel:\t%s"
-
-#~ msgid "Model: %s"
-#~ msgstr "Mudel: %s"
-
-#~ msgid "NFI image flashing"
-#~ msgstr "NFI tarkvara paigaldamine"
-
-#~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
-#~ msgstr "NFI tarkvara on paigaldatud. Taaskäivitamiseks vajuta kollast nuppu!"
-
-#~ msgid "No details for this image file"
-#~ msgstr "Selle tarkvara kohta pole teavet"
-
-#~ msgid "No, scan later manually"
-#~ msgstr "Ei, kanalid otsitakse hiljem käsitsi"
-
-#~ msgid "Nothing to upgrade"
-#~ msgstr "Uuendusi ei ole"
-
-#~ msgid "OE Changes"
-#~ msgstr "OE muudatused"
-
-#~ msgid "Open satellites list"
-#~ msgstr "Ava satelliidinimekiri"
-
-#~ msgid "Open service list and select next channel"
-#~ msgstr "Ava kanalinimekiri ja vali järgmine kanal"
-
-#~ msgid "Open service list and select previous channel"
-#~ msgstr "Ava kanalinimekiri ja vali eelmine kanal"
-
-#~ msgid "Perform a full image backup"
-#~ msgstr "Loo täielik tarkvarakoopia"
-
-#~ msgid "Perform a image backup before updating."
-#~ msgstr "Loo enne uuendamist tarkvarakoopia."
-
-#~ msgid "Perform a setting backup,"
-#~ msgstr "Loo seadistustest varukoopia"
-
-#~ msgid "Perform a setting backup, making a backup before updating is strongly advised."
-#~ msgstr "Loo seadistustest varukoopia. Enne uuendamist on see väga soovitatav."
-
-#~ msgid "Please check your network settings!"
-#~ msgstr "Kontrolli võrgu seadeid!"
-
-#~ msgid ""
-#~ "Please configure or verify your Nameservers by filling out the required values.\n"
-#~ "When you are ready press OK to continue."
-#~ msgstr ""
-#~ "Kontrolli ja täida nimeserveri nõutavad väljad.\n"
-#~ "Kui oled valmis, vajuta jätkamiseks OK."
-
-#~ msgid "Please select a sub service..."
-#~ msgstr "Vali alamkanal..."
-
-#~ msgid "Please select an NFI file and press green key to flash!"
-#~ msgstr "Vali NFI fail ja vajuta flashimiseks rohelist nuppu!"
-
-#~ msgid "Prepare another USB stick for image flashing"
-#~ msgstr "Valmista ette teine USB pulk tarkvara flashimiseks"
-
-#~ msgid "Restart enigma"
-#~ msgstr "Taaskäivita enigma2"
-
-#~ msgid "Restore is running..."
-#~ msgstr "Taastamine..."
-
-#~ msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
-#~ msgstr "Otsib algsed lamedb-d järjestatud satelliitide järgi ühendatud positsioneeriga"
-
-#~ msgid "Search IMDb for information about current event."
-#~ msgstr "IMDb otsing käesoleva saate kohta."
-
-#~ msgid "Search the epg for current event."
-#~ msgstr "Otsi käesoleva saate kava."
-
-#~ msgid "Select an image to be downloaded"
-#~ msgstr "Vali allalaadimiseks tarkvaratõmmis"
-
-#~ msgid "Select desired image from feed list"
-#~ msgstr "Vali soovitud tarkvara feedide nimekirjast"
-
-#~ msgid "Select if you want to use the ViX coloured Buttons (set to 'no' if you want to use (Multi) Quick Button)."
-#~ msgstr "Vali, kui soovid kasutada ViX värvinuppe (määra 'ei', kui kasutad MultiQuickButtonit)."
-
-#~ msgid "Select what you want the Channel +/- button to activate:"
-#~ msgstr "Vali Channel +/- nupu toiming"
-
-#~ msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
-#~ msgstr "Kas USB pulga abiline alustab toimingut ja salvestab tarkvara %s flash mälusse?"
-
-#~ msgid "Show E2 Log"
-#~ msgstr "Näita E2 logi"
-
-#~ msgid "Show OE Log"
-#~ msgstr "Näita OE logi"
-
-#~ msgid "Show the list of AutoTimers."
-#~ msgstr "Näita autotaimeriloendit."
-
-#~ msgid "Show the list of timers."
-#~ msgstr "Näita taimeriloendit."
-
-#~ msgid "Side by side"
-#~ msgstr "Kõrvuti"
-
-#~ msgid "SoftCam / CI"
-#~ msgstr "EMU / CI"
-
-#~ msgid "Subservices"
-#~ msgstr "Alamkanalid"
-
-#~ msgid "Support at"
-#~ msgstr "Tugi aadressil"
-
-#~ msgid "Switch next channel"
-#~ msgstr "Järgmisele kanalile"
-
-#~ msgid "Switch to previous channel"
-#~ msgstr "Eelmisele kanalile"
-
-#~ msgid ""
-#~ "The Filesystem on your Timeshift-Device does not support hardlinks.\n"
-#~ "Make sure it is formatted in EXT2 or EXT3!"
-#~ msgstr ""
-#~ "Ajanihkeks valitud andmekandja ei toeta hardlinke.\n"
-#~ "Vorminda see EXT2 või EXT3 formaati!"
-
-#~ msgid ""
-#~ "The USB stick was prepared to be bootable.\n"
-#~ "Now you can download an NFI image file!"
-#~ msgstr ""
-#~ "USB pulk oli ette valmistatud käivitatavana.\n"
-#~ "Nüüd saad NFI tarkvara faili alla laadida!"
-
-#~ msgid "The current update maybe unstable"
-#~ msgstr "Praegune uuendus ei pruugi olla stabiilne"
-
-#~ msgid ""
-#~ "The following device was found:\n"
-#~ "\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Do you want to write the USB flasher to this stick?"
-#~ msgstr ""
-#~ "Leitud USB pulk:\n"
-#~ "\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Kas Te soovite USB pulka alglaetavaks?"
-
-#~ msgid "The md5sum validation failed, the file may be corrupted!"
-#~ msgstr "md5sum kontroll ebaõnnestus, fail võib olla rikutud!"
-
-#~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
-#~ msgstr "Abiline leidis konfiguratsiooni varukoopia. Kas soovid taastada vanad seaded %s?"
-
-#, fuzzy
-#~ msgid ""
-#~ "This plugin creates a USB stick which can be used to update the firmware of your %s %s without the need for a network or WLAN connection.\n"
-#~ "First, a USB stick needs to be prepared so that it becomes bootable.\n"
-#~ "In the next step, an NFI image file can be downloaded from the update server and saved on the USB stick.\n"
-#~ "If you already have a prepared bootable USB stick, please insert it now. Otherwise plug in a USB stick with a minimum size of 64 MB!"
-#~ msgstr ""
-#~ "See laiendus valmistab ette USB pulga, mida saab kasutada %s %s tarkvara uuendamiseks ilma võrgu- või WLAN ühenduseta. \n"
-#~ "Algul tuleb USB pulk teha alglaetavaks. \n"
-#~ "Siis saab uuenduste serverist alla laadida NFI tarkvara faili ja salvestada selle USB pulgale. \n"
-#~ "Kui oled juba ette valmistanud alglaetava USB pulga, siis ühenda see nüüd. Vastasel korral ühenda min. 64 MB USB pulk!"
-
-#, fuzzy
-#~ msgid ""
-#~ "To update your %s %s firmware, please follow these steps:\n"
-#~ "1) Turn off your box with the rear power switch and make sure the bootable USB stick is plugged in.\n"
-#~ "2) Turn mains back on and hold the DOWN button on the front panel pressed for 10 seconds.\n"
-#~ "3) Wait for bootup and follow instructions of the wizard."
-#~ msgstr ""
-#~ "%s %s püsivara uuendamiseks toimi järgnevalt: \n"
-#~ "1) Lülita vastuvõtja tagumisest lülitist välja ja veendu, et alglaaditav USB pulk on ühendatud. \n"
-#~ "2) Lülita vastuvõtja sisse, hoides DOWN nuppu esipaneelil vajutatuna 10 sekundi jooksul. \n"
-#~ "3) Oota alglaadimiseni ja jälgi abilise juhendeid ekraanil."
-
-#~ msgid "Top and bottom"
-#~ msgstr "Üleval ja all"
-
-#~ msgid "Translation Information"
-#~ msgstr "Tõlke info"
-
-#~ msgid "USB stick wizard"
-#~ msgstr "USB-mälupulk"
-
-#~ msgid "Unattended upgrade without GUI and reboot system"
-#~ msgstr "Automatiseeritud uuendamine ja taaskäivitus"
-
-#~ msgid "Use ViX coloured Buttons *"
-#~ msgstr "Kasuta ViX värvinuppe *"
-
-#~ msgid "Version:\t%s"
-#~ msgstr "Versioon:\t%s"
-
-#~ msgid "Version: %s"
-#~ msgstr "Versioon: %s"
-
-#~ msgid "ViX EPG"
-#~ msgstr "ViX EPG"
-
-#~ msgid "View the changes"
-#~ msgstr "Vaata muudatusi"
-
-#~ msgid "Virtuosso Image Xtreme"
-#~ msgstr "Virtuosso Image Xtreme"
-
-#~ msgid "WARNING: feeds maybe unstable."
-#~ msgstr "HOIATUS: uuendused võivad olla ebastabiilsed."
-
-#~ msgid ""
-#~ "Welcome.\n"
-#~ "\n"
-#~ "This start wizard will guide you through the basic setup of your %s %s.\n"
-#~ "Press the OK button on your remote control to move to the next step."
-#~ msgstr ""
-#~ "Tere.\n"
-#~ "\n"
-#~ "See stardiabiline juhendab %s %s põhiseadete määramisel.\n"
-#~ "Vajuta puldil OK nuppu järgmise sammu juurde minekuks."
-
-#~ msgid "You have chosen to create a new .NFI flasher bootable USB stick. This will repartition the USB stick and therefore all data on it will be erased."
-#~ msgstr "Otsustasid luua uue alglaetava USB-pulga tarkvarale. Kõik vana info USB pulgal läheb kaduma !!!"
-
-#~ msgid ""
-#~ "Your frontprocessor firmware must be upgraded.\n"
-#~ "Press OK to start upgrade."
-#~ msgstr ""
-#~ "Frontprotsessori püsivara tuleb uuendada.\n"
-#~ "Vajuta OK uuendamiseks."
-
-#~ msgid "continue"
-#~ msgstr "jätka"
-
-#~ msgid "currently installed image: %s"
-#~ msgstr "praegu paigaldatud tarkvara: %s"
-
-#~ msgid "is strongly advised."
-#~ msgstr "luua oma süsteemist varukoopia."
-
-#~ msgid "making a backup before updating"
-#~ msgstr "enne uuendamist on soovitatav"
