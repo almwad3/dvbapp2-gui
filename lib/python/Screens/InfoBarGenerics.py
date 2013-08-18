@@ -244,6 +244,7 @@ class InfoBarScreenSaver:
 class SecondInfoBar(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
+		self.skin = None
 		
 class InfoBarShowHide(InfoBarScreenSaver):
 	""" InfoBar show/hide control, accepts toggleShow and hide actions, might start
@@ -300,8 +301,8 @@ class InfoBarShowHide(InfoBarScreenSaver):
 
 	def __onHide(self):
 		self.__state = self.STATE_HIDDEN
-#		if self.secondInfoBarScreen:
-#			self.secondInfoBarScreen.hide()
+		if self.secondInfoBarScreen:
+			self.secondInfoBarScreen.hide()
 		for x in self.onShowHideNotifiers:
 			x(False)
 
@@ -380,9 +381,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 				self.secondInfoBarScreen.hide()
 			self.secondInfoBarWasShown = False
 		elif self.secondInfoBarScreen and config.usage.show_second_infobar.getValue() and not self.secondInfoBarScreen.shown:
-			self.hide()
 			self.secondInfoBarScreen.show()
-			self.secondInfoBarWasShown = True
 			self.startHideTimer()
 		elif isMoviePlayerInfoBar(self) and config.usage.show_second_infobar.getValue():
 			self.hide()
