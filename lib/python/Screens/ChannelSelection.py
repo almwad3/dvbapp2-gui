@@ -1107,44 +1107,40 @@ class ChannelSelectionBase(Screen):
 	def getServiceName(self, ref):
 		str = self.removeModeStr(ServiceReference(ref).getServiceName())
 		if 'User - bouquets' in str:
-			return _('User - bouquets')
+			return _("User - bouquets")
 		if not str:
 			pathstr = ref.getPath()
 			if 'FROM PROVIDERS' in pathstr:
-				return _('Provider')
+				return _("Provider")
 			if 'FROM SATELLITES' in pathstr:
-				return _('Satellites')
+				return _("Satellites")
 			if ') ORDER BY name' in pathstr:
-				return _('All')
+				return _("All")
 		return str
 
 	def buildTitleString(self):
 		titleStr = self.getTitle()
-		nameStr = ''
 		pos = titleStr.find(']')
 		if pos == -1:
-			pos = titleStr.find(' (')
+			pos = titleStr.find(')')
 		if pos != -1:
-			if titleStr.find(' (TV)') != -1:
-				titleStr = titleStr[-5:]
-			elif titleStr.find(' (Radio)') != -1:
-				titleStr = titleStr[-8:]
+			titleStr = titleStr[:pos+1]
 			Len = len(self.servicePath)
 			if Len > 0:
 				base_ref = self.servicePath[0]
 				if Len > 1:
-					end_ref = self.servicePath[Len - 1]
+					end_ref = self.servicePath[Len-1]
 				else:
 					end_ref = None
-# 				nameStr = self.getServiceName(base_ref)
-# 				titleStr += ' - ' + nameStr
+				nameStr = self.getServiceName(base_ref)
+				titleStr += ' - ' + nameStr
 				if end_ref is not None:
-# 					if Len > 2:
-# 						titleStr += '/../'
-# 					else:
-# 						titleStr += '/'
-					self.nameStr = self.getServiceName(end_ref)
-					titleStr = self.nameStr + titleStr
+					if Len > 2:
+						titleStr += '/../'
+					else:
+						titleStr += '/'
+					nameStr = self.getServiceName(end_ref)
+					titleStr += nameStr
 				self.setTitle(titleStr)
 
 	def moveUp(self):
