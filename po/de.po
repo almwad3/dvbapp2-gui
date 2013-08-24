@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-31 10:01+0200\n"
-"PO-Revision-Date: 2013-08-01 00:18+0100\n"
+"POT-Creation-Date: 2013-08-23 23:10+0200\n"
+"PO-Revision-Date: 2013-08-24 10:27+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: AndyBlacburn, j-ot&Trial\n"
 "Language: de\n"
@@ -8253,9 +8253,8 @@ msgstr "Zeige Timerliste"
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Zeige Transponder verbleibend/verstrichen"
 
-#, fuzzy
-msgid "Show Tune failed info?"
-msgstr "Zeige detaillierte Sendungs-Information"
+msgid "Show VCR scart on main menu"
+msgstr "Zeige SCART im Hauptmenü"
 
 msgid "Show ViX spinning logo when system is busy."
 msgstr "Zeige die ViX-Animation wenn das System beschäftigt ist."
@@ -8323,6 +8322,9 @@ msgstr "Zeige Icon für neue/ungesehene Einträge"
 
 msgid "Show in extensions list ?"
 msgstr "Zeige in Erweiterungen?"
+
+msgid "Show in extensions menu"
+msgstr "Zeige in Erweiterungen"
 
 msgid "Show info"
 msgstr "Zeige Infos"
@@ -10183,6 +10185,9 @@ msgstr "Tunen fehlgeschlagen!"
 msgid "Tuner"
 msgstr "Tuner"
 
+msgid "Tuner :"
+msgstr "Tuner:"
+
 msgid "Tuner configuration"
 msgstr "Tuner-Konfiguration"
 
@@ -11087,6 +11092,9 @@ msgid ""
 msgstr ""
 "Wenn aktiviert werden Videotext Untertitel an der Originalposition "
 "dargestellt."
+
+msgid "When enabled, the VCR scart option will be shown on the main menu"
+msgstr "Wenn aktiviert wird die SCART Option im Hauptmenü gezeigt."
 
 msgid ""
 "When enabled, the lenght of each recording will be shown in the movielist "
@@ -12206,7 +12214,7 @@ msgid "gardening"
 msgstr "Garten"
 
 msgid "get the cards' server"
-msgstr ""
+msgstr "Zeige den Karten-Server"
 
 msgid "go to deep standby"
 msgstr "Ausschalten"
@@ -12718,7 +12726,7 @@ msgid "share:"
 msgstr "Freigabe:"
 
 msgid "show DVD main menu"
-msgstr "Zeige das DVD Hauptmenü"
+msgstr "Zeige DVD Player im Hauptmenü"
 
 msgid "show EPG..."
 msgstr "Zeige EPG..."
