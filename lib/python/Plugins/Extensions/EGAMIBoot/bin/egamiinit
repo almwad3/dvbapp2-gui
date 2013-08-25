@@ -63,27 +63,28 @@ fi;
 ) &
 
 if [ -f $LIBDIR/kernel/fs/autofs4/autofs4.ko ]; then
-      /sbin/insmod $LIBDIR/kernel/fs/autofs4/autofs4.ko > /dev/null 2>&1
+	/sbin/insmod $LIBDIR/kernel/fs/autofs4/autofs4.ko > /dev/null 2>&1
 fi
 
 
 if [ -e /tmp/egami.inf ]; then
 	  break;
 else
-  /usr/bin/showiframe /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/egamiboot.mvi > /dev/null 2>&1
-  chmod 755 /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/bin/egamibm
-  /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/bin/egamibm > /dev/null 2>&1
+	/usr/bin/showiframe /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/egamiboot.mvi > /dev/null 2>&1
+	chmod 755 /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/bin/egamibm
+	/usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/bin/egamibm > /dev/null 2>&1
 fi
 
 /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/bin/fbclear > /dev/null 2>&1
 
 TARGET=Flash
 if [ -f /media/egamiboot/EgamiBootI/.egamiboot ]; then
-  TARGET=`cat /media/egamiboot/EgamiBootI/.egamiboot`
+	TARGET=`cat /media/egamiboot/EgamiBootI/.egamiboot`
 fi
 
 if [ $TARGET = "Flash" ]; then
 	echo "EGAMIBoot is booting image from " $TARGET
+	umount /media/egamiboot > /dev/null 2>&1
 	/usr/bin/showiframe /boot/bootlogo.mvi > /dev/null 2>&1
 else
     if [ -f /tmp/.egamireboot ]; then
