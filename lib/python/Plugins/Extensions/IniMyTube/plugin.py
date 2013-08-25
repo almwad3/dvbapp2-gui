@@ -125,7 +125,7 @@ config.plugins.mytube.general.startFeed = ConfigSelection(
 				 ("most_popular", _("Most popular")),
 				 ("most_shared", _("Most shared")),
 				 ("on_the_web", _("Trending videos"))
-				], "recently_featured")
+				], "on_the_web")
 config.plugins.mytube.general.on_movie_stop = ConfigSelection(default = "ask", choices = [
 	("ask", _("Ask user")), ("quit", _("Return to movie list")), ("playnext", _("Play next video")), ("playagain", _("Play video again")) ])
 

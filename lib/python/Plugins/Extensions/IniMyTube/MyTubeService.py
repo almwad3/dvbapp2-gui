@@ -214,8 +214,8 @@ class MyTubeFeedEntry():
 			'34' : 6, #FLV 360p
 		}'''
 		VIDEO_FMT_PRIORITY_MAP = {
-			'34' : 1, #FLV 360p
-			'35' : 2, #FLV 480p
+			'34' : 2, #FLV 360p
+			'35' : 1, #FLV 480p
 			'18' : 3, #MP4 360p
 			'22' : 4, #MP4 720p (HD)
 			'37' : 5, #MP4 1080p (HD)
