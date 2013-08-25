@@ -17,7 +17,7 @@ from Components.ScrollLabel import ScrollLabel
 from Components.Pixmap import Pixmap, MultiPixmap
 from Components.config import *
 from Components.ConfigList import ConfigListScreen
-from os import listdir
+from os import listdir, mkdir
 
 import os
 
@@ -487,6 +487,8 @@ def main(session, **kwargs):
 			f = open('/usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/.egamiboot_location', 'r')
 			mypath = f.readline().strip()
 			f.close()
+			if not fileExists("/media/egamiboot"):
+				mkdir("/media/egamiboot")
 			cmd="mount " + mypath + " /media/egamiboot"
 			system(cmd)
 			f = open('/proc/mounts', 'r')

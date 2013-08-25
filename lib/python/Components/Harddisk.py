@@ -171,6 +171,8 @@ class Harddisk:
 	def free(self):
 		dev = self.findMount()
 		if dev:
+			if not os.path.exists(dev):
+				os.mkdir(dev)
 			stat = os.statvfs(dev)
 			return int((stat.f_bfree/1000) * (stat.f_bsize/1000))
 		return -1
