@@ -118,15 +118,6 @@ void bcm_accel_blit(
 		P(0x78, 256);
 		P(0x79, pal_addr);
 		P(0x7a, 0x7e48888);
-
-		{
-			int		i;
-			unsigned int	*ptr = (unsigned int *)pal_addr;
-			for(i = 0; i < 256; i++)
-			{
-				printf("PTable (%03d) value = %08X \n", i, ptr[i]);
-			}
-		}
 		break;
 	}
 
