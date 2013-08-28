@@ -179,21 +179,6 @@ int gAccel::blit(gUnmanagedSurface *dst, gUnmanagedSurface *src, const eRect &p,
 			{
 				pal_addr = src->clut.data_phys;
 			}
-
-			#if	1
-			{
-				int		i;
-				unsigned long *pal = (unsigned long*)(((unsigned char*)src->data) + src->stride * src->y);
-
-				printf("blit : data_phys = %08X, x = %d, y = %d, stride = %d, pal_addr = %08X \n"
-									, src->data_phys, src->x, src->y, src->stride, pal_addr);
-				for (i = 0; i < src->clut.colors; ++i)
-				{
-					printf("PTable (%03d) color = %08X \n", i, *pal);
-					pal++;
-				}
-			}
-			#endif
 		} else
 			return -1; /* unsupported source format */
 

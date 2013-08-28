@@ -87,17 +87,6 @@ void bcm_accel_blit(
 		int dst_x, int dst_y, int dwidth, int dheight,
 		int pal_addr, int flags)
 {
-	printf("[%s] src_addr = %08X, src_width = %d, src_height = %d, src_stride = %d, src_format = %d \n"
-						, __FUNCTION__, src_addr, src_width, src_height, src_stride, src_format);
-	printf("[%s] dst_addr = %08X, dst_width = %d, dst_height = %d, dst_stride = %d \n"
-						, __FUNCTION__, dst_addr, dst_width, dst_height, dst_stride);
-	printf("[%s] src_x = %d, src_y = %d, width = %d, height = %d \n"
-						, __FUNCTION__, src_x, src_y, width, height);
-	printf("[%s] dst_x = %d, dst_y = %d, dwidth = %d, dheight = %d \n"
-						, __FUNCTION__, dst_x, dst_y, dwidth, dheight);
-	printf("[%s] pal_addr = %08X, flags = %08X \n"
-						, __FUNCTION__, pal_addr, flags);
-
 	C(0x43); // reset source
 	C(0x53); // reset dest
 	C(0x5b);  // reset pattern
@@ -157,13 +146,6 @@ void bcm_accel_fill(
 		int x, int y, int width, int height,
 		unsigned long color)
 {
-	printf("[%s] dst_addr = %08X, dst_width = %d, dst_height = %d, dst_stride = %d \n"
-						, __FUNCTION__, dst_addr, dst_width, dst_height, dst_stride);
-	printf("[%s] x = %d, y = %d, width = %d, height = %d \n"
-						, __FUNCTION__, x, y, width, height);
-	printf("[%s] color = %08X \n"
-						, __FUNCTION__, color);
-
 	C(0x43); // reset source
 	C(0x53); // reset dest
 	C(0x5b); // reset pattern
