@@ -457,19 +457,7 @@ const char *getDriverDateString()
 
 const char *getBoxType()
 {
-  	// hack way to not change all in code
-	if(strcmp(BOXTYPE, "inihdx") == 0) 
-	{
-		return "ventonhdx";
-	}  
-	else if(strcmp(BOXTYPE, "inihde") == 0) 
-	{
-		return "ventonhde";
-	} 
-	else
-	{
-		return BOXTYPE;
-	}
+	return BOXTYPE;
 }
 
 #include <malloc.h>

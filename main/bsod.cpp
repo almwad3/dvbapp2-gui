@@ -193,7 +193,7 @@ void bsodFatal(const char *component)
 
 		XmlGenerator xml(f);
 
-        xml.open("ventonsupport");
+        xml.open("inisupport");
 
 		xml.open("enigma2");
 		xml.string("crashdate", tm_str);
@@ -246,7 +246,7 @@ void bsodFatal(const char *component)
 				xml.cDataFromCmd("technomatesoftware", "opkg list-installed 'tm*'");
 			}
 			else if (access("/proc/stb/info/boxtype", F_OK) != -1) {
-				xml.cDataFromCmd("ventonsoftware", "opkg list-installed 'ini*'");
+				xml.cDataFromCmd("inisoftware", "opkg list-installed 'ini*'");
 			}
 			else if (access("/proc/stb/info/boxtype", F_OK) != -1) {
 				xml.cDataFromCmd("maxdigitalsoftware", "opkg list-installed 'xp*'");
