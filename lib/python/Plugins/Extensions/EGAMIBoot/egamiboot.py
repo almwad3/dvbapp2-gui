@@ -266,21 +266,36 @@ def EgamiBootExtract(source, target):
 	      os.chdir('et6x00')
 	  if(os.path.exists("/media/egamiboot/EgamiBootUpload/et5x00")):
 	      os.chdir('et5x00')
+	  if(os.path.exists("/media/egamiboot/EgamiBootUpload/et4x00")):
+	      os.chdir('et4x00')
 	  if(os.path.exists("/media/egamiboot/EgamiBootUpload/venton-hdx")):
 	      os.chdir('venton-hdx')
 	  if(os.path.exists("/media/egamiboot/EgamiBootUpload/venton-hde")):
 	      os.chdir('venton-hde')
+	  if(os.path.exists("/media/egamiboot/EgamiBootUpload/hde")):
+	      os.chdir('hde')
+	  if(os.path.exists("/media/egamiboot/EgamiBootUpload/hdp")):
+	      os.chdir('hdp')
 	  if(os.path.exists("/media/egamiboot/EgamiBootUpload/vuplus")):
 	    os.chdir('vuplus')
 	    if(os.path.exists("/media/egamiboot/EgamiBootUpload/vuplus/duo")):
 	      os.chdir('duo')
 	      os.system("mv root_cfe_auto.jffs2 rootfs.bin")
+	    if(os.path.exists("/media/egamiboot/EgamiBootUpload/vuplus/solo")):
+	      os.chdir('solo')
+	      os.system("mv -f root_cfe_auto.jffs2 rootfs.bin")
 	    if(os.path.exists("/media/egamiboot/EgamiBootUpload/vuplus/ultimo")):
 	      os.chdir('ultimo')
 	      os.system("mv root_cfe_auto.jffs2 rootfs.bin")
 	    if(os.path.exists("/media/egamiboot/EgamiBootUpload/vuplus/uno")):
 	      os.chdir('uno')
 	      os.system("mv root_cfe_auto.jffs2 rootfs.bin")
+	    if(os.path.exists("/media/egamiboot/EgamiBootUpload/vuplus/solo2")):
+	      os.chdir('solo2')
+	      os.system("mv -f root_cfe_auto.bin rootfs.bin")
+	    if(os.path.exists("/media/egamiboot/EgamiBootUpload/vuplus/duo2")):
+	      os.chdir('duo2')
+	      os.system("mv -f root_cfe_auto.bin rootfs.bin")
 	  
 	  rc = os.system('insmod /usr/lib/enigma2/python/Plugins/Extensions/EGAMIBoot/nandsim_360 cache_file=/media/egamiboot/image_cache first_id_byte=0x20 second_id_byte=0xaa third_id_byte=0x00 fourth_id_byte=0x15;sleep 5')
 	  	  
@@ -292,11 +307,7 @@ def EgamiBootExtract(source, target):
 	  rc = os.system(cmd)
 	  rc = os.system('mount -t ubifs ubi1_0 /media/egamiboot/ubi')
 	  os.chdir('/home/root')
-	  rc = os.system('rm -r /media/egamiboot/EgamiBootUpload/et9x00')
-	  rc = os.system('rm -r /media/egamiboot/EgamiBootUpload/et6x00')
-	  rc = os.system('rm -r /media/egamiboot/EgamiBootUpload/venton-hdx')
-	  rc = os.system('rm -r /media/egamiboot/EgamiBootUpload/venton-hde')
-	  rc = os.system('rm -r /media/egamiboot/EgamiBootUpload/vuplus')
+	  rc = os.system('rm -rf /media/egamiboot/EgamiBootUpload/*')
 	  cmd = ('cp -r /media/egamiboot/ubi/* /media/egamiboot/EgamiBootI/' + target)
 	  rc = os.system(cmd)
 	  rc = os.system('umount /media/egamiboot/ubi')

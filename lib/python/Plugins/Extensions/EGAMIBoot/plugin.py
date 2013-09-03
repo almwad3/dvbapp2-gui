@@ -1,29 +1,22 @@
 # -*- coding: utf-8 -*-
 from Screens.Screen import Screen
 from Screens.Console import Console
-from Screens.MessageBox import MessageBox 
-from Screens.Console import Console 
+from Screens.MessageBox import MessageBox
 from Screens.ChoiceBox import ChoiceBox
-
 from enigma import eTimer
-
 from Components.Button import Button
 from Components.ActionMap import ActionMap, NumberActionMap
 from Components.GUIComponent import *
 from Components.MenuList import MenuList
 from Components.Input import Input
-from Components.Label import Label 
-from Components.ScrollLabel import ScrollLabel 
+from Components.Label import Label
+from Components.ScrollLabel import ScrollLabel
 from Components.Pixmap import Pixmap, MultiPixmap
 from Components.config import *
 from Components.ConfigList import ConfigListScreen
-from os import listdir, mkdir
-
 import os
-
 from Tools.Directories import fileExists
-
-from os import system, listdir, chdir, getcwd, rename as os_rename, remove as os_remove
+from os import system, listdir, mkdir, chdir, getcwd, rename as os_rename, remove as os_remove
 from os.path import dirname, isdir
 
 	
