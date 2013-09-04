@@ -6,7 +6,7 @@
 			<!--<item weight="100" level="0" text="CronTimers" entryID="crontimer_edit"><screen module="CronTimer" screen="CronTimers" /></item>-->
 			<item weight="100" level="0" text="Timers" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList" /></item>
 			<item weight="100" level="0" text="PowerTimers" entryID="powertimer_edit"><screen module="PowerTimerEdit" screen="PowerTimerEditList" /></item>
-		</menu>
+		</menu>		
 		<menu weight="4" level="0" text="Setup" flushConfigOnClose="1" entryID="setup_selection" >
 			<id val="setup" />
 			<menu weight="5" level="0" text="TV" entryID="tv_selection">
@@ -65,7 +65,7 @@ self.session.openWithCallback(msgClosed, EpgLoadMsg)
 				<id val="system" />
 				<menu weight="4" level="0" text="A/V Setup" entryID="av_screen">
 					<id val="av" />
-					<item level="0" text="VCR scart" entryID="scart_switch" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>					
+					<item level="1" text="VCR scart" entryID="scart_switch" configcondition="config.usage.show_vcr_scart" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>
 				</menu>
 				<item level="0" entryID="usage_setup"><setup id="usage" /></item>
 				<!--<item level="1" text="Input devices" entryID="input_device_setup"><screen module="InputDeviceSetup" screen="InputDeviceSelection" /></item>-->
