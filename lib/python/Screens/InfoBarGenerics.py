@@ -755,7 +755,7 @@ class InfoBarMenu:
 		self.session.infobar = None
 
 	def mainMenu(self):
-		print "loading mainmenu XML..."
+		# print "loading mainmenu XML..."
 		menu = mdom.getroot()
 		assert menu.tag == "menu", "root element in menu must be 'menu'!"
 
@@ -2368,7 +2368,7 @@ class InfoBarInstantRecord:
 			if len(simulTimerList) > 1: # with other recording
 				name = simulTimerList[1].name
 				name_date = ' '.join((name, strftime('%F %T', localtime(simulTimerList[1].begin))))
-				print "[TIMER] conflicts with", name_date
+				# print "[TIMER] conflicts with", name_date
 				recording.autoincrease = True	# start with max available length, then increment
 				if recording.setAutoincreaseEnd():
 					self.session.nav.RecordTimer.record(recording)
@@ -2389,12 +2389,12 @@ class InfoBarInstantRecord:
 		return False
 
 	def recordQuestionCallback(self, answer):
-		print 'recordQuestionCallback'
+		# print 'recordQuestionCallback'
 #		print "pre:\n", self.recording
 
-		print 'test1'
+		# print 'test1'
 		if answer is None or answer[1] == "no":
-			print 'test2'
+			# print 'test2'
 			return
 		list = []
 		recording = self.recording[:]
@@ -2426,21 +2426,21 @@ class InfoBarInstantRecord:
 			elif answer[1] == "manualendtime":
 				self.setEndtime(len(self.recording)-1)
 		elif answer[1] == "savetimeshift":
-			print 'test1'
+			# print 'test1'
 			if self.isSeekable() and self.pts_eventcount != self.pts_currplaying:
-				print 'test2'
+				# print 'test2'
 				InfoBarTimeshift.SaveTimeshift(self, timeshiftfile="pts_livebuffer_%s" % self.pts_currplaying)
 			else:
-				print 'test3'
+				# print 'test3'
 				Notifications.AddNotification(MessageBox,_("Timeshift will get saved at end of event!"), MessageBox.TYPE_INFO, timeout=5)
 				self.save_current_timeshift = True
 				config.timeshift.isRecording.value = True
 		elif answer[1] == "savetimeshiftEvent":
-			print 'test4'
+			# print 'test4'
 			InfoBarTimeshift.saveTimeshiftEventPopup(self)
 
 		elif answer[1].startswith("pts_livebuffer") is True:
-			print 'test2'
+			# print 'test2'
 			InfoBarTimeshift.SaveTimeshift(self, timeshiftfile=answer[1])
 
 	def setEndtime(self, entry):
@@ -2874,6 +2874,7 @@ class InfoBarCueSheetSupport:
 #		print "new service started! trying to download cuts!"
 		self.downloadCuesheet()
 
+		self.resume_point = None
 		if self.ENABLE_RESUME_SUPPORT:
 			for (pts, what) in self.cut_list:
 				if what == self.CUT_TYPE_LAST:
@@ -2896,13 +2897,6 @@ class InfoBarCueSheetSupport:
 				if config.usage.on_movie_start.getValue() == "ask" or not length[1]:
 					Notifications.AddNotificationWithCallback(self.playLastCB, MessageBox, _("Do you want to resume this playback?") + "\n" + (_("Resume position at %s") % ("%d:%02d:%02d" % (l/3600, l%3600/60, l%60))), timeout=10)
 				elif config.usage.on_movie_start.getValue() == "resume":
-# TRANSLATORS: The string "Resuming playback" flashes for a moment
-# TRANSLATORS: at the start of a movie, when the user has selected
-# TRANSLATORS: "Resume from last position" as start behavior.
-# TRANSLATORS: The purpose is to notify the user that the movie starts
-# TRANSLATORS: in the middle somewhere and not from the beginning.
-# TRANSLATORS: (Some translators seem to have interpreted it as a
-# TRANSLATORS: question or a choice, but it is a statement.)
 					Notifications.AddNotificationWithCallback(self.playLastCB, MessageBox, _("Resuming playback"), timeout=2, type=MessageBox.TYPE_INFO)
 
 	def playLastCB(self, answer):
