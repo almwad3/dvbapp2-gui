@@ -357,7 +357,7 @@ const char *getMachineBrand()
 		{
 			return "Sezam";
 		}
-		else if((strcmp(boxtype_name, "ini-1000de\n") == 0))
+		else if((strcmp(boxtype_name, "ini-1000de\n") == 0) || (strcmp(boxtype_name, "ini-9000de\n") == 0) )
 		{
 			return "GI";
 		}
