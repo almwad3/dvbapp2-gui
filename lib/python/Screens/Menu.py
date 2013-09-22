@@ -59,7 +59,7 @@ class Menu(Screen):
 	ALLOW_SUSPEND = True
 
 	def okbuttonClick(self):
-		print "okbuttonClick"
+		# print "okbuttonClick"
 		selection = self["menu"].getCurrent()
 		if selection is not None:
 			selection[1]()
@@ -139,7 +139,7 @@ class Menu(Screen):
 				if screen is None:
 					screen = module
 
-				print module, screen
+				# print module, screen
 				if module:
 					module = "Screens." + module
 				else:
@@ -255,7 +255,7 @@ class Menu(Screen):
 		self.menu_title = a
 
 	def keyNumberGlobal(self, number):
-		print "menu keyNumber:", number
+		# print "menu keyNumber:", number
 		# Calculate index
 		number -= 1
 
