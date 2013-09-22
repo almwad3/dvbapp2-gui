@@ -1,3 +1,4 @@
+from . import _
 # -*- coding: iso-8859-1 -*-
 from enigma import ePythonMessagePump
 
@@ -128,12 +129,12 @@ class CVevoSignAlgoExtractor:
                 printDBG('Unable to download playerUrl webpage')
                 return ''
 
-            # get main function name 
+            # get main function name
             match = re.search("signature=(\w+?)\([^)]\)", self.playerData)
             if match:
                 mainFunName = match.group(1)
                 printDBG('Main signature function name = "%s"' % mainFunName)
-            else: 
+            else:
                 printDBG('Can not get main signature function name')
                 return ''
 
@@ -194,7 +195,7 @@ class CVevoSignAlgoExtractor:
     def _getfullAlgoCode( self, mainFunName, recDepth = 0 ):
         if self.MAX_REC_DEPTH <= recDepth:
             printDBG('_getfullAlgoCode: Maximum recursion depth exceeded')
-            return 
+            return
 
         funBody = self._getLocalFunBody( mainFunName )
         if '' != funBody:
@@ -206,11 +207,11 @@ class CVevoSignAlgoExtractor:
                         printDBG("Add local function %s to known functions" % mainFunName)
                         self._getfullAlgoCode( funName, recDepth + 1 )
 
-            # conver code from javascript to python 
+            # conver code from javascript to python
             funBody = self._jsToPy(funBody)
             self.fullAlgoCode += '\n' + funBody + '\n'
         return
-       
+
 decryptor = CVevoSignAlgoExtractor()
 
 class GoogleSuggestions():
@@ -223,14 +224,13 @@ class GoogleSuggestions():
 		self.prepQuerry = "/complete/search?output=toolbar&client=youtube&xml=true&ds=yt&"
 		if self.hl is not None:
 			self.prepQuerry = self.prepQuerry + "hl=" + self.hl + "&"
-		self.prepQuerry = self.prepQuerry + "jsonp=self.gotSuggestions&q="
+		self.prepQuerry = self.prepQuerry + "jsonp=self.getSuggestions&q="
 		print "[MyTube - GoogleSuggestions] prepareQuery:",self.prepQuerry
 
 	def getSuggestions(self, queryString):
 		self.prepareQuery()
 		if queryString is not "":
 			query = self.prepQuerry + quote(queryString)
-			self.conn = HTTPConnection("google.com")
 			try:
 				self.conn = HTTPConnection("google.com")
 				self.conn.request("GET", query, "", {"Accept-Encoding": "UTF-8"})
@@ -358,7 +358,7 @@ class MyTubeFeedEntry():
 	def subscribeToUser(self):
 		username = self.getUserId()
 		return myTubeService.SubscribeToUser(username)
-		
+
 	def addToFavorites(self):
 		video_id = self.getTubeId()
 		return myTubeService.addToFavorites(video_id)
@@ -384,17 +384,17 @@ class MyTubeFeedEntry():
 		EntryDetails['Thumbnails'] = list
 		#print EntryDetails
 		return EntryDetails
-	
+
 	def removeAdditionalEndingDelimiter(self, data):
 		pos = data.find("};")
 		if pos != -1:
 			data = data[:pos + 1]
 		return data
-	
+
 	def extractFlashVars(self, data, assets):
 		flashvars = {}
 		found = False
-		
+
 		for line in data.split("\n"):
 			if line.strip().find(";ytplayer.config = ") > 0:
 				found = True
@@ -405,7 +405,7 @@ class MyTubeFeedEntry():
 				data = line[p1 + 1:p2]
 				break
 		data = self.removeAdditionalEndingDelimiter(data)
-		
+
 		if found:
 			data = json.loads(data)
 			if assets:
@@ -439,26 +439,26 @@ class MyTubeFeedEntry():
 		links = {}
 		watch_url = 'http://www.youtube.com/watch?v=%s&safeSearch=none'%video_id
 		watchrequest = Request(watch_url, None, std_headers)
-		
+
 		try:
 			print "[MyTube] trying to find out if a HD Stream is available",watch_url
 			result = urlopen2(watchrequest).read()
 		except (URLError, HTTPException, socket.error), err:
 			print "[MyTube] Error: Unable to retrieve watchpage - Error code: ", str(err)
 			return video_url
-		
+
 		flashvars = self.extractFlashVars(result, 0)
 		if not flashvars.has_key(u"url_encoded_fmt_stream_map"):
 			return video_url
-		
+
 		for url_desc in flashvars[u"url_encoded_fmt_stream_map"].split(u","):
 			url_desc_map = parse_qs(url_desc)
 			if not (url_desc_map.has_key(u"url") or url_desc_map.has_key(u"stream")):
 				continue
-			
+
 			key = int(url_desc_map[u"itag"][0])
 			url = u""
-			
+
 			if url_desc_map.has_key(u"url"):
 				url = urllib.unquote(url_desc_map[u"url"][0])
 			elif url_desc_map.has_key(u"conn") and url_desc_map.has_key(u"stream"):
@@ -468,7 +468,7 @@ class MyTubeFeedEntry():
 				url = url + urllib.unquote(url_desc_map[u"stream"][0])
 			elif url_desc_map.has_key(u"stream") and not url_desc_map.has_key(u"conn"):
 				url = urllib.unquote(url_desc_map[u"stream"][0])
-			
+
 			if url_desc_map.has_key(u"sig"):
 				url = url + u"&signature=" + url_desc_map[u"sig"][0]
 			elif url_desc_map.has_key(u"s"):
@@ -476,7 +476,7 @@ class MyTubeFeedEntry():
 				flashvars = self.extractFlashVars(result, 1)
 				js = flashvars[u"js"]
 				url = url + u"&signature=" + decryptor.decryptSignature(sig, js)
-			
+
 			try:
 				links[VIDEO_FMT_PRIORITY_MAP[str(key)]] = url
 			except KeyError:
@@ -540,7 +540,7 @@ class MyTubePlayerService():
 		if self.current_auth_token is not None:
 			print "[MyTube] MyTubePlayerService - auth_cached"
 			self.yt_service.SetClientLoginToken(self.current_auth_token)
-		
+
 #		self.loggedIn = False
 		#os.environ['http_proxy'] = 'http://169.229.50.12:3128'
 		#proxy = os.environ.get('http_proxy')
@@ -561,10 +561,10 @@ class MyTubePlayerService():
 		  'Passwd': pw,
 		  'source': self.yt_service.client_id,
 		}
-		
+
 		print "[MyTube] MyTubePlayerService - Starting external curl auth request"
 		result = os.popen('curl -s -k -X POST "%s" -d "%s"' % (gdata.youtube.service.YOUTUBE_CLIENTLOGIN_AUTHENTICATION_URL , urlencode(opts))).read()
-		
+
 		return result
 
 	def supportsSSL(self):
@@ -572,7 +572,7 @@ class MyTubePlayerService():
 
 	def getFormattedTokenRequest(self, email, pw):
 		return dict(parse_qsl(self.getLoginTokenOnCurl(email, pw).strip().replace('\n', '&')))
-	
+
 	def getAuthedUsername(self):
 		# on external curl we can get real username
 		if self.cached_auth_request.get('YouTubeUser') is not None:
@@ -589,7 +589,7 @@ class MyTubePlayerService():
 
 		if self.yt_service is None:
 			self.startService()
-		
+
 		if self.current_auth_token is not None:
 			print "[MyTube] MyTubePlayerService - auth_cached"
 			self.yt_service.SetClientLoginToken(self.current_auth_token)
@@ -600,14 +600,14 @@ class MyTubePlayerService():
 			self.cached_auth_request = self.getFormattedTokenRequest(username, password)
 			if self.cached_auth_request.get('Auth') is None:
 				raise Exception('Got no auth token from curl; you need curl and valid youtube login data')
-			
+
 			self.yt_service.SetClientLoginToken(self.cached_auth_request.get('Auth'))
 		else:
 			print "[MyTube] MyTubePlayerService - Using regularly ProgrammaticLogin for login"
 			self.yt_service.email = username
 			self.yt_service.password  = password
 			self.yt_service.ProgrammaticLogin()
-			
+
 		# double check login: reset any token on wrong logins
 		if self.is_auth() is False:
 			print "[MyTube] MyTubePlayerService - auth_use - auth not possible resetting"
@@ -630,11 +630,11 @@ class MyTubePlayerService():
 
 	def is_auth(self):
 		if self.current_auth_token is not None:
-			return True		
-		
+			return True
+
 		if self.yt_service.current_token is None:
 			return False
-		
+
 		return self.yt_service.current_token.get_token_string() != 'None'
 
 	def auth_token(self):
@@ -663,7 +663,7 @@ class MyTubePlayerService():
 		print "[MyTube] MyTubePlayerService - getFeed:",url, feedname
 		self.feedentries = []
 		ytservice = self.yt_service.GetYouTubeVideoFeed
-		
+
 		if feedname == "my_subscriptions":
 			url = "http://gdata.youtube.com/feeds/api/users/default/newsubscriptionvideos"
 		elif feedname == "my_favorites":
@@ -727,33 +727,33 @@ class MyTubePlayerService():
 	def SubscribeToUser(self, username):
 		try:
 			new_subscription = self.yt_service.AddSubscriptionToChannel(username_to_subscribe_to=username)
-	
+
 			if isinstance(new_subscription, gdata.youtube.YouTubeSubscriptionEntry):
 				print '[MyTube] MyTubePlayerService: New subscription added'
 				return _('New subscription added')
-			
+
 			return _('Unknown error')
 		except gdata.service.RequestError as req:
 			return str('Error: ' + str(req[0]["body"]))
 		except Exception as e:
 			return str('Error: ' + e)
-	
+
 	def addToFavorites(self, video_id):
 		try:
 			video_entry = self.yt_service.GetYouTubeVideoEntry(video_id=video_id)
 			response = self.yt_service.AddVideoEntryToFavorites(video_entry)
-			
+
 			# The response, if succesfully posted is a YouTubeVideoEntry
 			if isinstance(response, gdata.youtube.YouTubeVideoEntry):
 				print '[MyTube] MyTubePlayerService: Video successfully added to favorites'
-				return _('Video successfully added to favorites')	
-	
+				return _('Video successfully added to favorites')
+
 			return _('Unknown error')
 		except gdata.service.RequestError as req:
 			return str('Error: ' + str(req[0]["body"]))
 		except Exception as e:
 			return str('Error: ' + e)
-	
+
 	def getTitle(self):
 		return self.feed.title.text
 
@@ -766,7 +766,7 @@ class MyTubePlayerService():
 	def getTotalResults(self):
 		if self.feed.total_results is None:
 			return 0
-				
+
 		return self.feed.total_results.text
 
 	def getNextFeedEntriesURL(self):
@@ -778,7 +778,7 @@ class MyTubePlayerService():
 	def getCurrentPage(self):
 		if self.feed.start_index is None:
 			return 1
-		
+
 		return int(int(self.feed.start_index.text) / int(self.itemCount())) + 1
 
 class YoutubeQueryThread(Thread):
