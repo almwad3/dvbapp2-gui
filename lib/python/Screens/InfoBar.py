@@ -489,7 +489,7 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, \
 		try:
 			service = self.session.nav.getCurrentService()
 			info = service and service.info()
-			xres = str(info.getInfo(iServiceInformation.sVideoWidth))
+			xres = str(info.getInfo(enigma.iServiceInformation.sVideoWidth))
 			slist = self.servicelist
 			if self.session.pipshown:
 				slist = self.servicelist
