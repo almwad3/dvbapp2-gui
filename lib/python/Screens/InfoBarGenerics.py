@@ -359,7 +359,10 @@ class InfoBarShowHide(InfoBarScreenSaver):
 		if self.__state == self.STATE_SHOWN:
 			self.hide()
 			if hasattr(self, "pvrStateDialog"):
-				self.pvrStateDialog.hide()
+				try:
+					self.pvrStateDialog.hide()
+				except:
+					pass
 		elif self.__state == self.STATE_HIDDEN and self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
 			self.secondInfoBarScreen.hide()
 			self.secondInfoBarWasShown = False
@@ -371,7 +374,10 @@ class InfoBarShowHide(InfoBarScreenSaver):
 
 			self.EventViewIsShown = False
 		elif hasattr(self, "pvrStateDialog"):
-			self.pvrStateDialog.hide()
+			try:
+				self.pvrStateDialog.hide()
+			except:
+				pass
 
 	def toggleShow(self):
 		if self.__state == self.STATE_HIDDEN:
@@ -392,13 +398,19 @@ class InfoBarShowHide(InfoBarScreenSaver):
 				self.secondInfoBarScreen.hide()
 
 	def lockShow(self):
-		self.__locked = self.__locked + 1
+		try:
+			self.__locked = self.__locked + 1
+		except:
+			self.__locked = 0
 		if self.execing:
 			self.show()
 			self.hideTimer.stop()
 
 	def unlockShow(self):
-		self.__locked = self.__locked - 1
+		try:
+			self.__locked = self.__locked - 1
+		except:
+			self.__locked = 0
 		if self.__locked  <0:
 			self.__locked = 0
 		if self.execing:
@@ -805,7 +817,10 @@ class InfoBarMenu:
 		self.session.openWithCallback(self.mainMenuClosed, Menu, menu)
 
 	def showRFSetup(self):
-		self.session.openWithCallback(self.mainMenuClosed, Setup, 'RFmod')
+		if SystemInfo["RfModulator"]:
+			self.session.openWithCallback(self.mainMenuClosed, Setup, 'RFmod')
+		else:
+			pass
 
 	def mainMenuClosed(self, *val):
 		self.session.infobar = None
