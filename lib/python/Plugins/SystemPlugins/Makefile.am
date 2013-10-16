@@ -24,8 +24,4 @@ if VUULTIMO
 SUBDIRS += CableScan
 endif
 
-if DREAMBOX
-SUBDIRS += FrontprocessorUpgrade NFIFlash CableScan
-endif
-
 install_PYTHON = __init__.py
