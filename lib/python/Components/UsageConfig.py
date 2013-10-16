@@ -30,9 +30,15 @@ def InitUsageConfig():
 
 	config.usage.service_icon_enable = ConfigYesNo(default = False)
 	config.usage.service_icon_enable.addNotifier(refreshServiceList)
+	config.usage.servicelist_cursor_behavior = ConfigSelection(default = "keep", choices = [
+		("standard", _("Standard")),
+		("keep", _("Keep service")),
+		("reverseB", _("Reverse bouquet buttons")),
+		("keep reverseB", _("Keep service") + " + " + _("Reverse bouquet buttons"))])
 
 	config.usage.multiepg_ask_bouquet = ConfigYesNo(default = False)
 
+	config.usage.panicbutton = ConfigYesNo(default = True)
 	config.usage.quickzap_bouquet_change = ConfigYesNo(default = False)
 	config.usage.e1like_radio_mode = ConfigYesNo(default = True)
 
@@ -45,8 +51,13 @@ def InitUsageConfig():
 	config.usage.show_infobar_on_event_change = ConfigYesNo(default = False)
 	config.usage.show_infobar_channel_number = ConfigYesNo(default = False)	
 	config.usage.show_second_infobar = ConfigYesNo(default = True)
+	def showsecondinfobarChanged(configElement):
+		if config.usage.show_second_infobar.getValue() != "INFOBAREPG":
+			SystemInfo["InfoBarEpg"] = True
+		else:
+			SystemInfo["InfoBarEpg"] = False
 	config.usage.second_infobar_timeout = ConfigSelection(default = "5", choices = [("0", _("no timeout"))] + choicelist)	
-	config.usage.show_picon_bkgrn = ConfigSelection(default = "transparent", choices = [("transparent", _("Transparent")), ("blue", _("Blue")), ("red", _("Red")), ("black", _("Black")), ("white", _("White")), ("lightgrey", _("Light Grey")), ("grey", _("Grey"))])
+	config.usage.show_picon_bkgrn = ConfigSelection(default = "transparent", choices = [("none", _("Disabled")), ("transparent", _("Transparent")), ("blue", _("Blue")), ("red", _("Red")), ("black", _("Black")), ("white", _("White")), ("lightgrey", _("Light Grey")), ("grey", _("Grey"))])
 
 	config.usage.show_spinner = ConfigYesNo(default = True)
 	config.usage.enable_tt_caching = ConfigYesNo(default = True)
