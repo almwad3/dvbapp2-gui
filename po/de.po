@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-05 15:29+0200\n"
-"PO-Revision-Date: 2013-10-07 13:47+0100\n"
+"POT-Creation-Date: 2013-10-16 13:42+0200\n"
+"PO-Revision-Date: 2013-10-17 18:37+0100\n"
 "Last-Translator: Ralf Biedermann <ralf.biedermann@rbsoft.de>\n"
 "Language-Team: AndyBlacburn, j-ot&Trial\n"
 "Language: de\n"
@@ -190,6 +190,10 @@ msgstr ""
 
 msgid "%-H:%M"
 msgstr "%-H:%M"
+
+#, python-format
+msgid "%02d.%02d - %02d.%02d (%s%d min)"
+msgstr ""
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -1105,9 +1109,8 @@ msgstr ""
 msgid "Arabic"
 msgstr "Arabisch"
 
-#, fuzzy
-msgid "Are you sure you want to Boot Image:\n"
-msgstr "Bist Du sicher das diese Log Datei gesendet werden soll:\n"
+msgid "Are you sure to remove this entry?"
+msgstr "Sicher das dieser Eintrag entfernt werden soll?"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -1303,6 +1306,9 @@ msgstr "Automatische Suche"
 
 msgid "Automatic refresh"
 msgstr "Automatisch aktualisieren"
+
+msgid "Automatic resolution"
+msgstr "Automatische Auflösung"
 
 msgid "Automatic save"
 msgstr "Automatisch speichern"
@@ -1741,6 +1747,9 @@ msgstr "Senderliste"
 msgid "Channel list context menu"
 msgstr "Senderliste Kontextmenü"
 
+msgid "Channel list cursor behavior"
+msgstr "Senderliste Cursor-Verhalten "
+
 msgid "Channel list on mode change"
 msgstr "Senderliste bei Moduswechsel"
 
@@ -2101,6 +2110,9 @@ msgstr "Konfiguriere die Farbe von Videotext-Untertiteln."
 
 msgid "Configure the contrast level of the front panel display."
 msgstr "Konfiguriere den Kontrast des Frontpanels."
+
+msgid "Configure the cursor behaviour in the channel selection list. When opening the channel selection list you can keep on the current service or already select up/down and you are able to revert the B+/B- buttons."
+msgstr "Konfiguriere das Verhalten der Cursor Tasten in der Senderliste. Wenn die Senderliste geöffnet wird kann der Cursor auf dem aktuellen Sender stehen bleiben oder der nächste/vorherige Sender kann schon ausgewählt sein. Das Verhalten der Tasten Bouquet +/- kann auch eingestellt werden."
 
 msgid "Configure the duration in minutes for the screensaver."
 msgstr "Konfiguriere die Zeit in Minuten für den Bildschirmschoner."
@@ -4095,7 +4107,7 @@ msgid "History buttons mode"
 msgstr "History Tasten bewirken"
 
 msgid "History zap..."
-msgstr ""
+msgstr "Vergangenheit zappen..."
 
 msgid "Hold screen"
 msgstr "Bild halten"
@@ -4192,6 +4204,9 @@ msgstr "Icons"
 
 msgid "Idle Time: "
 msgstr "Leerlaufzeit:"
+
+msgid "If enabled the output resolution of the box will try to match the resolution of the video contents resolution"
+msgstr "Wenn aktiviert wird versucht die Auflösung des Bildes der Auflösung des Films anzupassen."
 
 msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr "Wenn die Log-Dateien zu viel Speicher belegen werden die ältesten Dateien gelöscht."
@@ -4618,6 +4633,9 @@ msgstr "Nur Skalieren"
 
 msgid "Just zap"
 msgstr "Nur Umschalten"
+
+msgid "Keep service"
+msgstr "Sender beibehalten"
 
 msgid "Keeps MovieList open whilst playing audio files."
 msgstr "Filmliste offen lassen wenn Musikdateien abgespielt werden."
@@ -7133,8 +7151,11 @@ msgstr "Zurück zur Filmliste"
 msgid "Return to previous service"
 msgstr "Zurück zum letzten Sender"
 
+msgid "Reverse bouquet buttons"
+msgstr "Bouquet-Button umdrehen"
+
 msgid "Rewind speeds"
-msgstr "Rücklauf Geschwindigkeiten"
+msgstr "Rücklaufgeschwindigkeiten"
 
 msgid "Rewrap teletext subtitles"
 msgstr "Videotextuntertitel anders formatieren"
@@ -8262,9 +8283,11 @@ msgstr "Softcam Einstellungen"
 msgid "Softcam settings"
 msgstr "Softcam Einstellungen"
 
-#, fuzzy
 msgid "Softcam type"
 msgstr "Softcam Einstellungen"
+
+msgid "SoftcamCheck"
+msgstr "Softcam Überprüfung"
 
 msgid "Software"
 msgstr "Software"
@@ -11169,7 +11192,7 @@ msgid "abort bouquet edit"
 msgstr "Favoriten bearbeiten abbrechen"
 
 msgid "abort favourites edit"
-msgstr "Favoriteneditor abbrechen"
+msgstr "Favoriten bearbeiten abbrechen"
 
 msgid "about to start"
 msgstr "startet gleich"
@@ -11469,10 +11492,10 @@ msgid "enable"
 msgstr "aktivieren"
 
 msgid "enable bouquet edit"
-msgstr "Alternativen bearbeiten"
+msgstr "Favoriten bearbeiten"
 
 msgid "enable favourite edit"
-msgstr "Favoriteneditor aktivieren"
+msgstr "Favoriten bearbeiten"
 
 msgid "enable move mode"
 msgstr "Verschiebemodus aktivieren"
@@ -11484,10 +11507,10 @@ msgid "enabled"
 msgstr "aktiviert"
 
 msgid "end alternatives edit"
-msgstr "Alternativen-Bearbeitung beenden"
+msgstr "Alternativen Bearbeitung beenden"
 
 msgid "end bouquet edit"
-msgstr "Alternativen bearbeiten beenden"
+msgstr "Favoriten Bearbeitung beenden"
 
 msgid "end cut here"
 msgstr "Schnitt endet hier"
