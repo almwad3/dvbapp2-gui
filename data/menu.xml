@@ -65,6 +65,7 @@ self.session.openWithCallback(msgClosed, EpgLoadMsg)
 				<id val="system" />
 				<menu weight="4" level="0" text="A/V Setup" entryID="av_screen">
 					<id val="av" />
+					<item weight="10" text="A/V settings" entryID="av_setup"><screen module="VideoMode" screen="VideoSetup" /></item>
 					<item level="1" text="VCR scart" entryID="scart_switch" configcondition="config.usage.show_vcr_scart" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>
 				</menu>
 				<item level="0" entryID="usage_setup"><setup id="usage" /></item>
@@ -93,6 +94,13 @@ self.session.open(SABnzbdSetupScreen)
 				</menu>
 				<!--<item level="1" entryID="onlineupdate_setup"><setup id="softwareupdate"/></item>-->
 				<item level="0" text="Skin setup" entryID="skin_setup"><screen module="SkinSelector" screen="SkinSelector"/></item>
+				<menu level="0" text="Storage devices" entryID="hardisk_selection" requires="Harddisk">
+					<id val="harddisk" />
+					<item level="1" entryID="harddisk_setup"><setup id="harddisk"/></item>
+					<item level="0" text="Initialization" entryID="harddisk_init"><screen module="HarddiskSetup" screen="HarddiskSelection"/></item>
+					<item level="0" text="Filesystem check" entryID="harddisk_check"><screen module="HarddiskSetup" screen="HarddiskFsckSelection"/></item>
+					<item level="0" text="Convert ext3 filesystem to ext4" entryID="harddisk_convert" requires="ext4"><screen module="HarddiskSetup" screen="HarddiskConvertExt4Selection"/></item>
+				</menu>
 				<item level="2" entryID="subtitle_setup"><setup id="subtitlesetup" /></item>
 				<item level="0" entryID="time_setup"><setup id="time"/></item>
 				<menu level="0" text="Extended System" entryID="system_selection">
