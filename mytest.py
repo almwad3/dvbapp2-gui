@@ -539,7 +539,7 @@ def runScreenTest():
 	import Tools.Trashcan
 	Tools.Trashcan.init(session)
 
-	profile("Init:AutoFrameRate")
+	profile("Init:AutoVideoMode")
 	import Screens.VideoMode
 	Screens.VideoMode.autostart(session)
 

@@ -67,11 +67,11 @@ class AVSwitch:
 	# modes["DVI-PC"] = ["PC"]
 
 	if about.getChipSetString().find('7358') != -1 or about.getChipSetString().find('7356') != -1 or about.getChipSetString().find('7424') != -1:
-		modes["HDMI"] = ["1080p", "1080i", "720p", "576p", "576i", "480p", "480i"]
-		widescreen_modes = set(["1080p", "1080i", "720p"])
+		modes["HDMI"] = ["720p", "1080p", "1080i", "576p", "576i", "480p", "480i"]
+		widescreen_modes = set(["720p", "1080p", "1080i"])
 	else:
-		modes["HDMI"] = ["1080i", "720p", "576p", "576i", "480p", "480i"]
-		widescreen_modes = set(["1080i", "720p"])
+		modes["HDMI"] = ["720p", "1080i", "576p", "576i", "480p", "480i"]
+		widescreen_modes = set(["720p", "1080i"])
 
 	modes["YPbPr"] = modes["HDMI"]
 	if getBoxType().startswith('vu'):
@@ -347,7 +347,12 @@ def InitAVSwitch():
 	if config.av.yuvenabled.getValue():
 		colorformat_choices["yuv"] = _("YPbPr")
 
-	config.av.autores = ConfigYesNo(default = False)
+	config.av.autores = ConfigSelection(choices={"disabled": _("Disabled"), "all": _("All resolutions"), "hd": _("only HD")}, default="disabled")
+	choicelist = []
+	for i in range(5, 16):
+		choicelist.append(("%d" % i, ngettext("%d second", "%d seconds", i) % i))
+	config.av.autores_label_timeout = ConfigSelection(default = "5", choices = [("0", _("Not Shown"))] + choicelist)
+	config.av.autores_all_res = ConfigYesNo(default = False)
 	config.av.colorformat = ConfigSelection(choices=colorformat_choices, default="rgb")
 	config.av.aspectratio = ConfigSelection(choices={
 			"4_3_letterbox": _("4:3 Letterbox"),
@@ -400,6 +405,7 @@ def InitAVSwitch():
 	config.av.generalPCMdelay = ConfigSelectionNumber(-1000, 1000, 5, default = 0)
 	config.av.vcrswitch = ConfigEnableDisable(default = False)
 
+	config.av.aspect.setValue('16:9')
 	config.av.aspect.addNotifier(iAVSwitch.setAspect)
 	config.av.wss.addNotifier(iAVSwitch.setWss)
 	config.av.policy_43.addNotifier(iAVSwitch.setPolicy43)
