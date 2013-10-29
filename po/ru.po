@@ -96,14 +96,6 @@ msgstr ""
 "\n"
 "Восстановление настроек  %s %s"
 
-#, python-format
-msgid ""
-"\n"
-"Restore your %s %s with a new firmware."
-msgstr ""
-"\n"
-"Восстановление %s %s новой прошивкой"
-
 msgid ""
 "\n"
 "Restore your backups by date."
