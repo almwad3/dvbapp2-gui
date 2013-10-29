@@ -238,8 +238,8 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 
 	def showFormat(self):
 		try:
-			from Plugins.SystemPlugins.Videomode.plugin import videoSetupMain
-			self.session.instantiateDialog(videoSetupMain)
+			from Screens.VideoMode import VideoSetup
+			self.session.open(VideoSetup)
 			no_plugin = False
 		except Exception, e:
 			self.session.open(MessageBox, _("The VideoMode plugin is not installed!\nPlease install it."), type = MessageBox.TYPE_INFO,timeout = 10 )
