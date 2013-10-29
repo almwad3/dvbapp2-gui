@@ -7,6 +7,7 @@ from Components.PluginComponent import plugins
 from Components.config import config
 from Components.SystemInfo import SystemInfo
 
+from Tools.BoundFunction import boundFunction
 from Tools.Directories import resolveFilename, SCOPE_SKIN
 
 import xml.etree.cElementTree
@@ -24,13 +25,6 @@ menutitle_string = ""
 file = open(resolveFilename(SCOPE_SKIN, 'menu.xml'), 'r')
 mdom = xml.etree.cElementTree.parse(file)
 file.close()
-
-class boundFunction:
-	def __init__(self, fnc, *args):
-		self.fnc = fnc
-		self.args = args
-	def __call__(self):
-		self.fnc(*self.args)
 
 class MenuUpdater:
 	def __init__(self):
@@ -233,7 +227,14 @@ class Menu(Screen):
 					if x[2] == plugin_menuid:
 						list.remove(x)
 						break
+<<<<<<< HEAD
 				list.append((l[0], boundFunction(l[1], self.session), l[2], l[3] or 50, ">"))
+=======
+				if len(l) > 4 and l[4]:
+					list.append((l[0], boundFunction(l[1], self.session, self.close), l[2], l[3] or 50))
+				else:
+					list.append((l[0], boundFunction(l[1], self.session), l[2], l[3] or 50))
+>>>>>>> 29f066cb408f33314f3e902d71175768681ff6c1
 
 		# for the skin: first try a menu_<menuID>, then Menu
 		self.skinName = [ ]
