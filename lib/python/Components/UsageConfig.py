@@ -38,7 +38,7 @@ def InitUsageConfig():
 
 	config.usage.multiepg_ask_bouquet = ConfigYesNo(default = False)
 
-	config.usage.panicbutton = ConfigYesNo(default = True)
+	config.usage.panicbutton = ConfigYesNo(default = False)
 	config.usage.quickzap_bouquet_change = ConfigYesNo(default = False)
 	config.usage.e1like_radio_mode = ConfigYesNo(default = True)
 
