@@ -6515,7 +6515,7 @@ msgid "Portuguese"
 msgstr "Portugiesisch"
 
 msgid "Position Setup"
-msgstr "Rotor Einstellungen"
+msgstr "OSD Einstellungen"
 
 msgid "Position of finished Timers in Timerlist"
 msgstr "Position beendeter Timer in der Timerliste"
