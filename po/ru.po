@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-27 10:31-0700\n"
-"PO-Revision-Date: 2013-10-29 17:43+0100\n"
+"PO-Revision-Date: 2013-10-30 23:55+0100\n"
 "Last-Translator: xxx\n"
 "Language-Team: RU locale edited by Sowa\n"
 "Language: ru_RU\n"
@@ -852,6 +852,9 @@ msgstr "Добавить файлы в список воспроизведени
 msgid "Add provider"
 msgstr "Добавить провайдера"
 
+msgid "Next Event"
+msgstr "Следующее"
+
 msgid "Add recording (enter recording duration)"
 msgstr "Запись (введите продолжительность)"
 
@@ -989,7 +992,7 @@ msgid "Allocate unused memory index"
 msgstr "Определение не зайдествованных индексов"
 
 msgid "Allow subtitle language to equal audio language"
-msgstr "Разрешить одноименный язык субтитров и аудио-трека"
+msgstr "Язык субтитров равен аудио-треку"
 
 msgid "Allow subtitles for hearing impaired"
 msgstr "Разрешить субтитры для слабослышащих"
@@ -1786,6 +1789,9 @@ msgstr "Изменить букет"
 msgid "Choose Bouquet"
 msgstr "Выбор букета"
 
+msgid "none"
+msgstr "нет"
+
 msgid "Choose a tag for easy finding a recording."
 msgstr "Выберите тег для легкого поиска записи."
 
@@ -2029,16 +2035,16 @@ msgid "Configure the border width of the subtitles. The dark border makes the su
 msgstr "Настройка ширины границ субтитров. Темная кайма делает субтитры более читаемыми на светлом фоне."
 
 msgid "Configure the brightness level of the front panel displa for normal operation."
-msgstr "Настройка уровня яркости VFD дисплея для работы в нормальном режиме."
+msgstr "Настройка уровня яркости дисплея для работы в нормальном режиме."
 
 msgid "Configure the brightness level of the front panel displa for standby."
-msgstr "Настройка уровня яркости VFD дисплея в режиме сна."
+msgstr "Настройка уровня яркости дисплея в режиме сна."
 
 msgid "Configure the color of the teletext subtitles."
 msgstr "Настройка цвета телетекста."
 
 msgid "Configure the contrast level of the front panel display."
-msgstr "Настройка уровня контрастности VFD дисплея."
+msgstr "Настройка уровня контрастности дисплея."
 
 msgid "Configure the duration in minutes for the screensaver."
 msgstr "Выбор времени до включения сохранения экрана"
@@ -2712,7 +2718,7 @@ msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Резервировать место для записей (в ГБ)"
 
 msgid "Display"
-msgstr "Настройки VFD экрана"
+msgstr "Настройки дисплея"
 
 msgid "Display 16:9 content as"
 msgstr "Отображать формат 16:9 как"
@@ -2724,7 +2730,7 @@ msgid "Display >16:9 content as"
 msgstr "Отображать формат 16:9 как"
 
 msgid "Display and userinterface"
-msgstr "VFD Дисплей и Интерфейс пользователя"
+msgstr "Дисплей и Интерфейс пользователя"
 
 msgid "Display message before playing next movie"
 msgstr "Сообщение при показе след. файла"
@@ -3877,7 +3883,7 @@ msgid "Hard disk setup"
 msgstr "Настройка жесткого диска"
 
 msgid "Hard disk standby after"
-msgstr "Отключение жёсткого диска через "
+msgstr "Отключение жесткого диска через "
 
 msgid "Harddisk"
 msgstr "Жесткий диск"
@@ -5737,7 +5743,10 @@ msgid "Options:"
 msgstr "Опции:"
 
 msgid "Orbital position"
-msgstr "Орбитальная позиция"
+msgstr "Спутник"
+
+msgid "Show Weather on channel change"
+msgstr "Показывать Погоду при переключении"
 
 msgid "Original"
 msgstr "Оригинальный"
@@ -6226,6 +6235,21 @@ msgstr "Пожалуйста: не перезагружайте ресивер �
 msgid "Plp ID"
 msgstr "PLP ID"
 
+msgid "Input Box"
+msgstr "Редактировать"
+
+msgid "Memory positions"
+msgstr "Запомнить позицию"
+
+msgid "Start Scan"
+msgstr "Скан"
+
+msgid "Blind scan"
+msgstr "Слепой поиск"
+
+msgid "User defined transponder"
+msgstr "Определен пользователем"
+
 msgid "Plugin Browser"
 msgstr "Установленные плагины"
 
@@ -6278,7 +6302,7 @@ msgid "Position Setup"
 msgstr "Настройка позиции"
 
 msgid "Position of finished Timers in Timerlist"
-msgstr "Расположение выполненных таймеров в списке"
+msgstr "Позиция выполненных таймеров в списке"
 
 msgid "Position setup"
 msgstr "Настройка положения меню"
@@ -6310,6 +6334,12 @@ msgstr "Обзор таймеров питания"
 msgid "PowerTimers"
 msgstr "Таймеры питания"
 
+msgid "LCD scroll speed"
+msgstr "Скорость прокрутки"
+
+msgid "Time for next LCD scrolling"
+msgstr "Период для прокрутки"
+
 msgid "Predefined"
 msgstr "Предпочитаемый пользователем"
 
@@ -6329,10 +6359,31 @@ msgid "Prefer subtitles for hearing impaired"
 msgstr "Предпочтение субтитрам для слабослышащих"
 
 msgid "Prefer subtitles stored by service"
-msgstr "Предпочиаемые субтитры сохраняются для канала"
+msgstr "Выбранные субтитры сохраняются для канала"
 
 msgid "Preference"
 msgstr "Приоритет"
+
+msgid "Channel list cursor behavior"
+msgstr "Функция курсора"
+
+msgid "Keep service"
+msgstr "Текущий сервис"
+
+msgid "Progress bar center"
+msgstr "По центру"
+
+msgid "Automatic resolution"
+msgstr "Автоматическое разрешение"
+
+msgid "multi"
+msgstr "мульти"
+
+msgid "Reverse bouquet buttons"
+msgstr "Реверсивные кнопки для букета"
+
+msgid "Keep service + Reverse bouquet buttons"
+msgstr "Текущий + Реверсивные кнопки"
 
 msgid "Preferred tuner"
 msgstr "Предпочитаемый тюнер"
@@ -6384,7 +6435,7 @@ msgid "Press ok to confirm"
 msgstr "Нажмите OK для подтверждения"
 
 msgid "Press yellow to set this interface as default interface."
-msgstr "Нажмите ЖЁЛТУЮ для установки данного интерфейса по умолчанию"
+msgstr "Нажмите ЖЕЛТУЮ для установки данного интерфейса по умолчанию"
 
 msgid "Pressure :"
 msgstr "Давление :"
@@ -6918,7 +6969,7 @@ msgid "Right from servicename"
 msgstr "Справа от имени канала"
 
 msgid "Roll-off"
-msgstr "Обкатка"
+msgstr "Защитный интервал"
 
 msgid "Romanian"
 msgstr "Румынский"
@@ -7047,19 +7098,19 @@ msgid "Save playlist"
 msgstr "сохранить плейлист"
 
 msgid "Save timeshift as movie and continue recording"
-msgstr "Сохранить Timeshift как видеофайл и продолжить запись"
+msgstr "Сохранить Timeshift и продолжить запись"
 
 msgid "Save timeshift as movie and stop recording"
-msgstr "Сохранить Timeshift как видеофайл и остановить запись"
+msgstr "Сохранить Timeshift и остановить запись"
 
 msgid "Saving EPG Cache..."
-msgstr "Сохранение кэша EPG..."
+msgstr "Сохранение кэша EPG"
 
 msgid "Saving Timeshift files"
-msgstr "Сохранение файлов сдвига времени"
+msgstr "Сохранение файла Timeshift"
 
 msgid "Saving timeshift as movie now. This might take a while!"
-msgstr "Сохранение сдвига времени как видеофайл... Это может занять некоторое время!"
+msgstr "Сохранение Timeshift. Это может занять некоторое время!"
 
 msgid "Scaler sharpness"
 msgstr "Шкала резкости"
@@ -7688,7 +7739,7 @@ msgid "Show ViX spinning logo when system is busy."
 msgstr "Отображать спиннер ViX, когда система занята."
 
 msgid "Show WLAN status"
-msgstr "Показать состояние подключения к беспроводной сети"
+msgstr "Состояние подключения к беспроводной сети"
 
 msgid "Show animation while busy"
 msgstr "Показ анимации, когда система занята"
@@ -7754,13 +7805,13 @@ msgid "Show info line"
 msgstr "показать Инфолинию"
 
 msgid "Show infobar on channel change"
-msgstr "Показывать инфопанель при смене каналов"
+msgstr "Показать инфопанель при смене каналов"
 
 msgid "Show infobar on event change"
-msgstr "Показывать инфопанель при смене информации"
+msgstr "Показать инфопанель при смене события"
 
 msgid "Show infobar on skip forward/backward"
-msgstr "Показывать инфопанель при навигации"
+msgstr "Показать инфопанель при навигации"
 
 msgid "Show job tasks in extensions"
 msgstr "Отображать задания в расширениях"
@@ -7857,6 +7908,15 @@ msgstr "Включить режим ТВ..."
 
 msgid "Show time elapsed as positive"
 msgstr "Прошедшее временя как положительное"
+
+msgid "Close PiP on exit"
+msgstr "Закрывать PiP при выходе"
+
+msgid "OSD Position"
+msgstr "Позиция меню"
+
+msgid "Show VCR scart on main menu"
+msgstr "Показывать меню Скарт в главном меню"
 
 msgid "Show time remaining/elapsed"
 msgstr "Показать оставшееся/прошедшее время"
@@ -8702,6 +8762,9 @@ msgstr "Тайвань"
 msgid "Target"
 msgstr "Цель"
 
+msgid "Message"
+msgstr "Сообщение"
+
 msgid "Teletext subtitle color"
 msgstr "Цвет субтитров телетекста"
 
@@ -8737,6 +8800,15 @@ msgstr "Режим теста"
 
 msgid "FAN Control"
 msgstr "Вентилятор"
+
+msgid "Storage devices"
+msgstr "Съемные диски"
+
+msgid "Filesystem check"
+msgstr "Проверка файловой системы"
+
+msgid "Convert ext3 filesystem to ext4"
+msgstr "Конвертация из ext3 в ext4"
 
 #, python-format
 msgid "Test the network configuration of your %s %s.\n"
@@ -9725,6 +9797,9 @@ msgstr "Использовать эти настройки улучшения и
 msgid "Use timeshift seekbar while timeshifting?"
 msgstr "Использовать временную панель"
 
+msgid "Allow quit movieplayer with exit"
+msgstr "Закрывать проигрыватель при выходе"
+
 msgid "Use trash can in movielist"
 msgstr "Включить корзину для списка записей"
 
@@ -10370,7 +10445,7 @@ msgid "Year"
 msgstr "Год"
 
 msgid "Yellow DVB subtitles"
-msgstr "Жёлтые DVB субтитры"
+msgstr "Желтые DVB субтитры"
 
 msgid "Yellow external subtitles"
 msgstr "Желтые внешние субтитры"
@@ -10391,7 +10466,7 @@ msgid "Yes, backup my settings!"
 msgstr "Да, сохранить мои настройки!"
 
 msgid "Yes, but don't save timeshift as movie"
-msgstr "Не сохранять Timeshift как видеозапись"
+msgstr "Не сохранять Timeshift"
 
 msgid "Yes, but play next video"
 msgstr "Да, но воспроизвести следующее видео"
@@ -10400,10 +10475,10 @@ msgid "Yes, but play previous video"
 msgstr "Да, но воспроизвести предыдушее видео"
 
 msgid "Yes, but save timeshift as movie and continue recording"
-msgstr "Сохранить Timeshift как видеофайл и продолжить запись"
+msgstr "Сохранить Timeshift и продолжить запись"
 
 msgid "Yes, but save timeshift as movie and stop recording"
-msgstr "Сохранить Timeshift как видеофайл и остановить запись"
+msgstr "Сохранить Timeshift и остановить запись"
 
 msgid "Yes, do a manual scan now"
 msgstr "Да, выполнить ручной поиск"
@@ -11459,9 +11534,6 @@ msgstr "не найдено устройств хранения"
 msgid "no timeout"
 msgstr "нет задержки"
 
-msgid "none"
-msgstr "никакой"
-
 msgid "normal"
 msgstr "нормальный"
 
@@ -11906,6 +11978,15 @@ msgstr "время переключения, разделы, аудио, инф�
 msgid "top"
 msgstr "верхний"
 
+msgid "External subtitle color"
+msgstr "Цвет внешних субтитров"
+
+msgid "Transponder Time"
+msgstr "Спутника"
+
+msgid "Automatically turn on external subtitles"
+msgstr "Автоматическое включение внешних субтитров"
+
 msgid "tourism/travel"
 msgstr "туризм/путешествия"
 
@@ -12049,7 +12130,7 @@ msgid "working"
 msgstr "работающий"
 
 msgid "yellow"
-msgstr "жёлтый"
+msgstr "желтый"
 
 msgid "yes"
 msgstr "да"
@@ -12114,14 +12195,11 @@ msgstr "Очищать сетевую корзину"
 #~ "двойном нажатии кнопки ОК. Вторая информационная панель содержит "
 #~ "дополнительную информацию о текущем канале."
 
-#~ msgid "Convert ext3 filesystem to ext4"
-#~ msgstr "Конвертировать файловую систему Ext3 в Ext4"
-
 #~ msgid "Could not connect to %s %s .NFI image feed server:"
 #~ msgstr "Не удалось подключить %s %s к серверу прошивок ресивера:"
 
 #~ msgid "Creating Hardlink to Timeshift file failed!"
-#~ msgstr "Создание жёсткой ссылки к файлу сдвига времени неудачно!"
+#~ msgstr "Создание жесткой ссылки к Timeshift неудачно!"
 
 #~ msgid "CronTimers"
 #~ msgstr "Крон-Таймеры"
@@ -12152,9 +12230,6 @@ msgstr "Очищать сетевую корзину"
 
 #~ msgid "Error downloading change log."
 #~ msgstr "Ошибка при загрузке журнала изменений."
-
-#~ msgid "Filesystem check"
-#~ msgstr "Проверка файловой системы"
 
 #~ msgid "Flash"
 #~ msgstr "Флеш"
