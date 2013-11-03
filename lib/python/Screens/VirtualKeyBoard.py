@@ -70,7 +70,7 @@ class VirtualKeyBoard(Screen):
 			
 		self["country"] = Label(_("Keyboard language"))
 		self["header"] = Label(title)
-		
+		kwargs["text"] = kwargs.get("text", "").decode('utf-8', 'ignore').encode('utf-8')
 		self["text"] = Input(currPos=len(kwargs.get("text", "")), allMarked=False, **kwargs)
 		self["list"] = VirtualKeyBoardList([])
 
