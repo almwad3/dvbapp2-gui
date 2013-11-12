@@ -59,6 +59,7 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 				"showTv": (self.TvRadioToggle, _("Show the tv player...")),
 				"openBouquetList": (self.openBouquetList, _("open bouquetlist")),
 				"openTimerList": (self.openTimerList, _("Open Timer List...")),
+				"openSleepTimer": (self.openSleepTimer, _("Show/Add Sleep Timers")),
 				"showMediaPlayer": (self.showMediaPlayer, _("Show the media player...")),
 				"showPluginBrowser": (self.showPluginBrowser, _("Show the plugins...")),
 				"showSetup": (self.showSetup, _("Show setup...")),
@@ -200,6 +201,10 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 		from Screens.TimerEdit import TimerEditList
 		self.session.open(TimerEditList)
 
+	def openSleepTimer(self):
+		from Screens.PowerTimerEdit import PowerTimerEditList
+		self.session.open(PowerTimerEditList)
+		
 	def showMediaPlayer(self):
 		try:
 			from Plugins.Extensions.MediaPlayer.plugin import MediaPlayer

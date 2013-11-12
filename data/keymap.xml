@@ -208,7 +208,8 @@
 		<key id="KEY_SEARCH" mapto="showWWW" flags="m" />
 		<key id="KEY_SETUP" mapto="showSetup" flags="m" />
 		<key id="KEY_PROG1" mapto="openBouquetList" flags="m" />
-		<key id="KEY_PROG2" mapto="openBouquetList" flags="m" />		
+		<key id="KEY_PROG2" mapto="openBouquetList" flags="m" />
+		<key id="KEY_SLEEP" mapto="openSleepTimer" flags="m" />
 	</map>
 	<!--<map context="2ndInfobarActions">
 		<key id="KEY_UP" mapto="prevPage" flags="mr" />
