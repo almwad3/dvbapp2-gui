@@ -7799,7 +7799,7 @@ msgid "Show in extensions list ?"
 msgstr "Показать как расширение"
 
 msgid "Show info"
-msgstr "Показать информацию"
+msgstr "Инфо"
 
 msgid "Show info line"
 msgstr "показать Инфолинию"
