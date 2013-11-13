@@ -1863,10 +1863,10 @@ void eDVBFrontend::setFrontend(bool recvEvents)
 			{
 #if DVB_API_VERSION > 5 || DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR >= 3
 #if (LINUX_VERSION_CODE >= KERNEL_VERSION(3,7,0))
-				puts("  [TEST] LINUX_VERSION_CODE >= KERNEL_VERSION(3,7,0) ");  
+				puts("  [TEST] LINUX_VERSION_CODE >= KERNEL_VERSION(3,7,0) ----------> p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID_LEGACY, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;");  
 				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID_LEGACY, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
 #else
-				puts("  [TEST2] LINUX_VERSION_CODE < KERNEL_VERSION(3,7,0) ");  
+				puts("  [TEST] LINUX_VERSION_CODE < KERNEL_VERSION(3,7,0) -----------> p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;");  
 				eDebugNoSimulate(" [ TEST2] PLP ID = %d", parm.plpid);
 				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
 #endif
