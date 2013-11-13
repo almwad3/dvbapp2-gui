@@ -7219,6 +7219,9 @@ msgstr "Поиск доступных обновлений. Пожалуйста
 msgid "Searching for new installed or removed packages. Please wait..."
 msgstr "Поиск новых установленных или удалённых пакетов. Пожалуйста, подождите..."
 
+msgid "Searching for WLAN networks..."
+msgstr "Поиск доступных сетей..."
+
 msgid "Searching west ..."
 msgstr "Поиск на запад..."
 

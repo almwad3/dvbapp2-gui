@@ -427,7 +427,7 @@ class NetworkWizard(WizardLanguage, Rc):
 				for entry in complist:
 					self.APList.append( (entry[1], entry[1]) )
 			if not len(aps):
-				self.APList.append( ( _("No networks found"), None ) )
+				self.APList.append( ( _("Searching for WLAN networks..."), None ) )
 			
 		self.rescanTimer.start(4000)
 		return self.APList
