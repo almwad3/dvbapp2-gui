@@ -1867,7 +1867,7 @@ void eDVBFrontend::setFrontend(bool recvEvents)
 				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID_LEGACY, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
 #else
 				puts("  [TEST2] LINUX_VERSION_CODE < KERNEL_VERSION(3,7,0) ");  
-				printf(" [ TEST2] PLP ID = %d", parm.plpid);
+				eDebugNoSimulate(" [ TEST2] PLP ID = %d", parm.plpid);
 				p[cmdseq.num].cmd = DTV_DVBT2_PLP_ID, p[cmdseq.num].u.data = parm.plpid, cmdseq.num++;
 #endif
 #endif
