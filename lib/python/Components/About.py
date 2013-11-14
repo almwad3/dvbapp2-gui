@@ -199,7 +199,7 @@ def getChipSetString():
 		f = open('/proc/stb/info/chipset', 'r')
 		chipset = f.read()
 		f.close()
-		return chipset
+		return chipset.replace('\n','')
 	except IOError:
 		return "unavailable"
 
