@@ -198,6 +198,8 @@ def getChipSetString():
 	try:
 		f = open('/proc/stb/info/chipset', 'r')
 		chipset = f.read()
+		if chipset == "bcm7358\n":
+			chipset = "7358"
 		f.close()
 		return chipset.replace('\n','')
 	except IOError:
