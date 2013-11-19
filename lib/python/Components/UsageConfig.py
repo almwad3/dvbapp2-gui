@@ -64,6 +64,7 @@ def InitUsageConfig():
 	config.usage.sort_settings = ConfigYesNo(default = False)
 	config.usage.sort_menus = ConfigYesNo(default = False)
 	config.usage.sort_pluginlist = ConfigYesNo(default = True)
+	config.usage.sort_extensionslist = ConfigYesNo(default = False)
 	config.usage.movieplayer_pvrstate = ConfigYesNo(default = True)
 
 	choicelist = []
@@ -215,6 +216,8 @@ def InitUsageConfig():
 	config.usage.show_channel_numbers_in_servicelist.addNotifier(refreshServiceList)
 
 	config.usage.blinking_display_clock_during_recording = ConfigYesNo(default = False)
+	
+	config.usage.blinking_rec_symbol_during_recording = ConfigYesNo(default = False)
 
 	config.usage.show_message_when_recording_starts = ConfigYesNo(default = True)
 
@@ -277,7 +280,7 @@ def InitUsageConfig():
 	config.epg.freesat = ConfigYesNo(default = True)
 	config.epg.viasat = ConfigYesNo(default = True)
 	config.epg.netmed = ConfigYesNo(default = True)
-
+	config.misc.bootvideo = ConfigYesNo(default = True)
 	def EpgSettingsChanged(configElement):
 		from enigma import eEPGCache
 		mask = 0xffffffff
@@ -312,8 +315,8 @@ def InitUsageConfig():
 	def EpgCacheSaveSchedChanged(configElement):
 		import EpgLoadSave
 		EpgLoadSave.EpgCacheSaveCheck()
- 	config.epg.cacheloadsched.addNotifier(EpgCacheLoadSchedChanged, immediate_feedback = False)
- 	config.epg.cachesavesched.addNotifier(EpgCacheSaveSchedChanged, immediate_feedback = False)
+	config.epg.cacheloadsched.addNotifier(EpgCacheLoadSchedChanged, immediate_feedback = False)
+	config.epg.cachesavesched.addNotifier(EpgCacheSaveSchedChanged, immediate_feedback = False)
 	config.epg.cacheloadtimer = ConfigSelectionNumber(default = 24, stepwidth = 1, min = 1, max = 24, wraparound = True)
 	config.epg.cachesavetimer = ConfigSelectionNumber(default = 24, stepwidth = 1, min = 1, max = 24, wraparound = True)
 
@@ -326,7 +329,9 @@ def InitUsageConfig():
 	config.osd.threeDmode = ConfigSelection([("off", _("Off")), ("auto", _("Auto")), ("sidebyside", _("Side by Side")),("topandbottom", _("Top and Bottom"))], "auto")
 	config.osd.threeDznorm = ConfigSlider(default = 50, increment = 1, limits = (0, 100))
 	config.osd.show3dextensions = ConfigYesNo(default = False)
-
+	choiceoptions = [("mode1", _("Mode 1")), ("mode2", _("Mode 2"))]
+	config.osd.threeDsetmode = ConfigSelection(default = 'mode1' , choices = choiceoptions )
+	
 	hddchoises = [('/etc/enigma2/', 'Internal Flash')]
 	for p in harddiskmanager.getMountedPartitions():
 		d = os.path.normpath(p.mountpoint)
@@ -473,11 +478,17 @@ def InitUsageConfig():
 
 	SystemInfo["ZapMode"] = os.path.exists("/proc/stb/video/zapmode") or os.path.exists("/proc/stb/video/zapping_mode")
 	if SystemInfo["ZapMode"]:
-		if os.path.exists("/proc/stb/video/zapping_mode"):
-			zapfile = "/proc/stb/video/zapping_mode"
-		else:
+		try:
+			if os.path.exists("/proc/stb/video/zapping_mode"):
+				zapoptions = [("mute", _("Black screen")), ("hold", _("Hold screen"))]
+				zapfile = "/proc/stb/video/zapping_mode"
+			else:
+				zapoptions = [("mute", _("Black screen")), ("hold", _("Hold screen")), ("mutetilllock", _("Black screen till locked")), ("holdtilllock", _("Hold till locked"))]
+				zapfile = "/proc/stb/video/zapmode"
+		except:
+			zapoptions = [("mute", _("Black screen")), ("hold", _("Hold screen")), ("mutetilllock", _("Black screen till locked")), ("holdtilllock", _("Hold till locked"))]
 			zapfile = "/proc/stb/video/zapmode"
-		zapoptions = [("mute", _("Black screen")), ("hold", _("Hold screen")), ("mutetilllock", _("Black screen till locked")), ("holdtilllock", _("Hold till locked"))]
+
 		def setZapmode(el):
 			try:
 				file = open(zapfile, "w")
@@ -550,7 +561,7 @@ def InitUsageConfig():
 		("hrv", _("Croatian")),
 		("ces cze", _("Czech")),
 		("dan", _("Danish")),
-		("dut ndl Deutsch", _("Dutch")),
+		("dut ndl Dutch", _("Dutch")),
 		("eng qaa Englisch", _("English")),
 		("est", _("Estonian")),
 		("fin", _("Finnish")),
@@ -632,7 +643,7 @@ def InitUsageConfig():
 	config.epgselection.overjump = ConfigYesNo(default = False)
 	config.epgselection.infobar_type_mode = ConfigSelection(choices = [("graphics",_("Multi EPG")), ("single", _("Single EPG"))], default = "graphics")
 	if SystemInfo.get("NumVideoDecoders", 1) > 1:
-		config.epgselection.infobar_preview_mode = ConfigSelection(choices = [("0",_("Disabled")), ("1", _("Fulscreen")), ("2", _("PiP"))], default = "1")
+		config.epgselection.infobar_preview_mode = ConfigSelection(choices = [("0",_("Disabled")), ("1", _("Fullscreen")), ("2", _("PiP"))], default = "1")
 	else:
 		config.epgselection.infobar_preview_mode = ConfigSelection(choices = [("0",_("Disabled")), ("1", _("Fulscreen"))], default = "1")
 	config.epgselection.infobar_ok = ConfigSelection(choices = [("Zap",_("Zap")), ("Zap + Exit", _("Zap + Exit"))], default = "Zap")

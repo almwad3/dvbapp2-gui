@@ -60,7 +60,7 @@ class LocationBox(Screen, NumericalTextInput, HelpableScreen):
 		self.filename = filename
 		self.minFree = minFree
 		self.realBookmarks = bookmarks
-		self.bookmarks = bookmarks and bookmarks.value[:] or []
+		self.bookmarks = bookmarks and bookmarks.getValue()[:] or []
 		self.userMode = userMode
 		self.autoAdd = autoAdd
 		self.editDir = editDir
@@ -153,7 +153,7 @@ class LocationBox(Screen, NumericalTextInput, HelpableScreen):
 
 		# Run some functions when shown
 		self.onShown.extend((
-			boundFunction(self.setTitle, windowTitle),
+			boundFunction(self.setTitle, _("Select Location")),
 			self.updateTarget,
 			self.showHideRename,
 		))
@@ -281,7 +281,7 @@ class LocationBox(Screen, NumericalTextInput, HelpableScreen):
 				val = self.realBookmarks and self.realBookmarks.getValue()
 				if val and name in val:
 					val.remove(name)
-					self.realBookmarks.value = val
+					self.realBookmarks.setValue(val)
 					self.realBookmarks.save()
 
 	def up(self):
@@ -327,7 +327,7 @@ class LocationBox(Screen, NumericalTextInput, HelpableScreen):
 					self.bookmarks.sort()
 
 				if self.bookmarks != self.realBookmarks.getValue():
-					self.realBookmarks.value = self.bookmarks
+					self.realBookmarks.setValue(self.bookmarks)
 					self.realBookmarks.save()
 			self.close(ret)
 
@@ -520,7 +520,7 @@ class TimeshiftLocationBox(LocationBox):
 
 	def selectConfirmed(self, ret):
 		if ret:
-			config.usage.timeshift_path.value = self.getPreferredFolder()
+			config.usage.timeshift_path.setValue(self.getPreferredFolder())
 			config.usage.timeshift_path.save()
 			LocationBox.selectConfirmed(self, ret)
 

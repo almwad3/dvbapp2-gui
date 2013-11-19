@@ -194,16 +194,21 @@ def getIfTransferredData(ifname):
 			f.close()
 			return (rx_bytes, tx_bytes)
 
+def getModelString():	
+	try:
+		file = open("/proc/stb/info/boxtype", "r")
+		model = file.readline().strip()
+		file.close()
+		return model
+	except IOError:
+		return "unknown"		
+
 def getChipSetString():
 	try:
 		f = open('/proc/stb/info/chipset', 'r')
 		chipset = f.read()
-		if chipset == "bcm7358\n":
-			chipset = "7358"
-		elif chipset == "bcm7424\n":
-			chipset = "7424"
 		f.close()
-		return chipset
+		return chipset.replace('\n','')
 	except IOError:
 		return "unavailable"
 
@@ -216,6 +221,8 @@ def getCPUString():
 			if len(splitted) > 1:
 				splitted[1] = splitted[1].replace('\n','')
 				if splitted[0].startswith("system type"):
+					system = splitted[1].split(' ')[0]
+				elif splitted[0].startswith("Processor"):
 					system = splitted[1].split(' ')[0]
 		file.close()
 		return system 

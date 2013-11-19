@@ -151,19 +151,22 @@ class SecConfigure:
 				used_nim_slots.append((slot.slot, slot.description, slot.config.configMode.getValue() != "nothing" and True or False, slot.isCompatible("DVB-S2"), slot.frontend_id is None and -1 or slot.frontend_id))
 		eDVBResourceManager.getInstance().setFrontendSlotInformations(used_nim_slots)
 
-		for slot in nim_slots:
-			if slot.frontend_id is not None:
-				types = [type for type in ["DVB-C", "DVB-T", "DVB-T2", "DVB-S", "DVB-S2", "ATSC"] if eDVBResourceManager.getInstance().frontendIsCompatible(slot.frontend_id, type)]
-				if "DVB-T2" in types:
-					# DVB-T2 implies DVB-T support
-					types.remove("DVB-T")
-				if "DVB-S2" in types:
-					# DVB-S2 implies DVB-S support
-					types.remove("DVB-S")
-				if len(types) > 1:
-					slot.multi_type = {}
-					for type in types:
-						slot.multi_type[str(types.index(type))] = type
+		try:
+			for slot in nim_slots:
+				if slot.frontend_id is not None:
+					types = [type for type in ["DVB-C", "DVB-T", "DVB-T2", "DVB-S", "DVB-S2", "ATSC"] if eDVBResourceManager.getInstance().frontendIsCompatible(slot.frontend_id, type)]
+					if "DVB-T2" in types:
+						# DVB-T2 implies DVB-T support
+						types.remove("DVB-T")
+					if "DVB-S2" in types:
+						# DVB-S2 implies DVB-S support
+						types.remove("DVB-S")
+					if len(types) > 1:
+						slot.multi_type = {}
+						for type in types:
+							slot.multi_type[str(types.index(type))] = type
+		except:
+			pass
 
 		for slot in nim_slots:
 			x = slot.slot
