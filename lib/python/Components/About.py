@@ -200,8 +200,10 @@ def getChipSetString():
 		chipset = f.read()
 		if chipset == "bcm7358\n":
 			chipset = "7358"
+		elif chipset == "bcm7424\n":
+			chipset = "7424"
 		f.close()
-		return chipset.replace('\n','')
+		return chipset
 	except IOError:
 		return "unavailable"
 
