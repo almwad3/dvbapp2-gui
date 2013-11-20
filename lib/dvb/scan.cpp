@@ -478,6 +478,7 @@ void eDVBScan::addLcnToDB(eDVBNamespace ns, eOriginalNetworkID onid, eTransportS
 {
 	if (m_lcn_file)
 	{
+		SCAN_eDebug("[LCN] File is present, trying to write...");
 		int size = 0;
 		char row[40];
 		bool added = false;
@@ -747,18 +748,24 @@ void eDVBScan::channelDone()
 					}
 				}
 				// we do this after the main loop because we absolutely need the namespace
-				for (DescriptorConstIterator desc = (*tsinfo)->getDescriptors()->begin();
-					desc != (*tsinfo)->getDescriptors()->end(); ++desc)
+				for (DescriptorConstIterator desc = (*tsinfo)->getDescriptors()->begin();desc != (*tsinfo)->getDescriptors()->end(); ++desc)
 				{
+					SCAN_eDebug("[LCN] Test 1");
 					switch ((*desc)->getTag())
 					{
 						case LOGICAL_CHANNEL_DESCRIPTOR:
 						{
+							SCAN_eDebug("[LCN] Test 2");
 							if (system != iDVBFrontend::feTerrestrial)
+							{
+								SCAN_eDebug("[LCN] when current locked transponder is no terrestrial transponder ignore this descriptor");
 								break; // when current locked transponder is no terrestrial transponder ignore this descriptor
-								
+							}	
 							if (ns.get() == 0)
+							{
+								SCAN_eDebug("[LCN] invalid namespace");
 								break; // invalid namespace
+							}
 								
 							int signal = 0;
 							ePtr<iDVBFrontend> fe;
@@ -769,11 +776,12 @@ void eDVBScan::channelDone()
 							LogicalChannelDescriptor &d = (LogicalChannelDescriptor&)**desc;
 							for (LogicalChannelListConstIterator it = d.getChannelList()->begin(); it != d.getChannelList()->end(); it++)
 							{
+								SCAN_eDebug("[LCN] Test 3");
 								LogicalChannel *ch = *it;
 								if (ch->getVisibleServiceFlag())
 								{
 									addLcnToDB(ns, onid, tsid, eServiceID(ch->getServiceId()), ch->getLogicalChannelNumber(), signal);
-									SCAN_eDebug("NAMESPACE: %08x TSID: %04x ONID: %04x SID: %04x LCN: %05d SIGNAL: %08d", ns.get(), onid.get(), tsid.get(), ch->getServiceId(), ch->getLogicalChannelNumber(), signal);
+									SCAN_eDebug("[LCN] NAMESPACE: %08x TSID: %04x ONID: %04x SID: %04x LCN: %05d SIGNAL: %08d", ns.get(), onid.get(), tsid.get(), ch->getServiceId(), ch->getLogicalChannelNumber(), signal);
 								}
 							}
 							break;
