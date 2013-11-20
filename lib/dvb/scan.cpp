@@ -476,35 +476,35 @@ void eDVBScan::addKnownGoodChannel(const eDVBChannelID &chid, iDVBFrontendParame
 
 void eDVBScan::addLcnToDB(eDVBNamespace ns, eOriginalNetworkID onid, eTransportStreamID tsid, eServiceID sid, uint16_t lcn, uint32_t signal)
 {
-        if (m_lcn_file)
-        {
-                int size = 0;
-                char row[40];
-                bool added = false;
-                sprintf(row, "%08x:%04x:%04x:%04x:%05d:%08d\n", ns.get(), onid.get(), tsid.get(), sid.get(), lcn, signal);
-                fseek(m_lcn_file, 0, SEEK_END);
-                size = ftell(m_lcn_file);
-                
-                for (int i = 0; i < size / 39; i++)
-                {
-                        char tmp[40];
-                        fseek(m_lcn_file, i*39, SEEK_SET);
-                        fread (tmp, 1, 39, m_lcn_file);
-                        if (memcmp(tmp, row, 23) == 0)
-                        {
-                                fseek(m_lcn_file, i*39, SEEK_SET);
-                                fwrite(row, 1, 39, m_lcn_file);
-                                added = true;
-                                break;
-                        }
-                }
-                        
-                if (!added)
-                {
-                        fseek(m_lcn_file, 0, SEEK_END);
-                        fwrite(row, 1, 39, m_lcn_file);
-                }
-        }
+	if (m_lcn_file)
+	{
+		int size = 0;
+		char row[40];
+		bool added = false;
+		sprintf(row, "%08x:%04x:%04x:%04x:%05d:%08d\n", ns.get(), onid.get(), tsid.get(), sid.get(), lcn, signal);
+		fseek(m_lcn_file, 0, SEEK_END);
+		size = ftell(m_lcn_file);
+		
+		for (int i = 0; i < size / 39; i++)
+		{
+			char tmp[40];
+			fseek(m_lcn_file, i*39, SEEK_SET);
+			fread (tmp, 1, 39, m_lcn_file);
+			if (memcmp(tmp, row, 23) == 0)
+			{
+				fseek(m_lcn_file, i*39, SEEK_SET);
+				fwrite(row, 1, 39, m_lcn_file);
+				added = true;
+				break;
+			}
+		}
+			
+		if (!added)
+		{
+			fseek(m_lcn_file, 0, SEEK_END);
+			fwrite(row, 1, 39, m_lcn_file);
+		}
+	}
 }
 
 void eDVBScan::addChannelToScan(const eDVBChannelID &chid, iDVBFrontendParameters *feparm)
@@ -747,41 +747,42 @@ void eDVBScan::channelDone()
 						break;
 					}
 				}
+				// we do this after the main loop because we absolutely need the namespace
 				for (DescriptorConstIterator desc = (*tsinfo)->getDescriptors()->begin();
-                                        desc != (*tsinfo)->getDescriptors()->end(); ++desc)
-                                {
-                                        switch ((*desc)->getTag())
-                                        {
-                                                case LOGICAL_CHANNEL_DESCRIPTOR:
-                                                {
-                                                        if (system != iDVBFrontend::feTerrestrial)
-                                                                break; // when current locked transponder is no terrestrial transponder ignore this descriptor
-                                                                
-                                                        if (ns.get() == 0)
-                                                                break; // invalid namespace
-                                                                
-                                                        int signal = 0;
-                                                        ePtr<iDVBFrontend> fe;
-                                                        
-                                                        if (!m_channel->getFrontend(fe))
-                                                                signal = fe->readFrontendData(iDVBFrontend_ENUMS::signalQuality);
-                                                        
-                                                        LogicalChannelDescriptor &d = (LogicalChannelDescriptor&)**desc;
-                                                        for (LogicalChannelListConstIterator it = d.getChannelList()->begin(); it != d.getChannelList()->end(); it++)
-                                                        {
-                                                                LogicalChannel *ch = *it;
-                                                                if (ch->getVisibleServiceFlag())
-                                                                {
-                                                                        addLcnToDB(ns, onid, tsid, eServiceID(ch->getServiceId()), ch->getLogicalChannelNumber(), signal);
-                                                                        SCAN_eDebug("NAMESPACE: %08x TSID: %04x ONID: %04x SID: %04x LCN: %05d SIGNAL: %08d", ns.get(), onid.get(), tsid.get(), ch->getServiceId(), ch->getLogicalChannelNumber(), signal);
-                                                                }
-                                                        }
-                                                        break;
-                                                }
-                                                default:
-                                                        break;
-                                        }
-                                }				
+					desc != (*tsinfo)->getDescriptors()->end(); ++desc)
+				{
+					switch ((*desc)->getTag())
+					{
+						case LOGICAL_CHANNEL_DESCRIPTOR:
+						{
+							if (system != iDVBFrontend::feTerrestrial)
+								break; // when current locked transponder is no terrestrial transponder ignore this descriptor
+								
+							if (ns.get() == 0)
+								break; // invalid namespace
+								
+							int signal = 0;
+							ePtr<iDVBFrontend> fe;
+							
+							if (!m_channel->getFrontend(fe))
+								signal = fe->readFrontendData(iFrontendInformation_ENUMS::signalQuality);
+							
+							LogicalChannelDescriptor &d = (LogicalChannelDescriptor&)**desc;
+							for (LogicalChannelListConstIterator it = d.getChannelList()->begin(); it != d.getChannelList()->end(); it++)
+							{
+								LogicalChannel *ch = *it;
+								if (ch->getVisibleServiceFlag())
+								{
+									addLcnToDB(ns, onid, tsid, eServiceID(ch->getServiceId()), ch->getLogicalChannelNumber(), signal);
+									SCAN_eDebug("NAMESPACE: %08x TSID: %04x ONID: %04x SID: %04x LCN: %05d SIGNAL: %08d", ns.get(), onid.get(), tsid.get(), ch->getServiceId(), ch->getLogicalChannelNumber(), signal);
+								}
+							}
+							break;
+						}
+						default:
+							break;
+					}
+				}
 			}
 			
 		}
@@ -990,28 +991,27 @@ void eDVBScan::start(const eSmartPtrList<iDVBFrontendParameters> &known_transpon
 	m_tuner_data.clear();
 	m_new_services.clear();
 	m_last_service = m_new_services.end();
-
-
-        if (m_lcn_file)
-                fclose(m_lcn_file);
-                
-        if (m_flags & scanRemoveServices)
-        {
-                m_lcn_file = fopen(eEnv::resolve("${sysconfdir}/enigma2/lcndb").c_str(), "w");
-                if (!m_lcn_file)
-                        eDebug("couldn't open file lcndb");
-        }
-        else
-        {
-                m_lcn_file = fopen(eEnv::resolve("${sysconfdir}/enigma2/lcndb").c_str(), "r+");
-                if (!m_lcn_file)
-                {
-                        m_lcn_file = fopen(eEnv::resolve("${sysconfdir}/enigma2/lcndb").c_str(), "w");
-                        if (!m_lcn_file)
-                                eDebug("couldn't open file lcndb");
-                }
-        }
-        
+	
+	if (m_lcn_file)
+		fclose(m_lcn_file);
+		
+	if (m_flags & scanRemoveServices)
+	{
+		m_lcn_file = fopen(eEnv::resolve("${sysconfdir}/enigma2/lcndb").c_str(), "w");
+		if (!m_lcn_file)
+			eDebug("couldn't open file lcndb");
+	}
+	else
+	{
+		m_lcn_file = fopen(eEnv::resolve("${sysconfdir}/enigma2/lcndb").c_str(), "r+");
+		if (!m_lcn_file)
+		{
+			m_lcn_file = fopen(eEnv::resolve("${sysconfdir}/enigma2/lcndb").c_str(), "w");
+			if (!m_lcn_file)
+				eDebug("couldn't open file lcndb");
+		}
+	}
+	
 	for (eSmartPtrList<iDVBFrontendParameters>::const_iterator i(known_transponders.begin()); i != known_transponders.end(); ++i)
 	{
 		bool exist=false;
