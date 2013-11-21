@@ -41,7 +41,6 @@ class About(Screen):
 		AboutText = _("Hardware: ") + about.getHardwareTypeString() + "\n"
 		if path.exists('/proc/stb/info/chipset'):
 			AboutText += _("Chipset: BCM%s") % about.getChipSetString().lower().replace('\n','').replace('bcm','') + "\n"
-
 		AboutText += _("CPU: %s") % about.getCPUString() + "\n"
 		AboutText += _("Cores: %s") % about.getCpuCoresString() + "\n"
 		AboutText += _("Drivers: ") + about.getDriversVersionString() + "\n"
