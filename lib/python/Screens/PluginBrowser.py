@@ -325,7 +325,6 @@ class PluginDownloadBrowser(Screen):
 		self.listWidth = listsize.width()
 		self.listHeight = listsize.height()
 		if self.type == self.DOWNLOAD:
-			self.type = self.UPDATE
 			self.container.execute(self.ipkg + " update")
 		elif self.type == self.REMOVE:
 			self.run = 1
