@@ -750,12 +750,12 @@ void eDVBScan::channelDone()
 				// we do this after the main loop because we absolutely need the namespace
 				for (DescriptorConstIterator desc = (*tsinfo)->getDescriptors()->begin();desc != (*tsinfo)->getDescriptors()->end(); ++desc)
 				{
-					SCAN_eDebug("[LCN] Test 1");
+					//SCAN_eDebug("[LCN] Test 1");
 					switch ((*desc)->getTag())
 					{
 						case LOGICAL_CHANNEL_DESCRIPTOR:
 						{
-							SCAN_eDebug("[LCN] Test 2");
+							//SCAN_eDebug("[LCN] Test 2");
 							if (system != iDVBFrontend::feTerrestrial)
 							{
 								SCAN_eDebug("[LCN] when current locked transponder is no terrestrial transponder ignore this descriptor");
@@ -776,7 +776,7 @@ void eDVBScan::channelDone()
 							LogicalChannelDescriptor &d = (LogicalChannelDescriptor&)**desc;
 							for (LogicalChannelListConstIterator it = d.getChannelList()->begin(); it != d.getChannelList()->end(); it++)
 							{
-								SCAN_eDebug("[LCN] Test 3");
+								//SCAN_eDebug("[LCN] Test 3");
 								LogicalChannel *ch = *it;
 								if (ch->getVisibleServiceFlag())
 								{
