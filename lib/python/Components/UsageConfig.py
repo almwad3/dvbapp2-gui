@@ -200,10 +200,9 @@ def InitUsageConfig():
 					("1", _("Channel List")),
 					("2", _("Bouquet List"))])
 	config.usage.show_bouquetalways = ConfigYesNo(default = False)
-	config.usage.show_event_progress_in_servicelist = ConfigSelection(default = 'barcenter', choices = [
+	config.usage.show_event_progress_in_servicelist = ConfigSelection(default = 'barright', choices = [
 		('barleft', _("Progress bar left")),
 		('barright', _("Progress bar right")),
-		('barcenter', _("Progress bar center")),
 		('percleft', _("Percentage left")),
 		('percright', _("Percentage right")),
 		('no', _("No")) ])

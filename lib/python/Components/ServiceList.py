@@ -338,20 +338,11 @@ class ServiceList(HTMLComponent, GUIComponent):
 		self.l.setElementPosition(self.l.celServiceNumber, eRect(0, 0, channelNumberWidth, self.ItemHeight))
 
 		if "left" in config.usage.show_event_progress_in_servicelist.getValue():
-			self.l.setElementPosition(self.l.celServiceEventProgressbar, eRect(channelNumberWidth+channelNumberSpace, 0, progressBarWidth , self.ItemHeight / 4 ))
+			self.l.setElementPosition(self.l.celServiceEventProgressbar, eRect(channelNumberWidth+channelNumberSpace, 0, progressBarWidth , self.ItemHeight))
 			self.l.setElementPosition(self.l.celServiceName, eRect(channelNumberWidth+channelNumberSpace+progressBarWidth+10, 0, rowWidth - (channelNumberWidth+channelNumberSpace+progressBarWidth+10), self.ItemHeight))
-			self.l.setElementPosition(self.l.celServiceInfo, eRect(channelNumberWidth+channelNumberSpace+progressBarWidth+170, 0, rowWidth - (channelNumberWidth+channelNumberSpace+progressBarWidth+10), self.ItemHeight))
 		elif "right" in config.usage.show_event_progress_in_servicelist.getValue():
-			self.l.setElementPosition(self.l.celServiceEventProgressbar, eRect(rowWidth-progressBarWidth, 0, progressBarWidth, self.ItemHeight / 4))
+			self.l.setElementPosition(self.l.celServiceEventProgressbar, eRect(rowWidth-progressBarWidth, 0, progressBarWidth, self.ItemHeight))
 			self.l.setElementPosition(self.l.celServiceName, eRect(channelNumberWidth+channelNumberSpace, 0, rowWidth - (channelNumberWidth+channelNumberSpace+progressBarWidth+10), self.ItemHeight))
-			self.l.setElementPosition(self.l.celServiceInfo, eRect(channelNumberWidth+channelNumberSpace+progressBarWidth+170, 0, rowWidth - (channelNumberWidth+channelNumberSpace+progressBarWidth+10), self.ItemHeight))
-		elif "center" in config.usage.show_event_progress_in_servicelist.getValue():
-			self.l.setElementPosition(self.l.celServiceEventProgressbar, eRect(channelNumberWidth+channelNumberSpace, 0, rowWidth - (channelNumberWidth+channelNumberSpace), self.ItemHeight)) # w teori *2 powinno dzialac
-			self.l.setElementPosition(self.l.celServiceName, eRect(channelNumberWidth+channelNumberSpace, 0, rowWidth - (channelNumberWidth+channelNumberSpace), self.ItemHeight / 2))
-			if config.usage.service_icon_enable.getValue():
-				self.l.setElementPosition(self.l.celServiceInfo, eRect(self.ItemHeight+8 + channelNumberWidth+channelNumberSpace, 0, rowWidth - (channelNumberWidth+channelNumberSpace), self.ItemHeight*2-40))
-			else:
-				self.l.setElementPosition(self.l.celServiceInfo, eRect(channelNumberWidth+channelNumberSpace, 0, rowWidth - (channelNumberWidth+channelNumberSpace), self.ItemHeight*2-40))
 		else:
 			self.l.setElementPosition(self.l.celServiceEventProgressbar, eRect(0, 0, 0, 0))
 			self.l.setElementPosition(self.l.celServiceName, eRect(channelNumberWidth+channelNumberSpace, 0, rowWidth - (channelNumberWidth+channelNumberSpace), self.ItemHeight))
