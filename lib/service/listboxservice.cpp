@@ -691,7 +691,6 @@ void eListboxServiceContent::paint(gPainter &painter, eWindowStyle &style, const
 
 				eRect tmp = area;
 				int xoffs = 0;
-				int piconOffs = 0;
 				if (e == celServiceName)
 				{
 					xoffs = xoffset;
@@ -704,34 +703,25 @@ void eListboxServiceContent::paint(gPainter &painter, eWindowStyle &style, const
 
 				if (e == celServiceName)
 				{
-					/* ORG 
 					eRect bbox = para->getBoundBox();
 					m_element_position[celServiceInfo].setLeft(area.left() + bbox.width() + 8 + xoffs);
 					m_element_position[celServiceInfo].setTop(area.top());
 					m_element_position[celServiceInfo].setWidth(area.width() - (bbox.width() + 8 + xoffs));
 					m_element_position[celServiceInfo].setHeight(area.height());
-					ORG */
 
 					if (isPlayable)
 					{
 						//picon stuff
 						if (PyCallable_Check(m_GetPiconNameFunc))
 						{
-							eRect area = m_element_position[celServiceName];
-							/* ORG 
 							eRect area = m_element_position[celServiceInfo];
-							ORG */
-							
 							/* PIcons are usually about 100:60. Make it a
 							 * bit wider in case the icons are diffently
 							 * shaped, and to add a bit of margin between
 							 * icon and text. */
 							const int iconWidth = area.height() * 9 / 5;
-							/* ORG 
 							m_element_position[celServiceInfo].setLeft(area.left() + iconWidth);
 							m_element_position[celServiceInfo].setWidth(area.width() - iconWidth);
-							ORG */
-
 							area = m_element_position[celServiceName];
 							xoffs += iconWidth;
 							ePyObject pArgs = PyTuple_New(1);
@@ -740,12 +730,11 @@ void eListboxServiceContent::paint(gPainter &painter, eWindowStyle &style, const
 							Py_DECREF(pArgs);
 							if (pRet)
 							{
-								piconOffs = area.height()*2 + 8;
 								if (PyString_Check(pRet))
 								{
 									std::string piconFilename = PyString_AS_STRING(pRet);
 									if (!piconFilename.empty())
-									{ 
+									{
 										ePtr<gPixmap> piconPixmap;
 										loadPNG(piconPixmap, piconFilename.c_str());
 										if (piconPixmap)
@@ -774,7 +763,6 @@ void eListboxServiceContent::paint(gPainter &painter, eWindowStyle &style, const
 								(strstr(filename, "://")) ? m_pixmaps[picStream] :
 								(orbpos == 0xFFFF) ? m_pixmaps[picDVB_C] :
 								(orbpos == 0xEEEE) ? m_pixmaps[picDVB_T] : m_pixmaps[picDVB_S];
-							/* ORG
 							if (pixmap)
 							{
 								eSize pixmap_size = pixmap->size();
@@ -793,39 +781,6 @@ void eListboxServiceContent::paint(gPainter &painter, eWindowStyle &style, const
 								painter.clip(area);
 								painter.blit(pixmap, offset+ePoint(area.left() + offs, correction), area, gPainter::BT_ALPHATEST);
 								painter.clippop();
-							} ORG */
-							if (pixmap)
-							{
-								
-								eSize pixmap_size = pixmap->size();
-								eRect area = m_element_position[celServiceName];
-								int correction = (area.height() - pixmap_size.height()); 
-								if (m_servicetype_icon_mode == 1)
-								{
-									area = m_element_position[celServiceName];
-									xoffs += pixmap_size.width() + 8;
-									
-									area.moveBy(offset);
-									painter.clip(area);
-									painter.blit(pixmap, offset+ePoint(area.left()+piconOffs , correction), area, gPainter::BT_ALPHATEST);
-									painter.clippop();
-								}
-								else if (m_servicetype_icon_mode == 2)
-								{
-									area = m_element_position[celServiceName];
-									area.moveBy(offset);
-									painter.clip(area); 
-									painter.blit(pixmap, offset+ePoint(area.width(), correction), area, gPainter::BT_ALPHATEST);
-									painter.clippop();
-								}
-								else
-								{
-								      area = m_element_position[celServiceName];
-								      area.moveBy(offset);
-								      painter.clip(area);
-								      painter.blit(pixmap, offset+ePoint(area.left(), correction), area, gPainter::BT_ALPHATEST);
-								      painter.clippop();
-								}
 							}
 						}
 					}
@@ -872,10 +827,10 @@ void eListboxServiceContent::paint(gPainter &painter, eWindowStyle &style, const
 		eRect area = m_element_position[celServiceEventProgressbar];
 		if (area.width() > 0 && evt && !m_element_font[celServiceEventProgressbar])
 		{
-#define PB_BorderWidth 1
-#define PB_Height 3
+#define PB_BorderWidth 2
+#define PB_Height 6
 			int pb_xpos = area.left();
-			int pb_ypos = offset.y() + (m_itemsize.height() - PB_Height - 2*PB_BorderWidth) ;//        / 2;
+			int pb_ypos = offset.y() + (m_itemsize.height() - PB_Height - 2*PB_BorderWidth) / 2;
 			int pb_width = area.width()- 2*PB_BorderWidth;
 			gRGB ProgressbarBorderColor = 0xdfdfdf;
 			int evt_done = pb_width * (now - evt->getBeginTime()) / evt->getDuration();
