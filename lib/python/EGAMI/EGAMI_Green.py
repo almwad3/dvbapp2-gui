@@ -267,11 +267,15 @@ class EGGreenPanel(Screen):
 		
 		self["list"].list = self.list
 
+	def reloadPluginList(self):
+		plugins.readPluginList(resolveFilename(SCOPE_PLUGINS))
+		self.updateList()
+		
 	def Addons(self):
 		m = checkkernel()
 		if m == 1:
 			from EGAMI.EGAMI_addon_manager import EGAddonMenu
-			self.session.open(EGAddonMenu)
+			self.session.openWithCallback(self.reloadPluginList, EGAddonMenu)
 		else:
 			self.session.open(MessageBox, _('Sorry: Wrong image in flash found. You have to install in flash EGAMI Image'), MessageBox.TYPE_INFO, 3)
 			

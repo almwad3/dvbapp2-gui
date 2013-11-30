@@ -2,6 +2,7 @@ from Screens.MessageBox import MessageBox
 from Screens.PluginBrowser import *
 from enigma import loadPNG, eSize, ePoint, eSlider, eTimer, RT_HALIGN_RIGHT, fontRenderClass, eConsoleAppContainer
 from Screens.Screen import Screen
+from Screens.PluginBrowser import PluginDownloadBrowser
 from Components.GUIComponent import *
 from Components.HTMLComponent import *
 from Components.ActionMap import ActionMap
@@ -597,26 +598,15 @@ class EGAddonMenu(Screen):
 	    self["list"] = List(self.list)
 	    self.updateList()
 	    self["actions"] = ActionMap(["WizardActions", "ColorActions"], {"ok": self.KeyOk, "back": self.close})
-
-
+	    
 	def KeyOk(self):
 		self.sel = self["list"].getCurrent()
 		self.sel = self.sel[2]
 		if (self.sel == 0):
 			self.session.open(EG_PrzegladaczAddonow, "http://egami-image.com/image-feed/enigma2/catalog_enigma2.xml")
 		elif (self.sel == 1):
-			self.session.open(EG_Manual_installation)
+			self.session.open(PluginDownloadBrowser, 0)
 		elif (self.sel == 2):
-			self.session.open(EGAddonRemove)
-		elif (self.sel == 3):
-			from Plugins.SystemPlugins.SoftwareManager.plugin import PluginManager
-			self.session.open(PluginManager, "/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager")
-		elif (self.sel == 4):
-			from Plugins.SystemPlugins.SoftwareManager.plugin import PacketManager
-			self.session.open(PacketManager, "/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager")
-		elif (self.sel == 6):
-			self.session.openWithCallback(self.runUpgrade, MessageBox, _("Do you want to update your EGAMI image?")+"\n"+_("\nAfter pressing OK, please wait!"))
-		elif (self.sel == 5):
 			if fileExists('/etc/user_addon.txt'):
 				urlfile = file('/etc/user_addon.txt', 'r')
 				linieurl = urlfile.read()
@@ -624,9 +614,18 @@ class EGAddonMenu(Screen):
 				self.session.open(EG_PrzegladaczAddonow, linieurl)
 			else:
 				plik = "There is no user_addon.txt file in /etc with server url!"
-				self.session.open(MessageBox, _(plik), MessageBox.TYPE_INFO, timeout=5)
+				self.session.open(MessageBox, _(plik), MessageBox.TYPE_INFO, timeout=5)			
+		elif (self.sel == 3):
+			self.session.open(EG_Manual_installation)
+		elif (self.sel == 4):
+			self.session.open(PluginDownloadBrowser, 1)
+		elif (self.sel == 5):
+			self.session.open(EGAddonRemove)
+		elif (self.sel == 6):
+			self.session.openWithCallback(self.runUpgrade, MessageBox, _("Do you want to update your EGAMI image?")+"\n"+_("\nAfter pressing OK, please wait!"))
+
 		else:
-			self.noYet()
+			pass
 
 	def noYet(self):
 		nobox = self.session.open(MessageBox, "Function Not Yet Available", MessageBox.TYPE_INFO)
@@ -647,49 +646,84 @@ class EGAddonMenu(Screen):
 		mypixmap = (mypath + "egami_icons/addon_download.png")
 		png = LoadPixmap(mypixmap)
 		name = (_("Download EGAMI Addons"))
-		desc = (_("Download extensions from EGAMI server..."))
+		desc = (_("Download iptv, softcams..."))
 		idx = 0
 		res = (name,png,idx,desc)
 		self.list.append(res)
 
-		mypixmap = (mypath + "egami_icons/addon_cvs.png")
+		mypixmap = (mypath + "egami_icons/addon_download.png")
 		png = LoadPixmap(mypixmap)
-		name = (_("Download Online Feeds Extensions"))
-		desc = (_("Download CVS extensions..."))
-		idx = 3
+		name = (_("Download Plugins"))
+		desc = (_("Download plugins, skins, drivers, picons..."))
+		idx = 1
 		res = (name,png,idx, desc)
 		self.list.append(res)
-		
-		mypixmap = (mypath + "egami_icons/addon_cvs.png")
+
+		mypixmap = (mypath + "egami_icons/addon_remove2.png")
 		png = LoadPixmap(mypixmap)
-		name = (_("Download Online Feeds all Packages"))
-		desc = (_("Download CVS extensions..."))
-		idx = 4
+		name = (_("----------------------------------------"))
+		desc = (_("  "))
+		idx = 66
 		res = (name,png,idx, desc)
 		self.list.append(res)
 		
 		self["list"].list = self.list
-		mypixmap = (mypath + "egami_icons/addon_manual.png")
+		mypixmap = (mypath + "egami_icons/addon_cvs.png")
 		png = LoadPixmap(mypixmap)
-		name = (_("User Addons"))
+		name = (_("User Server Addons"))
 		desc = (_("Download User addons from url..."))
-		idx = 5
+		idx = 2
 		res = (name,png,idx, desc)
 		self.list.append(res)
 	  
-		mypixmap = (mypath + "egami_icons/addon_manual.png")
+		mypixmap = (mypath + "egami_icons/addon_cvs.png")
 		png = LoadPixmap(mypixmap)
 		name = (_("Manual Install EGAMI and IPK packages"))
 		desc = (_("Install packages from /tmp ..."))
-		idx = 1
+		idx = 3
 		res = (name,png,idx, desc)
 		self.list.append(res)
-			
+
+
+		mypixmap = (mypath + "egami_icons/addon_remove2.png")
+		png = LoadPixmap(mypixmap)
+		name = (_("----------------------------------------"))
+		desc = (_("  "))
+		idx = 66
+		res = (name,png,idx, desc)
+		self.list.append(res)
+		
+		
 		mypixmap = (mypath + "egami_icons/addon_remove.png")
 		png = LoadPixmap(mypixmap)
-		name = (_("Remove EGAMI Packages"))
+		name = (_("Remove Plugins"))
+		desc = (_("Remove plugins, skins, drivers, picons..."))
+		idx = 4
+		res = (name,png,idx, desc)
+		self.list.append(res)
+		
+		mypixmap = (mypath + "egami_icons/addon_remove.png")
+		png = LoadPixmap(mypixmap)
+		name = (_("Remove EGAMI addons"))
 		desc = (_("Remove installed egami packages..."))
-		idx = 2
+		idx = 5
+		res = (name,png,idx, desc)
+		self.list.append(res)
+		
+
+		mypixmap = (mypath + "egami_icons/addon_remove2.png")
+		png = LoadPixmap(mypixmap)
+		name = (_("----------------------------------------"))
+		desc = (_("  "))
+		idx = 66
+		res = (name,png,idx, desc)
+		self.list.append(res)
+				
+		mypixmap = (mypath + "egami_icons/addon_remove.png")
+		png = LoadPixmap(mypixmap)
+		name = (_("Update Your EGAMI now !"))
+		desc = (_("Software update..."))
+		idx = 6
 		res = (name,png,idx, desc)
 		self.list.append(res)
 		
