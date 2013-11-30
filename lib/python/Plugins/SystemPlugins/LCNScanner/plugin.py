@@ -155,9 +155,22 @@ class LCN():
 		except Exception, e:
 			print e
 			return
-			
-		f.write("#NAME Terrestrial LCN\n")
+
+		self.newlist = []
+		count = 0
+
 		for x in self.lcnlist:
+			count += 1
+			while x[0] != count:
+				self.newlist.append([count, 11111111, 11111, 111, 111, 111111])
+				count += 1
+			if x[0] == count:
+				self.newlist.append(x)
+		
+		f.write("#NAME Terrestrial LCN\n")
+		for x in self.newlist:
+			if int(x[1]) == 11111111:
+				f.write("#SERVICE 1:0:1:1111:1111:13E:820000:0:0:0:\n")  
 			if len(self.markers) > 0:
 				if x[0] > self.markers[0][0]:
 					f.write("#SERVICE 1:64:0:0:0:0:0:0:0:0:\n")
