@@ -170,7 +170,7 @@ class LCN():
 		f.write("#NAME Terrestrial LCN\n")
 		for x in self.newlist:
 			if int(x[1]) == 11111111:
-				f.write("#SERVICE 1:0:1:1111:1111:13E:820000:0:0:0:\n")  
+				f.write("#SERVICE 1:832:d:0:0:0:0:0:0:0:\n")  
 			if len(self.markers) > 0:
 				if x[0] > self.markers[0][0]:
 					f.write("#SERVICE 1:64:0:0:0:0:0:0:0:0:\n")
