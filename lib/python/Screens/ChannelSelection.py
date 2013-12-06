@@ -18,7 +18,7 @@ from Components.Renderer.Picon import getPiconName
 from Screens.TimerEdit import TimerSanityConflict
 profile("ChannelSelection.py 1")
 from EpgSelection import EPGSelection
-from enigma import eServiceReference, eEPGCache, eServiceCenter, eRCInput, eTimer, ePoint, eDVBDB, iPlayableService, iServiceInformation, getPrevAsciiCode, eEnv, getMachineBrand, getMachineName, loadPNG
+from enigma import eServiceReference, eEPGCache, eServiceCenter, eRCInput, eTimer, ePoint, eDVBDB, iPlayableService, iServiceInformation, getPrevAsciiCode, eEnv, loadPNG, getMachineBrand, getMachineName
 from Components.config import config, configfile, ConfigSubsection, ConfigText
 from Tools.NumericalTextInput import NumericalTextInput
 profile("ChannelSelection.py 2")
@@ -239,6 +239,8 @@ class ChannelContextMenu(Screen):
 					append_when_current_valid(current, menu, (_("end alternatives edit"), self.bouquetMarkEnd), level = 0)
 					append_when_current_valid(current, menu, (_("abort alternatives edit"), self.bouquetMarkAbort), level = 0)
 
+		menu.append(ChoiceEntryComponent(text = (_("Reload Services"), self.reloadServices)))
+
 		self["menu"] = ChoiceList(menu)
 
 	def playMain(self):
@@ -257,6 +259,11 @@ class ChannelContextMenu(Screen):
 
 	def cancelClick(self):
 		self.close(False)
+
+	def reloadServices(self):
+		eDVBDB.getInstance().reloadBouquets()
+		eDVBDB.getInstance().reloadServicelist()
+		self.session.openWithCallback(self.close, MessageBox, _("The servicelist is reloaded."), MessageBox.TYPE_INFO, timeout = 5)
 
 	def showServiceInformations(self):
 		self.session.open( ServiceInfo, self.csel.getCurrentSelection() )
@@ -978,7 +985,7 @@ class ChannelSelectionEdit:
 				self.servicelist.removeCurrent()
 				self.servicelist.resetRoot()
 				if not bouquet and ref == self.session.nav.getCurrentlyPlayingServiceOrGroup():
-					self.channelSelected()
+					self.zap( enable_pipzap=False, preview_zap=False, checkParentalControl=True, ref=None)
 
 	def addServiceToBouquet(self, dest, service=None):
 		mutableList = self.getMutableList(dest)
@@ -1209,6 +1216,7 @@ class ChannelSelectionBase(Screen):
 
 	def buildTitleString(self):
 		titleStr = self.getTitle()
+		nameStr = ''
 		pos = titleStr.find(']')
 		if pos == -1:
 			pos = titleStr.find(')')
@@ -1222,16 +1230,16 @@ class ChannelSelectionBase(Screen):
 			if Len > 0:
 				base_ref = self.servicePath[0]
 				if Len > 1:
-					end_ref = self.servicePath[Len-1]
+					end_ref = self.servicePath[Len - 1]
 				else:
 					end_ref = None
 				nameStr = self.getServiceName(base_ref)
-				#titleStr += ' - ' + nameStr
+# 				titleStr += ' - ' + nameStr
 				if end_ref is not None:
-					#if Len > 2:
-					#	titleStr += '/../'
-					#else:
-					#	titleStr += '/'
+# 					if Len > 2:
+# 						titleStr += '/../'
+# 					else:
+# 						titleStr += '/'
 					nameStr = self.getServiceName(end_ref)
 					titleStr += nameStr
 				self.setTitle(titleStr)
@@ -1609,9 +1617,11 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 			{
 				"cancel": self.cancel,
 				"ok": self.channelSelected,
-				"keyRadio": self.setModeRadio,
-				"keyTV": self.setModeTv,
+				"keyRadio": self.toogleTvRadio,
+				"keyTV": self.toogleTvRadio,
 			})
+			
+		self.radioTV = 0	
 
 		self.__event_tracker = ServiceEventTracker(screen=self, eventmap=
 			{
@@ -1680,6 +1690,14 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 		lastservice = eServiceReference(self.lastservice.getValue())
 		if lastservice.valid():
 			self.setCurrentSelection(lastservice)
+			
+	def toogleTvRadio(self): 
+		if self.radioTV == 1:
+			self.radioTV = 0
+			self.setModeTv() 
+		else: 
+			self.radioTV = 1
+			self.setModeRadio() 
 
 	def setModeTv(self):
 		if self.revertMode is None and config.servicelist.lastmode.getValue() == 'radio':
@@ -1888,6 +1906,7 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 		cur_root = self.getRoot()
 		if cur_root and cur_root != root:
 			self.setRoot(root)
+		self.servicelist.setCurrent(ref)
 		self.session.nav.playService(ref)
 		if self.dopipzap:
 			self.setCurrentSelection(self.session.pip.getCurrentService())
@@ -2247,6 +2266,7 @@ class SimpleChannelSelection(ChannelSelectionBase):
 			})
 		self.bouquet_mark_edit = OFF
 		self.title = title
+		self.bouquet_mark_edit = OFF
 		self.onLayoutFinish.append(self.layoutFinished)
 
 	def layoutFinished(self):

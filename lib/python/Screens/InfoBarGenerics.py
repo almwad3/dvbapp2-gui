@@ -230,7 +230,10 @@ class InfoBarScreenSaver:
 		if self.execing and not Screens.Standby.inStandby and not Screens.Standby.inTryQuitMainloop:
 			self.hide()
 			if hasattr(self, "pvrStateDialog"):
-				self.pvrStateDialog.hide()
+				try:
+					self.pvrStateDialog.hide()
+				except:
+					pass
 			self.screensaver.show()
 			eActionMap.getInstance().bindAction('', -maxint - 1, self.keypressScreenSaver)
 
@@ -917,7 +920,7 @@ class InfoBarEPG:
 
 	def getDefaultEPGtype(self):
 		pluginlist = self.getEPGPluginList()
-		config.usage.defaultEPGType=ConfigSelection(default = _("Multi EPG"), choices = pluginlist)
+		config.usage.defaultEPGType=ConfigSelection(default = "None", choices = pluginlist)
 		for plugin in pluginlist:
 			if plugin[0] == config.usage.defaultEPGType.getValue():
 				return plugin[1]
