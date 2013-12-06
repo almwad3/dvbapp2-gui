@@ -920,7 +920,7 @@ class InfoBarEPG:
 
 	def getDefaultEPGtype(self):
 		pluginlist = self.getEPGPluginList()
-		config.usage.defaultEPGType=ConfigSelection(default = "None", choices = pluginlist)
+		config.usage.defaultEPGType=ConfigSelection(default = _("Multi EPG"), choices = pluginlist)
 		for plugin in pluginlist:
 			if plugin[0] == config.usage.defaultEPGType.getValue():
 				return plugin[1]
