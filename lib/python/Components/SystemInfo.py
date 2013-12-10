@@ -35,6 +35,7 @@ SystemInfo["WOL"] = fileExists("/proc/stb/fp/wol")
 SystemInfo["HDMICEC"] = (path.exists("/dev/hdmi_cec") or path.exists("/dev/misc/hdmi_cec0")) and fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/HdmiCEC/plugin.pyo")
 SystemInfo["SABSetup"] = fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/SABnzbd/plugin.pyo")
 SystemInfo["SeekStatePlay"] = False
-SystemInfo["GraphicLCD"] = getBoxType() == "inihdp"
+SystemInfo["GraphicLCD"] = getBoxType() == "inihdp" or getBoxType() == "vuultimo"
 SystemInfo["Blindscan"] = fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/Blindscan/plugin.pyo")
 SystemInfo["Satfinder"] = fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/Satfinder/plugin.pyo")
+SystemInfo["GBWOL"] = fileExists("/usr/bin/gigablue_wol")
