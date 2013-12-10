@@ -70,7 +70,7 @@ class Setup(ConfigListScreen, Screen):
 	ALLOW_SUSPEND = True
 
 	def removeNotifier(self):
-		config.usage.setup_level.notifiers.remove(self.levelChanged)
+		self.onNotifiers.remove(self.levelChanged)
 
 	def levelChanged(self, configElement):
 		list = []
@@ -95,15 +95,14 @@ class Setup(ConfigListScreen, Screen):
 		self["HelpWindow"] = Pixmap()
 		self["HelpWindow"].hide()
 		self["VKeyIcon"] = Boolean(False)
-
+		self["status"] = StaticText()
 		self.onChangedEntry = [ ]
 		self.item = None
 		self.setup = setup
 		self.plugin = plugin
 		list = []
-
+		self.onNotifiers = [ ]
 		self.refill(list)
-		
 		ConfigListScreen.__init__(self, list, session = session, on_change = self.changedEntry)
 		self.createSetup()
 
@@ -153,6 +152,7 @@ class Setup(ConfigListScreen, Screen):
 		self["config"].setCurrentIndex(newIdx)
 
 	def handleInputHelpers(self):
+		self["status"].setText(self["config"].getCurrent()[2])
 		if self["config"].getCurrent() is not None:
 			try:
 				if isinstance(self["config"].getCurrent()[1], ConfigText) or isinstance(self["config"].getCurrent()[1], ConfigPassword):
@@ -230,11 +230,11 @@ class Setup(ConfigListScreen, Screen):
 			if x.tag == 'item':
 				item_level = int(x.get("level", 0))
 
-				if not self.levelChanged in config.usage.setup_level.notifiers:
-					config.usage.setup_level.notifiers.append(self.levelChanged)
+				if not self.onNotifiers:
+					self.onNotifiers.append(self.levelChanged)
 					self.onClose.append(self.removeNotifier)
 
-				if item_level > config.usage.setup_level.index:
+				if item_level > self.onNotifiers.index:
 					continue
 
 				requires = x.get("requires")
@@ -266,7 +266,7 @@ def getSetupTitle(id):
 	xmldata = setupdom().getroot()
 	for x in xmldata.findall("setup"):
 		if x.get("key") == id:
-			if _(x.get("title", "").encode("UTF-8")) == _("EPG settings") or _(x.get("title", "").encode("UTF-8")) == _("Logs settings") or _(x.get("title", "").encode("UTF-8")) == _("OSD settings") or _(x.get("title", "").encode("UTF-8")) == _("Softcam setings"):
+			if _(x.get("title", "").encode("UTF-8")) == _("OSD Settings") or _(x.get("title", "").encode("UTF-8")) == _("Softcam Setup") or _(x.get("title", "").encode("UTF-8")) == _("EPG settings"):
 				return _("Settings...")
 			return x.get("title", "").encode("UTF-8")
 	raise SetupError("unknown setup id '%s'!" % repr(id))
