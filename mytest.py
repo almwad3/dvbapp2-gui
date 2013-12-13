@@ -30,7 +30,7 @@ profile("SimpleSummary")
 from Screens import InfoBar
 from Screens.SimpleSummary import SimpleSummary
 
-#from sys import stdout, exc_info
+from sys import stdout, exc_info
 
 profile("Bouquets")
 enigma.eDVBDB.getInstance().reloadBouquets()
@@ -458,10 +458,10 @@ class PowerKey:
 	def powerup(self):
 		if self.standbyblocked == 0:
 			self.doAction(action = config.usage.on_short_powerpress.getValue())
-			
+	
 	def gotoStandby(self, ret):
 		self.standby()
-		
+	
 	def standby(self):
 		if not Screens.Standby.inStandby and self.session.current_dialog and self.session.current_dialog.ALLOW_SUSPEND and self.session.in_exec:
 			self.session.open(Screens.Standby.Standby)
@@ -545,7 +545,7 @@ def runScreenTest():
 	except:
 		model = "unknown"
 
-	if enigma.getBoxType() == 'odinm9' or enigma.getBoxType() == 'ventonhdx' or enigma.getBoxType() == 'mbtwin' or enigma.getBoxType() == 'inihdx' or enigma.getBoxType() == 'mbmini' or enigma.getBoxType() == 'ebox5000' or enigma.getBoxType() == 'ixussone' or enigma.getBoxType() == 'ixusszero' or model == 'ini-1000ru' or model == 'ini-1000sv':
+	if enigma.getBoxType() == 'odinm9' or enigma.getBoxType() == 'ventonhdx' or enigma.getBoxType() == 'inihdx' or enigma.getBoxType() == 'mbtwin' or enigma.getBoxType() == 'ebox5000' or enigma.getBoxType() == 'ixussone' or enigma.getBoxType() == 'ixusszero' or model == 'ini-1000ru' or model == 'ini-1000sv':
 		profile("VFDSYMBOLS")
 		import Components.VfdSymbols
 		Components.VfdSymbols.SymbolsCheck(session)
@@ -596,9 +596,9 @@ def runScreenTest():
 				wptime = startTime[0] - 120 # Gigaboxes already starts 2 min. before wakeup time
 			else:
 				wptime = startTime[0] - 240
-#		if not config.misc.SyncTimeUsing.getValue() == "0" or enigma.getBoxType().startswith('gb'):
-#			print "dvb time sync disabled... so set RTC now to current linux time!", strftime("%Y/%m/%d %H:%M", localtime(nowTime))
-#			setRTCtime(nowTime)
+		#if not config.misc.SyncTimeUsing.getValue() == "0" or enigma.getBoxType().startswith('gb'):
+			#print "dvb time sync disabled... so set RTC now to current linux time!", strftime("%Y/%m/%d %H:%M", localtime(nowTime))
+			#setRTCtime(nowTime)
 		print "set wakeup time to", strftime("%Y/%m/%d %H:%M", localtime(wptime))
 		setFPWakeuptime(wptime)
 		recordTimerWakeupAuto = startTime[1] == 0 and startTime[2]
@@ -614,13 +614,13 @@ def runScreenTest():
 		if (startTime[0] - nowTime) < 60: # no time to switch box back on
 			wptime = nowTime + 30  # so switch back on in 30 seconds
 		else:
-			if config.workaround.deeprecord.getValue():
-				wptime = startTime[0] - 240 # Gigaboxes already starts 2 min. before wakeup time
+			if enigma.getBoxType().startswith("gb"):
+				wptime = startTime[0] + 120 # Gigaboxes already starts 2 min. before wakeup time
 			else:
 				wptime = startTime[0]
-#		if not config.misc.SyncTimeUsing.getValue() == "0" or enigma.getBoxType().startswith('gb'):
-#			print "dvb time sync disabled... so set RTC now to current linux time!", strftime("%Y/%m/%d %H:%M", localtime(nowTime))
-#			setRTCtime(nowTime)
+		#if not config.misc.SyncTimeUsing.getValue() == "0" or enigma.getBoxType().startswith('gb'):
+			#print "dvb time sync disabled... so set RTC now to current linux time!", strftime("%Y/%m/%d %H:%M", localtime(nowTime))
+			#setRTCtime(nowTime)
 		print "set wakeup time to", strftime("%Y/%m/%d %H:%M", localtime(wptime+60))
 		setFPWakeuptime(wptime)
 		PowerTimerWakeupAuto = startTime[1] == 3 and startTime[2]
@@ -665,6 +665,10 @@ Components.RecordingConfig.InitRecordingConfig()
 profile("UsageConfig")
 import Components.UsageConfig
 Components.UsageConfig.InitUsageConfig()
+
+profile("Init:DebugLogCheck")
+import Screens.LogManager
+Screens.LogManager.AutoLogManager()
 
 profile("Init:OnlineCheckState")
 import Components.OnlineUpdateCheck
