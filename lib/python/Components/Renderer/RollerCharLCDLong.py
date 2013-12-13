@@ -8,7 +8,7 @@ class RollerCharLCDLong(VariableText, Renderer):
     def __init__(self):
         Renderer.__init__(self)
         VariableText.__init__(self)
-        self.stringlength = 36
+        self.stringlength = 26
 
     GUI_WIDGET = eLabel
 

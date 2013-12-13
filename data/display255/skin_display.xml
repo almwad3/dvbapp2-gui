@@ -110,7 +110,7 @@
 		<widget source="session.CurrentService" render="Label" position="0,0" size="255,25" font="FdLcD;25" halign="center" noWrap="1">
 			<convert type="ServiceName">NameOnly</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="0,26" size="255,22" font="FdLcD;21" halign="center" noWrap="1">
+		<widget source="session.Event_Now" render="RollerCharLCDLong" position="0,26" size="255,22" font="FdLcD;21" halign="center" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Progress" position="0,58" size="255,6" borderWidth="1">
@@ -122,7 +122,7 @@
 	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="255,64">
 		<widget name="statusicon_summary" position="0,0" zPosition="3" size="23,20" pixmaps="play.png,pause.png,stop.png,forward.png,backward.png,slow.png" />
 		<widget source="speed_summary" render="Label" position="30,0" size="160,22" font="FdLcD;18" halign="left" noWrap="1" />
-		<widget source="session.CurrentService" render="Label" position="0,21" size="255,20" font="FdLcD;17" halign="left" noWrap="1">
+		<widget source="session.CurrentService" render="RollerCharLCDLong" position="0,21" size="255,20" font="FdLcD;17" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="0,58" size="255,6" borderWidth="1">
