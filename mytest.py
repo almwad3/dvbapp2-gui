@@ -666,9 +666,9 @@ profile("UsageConfig")
 import Components.UsageConfig
 Components.UsageConfig.InitUsageConfig()
 
-profile("Init:DebugLogCheck")
-import Screens.LogManager
-Screens.LogManager.AutoLogManager()
+#profile("Init:DebugLogCheck")
+#import Screens.LogManager
+#Screens.LogManager.AutoLogManager()
 
 profile("Init:OnlineCheckState")
 import Components.OnlineUpdateCheck
