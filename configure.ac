@@ -99,7 +99,7 @@ AM_CONDITIONAL(XTREND, test `echo "$BOXTYPE" | cut -b 1-2` == "et")
 AM_CONDITIONAL(TECHNOMATE, test `echo "$BOXTYPE" | cut -b 1-2` == "tm")
 AM_CONDITIONAL(INI, test `echo "$BOXTYPE" | cut -b 1-3` == "ini")
 AM_CONDITIONAL(IQON, test `echo "$BOXTYPE" | cut -b 1-4` == "iqon")
-AM_CONDITIONAL(GIGABLUE, test `echo "$BOXTYPE" | cut -b 1-5` == "gb800")
+AM_CONDITIONAL(GIGABLUE, test `echo "$BOXTYPE" | cut -b 1-2` == "gb")
 AM_CONDITIONAL(ODIN, test `echo "$BOXTYPE" | cut -b 1-4` == "odin")
 AM_CONDITIONAL(VENTON, test `echo "$BOXTYPE" | cut -b 1-6` == "venton")
 AM_CONDITIONAL(EBOX, test `echo "$BOXTYPE" | cut -b 1-4` == "ebox")
@@ -122,6 +122,7 @@ AM_CONDITIONAL(DM500HDV2, test "$BOXTYPE" == dm500hdv2)
 AM_CONDITIONAL(E3HD, test "$BOXTYPE" == e3hd)
 AM_CONDITIONAL(EBOX5000, test "$BOXTYPE" == ebox5000)
 AM_CONDITIONAL(EBOX5100, test "$BOXTYPE" == ebox5100)
+AM_CONDITIONAL(EBOXLUMI, test "$BOXTYPE" == eboxlumi)
 AM_CONDITIONAL(EBOX7358, test "$BOXTYPE" == ebox7358)
 AM_CONDITIONAL(ET4X00, test "$BOXTYPE" == et4x00)
 AM_CONDITIONAL(ET5X00, test "$BOXTYPE" == et5x00)
@@ -305,7 +306,7 @@ if test "$BOXTYPE" == "azboxhd"; then
 	AC_DEFINE(KEY_TEXT_TO_KEY_AUDIO, 1,[define when rc sends a KEY_TEXT event for its KEY_AUDIO key])	
 fi
 
-if test "$BOXTYPE" == "ebox5000" -o "$BOXTYPE" == "ebox7358" -o "$BOXTYPE" == "ebox5100"; then
+if test "$BOXTYPE" == "ebox5000" -o "$BOXTYPE" == "ebox7358" -o "$BOXTYPE" == "ebox5100" -o "$BOXTYPE" == "eboxlumi"; then
 	AC_DEFINE(KEY_SCREEN_TO_KEY_ANGLE, 1,[define when rc sends a KEY_SCREEN event for its KEY_ANGLE key])
 	AC_DEFINE(KEY_TIME_TO_KEY_SLEEP, 1,[define when rc sends a KEY_TIME event for its KEY_SLEEP])
 fi
@@ -337,7 +338,7 @@ if test "$BOXTYPE" == "gb800solo" -o "$BOXTYPE" == "gb800se" -o "$BOXTYPE" == "g
 	AC_DEFINE(KEY_F2_TO_KEY_F6, 1,[define when rc sends a KEY_F2 event for its KEY_F6 key])	
 fi
 
-if test "$BOXTYPE" == "inihde" -o "$BOXTYPE" == "inihdx" -o "$BOXTYPE" == "inihdp"; then
+if test "$BOXTYPE" == "inihde" -o "$BOXTYPE" == "inihdx" -o "$BOXTYPE" == "inihdp" -o "$BOXTYPE" == "mbmini" -o "$BOXTYPE" == "mbtwin"; then
 	AC_DEFINE(KEY_PLAY_ACTUALLY_IS_KEY_PLAYPAUSE, 1,[define when rc sends a KEY_PLAY event for its KEY_PLAYPAUSE key])
 	AC_DEFINE(FORCE_NO_BLENDING_ACCELERATION, 1,[define when the framebuffer acceleration does not have alphablending support, though the autodetection might indicate that it does])
 fi
