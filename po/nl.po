@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ViX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-05 15:29+0200\n"
-"PO-Revision-Date: 2013-10-06 17:05+0100\n"
+"POT-Creation-Date: 2013-12-19 02:18+0100\n"
+"PO-Revision-Date: 2013-12-21 14:09+0100\n"
 "Last-Translator: Rob van der Does <robvddoes@gmail.com>\n"
 "Language-Team: Andy Blackburn, Rob van der Does\n"
 "Language: Nederlands\n"
@@ -760,6 +760,9 @@ msgstr "A/V instellingen"
 
 msgid "AA"
 msgstr "AA"
+
+msgid "AAC downmix"
+msgstr "AAC downmix"
 
 msgid "AB"
 msgstr "AB"
@@ -3019,6 +3022,9 @@ msgstr ""
 
 msgid "Domain:"
 msgstr ""
+
+msgid "Dolby Digital / DTS downmix"
+msgstr "Dolby Digital / DTS downmix"
 
 msgid "Don't save"
 msgstr "Niet opslaan"
@@ -7100,11 +7106,10 @@ msgid "Restart GUI"
 msgstr "Gebruikersinterface herstarten"
 
 msgid "Restart GUI now?"
-msgstr "Enigma2 nu opnieuw starten?"
+msgstr "De gebruikersinterface nu opnieuw starten?"
 
-#, fuzzy
-msgid "Restart box."
-msgstr "Opnieuw opstarten"
+msgid "Restart enigma"
+msgstr "De gebruikersinterface opnieuw starten"
 
 msgid "Restart network"
 msgstr "Netwerk herstarten"

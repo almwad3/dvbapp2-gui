@@ -191,7 +191,6 @@
 		<item level="0" requires="LcdDisplay" text="LED Normal" description="LED brightness during normal operations.">config.lcd.ledbrightness</item>
 		<item level="0" requires="LcdDisplay" text="LED Standby" description="LED brightness during standby.">config.lcd.ledbrightnessstandby</item>
 		<item level="0" requires="LcdDisplay" text="LED Deep Standby" description="LED brightness during deep standby.">config.lcd.ledbrightnessdeepstandby</item>
-		<item level="0" requires="LcdDisplay" text="LED Blinking" description="LED Blinking">config.lcd.ledblinkingtime</item>
 		<item level="1" requires="LcdDisplay" text="Repeat Display Message" description="If the text is too long to be displayed on the front panel, it will be repeated (number of times):">config.lcd.repeat</item>
 		<item level="1" requires="LcdDisplay" text="Scrolling Speed" description="Set the scrolling speed of text on the front display.">config.lcd.scrollspeed</item>
 		<!--<item level="1" requires="GraphicLCD" text="LCD scroll speed" description="Set the scrolling speed of text on the front display.">config.usage.lcd_scroll_speed</item>
@@ -202,7 +201,7 @@
 		<item level="1" requires="LcdDisplay" text="Show Media playback Remaining/Elapsed as" description="This option allows you choose how to display the remaining/elapsed time for Media playback.">config.usage.swap_media_time_display_on_vfd</item>
 		<item level="0" requires="LcdDisplay" text="Show time elapsed as positive" description="This option allows you choose how to display elapsed time  as + or -">config.usage.elapsed_time_positive_vfd</item>
 		<item level="1" requires="GraphicLCD" text="Scrolling Speed (software render)" description="Set the scrolling speed of text on the front display, this uses a sotware render use in some skins.">config.lcd.scroll_speed</item>
-		<item level="1" requires="GraphicLCD" text="Scrolling delay (software render)" description="Set the delay time between repeated loops, this uses a sotware render use in some skins.">config.lcd.scroll_delay</item>		
+		<item level="1" requires="GraphicLCD" text="Scrolling delay (software render)" description="Set the delay time between repeated loops, this uses a sotware render use in some skins.">config.lcd.scroll_delay</item>
 	</setup>
 	<setup key="satconfig" title="Satellite dish setup">
 		<item text="Tuner slot" description="Choose which tuner to configure.">config.sat.tunerslot</item>
