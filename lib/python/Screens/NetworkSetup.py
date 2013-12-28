@@ -26,10 +26,10 @@ from os import path as os_path, remove, unlink, rename, chmod, access, X_OK
 from shutil import move
 import time
 
-if float(getImageVersionString()) >= 4.0:
-	basegroup = "packagegroup-base"
-else:
+if getImageVersionString().startswith("4."):
 	basegroup = "task-base"
+else:
+	basegroup = "packagegroup-base"
 	
 class NetworkAdapterSelection(Screen,HelpableScreen):
 	def __init__(self, session):
