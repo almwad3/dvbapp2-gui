@@ -362,9 +362,9 @@ def InitLcd():
 			config.lcd.showoutputresolution = ConfigSelection([("0", _("No")), ("1", _("Yes"))], "1")
 			config.lcd.showoutputresolution.addNotifier(setLCDshowoutputresolution);
 		else:
-			config.lcd.showoutputresolution = ConfigNothing()			
-
-		if getBoxType() == 'vusolo2' or getBoxType() == 'vuduo2' or getBoxType() == 'vuultimo':
+			config.lcd.showoutputresolution = ConfigNothing()
+			
+		if getBoxType() == 'vuduo2' or getBoxType() == 'vuultimo':
 			config.lcd.ledblinkingtime = ConfigSlider(default = 5, increment = 1, limits = (0,15))
 			config.lcd.ledblinkingtime.addNotifier(setLEDblinkingtime);
 			config.lcd.ledbrightnessdeepstandby = ConfigSlider(default = 1, increment = 1, limits = (0,15))

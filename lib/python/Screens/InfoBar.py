@@ -443,7 +443,8 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, \
 	def up(self):
 		slist = self.servicelist
 		if slist and slist.dopipzap:
-			slist.moveUp()
+			if "keep" not in config.usage.servicelist_cursor_behavior.value:
+				slist.moveUp()
 			self.session.execDialog(slist)
 		else:
 			self.showMovies()
@@ -451,7 +452,8 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, \
 	def down(self):
 		slist = self.servicelist
 		if slist and slist.dopipzap:
-			slist.moveDown()
+			if "keep" not in config.usage.servicelist_cursor_behavior.value:
+				slist.moveDown()
 			self.session.execDialog(slist)
 		else:
 			self.showMovies()
@@ -508,27 +510,24 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, \
 			xres = str(info.getInfo(enigma.iServiceInformation.sVideoWidth))
 			slist = self.servicelist
 			if self.session.pipshown:
-				slist = self.servicelist
 				if slist and slist.dopipzap:
 					slist.togglePipzap()
-				del self.session.pip
-				self.session.pipshown = False
+				if self.session.pipshown:
+					del self.session.pip
+					self.session.pipshown = False
 			else:
 				if int(xres) <= 720 or about.getCPUString() == 'BCM7346B2' or about.getCPUString() == 'BCM7425B2':
+					from Screens.PictureInPicture import PictureInPicture
 					self.session.pip = self.session.instantiateDialog(PictureInPicture)
 					self.session.pip.show()
-					newservice = self.servicelist.servicelist.getCurrent()
-					if self.session.pip.playService(newservice):
-						self.session.pipshown = True
-						self.session.pip.servicePath = self.servicelist.getCurrentServicePath()
-					else:
-						self.session.pipshown = False
-						del self.session.pip
+					self.session.pipshown = True
+					self.session.pip.playService(slist.getCurrentSelection())
+					self.session.pip.servicePath = slist.getCurrentServicePath()
 				else:
 					self.session.open(MessageBox, _("Your %s %s does not support PiP HD") % (enigma.getMachineBrand(), enigma.getMachineName()), type = MessageBox.TYPE_INFO,timeout = 5 )
 		except:
 			pass
-
+		      
 	def swapPiP(self):
 		pass
 

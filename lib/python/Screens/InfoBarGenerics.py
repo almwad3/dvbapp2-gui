@@ -2259,6 +2259,9 @@ class InfoBarPiP:
 		slist = self.servicelist
 		if slist:
 			slist.togglePipzap()
+			currentServicePath = self.servicelist.getCurrentServicePath()
+			self.servicelist.setCurrentServicePath(self.session.pip.servicePath, doZap=False)
+			self.session.pip.servicePath = currentServicePath
 
 	def showPiP(self):
 		try:
@@ -2266,12 +2269,13 @@ class InfoBarPiP:
 			info = service and service.info()
 			xres = str(info.getInfo(iServiceInformation.sVideoWidth))
 			slist = self.servicelist
+
 			if self.session.pipshown:
-				slist = self.servicelist
 				if slist and slist.dopipzap:
-					slist.togglePipzap()
-				del self.session.pip
-				self.session.pipshown = False
+					self.togglePipzap()
+				if self.session.pipshown:
+					del self.session.pip
+					self.session.pipshown = False
 			else:
 				if int(xres) <= 720 or about.getCPUString() == 'BCM7346B2' or about.getCPUString() == 'BCM7425B2':
 					self.session.pip = self.session.instantiateDialog(PictureInPicture)
@@ -2293,9 +2297,9 @@ class InfoBarPiP:
 		pipref = self.session.pip.getCurrentService()
 		if swapservice and pipref and pipref.toString() != swapservice.toString():
 			currentServicePath = self.servicelist.getCurrentServicePath()
-			#self.servicelist.setCurrentServicePath(self.session.pip.servicePath)	
+			self.servicelist.setCurrentServicePath(self.session.pip.servicePath, doZap=False)
 			self.session.pip.playService(swapservice)
-			self.session.nav.playService(pipref) # start subservice
+			self.session.nav.playService(pipref, checkParentalControl=False, adjust=False)
 			self.session.pip.servicePath = currentServicePath
 			#if self.servicelist.dopipzap:
 				# This unfortunately won't work with subservices
